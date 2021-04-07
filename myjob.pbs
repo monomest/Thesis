@@ -1,20 +1,23 @@
 #!/bin/bash
 
 #PBS -l select=1:ncpus=8:ngpus=1:mem=46gb
-#PBS -l walltime=6:00:00
+#PBS -l walltime=4:00:00
 #PBS -M renee.lu@unsw.edu.au
 #PBS -m ae
 #PBS -j oe
-#PBS -o /home/z5160268/Output_Report
+#PBS -o /home/z5160268/Output2_Report
 
-cd /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5
+# Go into thesis folder
+cd /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis
 
-./loadmodules.sh
+# Load modules
+s5/loadmodules.sh
 
+# Activate virtual environment
 source thesis_env/bin/activate
 
-./run.sh 2>&1 | tee output/output1.txt
+# Go into s5 folder
+cd s5
 
-echo "$(date)" 2>&1 | tee -a output/output1.txt
-
-local/nnet3/run_tdnn_delta.sh 2>&1 | tee -a output/output1.txt
+# Run the script
+./run_speed_perturb.sh 2>&1 | tee output/output2.txt
