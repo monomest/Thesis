@@ -3,6 +3,7 @@
 # About: This code uses local/uttInfo.txt to create all the
 #        files needed in kaldi data preparation.
 #        By doing so, it splits the data into train, test and dev.
+#        Split data into 70% train, 15% dev, 15% test by default
 # Output: 'data/[train, test, dev]/text' which is a text file formatted like
 #         <speaker-ID>-<utterance-ID> <TRANSCRIPTION>
 #         

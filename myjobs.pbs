@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#PBS -l select=1:ncpus=8:ngpus=1:mem=46gb
+#PBS -l walltime=6:00:00
+#PBS -M renee.lu@unsw.edu.au
+#PBS -m ae
+#PBS -j oe
+#PBS -o /home/z5160268/Output_Report
+
+cd /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5
+
+./loadmodules.sh
+
+source thesis_env/bin/activate
+
+./run.sh 2>&1 | tee output/output1.txt

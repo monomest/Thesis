@@ -10,10 +10,11 @@ set -e
 
 n=5	# Number of jobs
 CUR_DIR=$(pwd)	# Path to current s5 directory
-#CU_ROOT=/media/renee/Windows/Users/rslaj/Documents/02_Work/2019_2020_Taste-of-Research/CU_Kids_Corpus	# Path to CU Kids Speech Corpus
-CU_ROOT=/srv/scratch/z5160268/2020_TasteofResearch/CU_Kids_Corpus	# Path to CU Kids Speech Corpus on supercomputer
+CU_ROOT=/srv/scratch/z5160268/2020_TasteofResearch/CU_Kids_Corpus   # Path to CU Kids Speech Corpus on supercomputer
 
 stage=2	# This controls what stage to start running from
+
+echo "$(date)"  # Prints out the date and time
 
 if [ $stage -le 0 ]; then
 	echo
