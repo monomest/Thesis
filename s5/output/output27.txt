@@ -1,0 +1,317 @@
+utils/copy_data_dir.sh: copied data from data/train to data/train_hires
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_hires
+utils/data/perturb_data_dir_volume.sh: data/train_hires/feats.scp exists; moving it to data/train_hires/.backup/ as it wouldn't be valid any more.
+utils/data/perturb_data_dir_volume.sh: added volume perturbation to the data in data/train_hires
+steps/make_mfcc.sh --nj 5 --mfcc-config conf/mfcc_hires.conf --cmd run.pl data/train_hires exp/make_hires/train mfcc_hires
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_hires
+steps/make_mfcc.sh [info]: segments file exists: using that.
+steps/make_mfcc.sh: Succeeded creating MFCC features for train_hires
+steps/compute_cmvn_stats.sh data/train_hires exp/make_hires/train mfcc_hires
+Succeeded creating CMVN stats for train_hires
+fix_data_dir.sh: kept all 4758 utterances.
+fix_data_dir.sh: old files are kept in data/train_hires/.backup
+utils/copy_data_dir.sh: copied data from data/dev to data/dev_hires
+utils/validate_data_dir.sh: Successfully validated data-directory data/dev_hires
+steps/make_mfcc.sh --cmd run.pl --nj 5 --mfcc-config conf/mfcc_hires.conf data/dev_hires exp/make_hires/dev mfcc_hires
+steps/make_mfcc.sh: moving data/dev_hires/feats.scp to data/dev_hires/.backup
+utils/validate_data_dir.sh: Successfully validated data-directory data/dev_hires
+steps/make_mfcc.sh [info]: segments file exists: using that.
+steps/make_mfcc.sh: Succeeded creating MFCC features for dev_hires
+steps/compute_cmvn_stats.sh data/dev_hires exp/make_hires/dev mfcc_hires
+Succeeded creating CMVN stats for dev_hires
+fix_data_dir.sh: kept all 1056 utterances.
+fix_data_dir.sh: old files are kept in data/dev_hires/.backup
+utils/copy_data_dir.sh: copied data from data/test to data/test_hires
+utils/validate_data_dir.sh: Successfully validated data-directory data/test_hires
+steps/make_mfcc.sh --cmd run.pl --nj 5 --mfcc-config conf/mfcc_hires.conf data/test_hires exp/make_hires/test mfcc_hires
+steps/make_mfcc.sh: moving data/test_hires/feats.scp to data/test_hires/.backup
+utils/validate_data_dir.sh: Successfully validated data-directory data/test_hires
+steps/make_mfcc.sh [info]: segments file exists: using that.
+steps/make_mfcc.sh: Succeeded creating MFCC features for test_hires
+steps/compute_cmvn_stats.sh data/test_hires exp/make_hires/test mfcc_hires
+Succeeded creating CMVN stats for test_hires
+fix_data_dir.sh: kept all 908 utterances.
+fix_data_dir.sh: old files are kept in data/test_hires/.backup
+utils/subset_data_dir.sh: reducing #utt from 4758 to 500
+steps/train_lda_mllt.sh --cmd run.pl --num-iters 13 --splice-opts --left-context=3 --right-context=3 5500 90000 data/train_hires data/lang exp/tri2b_ali exp/nnet3_vp/tri3b
+steps/train_lda_mllt.sh: Accumulating LDA statistics.
+steps/train_lda_mllt.sh: Accumulating tree stats
+steps/train_lda_mllt.sh: Getting questions for tree clustering.
+steps/train_lda_mllt.sh: Building the tree
+steps/train_lda_mllt.sh: Initializing the model
+steps/train_lda_mllt.sh: Converting alignments from exp/tri2b_ali to use current tree
+steps/train_lda_mllt.sh: Compiling graphs of transcripts
+Training pass 1
+Training pass 2
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 3
+Training pass 4
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 5
+Training pass 6
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 7
+Training pass 8
+Training pass 9
+Training pass 10
+Aligning data
+Training pass 11
+Training pass 12
+steps/train_lda_mllt.sh: Estimating MLLT
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/nnet3_vp/tri3b
+steps/diagnostic/analyze_alignments.sh: see stats in exp/nnet3_vp/tri3b/log/analyze_alignments.log
+2 warnings in exp/nnet3_vp/tri3b/log/lda_acc.*.log
+24 warnings in exp/nnet3_vp/tri3b/log/acc.*.*.log
+1 warnings in exp/nnet3_vp/tri3b/log/build_tree.log
+1126 warnings in exp/nnet3_vp/tri3b/log/update.*.log
+43 warnings in exp/nnet3_vp/tri3b/log/align.*.*.log
+1186 warnings in exp/nnet3_vp/tri3b/log/init_model.log
+exp/nnet3_vp/tri3b: nj=5 align prob=-46.82 over 4.75h [retry=0.9%, fail=0.0%] states=3944 gauss=42727 tree-impr=5.12 lda-sum=19.90 mllt:impr,logdet=1.21,2.53
+steps/train_lda_mllt.sh: Done training system with LDA+MLLT features in exp/nnet3_vp/tri3b
+steps/online/nnet2/train_diag_ubm.sh --cmd run.pl --nj 5 --num-frames 200000 data/train_10k_hires 512 exp/nnet3_vp/tri3b exp/nnet3_vp/diag_ubm
+steps/online/nnet2/train_diag_ubm.sh: Directory exp/nnet3_vp/diag_ubm already exists. Backing up diagonal UBM in exp/nnet3_vp/diag_ubm/backup.sVJ
+steps/online/nnet2/train_diag_ubm.sh: initializing model from E-M in memory, 
+steps/online/nnet2/train_diag_ubm.sh: starting from 256 Gaussians, reaching 512;
+steps/online/nnet2/train_diag_ubm.sh: for 20 iterations, using at most 200000 frames of data
+Getting Gaussian-selection info
+steps/online/nnet2/train_diag_ubm.sh: will train for 4 iterations, in parallel over
+steps/online/nnet2/train_diag_ubm.sh: 5 machines, parallelized with 'run.pl'
+steps/online/nnet2/train_diag_ubm.sh: Training pass 0
+steps/online/nnet2/train_diag_ubm.sh: Training pass 1
+steps/online/nnet2/train_diag_ubm.sh: Training pass 2
+steps/online/nnet2/train_diag_ubm.sh: Training pass 3
+steps/online/nnet2/train_ivector_extractor.sh --cmd run.pl --nj 5 data/train_hires exp/nnet3_vp/diag_ubm exp/nnet3_vp/extractor
+steps/online/nnet2/train_ivector_extractor.sh: doing Gaussian selection and posterior computation
+Accumulating stats (pass 0)
+Summing accs (pass 0)
+Updating model (pass 0)
+Accumulating stats (pass 1)
+Summing accs (pass 1)
+Updating model (pass 1)
+Accumulating stats (pass 2)
+Summing accs (pass 2)
+Updating model (pass 2)
+Accumulating stats (pass 3)
+Summing accs (pass 3)
+Updating model (pass 3)
+Accumulating stats (pass 4)
+Summing accs (pass 4)
+Updating model (pass 4)
+Accumulating stats (pass 5)
+Summing accs (pass 5)
+Updating model (pass 5)
+Accumulating stats (pass 6)
+Summing accs (pass 6)
+Updating model (pass 6)
+Accumulating stats (pass 7)
+Summing accs (pass 7)
+Updating model (pass 7)
+Accumulating stats (pass 8)
+Summing accs (pass 8)
+Updating model (pass 8)
+Accumulating stats (pass 9)
+Summing accs (pass 9)
+Updating model (pass 9)
+utils/data/modify_speaker_info.sh: copied data from data/train_hires to data/train_max2_hires, number of speakers changed from 41 to 2386
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_max2_hires
+steps/online/nnet2/extract_ivectors_online.sh --cmd run.pl --nj 5 data/train_max2_hires exp/nnet3_vp/extractor exp/nnet3_vp/ivectors_train
+steps/online/nnet2/extract_ivectors_online.sh: extracting iVectors
+steps/online/nnet2/extract_ivectors_online.sh: combining iVectors across jobs
+steps/online/nnet2/extract_ivectors_online.sh: done extracting (online) iVectors to exp/nnet3_vp/ivectors_train using the extractor in exp/nnet3_vp/extractor.
+steps/online/nnet2/extract_ivectors_online.sh --cmd run.pl --nj 5 data/dev_hires exp/nnet3_vp/extractor exp/nnet3_vp/ivectors_dev
+steps/online/nnet2/extract_ivectors_online.sh: extracting iVectors
+steps/online/nnet2/extract_ivectors_online.sh: combining iVectors across jobs
+steps/online/nnet2/extract_ivectors_online.sh: done extracting (online) iVectors to exp/nnet3_vp/ivectors_dev using the extractor in exp/nnet3_vp/extractor.
+steps/online/nnet2/extract_ivectors_online.sh --cmd run.pl --nj 5 data/test_hires exp/nnet3_vp/extractor exp/nnet3_vp/ivectors_test
+steps/online/nnet2/extract_ivectors_online.sh: extracting iVectors
+steps/online/nnet2/extract_ivectors_online.sh: combining iVectors across jobs
+steps/online/nnet2/extract_ivectors_online.sh: done extracting (online) iVectors to exp/nnet3_vp/ivectors_test using the extractor in exp/nnet3_vp/extractor.
+local/nnet3/run_tdnn_NoIvector.sh: creating neural net configs using the xconfig parser
+tree-info exp/tri3b_ali/tree 
+nnet3-init exp/nnet3_noIv/tdnn/configs//init.config exp/nnet3_noIv/tdnn/configs//init.raw 
+LOG (nnet3-init[5.5.608~1-23868]:main():nnet3-init.cc:80) Initialized raw neural net and wrote it to exp/nnet3_noIv/tdnn/configs//init.raw
+nnet3-info exp/nnet3_noIv/tdnn/configs//init.raw 
+nnet3-init exp/nnet3_noIv/tdnn/configs//ref.config exp/nnet3_noIv/tdnn/configs//ref.raw 
+LOG (nnet3-init[5.5.608~1-23868]:main():nnet3-init.cc:80) Initialized raw neural net and wrote it to exp/nnet3_noIv/tdnn/configs//ref.raw
+nnet3-info exp/nnet3_noIv/tdnn/configs//ref.raw 
+nnet3-init exp/nnet3_noIv/tdnn/configs//ref.config exp/nnet3_noIv/tdnn/configs//ref.raw 
+LOG (nnet3-init[5.5.608~1-23868]:main():nnet3-init.cc:80) Initialized raw neural net and wrote it to exp/nnet3_noIv/tdnn/configs//ref.raw
+nnet3-info exp/nnet3_noIv/tdnn/configs//ref.raw 
+steps/nnet3/xconfig_to_configs.py --xconfig-file exp/nnet3_noIv/tdnn/configs/network.xconfig --config-dir exp/nnet3_noIv/tdnn/configs/
+2020-02-12 09:36:32,787 [steps/nnet3/train_dnn.py:36 - <module> - INFO ] Starting DNN trainer (train_dnn.py)
+steps/nnet3/train_dnn.py --stage=-10 --cmd=run.pl --feat.cmvn-opts=--norm-means=false --norm-vars=false --trainer.num-epochs 2 --trainer.optimization.num-jobs-initial 1 --trainer.optimization.num-jobs-final 2 --trainer.optimization.initial-effective-lrate 0.0017 --trainer.optimization.final-effective-lrate 0.00017 --trainer.optimization.do-final-combination true --egs.dir  --cleanup.remove-egs true --cleanup.preserve-model-interval 100 --use-gpu wait --feat-dir=data/train_hires --ali-dir exp/tri3b_ali --lang data/lang --reporting.email= --dir=exp/nnet3_noIv/tdnn
+['steps/nnet3/train_dnn.py', '--stage=-10', '--cmd=run.pl', '--feat.cmvn-opts=--norm-means=false --norm-vars=false', '--trainer.num-epochs', '2', '--trainer.optimization.num-jobs-initial', '1', '--trainer.optimization.num-jobs-final', '2', '--trainer.optimization.initial-effective-lrate', '0.0017', '--trainer.optimization.final-effective-lrate', '0.00017', '--trainer.optimization.do-final-combination', 'true', '--egs.dir', '', '--cleanup.remove-egs', 'true', '--cleanup.preserve-model-interval', '100', '--use-gpu', 'wait', '--feat-dir=data/train_hires', '--ali-dir', 'exp/tri3b_ali', '--lang', 'data/lang', '--reporting.email=', '--dir=exp/nnet3_noIv/tdnn']
+2020-02-12 09:36:32,828 [steps/nnet3/train_dnn.py:178 - train - INFO ] Arguments for the experiment
+{'ali_dir': 'exp/tri3b_ali',
+ 'backstitch_training_interval': 1,
+ 'backstitch_training_scale': 0.0,
+ 'cleanup': True,
+ 'cmvn_opts': '--norm-means=false --norm-vars=false',
+ 'combine_sum_to_one_penalty': 0.0,
+ 'command': 'run.pl',
+ 'compute_per_dim_accuracy': False,
+ 'dir': 'exp/nnet3_noIv/tdnn',
+ 'do_final_combination': True,
+ 'dropout_schedule': None,
+ 'egs_command': None,
+ 'egs_dir': None,
+ 'egs_opts': None,
+ 'egs_stage': 0,
+ 'email': None,
+ 'exit_stage': None,
+ 'feat_dir': 'data/train_hires',
+ 'final_effective_lrate': 0.00017,
+ 'frames_per_eg': 4,
+ 'initial_effective_lrate': 0.0017,
+ 'input_model': None,
+ 'lang': 'data/lang',
+ 'max_lda_jobs': 10,
+ 'max_models_combine': 20,
+ 'max_objective_evaluations': 30,
+ 'max_param_change': 2.0,
+ 'minibatch_size': '512',
+ 'momentum': 0.0,
+ 'num_epochs': 2.0,
+ 'num_jobs_compute_prior': 10,
+ 'num_jobs_final': 2,
+ 'num_jobs_initial': 1,
+ 'num_jobs_step': 1,
+ 'online_ivector_dir': None,
+ 'preserve_model_interval': 100,
+ 'presoftmax_prior_scale_power': -0.25,
+ 'prior_subset_size': 20000,
+ 'proportional_shrink': 0.0,
+ 'rand_prune': 4.0,
+ 'remove_egs': True,
+ 'reporting_interval': 0.1,
+ 'samples_per_iter': 400000,
+ 'shuffle_buffer_size': 5000,
+ 'srand': 0,
+ 'stage': -10,
+ 'train_opts': [],
+ 'use_gpu': 'wait'}
+2020-02-12 09:36:32,878 [steps/nnet3/train_dnn.py:228 - train - INFO ] Initializing a basic network for estimating preconditioning matrix
+2020-02-12 09:36:32,985 [steps/nnet3/train_dnn.py:238 - train - INFO ] Generating egs
+steps/nnet3/get_egs.sh --cmd run.pl --cmvn-opts --norm-means=false --norm-vars=false --online-ivector-dir  --left-context 16 --right-context 12 --left-context-initial -1 --right-context-final -1 --stage 0 --samples-per-iter 400000 --frames-per-eg 4 --srand 0 data/train_hires exp/tri3b_ali exp/nnet3_noIv/tdnn/egs
+steps/nnet3/get_egs.sh: creating egs.  To ensure they are not deleted later you can do:  touch exp/nnet3_noIv/tdnn/egs/.nodelete
+steps/nnet3/get_egs.sh: feature type is raw, with 'apply-cmvn'
+steps/nnet3/get_egs.sh: working out number of frames of training data
+steps/nnet3/get_egs.sh: working out feature dim
+steps/nnet3/get_egs.sh: creating 2 archives, each with 214794 egs, with
+steps/nnet3/get_egs.sh:   4 labels per example, and (left,right) context = (16,12)
+steps/nnet3/get_egs.sh: copying data alignments
+copy-int-vector ark:- ark,scp:exp/nnet3_noIv/tdnn/egs/ali.ark,exp/nnet3_noIv/tdnn/egs/ali.scp 
+LOG (copy-int-vector[5.5.608~1-23868]:main():copy-int-vector.cc:83) Copied 4755 vectors of int32.
+steps/nnet3/get_egs.sh: Getting validation and training subset examples.
+steps/nnet3/get_egs.sh: ... extracting validation and training-subset alignments.
+... Getting subsets of validation examples for diagnostics and combination.
+steps/nnet3/get_egs.sh: Generating training examples on disk
+steps/nnet3/get_egs.sh: recombining and shuffling order of archives on disk
+steps/nnet3/get_egs.sh: removing temporary archives
+steps/nnet3/get_egs.sh: removing temporary alignments
+steps/nnet3/get_egs.sh: Finished preparing training examples
+2020-02-12 09:36:48,148 [steps/nnet3/train_dnn.py:276 - train - INFO ] Computing the preconditioning matrix for input features
+2020-02-12 09:36:54,273 [steps/nnet3/train_dnn.py:287 - train - INFO ] Computing initial vector for FixedScaleComponent before softmax, using priors^-0.25 and rescaling to average 1
+2020-02-12 09:36:54,707 [steps/nnet3/train_dnn.py:294 - train - INFO ] Preparing the initial acoustic model.
+2020-02-12 09:36:55,782 [steps/nnet3/train_dnn.py:319 - train - INFO ] Training will run for 2.0 epochs = 10 iterations
+2020-02-12 09:36:55,782 [steps/nnet3/train_dnn.py:355 - train - INFO ] Iter: 0/9   Jobs: 1   Epoch: 0.00/2.0 (0.0% complete)   lr: 0.001700   
+2020-02-12 09:37:06,634 [steps/nnet3/train_dnn.py:355 - train - INFO ] Iter: 1/9   Jobs: 1   Epoch: 0.12/2.0 (6.2% complete)   lr: 0.001472   
+2020-02-12 09:37:15,624 [steps/nnet3/train_dnn.py:355 - train - INFO ] Iter: 2/9   Jobs: 1   Epoch: 0.25/2.0 (12.5% complete)   lr: 0.001275   
+2020-02-12 09:37:24,696 [steps/nnet3/train_dnn.py:355 - train - INFO ] Iter: 3/9   Jobs: 1   Epoch: 0.38/2.0 (18.8% complete)   lr: 0.001104   
+2020-02-12 09:37:33,751 [steps/nnet3/train_dnn.py:355 - train - INFO ] Iter: 4/9   Jobs: 1   Epoch: 0.50/2.0 (25.0% complete)   lr: 0.000956   
+2020-02-12 09:37:43,178 [steps/nnet3/train_dnn.py:355 - train - INFO ] Iter: 5/9   Jobs: 2   Epoch: 0.62/2.0 (31.2% complete)   lr: 0.001656   
+2020-02-12 09:37:52,878 [steps/nnet3/train_dnn.py:355 - train - INFO ] Iter: 6/9   Jobs: 2   Epoch: 0.88/2.0 (43.8% complete)   lr: 0.001242   
+2020-02-12 09:38:02,730 [steps/nnet3/train_dnn.py:355 - train - INFO ] Iter: 7/9   Jobs: 2   Epoch: 1.12/2.0 (56.2% complete)   lr: 0.000931   
+2020-02-12 09:38:12,434 [steps/nnet3/train_dnn.py:355 - train - INFO ] Iter: 8/9   Jobs: 2   Epoch: 1.38/2.0 (68.8% complete)   lr: 0.000698   
+2020-02-12 09:38:22,200 [steps/nnet3/train_dnn.py:355 - train - INFO ] Iter: 9/9   Jobs: 2   Epoch: 1.62/2.0 (81.2% complete)   lr: 0.000340   
+2020-02-12 09:38:31,645 [steps/nnet3/train_dnn.py:401 - train - INFO ] Doing final combination to produce final.mdl
+2020-02-12 09:38:31,646 [steps/libs/nnet3/train/frame_level_objf/common.py:491 - combine_models - INFO ] Combining {6, 7, 8, 9, 10} models.
+2020-02-12 09:38:36,605 [steps/nnet3/train_dnn.py:410 - train - INFO ] Getting average posterior for purposes of adjusting the priors.
+2020-02-12 09:39:13,010 [steps/nnet3/train_dnn.py:421 - train - INFO ] Re-adjusting priors based on computed posteriors
+2020-02-12 09:39:13,258 [steps/nnet3/train_dnn.py:431 - train - INFO ] Cleaning up the experiment directory exp/nnet3_noIv/tdnn
+steps/nnet2/remove_egs.sh: Finished deleting examples in exp/nnet3_noIv/tdnn/egs
+exp/nnet3_noIv/tdnn: num-iters=10 nj=1..2 num-params=11.1M dim=40->1408 combine=-0.46->-0.46 (over 1) loglike:train/valid[5,9,combined]=(-1.03,-0.51,-0.44/-1.67,-1.66,-1.67) accuracy:train/valid[5,9,combined]=(0.70,0.849,0.875/0.56,0.59,0.58)
+steps/nnet3/decode.sh --nj 9 --cmd run.pl exp/tri3b/graph data/dev_hires exp/nnet3_noIv/tdnn/decode_dev_hires
+steps/nnet3/decode.sh --nj 11 --cmd run.pl exp/tri3b/graph data/test_hires exp/nnet3_noIv/tdnn/decode_test_hires
+steps/nnet3/decode.sh: feature type is raw
+steps/nnet3/decode.sh: feature type is raw
+steps/diagnostic/analyze_lats.sh --cmd run.pl --iter final exp/tri3b/graph exp/nnet3_noIv/tdnn/decode_dev_hires
+steps/diagnostic/analyze_lats.sh: see stats in exp/nnet3_noIv/tdnn/decode_dev_hires/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,5,45) and mean=19.5
+steps/diagnostic/analyze_lats.sh: see stats in exp/nnet3_noIv/tdnn/decode_dev_hires/log/analyze_lattice_depth_stats.log
+score best paths
+exp/nnet3_noIv/tdnn/decode_dev_hires/wer_10
+%WER 22.66 [ 1724 / 7609, 381 ins, 245 del, 1098 sub ]
+%SER 56.53 [ 597 / 1056 ]
+exp/nnet3_noIv/tdnn/decode_dev_hires/wer_11
+%WER 21.65 [ 1647 / 7609, 338 ins, 257 del, 1052 sub ]
+%SER 54.64 [ 577 / 1056 ]
+exp/nnet3_noIv/tdnn/decode_dev_hires/wer_12
+%WER 20.50 [ 1560 / 7609, 300 ins, 270 del, 990 sub ]
+%SER 52.94 [ 559 / 1056 ]
+exp/nnet3_noIv/tdnn/decode_dev_hires/wer_13
+%WER 19.86 [ 1511 / 7609, 284 ins, 280 del, 947 sub ]
+%SER 51.89 [ 548 / 1056 ]
+exp/nnet3_noIv/tdnn/decode_dev_hires/wer_14
+%WER 19.40 [ 1476 / 7609, 262 ins, 297 del, 917 sub ]
+%SER 51.04 [ 539 / 1056 ]
+exp/nnet3_noIv/tdnn/decode_dev_hires/wer_15
+%WER 19.14 [ 1456 / 7609, 242 ins, 331 del, 883 sub ]
+%SER 50.85 [ 537 / 1056 ]
+exp/nnet3_noIv/tdnn/decode_dev_hires/wer_16
+%WER 18.82 [ 1432 / 7609, 221 ins, 345 del, 866 sub ]
+%SER 50.19 [ 530 / 1056 ]
+exp/nnet3_noIv/tdnn/decode_dev_hires/wer_17
+%WER 18.65 [ 1419 / 7609, 204 ins, 361 del, 854 sub ]
+%SER 49.53 [ 523 / 1056 ]
+exp/nnet3_noIv/tdnn/decode_dev_hires/wer_7
+%WER 28.22 [ 2147 / 7609, 562 ins, 202 del, 1383 sub ]
+%SER 63.26 [ 668 / 1056 ]
+exp/nnet3_noIv/tdnn/decode_dev_hires/wer_8
+%WER 26.13 [ 1988 / 7609, 493 ins, 213 del, 1282 sub ]
+%SER 61.36 [ 648 / 1056 ]
+exp/nnet3_noIv/tdnn/decode_dev_hires/wer_9
+%WER 24.21 [ 1842 / 7609, 423 ins, 221 del, 1198 sub ]
+%SER 59.00 [ 623 / 1056 ]
+score confidence and timing with sclite
+Decoding done.
+steps/diagnostic/analyze_lats.sh --cmd run.pl --iter final exp/tri3b/graph exp/nnet3_noIv/tdnn/decode_test_hires
+steps/diagnostic/analyze_lats.sh: see stats in exp/nnet3_noIv/tdnn/decode_test_hires/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,7,67) and mean=31.4
+steps/diagnostic/analyze_lats.sh: see stats in exp/nnet3_noIv/tdnn/decode_test_hires/log/analyze_lattice_depth_stats.log
+score best paths
+exp/nnet3_noIv/tdnn/decode_test_hires/wer_10
+%WER 27.88 [ 2248 / 8064, 263 ins, 468 del, 1517 sub ]
+%SER 70.26 [ 638 / 908 ]
+exp/nnet3_noIv/tdnn/decode_test_hires/wer_11
+%WER 27.18 [ 2192 / 8064, 238 ins, 509 del, 1445 sub ]
+%SER 69.05 [ 627 / 908 ]
+exp/nnet3_noIv/tdnn/decode_test_hires/wer_12
+%WER 26.30 [ 2121 / 8064, 207 ins, 542 del, 1372 sub ]
+%SER 68.72 [ 624 / 908 ]
+exp/nnet3_noIv/tdnn/decode_test_hires/wer_13
+%WER 25.82 [ 2082 / 8064, 184 ins, 582 del, 1316 sub ]
+%SER 68.39 [ 621 / 908 ]
+exp/nnet3_noIv/tdnn/decode_test_hires/wer_14
+%WER 25.56 [ 2061 / 8064, 172 ins, 606 del, 1283 sub ]
+%SER 68.06 [ 618 / 908 ]
+exp/nnet3_noIv/tdnn/decode_test_hires/wer_15
+%WER 25.51 [ 2057 / 8064, 157 ins, 634 del, 1266 sub ]
+%SER 68.06 [ 618 / 908 ]
+exp/nnet3_noIv/tdnn/decode_test_hires/wer_16
+%WER 25.24 [ 2035 / 8064, 152 ins, 669 del, 1214 sub ]
+%SER 67.95 [ 617 / 908 ]
+exp/nnet3_noIv/tdnn/decode_test_hires/wer_17
+%WER 25.37 [ 2046 / 8064, 145 ins, 701 del, 1200 sub ]
+%SER 67.95 [ 617 / 908 ]
+exp/nnet3_noIv/tdnn/decode_test_hires/wer_7
+%WER 32.76 [ 2642 / 8064, 422 ins, 403 del, 1817 sub ]
+%SER 75.66 [ 687 / 908 ]
+exp/nnet3_noIv/tdnn/decode_test_hires/wer_8
+%WER 30.58 [ 2466 / 8064, 355 ins, 425 del, 1686 sub ]
+%SER 73.13 [ 664 / 908 ]
+exp/nnet3_noIv/tdnn/decode_test_hires/wer_9
+%WER 29.14 [ 2350 / 8064, 299 ins, 449 del, 1602 sub ]
+%SER 71.48 [ 649 / 908 ]
+score confidence and timing with sclite
+Decoding done.

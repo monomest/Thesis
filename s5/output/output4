@@ -1,0 +1,47 @@
+
+===== PREPARING RAW DATA =====
+
+Converting .raw audio files into .wav formatted files...
+WARNING: Cannot convert .raw files into .wav files because found 653 .wav files already existing.
+Do you want to remove all existing .wav files and then convert? [y/N] Using existing .wav files for all subsequent tasks.
+
+===== PREPARING ACOUSTIC DATA =====
+
+Checking if data has already been prepared...
+WARNING: Found 'data/train/text' already existing
+WARNING: Found 'data/train/segments' already existing
+WARNING: Found 'data/train/utt2spk' already existing
+WARNING: Found 'data/train/wav.scp' already existing
+WARNING: Found 'data/test/text' already existing
+WARNING: Found 'data/test/segments' already existing
+WARNING: Found 'data/test/utt2spk' already existing
+WARNING: Found 'data/test/wav.scp' already existing
+WARNING: Found 'data/dev/text' already existing
+WARNING: Found 'data/dev/segments' already existing
+WARNING: Found 'data/dev/utt2spk' already existing
+WARNING: Found 'data/dev/wav.scp' already existing
+All 12 out of 12 files were found.
+Do you want to remove these files and split the data into new train, test and dev portions? [y/N] Removed 'data/train/text'
+Removed 'data/train/segments'
+Removed 'data/train/utt2spk'
+Removed 'data/train/wav.scp'
+Removed 'data/test/text'
+Removed 'data/test/segments'
+Removed 'data/test/utt2spk'
+Removed 'data/test/wav.scp'
+Removed 'data/dev/text'
+Removed 'data/dev/segments'
+Removed 'data/dev/utt2spk'
+Removed 'data/dev/wav.scp'
+Creating 'data/train' 'data/test' and 'data/dev' directories...
+Creating 'text' 'wav.scp' 'segments' and 'utt2spk' files in 'data/train 'data/test' and 'data/dev'...
+WARNING: Will discard 01267-10037 because transcription is <DISCARD>
+WARNING: Will discard 01294-10607 because transcription is <DISCARD>
+WARNING: Will discard 01301-10744 because transcription is <DISCARD>
+WARNING: Will discard 01321-11099 because transcription is <DISCARD>
+WARNING: Will discard 01321-11100 because transcription is <DISCARD>
+WARNING: Will discard 01321-11101 because transcription is <DISCARD>
+WARNING: Will discard 01321-11102 because transcription is <DISCARD>
+WARNING: Will discard 01322-11109 because transcription is <DISCARD>
+WARNING: Will discard 02150-12100 because transcription is <DISCARD>
+WARNING: Will discard 02157-12243 because transcription is <DISCARD>

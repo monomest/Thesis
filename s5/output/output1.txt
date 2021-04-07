@@ -1,0 +1,47 @@
+===== PREPARING RAW DATA =====
+
+Converting .raw audio files into .wav formatted files...
+WARNING: Cannot convert .raw files into .wav files because found 653 .wav files already existing.
+Do you want to remove all existing .wav files and then convert? [y/N] n
+Using existing .wav files for all subsequent tasks.
+
+===== PREPARING ACOUSTIC DATA =====
+
+Getting the list of stories in the CU Kids' Speech Corpus...
+SUCCESS: Created a list of all stories in the speech corpus in 'local/stories.txt'
+Creating 'data/train' 'data/test' and 'data/dev' directories...
+Generating all utterance and speaker information for kaldi data preparation...
+SUCCESS: Created a list of all speakers in 'local/spkrs.txt' file.
+Creating a list of all utterances, times, speakers and filepaths using the 'story' and 'sentences'and spontaneous 'summary' audio from each speaker...
+WARNING: '/media/renee/Windows/Users/rslaj/Documents/02_Work/2019_2020_Taste-of-Research/CU_Kids_Corpus/spk-01-280a/story/1083861225250.wav' does not exist. Skipping the .trs file.
+WARNING: '/media/renee/Windows/Users/rslaj/Documents/02_Work/2019_2020_Taste-of-Research/CU_Kids_Corpus/spk-02-149/story/1077300949125.wav' does not exist. Skipping the .trs file.
+WARNING: No .trs files exists in 'spk-05-052/sentences/' Skipping this directory.
+WARNING: No .trs files exists in 'spk-05-062/sentences/' Skipping this directory.
+WARNING: No .trs files exists in 'spk-05-066/sentences/' Skipping this directory.
+WARNING: No .trs files exists in 'spk-05-089/sentences/' Skipping this directory.
+SUCCESS: Created a list of all utterance, speaker, filename and timing information in 'local/uttInfo.txt'
+Creating 'text' 'wav.scp' 'segments' and 'utt2spk' files in 'data/train 'data/test' and 'data/dev'...
+SUCCESS: Created 'data/train/text' file
+SUCCESS: Created 'data/train/segments' file'
+SUCCESS: Created 'data/train/utt2spk'file
+SUCCESS: Created 'data/train/wav.scp' file
+SUCCESS: Created 'data/test/text' file
+SUCCESS: Created 'data/test/segments' file'
+SUCCESS: Created 'data/test/utt2spk'file
+SUCCESS: Created 'data/test/wav.scp' file
+SUCCESS: Created 'data/dev/text' file
+SUCCESS: Created 'data/dev/segments' file'
+SUCCESS: Created 'data/dev/utt2spk'file
+SUCCESS: Created 'data/dev/wav.scp' file
+Listing all unique characters in 'text' file to 'local/uniqchar.txt'...
+Listing all event labels in 'local/tags.txt'...
+There are 61 speakers and 8970 utterances in training data.
+There are 11 speakers and 2197 utterances in testing data.
+There are 9 speakers and 1083 utterances in dev data.
+Creating 'spk2utt' files in 'data/train', 'data/test' and 'data/dev'...
+
+===== EXTRACTING FEATURES =====
+
+
+===== SUCCESS: run.sh has completed. =====
+

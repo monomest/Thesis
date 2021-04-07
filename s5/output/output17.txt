@@ -1,0 +1,82 @@
+local/nnet3/run_tdnn_delta.sh: creating neural net configs using the xconfig parser
+tree-info exp/tri3b_ali/tree 
+nnet3-init exp/nnet3_vp/tdnn/configs//ref.config exp/nnet3_vp/tdnn/configs//ref.raw 
+LOG (nnet3-init[5.5.608~1-23868]:main():nnet3-init.cc:80) Initialized raw neural net and wrote it to exp/nnet3_vp/tdnn/configs//ref.raw
+nnet3-info exp/nnet3_vp/tdnn/configs//ref.raw 
+nnet3-init exp/nnet3_vp/tdnn/configs//ref.config exp/nnet3_vp/tdnn/configs//ref.raw 
+LOG (nnet3-init[5.5.608~1-23868]:main():nnet3-init.cc:80) Initialized raw neural net and wrote it to exp/nnet3_vp/tdnn/configs//ref.raw
+nnet3-info exp/nnet3_vp/tdnn/configs//ref.raw 
+steps/nnet3/xconfig_to_configs.py --xconfig-file exp/nnet3_vp/tdnn/configs/network.xconfig --config-dir exp/nnet3_vp/tdnn/configs/
+2020-02-07 15:02:16,498 [steps/nnet3/train_dnn.py:36 - <module> - INFO ] Starting DNN trainer (train_dnn.py)
+steps/nnet3/train_dnn.py --stage=-10 --cmd=run.pl --feat.online-ivector-dir exp/nnet3_vp/ivectors_train --feat.cmvn-opts=--norm-means=false --norm-vars=false --trainer.num-epochs 2 --trainer.optimization.num-jobs-initial 1 --trainer.optimization.num-jobs-final 2 --trainer.optimization.initial-effective-lrate 0.0017 --trainer.optimization.final-effective-lrate 0.00017 --trainer.optimization.do-final-combination true --egs.dir  --cleanup.remove-egs true --cleanup.preserve-model-interval 100 --use-gpu wait --feat-dir=data/train_hires --ali-dir exp/tri3b_ali --lang data/lang --reporting.email= --dir=exp/nnet3_vp/tdnn
+['steps/nnet3/train_dnn.py', '--stage=-10', '--cmd=run.pl', '--feat.online-ivector-dir', 'exp/nnet3_vp/ivectors_train', '--feat.cmvn-opts=--norm-means=false --norm-vars=false', '--trainer.num-epochs', '2', '--trainer.optimization.num-jobs-initial', '1', '--trainer.optimization.num-jobs-final', '2', '--trainer.optimization.initial-effective-lrate', '0.0017', '--trainer.optimization.final-effective-lrate', '0.00017', '--trainer.optimization.do-final-combination', 'true', '--egs.dir', '', '--cleanup.remove-egs', 'true', '--cleanup.preserve-model-interval', '100', '--use-gpu', 'wait', '--feat-dir=data/train_hires', '--ali-dir', 'exp/tri3b_ali', '--lang', 'data/lang', '--reporting.email=', '--dir=exp/nnet3_vp/tdnn']
+2020-02-07 15:02:16,545 [steps/nnet3/train_dnn.py:178 - train - INFO ] Arguments for the experiment
+{'ali_dir': 'exp/tri3b_ali',
+ 'backstitch_training_interval': 1,
+ 'backstitch_training_scale': 0.0,
+ 'cleanup': True,
+ 'cmvn_opts': '--norm-means=false --norm-vars=false',
+ 'combine_sum_to_one_penalty': 0.0,
+ 'command': 'run.pl',
+ 'compute_per_dim_accuracy': False,
+ 'dir': 'exp/nnet3_vp/tdnn',
+ 'do_final_combination': True,
+ 'dropout_schedule': None,
+ 'egs_command': None,
+ 'egs_dir': None,
+ 'egs_opts': None,
+ 'egs_stage': 0,
+ 'email': None,
+ 'exit_stage': None,
+ 'feat_dir': 'data/train_hires',
+ 'final_effective_lrate': 0.00017,
+ 'frames_per_eg': 8,
+ 'initial_effective_lrate': 0.0017,
+ 'input_model': None,
+ 'lang': 'data/lang',
+ 'max_lda_jobs': 10,
+ 'max_models_combine': 20,
+ 'max_objective_evaluations': 30,
+ 'max_param_change': 2.0,
+ 'minibatch_size': '512',
+ 'momentum': 0.0,
+ 'num_epochs': 2.0,
+ 'num_jobs_compute_prior': 10,
+ 'num_jobs_final': 2,
+ 'num_jobs_initial': 1,
+ 'num_jobs_step': 1,
+ 'online_ivector_dir': 'exp/nnet3_vp/ivectors_train',
+ 'preserve_model_interval': 100,
+ 'presoftmax_prior_scale_power': -0.25,
+ 'prior_subset_size': 20000,
+ 'proportional_shrink': 0.0,
+ 'rand_prune': 4.0,
+ 'remove_egs': True,
+ 'reporting_interval': 0.1,
+ 'samples_per_iter': 400000,
+ 'shuffle_buffer_size': 5000,
+ 'srand': 0,
+ 'stage': -10,
+ 'train_opts': [],
+ 'use_gpu': 'wait'}
+WARNING (feat-to-dim[5.5.608~1-23868]:Open():util/kaldi-table-inl.h:106) Failed to open script file exp/nnet3_vp/ivectors_train/ivector_online.scp
+ERROR (feat-to-dim[5.5.608~1-23868]:SequentialTableReader():util/kaldi-table-inl.h:860) Error constructing TableReader: rspecifier is scp:exp/nnet3_vp/ivectors_train/ivector_online.scp
+
+[ Stack-Trace: ]
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x8b7) [0x2ae9e38f3d6d]
+feat-to-dim(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x11) [0x409d49]
+feat-to-dim(kaldi::SequentialTableReader<kaldi::KaldiObjectHolder<kaldi::Matrix<float> > >::SequentialTableReader(std::string const&)+0x8b) [0x410dcb]
+feat-to-dim(main+0x8d) [0x408a3a]
+/lib64/libc.so.6(__libc_start_main+0xf5) [0x2ae9eb144505]
+feat-to-dim() [0x4088e9]
+
+kaldi::KaldiFatalErrorTraceback (most recent call last):
+  File "steps/nnet3/train_dnn.py", line 459, in main
+    train(args, run_opts)
+  File "steps/nnet3/train_dnn.py", line 188, in train
+    ivector_dim = common_lib.get_ivector_dim(args.online_ivector_dir)
+  File "steps/libs/common.py", line 282, in get_ivector_dim
+    "scp:{dir}/ivector_online.scp -".format(dir=ivector_dir))
+  File "steps/libs/common.py", line 180, in get_command_stdout
+    raise Exception(output)
+Exception: Command exited with status 255: feat-to-dim --print-args=false scp:exp/nnet3_vp/ivectors_train/ivector_online.scp -

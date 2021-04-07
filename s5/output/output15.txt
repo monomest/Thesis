@@ -1,0 +1,1604 @@
+
+===== STAGE 1/11 PREPARING ACOUSTIC DATA =====
+Cleaning acoustic data and splitting it into train, test and dev portions
+
+Generating local/uttspkr.txt which has all the information required for kaldi data preparation...
+Creating 'data/train' 'data/test' and 'data/dev' directories...
+Creating a list of all speakers in the corpus in 'local/spkrs.txt'...
+Generating all utterance and speaker information for kaldi data preparation in 'local/uttInfo.txt'...
+WARNING: '/srv/scratch/z5160268/2020_TasteofResearch/CU_Kids_Corpus/spk-01-280a/story/1083861225250.wav' does not exist. Skipping the .trs file.
+WARNING: '/srv/scratch/z5160268/2020_TasteofResearch/CU_Kids_Corpus/spk-02-149/story/1077300949125.wav' does not exist. Skipping the .trs file.
+WARNING: No .trs files exists in 'spk-05-052/sentences/' Skipping this directory.
+WARNING: No .trs files exists in 'spk-05-062/sentences/' Skipping this directory.
+WARNING: No .trs files exists in 'spk-05-066/sentences/' Skipping this directory.
+WARNING: No .trs files exists in 'spk-05-089/sentences/' Skipping this directory.
+SUCCESS: Created a list of all utterance, speaker, filename and timing information in 'local/uttInfo.txt'
+Creating 'text' 'wav.scp' 'segments' 'utt2spk' and 'spk2utt' files in 'data/train 'data/test' and 'data/dev'...
+WARNING: Will discard 01267-10037 because transcription is <DISCARD>
+WARNING: Will discard 01294-10607 because transcription is <DISCARD>
+WARNING: Will discard 01301-10744 because transcription is <DISCARD>
+WARNING: Will discard 01321-11099 because transcription is <DISCARD>
+WARNING: Will discard 01321-11100 because transcription is <DISCARD>
+WARNING: Will discard 01321-11101 because transcription is <DISCARD>
+WARNING: Will discard 01321-11102 because transcription is <DISCARD>
+WARNING: Will discard 01322-11109 because transcription is <DISCARD>
+WARNING: Will discard 02150-12100 because transcription is <DISCARD>
+WARNING: Will discard 02157-12243 because transcription is <DISCARD>
+WARNING: Will discard 02167-12458 because it is badly formatted where begin is 3.317 and end is 3.000000
+WARNING: Will discard 02182-12898 because it is badly formatted where begin is 10.025 and end is 10.000000
+WARNING: Will discard 02198-13444 because transcription is <DISCARD>
+WARNING: Will discard 02198-13445 because transcription is <DISCARD>
+WARNING: Will discard 02205-13822 because transcription is <DISCARD>
+WARNING: Will discard 02205-13823 because transcription is <DISCARD>
+WARNING: Will discard 02223-15269 because transcription is <DISCARD>
+Creating 'spk2utt' files in 'data/train', 'data/test' and 'data/dev'...
+Removing utterance 01267-10037 from data/train/text to clean data...
+Removing utterance 01294-10607 from data/train/text to clean data...
+Removing utterance 01301-10744 from data/train/text to clean data...
+Removing utterance 01321-11099 from data/train/text to clean data...
+Removing utterance 01321-11100 from data/train/text to clean data...
+Removing utterance 01321-11101 from data/train/text to clean data...
+Removing utterance 01321-11102 from data/train/text to clean data...
+Removing utterance 01322-11109 from data/train/text to clean data...
+Removing utterance 02150-12100 from data/train/text to clean data...
+Removing utterance 02157-12243 from data/train/text to clean data...
+Removing utterance 02167-12458 from data/train/text to clean data...
+Removing utterance 02182-12898 from data/train/text to clean data...
+Removing utterance 02198-13444 from data/train/text to clean data...
+Removing utterance 02198-13445 from data/train/text to clean data...
+Removing utterance 02205-13822 from data/train/text to clean data...
+Removing utterance 02205-13823 from data/train/text to clean data...
+Removing utterance 02223-15269 from data/train/text to clean data...
+Removing utterance 01267-10037 from data/train/utt2spk to clean data...
+Removing utterance 01294-10607 from data/train/utt2spk to clean data...
+Removing utterance 01301-10744 from data/train/utt2spk to clean data...
+Removing utterance 01321-11099 from data/train/utt2spk to clean data...
+Removing utterance 01321-11100 from data/train/utt2spk to clean data...
+Removing utterance 01321-11101 from data/train/utt2spk to clean data...
+Removing utterance 01321-11102 from data/train/utt2spk to clean data...
+Removing utterance 01322-11109 from data/train/utt2spk to clean data...
+Removing utterance 02150-12100 from data/train/utt2spk to clean data...
+Removing utterance 02157-12243 from data/train/utt2spk to clean data...
+Removing utterance 02167-12458 from data/train/utt2spk to clean data...
+Removing utterance 02182-12898 from data/train/utt2spk to clean data...
+Removing utterance 02198-13444 from data/train/utt2spk to clean data...
+Removing utterance 02198-13445 from data/train/utt2spk to clean data...
+Removing utterance 02205-13822 from data/train/utt2spk to clean data...
+Removing utterance 02205-13823 from data/train/utt2spk to clean data...
+Removing utterance 02223-15269 from data/train/utt2spk to clean data...
+Removing record-ID 10037 from data/train/wav.scp to clean data...
+Removing record-ID 10607 from data/train/wav.scp to clean data...
+Removing record-ID 10744 from data/train/wav.scp to clean data...
+Removing record-ID 11099 from data/train/wav.scp to clean data...
+Removing record-ID 11100 from data/train/wav.scp to clean data...
+Removing record-ID 11101 from data/train/wav.scp to clean data...
+Removing record-ID 11102 from data/train/wav.scp to clean data...
+Removing record-ID 11109 from data/train/wav.scp to clean data...
+Removing record-ID 12100 from data/train/wav.scp to clean data...
+Removing record-ID 12243 from data/train/wav.scp to clean data...
+Removing record-ID 12458 from data/train/wav.scp to clean data...
+Removing record-ID 12898 from data/train/wav.scp to clean data...
+Removing record-ID 13444 from data/train/wav.scp to clean data...
+Removing record-ID 13445 from data/train/wav.scp to clean data...
+Removing record-ID 13822 from data/train/wav.scp to clean data...
+Removing record-ID 13823 from data/train/wav.scp to clean data...
+Removing record-ID 15269 from data/train/wav.scp to clean data...
+Removing utterance 01267-10037 from data/train/segments to clean data...
+Removing utterance 01294-10607 from data/train/segments to clean data...
+Removing utterance 01301-10744 from data/train/segments to clean data...
+Removing utterance 01321-11099 from data/train/segments to clean data...
+Removing utterance 01321-11100 from data/train/segments to clean data...
+Removing utterance 01321-11101 from data/train/segments to clean data...
+Removing utterance 01321-11102 from data/train/segments to clean data...
+Removing utterance 01322-11109 from data/train/segments to clean data...
+Removing utterance 02150-12100 from data/train/segments to clean data...
+Removing utterance 02157-12243 from data/train/segments to clean data...
+Removing utterance 02167-12458 from data/train/segments to clean data...
+Removing utterance 02182-12898 from data/train/segments to clean data...
+Removing utterance 02198-13444 from data/train/segments to clean data...
+Removing utterance 02198-13445 from data/train/segments to clean data...
+Removing utterance 02205-13822 from data/train/segments to clean data...
+Removing utterance 02205-13823 from data/train/segments to clean data...
+Removing utterance 02223-15269 from data/train/segments to clean data...
+Removing utterance 01267-10037 from data/dev/text to clean data...
+Removing utterance 01294-10607 from data/dev/text to clean data...
+Removing utterance 01301-10744 from data/dev/text to clean data...
+Removing utterance 01321-11099 from data/dev/text to clean data...
+Removing utterance 01321-11100 from data/dev/text to clean data...
+Removing utterance 01321-11101 from data/dev/text to clean data...
+Removing utterance 01321-11102 from data/dev/text to clean data...
+Removing utterance 01322-11109 from data/dev/text to clean data...
+Removing utterance 02150-12100 from data/dev/text to clean data...
+Removing utterance 02157-12243 from data/dev/text to clean data...
+Removing utterance 02167-12458 from data/dev/text to clean data...
+Removing utterance 02182-12898 from data/dev/text to clean data...
+Removing utterance 02198-13444 from data/dev/text to clean data...
+Removing utterance 02198-13445 from data/dev/text to clean data...
+Removing utterance 02205-13822 from data/dev/text to clean data...
+Removing utterance 02205-13823 from data/dev/text to clean data...
+Removing utterance 02223-15269 from data/dev/text to clean data...
+Removing utterance 01267-10037 from data/dev/utt2spk to clean data...
+Removing utterance 01294-10607 from data/dev/utt2spk to clean data...
+Removing utterance 01301-10744 from data/dev/utt2spk to clean data...
+Removing utterance 01321-11099 from data/dev/utt2spk to clean data...
+Removing utterance 01321-11100 from data/dev/utt2spk to clean data...
+Removing utterance 01321-11101 from data/dev/utt2spk to clean data...
+Removing utterance 01321-11102 from data/dev/utt2spk to clean data...
+Removing utterance 01322-11109 from data/dev/utt2spk to clean data...
+Removing utterance 02150-12100 from data/dev/utt2spk to clean data...
+Removing utterance 02157-12243 from data/dev/utt2spk to clean data...
+Removing utterance 02167-12458 from data/dev/utt2spk to clean data...
+Removing utterance 02182-12898 from data/dev/utt2spk to clean data...
+Removing utterance 02198-13444 from data/dev/utt2spk to clean data...
+Removing utterance 02198-13445 from data/dev/utt2spk to clean data...
+Removing utterance 02205-13822 from data/dev/utt2spk to clean data...
+Removing utterance 02205-13823 from data/dev/utt2spk to clean data...
+Removing utterance 02223-15269 from data/dev/utt2spk to clean data...
+Removing record-ID 10037 from data/dev/wav.scp to clean data...
+Removing record-ID 10607 from data/dev/wav.scp to clean data...
+Removing record-ID 10744 from data/dev/wav.scp to clean data...
+Removing record-ID 11099 from data/dev/wav.scp to clean data...
+Removing record-ID 11100 from data/dev/wav.scp to clean data...
+Removing record-ID 11101 from data/dev/wav.scp to clean data...
+Removing record-ID 11102 from data/dev/wav.scp to clean data...
+Removing record-ID 11109 from data/dev/wav.scp to clean data...
+Removing record-ID 12100 from data/dev/wav.scp to clean data...
+Removing record-ID 12243 from data/dev/wav.scp to clean data...
+Removing record-ID 12458 from data/dev/wav.scp to clean data...
+Removing record-ID 12898 from data/dev/wav.scp to clean data...
+Removing record-ID 13444 from data/dev/wav.scp to clean data...
+Removing record-ID 13445 from data/dev/wav.scp to clean data...
+Removing record-ID 13822 from data/dev/wav.scp to clean data...
+Removing record-ID 13823 from data/dev/wav.scp to clean data...
+Removing record-ID 15269 from data/dev/wav.scp to clean data...
+Removing utterance 01267-10037 from data/dev/segments to clean data...
+Removing utterance 01294-10607 from data/dev/segments to clean data...
+Removing utterance 01301-10744 from data/dev/segments to clean data...
+Removing utterance 01321-11099 from data/dev/segments to clean data...
+Removing utterance 01321-11100 from data/dev/segments to clean data...
+Removing utterance 01321-11101 from data/dev/segments to clean data...
+Removing utterance 01321-11102 from data/dev/segments to clean data...
+Removing utterance 01322-11109 from data/dev/segments to clean data...
+Removing utterance 02150-12100 from data/dev/segments to clean data...
+Removing utterance 02157-12243 from data/dev/segments to clean data...
+Removing utterance 02167-12458 from data/dev/segments to clean data...
+Removing utterance 02182-12898 from data/dev/segments to clean data...
+Removing utterance 02198-13444 from data/dev/segments to clean data...
+Removing utterance 02198-13445 from data/dev/segments to clean data...
+Removing utterance 02205-13822 from data/dev/segments to clean data...
+Removing utterance 02205-13823 from data/dev/segments to clean data...
+Removing utterance 02223-15269 from data/dev/segments to clean data...
+Removing utterance 01267-10037 from data/test/text to clean data...
+Removing utterance 01294-10607 from data/test/text to clean data...
+Removing utterance 01301-10744 from data/test/text to clean data...
+Removing utterance 01321-11099 from data/test/text to clean data...
+Removing utterance 01321-11100 from data/test/text to clean data...
+Removing utterance 01321-11101 from data/test/text to clean data...
+Removing utterance 01321-11102 from data/test/text to clean data...
+Removing utterance 01322-11109 from data/test/text to clean data...
+Removing utterance 02150-12100 from data/test/text to clean data...
+Removing utterance 02157-12243 from data/test/text to clean data...
+Removing utterance 02167-12458 from data/test/text to clean data...
+Removing utterance 02182-12898 from data/test/text to clean data...
+Removing utterance 02198-13444 from data/test/text to clean data...
+Removing utterance 02198-13445 from data/test/text to clean data...
+Removing utterance 02205-13822 from data/test/text to clean data...
+Removing utterance 02205-13823 from data/test/text to clean data...
+Removing utterance 02223-15269 from data/test/text to clean data...
+Removing utterance 01267-10037 from data/test/utt2spk to clean data...
+Removing utterance 01294-10607 from data/test/utt2spk to clean data...
+Removing utterance 01301-10744 from data/test/utt2spk to clean data...
+Removing utterance 01321-11099 from data/test/utt2spk to clean data...
+Removing utterance 01321-11100 from data/test/utt2spk to clean data...
+Removing utterance 01321-11101 from data/test/utt2spk to clean data...
+Removing utterance 01321-11102 from data/test/utt2spk to clean data...
+Removing utterance 01322-11109 from data/test/utt2spk to clean data...
+Removing utterance 02150-12100 from data/test/utt2spk to clean data...
+Removing utterance 02157-12243 from data/test/utt2spk to clean data...
+Removing utterance 02167-12458 from data/test/utt2spk to clean data...
+Removing utterance 02182-12898 from data/test/utt2spk to clean data...
+Removing utterance 02198-13444 from data/test/utt2spk to clean data...
+Removing utterance 02198-13445 from data/test/utt2spk to clean data...
+Removing utterance 02205-13822 from data/test/utt2spk to clean data...
+Removing utterance 02205-13823 from data/test/utt2spk to clean data...
+Removing utterance 02223-15269 from data/test/utt2spk to clean data...
+Removing record-ID 10037 from data/test/wav.scp to clean data...
+Removing record-ID 10607 from data/test/wav.scp to clean data...
+Removing record-ID 10744 from data/test/wav.scp to clean data...
+Removing record-ID 11099 from data/test/wav.scp to clean data...
+Removing record-ID 11100 from data/test/wav.scp to clean data...
+Removing record-ID 11101 from data/test/wav.scp to clean data...
+Removing record-ID 11102 from data/test/wav.scp to clean data...
+Removing record-ID 11109 from data/test/wav.scp to clean data...
+Removing record-ID 12100 from data/test/wav.scp to clean data...
+Removing record-ID 12243 from data/test/wav.scp to clean data...
+Removing record-ID 12458 from data/test/wav.scp to clean data...
+Removing record-ID 12898 from data/test/wav.scp to clean data...
+Removing record-ID 13444 from data/test/wav.scp to clean data...
+Removing record-ID 13445 from data/test/wav.scp to clean data...
+Removing record-ID 13822 from data/test/wav.scp to clean data...
+Removing record-ID 13823 from data/test/wav.scp to clean data...
+Removing record-ID 15269 from data/test/wav.scp to clean data...
+Removing utterance 01267-10037 from data/test/segments to clean data...
+Removing utterance 01294-10607 from data/test/segments to clean data...
+Removing utterance 01301-10744 from data/test/segments to clean data...
+Removing utterance 01321-11099 from data/test/segments to clean data...
+Removing utterance 01321-11100 from data/test/segments to clean data...
+Removing utterance 01321-11101 from data/test/segments to clean data...
+Removing utterance 01321-11102 from data/test/segments to clean data...
+Removing utterance 01322-11109 from data/test/segments to clean data...
+Removing utterance 02150-12100 from data/test/segments to clean data...
+Removing utterance 02157-12243 from data/test/segments to clean data...
+Removing utterance 02167-12458 from data/test/segments to clean data...
+Removing utterance 02182-12898 from data/test/segments to clean data...
+Removing utterance 02198-13444 from data/test/segments to clean data...
+Removing utterance 02198-13445 from data/test/segments to clean data...
+Removing utterance 02205-13822 from data/test/segments to clean data...
+Removing utterance 02205-13823 from data/test/segments to clean data...
+Removing utterance 02223-15269 from data/test/segments to clean data...
+Listing all unique characters in 'text' file to 'local/uniqchar.txt'...
+Listing all event labels in 'local/tags.txt'...
+Copying all split data portion files into local/data
+There are 41 speakers and 4758 utterances in train data.
+There are 11 speakers and 908 utterances in test data.
+There are 9 speakers and 1056 utterances in dev data.
+
+===== STAGE 2/11 EXTRACTING FEATURES =====
+Extracing Mel Frequency Cepstral Coefficients (MFCC) features
+
+Creating 'feats.scp' in 'data/train' 'data/test' and 'data/dev'...
+steps/make_mfcc.sh --nj 5 --cmd run.pl data/train exp/make_mfcc/train data/train/mfcc
+utils/validate_data_dir.sh: Successfully validated data-directory data/train
+steps/make_mfcc.sh [info]: segments file exists: using that.
+steps/make_mfcc.sh: Succeeded creating MFCC features for train
+steps/compute_cmvn_stats.sh data/train exp/make_mfcc/train data/train/mfcc
+Succeeded creating CMVN stats for train
+utils/validate_data_dir.sh: Successfully validated data-directory data/train
+fix_data_dir.sh: kept all 4758 utterances.
+fix_data_dir.sh: old files are kept in data/train/.backup
+steps/make_mfcc.sh --nj 5 --cmd run.pl data/test exp/make_mfcc/test data/test/mfcc
+utils/validate_data_dir.sh: Successfully validated data-directory data/test
+steps/make_mfcc.sh [info]: segments file exists: using that.
+steps/make_mfcc.sh: Succeeded creating MFCC features for test
+steps/compute_cmvn_stats.sh data/test exp/make_mfcc/test data/test/mfcc
+Succeeded creating CMVN stats for test
+utils/validate_data_dir.sh: Successfully validated data-directory data/test
+fix_data_dir.sh: kept all 908 utterances.
+fix_data_dir.sh: old files are kept in data/test/.backup
+steps/make_mfcc.sh --nj 5 --cmd run.pl data/dev exp/make_mfcc/dev data/dev/mfcc
+utils/validate_data_dir.sh: Successfully validated data-directory data/dev
+steps/make_mfcc.sh [info]: segments file exists: using that.
+steps/make_mfcc.sh: Succeeded creating MFCC features for dev
+steps/compute_cmvn_stats.sh data/dev exp/make_mfcc/dev data/dev/mfcc
+Succeeded creating CMVN stats for dev
+utils/validate_data_dir.sh: Successfully validated data-directory data/dev
+fix_data_dir.sh: kept all 1056 utterances.
+fix_data_dir.sh: old files are kept in data/dev/.backup
+
+===== STAGE 3/11 PREPARING LANGUAGE DATA =====
+Cleaning language data in preparation for training Language Model
+
+local/wsj_prepare_dict.sh 
+A    data/local/dict/cmudict/00README_FIRST.txt
+A    data/local/dict/cmudict/cmudict-0.7b
+A    data/local/dict/cmudict/scripts
+A    data/local/dict/cmudict/scripts/test_cmudict.pl
+A    data/local/dict/cmudict/scripts/README.txt
+A    data/local/dict/cmudict/scripts/make_baseform.pl
+A    data/local/dict/cmudict/scripts/CompileDictionary.sh
+A    data/local/dict/cmudict/scripts/sort_cmudict.pl
+A    data/local/dict/cmudict/scripts/test_dict.pl
+A    data/local/dict/cmudict/cmudict.0.6d
+A    data/local/dict/cmudict/cmudict.0.7a
+A    data/local/dict/cmudict/cmudict-0.7b.phones
+A    data/local/dict/cmudict/cmudict-0.7b.symbols
+A    data/local/dict/cmudict/sphinxdict
+A    data/local/dict/cmudict/sphinxdict/cmudict.0.7a_SPHINX_40
+A    data/local/dict/cmudict/sphinxdict/cmudict_SPHINX_40
+A    data/local/dict/cmudict/sphinxdict/README.txt
+A    data/local/dict/cmudict/sphinxdict/SphinxPhones_40
+A    data/local/dict/cmudict/README.developer
+A    data/local/dict/cmudict/cmudict.0.7a.symbols
+A    data/local/dict/cmudict/cmudict.0.7a.phones
+A    data/local/dict/cmudict/README.old
+A    data/local/dict/cmudict/README.weide
+Checked out revision 13291.
+Dictionary preparation succeeded
+A    data/local/dict/logios/Tools
+A    data/local/dict/logios/Tools/MakeDict
+A    data/local/dict/logios/Tools/MakeDict/lib
+A    data/local/dict/logios/Tools/MakeDict/lib/Pronounce.pm
+A    data/local/dict/logios/Tools/MakeDict/lib/lexdata
+A    data/local/dict/logios/Tools/MakeDict/lib/lexdata/ltosru.bin
+A    data/local/dict/logios/Tools/MakeDict/lib/lexdata/nslex.900
+A    data/local/dict/logios/Tools/MakeDict/lib/lexdata/nslex.901
+A    data/local/dict/logios/Tools/MakeDict/lib/lexdata/lexicon.key
+A    data/local/dict/logios/Tools/MakeDict/lib/lexdata/lexicon.data
+A    data/local/dict/logios/Tools/MakeDict/test_MakeDict.sh
+A    data/local/dict/logios/Tools/MakeDict/bin
+A    data/local/dict/logios/Tools/MakeDict/bin/x86-nt
+A    data/local/dict/logios/Tools/MakeDict/bin/x86-nt/pronounce.exe
+A    data/local/dict/logios/Tools/MakeDict/bin/x86-nt/libgnurx-0.dll
+A    data/local/dict/logios/Tools/MakeDict/bin/x86-linux
+A    data/local/dict/logios/Tools/MakeDict/bin/x86-linux/pronounce
+A    data/local/dict/logios/Tools/MakeDict/make_pronunciation.pl
+A    data/local/dict/logios/Tools/MakeDict/test
+A    data/local/dict/logios/Tools/MakeDict/test/example.dic.test
+A    data/local/dict/logios/Tools/MakeDict/test/example
+A    data/local/dict/logios/Tools/MakeDict/test/pronunciation.log.test
+A    data/local/dict/logios/Tools/MakeDict/test/hand.dict
+A    data/local/dict/logios/Tools/MakeDict/lextool.pl
+A    data/local/dict/logios/Tools/MakeDict/AUTHORS
+A    data/local/dict/logios/Tools/MakeDict/README
+A    data/local/dict/logios/Tools/MakeLM
+A    data/local/dict/logios/Tools/MakeLM/bin
+A    data/local/dict/logios/Tools/MakeLM/generate_random_samples.pl
+A    data/local/dict/logios/Tools/MakeLM/makelm.pl
+A    data/local/dict/logios/Tools/MakeLM/make_corpus.pl
+A    data/local/dict/logios/Tools/MakeGra
+A    data/local/dict/logios/Tools/MakeGra/compile_gra.pl
+A    data/local/dict/logios/Tools/MakeGra/resolve.pl
+A    data/local/dict/logios/Tools/MakeGra/tokenize.pl
+A    data/local/dict/logios/Tools/MakeGra/bin
+A    data/local/dict/logios/Tools/MakeGra/bin/x86-nt
+A    data/local/dict/logios/Tools/MakeGra/bin/x86-nt/compile_grammar.exe
+A    data/local/dict/logios/Tools/MakeGra/bin/x86-nt/concept_leaf.exe
+A    data/local/dict/logios/Tools/MakeGra/bin/x86-linux
+A    data/local/dict/logios/Tools/MakeGra/bin/x86-linux/nfa_to_dfa
+A    data/local/dict/logios/Tools/MakeGra/bin/x86-linux/concept_leaf
+A    data/local/dict/logios/Tools/MakeGra/bin/x86-linux/compile_grammar
+A    data/local/dict/logios/Tools/MakeGra/bin/x86-linux/parse_text
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/ParserLib
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/ParserLib/Makefile.am
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/ParserLib/globals_gram.h
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/ParserLib/compile_grammar.c
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/ParserLib/pconf.c
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/ParserLib/lengths.h
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/ParserLib/pconf.h
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/ParserLib/parse.c
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/ParserLib/functions.h
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/ParserLib/parse_text.c
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/ParserLib/parse.h
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/ParserLib/nfa_to_dfa.c
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/ParserLib/globals_parse.h
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/ParserLib/concept_leaf.c
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/ParserLib/print_structs.c
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/ParserLib/dict.c
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/ParserLib/grammar.c
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/ParserLib/grammar.h
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/ParserLib/match.c
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/LICENSE
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Doc
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Doc/PhoenixManual.pdf
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Server
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Server/OBJ
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Server/OBJ/x86-linux
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Server/OBJ/x86-linux/O
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Server/OBJ/x86-linux/O/.created
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Server/phoenix_serv.c
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Server/Makefile.depend
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Server/server.h
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Server/Makefile
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Scripts
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Scripts/mk_nets.perl
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Scripts/pack_gra.perl
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Scripts/unpack_gra.perl
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/sample_input
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/config
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/cities
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/log
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/compile
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/TA.gra.old
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/TA.net
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/classes
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/function_words
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/Travel.gra
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/compile.old
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/includes
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/includes/PLANE.nt
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/includes/MOD_DAYS.nt
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/includes/FARE_CONS.nt
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/includes/FLIGHT_CONS.nt
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/includes/EXPLAIN.nt
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/includes/ARRIVE_RES.nt
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/includes/AND.nt
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/includes/WHAT.nt
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/includes/DATE_PREP.nt
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/includes/STOP_NUM.nt
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/includes/I_SAY.nt
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/includes/WILL.nt
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/includes/COST.nt
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/includes/APPROX.nt
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/includes/TIME_RANGE.nt
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/includes/FLIGHT_MEAL.nt
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/includes/LIST.nt
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/includes/NUMBERS.nt
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/includes/DATE_MOD.nt
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/includes/AIRLINE_CODE.nt
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/includes/LOC.nt
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/includes/FLIGHT_FIELD.nt
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/includes/SHOW.nt
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/includes/DETAILS.nt
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/includes/STOP.nt
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/includes/OTHER_FLT.nt
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/includes/ARRIVE.nt
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/includes/EXISTENTIAL.nt
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/includes/LOCAL.nt
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/Weather.gra
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/base.dic
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/nets
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/TA.gra
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/Query.gra
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/Grammar/frames
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Travel_Example/run_parse
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Grammars
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Grammars/anaph.gra
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Grammars/places.gra
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Grammars/cost.gra
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Grammars/number.gra
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Grammars/existential.gra
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Grammars/social.gra
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Grammars/date_time.gra
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Grammars/next.gra
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Grammars/response.gra
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Grammars/anything.gra
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Grammars/repair.gra
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Grammars/query.gra
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Makefile.am
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Example
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Example/sample_input
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Example/config
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Example/Grammar
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Example/Grammar/Places.gra
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Example/Grammar/cities
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Example/Grammar/EX.gra.old
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Example/Grammar/EX.net
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Example/Grammar/log
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Example/Grammar/airports
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Example/Grammar/states
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Example/Grammar/EX.gra
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Example/Grammar/Schedule.gra
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Example/Grammar/base.dic
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Example/Grammar/compile
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Example/Grammar/nets
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Example/Grammar/frames
+A    data/local/dict/logios/Tools/MakeGra/phoenix_v0/Example/run_parse
+A    data/local/dict/logios/Tools/MakeGra/Makefile.am
+A    data/local/dict/logios/Tools/MakeGra/doc
+A    data/local/dict/logios/Tools/MakeGra/doc/Phoenix_Manual.pdf
+A    data/local/dict/logios/Tools/MakeGra/doc/readme.txt
+A    data/local/dict/logios/Tools/cfg2ngram
+A    data/local/dict/logios/Tools/cfg2ngram/src
+A    data/local/dict/logios/Tools/cfg2ngram/src/pcfgsrc
+A    data/local/dict/logios/Tools/cfg2ngram/src/pcfgsrc/PCFG.cpp
+A    data/local/dict/logios/Tools/cfg2ngram/src/pcfgsrc/Makefile.am
+A    data/local/dict/logios/Tools/cfg2ngram/src/pcfgsrc/debug.cpp
+A    data/local/dict/logios/Tools/cfg2ngram/src/phoenix2corpus.cpp
+A    data/local/dict/logios/Tools/cfg2ngram/src/phoenix2pcfg.cpp
+A    data/local/dict/logios/Tools/cfg2ngram/src/pcfg2corpus.cpp
+A    data/local/dict/logios/Tools/cfg2ngram/src/Makefile.am
+A    data/local/dict/logios/Tools/cfg2ngram/src/PCFG.h
+A    data/local/dict/logios/Tools/cfg2ngram/src/phoenix2cnf.cpp
+A    data/local/dict/logios/Tools/cfg2ngram/src/debug.h
+A    data/local/dict/logios/Tools/cfg2ngram/src/train.cpp
+A    data/local/dict/logios/Tools/cfg2ngram/src/NGram.cpp
+A    data/local/dict/logios/Tools/cfg2ngram/src/makevocab.cpp
+A    data/local/dict/logios/Tools/cfg2ngram/src/NGram.h
+A    data/local/dict/logios/Tools/cfg2ngram/src/smooth.cpp
+A    data/local/dict/logios/Tools/cfg2ngram/src/cfg2wngram.cpp
+A    data/local/dict/logios/Tools/cfg2ngram/test
+A    data/local/dict/logios/Tools/cfg2ngram/test/test.bat
+A    data/local/dict/logios/Tools/cfg2ngram/test/test.sh
+A    data/local/dict/logios/Tools/cfg2ngram/test/forms.txt
+A    data/local/dict/logios/Tools/cfg2ngram/test/MeetingLine.gra
+A    data/local/dict/logios/Tools/cfg2ngram/Makefile.am
+A    data/local/dict/logios/Tools/cfg2ngram/AUTHORS
+A    data/local/dict/logios/Tools/cfg2ngram/lib
+A    data/local/dict/logios/Tools/cfg2ngram/lib/x86-linux
+A    data/local/dict/logios/Tools/cfg2ngram/lib/x86-nt
+A    data/local/dict/logios/Tools/cfg2ngram/bin
+A    data/local/dict/logios/Tools/cfg2ngram/bin/x86-linux
+A    data/local/dict/logios/Tools/cfg2ngram/bin/x86-nt
+A    data/local/dict/logios/Tools/cfg2ngram/doc
+A    data/local/dict/logios/Tools/cfg2ngram/doc/tkharris-2002.doc
+A    data/local/dict/logios/Tools/cfg2ngram/etc
+A    data/local/dict/logios/Tools/cfg2ngram/etc/tmp.ccs
+A    data/local/dict/logios/Tools/cfg2ngram/CFG2NGRAM.mak
+A    data/local/dict/logios/Tools/MakeLanguage
+A    data/local/dict/logios/Tools/MakeLanguage/make_language.pl
+A    data/local/dict/logios/Tools/lib
+A    data/local/dict/logios/Tools/lib/LogiosLog.pm
+A    data/local/dict/logios/Tools/Makefile.am
+A    data/local/dict/logios/scripts
+A    data/local/dict/logios/scripts/Logios.pm
+A    data/local/dict/logios/scripts/CompileLanguage.sh
+A    data/local/dict/logios/scripts/CompileLanguage.bat
+A    data/local/dict/logios/scripts/makeTree.bat
+A    data/local/dict/logios/scripts/makeTree.sh
+A    data/local/dict/logios/examples
+A    data/local/dict/logios/examples/Resources
+A    data/local/dict/logios/examples/Resources/Grammar
+A    data/local/dict/logios/examples/Resources/Grammar/GRAMMAR
+A    data/local/dict/logios/examples/Resources/Grammar/GRAMMAR/usernames.class
+A    data/local/dict/logios/examples/Resources/Grammar/GRAMMAR/MeetingLineDomain.gra
+A    data/local/dict/logios/examples/Resources/Grammar/GRAMMAR/MeetingLineDomain.forms
+A    data/local/dict/logios/examples/Resources/DecoderConfig
+A    data/local/dict/logios/examples/Resources/DecoderConfig/Dictionary
+A    data/local/dict/logios/examples/Resources/DecoderConfig/LanguageModel
+A    data/local/dict/logios/examples/test.pl
+A    data/local/dict/logios/README
+A    data/local/dict/logios/configure.ac
+A    data/local/dict/logios/ChangeLog
+A    data/local/dict/logios/Makefile.am
+A    data/local/dict/logios/NEWS
+A    data/local/dict/logios/bootstrap
+A    data/local/dict/logios/LICENSE
+A    data/local/dict/logios/AUTHORS
+A    data/local/dict/logios/LOGIOS.pdf
+ U   data/local/dict/logios
+
+Fetching external item into 'data/local/dict/logios/Tools/MakeLM/bin/x86-linux':
+A    data/local/dict/logios/Tools/MakeLM/bin/x86-linux/wngram2idngram
+A    data/local/dict/logios/Tools/MakeLM/bin/x86-linux/evallm
+A    data/local/dict/logios/Tools/MakeLM/bin/x86-linux/mergeidngram
+A    data/local/dict/logios/Tools/MakeLM/bin/x86-linux/wfreq2vocab
+A    data/local/dict/logios/Tools/MakeLM/bin/x86-linux/idngram2stats
+A    data/local/dict/logios/Tools/MakeLM/bin/x86-linux/text2wngram
+A    data/local/dict/logios/Tools/MakeLM/bin/x86-linux/lm_combine
+A    data/local/dict/logios/Tools/MakeLM/bin/x86-linux/interpolate
+A    data/local/dict/logios/Tools/MakeLM/bin/x86-linux/binlm2arpa
+A    data/local/dict/logios/Tools/MakeLM/bin/x86-linux/text2idngram
+A    data/local/dict/logios/Tools/MakeLM/bin/x86-linux/ngram2mgram
+A    data/local/dict/logios/Tools/MakeLM/bin/x86-linux/text2wfreq
+A    data/local/dict/logios/Tools/MakeLM/bin/x86-linux/idngram2lm
+Checked out external at revision 10678.
+
+
+Fetching external item into 'data/local/dict/logios/Tools/MakeLM/bin/x86-nt':
+A    data/local/dict/logios/Tools/MakeLM/bin/x86-nt/wngram2idngram.exe
+A    data/local/dict/logios/Tools/MakeLM/bin/x86-nt/evallm.exe
+A    data/local/dict/logios/Tools/MakeLM/bin/x86-nt/mergeidngram.exe
+A    data/local/dict/logios/Tools/MakeLM/bin/x86-nt/wfreq2vocab.exe
+A    data/local/dict/logios/Tools/MakeLM/bin/x86-nt/idngram2stats.exe
+A    data/local/dict/logios/Tools/MakeLM/bin/x86-nt/text2wngram.exe
+A    data/local/dict/logios/Tools/MakeLM/bin/x86-nt/lm_combine.exe
+A    data/local/dict/logios/Tools/MakeLM/bin/x86-nt/interpolate.exe
+A    data/local/dict/logios/Tools/MakeLM/bin/x86-nt/binlm2arpa.exe
+A    data/local/dict/logios/Tools/MakeLM/bin/x86-nt/text2idngram.exe
+A    data/local/dict/logios/Tools/MakeLM/bin/x86-nt/ngram2mgram.exe
+A    data/local/dict/logios/Tools/MakeLM/bin/x86-nt/text2wfreq.exe
+A    data/local/dict/logios/Tools/MakeLM/bin/x86-nt/idngram2lm.exe
+A    data/local/dict/logios/Tools/MakeLM/bin/x86-nt/phoenix2corpus.exe
+Checked out external at revision 10678.
+
+
+Fetching external item into 'data/local/dict/logios/Tools/MakeDict/lib/dict':
+A    data/local/dict/logios/Tools/MakeDict/lib/dict/cmudict.0.7a_SPHINX_40
+A    data/local/dict/logios/Tools/MakeDict/lib/dict/cmudict_SPHINX_40
+A    data/local/dict/logios/Tools/MakeDict/lib/dict/README.txt
+A    data/local/dict/logios/Tools/MakeDict/lib/dict/SphinxPhones_40
+Checked out external at revision 13291.
+
+Checked out revision 13291.
+Pronounce> 	LEXILIB => /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/s5/data/local/dict/logios/Tools/MakeDict/lib
+Pronounce> 	WORDFILE => /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/s5/data/local/dict/missing-words.tmp
+Use of uninitialized value in concatenation (.) or string at /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/s5/data/local/dict/logios/Tools/MakeDict/lib/Pronounce.pm line 49.
+Pronounce> 	HANDDICT => 
+Pronounce> 	OUTDIR => /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/s5/data/local/dict
+Pronounce> 	PRONOUNCE => /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/s5/data/local/dict/logios/Tools/MakeDict/bin/x86-linux/pronounce
+Pronounce> 	LOGFILE => /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/s5/data/local/dict/pronunciation.log
+Pronounce> 	LEXICON => cmudict_SPHINX_40
+Pronounce> 	FORCE => 0
+Pronounce> 	SOURCE => loc
+Pronounce> 	OUTFILE => /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/s5/data/local/dict/missing-words.dict
+Pronounce> -P40 -r /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/s5/data/local/dict/logios/Tools/MakeDict/lib -d cmudict_SPHINX_40 -i /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/s5/data/local/dict/missing-words.tmp -o /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/s5/data/local/dict/missing-words.dict -e /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/s5/data/local/dict/pronunciation.log -v
+utils/prepare_lang.sh data/local/dict <UNK> data/local/lang data/lang
+Checking data/local/dict/silence_phones.txt ...
+--> reading data/local/dict/silence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/silence_phones.txt is OK
+
+Checking data/local/dict/optional_silence.txt ...
+--> reading data/local/dict/optional_silence.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/optional_silence.txt is OK
+
+Checking data/local/dict/nonsilence_phones.txt ...
+--> reading data/local/dict/nonsilence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/nonsilence_phones.txt is OK
+
+Checking disjoint: silence_phones.txt, nonsilence_phones.txt
+--> disjoint property is OK.
+
+Checking data/local/dict/lexicon.txt
+--> reading data/local/dict/lexicon.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/lexicon.txt is OK
+
+Checking data/local/dict/extra_questions.txt ...
+--> reading data/local/dict/extra_questions.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/extra_questions.txt is OK
+--> SUCCESS [validating dictionary directory data/local/dict]
+
+**Creating data/local/dict/lexiconp.txt from data/local/dict/lexicon.txt
+fstaddselfloops data/lang/phones/wdisambig_phones.int data/lang/phones/wdisambig_words.int 
+prepare_lang.sh: validating output directory
+utils/validate_lang.pl data/lang
+Checking data/lang/phones.txt ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang/phones.txt is OK
+
+Checking words.txt: #0 ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang/words.txt is OK
+
+Checking disjoint: silence.txt, nonsilence.txt, disambig.txt ...
+--> silence.txt and nonsilence.txt are disjoint
+--> silence.txt and disambig.txt are disjoint
+--> disambig.txt and nonsilence.txt are disjoint
+--> disjoint property is OK
+
+Checking sumation: silence.txt, nonsilence.txt, disambig.txt ...
+--> found no unexplainable phones in phones.txt
+
+Checking data/lang/phones/context_indep.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 15 entry/entries in data/lang/phones/context_indep.txt
+--> data/lang/phones/context_indep.int corresponds to data/lang/phones/context_indep.txt
+--> data/lang/phones/context_indep.csl corresponds to data/lang/phones/context_indep.txt
+--> data/lang/phones/context_indep.{txt, int, csl} are OK
+
+Checking data/lang/phones/nonsilence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 336 entry/entries in data/lang/phones/nonsilence.txt
+--> data/lang/phones/nonsilence.int corresponds to data/lang/phones/nonsilence.txt
+--> data/lang/phones/nonsilence.csl corresponds to data/lang/phones/nonsilence.txt
+--> data/lang/phones/nonsilence.{txt, int, csl} are OK
+
+Checking data/lang/phones/silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 15 entry/entries in data/lang/phones/silence.txt
+--> data/lang/phones/silence.int corresponds to data/lang/phones/silence.txt
+--> data/lang/phones/silence.csl corresponds to data/lang/phones/silence.txt
+--> data/lang/phones/silence.{txt, int, csl} are OK
+
+Checking data/lang/phones/optional_silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.int corresponds to data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.csl corresponds to data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.{txt, int, csl} are OK
+
+Checking data/lang/phones/disambig.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 15 entry/entries in data/lang/phones/disambig.txt
+--> data/lang/phones/disambig.int corresponds to data/lang/phones/disambig.txt
+--> data/lang/phones/disambig.csl corresponds to data/lang/phones/disambig.txt
+--> data/lang/phones/disambig.{txt, int, csl} are OK
+
+Checking data/lang/phones/roots.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 42 entry/entries in data/lang/phones/roots.txt
+--> data/lang/phones/roots.int corresponds to data/lang/phones/roots.txt
+--> data/lang/phones/roots.{txt, int} are OK
+
+Checking data/lang/phones/sets.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 42 entry/entries in data/lang/phones/sets.txt
+--> data/lang/phones/sets.int corresponds to data/lang/phones/sets.txt
+--> data/lang/phones/sets.{txt, int} are OK
+
+Checking data/lang/phones/extra_questions.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 14 entry/entries in data/lang/phones/extra_questions.txt
+--> data/lang/phones/extra_questions.int corresponds to data/lang/phones/extra_questions.txt
+--> data/lang/phones/extra_questions.{txt, int} are OK
+
+Checking data/lang/phones/word_boundary.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 351 entry/entries in data/lang/phones/word_boundary.txt
+--> data/lang/phones/word_boundary.int corresponds to data/lang/phones/word_boundary.txt
+--> data/lang/phones/word_boundary.{txt, int} are OK
+
+Checking optional_silence.txt ...
+--> reading data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.txt is OK
+
+Checking disambiguation symbols: #0 and #1
+--> data/lang/phones/disambig.txt has "#0" and "#1"
+--> data/lang/phones/disambig.txt is OK
+
+Checking topo ...
+
+Checking word_boundary.txt: silence.txt, nonsilence.txt, disambig.txt ...
+--> data/lang/phones/word_boundary.txt doesn't include disambiguation symbols
+--> data/lang/phones/word_boundary.txt is the union of nonsilence.txt and silence.txt
+--> data/lang/phones/word_boundary.txt is OK
+
+Checking word-level disambiguation symbols...
+--> data/lang/phones/wdisambig.txt exists (newer prepare_lang.sh)
+Checking word_boundary.int and disambig.int
+--> generating a 15 word sequence
+--> resulting phone sequence from L.fst corresponds to the word sequence
+--> L.fst is OK
+--> generating a 23 word sequence
+--> resulting phone sequence from L_disambig.fst corresponds to the word sequence
+--> L_disambig.fst is OK
+
+Checking data/lang/oov.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang/oov.txt
+--> data/lang/oov.int corresponds to data/lang/oov.txt
+--> data/lang/oov.{txt, int} are OK
+
+--> data/lang/L.fst is olabel sorted
+--> data/lang/L_disambig.fst is olabel sorted
+--> SUCCESS [validating lang directory data/lang]
+
+===== STAGE 4/11 TRAINING LANGUAGE MODEL =====
+Training the Language Model (LM)
+
+Training bigram LM...
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/s5/../../../tools/srilm/bin/i686-m64
+which: no ngram-count in (/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/s5/../../../src/bin:/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/s5/../../../src/chainbin:/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/s5/../../../src/featbin:/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/s5/../../../src/fgmmbin:/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/s5/../../../src/fstbin:/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/s5/../../../src/gmmbin:/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/s5/../../../src/ivectorbin:/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/s5/../../../src/kwsbin:/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/s5/../../../src/latbin:/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/s5/../../../src/lmbin:/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/s5/../../../src/nnet2bin:/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/s5/../../../src/nnet3bin:/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/s5/../../../src/nnetbin:/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/s5/../../../src/online2bin:/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/s5/../../../src/onlinebin:/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/s5/../../../src/rnnlmbin:/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/s5/../../../src/sgmm2bin:/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/s5/../../../src/sgmmbin:/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/s5/../../../src/tfrnnlmbin:/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/s5/../../../src/cudadecoderbin:/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/s5/utils/:/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/s5/../../../tools/openfst/bin:/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/s5:/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/bin:/apps/sox/14.4.2/bin:/apps/intel/Composer/debugger_2018/gdb/intel64_mic/bin:/apps/intel/Composer/compilers_and_libraries_2019.0.117/linux/bin/intel64:/apps/python/3.6.5/bin:/apps/cuda/10.1/bin:/usr/local/bin:/usr/lib64/qt-3.3/bin:/usr/lib64/ccache:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/bin:/opt/dell/srvadmin/iSM/bin)
+WARNING: story-name file does not exist in '/srv/scratch/z5160268/2020_TasteofResearch/CU_Kids_Corpus/spk-02-149/story'
+Giving the story the name '0'.
+WARNING: Skipping a speaker summary because no 'summary' folder exists in '/srv/scratch/z5160268/2020_TasteofResearch/CU_Kids_Corpus/spk-02-149'
+warning: discount coeff 1 is out of range: 0
+arpa2fst --disambig-symbol=#0 --read-symbol-table=/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/s5/data/lang/words.txt /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/s5/data/local/lm_srilm/bi.lm /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/Kaldi_CU/s5/data/lang/G.fst 
+LOG (arpa2fst[5.5.608~1-23868]:Read():arpa-file-parser.cc:94) Reading \data\ section.
+LOG (arpa2fst[5.5.608~1-23868]:Read():arpa-file-parser.cc:149) Reading \1-grams: section.
+WARNING (arpa2fst[5.5.608~1-23868]:Read():arpa-file-parser.cc:219) line 49 [-4.547122	ALE'S	-0.3260526] skipped: word 'ALE'S' not in symbol table
+WARNING (arpa2fst[5.5.608~1-23868]:Read():arpa-file-parser.cc:219) line 206 [-4.547122	BILS	-0.3134211] skipped: word 'BILS' not in symbol table
+WARNING (arpa2fst[5.5.608~1-23868]:Read():arpa-file-parser.cc:219) line 920 [-4.070001	GERBILS	-0.3249295] skipped: word 'GERBILS' not in symbol table
+WARNING (arpa2fst[5.5.608~1-23868]:Read():arpa-file-parser.cc:219) line 1006 [-4.547122	HADROSAUR	-0.2958499] skipped: word 'HADROSAUR' not in symbol table
+WARNING (arpa2fst[5.5.608~1-23868]:Read():arpa-file-parser.cc:219) line 1008 [-4.547122	HADROSAURS	-0.3248553] skipped: word 'HADROSAURS' not in symbol table
+WARNING (arpa2fst[5.5.608~1-23868]:Read():arpa-file-parser.cc:219) line 1077 [-4.547122	HIGGINS'S	-0.3259293] skipped: word 'HIGGINS'S' not in symbol table
+WARNING (arpa2fst[5.5.608~1-23868]:Read():arpa-file-parser.cc:219) line 1095 [-4.547122	HOLBROOK'S	-0.3169724] skipped: word 'HOLBROOK'S' not in symbol table
+WARNING (arpa2fst[5.5.608~1-23868]:Read():arpa-file-parser.cc:219) line 1144 [-4.547122	IGUANODON	-0.2958499] skipped: word 'IGUANODON' not in symbol table
+WARNING (arpa2fst[5.5.608~1-23868]:Read():arpa-file-parser.cc:219) line 2237 [-3.848152	STRUEMPH	-0.4767193] skipped: word 'STRUEMPH' not in symbol table
+LOG (arpa2fst[5.5.608~1-23868]:Read():arpa-file-parser.cc:149) Reading \2-grams: section.
+WARNING (arpa2fst[5.5.608~1-23868]:Read():arpa-file-parser.cc:219) line 2802 [-3.653976	<s> HADROSAURS] skipped: word 'HADROSAURS' not in symbol table
+WARNING (arpa2fst[5.5.608~1-23868]:Read():arpa-file-parser.cc:219) line 3163 [-3.148206	A HADROSAUR] skipped: word 'HADROSAUR' not in symbol table
+WARNING (arpa2fst[5.5.608~1-23868]:Read():arpa-file-parser.cc:219) line 3522 [-0.2772167	ALE'S WHICH] skipped: word 'ALE'S' not in symbol table
+WARNING (arpa2fst[5.5.608~1-23868]:Read():arpa-file-parser.cc:219) line 4863 [-0.2772167	BILS AND] skipped: word 'BILS' not in symbol table
+WARNING (arpa2fst[5.5.608~1-23868]:Read():arpa-file-parser.cc:219) line 5361 [-1.795731	CALLED IGUANODON] skipped: word 'IGUANODON' not in symbol table
+WARNING (arpa2fst[5.5.608~1-23868]:Read():arpa-file-parser.cc:219) line 7300 [-0.2772167	FLORENCE HOLBROOK'S] skipped: word 'HOLBROOK'S' not in symbol table
+WARNING (arpa2fst[5.5.608~1-23868]:Read():arpa-file-parser.cc:219) line 7741 [-0.754338	GERBILS BESIDES] skipped: word 'GERBILS' not in symbol table
+WARNING (arpa2fst[5.5.608~1-23868]:Read():arpa-file-parser.cc:219) line 7742 [-0.754338	GERBILS BILS] skipped: word 'GERBILS' not in symbol table
+WARNING (arpa2fst[5.5.608~1-23868]:Read():arpa-file-parser.cc:219) line 7743 [-0.754338	GERBILS DIDN'T] skipped: word 'GERBILS' not in symbol table
+WARNING (arpa2fst[5.5.608~1-23868]:Read():arpa-file-parser.cc:219) line 7819 [-0.754338	GINGER ALE'S] skipped: word 'ALE'S' not in symbol table
+WARNING (arpa2fst[5.5.608~1-23868]:Read():arpa-file-parser.cc:219) line 8277 [-0.2772167	HADROSAUR </s>] skipped: word 'HADROSAUR' not in symbol table
+WARNING (arpa2fst[5.5.608~1-23868]:Read():arpa-file-parser.cc:219) line 8279 [-0.2772167	HADROSAURS ARE] skipped: word 'HADROSAURS' not in symbol table
+WARNING (arpa2fst[5.5.608~1-23868]:Read():arpa-file-parser.cc:219) line 8883 [-0.2772167	HIGGINS'S JAR] skipped: word 'HIGGINS'S' not in symbol table
+WARNING (arpa2fst[5.5.608~1-23868]:Read():arpa-file-parser.cc:219) line 9107 [-0.2772167	HOLBROOK'S A] skipped: word 'HOLBROOK'S' not in symbol table
+WARNING (arpa2fst[5.5.608~1-23868]:Read():arpa-file-parser.cc:219) line 9455 [-0.2772167	IGUANODON </s>] skipped: word 'IGUANODON' not in symbol table
+WARNING (arpa2fst[5.5.608~1-23868]:Read():arpa-file-parser.cc:219) line 11392 [-2.033092	MR HIGGINS'S] skipped: word 'HIGGINS'S' not in symbol table
+WARNING (arpa2fst[5.5.608~1-23868]:Read():arpa-file-parser.cc:219) line 15050 [-0.9761867	STRUEMPH FROM] skipped: word 'STRUEMPH' not in symbol table
+WARNING (arpa2fst[5.5.608~1-23868]:Read():arpa-file-parser.cc:219) line 15051 [-0.3402572	STRUEMPH ILLUSTRATED] skipped: word 'STRUEMPH' not in symbol table
+WARNING (arpa2fst[5.5.608~1-23868]:Read():arpa-file-parser.cc:219) line 15052 [-0.9761867	STRUEMPH WE] skipped: word 'STRUEMPH' not in symbol table
+WARNING (arpa2fst[5.5.608~1-23868]:Read():arpa-file-parser.cc:219) line 15077 [-0.8854737	STUPID GERBILS] skipped: word 'GERBILS' not in symbol table
+WARNING (arpa2fst[5.5.608~1-23868]:Read():arpa-file-parser.cc:219) line 15335 [-0.08144942	TAYLOR STRUEMPH] skipped: word 'STRUEMPH' not in symbol table
+WARNING (arpa2fst[5.5.608~1-23868]:Read():arpa-file-parser.cc:259) Of 31 parse warnings, 30 were reported. Run program with --max_warnings=-1 to see all warnings
+LOG (arpa2fst[5.5.608~1-23868]:RemoveRedundantStates():arpa-lm-compiler.cc:359) Reduced num-states from 2675 to 2673
+
+===== STAGE 5/11 TRAINING MONOPHONE MODEL =====
+Training the monophone Acoustic Model
+
+steps/train_mono.sh --nj 5 --cmd run.pl data/train/ data/lang/ exp/mono
+steps/train_mono.sh: Initializing monophone system.
+steps/train_mono.sh: Compiling training graphs
+steps/train_mono.sh: Aligning data equally (pass 0)
+steps/train_mono.sh: Pass 1
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 2
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 3
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 4
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 5
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 6
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 7
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 8
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 9
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 10
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 11
+steps/train_mono.sh: Pass 12
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 13
+steps/train_mono.sh: Pass 14
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 15
+steps/train_mono.sh: Pass 16
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 17
+steps/train_mono.sh: Pass 18
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 19
+steps/train_mono.sh: Pass 20
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 21
+steps/train_mono.sh: Pass 22
+steps/train_mono.sh: Pass 23
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 24
+steps/train_mono.sh: Pass 25
+steps/train_mono.sh: Pass 26
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 27
+steps/train_mono.sh: Pass 28
+steps/train_mono.sh: Pass 29
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 30
+steps/train_mono.sh: Pass 31
+steps/train_mono.sh: Pass 32
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 33
+steps/train_mono.sh: Pass 34
+steps/train_mono.sh: Pass 35
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 36
+steps/train_mono.sh: Pass 37
+steps/train_mono.sh: Pass 38
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 39
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang/ exp/mono
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono/log/analyze_alignments.log
+53 warnings in exp/mono/log/acc.*.*.log
+6 warnings in exp/mono/log/init.log
+1866 warnings in exp/mono/log/align.*.*.log
+exp/mono: nj=5 align prob=-93.84 over 4.75h [retry=1.3%, fail=0.0%] states=132 gauss=975
+steps/train_mono.sh: Done training monophone system in exp/mono
+WARNING: the --mono, --left-biphone and --quinphone options are now deprecated and ignored.
+tree-info exp/mono/tree 
+tree-info exp/mono/tree 
+fstdeterminizestar --use-log=true 
+fsttablecompose data/lang/L_disambig.fst data/lang/G.fst 
+fstminimizeencoded 
+fstpushspecial 
+fstisstochastic data/lang/tmp/LG.fst 
+-0.110327 -0.110725
+[info]: LG not stochastic.
+fstcomposecontext --context-size=1 --central-position=0 --read-disambig-syms=data/lang/phones/disambig.int --write-disambig-syms=data/lang/tmp/disambig_ilabels_1_0.int data/lang/tmp/ilabels_1_0.216944 data/lang/tmp/LG.fst 
+fstisstochastic data/lang/tmp/CLG_1_0.fst 
+-0.110327 -0.110725
+[info]: CLG not stochastic.
+make-h-transducer --disambig-syms-out=exp/mono/graph/disambig_tid.int --transition-scale=1.0 data/lang/tmp/ilabels_1_0 exp/mono/tree exp/mono/final.mdl 
+fsttablecompose exp/mono/graph/Ha.fst data/lang/tmp/CLG_1_0.fst 
+fstminimizeencoded 
+fstdeterminizestar --use-log=true 
+fstrmsymbols exp/mono/graph/disambig_tid.int 
+fstrmepslocal 
+fstisstochastic exp/mono/graph/HCLGa.fst 
+3.66744e-05 -0.205175
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/mono/final.mdl exp/mono/graph/HCLGa.fst 
+steps/decode.sh --config conf/decode.config --nj 5 --cmd run.pl exp/mono/graph data/test exp/mono/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/mono/graph exp/mono/decode
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,12,104) and mean=48.9
+steps/diagnostic/analyze_lats.sh: see stats in exp/mono/decode/log/analyze_lattice_depth_stats.log
+exp/mono/decode/wer_10
+%WER 40.20 [ 3242 / 8064, 229 ins, 827 del, 2186 sub ]
+%SER 77.86 [ 707 / 908 ]
+exp/mono/decode/wer_11
+%WER 39.61 [ 3194 / 8064, 193 ins, 883 del, 2118 sub ]
+%SER 77.31 [ 702 / 908 ]
+exp/mono/decode/wer_12
+%WER 38.74 [ 3124 / 8064, 170 ins, 920 del, 2034 sub ]
+%SER 76.54 [ 695 / 908 ]
+exp/mono/decode/wer_13
+%WER 38.85 [ 3133 / 8064, 152 ins, 994 del, 1987 sub ]
+%SER 75.44 [ 685 / 908 ]
+exp/mono/decode/wer_14
+%WER 39.31 [ 3170 / 8064, 136 ins, 1065 del, 1969 sub ]
+%SER 75.33 [ 684 / 908 ]
+exp/mono/decode/wer_15
+%WER 39.60 [ 3193 / 8064, 125 ins, 1112 del, 1956 sub ]
+%SER 75.44 [ 685 / 908 ]
+exp/mono/decode/wer_16
+%WER 40.60 [ 3274 / 8064, 120 ins, 1159 del, 1995 sub ]
+%SER 75.77 [ 688 / 908 ]
+exp/mono/decode/wer_17
+%WER 40.87 [ 3296 / 8064, 113 ins, 1206 del, 1977 sub ]
+%SER 75.99 [ 690 / 908 ]
+exp/mono/decode/wer_7
+%WER 44.46 [ 3585 / 8064, 367 ins, 647 del, 2571 sub ]
+%SER 80.73 [ 733 / 908 ]
+exp/mono/decode/wer_8
+%WER 42.52 [ 3429 / 8064, 309 ins, 703 del, 2417 sub ]
+%SER 80.07 [ 727 / 908 ]
+exp/mono/decode/wer_9
+%WER 41.10 [ 3314 / 8064, 261 ins, 770 del, 2283 sub ]
+%SER 78.52 [ 713 / 908 ]
+steps/align_si.sh --nj 5 --cmd run.pl data/train data/lang exp/mono exp/mono_ali
+steps/align_si.sh: feature type is delta
+steps/align_si.sh: aligning data in data/train using model from exp/mono, putting alignments in exp/mono_ali
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/mono_ali
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono_ali/log/analyze_alignments.log
+steps/align_si.sh: done aligning data.
+
+===== STAGE 6/11 TRAINING TRIPHONE MODEL =====
+Training the triphone Acoustic Model
+
+steps/train_deltas.sh --cmd run.pl 1800 9000 data/train data/lang exp/mono_ali exp/tri1
+steps/train_deltas.sh: accumulating tree stats
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+steps/train_deltas.sh: building the tree
+steps/train_deltas.sh: converting alignments from exp/mono_ali to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri1
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1/log/analyze_alignments.log
+7 warnings in exp/tri1/log/update.*.log
+59 warnings in exp/tri1/log/acc.*.*.log
+32 warnings in exp/tri1/log/init_model.log
+264 warnings in exp/tri1/log/align.*.*.log
+1 warnings in exp/tri1/log/build_tree.log
+exp/tri1: nj=5 align prob=-91.52 over 4.75h [retry=1.5%, fail=0.0%] states=1296 gauss=9028 tree-impr=4.66
+steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri1
+tree-info exp/tri1/tree 
+tree-info exp/tri1/tree 
+fstcomposecontext --context-size=3 --central-position=1 --read-disambig-syms=data/lang/phones/disambig.int --write-disambig-syms=data/lang/tmp/disambig_ilabels_3_1.int data/lang/tmp/ilabels_3_1.222291 data/lang/tmp/LG.fst 
+fstisstochastic data/lang/tmp/CLG_3_1.fst 
+0 -0.110725
+[info]: CLG not stochastic.
+make-h-transducer --disambig-syms-out=exp/tri1/graph/disambig_tid.int --transition-scale=1.0 data/lang/tmp/ilabels_3_1 exp/tri1/tree exp/tri1/final.mdl 
+fstdeterminizestar --use-log=true 
+fstminimizeencoded 
+fsttablecompose exp/tri1/graph/Ha.fst data/lang/tmp/CLG_3_1.fst 
+fstrmsymbols exp/tri1/graph/disambig_tid.int 
+fstrmepslocal 
+fstisstochastic exp/tri1/graph/HCLGa.fst 
+0.000485015 -0.294297
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/tri1/final.mdl exp/tri1/graph/HCLGa.fst 
+steps/decode.sh --config conf/decode.config --nj 5 --cmd run.pl exp/tri1/graph data/test exp/tri1/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri1/graph exp/tri1/decode
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,4,32) and mean=14.8
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_lattice_depth_stats.log
+exp/tri1/decode/wer_10
+%WER 34.02 [ 2743 / 8064, 422 ins, 387 del, 1934 sub ]
+%SER 77.53 [ 704 / 908 ]
+exp/tri1/decode/wer_11
+%WER 32.38 [ 2611 / 8064, 361 ins, 419 del, 1831 sub ]
+%SER 76.76 [ 697 / 908 ]
+exp/tri1/decode/wer_12
+%WER 31.04 [ 2503 / 8064, 309 ins, 450 del, 1744 sub ]
+%SER 76.54 [ 695 / 908 ]
+exp/tri1/decode/wer_13
+%WER 29.94 [ 2414 / 8064, 264 ins, 481 del, 1669 sub ]
+%SER 75.44 [ 685 / 908 ]
+exp/tri1/decode/wer_14
+%WER 29.33 [ 2365 / 8064, 247 ins, 512 del, 1606 sub ]
+%SER 74.56 [ 677 / 908 ]
+exp/tri1/decode/wer_15
+%WER 28.45 [ 2294 / 8064, 214 ins, 533 del, 1547 sub ]
+%SER 73.46 [ 667 / 908 ]
+exp/tri1/decode/wer_16
+%WER 28.15 [ 2270 / 8064, 200 ins, 566 del, 1504 sub ]
+%SER 73.13 [ 664 / 908 ]
+exp/tri1/decode/wer_17
+%WER 27.95 [ 2254 / 8064, 188 ins, 595 del, 1471 sub ]
+%SER 72.80 [ 661 / 908 ]
+exp/tri1/decode/wer_7
+%WER 41.37 [ 3336 / 8064, 675 ins, 306 del, 2355 sub ]
+%SER 81.83 [ 743 / 908 ]
+exp/tri1/decode/wer_8
+%WER 38.44 [ 3100 / 8064, 577 ins, 333 del, 2190 sub ]
+%SER 80.18 [ 728 / 908 ]
+exp/tri1/decode/wer_9
+%WER 36.14 [ 2914 / 8064, 490 ins, 358 del, 2066 sub ]
+%SER 78.63 [ 714 / 908 ]
+steps/align_si.sh --nj 5 --cmd run.pl --use-graphs true data/train data/lang exp/tri1 exp/tri1_ali
+steps/align_si.sh: feature type is delta
+steps/align_si.sh: aligning data in data/train using model from exp/tri1, putting alignments in exp/tri1_ali
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri1_ali
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1_ali/log/analyze_alignments.log
+steps/align_si.sh: done aligning data.
+
+===== STAGE 7/11 LDA-MLLT FEATURE TRANSFORM =====
+Linear Discriminant Analysis-Maximum Likelihood Linear Transform (LDA-MLLT)
+
+steps/train_lda_mllt.sh --cmd run.pl --splice-opts --left-context=3 --right-context=3 1800 9000 data/train data/lang exp/tri1_ali exp/tri2b
+steps/train_lda_mllt.sh: Accumulating LDA statistics.
+steps/train_lda_mllt.sh: Accumulating tree stats
+steps/train_lda_mllt.sh: Getting questions for tree clustering.
+steps/train_lda_mllt.sh: Building the tree
+steps/train_lda_mllt.sh: Initializing the model
+steps/train_lda_mllt.sh: Converting alignments from exp/tri1_ali to use current tree
+steps/train_lda_mllt.sh: Compiling graphs of transcripts
+Training pass 1
+Training pass 2
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 3
+Training pass 4
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 5
+Training pass 6
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 7
+Training pass 8
+Training pass 9
+Training pass 10
+Aligning data
+Training pass 11
+Training pass 12
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 13
+Training pass 14
+Training pass 15
+Training pass 16
+Training pass 17
+Training pass 18
+Training pass 19
+Training pass 20
+Aligning data
+Training pass 21
+Training pass 22
+Training pass 23
+Training pass 24
+Training pass 25
+Training pass 26
+Training pass 27
+Training pass 28
+Training pass 29
+Training pass 30
+Aligning data
+Training pass 31
+Training pass 32
+Training pass 33
+Training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri2b
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2b/log/analyze_alignments.log
+68 warnings in exp/tri2b/log/acc.*.*.log
+8 warnings in exp/tri2b/log/update.*.log
+247 warnings in exp/tri2b/log/align.*.*.log
+1 warnings in exp/tri2b/log/build_tree.log
+36 warnings in exp/tri2b/log/init_model.log
+2 warnings in exp/tri2b/log/lda_acc.*.log
+exp/tri2b: nj=5 align prob=-47.05 over 4.75h [retry=1.4%, fail=0.0%] states=1368 gauss=9021 tree-impr=4.31 lda-sum=19.66 mllt:impr,logdet=1.32,1.94
+steps/train_lda_mllt.sh: Done training system with LDA+MLLT features in exp/tri2b
+tree-info exp/tri2b/tree 
+tree-info exp/tri2b/tree 
+make-h-transducer --disambig-syms-out=exp/tri2b/graph/disambig_tid.int --transition-scale=1.0 data/lang/tmp/ilabels_3_1 exp/tri2b/tree exp/tri2b/final.mdl 
+fsttablecompose exp/tri2b/graph/Ha.fst data/lang/tmp/CLG_3_1.fst 
+fstrmsymbols exp/tri2b/graph/disambig_tid.int 
+fstdeterminizestar --use-log=true 
+fstrmepslocal 
+fstminimizeencoded 
+fstisstochastic exp/tri2b/graph/HCLGa.fst 
+0.000485015 -0.29411
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/tri2b/final.mdl exp/tri2b/graph/HCLGa.fst 
+steps/decode.sh --config conf/decode.config --nj 5 --cmd run.pl exp/tri2b/graph data/test exp/tri2b/decode
+decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri2b/graph exp/tri2b/decode
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri2b/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,4,27) and mean=11.8
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri2b/decode/log/analyze_lattice_depth_stats.log
+exp/tri2b/decode/wer_10
+%WER 35.31 [ 2847 / 8064, 435 ins, 471 del, 1941 sub ]
+%SER 78.85 [ 716 / 908 ]
+exp/tri2b/decode/wer_11
+%WER 33.79 [ 2725 / 8064, 375 ins, 507 del, 1843 sub ]
+%SER 77.64 [ 705 / 908 ]
+exp/tri2b/decode/wer_12
+%WER 32.35 [ 2609 / 8064, 334 ins, 543 del, 1732 sub ]
+%SER 76.65 [ 696 / 908 ]
+exp/tri2b/decode/wer_13
+%WER 31.76 [ 2561 / 8064, 302 ins, 565 del, 1694 sub ]
+%SER 75.99 [ 690 / 908 ]
+exp/tri2b/decode/wer_14
+%WER 30.95 [ 2496 / 8064, 279 ins, 600 del, 1617 sub ]
+%SER 75.00 [ 681 / 908 ]
+exp/tri2b/decode/wer_15
+%WER 29.92 [ 2413 / 8064, 245 ins, 629 del, 1539 sub ]
+%SER 74.01 [ 672 / 908 ]
+exp/tri2b/decode/wer_16
+%WER 29.72 [ 2397 / 8064, 226 ins, 655 del, 1516 sub ]
+%SER 73.68 [ 669 / 908 ]
+exp/tri2b/decode/wer_17
+%WER 29.25 [ 2359 / 8064, 210 ins, 677 del, 1472 sub ]
+%SER 72.91 [ 662 / 908 ]
+exp/tri2b/decode/wer_7
+%WER 42.06 [ 3392 / 8064, 668 ins, 376 del, 2348 sub ]
+%SER 82.71 [ 751 / 908 ]
+exp/tri2b/decode/wer_8
+%WER 39.67 [ 3199 / 8064, 587 ins, 404 del, 2208 sub ]
+%SER 81.50 [ 740 / 908 ]
+exp/tri2b/decode/wer_9
+%WER 37.69 [ 3039 / 8064, 510 ins, 435 del, 2094 sub ]
+%SER 79.96 [ 726 / 908 ]
+steps/align_si.sh --nj 5 --cmd run.pl --use-graphs true data/train data/lang exp/tri2b exp/tri2b_ali
+steps/align_si.sh: feature type is lda
+steps/align_si.sh: aligning data in data/train using model from exp/tri2b, putting alignments in exp/tri2b_ali
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri2b_ali
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2b_ali/log/analyze_alignments.log
+steps/align_si.sh: done aligning data.
+
+===== STAGE 8/11 MMI AFTER LDA-MLLT =====
+Maximum Mutual Information (MMI)
+
+steps/make_denlats.sh --nj 5 --cmd run.pl data/train data/lang exp/tri2b exp/tri2b_denlats
+Making unigram grammar FST in exp/tri2b_denlats/lang
+Compiling decoding graph in exp/tri2b_denlats/dengraph
+tree-info exp/tri2b/tree 
+tree-info exp/tri2b/tree 
+make-h-transducer --disambig-syms-out=exp/tri2b_denlats/dengraph/disambig_tid.int --transition-scale=1.0 exp/tri2b_denlats/lang/tmp/ilabels_3_1 exp/tri2b/tree exp/tri2b/final.mdl 
+fstdeterminizestar --use-log=true 
+fstrmsymbols exp/tri2b_denlats/dengraph/disambig_tid.int 
+fstrmepslocal 
+fstminimizeencoded 
+fsttablecompose exp/tri2b_denlats/dengraph/Ha.fst exp/tri2b_denlats/lang/tmp/CLG_3_1.fst 
+fstisstochastic exp/tri2b_denlats/dengraph/HCLGa.fst 
+0.000485015 -0.29411
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/tri2b/final.mdl exp/tri2b_denlats/dengraph/HCLGa.fst 
+steps/make_denlats.sh: feature type is lda
+steps/make_denlats.sh: done generating denominator lattices.
+steps/train_mmi.sh data/train data/lang exp/tri2b_ali exp/tri2b_denlats exp/tri2b_mmi
+steps/train_mmi.sh: feature type is lda
+Iteration 0 of MMI training
+Iteration 0: objf was 0.150894768275043, MMI auxf change was 0.0058356035417007
+Iteration 1 of MMI training
+Iteration 1: objf was 0.162888432778375, MMI auxf change was 0.00479492011969604
+Iteration 2 of MMI training
+Iteration 2: objf was 0.173678446106918, MMI auxf change was 0.00468699813172536
+Iteration 3 of MMI training
+Iteration 3: objf was 0.183648921317769, MMI auxf change was 0.00473599716158087
+MMI training finished
+steps/decode.sh --config conf/decode.config --iter 4 --nj 5 --cmd run.pl exp/tri2b/graph data/test exp/tri2b_mmi/decode_it4
+decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd run.pl --iter 4 exp/tri2b/graph exp/tri2b_mmi/decode_it4
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri2b_mmi/decode_it4/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,5,31) and mean=13.0
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri2b_mmi/decode_it4/log/analyze_lattice_depth_stats.log
+exp/tri2b_mmi/decode_it4/wer_10
+%WER 37.57 [ 3030 / 8064, 427 ins, 600 del, 2003 sub ]
+%SER 82.27 [ 747 / 908 ]
+exp/tri2b_mmi/decode_it4/wer_11
+%WER 35.39 [ 2854 / 8064, 346 ins, 637 del, 1871 sub ]
+%SER 80.84 [ 734 / 908 ]
+exp/tri2b_mmi/decode_it4/wer_12
+%WER 34.19 [ 2757 / 8064, 296 ins, 680 del, 1781 sub ]
+%SER 79.63 [ 723 / 908 ]
+exp/tri2b_mmi/decode_it4/wer_13
+%WER 33.40 [ 2693 / 8064, 263 ins, 724 del, 1706 sub ]
+%SER 78.41 [ 712 / 908 ]
+exp/tri2b_mmi/decode_it4/wer_14
+%WER 32.55 [ 2625 / 8064, 235 ins, 771 del, 1619 sub ]
+%SER 77.64 [ 705 / 908 ]
+exp/tri2b_mmi/decode_it4/wer_15
+%WER 31.89 [ 2572 / 8064, 215 ins, 822 del, 1535 sub ]
+%SER 76.98 [ 699 / 908 ]
+exp/tri2b_mmi/decode_it4/wer_16
+%WER 31.60 [ 2548 / 8064, 199 ins, 865 del, 1484 sub ]
+%SER 76.43 [ 694 / 908 ]
+exp/tri2b_mmi/decode_it4/wer_17
+%WER 31.40 [ 2532 / 8064, 186 ins, 902 del, 1444 sub ]
+%SER 76.10 [ 691 / 908 ]
+exp/tri2b_mmi/decode_it4/wer_7
+%WER 44.02 [ 3550 / 8064, 682 ins, 452 del, 2416 sub ]
+%SER 86.34 [ 784 / 908 ]
+exp/tri2b_mmi/decode_it4/wer_8
+%WER 41.67 [ 3360 / 8064, 586 ins, 497 del, 2277 sub ]
+%SER 84.91 [ 771 / 908 ]
+exp/tri2b_mmi/decode_it4/wer_9
+%WER 39.41 [ 3178 / 8064, 500 ins, 540 del, 2138 sub ]
+%SER 83.70 [ 760 / 908 ]
+steps/decode.sh --config conf/decode.config --iter 3 --nj 5 --cmd run.pl exp/tri2b/graph data/test exp/tri2b_mmi/decode_it3
+decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd run.pl --iter 3 exp/tri2b/graph exp/tri2b_mmi/decode_it3
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri2b_mmi/decode_it3/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,4,30) and mean=13.4
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri2b_mmi/decode_it3/log/analyze_lattice_depth_stats.log
+exp/tri2b_mmi/decode_it3/wer_10
+%WER 35.93 [ 2897 / 8064, 384 ins, 577 del, 1936 sub ]
+%SER 80.29 [ 729 / 908 ]
+exp/tri2b_mmi/decode_it3/wer_11
+%WER 34.24 [ 2761 / 8064, 325 ins, 618 del, 1818 sub ]
+%SER 79.19 [ 719 / 908 ]
+exp/tri2b_mmi/decode_it3/wer_12
+%WER 32.82 [ 2647 / 8064, 285 ins, 651 del, 1711 sub ]
+%SER 77.64 [ 705 / 908 ]
+exp/tri2b_mmi/decode_it3/wer_13
+%WER 32.07 [ 2586 / 8064, 249 ins, 689 del, 1648 sub ]
+%SER 76.65 [ 696 / 908 ]
+exp/tri2b_mmi/decode_it3/wer_14
+%WER 31.42 [ 2534 / 8064, 231 ins, 737 del, 1566 sub ]
+%SER 76.21 [ 692 / 908 ]
+exp/tri2b_mmi/decode_it3/wer_15
+%WER 30.64 [ 2471 / 8064, 208 ins, 783 del, 1480 sub ]
+%SER 75.33 [ 684 / 908 ]
+exp/tri2b_mmi/decode_it3/wer_16
+%WER 30.47 [ 2457 / 8064, 194 ins, 824 del, 1439 sub ]
+%SER 74.67 [ 678 / 908 ]
+exp/tri2b_mmi/decode_it3/wer_17
+%WER 30.06 [ 2424 / 8064, 176 ins, 875 del, 1373 sub ]
+%SER 74.12 [ 673 / 908 ]
+exp/tri2b_mmi/decode_it3/wer_7
+%WER 42.35 [ 3415 / 8064, 627 ins, 441 del, 2347 sub ]
+%SER 85.68 [ 778 / 908 ]
+exp/tri2b_mmi/decode_it3/wer_8
+%WER 39.79 [ 3209 / 8064, 535 ins, 474 del, 2200 sub ]
+%SER 84.25 [ 765 / 908 ]
+exp/tri2b_mmi/decode_it3/wer_9
+%WER 37.79 [ 3047 / 8064, 462 ins, 525 del, 2060 sub ]
+%SER 82.38 [ 748 / 908 ]
+
+===== STAGE 9/11 BOOSTING =====
+
+steps/train_mmi.sh --boost 0.05 data/train data/lang exp/tri2b_ali exp/tri2b_denlats exp/tri2b_mmi_b0.05
+steps/train_mmi.sh: feature type is lda
+Iteration 0 of MMI training
+Iteration 0: objf was 0.148124534377021, MMI auxf change was 0.00611870189163539
+Iteration 1 of MMI training
+Iteration 1: objf was 0.160344764114559, MMI auxf change was 0.00486945789590473
+Iteration 2 of MMI training
+Iteration 2: objf was 0.171255692949386, MMI auxf change was 0.00472371373887364
+Iteration 3 of MMI training
+Iteration 3: objf was 0.181261705785679, MMI auxf change was 0.00473596788745621
+MMI training finished
+steps/decode.sh --config conf/decode.config --iter 4 --nj 5 --cmd run.pl exp/tri2b/graph data/test exp/tri2b_mmi_b0.05/decode_it4
+decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd run.pl --iter 4 exp/tri2b/graph exp/tri2b_mmi_b0.05/decode_it4
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri2b_mmi_b0.05/decode_it4/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,5,30) and mean=12.7
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri2b_mmi_b0.05/decode_it4/log/analyze_lattice_depth_stats.log
+exp/tri2b_mmi_b0.05/decode_it4/wer_10
+%WER 36.98 [ 2982 / 8064, 410 ins, 596 del, 1976 sub ]
+%SER 82.16 [ 746 / 908 ]
+exp/tri2b_mmi_b0.05/decode_it4/wer_11
+%WER 35.04 [ 2826 / 8064, 335 ins, 644 del, 1847 sub ]
+%SER 80.29 [ 729 / 908 ]
+exp/tri2b_mmi_b0.05/decode_it4/wer_12
+%WER 33.71 [ 2718 / 8064, 287 ins, 683 del, 1748 sub ]
+%SER 78.85 [ 716 / 908 ]
+exp/tri2b_mmi_b0.05/decode_it4/wer_13
+%WER 33.13 [ 2672 / 8064, 257 ins, 739 del, 1676 sub ]
+%SER 78.08 [ 709 / 908 ]
+exp/tri2b_mmi_b0.05/decode_it4/wer_14
+%WER 32.35 [ 2609 / 8064, 229 ins, 782 del, 1598 sub ]
+%SER 77.64 [ 705 / 908 ]
+exp/tri2b_mmi_b0.05/decode_it4/wer_15
+%WER 31.67 [ 2554 / 8064, 208 ins, 843 del, 1503 sub ]
+%SER 76.65 [ 696 / 908 ]
+exp/tri2b_mmi_b0.05/decode_it4/wer_16
+%WER 31.32 [ 2526 / 8064, 188 ins, 871 del, 1467 sub ]
+%SER 76.10 [ 691 / 908 ]
+exp/tri2b_mmi_b0.05/decode_it4/wer_17
+%WER 31.09 [ 2507 / 8064, 171 ins, 918 del, 1418 sub ]
+%SER 75.88 [ 689 / 908 ]
+exp/tri2b_mmi_b0.05/decode_it4/wer_7
+%WER 43.33 [ 3494 / 8064, 664 ins, 448 del, 2382 sub ]
+%SER 86.23 [ 783 / 908 ]
+exp/tri2b_mmi_b0.05/decode_it4/wer_8
+%WER 41.02 [ 3308 / 8064, 571 ins, 498 del, 2239 sub ]
+%SER 85.13 [ 773 / 908 ]
+exp/tri2b_mmi_b0.05/decode_it4/wer_9
+%WER 38.59 [ 3112 / 8064, 480 ins, 552 del, 2080 sub ]
+%SER 83.59 [ 759 / 908 ]
+steps/decode.sh --config conf/decode.config --iter 3 --nj 5 --cmd run.pl exp/tri2b/graph data/test exp/tri2b_mmi_b0.05/decode_it3
+decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd run.pl --iter 3 exp/tri2b/graph exp/tri2b_mmi_b0.05/decode_it3
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri2b_mmi_b0.05/decode_it3/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,4,29) and mean=13.0
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri2b_mmi_b0.05/decode_it3/log/analyze_lattice_depth_stats.log
+exp/tri2b_mmi_b0.05/decode_it3/wer_10
+%WER 35.54 [ 2866 / 8064, 367 ins, 587 del, 1912 sub ]
+%SER 80.18 [ 728 / 908 ]
+exp/tri2b_mmi_b0.05/decode_it3/wer_11
+%WER 33.74 [ 2721 / 8064, 304 ins, 628 del, 1789 sub ]
+%SER 78.19 [ 710 / 908 ]
+exp/tri2b_mmi_b0.05/decode_it3/wer_12
+%WER 32.73 [ 2639 / 8064, 267 ins, 665 del, 1707 sub ]
+%SER 77.31 [ 702 / 908 ]
+exp/tri2b_mmi_b0.05/decode_it3/wer_13
+%WER 31.76 [ 2561 / 8064, 238 ins, 705 del, 1618 sub ]
+%SER 76.65 [ 696 / 908 ]
+exp/tri2b_mmi_b0.05/decode_it3/wer_14
+%WER 31.18 [ 2514 / 8064, 216 ins, 738 del, 1560 sub ]
+%SER 75.99 [ 690 / 908 ]
+exp/tri2b_mmi_b0.05/decode_it3/wer_15
+%WER 30.42 [ 2453 / 8064, 196 ins, 789 del, 1468 sub ]
+%SER 75.11 [ 682 / 908 ]
+exp/tri2b_mmi_b0.05/decode_it3/wer_16
+%WER 30.26 [ 2440 / 8064, 185 ins, 826 del, 1429 sub ]
+%SER 74.67 [ 678 / 908 ]
+exp/tri2b_mmi_b0.05/decode_it3/wer_17
+%WER 30.26 [ 2440 / 8064, 174 ins, 874 del, 1392 sub ]
+%SER 74.34 [ 675 / 908 ]
+exp/tri2b_mmi_b0.05/decode_it3/wer_7
+%WER 42.01 [ 3388 / 8064, 611 ins, 442 del, 2335 sub ]
+%SER 85.35 [ 775 / 908 ]
+exp/tri2b_mmi_b0.05/decode_it3/wer_8
+%WER 39.53 [ 3188 / 8064, 526 ins, 477 del, 2185 sub ]
+%SER 83.70 [ 760 / 908 ]
+exp/tri2b_mmi_b0.05/decode_it3/wer_9
+%WER 37.41 [ 3017 / 8064, 438 ins, 515 del, 2064 sub ]
+%SER 81.61 [ 741 / 908 ]
+
+===== STAGE 10/11 MPE =====
+Minimum Phone Error (MPE)
+
+steps/train_mpe.sh data/train data/lang exp/tri2b_ali exp/tri2b_denlats exp/tri2b_mpe
+steps/train_mpe.sh: feature type is lda
+Iteration 0 of MPE training
+Iteration 0: objf was 0.925187964895641, MPE auxf change was 0.0322233756227338
+Iteration 1 of MPE training
+Iteration 1: objf was 0.937851563375845, MPE auxf change was 0.00837245820094111
+Iteration 2 of MPE training
+Iteration 2: objf was 0.941840565441427, MPE auxf change was 0.00356565864145813
+Iteration 3 of MPE training
+Iteration 3: objf was 0.943617068513161, MPE auxf change was 0.00209066430600125
+MPE training finished
+steps/decode.sh --config conf/decode.config --iter 4 --nj 5 --cmd run.pl exp/tri2b/graph data/test exp/tri2b_mpe/decode_it4
+decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd run.pl --iter 4 exp/tri2b/graph exp/tri2b_mpe/decode_it4
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri2b_mpe/decode_it4/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,4,28) and mean=12.2
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri2b_mpe/decode_it4/log/analyze_lattice_depth_stats.log
+exp/tri2b_mpe/decode_it4/wer_10
+%WER 34.92 [ 2816 / 8064, 342 ins, 526 del, 1948 sub ]
+%SER 79.19 [ 719 / 908 ]
+exp/tri2b_mpe/decode_it4/wer_11
+%WER 33.64 [ 2713 / 8064, 295 ins, 563 del, 1855 sub ]
+%SER 78.52 [ 713 / 908 ]
+exp/tri2b_mpe/decode_it4/wer_12
+%WER 32.76 [ 2642 / 8064, 267 ins, 614 del, 1761 sub ]
+%SER 77.86 [ 707 / 908 ]
+exp/tri2b_mpe/decode_it4/wer_13
+%WER 31.51 [ 2541 / 8064, 236 ins, 647 del, 1658 sub ]
+%SER 77.20 [ 701 / 908 ]
+exp/tri2b_mpe/decode_it4/wer_14
+%WER 31.06 [ 2505 / 8064, 214 ins, 676 del, 1615 sub ]
+%SER 76.43 [ 694 / 908 ]
+exp/tri2b_mpe/decode_it4/wer_15
+%WER 30.74 [ 2479 / 8064, 195 ins, 716 del, 1568 sub ]
+%SER 75.44 [ 685 / 908 ]
+exp/tri2b_mpe/decode_it4/wer_16
+%WER 30.26 [ 2440 / 8064, 178 ins, 749 del, 1513 sub ]
+%SER 74.67 [ 678 / 908 ]
+exp/tri2b_mpe/decode_it4/wer_17
+%WER 29.85 [ 2407 / 8064, 160 ins, 766 del, 1481 sub ]
+%SER 74.23 [ 674 / 908 ]
+exp/tri2b_mpe/decode_it4/wer_7
+%WER 41.44 [ 3342 / 8064, 567 ins, 440 del, 2335 sub ]
+%SER 83.15 [ 755 / 908 ]
+exp/tri2b_mpe/decode_it4/wer_8
+%WER 39.12 [ 3155 / 8064, 482 ins, 470 del, 2203 sub ]
+%SER 81.39 [ 739 / 908 ]
+exp/tri2b_mpe/decode_it4/wer_9
+%WER 36.73 [ 2962 / 8064, 395 ins, 501 del, 2066 sub ]
+%SER 80.29 [ 729 / 908 ]
+steps/decode.sh --config conf/decode.config --iter 3 --nj 5 --cmd run.pl exp/tri2b/graph data/test exp/tri2b_mpe/decode_it3
+decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd run.pl --iter 3 exp/tri2b/graph exp/tri2b_mpe/decode_it3
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri2b_mpe/decode_it3/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,4,29) and mean=12.3
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri2b_mpe/decode_it3/log/analyze_lattice_depth_stats.log
+exp/tri2b_mpe/decode_it3/wer_10
+%WER 34.82 [ 2808 / 8064, 337 ins, 516 del, 1955 sub ]
+%SER 79.30 [ 720 / 908 ]
+exp/tri2b_mpe/decode_it3/wer_11
+%WER 33.75 [ 2722 / 8064, 301 ins, 555 del, 1866 sub ]
+%SER 78.52 [ 713 / 908 ]
+exp/tri2b_mpe/decode_it3/wer_12
+%WER 32.55 [ 2625 / 8064, 261 ins, 606 del, 1758 sub ]
+%SER 77.20 [ 701 / 908 ]
+exp/tri2b_mpe/decode_it3/wer_13
+%WER 31.89 [ 2572 / 8064, 239 ins, 646 del, 1687 sub ]
+%SER 76.65 [ 696 / 908 ]
+exp/tri2b_mpe/decode_it3/wer_14
+%WER 31.27 [ 2522 / 8064, 214 ins, 677 del, 1631 sub ]
+%SER 75.99 [ 690 / 908 ]
+exp/tri2b_mpe/decode_it3/wer_15
+%WER 30.64 [ 2471 / 8064, 188 ins, 718 del, 1565 sub ]
+%SER 75.44 [ 685 / 908 ]
+exp/tri2b_mpe/decode_it3/wer_16
+%WER 30.21 [ 2436 / 8064, 176 ins, 744 del, 1516 sub ]
+%SER 74.78 [ 679 / 908 ]
+exp/tri2b_mpe/decode_it3/wer_17
+%WER 29.72 [ 2397 / 8064, 156 ins, 759 del, 1482 sub ]
+%SER 74.45 [ 676 / 908 ]
+exp/tri2b_mpe/decode_it3/wer_7
+%WER 41.93 [ 3381 / 8064, 580 ins, 426 del, 2375 sub ]
+%SER 82.93 [ 753 / 908 ]
+exp/tri2b_mpe/decode_it3/wer_8
+%WER 39.26 [ 3166 / 8064, 494 ins, 445 del, 2227 sub ]
+%SER 81.39 [ 739 / 908 ]
+exp/tri2b_mpe/decode_it3/wer_9
+%WER 36.93 [ 2978 / 8064, 414 ins, 484 del, 2080 sub ]
+%SER 80.40 [ 730 / 908 ]
+
+===== STAGE 11/11 LDA- MLLT + SAT =====
+Speaker Adaptive Training (SAT)
+
+steps/train_sat.sh 1800 9000 data/train data/lang exp/tri2b_ali exp/tri3b
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: obtaining initial fMLLR transforms since not present in exp/tri2b_ali
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+steps/train_sat.sh: Converting alignments from exp/tri2b_ali to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri3b
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri3b/log/analyze_alignments.log
+3 warnings in exp/tri3b/log/update.*.log
+26 warnings in exp/tri3b/log/init_model.log
+275 warnings in exp/tri3b/log/align.*.*.log
+93 warnings in exp/tri3b/log/acc.*.*.log
+1 warnings in exp/tri3b/log/build_tree.log
+11 warnings in exp/tri3b/log/fmllr.*.*.log
+steps/train_sat.sh: Likelihood evolution:
+-50.2593 -49.7205 -49.5736 -49.2689 -48.0698 -47.3699 -47.0007 -46.7408 -46.5379 -45.9992 -45.7772 -45.5479 -45.4064 -45.3045 -45.2086 -45.1141 -45.0249 -44.9422 -44.8613 -44.7067 -44.5897 -44.5212 -44.4555 -44.3925 -44.3318 -44.2712 -44.2119 -44.1538 -44.0983 -43.9982 -43.9227 -43.8978 -43.8832 -43.8732 
+exp/tri3b: nj=5 align prob=-47.15 over 4.75h [retry=1.5%, fail=0.1%] states=1408 gauss=9010 fmllr-impr=2.33 over 3.26h tree-impr=6.19
+steps/train_sat.sh: done training SAT system in exp/tri3b
+tree-info exp/tri3b/tree 
+tree-info exp/tri3b/tree 
+make-h-transducer --disambig-syms-out=exp/tri3b/graph/disambig_tid.int --transition-scale=1.0 data/lang/tmp/ilabels_3_1 exp/tri3b/tree exp/tri3b/final.mdl 
+fsttablecompose exp/tri3b/graph/Ha.fst data/lang/tmp/CLG_3_1.fst 
+fstminimizeencoded 
+fstrmsymbols exp/tri3b/graph/disambig_tid.int 
+fstrmepslocal 
+fstdeterminizestar --use-log=true 
+fstisstochastic exp/tri3b/graph/HCLGa.fst 
+0.000485015 -0.294028
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/tri3b/final.mdl exp/tri3b/graph/HCLGa.fst 
+steps/decode_fmllr.sh --config conf/decode.config --nj 5 --cmd run.pl exp/tri3b/graph data/test exp/tri3b/decode
+steps/decode.sh --scoring-opts  --num-threads 1 --skip-scoring false --acwt 0.083333 --nj 5 --cmd run.pl --beam 10.0 --model exp/tri3b/final.alimdl --max-active 2000 exp/tri3b/graph data/test exp/tri3b/decode.si
+decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri3b/graph exp/tri3b/decode.si
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri3b/decode.si/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,3,19) and mean=8.9
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri3b/decode.si/log/analyze_lattice_depth_stats.log
+exp/tri3b/decode.si/wer_10
+%WER 34.14 [ 2753 / 8064, 416 ins, 450 del, 1887 sub ]
+%SER 77.31 [ 702 / 908 ]
+exp/tri3b/decode.si/wer_11
+%WER 32.63 [ 2631 / 8064, 368 ins, 480 del, 1783 sub ]
+%SER 75.00 [ 681 / 908 ]
+exp/tri3b/decode.si/wer_12
+%WER 31.66 [ 2553 / 8064, 328 ins, 511 del, 1714 sub ]
+%SER 74.23 [ 674 / 908 ]
+exp/tri3b/decode.si/wer_13
+%WER 30.89 [ 2491 / 8064, 298 ins, 546 del, 1647 sub ]
+%SER 73.35 [ 666 / 908 ]
+exp/tri3b/decode.si/wer_14
+%WER 30.41 [ 2452 / 8064, 281 ins, 568 del, 1603 sub ]
+%SER 72.91 [ 662 / 908 ]
+exp/tri3b/decode.si/wer_15
+%WER 30.03 [ 2422 / 8064, 264 ins, 586 del, 1572 sub ]
+%SER 73.02 [ 663 / 908 ]
+exp/tri3b/decode.si/wer_16
+%WER 29.53 [ 2381 / 8064, 246 ins, 613 del, 1522 sub ]
+%SER 73.13 [ 664 / 908 ]
+exp/tri3b/decode.si/wer_17
+%WER 29.34 [ 2366 / 8064, 233 ins, 638 del, 1495 sub ]
+%SER 72.69 [ 660 / 908 ]
+exp/tri3b/decode.si/wer_7
+%WER 39.10 [ 3153 / 8064, 597 ins, 356 del, 2200 sub ]
+%SER 80.40 [ 730 / 908 ]
+exp/tri3b/decode.si/wer_8
+%WER 37.09 [ 2991 / 8064, 527 ins, 398 del, 2066 sub ]
+%SER 79.19 [ 719 / 908 ]
+exp/tri3b/decode.si/wer_9
+%WER 35.32 [ 2848 / 8064, 467 ins, 419 del, 1962 sub ]
+%SER 77.97 [ 708 / 908 ]
+steps/decode_fmllr.sh: feature type is lda
+steps/decode_fmllr.sh: getting first-pass fMLLR transforms.
+steps/decode_fmllr.sh: doing main lattice generation phase
+steps/decode_fmllr.sh: estimating fMLLR transforms a second time.
+steps/decode_fmllr.sh: doing a final pass of acoustic rescoring.

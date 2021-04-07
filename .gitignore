@@ -1,0 +1,12 @@
+# Ignore all data files
+s5/data/
+s5/exp
+s5/logios.log
+s5/core.*
+bin
+include
+lib
+lib64
+pip-selfcheck.json
+pyvenv.cfg
+s5/mfcc_hires

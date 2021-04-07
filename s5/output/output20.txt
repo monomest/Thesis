@@ -1,0 +1,35 @@
+utils/copy_data_dir.sh: copied data from data/train to data/train_hires
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_hires
+utils/data/perturb_data_dir_volume.sh: data/train_hires/feats.scp exists; moving it to data/train_hires/.backup/ as it wouldn't be valid any more.
+utils/data/perturb_data_dir_volume.sh: added volume perturbation to the data in data/train_hires
+steps/make_mfcc.sh --nj 16 --mfcc-config conf/mfcc_hires.conf --cmd run.pl data/train_hires exp/make_hires/train mfcc_hires
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_hires
+steps/make_mfcc.sh [info]: segments file exists: using that.
+steps/make_mfcc.sh: Succeeded creating MFCC features for train_hires
+steps/compute_cmvn_stats.sh data/train_hires exp/make_hires/train mfcc_hires
+Succeeded creating CMVN stats for train_hires
+fix_data_dir.sh: kept all 4758 utterances.
+fix_data_dir.sh: old files are kept in data/train_hires/.backup
+utils/copy_data_dir.sh: copied data from data/dev to data/dev_hires
+utils/validate_data_dir.sh: Successfully validated data-directory data/dev_hires
+steps/make_mfcc.sh --cmd run.pl --nj 10 --mfcc-config conf/mfcc_hires.conf data/dev_hires exp/make_hires/dev mfcc_hires
+steps/make_mfcc.sh: moving data/dev_hires/feats.scp to data/dev_hires/.backup
+utils/validate_data_dir.sh: Successfully validated data-directory data/dev_hires
+steps/make_mfcc.sh [info]: segments file exists: using that.
+steps/make_mfcc.sh: Succeeded creating MFCC features for dev_hires
+steps/compute_cmvn_stats.sh data/dev_hires exp/make_hires/dev mfcc_hires
+Succeeded creating CMVN stats for dev_hires
+fix_data_dir.sh: kept all 1056 utterances.
+fix_data_dir.sh: old files are kept in data/dev_hires/.backup
+utils/copy_data_dir.sh: copied data from data/test to data/test_hires
+utils/validate_data_dir.sh: Successfully validated data-directory data/test_hires
+steps/make_mfcc.sh --cmd run.pl --nj 10 --mfcc-config conf/mfcc_hires.conf data/test_hires exp/make_hires/test mfcc_hires
+steps/make_mfcc.sh: moving data/test_hires/feats.scp to data/test_hires/.backup
+utils/validate_data_dir.sh: Successfully validated data-directory data/test_hires
+steps/make_mfcc.sh [info]: segments file exists: using that.
+steps/make_mfcc.sh: Succeeded creating MFCC features for test_hires
+steps/compute_cmvn_stats.sh data/test_hires exp/make_hires/test mfcc_hires
+Succeeded creating CMVN stats for test_hires
+fix_data_dir.sh: kept all 908 utterances.
+fix_data_dir.sh: old files are kept in data/test_hires/.backup
+subset_data_dir.sh: cannot subset to more utterances than you originally had.

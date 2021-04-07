@@ -1,0 +1,72 @@
+utils/copy_data_dir.sh: copied data from data/train to data/train_hires
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_hires
+utils/data/perturb_data_dir_volume.sh: data/train_hires/feats.scp exists; moving it to data/train_hires/.backup/ as it wouldn't be valid any more.
+utils/data/perturb_data_dir_volume.sh: added volume perturbation to the data in data/train_hires
+steps/make_mfcc.sh --nj 16 --mfcc-config conf/mfcc_hires.conf --cmd run.pl data/train_hires exp/make_hires/train mfcc_hires
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_hires
+steps/make_mfcc.sh [info]: segments file exists: using that.
+steps/make_mfcc.sh: Succeeded creating MFCC features for train_hires
+steps/compute_cmvn_stats.sh data/train_hires exp/make_hires/train mfcc_hires
+Succeeded creating CMVN stats for train_hires
+fix_data_dir.sh: kept all 4758 utterances.
+fix_data_dir.sh: old files are kept in data/train_hires/.backup
+utils/copy_data_dir.sh: copied data from data/dev to data/dev_hires
+utils/validate_data_dir.sh: Successfully validated data-directory data/dev_hires
+steps/make_mfcc.sh --cmd run.pl --nj 10 --mfcc-config conf/mfcc_hires.conf data/dev_hires exp/make_hires/dev mfcc_hires
+steps/make_mfcc.sh: moving data/dev_hires/feats.scp to data/dev_hires/.backup
+utils/validate_data_dir.sh: Successfully validated data-directory data/dev_hires
+steps/make_mfcc.sh [info]: segments file exists: using that.
+steps/make_mfcc.sh: Succeeded creating MFCC features for dev_hires
+steps/compute_cmvn_stats.sh data/dev_hires exp/make_hires/dev mfcc_hires
+Succeeded creating CMVN stats for dev_hires
+fix_data_dir.sh: kept all 1056 utterances.
+fix_data_dir.sh: old files are kept in data/dev_hires/.backup
+utils/copy_data_dir.sh: copied data from data/test to data/test_hires
+utils/validate_data_dir.sh: Successfully validated data-directory data/test_hires
+steps/make_mfcc.sh --cmd run.pl --nj 10 --mfcc-config conf/mfcc_hires.conf data/test_hires exp/make_hires/test mfcc_hires
+steps/make_mfcc.sh: moving data/test_hires/feats.scp to data/test_hires/.backup
+utils/validate_data_dir.sh: Successfully validated data-directory data/test_hires
+steps/make_mfcc.sh [info]: segments file exists: using that.
+steps/make_mfcc.sh: Succeeded creating MFCC features for test_hires
+steps/compute_cmvn_stats.sh data/test_hires exp/make_hires/test mfcc_hires
+Succeeded creating CMVN stats for test_hires
+fix_data_dir.sh: kept all 908 utterances.
+fix_data_dir.sh: old files are kept in data/test_hires/.backup
+utils/subset_data_dir.sh: reducing #utt from 4758 to 500
+steps/train_lda_mllt.sh --cmd run.pl --num-iters 13 --splice-opts --left-context=3 --right-context=3 5500 90000 data/train_hires data/lang exp/tri2b_ali exp/nnet3_vp/tri3b
+steps/train_lda_mllt.sh: Accumulating LDA statistics.
+steps/train_lda_mllt.sh: Accumulating tree stats
+steps/train_lda_mllt.sh: Getting questions for tree clustering.
+steps/train_lda_mllt.sh: Building the tree
+steps/train_lda_mllt.sh: Initializing the model
+steps/train_lda_mllt.sh: Converting alignments from exp/tri2b_ali to use current tree
+steps/train_lda_mllt.sh: Compiling graphs of transcripts
+Training pass 1
+Training pass 2
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 3
+Training pass 4
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 5
+Training pass 6
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 7
+Training pass 8
+Training pass 9
+Training pass 10
+Aligning data
+Training pass 11
+Training pass 12
+steps/train_lda_mllt.sh: Estimating MLLT
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/nnet3_vp/tri3b
+steps/diagnostic/analyze_alignments.sh: see stats in exp/nnet3_vp/tri3b/log/analyze_alignments.log
+2 warnings in exp/nnet3_vp/tri3b/log/lda_acc.*.log
+24 warnings in exp/nnet3_vp/tri3b/log/acc.*.*.log
+1 warnings in exp/nnet3_vp/tri3b/log/build_tree.log
+1133 warnings in exp/nnet3_vp/tri3b/log/update.*.log
+48 warnings in exp/nnet3_vp/tri3b/log/align.*.*.log
+1194 warnings in exp/nnet3_vp/tri3b/log/init_model.log
+exp/nnet3_vp/tri3b: nj=5 align prob=-46.80 over 4.75h [retry=1.0%, fail=0.0%] states=3944 gauss=42727 tree-impr=5.12 lda-sum=19.90 mllt:impr,logdet=1.22,2.51
+steps/train_lda_mllt.sh: Done training system with LDA+MLLT features in exp/nnet3_vp/tri3b
+steps/online/nnet2/train_diag_ubm.sh --cmd run.pl --nj 30 --num-frames 200000 data/train_10k_hires 512 exp/nnet3_vp/tri3b exp/nnet3_vp/diag_ubm
+Refusing to split data because number of speakers 7 is less than the number of output .scp files 30 at utils/split_scp.pl line 114, <I> line 500.

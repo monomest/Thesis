@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Trans SYSTEM "trans-13.dtd">
+<Trans scribe="(unknown)" audio_filename="sent006" version="1" version_date="030328">
+<Episode>
+<Section type="report" startTime="0" endTime="4.9">
+<Turn startTime="0" endTime="4.9">
+<Sync time="0"/>
+the sandwich was so big that she couldn?t even get her mouth around it &lt;BR&gt;
+</Turn>
+</Section>
+</Episode>
+</Trans>
