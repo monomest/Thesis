@@ -14,3 +14,7 @@ cd /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5
 source thesis_env/bin/activate
 
 ./run.sh 2>&1 | tee output/output1.txt
+
+echo "$(date)" 2>&1 | tee -a output/output1.txt
+
+local/nnet3/run_tdnn_delta.sh 2>&1 | tee -a output/output1.txt
