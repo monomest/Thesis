@@ -26,19 +26,23 @@ To execute the steps using the supercomputer katana.
 2. Create a new screen using ```screen -S nameOfSession``` (the screen I'm using is called 'thesis')
 3. Request an interactive GPU node using ```qsub -I -l select=1:ngpus=2:ncpus=16:mem=80gb,walltime=10:00:00```. Once the node is ready, you are now in the node. The terminal will show (zID@kxxx), where kxxx is your node. 
 4. Now you are inside the screen, and inside the GPU node. Run whatever process you need. 
-5. Load modules by running ```./loadmodules.sh``` or
-```
-module load cuda/10.1
-module load python/3.6.5
-module load intel/19.0.0.117
-module load sox/14.4.2
-```
+5. To load modules and go inside the thesis virtual environment, run ```startup.sh```
+
 Note: If there is an error message saying Permission Denied when running a script, use ```chmod u+x -R /path/to/directory``` to change the permissions of all the files in the directory so that you have permission to execute. 
 
 To install any python packages not in katana, use a virtual environment: https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/
 The virtual environment I am using currently is kaldi/egs/renee_thesis/thesis_env ```source thesis_env/bin/activate``` 
 To list all the packages in this virtual environment use ```pip list```
 Currently my environment includes num2words package.
+
+**Connecting to GitHub**
+- To start a new git repository follow the instructions here: https://kbroman.org/github_tutorial/pages/init.html
+- When ready to push changes:
+  ```git add -A``` Adds all files
+  ```git commit -m "Commit message here"``` Commits changes with a messagr
+  ```git push```
+- If there are ```Permission Denied``` errors follow the instructions here: https://gist.github.com/adamjohnson/5682757
+- To check the status use ```git status```
 
 **Leaving katana**
 Asumming you are inside a screen, and inside a requested GPU node. 
