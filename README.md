@@ -38,9 +38,13 @@ Currently my environment includes num2words package.
 **Connecting to GitHub**
 - To start a new git repository follow the instructions here: https://kbroman.org/github_tutorial/pages/init.html
 - When ready to push changes:
+
   ```git add -A``` Adds all files
+
   ```git commit -m "Commit message here"``` Commits changes with a messagr
+
   ```git push```
+
 - If there are ```Permission Denied``` errors follow the instructions here: https://gist.github.com/adamjohnson/5682757
 - To check the status use ```git status```
 
@@ -59,3 +63,8 @@ Asumming you are inside a screen, and inside a requested GPU node.
 - To check if you are in a screen, type the command ```echo $TERM```
 - To list your screen, type command ```screen -list```
 - To detach a screen remotely, find the screen name using ```screen -list``` and then ```screen -d [name of screen]```
+
+**Bash things**
+- Create aliases in ```~./bashrc``` by editing ```~./bashrc``` and then running ```source ~./bashrc```: https://linuxize.com/post/how-to-create-bash-aliases/
+- Current aliases: ```t2renee_thesis``` ```t2chacmod```
+- Screen tabs: https://unix.stackexchange.com/questions/26248/tabs-when-using-screen/319364
