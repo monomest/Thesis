@@ -41,9 +41,9 @@ Currently my environment includes num2words package.
 
   ```git add -A``` Adds all files
 
-  ```git commit -m "Commit message here"``` Commits changes with a messagr
+  ```git commit -m "Commit message here"``` Commits changes with a message
 
-  ```git push```
+  ```git push origin master``` Pushes changes
 
 - If there are ```Permission Denied``` errors follow the instructions here: https://gist.github.com/adamjohnson/5682757
 - To check the status use ```git status```
