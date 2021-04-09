@@ -1,11 +1,12 @@
 #!/bin/bash
+#!/bin/bash
 
 #PBS -l select=1:ncpus=8:ngpus=1:mem=46gb
-#PBS -l walltime=4:00:00
+#PBS -l walltime=6:00:00
 #PBS -M renee.lu@unsw.edu.au
 #PBS -m ae
 #PBS -j oe
-#PBS -o /home/z5160268/Output2_Report
+#PBS -o /home/z5160268/Output4_Report
 
 # Go into thesis folder
 cd /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis
@@ -19,5 +20,8 @@ source thesis_env/bin/activate
 # Go into s5 folder
 cd s5
 
-# Run the script
-./run_speed_perturb.sh 2>&1 | tee output/output2.txt
+echo ""$(date)"" 2>&1 | tee output/output4.txt
+
+# This builds the TDNN
+local/nnet3/run_tdnn_delta.sh 2>&1 | tee -a output/output4.txt
+

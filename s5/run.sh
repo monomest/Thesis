@@ -12,7 +12,7 @@ n=5	# Number of jobs
 CUR_DIR=$(pwd)	# Path to current s5 directory
 CU_ROOT=/srv/scratch/z5160268/2020_TasteofResearch/CU_Kids_Corpus   # Path to CU Kids Speech Corpus on supercomputer
 
-stage=2	# This controls what stage to start running from
+stage=8	# This controls what stage to start running from
 
 echo "$(date)"  # Prints out the date and time
 

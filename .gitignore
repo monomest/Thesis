@@ -1,12 +1,14 @@
-# Ignore all data files
+# Ignore all files created by experiments
 s5/data/
 s5/exp
 s5/logios.log
 s5/core.*
+s5/conf
+s5/mfcc
+s5/mfcc_hires
 bin
 include
 lib
 lib64
 pip-selfcheck.json
 pyvenv.cfg
-s5/mfcc_hires

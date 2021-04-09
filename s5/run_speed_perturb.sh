@@ -12,7 +12,7 @@ n=5	# Number of jobs
 CUR_DIR=$(pwd)	# Path to current s5 directory
 CU_ROOT=/srv/scratch/z5160268/2020_TasteofResearch/CU_Kids_Corpus   # Path to CU Kids Speech Corpus on supercomputer
 
-stage=2	# This controls what stage to start running from
+stage=12	# This controls what stage to start running from
 
 echo "$(date)"  # Prints out the date and time
 
@@ -264,9 +264,11 @@ if [ $stage -le 12 ]; then
     echo
 
     #Train TDNN
-    local/nnet3/run_tdnn_delta.sh \
-    --speed_perturb true
+    local/chain/run_tdnnf.sh --train_set train \
+      --test_sets test --gmm tri3
 fi
 
+# Collect and resport WER results for all models
+local/sort_result.sh
 
 echo "===== SUCCESS: run.sh has completed. ====="
