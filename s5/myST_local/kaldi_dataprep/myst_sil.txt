@@ -1,0 +1,25 @@
+< Silence>
+< silence>
+<Silence>
+< Silence>
+< silence>
+<Silence>
+<silence >
+<silence>
+< no-signal>
+< no_signal>
+<No Signal>
+<No signa >
+<No signal>
+<No voice>
+<No-signal>
+<No_ signal>
+<No_signal>
+<no _ signal>
+<no _signal>
+<no signal>
+<no voice>
+<no_ signal>
+<no_signal>
+<no_speech>
+<no_voice>

@@ -1,0 +1,16 @@
+(())
+<COUGH>
+<Low pitch>
+<Noise>
+<SNIFF>
+<Yawn>
+<background noise>
+<cough>
+<disturbance>
+<echo>
+<inaudible>
+<noise>
+<nosie>
+<yawn>
+<Unclear audio>
+\[\]

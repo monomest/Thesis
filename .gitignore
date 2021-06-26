@@ -12,3 +12,4 @@ lib
 lib64
 pip-selfcheck.json
 pyvenv.cfg
+s5/wav2vec_projects/example-audio
