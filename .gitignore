@@ -13,3 +13,4 @@ lib64
 pip-selfcheck.json
 pyvenv.cfg
 s5/wav2vec_projects/example-audio
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210627
