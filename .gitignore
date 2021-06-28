@@ -13,9 +13,9 @@ lib64
 pip-selfcheck.json
 pyvenv.cfg
 s5/wav2vec_projects/example-audio
-/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210627
-/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210628
-/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210628-2
-/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210628-3
-/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210628-4
-/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/wav2vec2-base-timit-demo
+s5/myST_local/wav2vec2-base-myST-20210627
+s5/myST_local/wav2vec2-base-myST-20210628
+s5/myST_local/wav2vec2-base-myST-20210628-2
+s5/myST_local/wav2vec2-base-myST-20210628-3
+s5/myST_local/wav2vec2-base-myST-20210628-4
+s5/wav2vec_projects/wav2vec2-base-timit-demo
