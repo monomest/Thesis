@@ -19,16 +19,17 @@ import pandas as pd
 # ------------------------------------------
 #     Setting train and test portions
 # ------------------------------------------
-num_train = 1550
-num_test = 300
+num_train = 3300
+num_test = 500
 
 # ------------------------------------------
 #             Setting filepaths
 # ------------------------------------------
 
 # File path to MyST dataframe csv file,
-# generated from myST_prep.py
-myST_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_dataframe.csv"
+# generated from myST_prep.py and/or
+# myST_getShortWavs.py
+myST_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_shorten_dataframe.csv"
 # Where to save training dataframe
 myST_train_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_train.csv"
 # Where to save testing
@@ -48,6 +49,7 @@ class SplitPortionsTooLargeError(Exception):
 
 try:
     myST_df = pd.read_csv(myST_fp)
+    # Check validity of train and test portions
     num_rows = len(myST_df.index)
     if num_train+num_test > num_rows:
         raise SplitPortionsTooLargeError
@@ -59,10 +61,14 @@ try:
     # Convert dataframes to csv
     myST_train.to_csv(myST_train_fp, index=False)
     myST_test.to_csv(myST_test_fp, index=False)
-    print("SUCCESS: Created train and test portions in ",
-          myST_train_fp, " and ", myST_test_fp)
-    print("Train length:", len(myST_train))
-    print("Test length:", len(myST_test))
+    print("SUCCESS: Created train and test portions in",
+          myST_train_fp, "and", myST_test_fp)
+    train_hours = sum(myST_train['duration'].tolist())/(60*60)
+    test_hours = sum(myST_test['duration'].tolist())/(60*60)
+    print("Train files:", len(myST_train),
+          "| Train hours:", train_hours)
+    print("Test files:", len(myST_test),
+           "| Test hours:", test_hours)
 except FileNotFoundError:
     print("ERROR: File '", myST_fp, "' does not exist. Try running 'myST_prep.py' first.")
 except SplitPortionsTooLargeError:

@@ -14,10 +14,19 @@
 #pip install transformers
 #pip install soundfile
 #pip install jiwer
-
+print("------------------------------------------------------------------------")
+print("                 run_finetune_kids.py                                   ")
+print("------------------------------------------------------------------------")
 # ------------------------------------------
 #       Import required packages
 # ------------------------------------------
+# For accessing date and time
+from datetime import date
+from datetime import datetime
+now = datetime.now()
+# dd/mm/YY H:M:S
+dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
+print("Started:", dt_string) 
 # Import datasets and evaluation metric
 print("\n------> IMPORTING PACKAGES.... ---------------------------------------\n")
 print("-->Importing datasets...")
@@ -59,22 +68,27 @@ print("-->SUCCESS! All packages imported.")
 # ------------------------------------------
 #          Setting file paths
 # ------------------------------------------
-
+print("\n------> SETTING FILEPATHS... ----------------------------------------- \n")
 # Path to dataframe csv for MyST train
 myST_train_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_train.csv"
+print("--> myST_train_fp:", myST_train_fp)
 # Path to dataframe csv for MyST test
 myST_test_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_test.csv"
-# |-----------|---------------|
-# | file path | transcription |
-# |-----------|---------------|
-# |   ...     |      ...      |
-# |-----------|---------------|
+print("--> myST_test_fp:", myST_test_fp)
+# |-----------|---------------|----------|
+# | file path | transcription | duration |
+# |-----------|---------------|----------|
+# |   ...     |      ...      |  ..secs  |
+# |-----------|---------------|----------|
 # Path to datasets cache
 data_cache_fp = "/srv/scratch/z5160268/.cache/huggingface/datasets"
+print("--> data_cache_fp:", data_cache_fp)
 # Path to save vocab.json
 vocab_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/vocab.json"
+print("--> vocab_fp:", vocab_fp)
 # Path to save model output
-model_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210627"
+model_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210628-4"
+print("--> model_fp:", model_fp)
 
 # ------------------------------------------
 #         Preparing MyST dataset
@@ -82,7 +96,9 @@ model_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5
 # Run the following scripts to prepare data
 # 1) Prepare data from kaldi file: 
 # /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_exp/myST_prep.py
-# 2) Split data into train and test
+# 3) [Optional] Limit the files to certain duration:
+# /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/myST_getShortWavs.py
+# 2) Split data into train and test:
 # /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/myST_split.py
 
 print("\n------> PREPARING MYST DATASET... ------------------------------------\n")
@@ -91,6 +107,8 @@ print("\n------> PREPARING MYST DATASET... ------------------------------------\
 myST = load_dataset('csv', data_files={'train': myST_train_fp,
                                        'test': myST_test_fp},
                     cache_dir=data_cache_fp)
+# Remove the "duration" column
+myST = myST.remove_columns("duration")
 print("--> MyST dataset...")
 print(myST)
 # Display some random samples of the dataset
@@ -164,6 +182,8 @@ feature_extractor = Wav2Vec2FeatureExtractor(feature_size=1, sampling_rate=16000
 # Feature extractor and tokenizer wrapped into a single
 # Wav2Vec2Processor class so we only need a model and processor object
 processor = Wav2Vec2Processor(feature_extractor=feature_extractor, tokenizer=tokenizer)
+# Save to re-use the just created processor and the fine-tuned model
+processor.save_pretrained(model_fp)
 print("SUCCESS: Created feature extractor.")
 
 # ------------------------------------------
@@ -348,6 +368,9 @@ print("SUCCESS: Pre-trained checkpoint loaded.")
 #      depend on Timit dataset and might be suboptimal for this
 #      dataset.
 # For more info: https://huggingface.co/transformers/master/main_classes/trainer.html?highlight=trainer#trainingarguments
+
+# OG: weight_decay=0.005
+# OG: num_train_epochs=30
 training_args = TrainingArguments(
   output_dir=model_fp,
   group_by_length=True,
@@ -382,13 +405,18 @@ trainer = Trainer(
 # test data, it is by no means an optimally fine-tuned model, 
 # especially for MyST.
 print("\n------> STARTING TRAINING... ----------------------------------------- \n")
+torch.cuda.empty_cache()
 trainer.train()
+#trainer.evaluate()
+model.save_pretrained(model_fp)
+#trainer.save_model(model_fp)
 
 # ------------------------------------------
 #            Evaluation
 # ------------------------------------------
 # Evaluate fine-tuned model on test set.
 print("\n------> EVALUATING MODEL... ------------------------------------------ \n")
+torch.cuda.empty_cache()
 processor = Wav2Vec2Processor.from_pretrained(model_fp)
 model = Wav2Vec2ForCTC.from_pretrained(model_fp)
 # Now, we will make use of the map(...) function to predict 
@@ -433,6 +461,10 @@ with torch.no_grad():
 pred_ids = torch.argmax(logits, dim=-1)
 
 # convert ids to tokens
-" ".join(processor.tokenizer.convert_ids_to_tokens(pred_ids[0].tolist()))
+print(" ".join(processor.tokenizer.convert_ids_to_tokens(pred_ids[0].tolist())))
 
 print("\n------> SUCCESSFULLY FINISHED ---------------------------------------- \n")
+now = datetime.now()
+# dd/mm/YY H:M:S
+dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
+print("Finished:", dt_string)

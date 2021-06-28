@@ -1,0 +1,524 @@
+Using custom data configuration default-daa64e647581baf4
+Reusing dataset csv (/srv/scratch/z5160268/.cache/huggingface/datasets/csv/default-daa64e647581baf4/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0)
+  0%|          | 0/1 [00:00<?, ?ba/s]100%|██████████| 1/1 [00:00<00:00, 67.32ba/s]
+  0%|          | 0/1 [00:00<?, ?ba/s]100%|██████████| 1/1 [00:00<00:00, 386.22ba/s]
+------> IMPORTING PACKAGES.... ---------------------------------------
+
+-->Importing datasets...
+-->Importing random...
+-->Importing pandas & numpy...
+-->Importing re...
+-->Importing json...
+-->Importing Wav2VecCTC...
+-->Importing soundfile...
+-->Importing torch, dataclasses & typing...
+-->Importing from transformers for training...
+-->SUCCESS! All packages imported.
+
+------> PREPARING MYST DATASET... ------------------------------------
+
+--> MyST dataset...
+DatasetDict({
+    train: Dataset({
+        features: ['filepath', 'transcription'],
+        num_rows: 1550
+    })
+    test: Dataset({
+        features: ['filepath', 'transcription'],
+        num_rows: 300
+    })
+})
+--> Printing some random samples...
+                                            filepath                                      transcription
+0  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...  the flag's not turning because it's not a comp...
+1  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...  it sticks because it has iron and or no s yeah...
+2  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...           i am doing great how are you doing today
+3  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...              this means that a bear is an omnivore
+4  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...            a leaf that shoots up out of the ground
+SUCCESS: Prepared dataset.
+
+------> CREATING VOCABULARY... ---------------------------------------
+
+--> Creating map(...) function for vocab...
+--> Vocab len: 28 
+ {'q': 0, 'n': 1, "'": 2, 'e': 3, 'w': 4, 'i': 5, 'j': 6, 'g': 7, 'u': 8, 'v': 9, 'a': 10, 'd': 11, 'l': 12, 'c': 13, 'p': 14, 'm': 15, 'f': 16, 'z': 17, 'h': 18, 't': 19, 'x': 20, 's': 21, 'y': 22, 'b': 23, ' ': 24, 'r': 25, 'k': 26, 'o': 27}
+--> Vocab len: 30 
+ {'q': 0, 'n': 1, "'": 2, 'e': 3, 'w': 4, 'i': 5, 'j': 6, 'g': 7, 'u': 8, 'v': 9, 'a': 10, 'd': 11, 'l': 12, 'c': 13, 'p': 14, 'm': 15, 'f': 16, 'z': 17, 'h': 18, 't': 19, 'x': 20, 's': 21, 'y': 22, 'b': 23, 'r': 25, 'k': 26, 'o': 27, '|': 24, '[UNK]': 28, '[PAD]': 29}
+SUCCESS: Created vocabulary file at /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/vocab.json
+
+------> CREATING WAV2VEC2 FEATURE EXTRACTOR... -----------------------
+
+SUCCESS: Created feature extractor.
+
+------> PRE-PROCESSING DATA... ----------------------------------------- 
+
+
+Loading cached processed dataset at /srv/scratch/z5160268/.cache/huggingface/datasets/csv/default-daa64e647581baf4/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-5bf0b3ed826c4a82.arrow
+Loading cached processed dataset at /srv/scratch/z5160268/.cache/huggingface/datasets/csv/default-daa64e647581baf4/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-c76b7e6deb1b7ce0.arrow
+Loading cached processed dataset at /srv/scratch/z5160268/.cache/huggingface/datasets/csv/default-daa64e647581baf4/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-9fb2c8a803a33c74.arrow
+Loading cached processed dataset at /srv/scratch/z5160268/.cache/huggingface/datasets/csv/default-daa64e647581baf4/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-288e2bae8541a2d6.arrow
+Loading cached processed dataset at /srv/scratch/z5160268/.cache/huggingface/datasets/csv/default-daa64e647581baf4/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-dc463931436a610f.arrow
+Loading cached processed dataset at /srv/scratch/z5160268/.cache/huggingface/datasets/csv/default-daa64e647581baf4/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-45ad5a149ad10f8f.arrow
+Loading cached processed dataset at /srv/scratch/z5160268/.cache/huggingface/datasets/csv/default-daa64e647581baf4/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-116f3e6f52797c89.arrow
+Loading cached processed dataset at /srv/scratch/z5160268/.cache/huggingface/datasets/csv/default-daa64e647581baf4/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-da57618ca84dbc51.arrow
+--> Verifying data with a random sample...
+Target text: giving out heat
+Input array shape: (19394,)
+Sampling rate: 16000
+ #0:   0%|          | 0/49 [00:00<?, ?ba/s]
+ #1:   0%|          | 0/49 [00:00<?, ?ba/s][A
+
+ #2:   0%|          | 0/49 [00:00<?, ?ba/s][A[A
+
+
+ #3:   0%|          | 0/49 [00:00<?, ?ba/s][A[A[A/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
+  return array(a, dtype, copy=False, order=order)
+
+
+
+ #3:   2%|▏         | 1/49 [00:00<00:17,  2.75ba/s][A[A[A/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
+  return array(a, dtype, copy=False, order=order)
+
+ #1:   2%|▏         | 1/49 [00:00<00:19,  2.43ba/s][A/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
+  return array(a, dtype, copy=False, order=order)
+ #0:   2%|▏         | 1/49 [00:00<00:31,  1.51ba/s]
+ #1:   4%|▍         | 2/49 [00:00<00:17,  2.73ba/s][A/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
+  return array(a, dtype, copy=False, order=order)
+
+
+ #2:   2%|▏         | 1/49 [00:00<00:38,  1.24ba/s][A[A
+
+
+ #3:   4%|▍         | 2/49 [00:00<00:19,  2.40ba/s][A[A[A
+ #1:   6%|▌         | 3/49 [00:01<00:16,  2.82ba/s][A #0:   4%|▍         | 2/49 [00:01<00:29,  1.60ba/s]
+
+
+ #3:   6%|▌         | 3/49 [00:01<00:18,  2.52ba/s][A[A[A
+ #1:   8%|▊         | 4/49 [00:01<00:15,  2.88ba/s][A
+ #1:  10%|█         | 5/49 [00:01<00:14,  3.02ba/s][A
+
+
+ #3:   8%|▊         | 4/49 [00:01<00:18,  2.38ba/s][A[A[A #0:   6%|▌         | 3/49 [00:01<00:28,  1.63ba/s]
+
+ #2:   4%|▍         | 2/49 [00:01<00:41,  1.14ba/s][A[A
+ #1:  12%|█▏        | 6/49 [00:01<00:12,  3.31ba/s][A #0:   8%|▊         | 4/49 [00:02<00:25,  1.76ba/s]
+ #1:  14%|█▍        | 7/49 [00:02<00:13,  3.05ba/s][A
+
+
+ #3:  10%|█         | 5/49 [00:02<00:19,  2.21ba/s][A[A[A
+
+
+ #3:  12%|█▏        | 6/49 [00:02<00:17,  2.46ba/s][A[A[A
+ #1:  16%|█▋        | 8/49 [00:02<00:14,  2.92ba/s][A #0:  10%|█         | 5/49 [00:02<00:23,  1.89ba/s]
+
+ #2:   6%|▌         | 3/49 [00:02<00:41,  1.12ba/s][A[A
+
+
+ #3:  14%|█▍        | 7/49 [00:02<00:16,  2.53ba/s][A[A[A
+ #1:  18%|█▊        | 9/49 [00:03<00:14,  2.73ba/s][A #0:  12%|█▏        | 6/49 [00:03<00:21,  2.00ba/s]
+
+
+ #3:  16%|█▋        | 8/49 [00:03<00:13,  3.01ba/s][A[A[A
+
+
+ #3:  18%|█▊        | 9/49 [00:03<00:15,  2.62ba/s][A[A[A
+
+ #2:   8%|▊         | 4/49 [00:03<00:39,  1.14ba/s][A[A #0:  14%|█▍        | 7/49 [00:03<00:23,  1.82ba/s]
+ #1:  20%|██        | 10/49 [00:03<00:18,  2.06ba/s][A
+
+
+ #3:  20%|██        | 10/49 [00:03<00:13,  2.94ba/s][A[A[A
+ #1:  22%|██▏       | 11/49 [00:04<00:16,  2.33ba/s][A
+
+
+ #3:  22%|██▏       | 11/49 [00:04<00:12,  3.03ba/s][A[A[A
+
+ #2:  10%|█         | 5/49 [00:04<00:37,  1.19ba/s][A[A
+
+
+ #3:  24%|██▍       | 12/49 [00:04<00:12,  3.06ba/s][A[A[A
+ #1:  24%|██▍       | 12/49 [00:04<00:15,  2.36ba/s][A
+
+
+ #3:  27%|██▋       | 13/49 [00:04<00:11,  3.17ba/s][A[A[A
+
+ #2:  12%|█▏        | 6/49 [00:04<00:31,  1.39ba/s][A[A #0:  16%|█▋        | 8/49 [00:04<00:29,  1.39ba/s]
+ #1:  27%|██▋       | 13/49 [00:05<00:16,  2.23ba/s][A
+
+ #2:  14%|█▍        | 7/49 [00:05<00:24,  1.73ba/s][A[A
+
+
+ #3:  29%|██▊       | 14/49 [00:05<00:13,  2.59ba/s][A[A[A #0:  18%|█▊        | 9/49 [00:05<00:26,  1.50ba/s]
+
+ #2:  16%|█▋        | 8/49 [00:05<00:21,  1.88ba/s][A[A #0:  20%|██        | 10/49 [00:05<00:20,  1.94ba/s]
+ #1:  29%|██▊       | 14/49 [00:05<00:17,  1.99ba/s][A #0:  22%|██▏       | 11/49 [00:05<00:15,  2.43ba/s]
+
+
+ #3:  31%|███       | 15/49 [00:05<00:14,  2.36ba/s][A[A[A
+
+ #2:  18%|█▊        | 9/49 [00:05<00:19,  2.09ba/s][A[A #0:  24%|██▍       | 12/49 [00:06<00:13,  2.70ba/s]
+
+ #2:  20%|██        | 10/49 [00:06<00:15,  2.48ba/s][A[A
+
+
+ #3:  33%|███▎      | 16/49 [00:06<00:13,  2.53ba/s][A[A[A #0:  27%|██▋       | 13/49 [00:06<00:11,  3.11ba/s]
+
+ #2:  22%|██▏       | 11/49 [00:06<00:13,  2.88ba/s][A[A
+
+ #2:  24%|██▍       | 12/49 [00:06<00:11,  3.23ba/s][A[A #0:  29%|██▊       | 14/49 [00:06<00:10,  3.23ba/s]
+
+
+ #3:  35%|███▍      | 17/49 [00:06<00:12,  2.60ba/s][A[A[A #0:  31%|███       | 15/49 [00:06<00:09,  3.58ba/s]
+
+ #2:  27%|██▋       | 13/49 [00:06<00:10,  3.50ba/s][A[A #0:  33%|███▎      | 16/49 [00:06<00:07,  4.21ba/s]
+ #1:  31%|███       | 15/49 [00:06<00:24,  1.38ba/s][A
+
+
+ #3:  37%|███▋      | 18/49 [00:07<00:13,  2.27ba/s][A[A[A #0:  35%|███▍      | 17/49 [00:07<00:07,  4.04ba/s]
+
+ #2:  29%|██▊       | 14/49 [00:07<00:12,  2.82ba/s][A[A #0:  37%|███▋      | 18/49 [00:07<00:07,  3.89ba/s]
+
+
+ #3:  39%|███▉      | 19/49 [00:07<00:12,  2.38ba/s][A[A[A
+ #1:  33%|███▎      | 16/49 [00:07<00:24,  1.36ba/s][A #0:  39%|███▉      | 19/49 [00:07<00:07,  3.83ba/s]
+
+ #2:  31%|███       | 15/49 [00:07<00:13,  2.50ba/s][A[A #0:  41%|████      | 20/49 [00:07<00:06,  4.32ba/s]
+
+
+ #3:  41%|████      | 20/49 [00:07<00:13,  2.20ba/s][A[A[A #0:  43%|████▎     | 21/49 [00:08<00:06,  4.44ba/s]
+ #1:  35%|███▍      | 17/49 [00:08<00:22,  1.41ba/s][A
+
+ #2:  33%|███▎      | 16/49 [00:08<00:14,  2.22ba/s][A[A
+
+
+ #3:  43%|████▎     | 21/49 [00:08<00:12,  2.32ba/s][A[A[A #0:  45%|████▍     | 22/49 [00:08<00:07,  3.60ba/s]
+
+ #2:  35%|███▍      | 17/49 [00:08<00:13,  2.36ba/s][A[A #0:  47%|████▋     | 23/49 [00:08<00:07,  3.33ba/s]
+ #1:  37%|███▋      | 18/49 [00:08<00:21,  1.43ba/s][A
+
+
+ #3:  45%|████▍     | 22/49 [00:09<00:13,  1.98ba/s][A[A[A
+
+ #2:  37%|███▋      | 18/49 [00:09<00:12,  2.43ba/s][A[A #0:  49%|████▉     | 24/49 [00:09<00:08,  3.10ba/s]
+
+ #2:  39%|███▉      | 19/49 [00:09<00:10,  2.88ba/s][A[A #0:  51%|█████     | 25/49 [00:09<00:07,  3.40ba/s]
+
+
+ #3:  47%|████▋     | 23/49 [00:09<00:12,  2.13ba/s][A[A[A
+ #1:  39%|███▉      | 19/49 [00:09<00:19,  1.56ba/s][A
+
+
+ #3:  49%|████▉     | 24/49 [00:09<00:10,  2.36ba/s][A[A[A
+
+ #2:  41%|████      | 20/49 [00:09<00:11,  2.50ba/s][A[A #0:  53%|█████▎    | 26/49 [00:09<00:07,  3.11ba/s]
+ #1:  41%|████      | 20/49 [00:09<00:16,  1.72ba/s][A
+
+
+ #3:  51%|█████     | 25/49 [00:10<00:09,  2.53ba/s][A[A[A #0:  55%|█████▌    | 27/49 [00:10<00:07,  2.87ba/s]
+
+
+ #3:  53%|█████▎    | 26/49 [00:10<00:07,  2.92ba/s][A[A[A
+
+ #2:  43%|████▎     | 21/49 [00:10<00:12,  2.16ba/s][A[A
+ #1:  43%|████▎     | 21/49 [00:10<00:15,  1.78ba/s][A #0:  57%|█████▋    | 28/49 [00:10<00:06,  3.20ba/s]
+
+
+ #3:  55%|█████▌    | 27/49 [00:10<00:07,  2.87ba/s][A[A[A #0:  59%|█████▉    | 29/49 [00:10<00:06,  3.33ba/s]
+
+ #2:  45%|████▍     | 22/49 [00:10<00:11,  2.38ba/s][A[A
+
+
+ #3:  57%|█████▋    | 28/49 [00:10<00:07,  2.90ba/s][A[A[A #0:  61%|██████    | 30/49 [00:11<00:05,  3.32ba/s]
+ #1:  45%|████▍     | 22/49 [00:11<00:16,  1.64ba/s][A
+
+
+ #3:  59%|█████▉    | 29/49 [00:11<00:06,  3.23ba/s][A[A[A
+
+ #2:  47%|████▋     | 23/49 [00:11<00:13,  1.92ba/s][A[A #0:  63%|██████▎   | 31/49 [00:11<00:06,  2.83ba/s]
+
+
+ #3:  61%|██████    | 30/49 [00:11<00:05,  3.20ba/s][A[A[A #0:  65%|██████▌   | 32/49 [00:11<00:05,  2.87ba/s]
+
+
+ #3:  63%|██████▎   | 31/49 [00:11<00:05,  3.29ba/s][A[A[A
+
+
+ #3:  65%|██████▌   | 32/49 [00:12<00:04,  3.43ba/s][A[A[A
+
+ #2:  49%|████▉     | 24/49 [00:12<00:13,  1.80ba/s][A[A
+ #1:  47%|████▋     | 23/49 [00:12<00:19,  1.33ba/s][A #0:  67%|██████▋   | 33/49 [00:12<00:06,  2.41ba/s]
+
+
+ #3:  67%|██████▋   | 33/49 [00:12<00:04,  3.23ba/s][A[A[A
+
+ #2:  51%|█████     | 25/49 [00:12<00:12,  1.90ba/s][A[A
+
+
+ #3:  69%|██████▉   | 34/49 [00:12<00:04,  3.50ba/s][A[A[A
+ #1:  49%|████▉     | 24/49 [00:12<00:18,  1.38ba/s][A #0:  69%|██████▉   | 34/49 [00:13<00:07,  2.08ba/s]
+
+ #2:  53%|█████▎    | 26/49 [00:13<00:11,  1.97ba/s][A[A
+
+
+ #3:  71%|███████▏  | 35/49 [00:13<00:04,  3.24ba/s][A[A[A #0:  71%|███████▏  | 35/49 [00:13<00:05,  2.35ba/s]
+
+ #2:  55%|█████▌    | 27/49 [00:13<00:10,  2.18ba/s][A[A
+
+
+ #3:  73%|███████▎  | 36/49 [00:13<00:05,  2.36ba/s][A[A[A
+ #1:  51%|█████     | 25/49 [00:13<00:18,  1.27ba/s][A #0:  73%|███████▎  | 36/49 [00:13<00:05,  2.22ba/s]
+
+
+ #3:  76%|███████▌  | 37/49 [00:14<00:05,  2.20ba/s][A[A[A #0:  76%|███████▌  | 37/49 [00:14<00:05,  2.23ba/s]
+
+ #2:  57%|█████▋    | 28/49 [00:14<00:13,  1.58ba/s][A[A
+
+
+ #3:  78%|███████▊  | 38/49 [00:14<00:04,  2.41ba/s][A[A[A
+ #1:  53%|█████▎    | 26/49 [00:14<00:18,  1.26ba/s][A #0:  78%|███████▊  | 38/49 [00:14<00:04,  2.32ba/s] #0:  80%|███████▉  | 39/49 [00:14<00:03,  2.70ba/s]
+ #1:  55%|█████▌    | 27/49 [00:15<00:14,  1.50ba/s][A
+
+ #2:  59%|█████▉    | 29/49 [00:15<00:12,  1.55ba/s][A[A
+
+
+ #3:  80%|███████▉  | 39/49 [00:15<00:04,  2.14ba/s][A[A[A #0:  82%|████████▏ | 40/49 [00:15<00:03,  2.78ba/s]
+ #1:  57%|█████▋    | 28/49 [00:15<00:12,  1.67ba/s][A
+
+
+ #3:  82%|████████▏ | 40/49 [00:15<00:03,  2.39ba/s][A[A[A
+ #1:  59%|█████▉    | 29/49 [00:15<00:09,  2.17ba/s][A
+ #1:  61%|██████    | 30/49 [00:15<00:07,  2.65ba/s][A #0:  84%|████████▎ | 41/49 [00:15<00:03,  2.38ba/s]
+ #1:  63%|██████▎   | 31/49 [00:15<00:05,  3.30ba/s][A #0:  86%|████████▌ | 42/49 [00:15<00:02,  2.90ba/s]
+
+
+ #3:  84%|████████▎ | 41/49 [00:16<00:03,  2.18ba/s][A[A[A
+ #1:  65%|██████▌   | 32/49 [00:16<00:05,  3.29ba/s][A #0:  88%|████████▊ | 43/49 [00:16<00:01,  3.15ba/s]
+ #1:  67%|██████▋   | 33/49 [00:16<00:04,  3.74ba/s][A #0:  90%|████████▉ | 44/49 [00:16<00:01,  3.25ba/s]
+
+
+ #3:  86%|████████▌ | 42/49 [00:16<00:03,  2.14ba/s][A[A[A #0:  92%|█████████▏| 45/49 [00:16<00:01,  3.84ba/s]
+
+
+ #3:  88%|████████▊ | 43/49 [00:16<00:02,  2.34ba/s][A[A[A
+
+ #2:  61%|██████    | 30/49 [00:16<00:18,  1.01ba/s][A[A #0:  94%|█████████▍| 46/49 [00:16<00:00,  3.81ba/s] #0:  96%|█████████▌| 47/49 [00:17<00:00,  3.59ba/s]
+
+
+ #3:  90%|████████▉ | 44/49 [00:17<00:02,  2.40ba/s][A[A[A
+
+
+ #3:  92%|█████████▏| 45/49 [00:17<00:01,  2.82ba/s][A[A[A #0:  98%|█████████▊| 48/49 [00:17<00:00,  3.45ba/s]
+
+
+ #3:  94%|█████████▍| 46/49 [00:17<00:00,  3.12ba/s][A[A[A #0: 100%|██████████| 49/49 [00:17<00:00,  3.70ba/s] #0: 100%|██████████| 49/49 [00:17<00:00,  2.75ba/s]
+
+ #2:  63%|██████▎   | 31/49 [00:17<00:17,  1.00ba/s][A[A
+ #1:  69%|██████▉   | 34/49 [00:18<00:10,  1.43ba/s][A
+
+
+ #3:  96%|█████████▌| 47/49 [00:18<00:00,  2.87ba/s][A[A[A
+
+
+ #3:  98%|█████████▊| 48/49 [00:18<00:00,  3.23ba/s][A[A[A #3: 100%|██████████| 49/49 [00:18<00:00,  2.67ba/s]
+
+ #2:  65%|██████▌   | 32/49 [00:18<00:16,  1.03ba/s][A[A
+
+ #2:  67%|██████▋   | 33/49 [00:19<00:15,  1.01ba/s][A[A
+ #1:  71%|███████▏  | 35/49 [00:20<00:15,  1.11s/ba][A
+ #1:  73%|███████▎  | 36/49 [00:21<00:14,  1.10s/ba][A
+
+ #2:  69%|██████▉   | 34/49 [00:22<00:20,  1.35s/ba][A[A
+ #1:  76%|███████▌  | 37/49 [00:23<00:16,  1.41s/ba][A
+
+ #2:  71%|███████▏  | 35/49 [00:23<00:20,  1.47s/ba][A[A
+
+ #2:  73%|███████▎  | 36/49 [00:24<00:17,  1.34s/ba][A[A
+ #1:  78%|███████▊  | 38/49 [00:25<00:18,  1.70s/ba][A
+
+ #2:  76%|███████▌  | 37/49 [00:26<00:17,  1.48s/ba][A[A
+ #1:  80%|███████▉  | 39/49 [00:26<00:15,  1.55s/ba][A
+
+ #2:  78%|███████▊  | 38/49 [00:27<00:14,  1.31s/ba][A[A
+
+ #2:  80%|███████▉  | 39/49 [00:28<00:10,  1.09s/ba][A[A
+ #1:  82%|████████▏ | 40/49 [00:28<00:12,  1.44s/ba][A
+ #1:  84%|████████▎ | 41/49 [00:28<00:09,  1.15s/ba][A
+
+ #2:  82%|████████▏ | 40/49 [00:29<00:09,  1.03s/ba][A[A
+
+ #2:  84%|████████▎ | 41/49 [00:29<00:08,  1.01s/ba][A[A
+ #1:  86%|████████▌ | 42/49 [00:30<00:08,  1.21s/ba][A
+ #1:  88%|████████▊ | 43/49 [00:31<00:07,  1.22s/ba][A
+ #1:  90%|████████▉ | 44/49 [00:33<00:07,  1.58s/ba][A
+ #1:  92%|█████████▏| 45/49 [00:35<00:06,  1.55s/ba][A
+ #1:  94%|█████████▍| 46/49 [00:37<00:05,  1.90s/ba][A
+ #1:  96%|█████████▌| 47/49 [00:38<00:02,  1.48s/ba][A
+ #1:  98%|█████████▊| 48/49 [00:38<00:01,  1.23s/ba][A
+
+ #2:  86%|████████▌ | 42/49 [00:38<00:23,  3.41s/ba][A[A #1: 100%|██████████| 49/49 [00:39<00:00,  1.25ba/s]
+
+ #2:  88%|████████▊ | 43/49 [00:40<00:17,  2.84s/ba][A[A
+
+ #2:  90%|████████▉ | 44/49 [00:41<00:11,  2.28s/ba][A[A
+
+ #2:  92%|█████████▏| 45/49 [00:41<00:06,  1.66s/ba][A[A
+
+ #2:  94%|█████████▍| 46/49 [00:42<00:03,  1.30s/ba][A[A
+
+ #2:  96%|█████████▌| 47/49 [00:42<00:01,  1.00ba/s][A[A
+
+ #2:  98%|█████████▊| 48/49 [00:42<00:00,  1.27ba/s][A[A #2: 100%|██████████| 49/49 [00:42<00:00,  1.14ba/s]
+
+
+ #0:   0%|          | 0/10 [00:00<?, ?ba/s]
+ #1:   0%|          | 0/10 [00:00<?, ?ba/s][A
+
+ #2:   0%|          | 0/10 [00:00<?, ?ba/s][A[A
+
+
+ #3:   0%|          | 0/10 [00:00<?, ?ba/s][A[A[A/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
+  return array(a, dtype, copy=False, order=order)
+
+
+ #2:  10%|█         | 1/10 [00:00<00:02,  3.33ba/s][A[A/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
+  return array(a, dtype, copy=False, order=order)
+
+
+
+ #3:  10%|█         | 1/10 [00:00<00:03,  2.81ba/s][A[A[A/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
+  return array(a, dtype, copy=False, order=order)
+ #0:  10%|█         | 1/10 [00:00<00:04,  1.96ba/s]
+
+ #2:  20%|██        | 2/10 [00:00<00:02,  3.53ba/s][A[A/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
+  return array(a, dtype, copy=False, order=order)
+
+ #1:  10%|█         | 1/10 [00:00<00:05,  1.59ba/s][A
+
+
+ #3:  20%|██        | 2/10 [00:00<00:02,  3.07ba/s][A[A[A #0:  20%|██        | 2/10 [00:00<00:03,  2.49ba/s]
+
+ #2:  30%|███       | 3/10 [00:00<00:01,  3.54ba/s][A[A
+
+
+ #3:  30%|███       | 3/10 [00:00<00:02,  3.03ba/s][A[A[A #0:  30%|███       | 3/10 [00:01<00:02,  2.58ba/s]
+ #1:  20%|██        | 2/10 [00:01<00:04,  1.77ba/s][A #0:  40%|████      | 4/10 [00:01<00:01,  3.11ba/s]
+
+ #2:  40%|████      | 4/10 [00:01<00:01,  3.30ba/s][A[A #0:  50%|█████     | 5/10 [00:01<00:01,  3.75ba/s]
+ #1:  30%|███       | 3/10 [00:01<00:03,  1.98ba/s][A #0:  60%|██████    | 6/10 [00:01<00:00,  4.42ba/s] #0:  70%|███████   | 7/10 [00:01<00:00,  5.24ba/s]
+
+
+ #3:  40%|████      | 4/10 [00:01<00:02,  2.43ba/s][A[A[A
+
+ #2:  50%|█████     | 5/10 [00:01<00:01,  2.83ba/s][A[A
+ #1:  40%|████      | 4/10 [00:01<00:02,  2.22ba/s][A
+
+
+ #3:  50%|█████     | 5/10 [00:01<00:01,  2.60ba/s][A[A[A
+
+ #2:  60%|██████    | 6/10 [00:01<00:01,  3.04ba/s][A[A #0:  80%|████████  | 8/10 [00:02<00:00,  3.69ba/s]
+
+ #2:  70%|███████   | 7/10 [00:02<00:00,  3.58ba/s][A[A
+ #1:  50%|█████     | 5/10 [00:02<00:02,  2.33ba/s][A #0:  90%|█████████ | 9/10 [00:02<00:00,  3.50ba/s]
+
+
+ #3:  60%|██████    | 6/10 [00:02<00:01,  2.36ba/s][A[A[A
+
+ #2:  80%|████████  | 8/10 [00:02<00:00,  3.43ba/s][A[A
+ #1:  60%|██████    | 6/10 [00:02<00:01,  2.51ba/s][A #0: 100%|██████████| 10/10 [00:02<00:00,  4.13ba/s] #0: 100%|██████████| 10/10 [00:02<00:00,  4.03ba/s]
+
+ #2:  90%|█████████ | 9/10 [00:02<00:00,  3.50ba/s][A[A
+ #1:  70%|███████   | 7/10 [00:02<00:01,  2.64ba/s][A
+
+ #2: 100%|██████████| 10/10 [00:02<00:00,  3.76ba/s][A[A #2: 100%|██████████| 10/10 [00:02<00:00,  3.45ba/s]
+
+
+ #3:  70%|███████   | 7/10 [00:02<00:01,  2.15ba/s][A[A[A
+ #1:  80%|████████  | 8/10 [00:03<00:00,  2.91ba/s][A
+
+
+ #3:  80%|████████  | 8/10 [00:03<00:00,  2.63ba/s][A[A[A
+ #1:  90%|█████████ | 9/10 [00:03<00:00,  3.28ba/s][A #1: 100%|██████████| 10/10 [00:03<00:00,  3.01ba/s]
+
+
+ #3:  90%|█████████ | 9/10 [00:03<00:00,  2.70ba/s][A[A[A #3: 100%|██████████| 10/10 [00:03<00:00,  2.85ba/s]
+
+
+
+Some weights of the model checkpoint at facebook/wav2vec2-base were not used when initializing Wav2Vec2ForCTC: ['project_q.weight', 'project_hid.bias', 'project_q.bias', 'project_hid.weight', 'quantizer.weight_proj.bias', 'quantizer.weight_proj.weight', 'quantizer.codevectors']
+- This IS expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of Wav2Vec2ForCTC were not initialized from the model checkpoint at facebook/wav2vec2-base and are newly initialized: ['lm_head.bias', 'lm_head.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Using amp fp16 backend
+***** Running training *****
+  Num examples = 1550
+  Num Epochs = 30
+  Instantaneous batch size per device = 1
+  Total train batch size (w. parallel, distributed & accumulation) = 3
+  Gradient Accumulation steps = 1
+  Total optimization steps = 15510
+  0%|          | 0/15510 [00:00<?, ?it/s]SUCCESS: Data ready for training and evaluation.
+
+------> PREPARING FOR TRAINING & EVALUATION... ----------------------- 
+
+--> Defining data collator...
+SUCCESS: Data collator defined.
+--> Defining evaluation metric...
+SUCCESS: Defined WER evaluation metric.
+--> Loading pre-trained checkpoint...
+SUCCESS: Pre-trained checkpoint loaded.
+
+------> STARTING TRAINING... ----------------------------------------- 
+
+Traceback (most recent call last):
+  File "run_finetune_kids.py", line 386, in <module>
+    trainer.train()
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/transformers/trainer.py", line 1269, in train
+    tr_loss += self.training_step(model, inputs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/transformers/trainer.py", line 1752, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/transformers/trainer.py", line 1786, in compute_loss
+    outputs = model(**inputs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/torch/nn/parallel/data_parallel.py", line 167, in forward
+    outputs = self.parallel_apply(replicas, inputs, kwargs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/torch/nn/parallel/data_parallel.py", line 177, in parallel_apply
+    return parallel_apply(replicas, inputs, kwargs, self.device_ids[:len(replicas)])
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/torch/nn/parallel/parallel_apply.py", line 86, in parallel_apply
+    output.reraise()
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/torch/_utils.py", line 429, in reraise
+    raise self.exc_type(msg)
+RuntimeError: Caught RuntimeError in replica 0 on device 0.
+Original Traceback (most recent call last):
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/torch/nn/parallel/parallel_apply.py", line 61, in _worker
+    output = module(*input, **kwargs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/transformers/models/wav2vec2/modeling_wav2vec2.py", line 1472, in forward
+    return_dict=return_dict,
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/transformers/models/wav2vec2/modeling_wav2vec2.py", line 1074, in forward
+    return_dict=return_dict,
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/transformers/models/wav2vec2/modeling_wav2vec2.py", line 637, in forward
+    attention_mask,
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/torch/utils/checkpoint.py", line 177, in checkpoint
+    return CheckpointFunction.apply(function, preserve, *args)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/torch/utils/checkpoint.py", line 75, in forward
+    outputs = run_function(*args)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/transformers/models/wav2vec2/modeling_wav2vec2.py", line 630, in custom_forward
+    return module(*inputs, output_attentions)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/transformers/models/wav2vec2/modeling_wav2vec2.py", line 530, in forward
+    hidden_states, attention_mask=attention_mask, output_attentions=output_attentions
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/transformers/models/wav2vec2/modeling_wav2vec2.py", line 436, in forward
+    attn_weights = torch.bmm(query_states, key_states.transpose(1, 2))
+RuntimeError: CUDA out of memory. Tried to allocate 101.64 GiB (GPU 0; 31.75 GiB total capacity; 2.29 GiB already allocated; 25.47 GiB free; 4.85 GiB reserved in total by PyTorch)
+
+  0%|          | 0/15510 [00:21<?, ?it/s]
