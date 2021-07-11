@@ -1,0 +1,35 @@
+#!/bin/bash
+#!/bin/bash
+
+#PBS -l select=1:ncpus=8:ngpus=1:mem=46gb
+#PBS -l walltime=6:00:00
+#PBS -M renee.lu@unsw.edu.au
+#PBS -m ae
+#PBS -j oe
+#PBS -o /home/z5160268/Output21_wav2vec_Report
+
+# Go into thesis folder
+cd /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis
+
+# Activate virtual environment
+source thesis_env/bin/activate
+
+# Go into wav2vec_projects folder
+cd s5/wav2vec_projects
+
+echo ""$(date)"" 2>&1 | tee output/output21.txt
+
+# This prepares the data
+#python myST_prep.py 2>&1 | tee -a output/output21.txt
+
+# This gets rid of super long wav files
+#python myST_getShortWavs.py 2>&1 | tee -a output/output21.txt
+
+# This gets a list of speakers and their durations
+#python myST_getSpkrs.py 2>&1 | tee -a output/output21.txt
+
+# This splits the data into train and test set
+#python myST_split.py 2>&1 | tee -a output/output21.txt
+
+# This builds fine tune model with MyST corpus
+python run_finetune_kids_checkpoint_short.py 2>&1 | tee -a output/output21.txt

@@ -20,6 +20,14 @@ import re
 import os.path
 # For dealing with audio files
 import soundfile as sf
+# For file system related methods
+from pathlib import PurePath
+# For printing filepath
+import os
+
+# ------------------------------------------
+print('Running: ', os.path.abspath(__file__))
+# ------------------------------------------
 
 # ------------------------------------------
 #          Setting file paths
@@ -34,7 +42,7 @@ myST_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/
 # ------------------------------------------
 #    Extracting information from files
 # ------------------------------------------
-
+print("\n------> Extracting information from files... ------------------------\n")
 # Use wav.scp: Get recording IDs and filepaths
 with open(wavscp,"r") as f:
     lines=f.readlines()
@@ -59,9 +67,11 @@ with open(text, "r") as f:
         as_list = L.split(" ", 1)
         record_id_text.append(as_list[0])
         # Remove all speech tags and new lines from transcription
-        # @hes @unk_en @noise @laughs @sil
+        # @hes @unk_en @noise @laughs @sil side_speech no_signal "no signal"
         as_list[1] = as_list[1].replace("@hes", "").replace("@unk_en", "")
         as_list[1] = as_list[1].replace("@noise", "").replace("laughs", "")
+        as_list[1] = as_list[1].replace("side_speech", "")
+        as_list[1] = as_list[1].replace("no_signal", "").replace("no signal", "")
         as_list[1] = as_list[1].replace("@sil", "").replace("\n", "")
         as_list[1] = as_list[1].replace("@", "")
         # Remove extra whitespace between words
@@ -81,7 +91,7 @@ print("SUCCESS: extracted information from wav.scp and text.")
 # ------------------------------------------
 #             Verifying data
 # ------------------------------------------
-
+print("\n------> Verifying data... --------------------------------------------\n")
 # Checking data
 # Check recording IDs between files match up
 if record_id_wav == record_id_text:
@@ -101,16 +111,16 @@ else :
 # ------------------------------------------
 #        Putting data into dataframe
 # ------------------------------------------
-
+print("\n------> Putting data into dataframe... -------------------------------\n")
 # Put filepath, transcription and duration 
 # into dataframe.
 # Remove rows where there is no spoken words
 # Remove rows where wav file doesn't exist
-# |-----------|---------------|----------|
-# |  filepath | transcription | duration |
-# |-----------|---------------|----------|
-# |    ...    |     ...       |  ..secs  |
-# |    ...    |     ...       |  ..secs  |
+# |-----------|---------------|----------|----------|
+# |  filepath | transcription | duration | spkr id  |
+# |-----------|---------------|----------|----------|
+# |    ...    |     ...       |  ..secs  |  ......  |
+# |    ...    |     ...       |  ..secs  |  ......  |
 myST = pd.DataFrame(
         {'filepath': filepath,
          'transcription': transcription
@@ -121,35 +131,35 @@ myST = myST[myST.transcription != None]
 myST = myST[myST.transcription != ""]
 # Remove rows where the wav file does not exist
 filepath = myST['filepath'].tolist()
-print("Dropping rows where the wav file does not exist...")
-fileExists = []
-for index, fp in enumerate(filepath):
-    if index % 1000 == 0:
-        print("Up to file #:", index)
-    fileExists.append(os.path.isfile(fp))
-
+print("--> Dropping rows where the wav file does not exist...")
+fileExists = list(map(lambda fp: os.path.isfile(fp), filepath))
 # Add column 'file_exist' into dataframe
 myST['file_exist'] = fileExists
 # Keep only rows where file_exist is True
 myST = myST[myST.file_exist == True]
 # Drop the file_exist column from dataframe
-myST.drop('file_exist', axis=1, inplace=True)
+myST.drop(columns ='file_exist', inplace=True)
 
 # Get duration of each wav file
 filepath = myST['filepath'].tolist()
-print('Getting duration in seconds for each audio file...')
-length = []
-for index, fp in enumerate(filepath):
-    if index % 1000 == 0:
-        print("Up to file #:", index)
-    wavfile = sf.SoundFile(fp)
-    seconds = len(wavfile)/wavfile.samplerate
-    length.append(seconds)
+print('--> Getting duration in seconds for each audio file...')
+length = list(map(lambda fp: len(sf.SoundFile(fp))/sf.SoundFile(fp).samplerate, filepath))
 myST['duration'] = length
+
+# Get speaker id of each wav file
+# using a map(...) function and lambda function
+# Speaker ID = ------------------------------------------------------v
+# /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-11-13_08-56-43_MX_1.2/myst_012019_2013-11-13_08-56-43_MX_1.2_003.wav
+print("--> Getting speaker id for each wav file...")
+spkr_id = list(map(lambda fp: PurePath(fp).parts[9], filepath))
+myST['spkr_id'] = spkr_id
+# Save spkr_id as string so leading zeros are not removed
+myST['spkr_id'] = myST['spkr_id'].astype('str')
 
 # ------------------------------------------
 #      Save dataframe to csv file
 # ------------------------------------------
+print("\n------> Saving dataframe to csv file... ------------------------------\n")
 myST.to_csv(myST_fp,index=False)
 print("SUCCESS: Saved MyST dataframe to csv file", myST_fp)
 print("Dataframe length:", len(myST))

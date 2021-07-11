@@ -1,26 +1,35 @@
 # ---------------------------------------------------------
 # myST_split.py
 # Purpose: Split MyST speech corpus into train and test.
-#          Requires myST_dataframe.csv to exist.
-#          Must have run myST_prep.py.
+# Requirements: myST_dataframe.csv from myST_prep.py
+#               [optional] myST_shorten_dataframe.csv from myST_getShortWavs.py
+#               myST_spkrs.csv from myST_getSpkrs.py
 # Author: Renee Lu, 2021
 # ---------------------------------------------------------
-# There are 98441 total wav files, around 7 to 8
-# seconds long each. 
-# Train = 3-4hrs = 1550 wav files
-# Test = 30mins = 300 wav files
+
 # ------------------------------------------
 #          Importing libraries
 # ------------------------------------------
 
 # For dataframes
 import pandas as pd
+# For splitting data
+from sklearn.model_selection import train_test_split
+# For printing filepath
+import os
+
+# ------------------------------------------
+print('Running: ', os.path.abspath(__file__))
+# ------------------------------------------
 
 # ------------------------------------------
 #     Setting train and test portions
 # ------------------------------------------
-num_train = 3300
-num_test = 500
+print("\n------> Setting train and test portions ------------------------------\n")
+# Set as a fraction e.g. 0.5 = 50% of data
+num_test = 0.3
+num_train = 1-num_test
+print("--> Splitting as train:", num_train, "and test:", num_test)
 
 # ------------------------------------------
 #             Setting filepaths
@@ -30,48 +39,75 @@ num_test = 500
 # generated from myST_prep.py and/or
 # myST_getShortWavs.py
 myST_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_shorten_dataframe.csv"
+# Speaker information
+myST_spkrs_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_spkrs.csv"
+# Where to save spkrs train dataframe
+myST_spkrs_train_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_spkrs_train_all.csv"
+# Where to save spkrs test dataframe
+myST_spkrs_test_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_spkrs_test_all.csv"
 # Where to save training dataframe
-myST_train_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_train.csv"
+myST_train_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_train_all.csv"
 # Where to save testing
-myST_test_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_test.csv"
+myST_test_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_test_all.csv"
 
 # ------------------------------------------
-#              Custom exceptions
+#        Splitting by speakers
 # ------------------------------------------
-class SplitPortionsTooLargeError(Exception):
-    """Raised when train and split portions larger 
-       than number of existing wav files"""
-    pass
+print("\n------> Splitting by speakers... -------------------------------------\n")
+# Reading in myST dataframe from csv file, as string type
+# to preserve leading zeros in speaker id
+myST_df = pd.read_csv(myST_fp, dtype=str)
+# Converting duration column to float64
+myST_df["duration"] = myST_df["duration"].apply(pd.to_numeric)
+# Reading in speakers dataframe from csv file, as string type
+# to preserve leading zeros in speaker id
+spkrs_df = pd.read_csv(myST_spkrs_fp, dtype=str)
+# Converting duration column to float64
+spkrs_df["duration"] = spkrs_df["duration"].apply(pd.to_numeric)
+
+# Split into train and test by speakers
+train_spkrs, test_spkrs = train_test_split(spkrs_df, test_size=num_test, random_state=6, shuffle=True)
+print("--> Speakers in train:", len(train_spkrs))
+print("--> Hours in train:", train_spkrs['duration'].sum()/(60*60))
+print("--> Proportion of train:", (train_spkrs['duration'].sum()/(60*60))/(spkrs_df['duration'].sum()/(60*60)))
+print("--> Speakers in test:", len(test_spkrs))
+print("--> Hours in test:", test_spkrs['duration'].sum()/(60*60))
+print("--> Proportion of test:", (test_spkrs['duration'].sum()/(60*60))/(spkrs_df['duration'].sum()/(60*60)))
+# Convert spkrs dataframes to csv
+# Also save speaker id as string so leading zeros remain
+train_spkrs.to_csv(myST_spkrs_train_fp, index=False)
+test_spkrs.to_csv(myST_spkrs_test_fp, index=False)
+print("SUCCESS: Saved train and test spkrs in",
+      myST_spkrs_train_fp, "and",
+      myST_spkrs_test_fp)
 
 # ------------------------------------------
-#              Splitting data
+#      Splitting into train and test
 # ------------------------------------------
+print("\n------> Splitting into train and test... -----------------------------\n")
+# Use isin() to filter myST dataframe by speakers appearing in train & test dataframe
+train_spkrs_list = train_spkrs.drop(columns='duration')
+#print("Train_spkrs:",train_spkrs.head())
+keys_train = list(train_spkrs_list.columns.values)
+all_spkrs_index = myST_df.set_index(keys_train).index
+train_spkrs_index = train_spkrs_list.set_index(keys_train).index
+# Get all the train rows i.e. speakers in train speakers
+train_df = myST_df[all_spkrs_index.isin(train_spkrs_index)]
+#print("train_df:",train_df.head())
+# Get all the test rows i.e. speakers NOT in train speakers
+test_df = myST_df[~all_spkrs_index.isin(train_spkrs_index)]
+#print("test_df",test_df.head())
 
-try:
-    myST_df = pd.read_csv(myST_fp)
-    # Check validity of train and test portions
-    num_rows = len(myST_df.index)
-    if num_train+num_test > num_rows:
-        raise SplitPortionsTooLargeError
-    # Use the top and bottom files for train and test.
-    # Assume train and test portions are so small they
-    # will not overlap.
-    myST_train = myST_df.head(num_train)
-    myST_test = myST_df.tail(num_test)
-    # Convert dataframes to csv
-    myST_train.to_csv(myST_train_fp, index=False)
-    myST_test.to_csv(myST_test_fp, index=False)
-    print("SUCCESS: Created train and test portions in",
-          myST_train_fp, "and", myST_test_fp)
-    train_hours = sum(myST_train['duration'].tolist())/(60*60)
-    test_hours = sum(myST_test['duration'].tolist())/(60*60)
-    print("Train files:", len(myST_train),
-          "| Train hours:", train_hours)
-    print("Test files:", len(myST_test),
-           "| Test hours:", test_hours)
-except FileNotFoundError:
-    print("ERROR: File '", myST_fp, "' does not exist. Try running 'myST_prep.py' first.")
-except SplitPortionsTooLargeError:
-    print("ERROR: The wav files in train (", num_train, ") and test (", num_test,
-          ") portions are greater than the amount of existing wav files (",
-          num_rows, ").")
+# ------------------------------------------
+#          Saving to csv files
+# ------------------------------------------
+train_df.to_csv(myST_train_fp, index=False)
+test_df.to_csv(myST_test_fp, index=False)
+print("SUCCESS: Created train and test portions in",
+      myST_train_fp, "and", myST_test_fp)
+train_hours = sum(train_df['duration'].tolist())/(60*60)
+test_hours = sum(test_df['duration'].tolist())/(60*60)
+print("Train files:", len(train_df),
+      "| Train hours:", train_hours)
+print("Test files:", len(test_df),
+      "| Test hours:", test_hours)

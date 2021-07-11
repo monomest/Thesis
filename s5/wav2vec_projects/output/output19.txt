@@ -1,0 +1,332 @@
+Mon Jul 5 19:48:08 AEST 2021
+SUCCESS: Created train and test portions in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_train_short.csv and /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_test_short.csv
+Train files: 300 | Train hours: 0.5460082118055555
+Test files: 100 | Test hours: 0.1627185937499999
+Using custom data configuration default-37316b26926a9f32
+0 tables [00:00, ? tables/s]                            0 tables [00:00, ? tables/s]                              0%|          | 0/1 [00:00<?, ?ba/s]100%|██████████| 1/1 [00:00<00:00, 287.10ba/s]
+  0%|          | 0/1 [00:00<?, ?ba/s]100%|██████████| 1/1 [00:00<00:00, 534.17ba/s]------------------------------------------------------------------------
+                 run_finetune_kids.py                                   
+------------------------------------------------------------------------
+Started: 05/07/2021 19:48:18
+
+------> IMPORTING PACKAGES.... ---------------------------------------
+
+-->Importing datasets...
+-->Importing random...
+-->Importing pandas & numpy...
+-->Importing re...
+-->Importing json...
+-->Importing Wav2VecCTC...
+-->Importing soundfile...
+-->Importing torch, dataclasses & typing...
+-->Importing from transformers for training...
+-->SUCCESS! All packages imported.
+
+------> SETTING FILEPATHS... ----------------------------------------- 
+
+--> myST_train_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_train_short.csv
+--> myST_test_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_test_short.csv
+--> data_cache_fp: /srv/scratch/z5160268/.cache/huggingface/datasets
+--> vocab_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/vocab_short.json
+--> model_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210705-short
+
+------> PREPARING MYST DATASET... ------------------------------------
+
+Downloading and preparing dataset csv/default (download: Unknown size, generated: Unknown size, post-processed: Unknown size, total: Unknown size) to /srv/scratch/z5160268/.cache/huggingface/datasets/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0...
+Dataset csv downloaded and prepared to /srv/scratch/z5160268/.cache/huggingface/datasets/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0. Subsequent calls will reuse this data.
+--> MyST dataset...
+DatasetDict({
+    train: Dataset({
+        features: ['filepath', 'transcription', 'spkr_id'],
+        num_rows: 300
+    })
+    test: Dataset({
+        features: ['filepath', 'transcription', 'spkr_id'],
+        num_rows: 100
+    })
+})
+--> Printing some random samples...
+                                            filepath  ... spkr_id
+0  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...  ...  990015
+1  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...  ...  990015
+2  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...  ...   13211
+3  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...  ...  990015
+4  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...  ...  997472
+
+[5 rows x 3 columns]
+SUCCESS: Prepared dataset.
+
+------> CREATING VOCABULARY... ---------------------------------------
+
+--> Creating map(...) function for vocab...
+--> Vocab len: 28 
+ {'t': 0, "'": 1, 'k': 2, 'w': 3, 'j': 4, 'v': 5, 'b': 6, 's': 7, 'o': 8, 'f': 9, 'p': 10, 'u': 11, 'e': 12, 'y': 13, ' ': 14, 'l': 15, 'g': 16, 'a': 17, 'd': 18, 'x': 19, 'i': 20, 'q': 21, 'r': 22, 'h': 23, 'm': 24, 'n': 25, 'c': 26, 'z': 27}
+--> Vocab len: 30 
+ {'t': 0, "'": 1, 'k': 2, 'w': 3, 'j': 4, 'v': 5, 'b': 6, 's': 7, 'o': 8, 'f': 9, 'p': 10, 'u': 11, 'e': 12, 'y': 13, 'l': 15, 'g': 16, 'a': 17, 'd': 18, 'x': 19, 'i': 20, 'q': 21, 'r': 22, 'h': 23, 'm': 24, 'n': 25, 'c': 26, 'z': 27, '|': 14, '[UNK]': 28, '[PAD]': 29}
+SUCCESS: Created vocabulary file at /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/vocab_short.json
+
+------> CREATING WAV2VEC2 FEATURE EXTRACTOR... -----------------------
+
+SUCCESS: Created feature extractor.
+
+------> PRE-PROCESSING DATA... ----------------------------------------- 
+
+
+ #0:   0%|          | 0/75 [00:00<?, ?ex/s]
+ #1:   0%|          | 0/75 [00:00<?, ?ex/s][A
+
+ #2:   0%|          | 0/75 [00:00<?, ?ex/s][A[A
+
+
+ #3:   0%|          | 0/75 [00:00<?, ?ex/s][A[A[A
+
+ #2:   1%|▏         | 1/75 [00:00<00:09,  7.98ex/s][A[A
+
+
+ #3:   1%|▏         | 1/75 [00:00<00:08,  8.52ex/s][A[A[A
+ #1:   1%|▏         | 1/75 [00:00<00:11,  6.28ex/s][A #0:   1%|▏         | 1/75 [00:00<00:14,  5.25ex/s]
+
+ #2:   5%|▌         | 4/75 [00:00<00:06, 10.21ex/s][A[A
+
+
+ #3:  13%|█▎        | 10/75 [00:00<00:05, 11.65ex/s][A[A[A
+ #1:   8%|▊         | 6/75 [00:00<00:08,  8.43ex/s][A #0:   8%|▊         | 6/75 [00:00<00:09,  7.17ex/s]
+
+ #2:  13%|█▎        | 10/75 [00:00<00:04, 13.53ex/s][A[A
+
+
+ #3:  23%|██▎       | 17/75 [00:00<00:03, 15.16ex/s][A[A[A
+ #1:  21%|██▏       | 16/75 [00:00<00:05, 11.61ex/s][A #0:  16%|█▌        | 12/75 [00:00<00:06,  9.70ex/s]
+
+ #2:  21%|██▏       | 16/75 [00:00<00:03, 17.53ex/s][A[A
+ #1:  39%|███▊      | 29/75 [00:00<00:02, 15.95ex/s][A
+
+
+ #3:  28%|██▊       | 21/75 [00:00<00:02, 18.48ex/s][A[A[A #0:  23%|██▎       | 17/75 [00:00<00:04, 12.77ex/s]
+
+ #2:  32%|███▏      | 24/75 [00:00<00:02, 22.86ex/s][A[A
+
+
+ #3:  39%|███▊      | 29/75 [00:00<00:01, 23.60ex/s][A[A[A #0:  29%|██▉       | 22/75 [00:00<00:03, 16.29ex/s]
+ #1:  61%|██████▏   | 46/75 [00:00<00:01, 21.71ex/s][A
+
+ #2:  45%|████▌     | 34/75 [00:00<00:01, 29.69ex/s][A[A #0:  36%|███▌      | 27/75 [00:00<00:02, 20.09ex/s]
+ #1:  73%|███████▎  | 55/75 [00:00<00:00, 27.79ex/s][A
+
+
+ #3:  45%|████▌     | 34/75 [00:00<00:01, 27.00ex/s][A[A[A
+
+ #2:  57%|█████▋    | 43/75 [00:00<00:00, 36.96ex/s][A[A
+ #1:  85%|████████▌ | 64/75 [00:00<00:00, 34.54ex/s][A
+
+
+ #3:  53%|█████▎    | 40/75 [00:00<00:01, 31.42ex/s][A[A[A #0:  48%|████▊     | 36/75 [00:00<00:01, 25.20ex/s]
+
+ #2:  71%|███████   | 53/75 [00:00<00:00, 45.09ex/s][A[A
+
+
+ #3:  64%|██████▍   | 48/75 [00:00<00:00, 37.99ex/s][A[A[A
+
+ #2:  85%|████████▌ | 64/75 [00:00<00:00, 54.74ex/s][A[A
+ #1: 100%|██████████| 75/75 [00:00<00:00, 41.60ex/s][A #1: 100%|██████████| 75/75 [00:00<00:00, 77.09ex/s] #0:  56%|█████▌    | 42/75 [00:00<00:01, 29.67ex/s]
+
+
+ #3:  75%|███████▍  | 56/75 [00:01<00:00, 44.81ex/s][A[A[A
+
+ #2:  99%|█████████▊| 74/75 [00:01<00:00, 61.61ex/s][A[A #0:  69%|██████▉   | 52/75 [00:01<00:00, 37.44ex/s] #2: 100%|██████████| 75/75 [00:01<00:00, 68.49ex/s]
+
+
+ #3:  87%|████████▋ | 65/75 [00:01<00:00, 51.38ex/s][A[A[A #0:  79%|███████▊  | 59/75 [00:01<00:00, 41.87ex/s]
+
+
+ #3: 100%|██████████| 75/75 [00:01<00:00, 59.93ex/s][A[A[A #3: 100%|██████████| 75/75 [00:01<00:00, 59.52ex/s] #0:  91%|█████████ | 68/75 [00:01<00:00, 49.47ex/s] #0: 100%|██████████| 75/75 [00:01<00:00, 55.15ex/s]
+
+
+
+ #0:   0%|          | 0/25 [00:00<?, ?ex/s]
+ #1:   0%|          | 0/25 [00:00<?, ?ex/s][A
+
+ #2:   0%|          | 0/25 [00:00<?, ?ex/s][A[A
+
+
+ #3:   0%|          | 0/25 [00:00<?, ?ex/s][A[A[A #0:  16%|█▌        | 4/25 [00:00<00:00, 36.33ex/s]
+ #1:  24%|██▍       | 6/25 [00:00<00:00, 52.79ex/s][A
+
+ #2:  16%|█▌        | 4/25 [00:00<00:00, 30.97ex/s][A[A
+
+
+ #3:  12%|█▏        | 3/25 [00:00<00:00, 23.01ex/s][A[A[A
+
+ #2:  48%|████▊     | 12/25 [00:00<00:00, 37.73ex/s][A[A #0:  56%|█████▌    | 14/25 [00:00<00:00, 42.58ex/s]
+ #1:  68%|██████▊   | 17/25 [00:00<00:00, 58.17ex/s][A
+
+
+ #3:  64%|██████▍   | 16/25 [00:00<00:00, 30.19ex/s][A[A[A #3: 100%|██████████| 25/25 [00:00<00:00, 82.05ex/s] #1: 100%|██████████| 25/25 [00:00<00:00, 76.57ex/s] #0: 100%|██████████| 25/25 [00:00<00:00, 71.46ex/s]
+
+ #2:  88%|████████▊ | 22/25 [00:00<00:00, 45.73ex/s][A[A #2: 100%|██████████| 25/25 [00:00<00:00, 65.97ex/s]
+
+
+
+--> Verifying data with a random sample...
+Target text: north and s n and s are um on one side they will attract but if like n and n or s and s are on one side they'll repel
+Input array shape: (213456,)
+Sampling rate: 16000
+ #0:   0%|          | 0/10 [00:00<?, ?ba/s]
+ #1:   0%|          | 0/10 [00:00<?, ?ba/s][A
+
+ #2:   0%|          | 0/10 [00:00<?, ?ba/s][A[A
+
+
+ #3:   0%|          | 0/10 [00:00<?, ?ba/s][A[A[A/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
+  return array(a, dtype, copy=False, order=order)
+
+ #1:  10%|█         | 1/10 [00:00<00:02,  3.16ba/s][A/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
+  return array(a, dtype, copy=False, order=order)
+
+
+ #2:  10%|█         | 1/10 [00:00<00:02,  3.27ba/s][A[A/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
+  return array(a, dtype, copy=False, order=order)
+
+
+
+ #3:  10%|█         | 1/10 [00:00<00:02,  3.27ba/s][A[A[A
+
+ #2:  20%|██        | 2/10 [00:00<00:02,  3.40ba/s][A[A
+ #1:  20%|██        | 2/10 [00:00<00:02,  3.29ba/s][A
+
+
+ #3:  20%|██        | 2/10 [00:00<00:02,  3.14ba/s][A[A[A/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
+  return array(a, dtype, copy=False, order=order)
+ #0:  10%|█         | 1/10 [00:00<00:06,  1.45ba/s]
+ #1:  30%|███       | 3/10 [00:00<00:01,  3.71ba/s][A
+
+ #2:  30%|███       | 3/10 [00:00<00:02,  3.16ba/s][A[A
+ #1:  40%|████      | 4/10 [00:01<00:01,  3.43ba/s][A
+
+
+ #3:  30%|███       | 3/10 [00:01<00:02,  2.62ba/s][A[A[A #0:  20%|██        | 2/10 [00:01<00:05,  1.56ba/s]
+
+ #2:  40%|████      | 4/10 [00:01<00:01,  3.03ba/s][A[A
+ #1:  50%|█████     | 5/10 [00:01<00:01,  3.67ba/s][A
+ #1:  60%|██████    | 6/10 [00:01<00:00,  4.29ba/s][A
+
+ #2:  50%|█████     | 5/10 [00:01<00:01,  2.89ba/s][A[A
+
+
+ #3:  40%|████      | 4/10 [00:01<00:02,  2.30ba/s][A[A[A
+ #1:  70%|███████   | 7/10 [00:01<00:00,  4.04ba/s][A #0:  30%|███       | 3/10 [00:01<00:04,  1.61ba/s]
+
+ #2:  60%|██████    | 6/10 [00:01<00:01,  3.29ba/s][A[A
+ #1:  80%|████████  | 8/10 [00:02<00:00,  3.91ba/s][A
+
+
+ #3:  50%|█████     | 5/10 [00:02<00:02,  2.30ba/s][A[A[A #0:  40%|████      | 4/10 [00:02<00:03,  1.77ba/s]
+
+ #2:  70%|███████   | 7/10 [00:02<00:00,  3.03ba/s][A[A
+ #1:  90%|█████████ | 9/10 [00:02<00:00,  3.79ba/s][A #1: 100%|██████████| 10/10 [00:02<00:00,  4.18ba/s]
+
+
+ #3:  60%|██████    | 6/10 [00:02<00:01,  2.49ba/s][A[A[A #0:  50%|█████     | 5/10 [00:02<00:02,  1.93ba/s]
+
+ #2:  80%|████████  | 8/10 [00:02<00:00,  2.77ba/s][A[A
+
+
+ #3:  70%|███████   | 7/10 [00:02<00:01,  2.45ba/s][A[A[A
+
+ #2:  90%|█████████ | 9/10 [00:02<00:00,  3.00ba/s][A[A #0:  60%|██████    | 6/10 [00:03<00:01,  2.07ba/s]
+
+ #2: 100%|██████████| 10/10 [00:03<00:00,  3.61ba/s][A[A #2: 100%|██████████| 10/10 [00:03<00:00,  3.19ba/s]
+
+
+ #3:  80%|████████  | 8/10 [00:03<00:00,  2.38ba/s][A[A[A #0:  70%|███████   | 7/10 [00:03<00:01,  2.03ba/s]
+
+
+ #3:  90%|█████████ | 9/10 [00:03<00:00,  2.40ba/s][A[A[A
+
+
+ #3: 100%|██████████| 10/10 [00:03<00:00,  3.05ba/s][A[A[A #3: 100%|██████████| 10/10 [00:03<00:00,  2.56ba/s] #0:  80%|████████  | 8/10 [00:04<00:00,  2.07ba/s] #0:  90%|█████████ | 9/10 [00:04<00:00,  2.64ba/s] #0: 100%|██████████| 10/10 [00:04<00:00,  2.39ba/s]
+
+ #0:   0%|          | 0/4 [00:00<?, ?ba/s]
+ #1:   0%|          | 0/4 [00:00<?, ?ba/s][A
+
+ #2:   0%|          | 0/4 [00:00<?, ?ba/s][A[A
+
+
+ #3:   0%|          | 0/4 [00:00<?, ?ba/s][A[A[A/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
+  return array(a, dtype, copy=False, order=order)
+ #0:  25%|██▌       | 1/4 [00:00<00:00,  3.77ba/s]/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
+  return array(a, dtype, copy=False, order=order)
+
+
+
+ #3:  25%|██▌       | 1/4 [00:00<00:01,  2.96ba/s][A[A[A/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
+  return array(a, dtype, copy=False, order=order)
+
+ #1:  25%|██▌       | 1/4 [00:00<00:01,  2.68ba/s][A
+
+
+ #3:  50%|█████     | 2/4 [00:00<00:00,  3.46ba/s][A[A[A
+ #1:  50%|█████     | 2/4 [00:00<00:00,  3.09ba/s][A #0:  50%|█████     | 2/4 [00:00<00:00,  3.29ba/s]
+
+
+ #3:  75%|███████▌  | 3/4 [00:00<00:00,  4.15ba/s][A[A[A #3: 100%|██████████| 4/4 [00:00<00:00,  6.00ba/s]/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
+  return array(a, dtype, copy=False, order=order)
+
+
+ #2:  25%|██▌       | 1/4 [00:00<00:02,  1.32ba/s][A[A #0:  75%|███████▌  | 3/4 [00:00<00:00,  3.43ba/s]
+ #1:  75%|███████▌  | 3/4 [00:00<00:00,  3.10ba/s][A #1: 100%|██████████| 4/4 [00:00<00:00,  4.13ba/s] #0: 100%|██████████| 4/4 [00:01<00:00,  3.92ba/s] #0: 100%|██████████| 4/4 [00:01<00:00,  3.66ba/s]
+
+ #2:  50%|█████     | 2/4 [00:01<00:01,  1.55ba/s][A[A
+
+ #2:  75%|███████▌  | 3/4 [00:01<00:00,  1.60ba/s][A[A #2: 100%|██████████| 4/4 [00:01<00:00,  2.27ba/s]
+
+
+Some weights of the model checkpoint at facebook/wav2vec2-base were not used when initializing Wav2Vec2ForCTC: ['quantizer.codevectors', 'project_q.bias', 'project_hid.weight', 'project_hid.bias', 'quantizer.weight_proj.bias', 'project_q.weight', 'quantizer.weight_proj.weight']
+- This IS expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing Wav2Vec2ForCTC from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of Wav2Vec2ForCTC were not initialized from the model checkpoint at facebook/wav2vec2-base and are newly initialized: ['lm_head.bias', 'lm_head.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Using amp fp16 backend
+***** Running training *****
+  Num examples = 300
+  Num Epochs = 30
+  Instantaneous batch size per device = 32
+  Total train batch size (w. parallel, distributed & accumulation) = 32
+  Gradient Accumulation steps = 1
+  Total optimization steps = 300
+  0%|          | 0/300 [00:00<?, ?it/s]  0%|          | 1/300 [00:08<41:35,  8.34s/it]  1%|          | 2/300 [00:09<30:02,  6.05s/it]  1%|          | 3/300 [00:13<27:04,  5.47s/it]  1%|▏         | 4/300 [00:14<20:21,  4.13s/it]  2%|▏         | 5/300 [00:20<23:45,  4.83s/it]  2%|▏         | 6/300 [00:21<17:51,  3.65s/it]SUCCESS: Data ready for training and evaluation.
+
+------> PREPARING FOR TRAINING & EVALUATION... ----------------------- 
+
+--> Defining data collator...
+SUCCESS: Data collator defined.
+--> Defining evaluation metric...
+SUCCESS: Defined WER evaluation metric.
+--> Loading pre-trained checkpoint...
+SUCCESS: Pre-trained checkpoint loaded.
+
+------> STARTING TRAINING... ----------------------------------------- 
+
+Traceback (most recent call last):
+  File "run_short.py", line 409, in <module>
+    trainer.train()
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/transformers/trainer.py", line 1269, in train
+    tr_loss += self.training_step(model, inputs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/transformers/trainer.py", line 1760, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/transformers/trainer.py", line 1794, in compute_loss
+    outputs = model(**inputs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/transformers/models/wav2vec2/modeling_wav2vec2.py", line 1472, in forward
+    return_dict=return_dict,
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/transformers/models/wav2vec2/modeling_wav2vec2.py", line 1067, in forward
+    hidden_states = self._mask_hidden_states(hidden_states)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/transformers/models/wav2vec2/modeling_wav2vec2.py", line 987, in _mask_hidden_states
+    min_masks=2,
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/transformers/models/wav2vec2/modeling_wav2vec2.py", line 165, in _compute_mask_indices
+    spec_aug_mask_idxs = torch.multinomial(uniform_dist, num_masked_spans)
+RuntimeError: CUDA error: an illegal memory access was encountered
+  2%|▏         | 6/300 [00:24<19:49,  4.05s/it]

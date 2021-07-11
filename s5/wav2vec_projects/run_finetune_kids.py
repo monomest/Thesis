@@ -20,13 +20,20 @@ print("------------------------------------------------------------------------"
 # ------------------------------------------
 #       Import required packages
 # ------------------------------------------
+# For printing filepath
+import os
+# ------------------------------------------
+print('Running: ', os.path.abspath(__file__))
+# ------------------------------------------
 # For accessing date and time
 from datetime import date
 from datetime import datetime
 now = datetime.now()
-# dd/mm/YY H:M:S
+# Print out dd/mm/YY H:M:S
+# ------------------------------------------
 dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
-print("Started:", dt_string) 
+print("Started:", dt_string)
+# ------------------------------------------ 
 # Import datasets and evaluation metric
 print("\n------> IMPORTING PACKAGES.... ---------------------------------------\n")
 print("-->Importing datasets...")
@@ -81,14 +88,18 @@ print("--> myST_test_fp:", myST_test_fp)
 # |   ...     |      ...      |  ..secs  |
 # |-----------|---------------|----------|
 # Path to datasets cache
-data_cache_fp = "/srv/scratch/z5160268/.cache/huggingface/datasets"
+#data_cache_fp = "/srv/scratch/z5160268/.cache/huggingface/datasets"
+data_cache_fp = "/srv/scratch/chacmod/.cache/huggingface/datasets"
 print("--> data_cache_fp:", data_cache_fp)
 # Path to save vocab.json
 vocab_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/vocab.json"
 print("--> vocab_fp:", vocab_fp)
 # Path to save model output
-model_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210628-4"
+model_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210705"
 print("--> model_fp:", model_fp)
+# Pre-trained checkpoint model
+#pretrained_mod = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210704"
+pretrained_mod = "facebook/wav2vec2-base" 
 
 # ------------------------------------------
 #         Preparing MyST dataset
@@ -108,7 +119,7 @@ myST = load_dataset('csv', data_files={'train': myST_train_fp,
                                        'test': myST_test_fp},
                     cache_dir=data_cache_fp)
 # Remove the "duration" column
-myST = myST.remove_columns("duration")
+myST = myST.remove_columns(["duration", "spkr_id"])
 print("--> MyST dataset...")
 print(myST)
 # Display some random samples of the dataset
@@ -343,12 +354,20 @@ print("SUCCESS: Defined WER evaluation metric.")
 # also CTC's blank token. To save GPU memory, we enable PyTorch's gradient
 # checkpointing and also set the loss reduction to "mean".
 print("--> Loading pre-trained checkpoint...")
+#model = Wav2Vec2ForCTC.from_pretrained(
+#    "facebook/wav2vec2-base", 
+#    gradient_checkpointing=True, 
+#    ctc_loss_reduction="mean", 
+#    pad_token_id=processor.tokenizer.pad_token_id,
+#)
 model = Wav2Vec2ForCTC.from_pretrained(
-    "facebook/wav2vec2-base", 
-    gradient_checkpointing=True, 
-    ctc_loss_reduction="mean", 
+    pretrained_mod,
+    gradient_checkpointing=True,
+    ctc_loss_reduction="mean",
     pad_token_id=processor.tokenizer.pad_token_id,
 )
+
+
 # The first component of Wav2Vec2 consists of a stack of CNN layers
 # that are used to extract acoustically meaningful - but contextually 
 # independent - features from the raw speech signal. This part of the
@@ -371,10 +390,11 @@ print("SUCCESS: Pre-trained checkpoint loaded.")
 
 # OG: weight_decay=0.005
 # OG: num_train_epochs=30
+# OG: per_device_train_batch_size=32
 training_args = TrainingArguments(
   output_dir=model_fp,
   group_by_length=True,
-  per_device_train_batch_size=32,
+  per_device_train_batch_size=20,
   evaluation_strategy="steps",
   num_train_epochs=30,
   fp16=True,
