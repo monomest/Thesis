@@ -1,0 +1,535 @@
+Using custom data configuration default-37316b26926a9f32
+Reusing dataset csv (/srv/scratch/chacmod/.cache/huggingface/datasets/20210711-2/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0)
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711-2/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-14b38992aeba7676.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711-2/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-660d55a2768cff82.arrow
+  0%|          | 0/1 [00:00<?, ?ba/s]100%|██████████| 1/1 [00:00<00:00, 102.15ba/s]
+  0%|          | 0/1 [00:00<?, ?ba/s]100%|██████████| 1/1 [00:00<00:00, 672.81ba/s]------------------------------------------------------------------------
+                 run_finetune_kids.py                                   
+------------------------------------------------------------------------
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/run_finetune_kids_checkpoint.py
+Started: 11/07/2021 19:48:21
+
+------> IMPORTING PACKAGES.... ---------------------------------------
+
+-->Importing datasets...
+-->Importing random...
+-->Importing pandas & numpy...
+-->Importing re...
+-->Importing json...
+-->Importing Wav2VecCTC...
+-->Importing soundfile...
+-->Importing torch, dataclasses & typing...
+-->Importing from transformers for training...
+-->SUCCESS! All packages imported.
+
+------> SETTING FILEPATHS... ----------------------------------------- 
+
+--> myST_train_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_train_short.csv
+--> myST_test_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_test_short.csv
+--> data_cache_fp: /srv/scratch/chacmod/.cache/huggingface/datasets/20210711-2
+--> vocab_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/vocab_20210711-2.json
+--> model_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711-2
+--> pretrained_mod: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711/checkpoint-50
+--> myST_datasetdict_fp: /srv/scratch/chacmod/renee_thesis/datasetdict-20210711
+--> pretrained_tokenizer: facebook/wav2vec2-base-960h
+
+------> PREPARING MYST DATASET... ------------------------------------
+
+--> MyST dataset...
+DatasetDict({
+    train: Dataset({
+        features: ['filepath', 'transcription'],
+        num_rows: 300
+    })
+    test: Dataset({
+        features: ['filepath', 'transcription'],
+        num_rows: 100
+    })
+})
+--> Printing some random samples...
+                                            filepath                                      transcription
+0  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...                                     you're welcome
+1  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...                     maybe you're body or something
+2  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...                                it's getting colder
+3  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...  the electricity is flowing through the wires a...
+4  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...                                    yeah i think so
+SUCCESS: Prepared dataset.
+
+------> CREATING VOCABULARY... ---------------------------------------
+
+--> Creating map(...) function for vocab...
+--> Vocab len: 28 
+ {'Y': 0, 'B': 1, 'T': 2, 'M': 3, ' ': 4, 'R': 5, 'O': 6, 'L': 7, 'I': 8, 'G': 9, 'X': 10, "'": 11, 'Z': 12, 'P': 13, 'U': 14, 'A': 15, 'E': 16, 'J': 17, 'F': 18, 'H': 19, 'N': 20, 'W': 21, 'V': 22, 'S': 23, 'C': 24, 'Q': 25, 'D': 26, 'K': 27}
+--> Vocab len: 30 
+ {'Y': 0, 'B': 1, 'T': 2, 'M': 3, 'R': 5, 'O': 6, 'L': 7, 'I': 8, 'G': 9, 'X': 10, "'": 11, 'Z': 12, 'P': 13, 'U': 14, 'A': 15, 'E': 16, 'J': 17, 'F': 18, 'H': 19, 'N': 20, 'W': 21, 'V': 22, 'S': 23, 'C': 24, 'Q': 25, 'D': 26, 'K': 27, '|': 4, '[UNK]': 28, '[PAD]': 29}
+SUCCESS: Created vocabulary file at /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/vocab_20210711-2.json
+
+------> CREATING WAV2VEC2 FEATURE EXTRACTOR... -----------------------
+
+SUCCESS: Created feature extractor.
+
+------> PRE-PROCESSING DATA... ----------------------------------------- 
+
+
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711-2/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-2135c9fabbd352ff.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711-2/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-b4f55433750714a4.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711-2/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-aa3fb73a12d2595c.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711-2/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-71be5c965fe7ba0d.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711-2/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-11afec341fdf2249.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711-2/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-c1b972d16149be3a.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711-2/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-9b529f23ae576b8c.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711-2/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-e3e19552fdd6eeeb.arrow
+--> Verifying data with a random sample...
+Target text: CELSIUS
+Input array shape: (10432,)
+Sampling rate: 16000
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711-2/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-02db795432630776.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711-2/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-4afa724e97d09edf.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711-2/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-74d87b426d025acf.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711-2/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-9785f0c924ca1c4e.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711-2/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-ad6365e3f22b4d60.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711-2/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-8f0be50c614f4c4b.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711-2/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-5fadd7632cae3222.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711-2/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-525c1c6458e44a09.arrow
+Using amp fp16 backend
+Loading model from /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711/checkpoint-50).
+***** Running training *****
+  Num examples = 300
+  Num Epochs = 20
+  Instantaneous batch size per device = 20
+  Total train batch size (w. parallel, distributed & accumulation) = 20
+  Gradient Accumulation steps = 1
+  Total optimization steps = 300
+  Continuing training from checkpoint, will skip to saved global_step
+  Continuing training from epoch 3
+  Continuing training from global step 50
+  Will skip the first 3 epochs then the first 5 batches in the first epoch. If this takes a lot of time, you can add the `--ignore_data_skip` flag to your launch command, but you will resume the training on data already seen by your model.
+  0%|          | 0/5 [00:00<?, ?it/s]Skipping the first batches:   0%|          | 0/5 [00:00<?, ?it/s]
+  0%|          | 0/300 [00:00<?, ?it/s][ASkipping the first batches:  20%|██        | 1/5 [00:06<00:26,  6.63s/it]Skipping the first batches:  40%|████      | 2/5 [00:07<00:14,  4.83s/it]Skipping the first batches:  60%|██████    | 3/5 [00:07<00:06,  3.44s/it]Skipping the first batches:  80%|████████  | 4/5 [00:08<00:02,  2.84s/it]Skipping the first batches: 100%|██████████| 5/5 [00:09<00:00,  2.17s/it]Skipping the first batches: 100%|██████████| 5/5 [00:09<00:00,  1.94s/it]
+
+ 17%|█▋        | 51/300 [00:10<00:49,  5.02it/s][A
+ 17%|█▋        | 52/300 [00:14<05:43,  1.39s/it][A
+ 18%|█▊        | 53/300 [00:15<05:24,  1.31s/it][A
+ 18%|█▊        | 54/300 [00:15<04:22,  1.07s/it][A
+ 18%|█▊        | 55/300 [00:18<06:38,  1.63s/it][A
+ 19%|█▊        | 56/300 [00:19<05:43,  1.41s/it][A
+ 19%|█▉        | 57/300 [00:20<04:26,  1.10s/it][A
+ 19%|█▉        | 58/300 [00:24<08:20,  2.07s/it][A
+ 20%|█▉        | 59/300 [00:25<06:45,  1.68s/it][A
+ 20%|██        | 60/300 [00:25<05:20,  1.34s/it][A
+ 20%|██        | 61/300 [00:30<08:55,  2.24s/it][A
+ 21%|██        | 62/300 [00:31<07:26,  1.88s/it][A
+ 21%|██        | 63/300 [00:31<05:48,  1.47s/it][A
+ 21%|██▏       | 64/300 [00:34<07:33,  1.92s/it][A
+ 22%|██▏       | 65/300 [00:36<06:54,  1.77s/it][A
+ 22%|██▏       | 66/300 [00:36<05:25,  1.39s/it][A
+ 22%|██▏       | 67/300 [00:40<08:42,  2.24s/it][A
+ 23%|██▎       | 68/300 [00:41<06:58,  1.80s/it][A
+ 23%|██▎       | 69/300 [00:42<05:28,  1.42s/it][A
+ 23%|██▎       | 70/300 [00:46<08:56,  2.33s/it][A
+ 24%|██▎       | 71/300 [00:47<07:19,  1.92s/it][A
+ 24%|██▍       | 72/300 [00:47<05:35,  1.47s/it][A
+ 24%|██▍       | 73/300 [00:50<06:50,  1.81s/it][A
+ 25%|██▍       | 74/300 [00:51<05:53,  1.57s/it][A
+ 25%|██▌       | 75/300 [00:52<04:42,  1.25s/it][A
+ 25%|██▌       | 76/300 [00:56<08:11,  2.19s/it][A
+ 26%|██▌       | 77/300 [00:57<06:55,  1.86s/it][A
+ 26%|██▌       | 78/300 [00:58<05:26,  1.47s/it][A
+ 26%|██▋       | 79/300 [01:01<07:13,  1.96s/it][A
+ 27%|██▋       | 80/300 [01:02<06:15,  1.71s/it][A
+ 27%|██▋       | 81/300 [01:02<04:50,  1.33s/it][A
+ 27%|██▋       | 82/300 [01:06<07:46,  2.14s/it][A
+ 28%|██▊       | 83/300 [01:07<06:39,  1.84s/it][A
+ 28%|██▊       | 84/300 [01:08<05:08,  1.43s/it][A
+ 28%|██▊       | 85/300 [01:11<06:36,  1.84s/it][A
+ 29%|██▊       | 86/300 [01:12<05:28,  1.53s/it][A
+ 29%|██▉       | 87/300 [01:12<04:23,  1.24s/it][A
+ 29%|██▉       | 88/300 [01:15<05:52,  1.66s/it][A
+ 30%|██▉       | 89/300 [01:16<04:58,  1.41s/it][A
+ 30%|███       | 90/300 [01:16<04:00,  1.14s/it][A
+ 30%|███       | 91/300 [01:20<07:13,  2.08s/it][A
+ 31%|███       | 92/300 [01:21<06:05,  1.76s/it][A
+ 31%|███       | 93/300 [01:22<04:45,  1.38s/it][A
+ 31%|███▏      | 94/300 [01:25<06:18,  1.84s/it][A
+ 32%|███▏      | 95/300 [01:26<05:42,  1.67s/it][A
+ 32%|███▏      | 96/300 [01:27<04:26,  1.31s/it][A
+ 32%|███▏      | 97/300 [01:31<07:36,  2.25s/it][A
+ 33%|███▎      | 98/300 [01:32<06:13,  1.85s/it][A
+ 33%|███▎      | 99/300 [01:32<04:44,  1.41s/it][A
+ 33%|███▎      | 100/300 [01:35<06:10,  1.85s/it][ASaving model checkpoint to /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711-2/checkpoint-100
+Configuration saved in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711-2/checkpoint-100/config.json
+Model weights saved in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711-2/checkpoint-100/pytorch_model.bin
+Configuration saved in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711-2/checkpoint-100/preprocessor_config.json
+Deleting older checkpoint [/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711-2/checkpoint-250] due to args.save_total_limit
+
+ 34%|███▎      | 101/300 [01:39<07:44,  2.34s/it][A
+ 34%|███▍      | 102/300 [01:39<05:54,  1.79s/it][A
+ 34%|███▍      | 103/300 [01:43<08:14,  2.51s/it][A
+ 35%|███▍      | 104/300 [01:44<06:44,  2.07s/it][A
+ 35%|███▌      | 105/300 [01:45<05:05,  1.57s/it][A
+ 35%|███▌      | 106/300 [01:49<07:41,  2.38s/it][A
+ 36%|███▌      | 107/300 [01:50<06:29,  2.02s/it][A
+ 36%|███▌      | 108/300 [01:51<04:53,  1.53s/it][A
+ 36%|███▋      | 109/300 [01:53<05:45,  1.81s/it][A
+ 37%|███▋      | 110/300 [01:54<04:49,  1.53s/it][A
+ 37%|███▋      | 111/300 [01:55<03:55,  1.24s/it][A
+ 37%|███▋      | 112/300 [01:58<05:36,  1.79s/it][A
+ 38%|███▊      | 113/300 [01:59<04:57,  1.59s/it][A
+ 38%|███▊      | 114/300 [01:59<03:57,  1.28s/it][A
+ 38%|███▊      | 115/300 [02:04<06:55,  2.24s/it][A
+ 39%|███▊      | 116/300 [02:05<05:45,  1.88s/it][A
+ 39%|███▉      | 117/300 [02:05<04:29,  1.47s/it][A
+ 39%|███▉      | 118/300 [02:08<05:45,  1.90s/it][A
+ 40%|███▉      | 119/300 [02:09<04:51,  1.61s/it][A
+ 40%|████      | 120/300 [02:10<03:54,  1.30s/it][A
+ 40%|████      | 121/300 [02:14<06:44,  2.26s/it][A
+ 41%|████      | 122/300 [02:15<05:46,  1.95s/it][A
+ 41%|████      | 123/300 [02:16<04:30,  1.53s/it][A
+ 41%|████▏     | 124/300 [02:19<05:24,  1.84s/it][A
+ 42%|████▏     | 125/300 [02:20<04:39,  1.60s/it][A
+ 42%|████▏     | 126/300 [02:20<03:44,  1.29s/it][A
+ 42%|████▏     | 127/300 [02:24<06:13,  2.16s/it][A
+ 43%|████▎     | 128/300 [02:25<05:17,  1.85s/it][A
+ 43%|████▎     | 129/300 [02:26<04:02,  1.42s/it][A
+ 43%|████▎     | 130/300 [02:29<05:16,  1.86s/it][A
+ 44%|████▎     | 131/300 [02:30<04:22,  1.55s/it][A
+ 44%|████▍     | 132/300 [02:30<03:24,  1.22s/it][A
+ 44%|████▍     | 133/300 [02:33<04:47,  1.72s/it][A
+ 45%|████▍     | 134/300 [02:34<04:08,  1.50s/it][A
+ 45%|████▌     | 135/300 [02:34<03:15,  1.19s/it][A
+ 45%|████▌     | 136/300 [02:38<05:38,  2.06s/it][A
+ 46%|████▌     | 137/300 [02:39<04:43,  1.74s/it][A
+ 46%|████▌     | 138/300 [02:40<03:43,  1.38s/it][A
+ 46%|████▋     | 139/300 [02:43<05:18,  1.98s/it][A
+ 47%|████▋     | 140/300 [02:44<04:29,  1.68s/it][A
+ 47%|████▋     | 141/300 [02:45<03:28,  1.31s/it][A
+ 47%|████▋     | 142/300 [02:49<05:46,  2.20s/it][A
+ 48%|████▊     | 143/300 [02:50<05:05,  1.95s/it][A
+ 48%|████▊     | 144/300 [02:51<04:00,  1.54s/it][A
+ 48%|████▊     | 145/300 [02:54<05:02,  1.95s/it][A
+ 49%|████▊     | 146/300 [02:55<04:11,  1.63s/it][A
+ 49%|████▉     | 147/300 [02:55<03:20,  1.31s/it][A
+ 49%|████▉     | 148/300 [03:00<05:42,  2.25s/it][A
+ 50%|████▉     | 149/300 [03:01<04:50,  1.92s/it][A
+ 50%|█████     | 150/300 [03:01<03:41,  1.47s/it][ASaving model checkpoint to /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711-2/checkpoint-150
+Configuration saved in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711-2/checkpoint-150/config.json
+Model weights saved in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711-2/checkpoint-150/pytorch_model.bin
+Configuration saved in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711-2/checkpoint-150/preprocessor_config.json
+Deleting older checkpoint [/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711-2/checkpoint-300] due to args.save_total_limit
+
+ 50%|█████     | 151/300 [03:09<07:51,  3.16s/it][A
+ 51%|█████     | 152/300 [03:09<06:08,  2.49s/it][A
+ 51%|█████     | 153/300 [03:10<04:38,  1.89s/it][A
+ 51%|█████▏    | 154/300 [03:13<05:23,  2.21s/it][A
+ 52%|█████▏    | 155/300 [03:14<04:32,  1.88s/it][A
+ 52%|█████▏    | 156/300 [03:14<03:28,  1.45s/it][A
+ 52%|█████▏    | 157/300 [03:19<05:36,  2.36s/it][A
+ 53%|█████▎    | 158/300 [03:20<04:32,  1.92s/it][A
+ 53%|█████▎    | 159/300 [03:20<03:30,  1.49s/it][A
+ 53%|█████▎    | 160/300 [03:23<04:37,  1.98s/it][A
+ 54%|█████▎    | 161/300 [03:24<03:50,  1.66s/it][A
+ 54%|█████▍    | 162/300 [03:25<02:55,  1.27s/it][A
+ 54%|█████▍    | 163/300 [03:27<03:50,  1.68s/it][A
+ 55%|█████▍    | 164/300 [03:28<03:22,  1.49s/it][A
+ 55%|█████▌    | 165/300 [03:29<02:39,  1.18s/it][A
+ 55%|█████▌    | 166/300 [03:33<04:49,  2.16s/it][A
+ 56%|█████▌    | 167/300 [03:34<03:59,  1.80s/it][A
+ 56%|█████▌    | 168/300 [03:35<03:01,  1.37s/it][A
+ 56%|█████▋    | 169/300 [03:39<04:52,  2.23s/it][A
+ 57%|█████▋    | 170/300 [03:40<04:06,  1.89s/it][A
+ 57%|█████▋    | 171/300 [03:40<03:10,  1.47s/it][A
+ 57%|█████▋    | 172/300 [03:44<04:10,  1.96s/it][A
+ 58%|█████▊    | 173/300 [03:44<03:29,  1.65s/it][A
+ 58%|█████▊    | 174/300 [03:45<02:45,  1.31s/it][A
+ 58%|█████▊    | 175/300 [03:48<03:48,  1.83s/it][A
+ 59%|█████▊    | 176/300 [03:49<03:17,  1.59s/it][A
+ 59%|█████▉    | 177/300 [03:49<02:30,  1.22s/it][A
+ 59%|█████▉    | 178/300 [03:52<03:05,  1.52s/it][A
+ 60%|█████▉    | 179/300 [03:53<02:49,  1.40s/it][A
+ 60%|██████    | 180/300 [03:53<02:18,  1.15s/it][A
+ 60%|██████    | 181/300 [03:58<04:11,  2.12s/it][A
+ 61%|██████    | 182/300 [03:59<03:23,  1.73s/it][A
+ 61%|██████    | 183/300 [03:59<02:41,  1.38s/it][A
+ 61%|██████▏   | 184/300 [04:04<04:29,  2.32s/it][A
+ 62%|██████▏   | 185/300 [04:05<03:45,  1.96s/it][A
+ 62%|██████▏   | 186/300 [04:05<02:51,  1.50s/it][A
+ 62%|██████▏   | 187/300 [04:08<03:49,  2.03s/it][A
+ 63%|██████▎   | 188/300 [04:10<03:15,  1.74s/it][A
+ 63%|██████▎   | 189/300 [04:10<02:31,  1.36s/it][A
+ 63%|██████▎   | 190/300 [04:13<03:16,  1.78s/it][A
+ 64%|██████▎   | 191/300 [04:14<02:46,  1.53s/it][A
+ 64%|██████▍   | 192/300 [04:14<02:11,  1.21s/it][A
+ 64%|██████▍   | 193/300 [04:17<03:06,  1.75s/it][A
+ 65%|██████▍   | 194/300 [04:18<02:47,  1.58s/it][A
+ 65%|██████▌   | 195/300 [04:19<02:12,  1.26s/it][A
+ 65%|██████▌   | 196/300 [04:23<03:33,  2.06s/it][A
+ 66%|██████▌   | 197/300 [04:24<02:58,  1.73s/it][A
+ 66%|██████▌   | 198/300 [04:24<02:18,  1.36s/it][A
+ 66%|██████▋   | 199/300 [04:29<03:51,  2.29s/it][A
+ 67%|██████▋   | 200/300 [04:30<03:08,  1.88s/it][ASaving model checkpoint to /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711-2/checkpoint-200
+Configuration saved in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711-2/checkpoint-200/config.json
+Model weights saved in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711-2/checkpoint-200/pytorch_model.bin
+Configuration saved in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711-2/checkpoint-200/preprocessor_config.json
+Deleting older checkpoint [/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711-2/checkpoint-100] due to args.save_total_limit
+
+ 67%|██████▋   | 201/300 [04:33<03:47,  2.29s/it][A
+ 67%|██████▋   | 202/300 [04:36<04:02,  2.48s/it][A
+ 68%|██████▊   | 203/300 [04:37<03:16,  2.03s/it][A
+ 68%|██████▊   | 204/300 [04:37<02:28,  1.55s/it][A
+ 68%|██████▊   | 205/300 [04:42<03:47,  2.40s/it][A
+ 69%|██████▊   | 206/300 [04:43<03:10,  2.03s/it][A
+ 69%|██████▉   | 207/300 [04:43<02:26,  1.58s/it][A
+ 69%|██████▉   | 208/300 [04:46<02:54,  1.90s/it][A
+ 70%|██████▉   | 209/300 [04:47<02:32,  1.68s/it][A
+ 70%|███████   | 210/300 [04:48<01:56,  1.30s/it][A
+ 70%|███████   | 211/300 [04:52<03:18,  2.23s/it][A
+ 71%|███████   | 212/300 [04:53<02:41,  1.84s/it][A
+ 71%|███████   | 213/300 [04:53<02:04,  1.44s/it][A
+ 71%|███████▏  | 214/300 [04:56<02:44,  1.91s/it][A
+ 72%|███████▏  | 215/300 [04:57<02:21,  1.66s/it][A
+ 72%|███████▏  | 216/300 [04:58<01:49,  1.30s/it][A
+ 72%|███████▏  | 217/300 [05:02<03:03,  2.21s/it][A
+ 73%|███████▎  | 218/300 [05:03<02:29,  1.82s/it][A
+ 73%|███████▎  | 219/300 [05:04<01:53,  1.40s/it][A
+ 73%|███████▎  | 220/300 [05:07<02:30,  1.88s/it][A
+ 74%|███████▎  | 221/300 [05:08<02:07,  1.62s/it][A
+ 74%|███████▍  | 222/300 [05:08<01:40,  1.29s/it][A
+ 74%|███████▍  | 223/300 [05:11<02:17,  1.79s/it][A
+ 75%|███████▍  | 224/300 [05:12<01:54,  1.51s/it][A
+ 75%|███████▌  | 225/300 [05:12<01:27,  1.16s/it][A
+ 75%|███████▌  | 226/300 [05:16<02:29,  2.03s/it][A
+ 76%|███████▌  | 227/300 [05:17<02:06,  1.73s/it][A
+ 76%|███████▌  | 228/300 [05:18<01:35,  1.33s/it][A
+ 76%|███████▋  | 229/300 [05:21<02:08,  1.81s/it][A
+ 77%|███████▋  | 230/300 [05:21<01:46,  1.52s/it][A
+ 77%|███████▋  | 231/300 [05:22<01:20,  1.17s/it][A
+ 77%|███████▋  | 232/300 [05:26<02:22,  2.09s/it][A
+ 78%|███████▊  | 233/300 [05:27<02:01,  1.81s/it][A
+ 78%|███████▊  | 234/300 [05:28<01:31,  1.39s/it][A
+ 78%|███████▊  | 235/300 [05:30<01:50,  1.70s/it][A
+ 79%|███████▊  | 236/300 [05:31<01:30,  1.42s/it][A
+ 79%|███████▉  | 237/300 [05:31<01:11,  1.14s/it][A
+ 79%|███████▉  | 238/300 [05:36<02:12,  2.14s/it][A
+ 80%|███████▉  | 239/300 [05:37<01:50,  1.81s/it][A
+ 80%|████████  | 240/300 [05:37<01:23,  1.39s/it][A
+ 80%|████████  | 241/300 [05:41<02:11,  2.22s/it][A
+ 81%|████████  | 242/300 [05:42<01:48,  1.87s/it][A
+ 81%|████████  | 243/300 [05:43<01:21,  1.42s/it][A
+ 81%|████████▏ | 244/300 [05:46<01:47,  1.91s/it][A
+ 82%|████████▏ | 245/300 [05:47<01:28,  1.62s/it][A
+ 82%|████████▏ | 246/300 [05:47<01:09,  1.29s/it][A
+ 82%|████████▏ | 247/300 [05:52<01:58,  2.23s/it][A
+ 83%|████████▎ | 248/300 [05:53<01:37,  1.87s/it][A
+ 83%|████████▎ | 249/300 [05:53<01:13,  1.45s/it][A
+ 83%|████████▎ | 250/300 [05:56<01:28,  1.78s/it][ASaving model checkpoint to /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711-2/checkpoint-250
+Configuration saved in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711-2/checkpoint-250/config.json
+Model weights saved in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711-2/checkpoint-250/pytorch_model.bin
+Configuration saved in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711-2/checkpoint-250/preprocessor_config.json
+Deleting older checkpoint [/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711-2/checkpoint-150] due to args.save_total_limit
+
+ 84%|████████▎ | 251/300 [05:59<01:54,  2.33s/it][A
+ 84%|████████▍ | 252/300 [06:00<01:25,  1.79s/it][A
+ 84%|████████▍ | 253/300 [06:04<02:00,  2.57s/it][A
+ 85%|████████▍ | 254/300 [06:05<01:37,  2.12s/it][A
+ 85%|████████▌ | 255/300 [06:06<01:14,  1.65s/it][A
+ 85%|████████▌ | 256/300 [06:10<01:45,  2.40s/it][A
+ 86%|████████▌ | 257/300 [06:11<01:27,  2.04s/it][A
+ 86%|████████▌ | 258/300 [06:12<01:06,  1.59s/it][A
+ 86%|████████▋ | 259/300 [06:14<01:15,  1.84s/it][A
+ 87%|████████▋ | 260/300 [06:15<01:02,  1.56s/it][A
+ 87%|████████▋ | 261/300 [06:16<00:49,  1.26s/it][A
+ 87%|████████▋ | 262/300 [06:20<01:20,  2.13s/it][A
+ 88%|████████▊ | 263/300 [06:21<01:06,  1.79s/it][A
+ 88%|████████▊ | 264/300 [06:21<00:50,  1.42s/it][A
+ 88%|████████▊ | 265/300 [06:24<01:06,  1.90s/it][A
+ 89%|████████▊ | 266/300 [06:25<00:53,  1.57s/it][A
+ 89%|████████▉ | 267/300 [06:26<00:42,  1.27s/it][A
+ 89%|████████▉ | 268/300 [06:30<01:12,  2.25s/it][A
+ 90%|████████▉ | 269/300 [06:31<00:58,  1.89s/it][A
+ 90%|█████████ | 270/300 [06:32<00:43,  1.44s/it][A
+ 90%|█████████ | 271/300 [06:36<01:07,  2.33s/it][A
+ 91%|█████████ | 272/300 [06:37<00:53,  1.93s/it][A
+ 91%|█████████ | 273/300 [06:38<00:40,  1.48s/it][A
+ 91%|█████████▏| 274/300 [06:42<01:00,  2.33s/it][A
+ 92%|█████████▏| 275/300 [06:43<00:46,  1.88s/it][A
+ 92%|█████████▏| 276/300 [06:43<00:35,  1.48s/it][A
+ 92%|█████████▏| 277/300 [06:46<00:43,  1.87s/it][A
+ 93%|█████████▎| 278/300 [06:47<00:35,  1.61s/it][A
+ 93%|█████████▎| 279/300 [06:48<00:27,  1.29s/it][A
+ 93%|█████████▎| 280/300 [06:52<00:43,  2.15s/it][A
+ 94%|█████████▎| 281/300 [06:53<00:34,  1.81s/it][A
+ 94%|█████████▍| 282/300 [06:53<00:25,  1.40s/it][A
+ 94%|█████████▍| 283/300 [06:56<00:31,  1.83s/it][A
+ 95%|█████████▍| 284/300 [06:57<00:26,  1.63s/it][A
+ 95%|█████████▌| 285/300 [06:58<00:19,  1.30s/it][A
+ 95%|█████████▌| 286/300 [07:02<00:30,  2.21s/it][A
+ 96%|█████████▌| 287/300 [07:03<00:24,  1.92s/it][A
+ 96%|█████████▌| 288/300 [07:04<00:17,  1.47s/it][A
+ 96%|█████████▋| 289/300 [07:07<00:21,  1.94s/it][A
+ 97%|█████████▋| 290/300 [07:08<00:16,  1.68s/it][A
+ 97%|█████████▋| 291/300 [07:08<00:11,  1.30s/it][A
+ 97%|█████████▋| 292/300 [07:11<00:14,  1.84s/it][A
+ 98%|█████████▊| 293/300 [07:13<00:11,  1.61s/it][A
+ 98%|█████████▊| 294/300 [07:13<00:07,  1.26s/it][A
+ 98%|█████████▊| 295/300 [07:17<00:10,  2.13s/it][A
+ 99%|█████████▊| 296/300 [07:18<00:06,  1.74s/it][A
+ 99%|█████████▉| 297/300 [07:19<00:04,  1.39s/it][A
+ 99%|█████████▉| 298/300 [07:23<00:04,  2.32s/it][A
+100%|█████████▉| 299/300 [07:24<00:01,  1.93s/it][A
+100%|██████████| 300/300 [07:25<00:00,  1.53s/it][ASaving model checkpoint to /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711-2/checkpoint-300
+Configuration saved in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711-2/checkpoint-300/config.json
+Model weights saved in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711-2/checkpoint-300/pytorch_model.bin
+Configuration saved in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711-2/checkpoint-300/preprocessor_config.json
+Deleting older checkpoint [/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711-2/checkpoint-200] due to args.save_total_limit
+
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+
+                                                 [A
+100%|██████████| 300/300 [07:27<00:00,  1.53s/it][A100%|██████████| 300/300 [07:27<00:00,  1.49s/it]
+Configuration saved in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711-2/config.json
+Model weights saved in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711-2/pytorch_model.bin
+loading feature extractor configuration file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711-2/preprocessor_config.json
+Feature extractor Wav2Vec2FeatureExtractor {
+  "do_normalize": true,
+  "feature_extractor_type": "Wav2Vec2FeatureExtractor",
+  "feature_size": 1,
+  "padding_side": "right",
+  "padding_value": 0.0,
+  "return_attention_mask": false,
+  "sampling_rate": 16000
+}
+
+Didn't find file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711-2/added_tokens.json. We won't load it.
+Didn't find file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711-2/tokenizer.json. We won't load it.
+loading file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711-2/vocab.json
+loading file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711-2/tokenizer_config.json
+loading file None
+loading file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711-2/special_tokens_map.json
+loading file None
+loading configuration file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711-2/config.json
+Model config Wav2Vec2Config {
+  "_name_or_path": "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711/checkpoint-50",
+  "activation_dropout": 0.1,
+  "apply_spec_augment": true,
+  "architectures": [
+    "Wav2Vec2ForCTC"
+  ],
+  "attention_dropout": 0.1,
+  "bos_token_id": 1,
+  "codevector_dim": 256,
+  "contrastive_logits_temperature": 0.1,
+  "conv_bias": false,
+  "conv_dim": [
+    512,
+    512,
+    512,
+    512,
+    512,
+    512,
+    512
+  ],
+  "conv_kernel": [
+    10,
+    3,
+    3,
+    3,
+    3,
+    2,
+    2
+  ],
+  "conv_stride": [
+    5,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "ctc_loss_reduction": "mean",
+  "ctc_zero_infinity": false,
+  "diversity_loss_weight": 0.1,
+  "do_stable_layer_norm": false,
+  "eos_token_id": 2,
+  "feat_extract_activation": "gelu",
+  "feat_extract_dropout": 0.0,
+  "feat_extract_norm": "group",
+  "feat_proj_dropout": 0.1,
+  "feat_quantizer_dropout": 0.0,
+  "final_dropout": 0.1,
+  "gradient_checkpointing": true,
+  "hidden_act": "gelu",
+  "hidden_dropout": 0.1,
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "layerdrop": 0.1,
+  "mask_feature_length": 10,
+  "mask_feature_prob": 0.0,
+  "mask_time_length": 10,
+  "mask_time_prob": 0.05,
+  "model_type": "wav2vec2",
+  "num_attention_heads": 12,
+  "num_codevector_groups": 2,
+  "num_codevectors_per_group": 320,
+  "num_conv_pos_embedding_groups": 16,
+  "num_conv_pos_embeddings": 128,
+  "num_feat_extract_layers": 7,
+  "num_hidden_layers": 12,
+  "num_negatives": 100,
+  "pad_token_id": 0,
+  "proj_codevector_dim": 256,
+  "transformers_version": "4.8.2",
+  "vocab_size": 32
+}
+
+loading weights file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711-2/pytorch_model.bin
+All model checkpoint weights were used when initializing Wav2Vec2ForCTC.
+
+All the weights of Wav2Vec2ForCTC were initialized from the model checkpoint at /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711-2.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use Wav2Vec2ForCTC for predictions without further training.
+  0%|          | 0/100 [00:00<?, ?ex/s]  1%|          | 1/100 [00:00<00:16,  6.02ex/s]  5%|▌         | 5/100 [00:00<00:12,  7.87ex/s]  8%|▊         | 8/100 [00:00<00:09, 10.06ex/s] 11%|█         | 11/100 [00:00<00:07, 11.15ex/s] 14%|█▍        | 14/100 [00:00<00:06, 12.89ex/s] 16%|█▌        | 16/100 [00:00<00:05, 14.16ex/s] 19%|█▉        | 19/100 [00:01<00:05, 15.39ex/s] 22%|██▏       | 22/100 [00:01<00:04, 17.79ex/s] 25%|██▌       | 25/100 [00:01<00:05, 14.34ex/s] 28%|██▊       | 28/100 [00:01<00:04, 16.16ex/s] 31%|███       | 31/100 [00:01<00:03, 18.08ex/s] 34%|███▍      | 34/100 [00:01<00:03, 17.95ex/s] 36%|███▌      | 36/100 [00:01<00:03, 17.94ex/s] 39%|███▉      | 39/100 [00:02<00:03, 19.62ex/s] 42%|████▏     | 42/100 [00:02<00:02, 20.15ex/s] 45%|████▌     | 45/100 [00:02<00:02, 21.94ex/s] 48%|████▊     | 48/100 [00:02<00:02, 18.79ex/s] 51%|█████     | 51/100 [00:02<00:02, 17.38ex/s] 53%|█████▎    | 53/100 [00:02<00:02, 16.30ex/s] 55%|█████▌    | 55/100 [00:03<00:03, 12.51ex/s] 58%|█████▊    | 58/100 [00:03<00:03, 11.02ex/s] 61%|██████    | 61/100 [00:03<00:02, 13.26ex/s] 63%|██████▎   | 63/100 [00:03<00:02, 13.41ex/s] 65%|██████▌   | 65/100 [00:03<00:02, 13.90ex/s] 68%|██████▊   | 68/100 [00:04<00:02, 13.26ex/s] 71%|███████   | 71/100 [00:04<00:01, 15.10ex/s] 73%|███████▎  | 73/100 [00:04<00:02, 11.29ex/s] 75%|███████▌  | 75/100 [00:04<00:02, 12.17ex/s] 77%|███████▋  | 77/100 [00:04<00:02, 11.41ex/s] 80%|████████  | 80/100 [00:04<00:01, 13.87ex/s] 84%|████████▍ | 84/100 [00:05<00:01, 15.31ex/s] 86%|████████▌ | 86/100 [00:05<00:00, 15.49ex/s] 90%|█████████ | 90/100 [00:05<00:00, 18.37ex/s] 97%|█████████▋| 97/100 [00:05<00:00, 21.02ex/s]100%|██████████| 100/100 [00:05<00:00, 17.46ex/s]
+--> Prepared dataset saved at: /srv/scratch/chacmod/renee_thesis/datasetdict-20210711
+To reload this set, run datasetdictName.load_from_dict(myST_datasetdict_fp)
+SUCCESS: Data ready for training and evaluation.
+
+------> PREPARING FOR TRAINING & EVALUATION... ----------------------- 
+
+--> Defining data collator...
+SUCCESS: Data collator defined.
+--> Defining evaluation metric...
+SUCCESS: Defined WER evaluation metric.
+--> Loading pre-trained checkpoint...
+SUCCESS: Pre-trained checkpoint loaded.
+
+------> STARTING TRAINING... ----------------------------------------- 
+
+{'train_runtime': 447.8217, 'train_samples_per_second': 13.398, 'train_steps_per_second': 0.67, 'train_loss': 0.6995383707682291, 'epoch': 20.0}
+
+------> EVALUATING MODEL... ------------------------------------------ 
+
+--> Getting test results...
+Test WER: 0.290
+--> Showing some prediction errors...
+                                         target_text                                           pred_str
+0                   YOU USE EM TO M MEASURE THE MASS                     YOU USE EM TO MEASURE THE MASS
+1  YEAH WE WE D DON'T REALLY DO IT WITH ANYTHING ...  YEAR WE WE DON'T REALLY DO WITH ANYTHING ELSE ...
+2                                               YEAH                                               YEAH
+3                                               YEAH                                               YEAH
+4  NO WE HA WE PULL IT UP AND THEN WE PUSH IT DOW...  NO YET WE PULL IT UP UP AND THEN WE PUSH IT DO...
+5                                       THAT SLIPPED                                               AWIP
+6                                        UH HUH YEAH                                                IAH
+7  YEAH NO IT WAS A MILLILIT NO A HUNDRED MILLILI...  YEANO IT WAS A MILLER LEAT NO A HUNDRED MILL L...
+8  UM YOU DON'T GET THE SAME MEASUREMENT YEAH YEA...  UM YOU DON'T GET THE SAME MEASUREMENTYEAHYEAH ...
+9  THE WATER INSIDE THE SPONGE CAUSE WE WANTED TO...  THE WATER INSIDE THIS ONE BBECAUSE WE WANTED T...
+--> Taking a deeper look...
+<pad> <pad> <pad> Y <pad> <pad> <pad> E E A A H <pad> <pad> | <pad> W <pad> <pad> E <pad> <pad> | | W <pad> R R <pad> O <pad> <pad> <pad> T E <pad> | <pad> O <pad> <pad> R E E <pad> | | <pad> N <pad> U U M <pad> <pad> B <pad> E R R <pad> E D <pad> | | <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> O U <pad> <pad> <pad> <pad> T T <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> Y <pad> <pad> <pad> <pad> E A A <pad> H <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> P <pad> <pad> <pad> A A <pad> <pad> <pad> P <pad> <pad> E R R <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+
+------> SUCCESSFULLY FINISHED ---------------------------------------- 
+
+Finished: 11/07/2021 19:56:41

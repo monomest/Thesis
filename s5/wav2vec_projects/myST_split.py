@@ -42,13 +42,13 @@ myST_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/
 # Speaker information
 myST_spkrs_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_spkrs.csv"
 # Where to save spkrs train dataframe
-myST_spkrs_train_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_spkrs_train_all.csv"
+myST_spkrs_train_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_spkrs_train.csv"
 # Where to save spkrs test dataframe
-myST_spkrs_test_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_spkrs_test_all.csv"
+myST_spkrs_test_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_spkrs_test.csv"
 # Where to save training dataframe
-myST_train_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_train_all.csv"
+myST_train_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_train.csv"
 # Where to save testing
-myST_test_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_test_all.csv"
+myST_test_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_test.csv"
 
 # ------------------------------------------
 #        Splitting by speakers
@@ -101,6 +101,10 @@ test_df = myST_df[~all_spkrs_index.isin(train_spkrs_index)]
 # ------------------------------------------
 #          Saving to csv files
 # ------------------------------------------
+# Save spkr_id as string so leading zeros are not removed
+train_df['spkr_id'] = train_df['spkr_id'].astype('str')
+test_df['spkr_id'] = test_df['spkr_id'].astype('str')
+# Save as csv file
 train_df.to_csv(myST_train_fp, index=False)
 test_df.to_csv(myST_test_fp, index=False)
 print("SUCCESS: Created train and test portions in",

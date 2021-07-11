@@ -1,0 +1,109 @@
+Using custom data configuration default-37316b26926a9f32
+Reusing dataset csv (/srv/scratch/chacmod/.cache/huggingface/datasets/20210711/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0)
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-14b38992aeba7676.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-660d55a2768cff82.arrow
+  0%|          | 0/1 [00:00<?, ?ba/s]100%|██████████| 1/1 [00:00<00:00, 98.26ba/s]
+  0%|          | 0/1 [00:00<?, ?ba/s]100%|██████████| 1/1 [00:00<00:00, 581.09ba/s]------------------------------------------------------------------------
+                 run_finetune_kids.py                                   
+------------------------------------------------------------------------
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/run_finetune_kids_checkpoint.py
+Started: 11/07/2021 19:30:03
+
+------> IMPORTING PACKAGES.... ---------------------------------------
+
+-->Importing datasets...
+-->Importing random...
+-->Importing pandas & numpy...
+-->Importing re...
+-->Importing json...
+-->Importing Wav2VecCTC...
+-->Importing soundfile...
+-->Importing torch, dataclasses & typing...
+-->Importing from transformers for training...
+-->SUCCESS! All packages imported.
+
+------> SETTING FILEPATHS... ----------------------------------------- 
+
+--> myST_train_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_train_short.csv
+--> myST_test_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_test_short.csv
+--> data_cache_fp: /srv/scratch/chacmod/.cache/huggingface/datasets/20210711
+--> vocab_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/vocab_20210711.json
+--> model_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711
+--> pretrained_mod: facebook/wav2vec2-base-960h
+--> myST_datasetdict_fp: /srv/scratch/chacmod/renee_thesis/datasetdict-20210711
+--> pretrained_tokenizer: facebook/wav2vec2-base-960h
+
+------> PREPARING MYST DATASET... ------------------------------------
+
+--> MyST dataset...
+DatasetDict({
+    train: Dataset({
+        features: ['filepath', 'transcription'],
+        num_rows: 300
+    })
+    test: Dataset({
+        features: ['filepath', 'transcription'],
+        num_rows: 100
+    })
+})
+--> Printing some random samples...
+                                            filepath                                      transcription
+0  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...  north and s n and s are um on one side they wi...
+1  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...                       well yeah i think so mmm hmm
+2  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...                                       um a syringe
+3  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...                          well the first day we did
+4  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...                  there are no wires connected to b
+SUCCESS: Prepared dataset.
+
+------> CREATING VOCABULARY... ---------------------------------------
+
+--> Creating map(...) function for vocab...
+--> Vocab len: 28 
+ {'K': 0, 'V': 1, 'O': 2, "'": 3, 'U': 4, 'C': 5, 'G': 6, 'T': 7, ' ': 8, 'X': 9, 'E': 10, 'N': 11, 'A': 12, 'Y': 13, 'D': 14, 'L': 15, 'B': 16, 'Q': 17, 'F': 18, 'Z': 19, 'I': 20, 'H': 21, 'P': 22, 'S': 23, 'M': 24, 'R': 25, 'W': 26, 'J': 27}
+--> Vocab len: 30 
+ {'K': 0, 'V': 1, 'O': 2, "'": 3, 'U': 4, 'C': 5, 'G': 6, 'T': 7, 'X': 9, 'E': 10, 'N': 11, 'A': 12, 'Y': 13, 'D': 14, 'L': 15, 'B': 16, 'Q': 17, 'F': 18, 'Z': 19, 'I': 20, 'H': 21, 'P': 22, 'S': 23, 'M': 24, 'R': 25, 'W': 26, 'J': 27, '|': 8, '[UNK]': 28, '[PAD]': 29}
+SUCCESS: Created vocabulary file at /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/vocab_20210711.json
+
+------> CREATING WAV2VEC2 FEATURE EXTRACTOR... -----------------------
+
+SUCCESS: Created feature extractor.
+
+------> PRE-PROCESSING DATA... ----------------------------------------- 
+
+
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-2135c9fabbd352ff.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-b4f55433750714a4.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-aa3fb73a12d2595c.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-71be5c965fe7ba0d.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-11afec341fdf2249.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-c1b972d16149be3a.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-9b529f23ae576b8c.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-e3e19552fdd6eeeb.arrow
+--> Verifying data with a random sample...
+Target text: OKAY
+Input array shape: (6528,)
+Sampling rate: 16000
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-02db795432630776.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-4afa724e97d09edf.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-74d87b426d025acf.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-9785f0c924ca1c4e.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-ad6365e3f22b4d60.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-8f0be50c614f4c4b.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-5fadd7632cae3222.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-525c1c6458e44a09.arrow
+Some weights of Wav2Vec2ForCTC were not initialized from the model checkpoint at facebook/wav2vec2-base-960h and are newly initialized: ['wav2vec2.masked_spec_embed']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Using amp fp16 backend
+***** Running training *****
+  Num examples = 300
+  Num Epochs = 20
+  Instantaneous batch size per device = 20
+  Total train batch size (w. parallel, distributed & accumulation) = 20
+  Gradient Accumulation steps = 1
+  Total optimization steps = 300
+  0%|          | 0/300 [00:00<?, ?it/s]  0%|          | 1/300 [00:04<22:22,  4.49s/it]  1%|          | 2/300 [00:05<17:00,  3.42s/it]  1%|          | 3/300 [00:05<12:40,  2.56s/it]  1%|▏         | 4/300 [00:08<13:00,  2.64s/it]  2%|▏         | 5/300 [00:09<10:41,  2.17s/it]  2%|▏         | 6/300 [00:10<08:12,  1.67s/it]  2%|▏         | 7/300 [00:14<11:19,  2.32s/it]  3%|▎         | 8/300 [00:15<09:33,  1.96s/it]  3%|▎         | 9/300 [00:15<07:24,  1.53s/it]  3%|▎         | 10/300 [00:20<11:15,  2.33s/it]  4%|▎         | 11/300 [00:21<09:25,  1.96s/it]  4%|▍         | 12/300 [00:21<07:05,  1.48s/it]  4%|▍         | 13/300 [00:24<09:29,  1.99s/it]  5%|▍         | 14/300 [00:25<07:59,  1.68s/it]  5%|▌         | 15/300 [00:26<06:21,  1.34s/it]  5%|▌         | 16/300 [00:30<10:43,  2.27s/it]  6%|▌         | 17/300 [00:31<09:22,  1.99s/it]  6%|▌         | 18/300 [00:32<07:12,  1.53s/it]  6%|▋         | 19/300 [00:36<10:53,  2.33s/it]  7%|▋         | 20/300 [00:37<08:46,  1.88s/it]  7%|▋         | 21/300 [00:37<06:38,  1.43s/it]  7%|▋         | 22/300 [00:40<08:50,  1.91s/it]  8%|▊         | 23/300 [00:41<07:36,  1.65s/it]  8%|▊         | 24/300 [00:42<06:02,  1.31s/it]  8%|▊         | 25/300 [00:45<08:20,  1.82s/it]  9%|▊         | 26/300 [00:46<07:09,  1.57s/it]  9%|▉         | 27/300 [00:46<05:40,  1.25s/it]  9%|▉         | 28/300 [00:49<07:42,  1.70s/it] 10%|▉         | 29/300 [00:50<06:53,  1.53s/it] 10%|█         | 30/300 [00:51<05:36,  1.24s/it] 10%|█         | 31/300 [00:55<09:25,  2.10s/it] 11%|█         | 32/300 [00:56<08:00,  1.79s/it] 11%|█         | 33/300 [00:57<06:17,  1.42s/it] 11%|█▏        | 34/300 [01:00<08:27,  1.91s/it] 12%|█▏        | 35/300 [01:01<07:29,  1.69s/it] 12%|█▏        | 36/300 [01:01<05:45,  1.31s/it] 12%|█▏        | 37/300 [01:05<08:59,  2.05s/it] 13%|█▎        | 38/300 [01:06<07:48,  1.79s/it] 13%|█▎        | 39/300 [01:07<06:11,  1.42s/it] 13%|█▎        | 40/300 [01:09<07:05,  1.64s/it] 14%|█▎        | 41/300 [01:10<06:08,  1.42s/it] 14%|█▍        | 42/300 [01:10<04:48,  1.12s/it] 14%|█▍        | 43/300 [01:14<08:34,  2.00s/it] 15%|█▍        | 44/300 [01:15<07:06,  1.67s/it] 15%|█▌        | 45/300 [01:16<05:39,  1.33s/it] 15%|█▌        | 46/300 [01:20<09:54,  2.34s/it] 16%|█▌        | 47/300 [01:21<08:15,  1.96s/it] 16%|█▌        | 48/300 [01:22<06:18,  1.50s/it] 16%|█▋        | 49/300 [01:25<07:51,  1.88s/it] 17%|█▋        | 50/300 [01:26<06:55,  1.66s/it]Saving model checkpoint to /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711/checkpoint-50
+Configuration saved in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711/checkpoint-50/config.json
+Model weights saved in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711/checkpoint-50/pytorch_model.bin
+Configuration saved in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711/checkpoint-50/preprocessor_config.json
+Deleting older checkpoint [/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711/checkpoint-250] due to args.save_total_limit
+ 17%|█▋        | 51/300 [01:29<09:04,  2.19s/it] 17%|█▋        | 52/300 [01:33<11:26,  2.77s/it] 18%|█▊        | 53/300 [01:35<09:23,  2.28s/it] 18%|█▊        | 54/300 [01:35<07:12,  1.76s/it] 18%|█▊        | 55/300 [01:38<08:40,  2.12s/it] 19%|█▊        | 56/300 [01:39<07:11,  1.77s/it] 19%|█▉        | 57/300 [01:39<05:29,  1.36s/it] 19%|█▉        | 58/300 [01:44<09:04,  2.25s/it] 20%|█▉        | 59/300 [01:44<07:16,  1.81s/it] 20%|██        | 60/300 [01:45<05:44,  1.44s/it] 20%|██        | 61/300 [01:49<09:12,  2.31s/it] 21%|██        | 62/300 [01:51<07:47,  1.96s/it] 21%|██        | 63/300 [01:51<06:06,  1.55s/it] 21%|██▏       | 64/300 [01:54<07:43,  1.96s/it] 22%|██▏       | 65/300 [01:55<07:00,  1.79s/it] 22%|██▏       | 66/300 [01:56<05:28,  1.40s/it] 22%|██▏       | 67/300 [02:00<08:43,  2.25s/it] 23%|██▎       | 68/300 [02:01<06:59,  1.81s/it] 23%|██▎       | 69/300 [02:02<05:30,  1.43s/it]

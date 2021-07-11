@@ -73,6 +73,17 @@ from transformers import Trainer
 print("-->SUCCESS! All packages imported.")
 
 # ------------------------------------------
+#      Setting experiment arguments
+# ------------------------------------------
+experiment_id = "20210711"
+datasetdict_id = "20210711"
+use_checkpoint = False
+checkpoint = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711/checkpoint-50"
+use_pretrained_tokenizer = True
+pretrained_tokenizer = "facebook/wav2vec2-base-960h"
+baseline_model = "facebook/wav2vec2-base-960h"
+
+# ------------------------------------------
 #          Setting file paths
 # ------------------------------------------
 print("\n------> SETTING FILEPATHS... ----------------------------------------- \n")
@@ -82,24 +93,33 @@ print("--> myST_train_fp:", myST_train_fp)
 # Path to dataframe csv for MyST test
 myST_test_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_test.csv"
 print("--> myST_test_fp:", myST_test_fp)
-# |-----------|---------------|----------|
-# | file path | transcription | duration |
-# |-----------|---------------|----------|
-# |   ...     |      ...      |  ..secs  |
-# |-----------|---------------|----------|
+# |-----------|---------------|----------|---------|
+# | file path | transcription | duration | spkr_id |
+# |-----------|---------------|----------|---------|
+# |   ...     |      ...      |  ..secs  | ......  |
+# |-----------|---------------|----------|---------|
 # Path to datasets cache
 #data_cache_fp = "/srv/scratch/z5160268/.cache/huggingface/datasets"
-data_cache_fp = "/srv/scratch/chacmod/.cache/huggingface/datasets"
+data_cache_fp = "/srv/scratch/chacmod/.cache/huggingface/datasets/" + experiment_id
 print("--> data_cache_fp:", data_cache_fp)
 # Path to save vocab.json
-vocab_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/vocab.json"
+vocab_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/vocab_" + experiment_id + ".json"
 print("--> vocab_fp:", vocab_fp)
 # Path to save model output
-model_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210705"
+model_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-" + experiment_id
 print("--> model_fp:", model_fp)
 # Pre-trained checkpoint model
-#pretrained_mod = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210704"
-pretrained_mod = "facebook/wav2vec2-base" 
+# Default is facebook's model
+pretrained_mod = "facebook/wav2vec2-base-960h"
+if use_checkpoint:
+    pretrained_mod = checkpoint
+print("--> pretrained_mod:", pretrained_mod)
+# Path to save prepared DatasetDict object
+myST_datasetdict_fp = "/srv/scratch/chacmod/renee_thesis/datasetdict-" + datasetdict_id
+print("--> myST_datasetdict_fp:", myST_datasetdict_fp)
+# Path to tokenizer
+if use_pretrained_tokenizer:
+    print("--> pretrained_tokenizer:", pretrained_tokenizer)
 
 # ------------------------------------------
 #         Preparing MyST dataset
@@ -118,7 +138,7 @@ print("\n------> PREPARING MYST DATASET... ------------------------------------\
 myST = load_dataset('csv', data_files={'train': myST_train_fp,
                                        'test': myST_test_fp},
                     cache_dir=data_cache_fp)
-# Remove the "duration" column
+# Remove the "duration" and "spkr_id" column
 myST = myST.remove_columns(["duration", "spkr_id"])
 print("--> MyST dataset...")
 print(myST)
@@ -148,6 +168,15 @@ print("\n------> CREATING VOCABULARY... ---------------------------------------\
 # string into a set of chars. Set batched=True to the 
 # map(...) function so that the mapping function has access
 # to all transcriptions at once.
+
+chars_to_ignore_regex = '[\,\?\.\!\-\;\:\"]'
+
+def remove_special_characters(batch):
+    batch["transcription"] = re.sub(chars_to_ignore_regex, '', batch["transcription"]).upper()
+    return batch
+
+myST = myST.map(remove_special_characters)
+
 def extract_all_chars(batch):
     all_text = " ".join(batch["transcription"])
     vocab = list(set(all_text))
@@ -174,8 +203,12 @@ with open(vocab_fp, 'w') as vocab_file:
     json.dump(vocab_dict, vocab_file)
 print("SUCCESS: Created vocabulary file at", vocab_fp)
 # Use json file to instantiate an object of the 
-# Wav2VecCTCTokenziser class
-tokenizer = Wav2Vec2CTCTokenizer(vocab_fp, unk_token="[UNK]", pad_token="[PAD]", word_delimiter_token="|")
+# Wav2VecCTCTokenziser class if not using pretrained tokenizer
+if use_pretrained_tokenizer:
+    tokenizer = Wav2Vec2CTCTokenizer.from_pretrained(pretrained_tokenizer)
+else:
+    tokenizer = Wav2Vec2CTCTokenizer(vocab_fp, unk_token="[UNK]", pad_token="[PAD]", word_delimiter_token="|")
+#tokenizer = save_pretrained(model_fp)
 
 # ------------------------------------------
 #    Create Wav2Vec2 Feature Extractor
@@ -238,6 +271,11 @@ def prepare_dataset(batch):
         batch["labels"] = processor(batch["target_text"]).input_ids
     return batch
 myST_prepared = myST.map(prepare_dataset, remove_columns=myST.column_names["train"], batch_size=8, num_proc=4, batched=True)
+
+# Save dataset
+myST_prepared.save_to_disk(myST_datasetdict_fp)
+print("--> Prepared dataset saved at:", myST_datasetdict_fp)
+print("To reload this set, run datasetdictName.load_from_dict(myST_datasetdict_fp)")
 print("SUCCESS: Data ready for training and evaluation.")
 
 # ------------------------------------------
@@ -354,19 +392,12 @@ print("SUCCESS: Defined WER evaluation metric.")
 # also CTC's blank token. To save GPU memory, we enable PyTorch's gradient
 # checkpointing and also set the loss reduction to "mean".
 print("--> Loading pre-trained checkpoint...")
-#model = Wav2Vec2ForCTC.from_pretrained(
-#    "facebook/wav2vec2-base", 
-#    gradient_checkpointing=True, 
-#    ctc_loss_reduction="mean", 
-#    pad_token_id=processor.tokenizer.pad_token_id,
-#)
 model = Wav2Vec2ForCTC.from_pretrained(
     pretrained_mod,
     gradient_checkpointing=True,
     ctc_loss_reduction="mean",
     pad_token_id=processor.tokenizer.pad_token_id,
 )
-
 
 # The first component of Wav2Vec2 consists of a stack of CNN layers
 # that are used to extract acoustically meaningful - but contextually 
@@ -391,18 +422,19 @@ print("SUCCESS: Pre-trained checkpoint loaded.")
 # OG: weight_decay=0.005
 # OG: num_train_epochs=30
 # OG: per_device_train_batch_size=32
+# OG: save_steps=500
 training_args = TrainingArguments(
   output_dir=model_fp,
   group_by_length=True,
   per_device_train_batch_size=20,
   evaluation_strategy="steps",
-  num_train_epochs=30,
+  num_train_epochs=20,
   fp16=True,
-  save_steps=500,
+  save_steps=50,
   eval_steps=500,
   logging_steps=500,
   learning_rate=1e-4,
-  weight_decay=0.005,
+  weight_decay=0.01,
   warmup_steps=1000,
   save_total_limit=2,
 )
@@ -426,10 +458,13 @@ trainer = Trainer(
 # especially for MyST.
 print("\n------> STARTING TRAINING... ----------------------------------------- \n")
 torch.cuda.empty_cache()
-trainer.train()
-#trainer.evaluate()
+# Train
+if use_checkpoint:
+    trainer.train(pretrained_mod)
+else:
+    trainer.train()
+# Save the model
 model.save_pretrained(model_fp)
-#trainer.save_model(model_fp)
 
 # ------------------------------------------
 #            Evaluation
@@ -439,6 +474,7 @@ print("\n------> EVALUATING MODEL... ------------------------------------------ 
 torch.cuda.empty_cache()
 processor = Wav2Vec2Processor.from_pretrained(model_fp)
 model = Wav2Vec2ForCTC.from_pretrained(model_fp)
+
 # Now, we will make use of the map(...) function to predict 
 # the transcription of every test sample and to save the prediction 
 # in the dataset itself. We will call the resulting dictionary "results".
@@ -464,10 +500,46 @@ def map_to_result(batch):
 
 results = myST["test"].map(map_to_result)
 # Getting the WER
-print("--> Getting test results...")
-print("Test WER: {:.3f}".format(wer_metric.compute(predictions=results["pred_str"], references=results["target_text"])))
+print("--> Getting fine-tuned test results...")
+print("Fine-tuned Test WER: {:.3f}".format(wer_metric.compute(predictions=results["pred_str"], references=results["target_text"])))
 # Showing prediction errors
-print("--> Showing some prediction errors...")
+print("--> Showing some fine-tuned prediction errors...")
+show_random_elements(results.remove_columns(["speech", "sampling_rate"]))
+# Deeper look into model: running the first test sample through the model, 
+# take the predicted ids and convert them to their corresponding tokens.
+print("--> Taking a deeper look...")
+model.to("cuda")
+input_values = processor(myST["test"][0]["speech"], sampling_rate=myST["test"][0]["sampling_rate"], return_tensors="pt").input_values.to("cuda")
+
+with torch.no_grad():
+  logits = model(input_values).logits
+
+pred_ids = torch.argmax(logits, dim=-1)
+
+# convert ids to tokens
+print(" ".join(processor.tokenizer.convert_ids_to_tokens(pred_ids[0].tolist())))
+
+# Evaluate baseline model on test set.
+print("\n------> EVALUATING BASELINE MODEL... ------------------------------------------ \n")
+torch.cuda.empty_cache()
+processor = Wav2Vec2Processor.from_pretrained(baseline_model)
+model = Wav2Vec2ForCTC.from_pretrained(baseline_model)
+tokenizer = Wav2Vec2CTCTokenizer.from_pretrained(baseline_model)
+
+# Now, we will make use of the map(...) function to predict 
+# the transcription of every test sample and to save the prediction 
+# in the dataset itself. We will call the resulting dictionary "results".
+# Note: we evaluate the test data set with batch_size=1 on purpose due 
+# to this issue (https://github.com/pytorch/fairseq/issues/3227). Since 
+# padded inputs don't yield the exact same output as non-padded inputs, 
+# a better WER can be achieved by not padding the input at all.
+
+results = myST["test"].map(map_to_result)
+# Getting the WER
+print("--> Getting baseline test results...")
+print("Baseline Test WER: {:.3f}".format(wer_metric.compute(predictions=results["pred_str"], references=results["target_text"])))
+# Showing prediction errors
+print("--> Showing some baseline prediction errors...")
 show_random_elements(results.remove_columns(["speech", "sampling_rate"]))
 # Deeper look into model: running the first test sample through the model, 
 # take the predicted ids and convert them to their corresponding tokens.

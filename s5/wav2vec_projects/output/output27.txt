@@ -1,0 +1,304 @@
+Using custom data configuration default-8e619efe0a15e986
+Reusing dataset csv (/srv/scratch/chacmod/.cache/huggingface/datasets/20210711/csv/default-8e619efe0a15e986/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0)
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711/csv/default-8e619efe0a15e986/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-06d039fe7168d513.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711/csv/default-8e619efe0a15e986/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-6bc264a654a4cf85.arrow
+  0%|          | 0/1 [00:00<?, ?ba/s]100%|██████████| 1/1 [00:00<00:00, 110.25ba/s]
+  0%|          | 0/1 [00:00<?, ?ba/s]100%|██████████| 1/1 [00:00<00:00, 566.49ba/s]------------------------------------------------------------------------
+                 run_finetune_kids.py                                   
+------------------------------------------------------------------------
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/run_finetune_kids_checkpoint.py
+Started: 11/07/2021 18:08:06
+
+------> IMPORTING PACKAGES.... ---------------------------------------
+
+-->Importing datasets...
+-->Importing random...
+-->Importing pandas & numpy...
+-->Importing re...
+-->Importing json...
+-->Importing Wav2VecCTC...
+-->Importing soundfile...
+-->Importing torch, dataclasses & typing...
+-->Importing from transformers for training...
+-->SUCCESS! All packages imported.
+
+------> SETTING FILEPATHS... ----------------------------------------- 
+
+--> myST_train_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_train_og_test.csv
+--> myST_test_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_test_short.csv
+--> data_cache_fp: /srv/scratch/chacmod/.cache/huggingface/datasets/20210711
+--> vocab_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/vocab_20210711.json
+--> model_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711
+--> pretrained_mod: facebook/wav2vec2-base-960h
+--> myST_datasetdict_fp: /srv/scratch/chacmod/renee_thesis/datasetdict-20210711
+
+------> PREPARING MYST DATASET... ------------------------------------
+
+--> MyST dataset...
+DatasetDict({
+    train: Dataset({
+        features: ['filepath', 'transcription'],
+        num_rows: 10
+    })
+    test: Dataset({
+        features: ['filepath', 'transcription'],
+        num_rows: 100
+    })
+})
+--> Printing some random samples...
+                                            filepath                                      transcription
+0  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...  they mean that the wires on the motor stop the...
+1  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...  the one that looks like uh sort of like a swit...
+2  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...  i see um a light bulb and that one of the wire...
+3  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...  the names of a those little circles at the bot...
+4  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...                                               good
+SUCCESS: Prepared dataset.
+
+------> CREATING VOCABULARY... ---------------------------------------
+
+--> Creating map(...) function for vocab...
+--> Vocab len: 28 
+ {'O': 0, 'K': 1, 'W': 2, 'Y': 3, 'L': 4, 'M': 5, ' ': 6, 'H': 7, 'C': 8, 'D': 9, 'X': 10, 'B': 11, 'V': 12, 'R': 13, 'A': 14, 'Q': 15, 'T': 16, "'": 17, 'P': 18, 'Z': 19, 'S': 20, 'N': 21, 'E': 22, 'I': 23, 'U': 24, 'G': 25, 'J': 26, 'F': 27}
+--> Vocab len: 30 
+ {'O': 0, 'K': 1, 'W': 2, 'Y': 3, 'L': 4, 'M': 5, 'H': 7, 'C': 8, 'D': 9, 'X': 10, 'B': 11, 'V': 12, 'R': 13, 'A': 14, 'Q': 15, 'T': 16, "'": 17, 'P': 18, 'Z': 19, 'S': 20, 'N': 21, 'E': 22, 'I': 23, 'U': 24, 'G': 25, 'J': 26, 'F': 27, '|': 6, '[UNK]': 28, '[PAD]': 29}
+SUCCESS: Created vocabulary file at /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/vocab_20210711.json
+
+------> CREATING WAV2VEC2 FEATURE EXTRACTOR... -----------------------
+
+SUCCESS: Created feature extractor.
+
+------> PRE-PROCESSING DATA... ----------------------------------------- 
+
+
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711/csv/default-8e619efe0a15e986/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-6548d21f1ad6832c.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711/csv/default-8e619efe0a15e986/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-a4f938df68c0e73a.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711/csv/default-8e619efe0a15e986/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-34663d1eabd2a027.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711/csv/default-8e619efe0a15e986/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-71935b26105c2e03.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711/csv/default-8e619efe0a15e986/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-dabc0f195246f655.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711/csv/default-8e619efe0a15e986/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-4c3d13f91f090c96.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711/csv/default-8e619efe0a15e986/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-df96aac77f6feb0c.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/20210711/csv/default-8e619efe0a15e986/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-322c8293d52d0e19.arrow
+--> Verifying data with a random sample...
+Target text: UM I FORGET ITS NAME BUT I THINK IT STARTS WITH AN S AND IT USES SYMBOLS TO TELL YOU INSTEAD OF JUST DRAWING ALL THE DETAILS
+Input array shape: (155888,)
+Sampling rate: 16000
+ #0:   0%|          | 0/1 [00:00<?, ?ba/s]
+ #1:   0%|          | 0/1 [00:00<?, ?ba/s][A
+
+ #2:   0%|          | 0/1 [00:00<?, ?ba/s][A[A
+
+
+ #3:   0%|          | 0/1 [00:00<?, ?ba/s][A[A[A/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
+  return array(a, dtype, copy=False, order=order)
+
+
+ #2: 100%|██████████| 1/1 [00:00<00:00,  5.23ba/s][A[A #2: 100%|██████████| 1/1 [00:00<00:00,  5.22ba/s]/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
+  return array(a, dtype, copy=False, order=order)
+
+
+
+ #3: 100%|██████████| 1/1 [00:00<00:00,  4.91ba/s][A[A[A #3: 100%|██████████| 1/1 [00:00<00:00,  4.89ba/s]/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
+  return array(a, dtype, copy=False, order=order)
+
+ #1: 100%|██████████| 1/1 [00:00<00:00,  3.42ba/s][A #1: 100%|██████████| 1/1 [00:00<00:00,  3.41ba/s]/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
+  return array(a, dtype, copy=False, order=order)
+ #0: 100%|██████████| 1/1 [00:00<00:00,  2.42ba/s] #0: 100%|██████████| 1/1 [00:00<00:00,  2.42ba/s]
+
+
+
+ #0:   0%|          | 0/4 [00:00<?, ?ba/s]
+ #1:   0%|          | 0/4 [00:00<?, ?ba/s][A
+
+ #2:   0%|          | 0/4 [00:00<?, ?ba/s][A[A
+
+
+ #3:   0%|          | 0/4 [00:00<?, ?ba/s][A[A[A/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
+  return array(a, dtype, copy=False, order=order)
+ #0:  25%|██▌       | 1/4 [00:00<00:00,  3.92ba/s]/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
+  return array(a, dtype, copy=False, order=order)
+
+ #1:  25%|██▌       | 1/4 [00:00<00:01,  2.74ba/s][A/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
+  return array(a, dtype, copy=False, order=order)
+
+
+
+ #3:  25%|██▌       | 1/4 [00:00<00:01,  2.40ba/s][A[A[A
+ #1:  50%|█████     | 2/4 [00:00<00:00,  3.19ba/s][A #0:  50%|█████     | 2/4 [00:00<00:00,  3.65ba/s]
+
+
+ #3:  50%|█████     | 2/4 [00:00<00:00,  2.92ba/s][A[A[A
+
+
+ #3:  75%|███████▌  | 3/4 [00:00<00:00,  3.57ba/s][A[A[A/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/numpy/core/_asarray.py:83: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
+  return array(a, dtype, copy=False, order=order)
+
+
+ #2:  25%|██▌       | 1/4 [00:00<00:02,  1.36ba/s][A[A #3: 100%|██████████| 4/4 [00:00<00:00,  5.35ba/s] #0:  75%|███████▌  | 3/4 [00:00<00:00,  3.72ba/s]
+ #1:  75%|███████▌  | 3/4 [00:00<00:00,  3.22ba/s][A #1: 100%|██████████| 4/4 [00:00<00:00,  4.32ba/s] #0: 100%|██████████| 4/4 [00:01<00:00,  4.17ba/s] #0: 100%|██████████| 4/4 [00:01<00:00,  3.99ba/s]
+
+ #2:  50%|█████     | 2/4 [00:01<00:01,  1.63ba/s][A[A
+
+ #2:  75%|███████▌  | 3/4 [00:01<00:00,  1.72ba/s][A[A #2: 100%|██████████| 4/4 [00:01<00:00,  2.47ba/s]
+
+
+
+Some weights of Wav2Vec2ForCTC were not initialized from the model checkpoint at facebook/wav2vec2-base-960h and are newly initialized: ['wav2vec2.masked_spec_embed']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Using amp fp16 backend
+***** Running training *****
+  Num examples = 10
+  Num Epochs = 1
+  Instantaneous batch size per device = 20
+  Total train batch size (w. parallel, distributed & accumulation) = 20
+  Gradient Accumulation steps = 1
+  Total optimization steps = 1
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:01<00:00,  1.20s/it]
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+                                             100%|██████████| 1/1 [00:01<00:00,  1.20s/it]100%|██████████| 1/1 [00:01<00:00,  1.20s/it]
+Configuration saved in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711/config.json
+Model weights saved in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711/pytorch_model.bin
+loading feature extractor configuration file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711/preprocessor_config.json
+Feature extractor Wav2Vec2FeatureExtractor {
+  "do_normalize": true,
+  "feature_extractor_type": "Wav2Vec2FeatureExtractor",
+  "feature_size": 1,
+  "padding_side": "right",
+  "padding_value": 0.0,
+  "return_attention_mask": false,
+  "sampling_rate": 16000
+}
+
+Didn't find file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711/added_tokens.json. We won't load it.
+Didn't find file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711/tokenizer.json. We won't load it.
+loading file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711/vocab.json
+loading file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711/tokenizer_config.json
+loading file None
+loading file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711/special_tokens_map.json
+loading file None
+loading configuration file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711/config.json
+Model config Wav2Vec2Config {
+  "_name_or_path": "facebook/wav2vec2-base-960h",
+  "activation_dropout": 0.1,
+  "apply_spec_augment": true,
+  "architectures": [
+    "Wav2Vec2ForCTC"
+  ],
+  "attention_dropout": 0.1,
+  "bos_token_id": 1,
+  "codevector_dim": 256,
+  "contrastive_logits_temperature": 0.1,
+  "conv_bias": false,
+  "conv_dim": [
+    512,
+    512,
+    512,
+    512,
+    512,
+    512,
+    512
+  ],
+  "conv_kernel": [
+    10,
+    3,
+    3,
+    3,
+    3,
+    2,
+    2
+  ],
+  "conv_stride": [
+    5,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "ctc_loss_reduction": "mean",
+  "ctc_zero_infinity": false,
+  "diversity_loss_weight": 0.1,
+  "do_stable_layer_norm": false,
+  "eos_token_id": 2,
+  "feat_extract_activation": "gelu",
+  "feat_extract_dropout": 0.0,
+  "feat_extract_norm": "group",
+  "feat_proj_dropout": 0.1,
+  "feat_quantizer_dropout": 0.0,
+  "final_dropout": 0.1,
+  "gradient_checkpointing": true,
+  "hidden_act": "gelu",
+  "hidden_dropout": 0.1,
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "layerdrop": 0.1,
+  "mask_feature_length": 10,
+  "mask_feature_prob": 0.0,
+  "mask_time_length": 10,
+  "mask_time_prob": 0.05,
+  "model_type": "wav2vec2",
+  "num_attention_heads": 12,
+  "num_codevector_groups": 2,
+  "num_codevectors_per_group": 320,
+  "num_conv_pos_embedding_groups": 16,
+  "num_conv_pos_embeddings": 128,
+  "num_feat_extract_layers": 7,
+  "num_hidden_layers": 12,
+  "num_negatives": 100,
+  "pad_token_id": 0,
+  "proj_codevector_dim": 256,
+  "transformers_version": "4.8.2",
+  "vocab_size": 32
+}
+
+loading weights file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711/pytorch_model.bin
+All model checkpoint weights were used when initializing Wav2Vec2ForCTC.
+
+All the weights of Wav2Vec2ForCTC were initialized from the model checkpoint at /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use Wav2Vec2ForCTC for predictions without further training.
+  0%|          | 0/100 [00:00<?, ?ex/s]  2%|▏         | 2/100 [00:00<00:06, 15.67ex/s]  6%|▌         | 6/100 [00:00<00:05, 18.36ex/s]  9%|▉         | 9/100 [00:00<00:04, 19.78ex/s] 11%|█         | 11/100 [00:00<00:05, 17.14ex/s] 14%|█▍        | 14/100 [00:00<00:04, 18.05ex/s] 16%|█▌        | 16/100 [00:00<00:04, 18.02ex/s] 19%|█▉        | 19/100 [00:00<00:04, 17.97ex/s] 22%|██▏       | 22/100 [00:01<00:03, 19.94ex/s] 25%|██▌       | 25/100 [00:01<00:05, 14.93ex/s] 28%|██▊       | 28/100 [00:01<00:04, 16.65ex/s] 31%|███       | 31/100 [00:01<00:03, 18.49ex/s] 34%|███▍      | 34/100 [00:01<00:03, 17.98ex/s] 36%|███▌      | 36/100 [00:01<00:03, 17.98ex/s] 39%|███▉      | 39/100 [00:02<00:03, 19.53ex/s] 42%|████▏     | 42/100 [00:02<00:02, 20.19ex/s] 45%|████▌     | 45/100 [00:02<00:02, 22.04ex/s] 48%|████▊     | 48/100 [00:02<00:02, 18.75ex/s] 51%|█████     | 51/100 [00:02<00:02, 17.32ex/s] 53%|█████▎    | 53/100 [00:02<00:02, 16.14ex/s] 55%|█████▌    | 55/100 [00:03<00:03, 12.40ex/s] 58%|█████▊    | 58/100 [00:03<00:03, 11.08ex/s] 61%|██████    | 61/100 [00:03<00:02, 13.41ex/s] 63%|██████▎   | 63/100 [00:03<00:02, 13.54ex/s] 65%|██████▌   | 65/100 [00:03<00:02, 14.04ex/s] 68%|██████▊   | 68/100 [00:04<00:02, 13.34ex/s] 71%|███████   | 71/100 [00:04<00:01, 15.08ex/s] 73%|███████▎  | 73/100 [00:04<00:02, 11.31ex/s] 75%|███████▌  | 75/100 [00:04<00:02, 12.27ex/s] 77%|███████▋  | 77/100 [00:04<00:02, 11.48ex/s] 80%|████████  | 80/100 [00:04<00:01, 14.02ex/s] 83%|████████▎ | 83/100 [00:05<00:01, 14.96ex/s] 85%|████████▌ | 85/100 [00:05<00:00, 15.14ex/s] 89%|████████▉ | 89/100 [00:05<00:00, 18.29ex/s] 95%|█████████▌| 95/100 [00:05<00:00, 22.83ex/s] 99%|█████████▉| 99/100 [00:05<00:00, 23.40ex/s]100%|██████████| 100/100 [00:05<00:00, 17.68ex/s]
+--> Prepared dataset saved at: /srv/scratch/chacmod/renee_thesis/datasetdict-20210711
+To reload this set, run datasetdictName.load_from_dict(myST_datasetdict_fp)
+SUCCESS: Data ready for training and evaluation.
+
+------> PREPARING FOR TRAINING & EVALUATION... ----------------------- 
+
+--> Defining data collator...
+SUCCESS: Data collator defined.
+--> Defining evaluation metric...
+SUCCESS: Defined WER evaluation metric.
+--> Loading pre-trained checkpoint...
+SUCCESS: Pre-trained checkpoint loaded.
+
+------> STARTING TRAINING... ----------------------------------------- 
+
+{'train_runtime': 1.2026, 'train_samples_per_second': 8.316, 'train_steps_per_second': 0.832, 'train_loss': 1.063565969467163, 'epoch': 1.0}
+
+------> EVALUATING MODEL... ------------------------------------------ 
+
+--> Getting test results...
+Test WER: 0.318
+--> Showing some prediction errors...
+                                         target_text                                           pred_str
+0                   YOU USE EM TO M MEASURE THE MASS                     YOU USE EM TO MEASURE THE MASS
+1  YEAH WE WE D DON'T REALLY DO IT WITH ANYTHING ...  YEAR WE WE DON'T REALLY DO WITH ANYTHING ELSE ...
+2                                               YEAH                                           MONSIEUR
+3                                               YEAH                                             YES NO
+4  NO WE HA WE PULL IT UP AND THEN WE PUSH IT DOW...  NO YET WE PULL IT UP UP AND THEN WE PUSH IT DO...
+5                                       THAT SLIPPED                                     OSH THAP SLIPS
+6                                        UH HUH YEAH                                    EVERTHOUSA I AM
+7  YEAH NO IT WAS A MILLILIT NO A HUNDRED MILLILI...    NO IT WAS A MILLE LY NO A HUNDRED MILLE LEADERS
+8  UM YOU DON'T GET THE SAME MEASUREMENT YEAH YEA...  UM YOU DON'T GET THE SAME MEASURE MOMET HERE Y...
+9  THE WATER INSIDE THE SPONGE CAUSE WE WANTED TO...  THE WATER INSIDE THIS ONE CAUSE WE WANDERED TH...
+--> Taking a deeper look...
+<pad> <pad> <pad> Y <pad> <pad> <pad> <pad> A <pad> <pad> <pad> <pad> <pad> | | W <pad> <pad> E <pad> <pad> | <pad> W R R <pad> <pad> O O <pad> T <pad> E <pad> | <pad> <pad> O U R R | | | | <pad> N <pad> U M <pad> <pad> <pad> B <pad> E R R <pad> <pad> <pad> | <pad> D <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> O W <pad> <pad> <pad> N <pad> <pad> <pad> <pad> <pad> | | <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> O N <pad> <pad> | <pad> <pad> <pad> <pad> <pad> <pad> <pad> | <pad> <pad> <pad> <pad> <pad> <pad> <pad> O <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> E U <pad> <pad> <pad> | | <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> P <pad> <pad> <pad> A A <pad> <pad> <pad> P <pad> <pad> E R R <pad> | | | <pad> <pad> <pad> <pad> <pad>
+
+------> SUCCESSFULLY FINISHED ---------------------------------------- 
+
+Finished: 11/07/2021 18:08:50
