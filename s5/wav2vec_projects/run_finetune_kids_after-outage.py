@@ -75,23 +75,57 @@ print("-->SUCCESS! All packages imported.")
 # ------------------------------------------
 #      Setting experiment arguments
 # ------------------------------------------
-experiment_id = "20210711"
-datasetdict_id = "20210711"
+print("\n------> EXPERIMENT ARGUMENTS ----------------------------------------- \n")
+
+# Perform Training (True/False) 
+training = True
+print("training:", training)
+
+# Experiment ID
+experiment_id = "20210712-1"
+print("experiment_id:", experiment_id)
+
+# DatasetDict Id
+datasetdict_id = "20210712-1"
+print("datasetdict_id:", datasetdict_id)
+
+# Resume training from/ use checkpoint (True/False)
 use_checkpoint = False
-checkpoint = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711/checkpoint-50"
+print("use_checkpoint:", use_checkpoint)
+# Set checkpoint if resuming from/using checkpoint
+checkpoint = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210711/checkpoint-4950"
+if use_checkpoint:
+    print("checkpoint:", checkpoint)
+
+# Use a pretrained tokenizer (True/False)
 use_pretrained_tokenizer = True
+print("use_pretrained_tokenizer:", use_pretrained_tokenizer)
+# Set tokenizer
 pretrained_tokenizer = "facebook/wav2vec2-base-960h"
+if use_pretrained_tokenizer:
+    print("pretrained_tokenizer:", pretrained_tokenizer)
+
+# Evaluate existing model instead of new model created from training
+eval_pretrained = False
+print("eval_pretrained:", eval_pretrained)
+# Set existing model to evaluate, if evaluating on existing model
+eval_model = checkpoint
+if eval_pretrained:
+    print("eval_model:", eval_model)
+
+# Baseline model for evaluating baseline metric
 baseline_model = "facebook/wav2vec2-base-960h"
+print("baseline_model:", baseline_model)
 
 # ------------------------------------------
 #          Setting file paths
 # ------------------------------------------
 print("\n------> SETTING FILEPATHS... ----------------------------------------- \n")
 # Path to dataframe csv for MyST train
-myST_train_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_train.csv"
+myST_train_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_train_short.csv"
 print("--> myST_train_fp:", myST_train_fp)
 # Path to dataframe csv for MyST test
-myST_test_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_test.csv"
+myST_test_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_test_short.csv"
 print("--> myST_test_fp:", myST_test_fp)
 # |-----------|---------------|----------|---------|
 # | file path | transcription | duration | spkr_id |
@@ -456,15 +490,17 @@ trainer = Trainer(
 # While the trained model yields a satisfying result on Timit's
 # test data, it is by no means an optimally fine-tuned model, 
 # especially for MyST.
-print("\n------> STARTING TRAINING... ----------------------------------------- \n")
-torch.cuda.empty_cache()
-# Train
-if use_checkpoint:
-    trainer.train(pretrained_mod)
-else:
-    trainer.train()
-# Save the model
-model.save_pretrained(model_fp)
+
+if training:
+    print("\n------> STARTING TRAINING... ----------------------------------------- \n")
+    torch.cuda.empty_cache()
+    # Train
+    if use_checkpoint:
+        trainer.train(pretrained_mod)
+    else:
+        trainer.train()
+    # Save the model
+    model.save_pretrained(model_fp)
 
 # ------------------------------------------
 #            Evaluation
@@ -472,8 +508,13 @@ model.save_pretrained(model_fp)
 # Evaluate fine-tuned model on test set.
 print("\n------> EVALUATING MODEL... ------------------------------------------ \n")
 torch.cuda.empty_cache()
-processor = Wav2Vec2Processor.from_pretrained(model_fp)
-model = Wav2Vec2ForCTC.from_pretrained(model_fp)
+
+if eval_pretrained:
+    processor = Wav2Vec2Processor.from_pretrained(eval_model)
+    model = Wav2Vec2ForCTC.from_pretrained(eval_model)
+else:
+    processor = Wav2Vec2Processor.from_pretrained(model_fp)
+    model = Wav2Vec2ForCTC.from_pretrained(model_fp)
 
 # Now, we will make use of the map(...) function to predict 
 # the transcription of every test sample and to save the prediction 

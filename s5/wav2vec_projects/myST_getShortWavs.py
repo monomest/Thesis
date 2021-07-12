@@ -36,7 +36,7 @@ myST_df["duration"] = myST_df["duration"].apply(pd.to_numeric)
 # Get the list of durations for all audio files
 duration = myST_df['duration']
 # Maximum seconds
-limit = 41
+limit = 31
 #limit = max(duration)
 print("--> Files limited to less than", limit, "seconds.")
 
