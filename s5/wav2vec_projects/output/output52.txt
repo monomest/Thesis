@@ -1,0 +1,168 @@
+Thu Jul 15 10:36:27 AEST 2021
+Using custom data configuration default-5c3c8375cd81c332
+Reusing dataset csv (/srv/scratch/chacmod/.cache/huggingface/datasets/41/csv/default-5c3c8375cd81c332/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0)
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/41/csv/default-5c3c8375cd81c332/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-5b5668804896dc61.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/41/csv/default-5c3c8375cd81c332/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-3a733802a11c215e.arrow
+  0%|          | 0/1 [00:00<?, ?ba/s]100%|██████████| 1/1 [00:00<00:00,  3.45ba/s]100%|██████████| 1/1 [00:00<00:00,  3.45ba/s]
+  0%|          | 0/1 [00:00<?, ?ba/s]100%|██████████| 1/1 [00:00<00:00,  7.42ba/s]100%|██████████| 1/1 [00:00<00:00,  7.40ba/s]------------------------------------------------------------------------
+                 run_finetune_kids.py                                   
+------------------------------------------------------------------------
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/run_finetune_kids_after-outage.py
+Started: 15/07/2021 10:36:30
+
+------> IMPORTING PACKAGES.... ---------------------------------------
+
+-->Importing datasets...
+-->Importing random...
+-->Importing pandas & numpy...
+-->Importing re...
+-->Importing json...
+-->Importing Wav2VecCTC...
+-->Importing soundfile...
+-->Importing torch, dataclasses & typing...
+-->Importing from transformers for training...
+-->SUCCESS! All packages imported.
+
+------> EXPERIMENT ARGUMENTS ----------------------------------------- 
+
+training: True
+experiment_id: 20210713
+datasetdict_id: 41
+use_checkpoint: True
+checkpoint: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210713/checkpoint-8950
+use_pretrained_tokenizer: True
+pretrained_tokenizer: facebook/wav2vec2-base-960h
+eval_pretrained: False
+baseline_model: facebook/wav2vec2-base-960h
+
+------> SETTING FILEPATHS... ----------------------------------------- 
+
+--> myST_train_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_train_41.csv
+--> myST_test_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_test_41.csv
+--> data_cache_fp: /srv/scratch/chacmod/.cache/huggingface/datasets/41
+--> vocab_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/vocab_20210713.json
+--> model_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210713
+--> pretrained_mod: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210713/checkpoint-8950
+--> myST_datasetdict_fp: /srv/scratch/chacmod/renee_thesis/datasetdict-41
+--> pretrained_tokenizer: facebook/wav2vec2-base-960h
+
+------> PREPARING MYST DATASET... ------------------------------------
+
+--> MyST dataset...
+DatasetDict({
+    train: Dataset({
+        features: ['filepath', 'transcription'],
+        num_rows: 69819
+    })
+    test: Dataset({
+        features: ['filepath', 'transcription'],
+        num_rows: 27392
+    })
+})
+--> Printing some random samples...
+                                            filepath                                      transcription
+0  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...                                            attract
+1  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...  o two is being pushed out along with c o h two...
+2  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...                                                 hi
+3  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...                                                yes
+4  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...  they're adding spacers and the space out the m...
+SUCCESS: Prepared dataset.
+
+------> CREATING VOCABULARY... ---------------------------------------
+
+--> Creating map(...) function for vocab...
+--> Vocab len: 28 
+ {'S': 0, 'E': 1, 'Q': 2, 'U': 3, "'": 4, 'P': 5, 'N': 6, 'D': 7, 'L': 8, 'H': 9, 'C': 10, 'I': 11, 'B': 12, 'W': 13, 'V': 14, 'O': 15, 'M': 16, 'X': 17, ' ': 18, 'K': 19, 'F': 20, 'Y': 21, 'T': 22, 'R': 23, 'Z': 24, 'A': 25, 'G': 26, 'J': 27}
+--> Vocab len: 30 
+ {'S': 0, 'E': 1, 'Q': 2, 'U': 3, "'": 4, 'P': 5, 'N': 6, 'D': 7, 'L': 8, 'H': 9, 'C': 10, 'I': 11, 'B': 12, 'W': 13, 'V': 14, 'O': 15, 'M': 16, 'X': 17, 'K': 19, 'F': 20, 'Y': 21, 'T': 22, 'R': 23, 'Z': 24, 'A': 25, 'G': 26, 'J': 27, '|': 18, '[UNK]': 28, '[PAD]': 29}
+SUCCESS: Created vocabulary file at /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/vocab_20210713.json
+
+------> CREATING WAV2VEC2 FEATURE EXTRACTOR... -----------------------
+
+SUCCESS: Created feature extractor.
+
+------> PRE-PROCESSING DATA... ----------------------------------------- 
+
+
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/41/csv/default-5c3c8375cd81c332/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-10b6a416ccaf06ca.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/41/csv/default-5c3c8375cd81c332/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-90f9f827ac42c6ac.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/41/csv/default-5c3c8375cd81c332/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-52c6d839d53a1573.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/41/csv/default-5c3c8375cd81c332/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-1939945a71ea97ad.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/41/csv/default-5c3c8375cd81c332/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-34e86ee84885c725.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/41/csv/default-5c3c8375cd81c332/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-17c51edb361b379f.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/41/csv/default-5c3c8375cd81c332/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-36442a11ef74a5a8.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/41/csv/default-5c3c8375cd81c332/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-dd107cd150a00fa1.arrow
+--> Verifying data with a random sample...
+Target text: LIGHT UP SO IF THE WIRES TOUCH THE CASING WIRE AND THE BASE THEN IT WILL LIGHT UP AND IT WILL MAKE LIGHT
+Input array shape: (131764,)
+Sampling rate: 16000
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/41/csv/default-5c3c8375cd81c332/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-2b4dd8494d7b3605.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/41/csv/default-5c3c8375cd81c332/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-1c32399ce4f965ab.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/41/csv/default-5c3c8375cd81c332/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-e2259c890ca92d91.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/41/csv/default-5c3c8375cd81c332/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-81790564a37c4e5c.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/41/csv/default-5c3c8375cd81c332/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-c6c73eb62887620d.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/41/csv/default-5c3c8375cd81c332/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-dd88d07624b36425.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/41/csv/default-5c3c8375cd81c332/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-37f01021bea4e312.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/41/csv/default-5c3c8375cd81c332/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-fbc13b9e61803c2f.arrow
+Using amp fp16 backend
+Loading model from /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210713/checkpoint-8950).
+***** Running training *****
+  Num examples = 69819
+  Num Epochs = 20
+  Instantaneous batch size per device = 20
+  Total train batch size (w. parallel, distributed & accumulation) = 40
+  Gradient Accumulation steps = 1
+  Total optimization steps = 34920
+  Continuing training from checkpoint, will skip to saved global_step
+  Continuing training from epoch 5
+  Continuing training from global step 8950
+  Will skip the first 5 epochs then the first 220 batches in the first epoch. If this takes a lot of time, you can add the `--ignore_data_skip` flag to your launch command, but you will resume the training on data already seen by your model.
+  0%|          | 0/220 [00:00<?, ?it/s]Skipping the first batches:   0%|          | 0/220 [00:00<?, ?it/s]
+  0%|          | 0/34920 [00:00<?, ?it/s][ASkipping the first batches:   0%|          | 1/220 [00:53<3:15:25, 53.54s/it]Skipping the first batches:   1%|          | 2/220 [01:00<2:23:21, 39.45s/it]Skipping the first batches:   1%|▏         | 3/220 [01:06<1:47:12, 29.64s/it]Skipping the first batches:   2%|▏         | 4/220 [01:12<1:20:59, 22.50s/it]Skipping the first batches:   2%|▏         | 5/220 [01:17<1:01:48, 17.25s/it]Skipping the first batches:   3%|▎         | 6/220 [01:21<47:34, 13.34s/it]  Skipping the first batches:   3%|▎         | 7/220 [01:26<37:54, 10.68s/it]Skipping the first batches:   4%|▎         | 8/220 [01:30<31:01,  8.78s/it]Skipping the first batches:   4%|▍         | 9/220 [01:34<25:31,  7.26s/it]Skipping the first batches:   5%|▍         | 10/220 [01:37<21:11,  6.05s/it]Skipping the first batches:   5%|▌         | 11/220 [01:41<18:53,  5.42s/it]Skipping the first batches:   5%|▌         | 12/220 [01:45<17:02,  4.92s/it]Skipping the first batches:   6%|▌         | 13/220 [01:48<15:31,  4.50s/it]Skipping the first batches:   6%|▋         | 14/220 [01:51<13:47,  4.02s/it]Skipping the first batches:   7%|▋         | 15/220 [01:54<12:39,  3.70s/it]Skipping the first batches:   7%|▋         | 16/220 [01:57<11:22,  3.35s/it]Skipping the first batches:   8%|▊         | 17/220 [01:59<10:02,  2.97s/it]Skipping the first batches:   8%|▊         | 18/220 [02:02<09:55,  2.95s/it]Skipping the first batches:   9%|▊         | 19/220 [02:04<08:44,  2.61s/it]Skipping the first batches:   9%|▉         | 20/220 [02:06<08:02,  2.41s/it]Skipping the first batches:  10%|▉         | 21/220 [02:08<07:45,  2.34s/it]Skipping the first batches:  10%|█         | 22/220 [02:10<07:37,  2.31s/it]Skipping the first batches:  10%|█         | 23/220 [02:12<07:06,  2.17s/it]Skipping the first batches:  11%|█         | 24/220 [02:13<06:35,  2.02s/it]Skipping the first batches:  11%|█▏        | 25/220 [02:15<06:16,  1.93s/it]Skipping the first batches:  12%|█▏        | 26/220 [02:17<05:52,  1.81s/it]Skipping the first batches:  12%|█▏        | 27/220 [02:18<05:24,  1.68s/it]Skipping the first batches:  13%|█▎        | 28/220 [02:19<04:43,  1.48s/it]Skipping the first batches:  13%|█▎        | 29/220 [02:21<04:47,  1.51s/it]Skipping the first batches:  14%|█▎        | 30/220 [02:22<04:38,  1.47s/it]Skipping the first batches:  14%|█▍        | 31/220 [02:24<04:51,  1.54s/it]Skipping the first batches:  15%|█▍        | 32/220 [02:25<04:20,  1.39s/it]Skipping the first batches:  15%|█▌        | 33/220 [02:26<04:15,  1.37s/it]Skipping the first batches:  15%|█▌        | 34/220 [02:28<04:36,  1.49s/it]Skipping the first batches:  16%|█▌        | 35/220 [02:29<04:06,  1.33s/it]Skipping the first batches:  16%|█▋        | 36/220 [02:30<03:29,  1.14s/it]Skipping the first batches:  17%|█▋        | 37/220 [02:30<03:11,  1.05s/it]Skipping the first batches:  17%|█▋        | 38/220 [02:32<03:21,  1.11s/it]Skipping the first batches:  18%|█▊        | 39/220 [02:33<03:20,  1.11s/it]Skipping the first batches:  18%|█▊        | 40/220 [02:33<02:53,  1.04it/s]Skipping the first batches:  19%|█▊        | 41/220 [02:34<02:48,  1.06it/s]Skipping the first batches:  19%|█▉        | 42/220 [02:35<02:19,  1.28it/s]Skipping the first batches:  20%|█▉        | 43/220 [02:35<02:18,  1.28it/s]Skipping the first batches:  20%|██        | 44/220 [02:36<01:55,  1.53it/s]Skipping the first batches:  20%|██        | 45/220 [02:37<02:37,  1.11it/s]Skipping the first batches:  21%|██        | 46/220 [02:38<02:13,  1.30it/s]Skipping the first batches:  21%|██▏       | 47/220 [02:38<01:50,  1.57it/s]Skipping the first batches:  22%|██▏       | 48/220 [02:39<01:44,  1.64it/s]Skipping the first batches:  22%|██▏       | 49/220 [02:39<01:27,  1.96it/s]Skipping the first batches:  23%|██▎       | 50/220 [02:39<01:13,  2.32it/s]Skipping the first batches:  23%|██▎       | 51/220 [02:48<08:36,  3.06s/it]Skipping the first batches:  24%|██▎       | 52/220 [02:55<11:53,  4.25s/it]Skipping the first batches:  24%|██▍       | 53/220 [03:02<13:25,  4.83s/it]Skipping the first batches:  25%|██▍       | 54/220 [03:07<14:04,  5.08s/it]Skipping the first batches:  25%|██▌       | 55/220 [03:11<13:16,  4.83s/it]Skipping the first batches:  25%|██▌       | 56/220 [03:16<13:03,  4.78s/it]Skipping the first batches:  26%|██▌       | 57/220 [03:20<12:29,  4.60s/it]Skipping the first batches:  26%|██▋       | 58/220 [03:25<12:17,  4.55s/it]Skipping the first batches:  27%|██▋       | 59/220 [03:28<11:03,  4.12s/it]Skipping the first batches:  27%|██▋       | 60/220 [03:31<10:01,  3.76s/it]Skipping the first batches:  28%|██▊       | 61/220 [03:34<09:38,  3.64s/it]Skipping the first batches:  28%|██▊       | 62/220 [03:37<08:56,  3.40s/it]Skipping the first batches:  29%|██▊       | 63/220 [03:40<08:37,  3.30s/it]Skipping the first batches:  29%|██▉       | 64/220 [03:43<08:09,  3.14s/it]Skipping the first batches:  30%|██▉       | 65/220 [03:46<07:59,  3.09s/it]Skipping the first batches:  30%|███       | 66/220 [03:48<07:35,  2.96s/it]Skipping the first batches:  30%|███       | 67/220 [03:50<06:50,  2.68s/it]Skipping the first batches:  31%|███       | 68/220 [03:53<06:31,  2.58s/it]Skipping the first batches:  31%|███▏      | 69/220 [03:55<06:10,  2.46s/it]Skipping the first batches:  32%|███▏      | 70/220 [03:57<05:46,  2.31s/it]Skipping the first batches:  32%|███▏      | 71/220 [03:59<05:33,  2.24s/it]Skipping the first batches:  33%|███▎      | 72/220 [04:00<04:55,  1.99s/it]Skipping the first batches:  33%|███▎      | 73/220 [04:02<04:46,  1.95s/it]Skipping the first batches:  34%|███▎      | 74/220 [04:04<04:54,  2.02s/it]Skipping the first batches:  34%|███▍      | 75/220 [04:06<04:35,  1.90s/it]Skipping the first batches:  35%|███▍      | 76/220 [04:08<04:37,  1.93s/it]Skipping the first batches:  35%|███▌      | 77/220 [04:10<04:29,  1.88s/it]Skipping the first batches:  35%|███▌      | 78/220 [04:12<04:25,  1.87s/it]Skipping the first batches:  36%|███▌      | 79/220 [04:13<04:04,  1.73s/it]Skipping the first batches:  36%|███▋      | 80/220 [04:14<03:37,  1.55s/it]Skipping the first batches:  37%|███▋      | 81/220 [04:15<03:05,  1.34s/it]Skipping the first batches:  37%|███▋      | 82/220 [04:17<03:21,  1.46s/it]Skipping the first batches:  38%|███▊      | 83/220 [04:18<02:58,  1.30s/it]Skipping the first batches:  38%|███▊      | 84/220 [04:18<02:35,  1.14s/it]Skipping the first batches:  39%|███▊      | 85/220 [04:20<02:32,  1.13s/it]Skipping the first batches:  39%|███▉      | 86/220 [04:20<02:10,  1.03it/s]Skipping the first batches:  40%|███▉      | 87/220 [04:21<02:03,  1.08it/s]Skipping the first batches:  40%|████      | 88/220 [04:22<01:58,  1.12it/s]Skipping the first batches:  40%|████      | 89/220 [04:22<01:45,  1.24it/s]Skipping the first batches:  41%|████      | 90/220 [04:23<01:34,  1.38it/s]Skipping the first batches:  41%|████▏     | 91/220 [04:23<01:24,  1.53it/s]Skipping the first batches:  42%|████▏     | 92/220 [04:24<01:14,  1.73it/s]Skipping the first batches:  42%|████▏     | 93/220 [04:25<01:24,  1.50it/s]Skipping the first batches:  43%|████▎     | 94/220 [04:25<01:19,  1.58it/s]Skipping the first batches:  43%|████▎     | 95/220 [04:26<01:12,  1.72it/s]Skipping the first batches:  44%|████▎     | 96/220 [04:26<01:00,  2.05it/s]Skipping the first batches:  44%|████▍     | 97/220 [04:26<00:57,  2.15it/s]Skipping the first batches:  45%|████▍     | 98/220 [04:27<01:01,  1.99it/s]Skipping the first batches:  45%|████▌     | 99/220 [04:27<00:48,  2.50it/s]Skipping the first batches:  45%|████▌     | 100/220 [04:27<00:38,  3.10it/s]Skipping the first batches:  46%|████▌     | 101/220 [04:36<05:33,  2.80s/it]Skipping the first batches:  46%|████▋     | 102/220 [04:42<07:27,  3.79s/it]Skipping the first batches:  47%|████▋     | 103/220 [04:47<08:16,  4.25s/it]Skipping the first batches:  47%|████▋     | 104/220 [04:52<08:33,  4.43s/it]Skipping the first batches:  48%|████▊     | 105/220 [04:57<08:36,  4.49s/it]Skipping the first batches:  48%|████▊     | 106/220 [05:01<08:17,  4.36s/it]Skipping the first batches:  49%|████▊     | 107/220 [05:05<08:03,  4.28s/it]Skipping the first batches:  49%|████▉     | 108/220 [05:09<07:47,  4.17s/it]Skipping the first batches:  50%|████▉     | 109/220 [05:12<07:15,  3.92s/it]Skipping the first batches:  50%|█████     | 110/220 [05:15<06:44,  3.68s/it]Skipping the first batches:  50%|█████     | 111/220 [05:18<06:19,  3.48s/it]Skipping the first batches:  51%|█████     | 112/220 [05:21<06:01,  3.35s/it]Skipping the first batches:  51%|█████▏    | 113/220 [05:25<06:06,  3.42s/it]Skipping the first batches:  52%|█████▏    | 114/220 [05:27<05:33,  3.14s/it]Skipping the first batches:  52%|█████▏    | 115/220 [05:30<05:08,  2.94s/it]Skipping the first batches:  53%|█████▎    | 116/220 [05:32<04:53,  2.82s/it]Skipping the first batches:  53%|█████▎    | 117/220 [05:35<04:26,  2.59s/it]Skipping the first batches:  54%|█████▎    | 118/220 [05:37<04:06,  2.42s/it]Skipping the first batches:  54%|█████▍    | 119/220 [05:38<03:48,  2.26s/it]Skipping the first batches:  55%|█████▍    | 120/220 [05:40<03:25,  2.05s/it]Skipping the first batches:  55%|█████▌    | 121/220 [05:42<03:30,  2.13s/it]Skipping the first batches:  55%|█████▌    | 122/220 [05:44<03:19,  2.03s/it]Skipping the first batches:  56%|█████▌    | 123/220 [05:46<03:14,  2.00s/it]Skipping the first batches:  56%|█████▋    | 124/220 [05:48<02:59,  1.87s/it]Skipping the first batches:  57%|█████▋    | 125/220 [05:50<03:02,  1.92s/it]Skipping the first batches:  57%|█████▋    | 126/220 [05:51<02:44,  1.76s/it]Skipping the first batches:  58%|█████▊    | 127/220 [05:52<02:22,  1.54s/it]Skipping the first batches:  58%|█████▊    | 128/220 [05:53<02:12,  1.44s/it]Skipping the first batches:  59%|█████▊    | 129/220 [05:54<01:57,  1.29s/it]Skipping the first batches:  59%|█████▉    | 130/220 [05:55<01:44,  1.17s/it]Skipping the first batches:  60%|█████▉    | 131/220 [05:56<01:45,  1.18s/it]Skipping the first batches:  60%|██████    | 132/220 [05:58<01:45,  1.19s/it]Skipping the first batches:  60%|██████    | 133/220 [05:59<01:39,  1.15s/it]Skipping the first batches:  61%|██████    | 134/220 [06:00<01:39,  1.15s/it]Skipping the first batches:  61%|██████▏   | 135/220 [06:01<01:31,  1.08s/it]Skipping the first batches:  62%|██████▏   | 136/220 [06:01<01:19,  1.06it/s]Skipping the first batches:  62%|██████▏   | 137/220 [06:02<01:08,  1.21it/s]Skipping the first batches:  63%|██████▎   | 138/220 [06:02<01:04,  1.28it/s]Skipping the first batches:  63%|██████▎   | 139/220 [06:03<01:00,  1.33it/s]Skipping the first batches:  64%|██████▎   | 140/220 [06:04<00:57,  1.40it/s]Skipping the first batches:  64%|██████▍   | 141/220 [06:05<01:07,  1.17it/s]Skipping the first batches:  65%|██████▍   | 142/220 [06:06<01:02,  1.24it/s]Skipping the first batches:  65%|██████▌   | 143/220 [06:06<00:56,  1.36it/s]Skipping the first batches:  65%|██████▌   | 144/220 [06:07<00:46,  1.64it/s]Skipping the first batches:  66%|██████▌   | 145/220 [06:07<00:50,  1.49it/s]Skipping the first batches:  66%|██████▋   | 146/220 [06:08<00:45,  1.63it/s]Skipping the first batches:  67%|██████▋   | 147/220 [06:08<00:35,  2.03it/s]Skipping the first batches:  67%|██████▋   | 148/220 [06:08<00:30,  2.36it/s]Skipping the first batches:  68%|██████▊   | 149/220 [06:09<00:27,  2.59it/s]Skipping the first batches:  68%|██████▊   | 150/220 [06:09<00:21,  3.24it/s]Skipping the first batches:  69%|██████▊   | 151/220 [06:17<03:10,  2.75s/it]Skipping the first batches:  69%|██████▉   | 152/220 [06:24<04:36,  4.07s/it]Skipping the first batches:  70%|██████▉   | 153/220 [06:31<05:18,  4.76s/it]Skipping the first batches:  70%|███████   | 154/220 [06:36<05:32,  5.04s/it]Skipping the first batches:  70%|███████   | 155/220 [06:41<05:23,  4.98s/it]Skipping the first batches:  71%|███████   | 156/220 [06:45<04:54,  4.60s/it]Skipping the first batches:  71%|███████▏  | 157/220 [06:49<04:33,  4.34s/it]Skipping the first batches:  72%|███████▏  | 158/220 [06:53<04:26,  4.29s/it]Skipping the first batches:  72%|███████▏  | 159/220 [06:56<03:59,  3.92s/it]Skipping the first batches:  73%|███████▎  | 160/220 [06:59<03:37,  3.63s/it]Skipping the first batches:  73%|███████▎  | 161/220 [07:02<03:22,  3.42s/it]Skipping the first batches:  74%|███████▎  | 162/220 [07:05<03:11,  3.31s/it]Skipping the first batches:  74%|███████▍  | 163/220 [07:07<02:52,  3.02s/it]Skipping the first batches:  75%|███████▍  | 164/220 [07:10<02:45,  2.95s/it]Skipping the first batches:  75%|███████▌  | 165/220 [07:12<02:32,  2.77s/it]Skipping the first batches:  75%|███████▌  | 166/220 [07:14<02:18,  2.57s/it]Skipping the first batches:  76%|███████▌  | 167/220 [07:16<02:03,  2.33s/it]Skipping the first batches:  76%|███████▋  | 168/220 [07:19<02:04,  2.39s/it]Skipping the first batches:  77%|███████▋  | 169/220 [07:21<01:53,  2.23s/it]Skipping the first batches:  77%|███████▋  | 170/220 [07:22<01:41,  2.02s/it]Skipping the first batches:  78%|███████▊  | 171/220 [07:24<01:33,  1.91s/it]Skipping the first batches:  78%|███████▊  | 172/220 [07:25<01:27,  1.82s/it]Skipping the first batches:  79%|███████▊  | 173/220 [07:27<01:23,  1.77s/it]Skipping the first batches:  79%|███████▉  | 174/220 [07:29<01:17,  1.67s/it]Skipping the first batches:  80%|███████▉  | 175/220 [07:30<01:18,  1.74s/it]Skipping the first batches:  80%|████████  | 176/220 [07:32<01:09,  1.58s/it]Skipping the first batches:  80%|████████  | 177/220 [07:33<01:03,  1.47s/it]Skipping the first batches:  81%|████████  | 178/220 [07:34<00:57,  1.37s/it]Skipping the first batches:  81%|████████▏ | 179/220 [07:35<00:55,  1.36s/it]Skipping the first batches:  82%|████████▏ | 180/220 [07:36<00:50,  1.25s/it]Skipping the first batches:  82%|████████▏ | 181/220 [07:37<00:43,  1.12s/it]Skipping the first batches:  83%|████████▎ | 182/220 [07:38<00:38,  1.01s/it]Skipping the first batches:  83%|████████▎ | 183/220 [07:39<00:38,  1.05s/it]Skipping the first batches:  84%|████████▎ | 184/220 [07:40<00:38,  1.07s/it]Skipping the first batches:  84%|████████▍ | 185/220 [07:41<00:33,  1.05it/s]Skipping the first batches:  85%|████████▍ | 186/220 [07:42<00:33,  1.01it/s]Skipping the first batches:  85%|████████▌ | 187/220 [07:42<00:28,  1.17it/s]Skipping the first batches:  85%|████████▌ | 188/220 [07:43<00:24,  1.32it/s]Skipping the first batches:  86%|████████▌ | 189/220 [07:44<00:24,  1.28it/s]Skipping the first batches:  86%|████████▋ | 190/220 [07:44<00:22,  1.35it/s]Skipping the first batches:  87%|████████▋ | 191/220 [07:45<00:20,  1.42it/s]Skipping the first batches:  87%|████████▋ | 192/220 [07:45<00:16,  1.67it/s]Skipping the first batches:  88%|████████▊ | 193/220 [07:46<00:16,  1.69it/s]Skipping the first batches:  88%|████████▊ | 194/220 [07:46<00:13,  2.00it/s]Skipping the first batches:  89%|████████▊ | 195/220 [07:47<00:10,  2.34it/s]Skipping the first batches:  89%|████████▉ | 196/220 [07:47<00:12,  1.92it/s]Skipping the first batches:  90%|████████▉ | 197/220 [07:48<00:11,  2.05it/s]Skipping the first batches:  90%|█████████ | 198/220 [07:48<00:09,  2.24it/s]Skipping the first batches:  90%|█████████ | 199/220 [07:48<00:07,  2.71it/s]Skipping the first batches:  91%|█████████ | 200/220 [07:48<00:06,  3.05it/s]Skipping the first batches:  91%|█████████▏| 201/220 [07:57<00:55,  2.93s/it]Skipping the first batches:  92%|█████████▏| 202/220 [08:05<01:16,  4.25s/it]Skipping the first batches:  92%|█████████▏| 203/220 [08:10<01:18,  4.60s/it]Skipping the first batches:  93%|█████████▎| 204/220 [08:15<01:16,  4.80s/it]Skipping the first batches:  93%|█████████▎| 205/220 [08:20<01:08,  4.57s/it]Skipping the first batches:  94%|█████████▎| 206/220 [08:23<01:00,  4.30s/it]Skipping the first batches:  94%|█████████▍| 207/220 [08:27<00:53,  4.11s/it]Skipping the first batches:  95%|█████████▍| 208/220 [08:30<00:47,  3.95s/it]Skipping the first batches:  95%|█████████▌| 209/220 [08:34<00:42,  3.84s/it]Skipping the first batches:  95%|█████████▌| 210/220 [08:37<00:35,  3.59s/it]Skipping the first batches:  96%|█████████▌| 211/220 [08:40<00:30,  3.38s/it]Skipping the first batches:  96%|█████████▋| 212/220 [08:43<00:25,  3.22s/it]Skipping the first batches:  97%|█████████▋| 213/220 [08:45<00:20,  2.98s/it]Skipping the first batches:  97%|█████████▋| 214/220 [08:48<00:16,  2.82s/it]Skipping the first batches:  98%|█████████▊| 215/220 [08:50<00:12,  2.57s/it]Skipping the first batches:  98%|█████████▊| 216/220 [08:52<00:09,  2.49s/it]Skipping the first batches:  99%|█████████▊| 217/220 [08:54<00:07,  2.40s/it]Skipping the first batches:  99%|█████████▉| 218/220 [08:56<00:04,  2.25s/it]Skipping the first batches: 100%|█████████▉| 219/220 [08:58<00:02,  2.05s/it]Skipping the first batches: 100%|██████████| 220/220 [08:59<00:00,  1.95s/it]Skipping the first batches: 100%|██████████| 220/220 [09:01<00:00,  2.46s/it]
+--> Prepared dataset saved at: /srv/scratch/chacmod/renee_thesis/datasetdict-41
+To reload this set, run datasetdictName.load_from_dict(myST_datasetdict_fp)
+SUCCESS: Data ready for training and evaluation.
+
+------> PREPARING FOR TRAINING & EVALUATION... ----------------------- 
+
+--> Defining data collator...
+SUCCESS: Data collator defined.
+--> Defining evaluation metric...
+SUCCESS: Defined WER evaluation metric.
+--> Loading pre-trained checkpoint...
+SUCCESS: Pre-trained checkpoint loaded.
+
+------> STARTING TRAINING... ----------------------------------------- 
+
+Traceback (most recent call last):
+  File "run_finetune_kids_after-outage.py", line 499, in <module>
+    trainer.train(pretrained_mod)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/transformers/trainer.py", line 1269, in train
+    tr_loss += self.training_step(model, inputs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/transformers/trainer.py", line 1760, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/transformers/trainer.py", line 1794, in compute_loss
+    outputs = model(**inputs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/torch/nn/parallel/data_parallel.py", line 167, in forward
+    outputs = self.parallel_apply(replicas, inputs, kwargs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/torch/nn/parallel/data_parallel.py", line 177, in parallel_apply
+    return parallel_apply(replicas, inputs, kwargs, self.device_ids[:len(replicas)])
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/torch/nn/parallel/parallel_apply.py", line 86, in parallel_apply
+    output.reraise()
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/torch/_utils.py", line 429, in reraise
+    raise self.exc_type(msg)
+RuntimeError: Caught RuntimeError in replica 0 on device 0.
+Original Traceback (most recent call last):
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/torch/nn/parallel/parallel_apply.py", line 61, in _worker
+    output = module(*input, **kwargs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/transformers/models/wav2vec2/modeling_wav2vec2.py", line 1496, in forward
+    log_probs = nn.functional.log_softmax(logits, dim=-1, dtype=torch.float32).transpose(0, 1)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/torch/nn/functional.py", line 1674, in log_softmax
+    ret = input.log_softmax(dim, dtype=dtype)
+RuntimeError: CUDA error: an illegal memory access was encountered
+
+  0%|          | 0/34920 [09:08<?, ?it/s]

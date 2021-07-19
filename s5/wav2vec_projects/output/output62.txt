@@ -1,0 +1,21 @@
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/OGI_getShortWavs.py
+
+------> Setting duration limit... ------------------------------------ 
+
+--> Files limited to less than 15 seconds.
+
+------> Keeping only short audio files... ---------------------------- 
+
+OGI_shorten:
+
+                                            filepath  ... spkr_id
+0  /srv/scratch/chacmod/OGI/speech/scripted/00/1/...  ...   ks000
+1  /srv/scratch/chacmod/OGI/speech/scripted/00/1/...  ...   ks000
+2  /srv/scratch/chacmod/OGI/speech/scripted/00/1/...  ...   ks000
+3  /srv/scratch/chacmod/OGI/speech/scripted/00/1/...  ...   ks000
+4  /srv/scratch/chacmod/OGI/speech/scripted/00/1/...  ...   ks000
+
+[5 rows x 4 columns]
+SUCCESS: Saved OGI dataframe with only audio less than 15 seconds at /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_shorten_dataframe_15.csv
+Total hours: 53.06334071180478
+Dataframe length: 58423

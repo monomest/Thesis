@@ -24,7 +24,7 @@ print("=======================================================")
 # Load the dataset
 print("\n------> loading the dataset...\n")
 from datasets import load_dataset, load_metric
-timit = load_dataset("timit_asr", cache_dir="/srv/scratch/chacmod/.cache/huggingface/datasets/")
+timit = load_dataset("timit_asr", cache_dir="/srv/scratch/chacmod/.cache/huggingface/datasets/timit")
 print(timit)
 # We do not consider phoneme classification - interested in word WER
 timit = timit.remove_columns(["phonetic_detail", "word_detail", "dialect_region", "id", "sentence_type", "speaker_id"])

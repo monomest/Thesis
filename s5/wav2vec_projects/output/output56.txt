@@ -1,0 +1,153 @@
+Thu Jul 15 14:54:53 AEST 2021
+Using custom data configuration default-37316b26926a9f32
+Reusing dataset csv (/srv/scratch/chacmod/.cache/huggingface/datasets/short/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0)
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/short/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-47024f6103ac1df2.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/short/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-c5b890c5844b797c.arrow
+  0%|          | 0/1 [00:00<?, ?ba/s]100%|██████████| 1/1 [00:00<00:00, 130.68ba/s]
+  0%|          | 0/1 [00:00<?, ?ba/s]100%|██████████| 1/1 [00:00<00:00, 560.81ba/s]------------------------------------------------------------------------
+                 run_finetune_kids.py                                   
+------------------------------------------------------------------------
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/run_finetune_kids_after-outage_short.py
+Started: 15/07/2021 14:54:53
+
+------> IMPORTING PACKAGES.... ---------------------------------------
+
+-->Importing datasets...
+-->Importing random...
+-->Importing pandas & numpy...
+-->Importing re...
+-->Importing json...
+-->Importing Wav2VecCTC...
+-->Importing soundfile...
+-->Importing torch, dataclasses & typing...
+-->Importing from transformers for training...
+-->SUCCESS! All packages imported.
+
+------> EXPERIMENT ARGUMENTS ----------------------------------------- 
+
+training: True
+experiment_id: 20210714
+datasetdict_id: short
+use_checkpoint: True
+checkpoint: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210714/checkpoint-100
+use_pretrained_tokenizer: True
+pretrained_tokenizer: facebook/wav2vec2-base-960h
+eval_pretrained: False
+baseline_model: facebook/wav2vec2-base-960h
+
+------> SETTING FILEPATHS... ----------------------------------------- 
+
+--> myST_train_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_train_short.csv
+--> myST_test_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_test_short.csv
+--> data_cache_fp: /srv/scratch/chacmod/.cache/huggingface/datasets/short
+--> vocab_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/vocab_20210714.json
+--> model_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210714
+--> pretrained_mod: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210714/checkpoint-100
+--> myST_datasetdict_fp: /srv/scratch/chacmod/renee_thesis/datasetdict-short
+--> pretrained_tokenizer: facebook/wav2vec2-base-960h
+
+------> PREPARING MYST DATASET... ------------------------------------
+
+--> MyST dataset...
+DatasetDict({
+    train: Dataset({
+        features: ['filepath', 'transcription'],
+        num_rows: 300
+    })
+    test: Dataset({
+        features: ['filepath', 'transcription'],
+        num_rows: 100
+    })
+})
+--> Printing some random samples...
+                                            filepath                                      transcription
+0  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...  the metal uhm there is a circuit uhm with flow...
+1  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...                                       not really w
+2  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...                 um i forget what they're called um
+3  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...  i already told you it brings the food down to ...
+4  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...      well i don't know i don't know but i think so
+SUCCESS: Prepared dataset.
+
+------> CREATING VOCABULARY... ---------------------------------------
+
+--> Creating map(...) function for vocab...
+--> Vocab len: 28 
+ {'Z': 0, 'U': 1, 'W': 2, 'L': 3, 'Q': 4, 'E': 5, 'G': 6, 'V': 7, 'S': 8, "'": 9, 'J': 10, 'X': 11, 'C': 12, 'B': 13, 'K': 14, 'P': 15, 'I': 16, 'D': 17, 'T': 18, 'R': 19, 'N': 20, 'M': 21, 'H': 22, 'F': 23, 'Y': 24, 'O': 25, 'A': 26, ' ': 27}
+--> Vocab len: 30 
+ {'Z': 0, 'U': 1, 'W': 2, 'L': 3, 'Q': 4, 'E': 5, 'G': 6, 'V': 7, 'S': 8, "'": 9, 'J': 10, 'X': 11, 'C': 12, 'B': 13, 'K': 14, 'P': 15, 'I': 16, 'D': 17, 'T': 18, 'R': 19, 'N': 20, 'M': 21, 'H': 22, 'F': 23, 'Y': 24, 'O': 25, 'A': 26, '|': 27, '[UNK]': 28, '[PAD]': 29}
+SUCCESS: Created vocabulary file at /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/vocab_20210714.json
+
+------> CREATING WAV2VEC2 FEATURE EXTRACTOR... -----------------------
+
+SUCCESS: Created feature extractor.
+
+------> PRE-PROCESSING DATA... ----------------------------------------- 
+
+
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/short/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-b84fec576315d285.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/short/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-042d4e13c7759f68.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/short/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-32482b156ab05203.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/short/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-6a15623a8b20aca3.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/short/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-897b02773dc1977b.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/short/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-78f0e24bd254b7b9.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/short/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-5fa7421341e241aa.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/short/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-45eb95a440a8bd16.arrow
+--> Verifying data with a random sample...
+Target text: I FORGOT
+Input array shape: (17616,)
+Sampling rate: 16000
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/short/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-fc19af87df56e3a0.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/short/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-452d3ba8d89d8f9e.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/short/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-1286bcb1181e8d45.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/short/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-dfcc468b38ce6b24.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/short/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-88e1fc4038eed18e.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/short/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-badef0cc11e36328.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/short/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-8ede2ed0863dad80.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/short/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-d2a32ed91d56d325.arrow
+Using amp fp16 backend
+Loading model from /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210714/checkpoint-100).
+***** Running training *****
+  Num examples = 300
+  Num Epochs = 20
+  Instantaneous batch size per device = 20
+  Total train batch size (w. parallel, distributed & accumulation) = 20
+  Gradient Accumulation steps = 1
+  Total optimization steps = 300
+  Continuing training from checkpoint, will skip to saved global_step
+  Continuing training from epoch 6
+  Continuing training from global step 100
+  Will skip the first 6 epochs then the first 10 batches in the first epoch. If this takes a lot of time, you can add the `--ignore_data_skip` flag to your launch command, but you will resume the training on data already seen by your model.
+  0%|          | 0/10 [00:00<?, ?it/s]Skipping the first batches:   0%|          | 0/10 [00:00<?, ?it/s]
+  0%|          | 0/300 [00:00<?, ?it/s][ASkipping the first batches:  10%|█         | 1/10 [00:11<01:42, 11.44s/it]Skipping the first batches:  20%|██        | 2/10 [00:12<01:05,  8.20s/it]Skipping the first batches:  30%|███       | 3/10 [00:12<00:40,  5.80s/it]Skipping the first batches:  40%|████      | 4/10 [00:13<00:27,  4.55s/it]Skipping the first batches:  50%|█████     | 5/10 [00:14<00:17,  3.41s/it]Skipping the first batches:  60%|██████    | 6/10 [00:14<00:09,  2.45s/it]Skipping the first batches:  70%|███████   | 7/10 [00:16<00:06,  2.22s/it]Skipping the first batches:  80%|████████  | 8/10 [00:17<00:03,  1.70s/it]Skipping the first batches:  90%|█████████ | 9/10 [00:17<00:01,  1.24s/it]Skipping the first batches: 100%|██████████| 10/10 [00:18<00:00,  1.29s/it]--> Prepared dataset saved at: /srv/scratch/chacmod/renee_thesis/datasetdict-short
+To reload this set, run datasetdictName.load_from_dict(myST_datasetdict_fp)
+SUCCESS: Data ready for training and evaluation.
+
+------> PREPARING FOR TRAINING & EVALUATION... ----------------------- 
+
+--> Defining data collator...
+SUCCESS: Data collator defined.
+--> Defining evaluation metric...
+SUCCESS: Defined WER evaluation metric.
+--> Loading pre-trained checkpoint...
+SUCCESS: Pre-trained checkpoint loaded.
+
+------> STARTING TRAINING... ----------------------------------------- 
+
+Traceback (most recent call last):
+  File "run_finetune_kids_after-outage_short.py", line 499, in <module>
+    trainer.train(pretrained_mod)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/transformers/trainer.py", line 1251, in train
+    self._load_rng_state(resume_from_checkpoint)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/transformers/trainer.py", line 1464, in _load_rng_state
+    torch.cuda.random.set_rng_state_all(checkpoint_rng_state["cuda"])
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/torch/cuda/random.py", line 73, in set_rng_state_all
+    set_rng_state(state, i)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/torch/cuda/random.py", line 64, in set_rng_state
+    _lazy_call(cb)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/torch/cuda/__init__.py", line 114, in _lazy_call
+    callable()
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/torch/cuda/random.py", line 61, in cb
+    default_generator = torch.cuda.default_generators[idx]
+IndexError: tuple index out of range
+Skipping the first batches: 100%|██████████| 10/10 [00:18<00:00,  1.87s/it]
+  0%|          | 0/300 [00:18<?, ?it/s]

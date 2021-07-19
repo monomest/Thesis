@@ -1,0 +1,25 @@
+OGI_separate.py:55: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  OGI_scripted_df['spkr_id'] = OGI_scripted_df['spkr_id'].astype('str')
+OGI_separate.py:63: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  OGI_spontaneous_df['spkr_id'] = OGI_spontaneous_df['spkr_id'].astype('str')
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/OGI_separate.py
+
+------> Reading in csv file... ------------------------------------ 
+
+
+------> Separating into scripted and spontaneous... ---------------------------- 
+
+SUCCESS: Saved OGI scripted dataframe at /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted.csv
+Num utterances: 58422
+Total hours: 53.05924348958333
+SUCCESS: Saved OGI spontaneous dataframe at /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_spontaneous.csv
+Total_hours: 21.768158020833333
+Num utterances: 58422

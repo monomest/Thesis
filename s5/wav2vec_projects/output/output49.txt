@@ -1,0 +1,466 @@
+Wed Jul 14 11:35:36 AEST 2021
+Using custom data configuration default-37316b26926a9f32
+Reusing dataset csv (/srv/scratch/chacmod/.cache/huggingface/datasets/short/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0)
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/short/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-47024f6103ac1df2.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/short/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-c5b890c5844b797c.arrow
+  0%|          | 0/1 [00:00<?, ?ba/s]100%|██████████| 1/1 [00:00<00:00, 81.88ba/s]
+  0%|          | 0/1 [00:00<?, ?ba/s]100%|██████████| 1/1 [00:00<00:00, 420.65ba/s]------------------------------------------------------------------------
+                 run_finetune_kids.py                                   
+------------------------------------------------------------------------
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/run_finetune_kids_after-outage_short.py
+Started: 14/07/2021 11:35:37
+
+------> IMPORTING PACKAGES.... ---------------------------------------
+
+-->Importing datasets...
+-->Importing random...
+-->Importing pandas & numpy...
+-->Importing re...
+-->Importing json...
+-->Importing Wav2VecCTC...
+-->Importing soundfile...
+-->Importing torch, dataclasses & typing...
+-->Importing from transformers for training...
+-->SUCCESS! All packages imported.
+
+------> EXPERIMENT ARGUMENTS ----------------------------------------- 
+
+training: True
+experiment_id: 20210714
+datasetdict_id: short
+use_checkpoint: True
+checkpoint: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210714/checkpoint-100
+use_pretrained_tokenizer: True
+pretrained_tokenizer: facebook/wav2vec2-base-960h
+eval_pretrained: False
+baseline_model: facebook/wav2vec2-base-960h
+
+------> SETTING FILEPATHS... ----------------------------------------- 
+
+--> myST_train_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_train_short.csv
+--> myST_test_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_test_short.csv
+--> data_cache_fp: /srv/scratch/chacmod/.cache/huggingface/datasets/short
+--> vocab_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/vocab_20210714.json
+--> model_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210714
+--> pretrained_mod: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210714/checkpoint-100
+--> myST_datasetdict_fp: /srv/scratch/chacmod/renee_thesis/datasetdict-short
+--> pretrained_tokenizer: facebook/wav2vec2-base-960h
+
+------> PREPARING MYST DATASET... ------------------------------------
+
+--> MyST dataset...
+DatasetDict({
+    train: Dataset({
+        features: ['filepath', 'transcription'],
+        num_rows: 300
+    })
+    test: Dataset({
+        features: ['filepath', 'transcription'],
+        num_rows: 100
+    })
+})
+--> Printing some random samples...
+                                            filepath                                      transcription
+0  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...                                            celsius
+1  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...  it i don't know what it does in the digestive ...
+2  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...  if the pools are facing together they might st...
+3  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...  well maybe i think oh wait each stick had twen...
+4  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...                                       mmm hmm yeah
+SUCCESS: Prepared dataset.
+
+------> CREATING VOCABULARY... ---------------------------------------
+
+--> Creating map(...) function for vocab...
+--> Vocab len: 28 
+ {'W': 0, 'M': 1, 'H': 2, 'X': 3, 'B': 4, ' ': 5, 'I': 6, 'D': 7, 'T': 8, 'J': 9, "'": 10, 'N': 11, 'P': 12, 'Z': 13, 'G': 14, 'L': 15, 'R': 16, 'K': 17, 'S': 18, 'Y': 19, 'C': 20, 'E': 21, 'Q': 22, 'O': 23, 'F': 24, 'U': 25, 'A': 26, 'V': 27}
+--> Vocab len: 30 
+ {'W': 0, 'M': 1, 'H': 2, 'X': 3, 'B': 4, 'I': 6, 'D': 7, 'T': 8, 'J': 9, "'": 10, 'N': 11, 'P': 12, 'Z': 13, 'G': 14, 'L': 15, 'R': 16, 'K': 17, 'S': 18, 'Y': 19, 'C': 20, 'E': 21, 'Q': 22, 'O': 23, 'F': 24, 'U': 25, 'A': 26, 'V': 27, '|': 5, '[UNK]': 28, '[PAD]': 29}
+SUCCESS: Created vocabulary file at /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/vocab_20210714.json
+
+------> CREATING WAV2VEC2 FEATURE EXTRACTOR... -----------------------
+
+SUCCESS: Created feature extractor.
+
+------> PRE-PROCESSING DATA... ----------------------------------------- 
+
+
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/short/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-b84fec576315d285.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/short/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-042d4e13c7759f68.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/short/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-32482b156ab05203.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/short/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-6a15623a8b20aca3.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/short/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-897b02773dc1977b.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/short/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-78f0e24bd254b7b9.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/short/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-5fa7421341e241aa.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/short/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-45eb95a440a8bd16.arrow
+--> Verifying data with a random sample...
+Target text: WELL I THINK WE HAD TO MEASURE HOW TALL WE WERE AND UH WE WOULD HAVE TO ESTIMATE THAT AND WE WOULD GUESS AND THEN WE HAD TO FIND OUT THE REAL ANSWER
+Input array shape: (239664,)
+Sampling rate: 16000
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/short/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-fc19af87df56e3a0.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/short/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-1286bcb1181e8d45.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/short/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-452d3ba8d89d8f9e.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/short/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-dfcc468b38ce6b24.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/short/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-88e1fc4038eed18e.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/short/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-8ede2ed0863dad80.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/short/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-badef0cc11e36328.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/short/csv/default-37316b26926a9f32/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-d2a32ed91d56d325.arrow
+Using amp fp16 backend
+Loading model from /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210714/checkpoint-100).
+***** Running training *****
+  Num examples = 300
+  Num Epochs = 20
+  Instantaneous batch size per device = 20
+  Total train batch size (w. parallel, distributed & accumulation) = 40
+  Gradient Accumulation steps = 1
+  Total optimization steps = 160
+  Continuing training from checkpoint, will skip to saved global_step
+  Continuing training from epoch 12
+  Continuing training from global step 100
+  Will skip the first 12 epochs then the first 4 batches in the first epoch. If this takes a lot of time, you can add the `--ignore_data_skip` flag to your launch command, but you will resume the training on data already seen by your model.
+  0%|          | 0/4 [00:00<?, ?it/s]Skipping the first batches:   0%|          | 0/4 [00:00<?, ?it/s]
+  0%|          | 0/160 [00:00<?, ?it/s][ASkipping the first batches:  25%|██▌       | 1/4 [00:31<01:33, 31.31s/it]Skipping the first batches:  50%|█████     | 2/4 [00:33<00:45, 22.57s/it]Skipping the first batches:  75%|███████▌  | 3/4 [00:35<00:16, 16.46s/it]Skipping the first batches: 100%|██████████| 4/4 [00:37<00:00, 12.17s/it]Skipping the first batches: 100%|██████████| 4/4 [00:40<00:00, 10.07s/it]
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/torch/nn/parallel/_functions.py:65: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+ 63%|██████▎   | 101/160 [00:46<00:27,  2.18it/s][A
+ 64%|██████▍   | 102/160 [00:50<01:32,  1.60s/it][A
+ 64%|██████▍   | 103/160 [00:54<02:18,  2.43s/it][A
+ 65%|██████▌   | 104/160 [00:57<02:09,  2.32s/it][A
+ 66%|██████▌   | 105/160 [01:03<03:20,  3.64s/it][A
+ 66%|██████▋   | 106/160 [01:07<03:23,  3.77s/it][A
+ 67%|██████▋   | 107/160 [01:13<03:46,  4.28s/it][A
+ 68%|██████▊   | 108/160 [01:18<03:49,  4.41s/it][A
+ 68%|██████▊   | 109/160 [01:23<04:05,  4.82s/it][A
+ 69%|██████▉   | 110/160 [01:28<03:51,  4.63s/it][A
+ 69%|██████▉   | 111/160 [01:32<03:39,  4.48s/it][A
+ 70%|███████   | 112/160 [01:34<03:04,  3.85s/it][A
+ 71%|███████   | 113/160 [01:40<03:36,  4.61s/it][A
+ 71%|███████▏  | 114/160 [01:45<03:30,  4.57s/it][A
+ 72%|███████▏  | 115/160 [01:50<03:28,  4.63s/it][A
+ 72%|███████▎  | 116/160 [01:56<03:51,  5.27s/it][A
+ 73%|███████▎  | 117/160 [02:00<03:19,  4.64s/it][A
+ 74%|███████▍  | 118/160 [02:04<03:11,  4.56s/it][A
+ 74%|███████▍  | 119/160 [02:08<03:05,  4.52s/it][A
+ 75%|███████▌  | 120/160 [02:11<02:32,  3.82s/it][A
+ 76%|███████▌  | 121/160 [02:17<02:57,  4.56s/it][A
+ 76%|███████▋  | 122/160 [02:22<02:54,  4.60s/it][A
+ 77%|███████▋  | 123/160 [02:25<02:35,  4.20s/it][A
+ 78%|███████▊  | 124/160 [02:29<02:35,  4.32s/it][A
+ 78%|███████▊  | 125/160 [02:36<02:55,  5.01s/it][A
+ 79%|███████▉  | 126/160 [02:40<02:40,  4.71s/it][A
+ 79%|███████▉  | 127/160 [02:44<02:31,  4.60s/it][A
+ 80%|████████  | 128/160 [02:48<02:13,  4.17s/it][A
+ 81%|████████  | 129/160 [02:54<02:31,  4.89s/it][A
+ 81%|████████▏ | 130/160 [02:59<02:22,  4.77s/it][A
+ 82%|████████▏ | 131/160 [03:01<02:00,  4.17s/it][A
+ 82%|████████▎ | 132/160 [03:07<02:10,  4.68s/it][A
+ 83%|████████▎ | 133/160 [03:11<02:00,  4.45s/it][A
+ 84%|████████▍ | 134/160 [03:15<01:50,  4.27s/it][A
+ 84%|████████▍ | 135/160 [03:21<01:58,  4.73s/it][A
+ 85%|████████▌ | 136/160 [03:23<01:35,  3.96s/it][A
+ 86%|████████▌ | 137/160 [03:30<01:50,  4.79s/it][A
+ 86%|████████▋ | 138/160 [03:34<01:40,  4.56s/it][A
+ 87%|████████▋ | 139/160 [03:36<01:23,  4.00s/it][A
+ 88%|████████▊ | 140/160 [03:43<01:33,  4.67s/it][A
+ 88%|████████▊ | 141/160 [03:47<01:29,  4.70s/it][A
+ 89%|████████▉ | 142/160 [03:52<01:21,  4.54s/it][A
+ 89%|████████▉ | 143/160 [03:56<01:15,  4.45s/it][A
+ 90%|█████████ | 144/160 [03:59<01:07,  4.19s/it][A
+ 91%|█████████ | 145/160 [04:06<01:14,  4.96s/it][A
+ 91%|█████████▏| 146/160 [04:11<01:08,  4.90s/it][A
+ 92%|█████████▏| 147/160 [04:17<01:09,  5.35s/it][A
+ 92%|█████████▎| 148/160 [04:22<01:00,  5.08s/it][A
+ 93%|█████████▎| 149/160 [04:26<00:53,  4.90s/it][A
+ 94%|█████████▍| 150/160 [04:33<00:53,  5.38s/it][ASaving model checkpoint to /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210714/checkpoint-150
+Configuration saved in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210714/checkpoint-150/config.json
+Model weights saved in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210714/checkpoint-150/pytorch_model.bin
+Configuration saved in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210714/checkpoint-150/preprocessor_config.json
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/torch/nn/parallel/_functions.py:65: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+ 94%|█████████▍| 151/160 [04:41<00:56,  6.27s/it][A
+ 95%|█████████▌| 152/160 [04:43<00:40,  5.08s/it][A
+ 96%|█████████▌| 153/160 [04:49<00:37,  5.36s/it][A
+ 96%|█████████▋| 154/160 [04:53<00:29,  4.97s/it][A
+ 97%|█████████▋| 155/160 [04:58<00:23,  4.78s/it][A
+ 98%|█████████▊| 156/160 [05:02<00:18,  4.63s/it][A
+ 98%|█████████▊| 157/160 [05:07<00:13,  4.57s/it][A
+ 99%|█████████▉| 158/160 [05:12<00:09,  4.99s/it][A
+ 99%|█████████▉| 159/160 [05:17<00:04,  4.80s/it][A
+100%|██████████| 160/160 [05:20<00:00,  4.38s/it][A
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+
+                                                 [A
+100%|██████████| 160/160 [05:20<00:00,  4.38s/it][A100%|██████████| 160/160 [05:20<00:00,  2.00s/it]
+Configuration saved in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210714/config.json
+Model weights saved in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210714/pytorch_model.bin
+loading feature extractor configuration file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210714/preprocessor_config.json
+Feature extractor Wav2Vec2FeatureExtractor {
+  "do_normalize": true,
+  "feature_extractor_type": "Wav2Vec2FeatureExtractor",
+  "feature_size": 1,
+  "padding_side": "right",
+  "padding_value": 0.0,
+  "return_attention_mask": false,
+  "sampling_rate": 16000
+}
+
+Didn't find file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210714/added_tokens.json. We won't load it.
+Didn't find file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210714/tokenizer.json. We won't load it.
+loading file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210714/vocab.json
+loading file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210714/tokenizer_config.json
+loading file None
+loading file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210714/special_tokens_map.json
+loading file None
+loading configuration file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210714/config.json
+Model config Wav2Vec2Config {
+  "_name_or_path": "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210714/checkpoint-100",
+  "activation_dropout": 0.1,
+  "apply_spec_augment": true,
+  "architectures": [
+    "Wav2Vec2ForCTC"
+  ],
+  "attention_dropout": 0.1,
+  "bos_token_id": 1,
+  "codevector_dim": 256,
+  "contrastive_logits_temperature": 0.1,
+  "conv_bias": false,
+  "conv_dim": [
+    512,
+    512,
+    512,
+    512,
+    512,
+    512,
+    512
+  ],
+  "conv_kernel": [
+    10,
+    3,
+    3,
+    3,
+    3,
+    2,
+    2
+  ],
+  "conv_stride": [
+    5,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "ctc_loss_reduction": "mean",
+  "ctc_zero_infinity": false,
+  "diversity_loss_weight": 0.1,
+  "do_stable_layer_norm": false,
+  "eos_token_id": 2,
+  "feat_extract_activation": "gelu",
+  "feat_extract_dropout": 0.0,
+  "feat_extract_norm": "group",
+  "feat_proj_dropout": 0.1,
+  "feat_quantizer_dropout": 0.0,
+  "final_dropout": 0.1,
+  "gradient_checkpointing": true,
+  "hidden_act": "gelu",
+  "hidden_dropout": 0.1,
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "layerdrop": 0.1,
+  "mask_feature_length": 10,
+  "mask_feature_prob": 0.0,
+  "mask_time_length": 10,
+  "mask_time_prob": 0.05,
+  "model_type": "wav2vec2",
+  "num_attention_heads": 12,
+  "num_codevector_groups": 2,
+  "num_codevectors_per_group": 320,
+  "num_conv_pos_embedding_groups": 16,
+  "num_conv_pos_embeddings": 128,
+  "num_feat_extract_layers": 7,
+  "num_hidden_layers": 12,
+  "num_negatives": 100,
+  "pad_token_id": 0,
+  "proj_codevector_dim": 256,
+  "transformers_version": "4.8.2",
+  "vocab_size": 32
+}
+
+loading weights file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210714/pytorch_model.bin
+All model checkpoint weights were used when initializing Wav2Vec2ForCTC.
+
+All the weights of Wav2Vec2ForCTC were initialized from the model checkpoint at /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/wav2vec2-base-myST-20210714.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use Wav2Vec2ForCTC for predictions without further training.
+  0%|          | 0/100 [00:00<?, ?ex/s]  1%|          | 1/100 [00:00<00:14,  7.07ex/s]  5%|▌         | 5/100 [00:00<00:10,  9.25ex/s]  8%|▊         | 8/100 [00:00<00:07, 11.63ex/s] 11%|█         | 11/100 [00:00<00:07, 12.51ex/s] 14%|█▍        | 14/100 [00:00<00:06, 14.23ex/s] 16%|█▌        | 16/100 [00:00<00:05, 15.31ex/s] 19%|█▉        | 19/100 [00:00<00:04, 16.23ex/s] 22%|██▏       | 22/100 [00:01<00:04, 18.45ex/s] 25%|██▌       | 25/100 [00:01<00:05, 14.60ex/s] 28%|██▊       | 28/100 [00:01<00:04, 16.40ex/s] 31%|███       | 31/100 [00:01<00:03, 18.43ex/s] 34%|███▍      | 34/100 [00:01<00:03, 18.05ex/s] 37%|███▋      | 37/100 [00:01<00:03, 19.13ex/s] 40%|████      | 40/100 [00:02<00:02, 20.20ex/s] 43%|████▎     | 43/100 [00:02<00:02, 19.37ex/s] 47%|████▋     | 47/100 [00:02<00:02, 21.82ex/s] 50%|█████     | 50/100 [00:02<00:02, 17.81ex/s] 53%|█████▎    | 53/100 [00:02<00:03, 15.65ex/s] 55%|█████▌    | 55/100 [00:03<00:03, 12.16ex/s] 58%|█████▊    | 58/100 [00:03<00:03, 10.94ex/s] 61%|██████    | 61/100 [00:03<00:02, 13.20ex/s] 63%|██████▎   | 63/100 [00:03<00:02, 13.45ex/s] 65%|██████▌   | 65/100 [00:03<00:02, 13.87ex/s] 68%|██████▊   | 68/100 [00:04<00:02, 13.26ex/s] 71%|███████   | 71/100 [00:04<00:01, 15.07ex/s] 73%|███████▎  | 73/100 [00:04<00:02, 11.35ex/s] 75%|███████▌  | 75/100 [00:04<00:02, 12.18ex/s] 77%|███████▋  | 77/100 [00:04<00:02, 11.40ex/s] 80%|████████  | 80/100 [00:04<00:01, 13.87ex/s] 84%|████████▍ | 84/100 [00:05<00:00, 16.25ex/s] 87%|████████▋ | 87/100 [00:05<00:00, 16.41ex/s] 92%|█████████▏| 92/100 [00:05<00:00, 20.33ex/s] 97%|█████████▋| 97/100 [00:05<00:00, 21.85ex/s]100%|██████████| 100/100 [00:05<00:00, 17.75ex/s]
+loading feature extractor configuration file https://huggingface.co/facebook/wav2vec2-base-960h/resolve/main/preprocessor_config.json from cache at /home/z5160268/.cache/huggingface/transformers/07e398f6c4f4eb4f676c75befc5ace223491c79cea1109fb4029751892d380a1.bc3155ca0bae3a39fc37fc6d64829c6a765f46480894658bb21c08db6155358d
+Feature extractor Wav2Vec2FeatureExtractor {
+  "do_normalize": true,
+  "feature_extractor_type": "Wav2Vec2FeatureExtractor",
+  "feature_size": 1,
+  "padding_side": "right",
+  "padding_value": 0.0,
+  "return_attention_mask": false,
+  "sampling_rate": 16000
+}
+
+loading file https://huggingface.co/facebook/wav2vec2-base-960h/resolve/main/vocab.json from cache at /home/z5160268/.cache/huggingface/transformers/02595a4ae02bcd3f20d5fe783417b9b4ee9d11c244df7e3108bde6c2f37402da.7c838a0a103758bad6ef4922531682da23a8b1c45d25f8d8e7a6d857c0b26544
+loading file https://huggingface.co/facebook/wav2vec2-base-960h/resolve/main/tokenizer_config.json from cache at /home/z5160268/.cache/huggingface/transformers/a2973721f0d595de6a1c43e48e80dab25bb6c707d364f85a6674c75859942183.b10dd18eae95dde984b32c748781505f0b8c9c20dd067fe083088149f66987c4
+loading file https://huggingface.co/facebook/wav2vec2-base-960h/resolve/main/added_tokens.json from cache at None
+loading file https://huggingface.co/facebook/wav2vec2-base-960h/resolve/main/special_tokens_map.json from cache at /home/z5160268/.cache/huggingface/transformers/208086b2429fa2ba5b196810c1bcd7d61e2c8d4afd65d05d0670096d735fd5bb.9d6cd81ef646692fb1c169a880161ea1cb95f49694f220aced9b704b457e51dd
+loading file https://huggingface.co/facebook/wav2vec2-base-960h/resolve/main/tokenizer.json from cache at None
+loading configuration file https://huggingface.co/facebook/wav2vec2-base-960h/resolve/main/config.json from cache at /home/z5160268/.cache/huggingface/transformers/cbb3014bb9f03ead9b94f4a791ff8e777465307670e85079d35e28cbc5d88727.0e2d739358c9b58747bd19db5f9f4320dacabbeb1e6282f5cc1069c5c55a82d2
+Model config Wav2Vec2Config {
+  "_name_or_path": "facebook/wav2vec2-base-960h",
+  "activation_dropout": 0.1,
+  "apply_spec_augment": true,
+  "architectures": [
+    "Wav2Vec2ForCTC"
+  ],
+  "attention_dropout": 0.1,
+  "bos_token_id": 1,
+  "codevector_dim": 256,
+  "contrastive_logits_temperature": 0.1,
+  "conv_bias": false,
+  "conv_dim": [
+    512,
+    512,
+    512,
+    512,
+    512,
+    512,
+    512
+  ],
+  "conv_kernel": [
+    10,
+    3,
+    3,
+    3,
+    3,
+    2,
+    2
+  ],
+  "conv_stride": [
+    5,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "ctc_loss_reduction": "sum",
+  "ctc_zero_infinity": false,
+  "diversity_loss_weight": 0.1,
+  "do_stable_layer_norm": false,
+  "eos_token_id": 2,
+  "feat_extract_activation": "gelu",
+  "feat_extract_dropout": 0.0,
+  "feat_extract_norm": "group",
+  "feat_proj_dropout": 0.1,
+  "feat_quantizer_dropout": 0.0,
+  "final_dropout": 0.1,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout": 0.1,
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "layerdrop": 0.1,
+  "mask_feature_length": 10,
+  "mask_feature_prob": 0.0,
+  "mask_time_length": 10,
+  "mask_time_prob": 0.05,
+  "model_type": "wav2vec2",
+  "num_attention_heads": 12,
+  "num_codevector_groups": 2,
+  "num_codevectors_per_group": 320,
+  "num_conv_pos_embedding_groups": 16,
+  "num_conv_pos_embeddings": 128,
+  "num_feat_extract_layers": 7,
+  "num_hidden_layers": 12,
+  "num_negatives": 100,
+  "pad_token_id": 0,
+  "proj_codevector_dim": 256,
+  "transformers_version": "4.8.2",
+  "vocab_size": 32
+}
+
+loading weights file https://huggingface.co/facebook/wav2vec2-base-960h/resolve/main/pytorch_model.bin from cache at /home/z5160268/.cache/huggingface/transformers/4cb133d3cf3e58e8a4e088b1fc826611a3bcf3d98b20a0bb49ce8cd5362411b7.beeaccfa4baf44ba6123c23938d8a17f48344361a5e7041782e537dfd78a2037
+All model checkpoint weights were used when initializing Wav2Vec2ForCTC.
+
+Some weights of Wav2Vec2ForCTC were not initialized from the model checkpoint at facebook/wav2vec2-base-960h and are newly initialized: ['wav2vec2.masked_spec_embed']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+loading file https://huggingface.co/facebook/wav2vec2-base-960h/resolve/main/vocab.json from cache at /home/z5160268/.cache/huggingface/transformers/02595a4ae02bcd3f20d5fe783417b9b4ee9d11c244df7e3108bde6c2f37402da.7c838a0a103758bad6ef4922531682da23a8b1c45d25f8d8e7a6d857c0b26544
+loading file https://huggingface.co/facebook/wav2vec2-base-960h/resolve/main/tokenizer_config.json from cache at /home/z5160268/.cache/huggingface/transformers/a2973721f0d595de6a1c43e48e80dab25bb6c707d364f85a6674c75859942183.b10dd18eae95dde984b32c748781505f0b8c9c20dd067fe083088149f66987c4
+loading file https://huggingface.co/facebook/wav2vec2-base-960h/resolve/main/added_tokens.json from cache at None
+loading file https://huggingface.co/facebook/wav2vec2-base-960h/resolve/main/special_tokens_map.json from cache at /home/z5160268/.cache/huggingface/transformers/208086b2429fa2ba5b196810c1bcd7d61e2c8d4afd65d05d0670096d735fd5bb.9d6cd81ef646692fb1c169a880161ea1cb95f49694f220aced9b704b457e51dd
+loading file https://huggingface.co/facebook/wav2vec2-base-960h/resolve/main/tokenizer.json from cache at None
+  0%|          | 0/100 [00:00<?, ?ex/s]  1%|          | 1/100 [00:00<00:14,  6.75ex/s]  5%|▌         | 5/100 [00:00<00:10,  8.86ex/s]  8%|▊         | 8/100 [00:00<00:08, 11.15ex/s] 11%|█         | 11/100 [00:00<00:07, 12.04ex/s] 14%|█▍        | 14/100 [00:00<00:06, 13.74ex/s] 16%|█▌        | 16/100 [00:00<00:05, 14.73ex/s] 19%|█▉        | 19/100 [00:01<00:05, 15.54ex/s] 22%|██▏       | 22/100 [00:01<00:04, 17.79ex/s] 25%|██▌       | 25/100 [00:01<00:05, 13.95ex/s] 27%|██▋       | 27/100 [00:01<00:04, 15.27ex/s] 31%|███       | 31/100 [00:01<00:03, 17.46ex/s] 34%|███▍      | 34/100 [00:01<00:03, 17.23ex/s] 36%|███▌      | 36/100 [00:01<00:03, 17.36ex/s] 39%|███▉      | 39/100 [00:02<00:03, 18.87ex/s] 42%|████▏     | 42/100 [00:02<00:02, 19.49ex/s] 45%|████▌     | 45/100 [00:02<00:02, 21.36ex/s] 48%|████▊     | 48/100 [00:02<00:02, 18.11ex/s] 50%|█████     | 50/100 [00:02<00:02, 18.00ex/s] 52%|█████▏    | 52/100 [00:02<00:02, 16.40ex/s] 54%|█████▍    | 54/100 [00:03<00:03, 13.21ex/s] 56%|█████▌    | 56/100 [00:03<00:03, 12.55ex/s] 58%|█████▊    | 58/100 [00:03<00:04,  9.64ex/s] 61%|██████    | 61/100 [00:03<00:03, 11.84ex/s] 63%|██████▎   | 63/100 [00:03<00:02, 12.38ex/s] 65%|██████▌   | 65/100 [00:03<00:02, 13.12ex/s] 68%|██████▊   | 68/100 [00:04<00:02, 12.76ex/s] 71%|███████   | 71/100 [00:04<00:01, 14.60ex/s] 73%|███████▎  | 73/100 [00:04<00:02, 11.11ex/s] 75%|███████▌  | 75/100 [00:04<00:02, 12.03ex/s] 77%|███████▋  | 77/100 [00:04<00:02, 11.37ex/s] 80%|████████  | 80/100 [00:05<00:01, 13.84ex/s] 85%|████████▌ | 85/100 [00:05<00:00, 15.91ex/s] 87%|████████▋ | 87/100 [00:05<00:00, 16.24ex/s] 92%|█████████▏| 92/100 [00:05<00:00, 20.14ex/s] 97%|█████████▋| 97/100 [00:05<00:00, 21.63ex/s]100%|██████████| 100/100 [00:05<00:00, 17.38ex/s]
+--> Prepared dataset saved at: /srv/scratch/chacmod/renee_thesis/datasetdict-short
+To reload this set, run datasetdictName.load_from_dict(myST_datasetdict_fp)
+SUCCESS: Data ready for training and evaluation.
+
+------> PREPARING FOR TRAINING & EVALUATION... ----------------------- 
+
+--> Defining data collator...
+SUCCESS: Data collator defined.
+--> Defining evaluation metric...
+SUCCESS: Defined WER evaluation metric.
+--> Loading pre-trained checkpoint...
+SUCCESS: Pre-trained checkpoint loaded.
+
+------> STARTING TRAINING... ----------------------------------------- 
+
+{'train_runtime': 320.7542, 'train_samples_per_second': 18.706, 'train_steps_per_second': 0.499, 'train_loss': 0.3560981273651123, 'epoch': 20.0}
+
+------> EVALUATING MODEL... ------------------------------------------ 
+
+--> Getting fine-tuned test results...
+Fine-tuned Test WER: 0.263
+--> Showing some fine-tuned prediction errors...
+                                         target_text                                           pred_str
+0                   YOU USE EM TO M MEASURE THE MASS                     YOU USE EM TO MEASURE THE MASS
+1  YEAH WE WE D DON'T REALLY DO IT WITH ANYTHING ...  YAR WE WE DON'T REALLY DO WITH ANYTHING ELSE B...
+2                                               YEAH                                           MONSIEUR
+3                                               YEAH                                                YES
+4  NO WE HA WE PULL IT UP AND THEN WE PUSH IT DOW...  NO WEHAVT WE PULL IT UP UP AND THEN WE PUSH IT...
+5                                       THAT SLIPPED                                         SHTHATWIPS
+6                                        UH HUH YEAH                                               I AM
+7  YEAH NO IT WAS A MILLILIT NO A HUNDRED MILLILI...    YNO IT WAS A MILLE LA NO A HUNDRED MILL LEADERS
+8  UM YOU DON'T GET THE SAME MEASUREMENT YEAH YEA...  UM YOU DON'T GET THE SAME MEASURE MINT YEAYEAH...
+9  THE WATER INSIDE THE SPONGE CAUSE WE WANTED TO...  THE WATER INSIDE THIS ONE CAUSE WE WANTDED THE...
+--> Taking a deeper look...
+<pad> <pad> <pad> Y <pad> <pad> <pad> E E A H H H <pad> | | W <pad> <pad> E <pad> <pad> | <pad> W R R <pad> <pad> O <pad> <pad> <pad> T E <pad> | | O U <pad> R <pad> <pad> | | | <pad> N <pad> U M M <pad> <pad> B <pad> E R R <pad> <pad> <pad> | | D <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> O U <pad> <pad> <pad> <pad> T T <pad> <pad> <pad> <pad> | <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> Y <pad> <pad> <pad> E U <pad> <pad> H | <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> P <pad> <pad> <pad> A A <pad> <pad> <pad> P <pad> <pad> E R R <pad> <pad> | <pad> <pad> <pad> <pad> <pad> <pad>
+
+------> EVALUATING BASELINE MODEL... ------------------------------------------ 
+
+--> Getting baseline test results...
+Baseline Test WER: 0.318
+--> Showing some baseline prediction errors...
+                                         target_text                                           pred_str
+0                                               YEAH                                             YES NO
+1                                               YEAH                                                YES
+2                                          WAIT WHAT                                          WAIT WHAT
+3                                                YES                                                YES
+4  MMM WHEN YOU LIKE HAVE SOME WATER YOU WANNA KN...  WHEN YOU LIKE HAVE SOME WATER YOU WANT TO KNOW...
+5  WELL IF YOU THINK OF IT THESE THESE TWO EQUAL ...  WELL IF YOU THINK OF IT THESE THESE TWO EQUAL ...
+6                                               YEAH                                           MONSIEUR
+7                         FOR WAIT UM YEAH BASICALLY                              OF WHICH HUM AR BASIC
+8                          I HAVEN'T GOT TO THAT YET                          I HAVEN'T GOT TO THAT YET
+9                                                YUP                                                 IF
+--> Taking a deeper look...
+<pad> <pad> <pad> Y <pad> <pad> <pad> <pad> A <pad> <pad> <pad> <pad> <pad> | | W <pad> <pad> E <pad> <pad> | <pad> W R R <pad> <pad> O O <pad> T <pad> E <pad> | <pad> <pad> O U R R | | | | <pad> N <pad> U M <pad> <pad> <pad> B <pad> E R R <pad> <pad> <pad> | <pad> D <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> O W <pad> <pad> <pad> N <pad> <pad> <pad> <pad> <pad> | | <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> O N <pad> <pad> | <pad> <pad> <pad> <pad> <pad> <pad> <pad> | <pad> <pad> <pad> <pad> <pad> <pad> <pad> O <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> E U <pad> <pad> <pad> | | <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> P <pad> <pad> <pad> A A <pad> <pad> <pad> P <pad> <pad> E R R <pad> | | | <pad> <pad> <pad> <pad> <pad>
+
+------> SUCCESSFULLY FINISHED ---------------------------------------- 
+
+Finished: 14/07/2021 11:42:16

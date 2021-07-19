@@ -23,7 +23,7 @@ print('Running: ', os.path.abspath(__file__))
 # Dataframe in csv containing all the myST information
 myST_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_dataframe.csv"
 # File to store csv dataframe of output
-myST_shorten_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_shorten_dataframe.csv"
+myST_shorten_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_shorten_dataframe_15.csv"
 
 # ------------------------------------------
 #         Setting duration limit
@@ -36,7 +36,7 @@ myST_df["duration"] = myST_df["duration"].apply(pd.to_numeric)
 # Get the list of durations for all audio files
 duration = myST_df['duration']
 # Maximum seconds
-limit = 31
+limit = 15
 #limit = max(duration)
 print("--> Files limited to less than", limit, "seconds.")
 

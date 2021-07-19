@@ -23,13 +23,6 @@ print('Running: ', os.path.abspath(__file__))
 # ------------------------------------------
 
 # ------------------------------------------
-#        Setting subset portion
-#-------------------------------------------
-print("\n------> Setting subset of data to use --------------------------------\n")
-# Set as a fraction e.g. 0.5 = 50% of data
-num_keep = 0.1
-num_discard = 1-num_keep
-# ------------------------------------------
 #     Setting train and test portions
 # ------------------------------------------
 print("\n------> Setting train and test portions ------------------------------\n")
@@ -38,6 +31,11 @@ num_test = 0.3
 num_train = 1-num_test
 print("--> Splitting as train:", num_train, "and test:", num_test)
 
+print("\n------> Setting subset to keep ---------------------------------------\n")
+num_keep = 0.1
+num_discard = 1-num_keep
+print("--> Splitting as keep:", num_keep, "and discard:", num_discard)
+
 # ------------------------------------------
 #             Setting filepaths
 # ------------------------------------------
@@ -45,17 +43,17 @@ print("--> Splitting as train:", num_train, "and test:", num_test)
 # File path to MyST dataframe csv file,
 # generated from myST_prep.py and/or
 # myST_getShortWavs.py
-myST_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_shorten_dataframe.csv"
+myST_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_shorten_dataframe_15.csv"
 # Speaker information
-myST_spkrs_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_spkrs.csv"
+myST_spkrs_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_spkrs_15.csv"
 # Where to save spkrs train dataframe
-myST_spkrs_train_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_spkrs_train.csv"
+myST_spkrs_train_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_spkrs_train_15_subset_10.csv"
 # Where to save spkrs test dataframe
-myST_spkrs_test_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_spkrs_test.csv"
+myST_spkrs_test_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_spkrs_test_15_subset_10.csv"
 # Where to save training dataframe
-myST_train_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_train.csv"
+myST_train_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_train_15_subset_10.csv"
 # Where to save testing
-myST_test_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_test.csv"
+myST_test_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_test_15_subset_10.csv"
 
 # ------------------------------------------
 #        Splitting by speakers
@@ -72,12 +70,6 @@ spkrs_df = pd.read_csv(myST_spkrs_fp, dtype=str)
 # Converting duration column to float64
 spkrs_df["duration"] = spkrs_df["duration"].apply(pd.to_numeric)
 
-# ------------------------------------------
-#   Choosing random subset of speakers
-# ------------------------------------------
-# Split into keep and discard by speakers
-keep_spkrs, discard_spkrs = train_test_split(spkrs_df, test_size=num_discard, random_state=6, shuffle=True)
-spkrs_df = keep_spkrs
 # Split into train and test by speakers
 train_spkrs, test_spkrs = train_test_split(spkrs_df, test_size=num_test, random_state=6, shuffle=True)
 print("--> Speakers in train:", len(train_spkrs))
@@ -100,24 +92,38 @@ print("SUCCESS: Saved train and test spkrs in",
 print("\n------> Splitting into train and test... -----------------------------\n")
 # Use isin() to filter myST dataframe by speakers appearing in train & test dataframe
 train_spkrs_list = train_spkrs.drop(columns='duration')
-test_spkrs_list = test_spkrs.drop(columns='duration')
 #print("Train_spkrs:",train_spkrs.head())
 keys_train = list(train_spkrs_list.columns.values)
 all_spkrs_index = myST_df.set_index(keys_train).index
 train_spkrs_index = train_spkrs_list.set_index(keys_train).index
 # Get all the train rows i.e. speakers in train speakers
-train_df = myST_df[all_spkrs_index.isin(train_spkrs_index)]
+train_all_df = myST_df[all_spkrs_index.isin(train_spkrs_index)]
 #print("train_df:",train_df.head())
 # Get all the test rows i.e. speakers NOT in train speakers
-keys_test = list(test_spkrs_list.columns.values)
-all_spkrs_index = myST_df.set_index(keys_test).index
-test_spkrs_index = test_spkrs_list.set_index(keys_test).index
-test_df = myST_df[all_spkrs_index.isin(test_spkrs_index)]
+test_all_df = myST_df[~all_spkrs_index.isin(train_spkrs_index)]
 #print("test_df",test_df.head())
+
+# ------------------------------------------
+#           Keeping only subset
+# ------------------------------------------
+print("\n------> Keeping only subset... ---------------------------------------\n")
+# Getting subset of train
+train_discard, train_df = train_test_split(train_all_df, test_size=num_keep, random_state=6, shuffle=True)
+# Getting subset of test
+test_discard, test_df = train_test_split(test_all_df, test_size=num_keep, random_state=6, shuffle=True)
 
 # ------------------------------------------
 #          Saving to csv files
 # ------------------------------------------
+# Save spkr_id as string so leading zeros are not removed
+train_df['spkr_id'] = train_df['spkr_id'].astype('str')
+test_df['spkr_id'] = test_df['spkr_id'].astype('str')
+
+# Remove spkr_id column since not needed
+train_df.drop(columns=['spkr_id'], inplace=True)
+test_df.drop(columns=['spkr_id'], inplace=True)
+
+# Save as csv file
 train_df.to_csv(myST_train_fp, index=False)
 test_df.to_csv(myST_test_fp, index=False)
 print("SUCCESS: Created train and test portions in",

@@ -1,0 +1,211 @@
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/OGI_getShortWavs.py
+
+------> Setting duration limit... ------------------------------------ 
+
+--> Files limited to less than 15 seconds.
+
+------> Keeping only short audio files... ---------------------------- 
+
+OGI_shorten:
+
+                                            filepath  ... spkr_id
+0  /srv/scratch/chacmod/OGI/speech/scripted/00/1/...  ...   ks000
+1  /srv/scratch/chacmod/OGI/speech/scripted/00/1/...  ...   ks000
+2  /srv/scratch/chacmod/OGI/speech/scripted/00/1/...  ...   ks000
+3  /srv/scratch/chacmod/OGI/speech/scripted/00/1/...  ...   ks000
+4  /srv/scratch/chacmod/OGI/speech/scripted/00/1/...  ...   ks000
+
+[5 rows x 4 columns]
+SUCCESS: Saved OGI dataframe with only audio less than 15 seconds at /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted_15.csv
+Total hours: 53.059243489582556
+Dataframe length: 58422
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/OGI_getSpkrs.py
+
+------> Getting list of unique speakers and their total durations...
+
+
+------> Saving information to file...
+
+SUCCESS: Saved speaker and duration information at /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted_spkrs_15.csv
+-> Total speakers: 1118
+-> Total hours: 53.05924348958333
+-> Description of duration:
+count    1118.000000
+mean      170.852662
+std        81.522994
+min         2.337750
+25%        95.283609
+50%       133.419406
+75%       266.473219
+max       289.902750
+Name: duration, dtype: float64
+OGI_split.py:105: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  train_df['spkr_id'] = train_df['spkr_id'].astype('str')
+OGI_split.py:106: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  test_df['spkr_id'] = test_df['spkr_id'].astype('str')
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/OGI_split.py
+
+------> Setting train and test portions ------------------------------
+
+--> Splitting as train: 0.98 and test: 0.02
+
+------> Splitting by speakers... -------------------------------------
+
+--> Speakers in train: 1095
+--> Hours in train: 51.787673142361115
+--> Proportion of train: 0.9760348948911823
+--> Speakers in test: 23
+--> Hours in test: 1.2715703472222224
+--> Proportion of test: 0.023965105108817823
+SUCCESS: Saved train and test spkrs in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted_spkrs_train_15.csv and /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted_spkrs_test_15.csv
+
+------> Splitting into train and test... -----------------------------
+
+SUCCESS: Created train and test portions in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted_train_15.csv and /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted_test_15.csv
+Train files: 57128 | Train hours: 51.78767314236038
+Test files: 1294 | Test hours: 1.2715703472222255
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/OGI_getShortWavs.py
+
+------> Setting duration limit... ------------------------------------ 
+
+--> Files limited to less than 15 seconds.
+
+------> Keeping only short audio files... ---------------------------- 
+
+OGI_shorten:
+
+                                            filepath  ... spkr_id
+0  /srv/scratch/chacmod/OGI/speech/scripted/00/1/...  ...   ks000
+1  /srv/scratch/chacmod/OGI/speech/scripted/00/1/...  ...   ks000
+2  /srv/scratch/chacmod/OGI/speech/scripted/00/1/...  ...   ks000
+3  /srv/scratch/chacmod/OGI/speech/scripted/00/1/...  ...   ks000
+4  /srv/scratch/chacmod/OGI/speech/scripted/00/1/...  ...   ks000
+
+[5 rows x 4 columns]
+Traceback (most recent call last):
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/pandas/core/indexes/base.py", line 2898, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 70, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 101, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1675, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1683, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'spkr_d'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "OGI_getShortWavs.py", line 52, in <module>
+    OGI_shorten_df['spkr_id'] = OGI_shorten_df['spkr_d'].astype('str')
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/pandas/core/frame.py", line 2906, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/pandas/core/indexes/base.py", line 2900, in get_loc
+    raise KeyError(key) from err
+KeyError: 'spkr_d'
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/OGI_getShortWavs.py
+
+------> Setting duration limit... ------------------------------------ 
+
+--> Files limited to less than 15 seconds.
+
+------> Keeping only short audio files... ---------------------------- 
+
+OGI_shorten:
+
+                                            filepath  ... spkr_id
+0  /srv/scratch/chacmod/OGI/speech/scripted/00/1/...  ...   ks000
+1  /srv/scratch/chacmod/OGI/speech/scripted/00/1/...  ...   ks000
+2  /srv/scratch/chacmod/OGI/speech/scripted/00/1/...  ...   ks000
+3  /srv/scratch/chacmod/OGI/speech/scripted/00/1/...  ...   ks000
+4  /srv/scratch/chacmod/OGI/speech/scripted/00/1/...  ...   ks000
+
+[5 rows x 4 columns]
+SUCCESS: Saved OGI dataframe with only audio less than 15 seconds at /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted_15.csv
+Total hours: 53.059243489582556
+Dataframe length: 58422
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/OGI_getSpkrs.py
+
+------> Getting list of unique speakers and their total durations...
+
+
+------> Saving information to file...
+
+SUCCESS: Saved speaker and duration information at /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted_spkrs_15.csv
+-> Total speakers: 1118
+-> Total hours: 53.05924348958333
+-> Description of duration:
+count    1118.000000
+mean      170.852662
+std        81.522994
+min         2.337750
+25%        95.283609
+50%       133.419406
+75%       266.473219
+max       289.902750
+Name: duration, dtype: float64
+OGI_split.py:105: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  train_df['spkr_id'] = train_df['spkr_id'].astype('str')
+OGI_split.py:106: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  test_df['spkr_id'] = test_df['spkr_id'].astype('str')
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/OGI_split.py
+
+------> Setting train and test portions ------------------------------
+
+--> Splitting as train: 0.98 and test: 0.02
+
+------> Splitting by speakers... -------------------------------------
+
+--> Speakers in train: 1095
+--> Hours in train: 51.787673142361115
+--> Proportion of train: 0.9760348948911823
+--> Speakers in test: 23
+--> Hours in test: 1.2715703472222224
+--> Proportion of test: 0.023965105108817823
+SUCCESS: Saved train and test spkrs in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted_spkrs_train_15.csv and /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted_spkrs_test_15.csv
+
+------> Splitting into train and test... -----------------------------
+
+SUCCESS: Created train and test portions in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted_train_15.csv and /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted_test_15.csv
+Train files: 57128 | Train hours: 51.78767314236038
+Test files: 1294 | Test hours: 1.2715703472222255
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/pandas/core/frame.py:4174: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  errors=errors,
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/OGI_split.py
+
+------> Setting train and test portions ------------------------------
+
+--> Splitting as train: 0.98 and test: 0.02
+
+------> Splitting by speakers... -------------------------------------
+
+--> Speakers in train: 1095
+--> Hours in train: 51.787673142361115
+--> Proportion of train: 0.9760348948911823
+--> Speakers in test: 23
+--> Hours in test: 1.2715703472222224
+--> Proportion of test: 0.023965105108817823
+SUCCESS: Saved train and test spkrs in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted_spkrs_train_15.csv and /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted_spkrs_test_15.csv
+
+------> Splitting into train and test... -----------------------------
+
+SUCCESS: Created train and test portions in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted_train_15.csv and /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted_test_15.csv
+Train files: 57128 | Train hours: 51.78767314236038
+Test files: 1294 | Test hours: 1.2715703472222255

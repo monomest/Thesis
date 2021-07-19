@@ -22,9 +22,9 @@ print('Running: ', os.path.abspath(__file__))
 #             Setting file paths
 # ------------------------------------------
 # File storing csv dataframe of output
-myST_shorten_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_shorten_dataframe.csv"
+myST_shorten_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_shorten_dataframe_15.csv"
 # File to store speaker and duration information
-myST_spkrs_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_spkrs.csv"
+myST_spkrs_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_spkrs_15.csv"
 
 # ------------------------------------------
 #          Getting list of speakers

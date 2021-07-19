@@ -1,0 +1,20 @@
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/OGI_getSpkrs.py
+
+------> Getting list of unique speakers and their total durations...
+
+
+------> Saving information to file...
+
+SUCCESS: Saved speaker and duration information at /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_spkrs_15.csv
+-> Total speakers: 1118
+-> Total hours: 53.06334071180555
+-> Description of duration:
+count    1118.000000
+mean      170.865856
+std        81.511915
+min         2.337750
+25%        95.287531
+50%       133.419406
+75%       266.473219
+max       289.902750
+Name: duration, dtype: float64

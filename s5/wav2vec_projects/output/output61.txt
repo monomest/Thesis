@@ -1,0 +1,43 @@
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/OGI_prep.py
+
+------> Extracting information from files... ------------------------
+
+['ks000-ks000010', 'ks000-ks000060', 'ks000-ks0000b0', 'ks000-ks0000g0', 'ks000-ks0000l0']
+['/srv/scratch/z5160268/2020_TasteofResearch/OREGON_Kids_Corpus/speech/scripted/00/1/ks000/ks000010.wav', '/srv/scratch/z5160268/2020_TasteofResearch/OREGON_Kids_Corpus/speech/scripted/00/1/ks000/ks000060.wav', '/srv/scratch/z5160268/2020_TasteofResearch/OREGON_Kids_Corpus/speech/scripted/00/1/ks000/ks0000b0.wav', '/srv/scratch/z5160268/2020_TasteofResearch/OREGON_Kids_Corpus/speech/scripted/00/1/ks000/ks0000g0.wav', '/srv/scratch/z5160268/2020_TasteofResearch/OREGON_Kids_Corpus/speech/scripted/00/1/ks000/ks0000l0.wav']
+['ks000-ks000010', 'ks000-ks000060', 'ks000-ks0000b0', 'ks000-ks0000g0', 'ks000-ks0000l0']
+['ks000-ks000010', 'ks000-ks000060', 'ks000-ks0000b0', 'ks000-ks0000g0', 'ks000-ks0000l0']
+['ALLOWING', 'AVERAGE', 'BEYOND', 'BREATH', 'CHALK']
+SUCCESS: extracted information from wav.scp and text.
+
+------> Verifying data... --------------------------------------------
+
+VERIFICATION SUCCESS: recording ID's match up.
+VERIFICATION SUCCESS: recording ID's are unique.
+
+------> Putting data into dataframe... -------------------------------
+
+--> Dropping rows where the wav file does not exist...
+--> Getting duration in seconds for each audio file...
+--> Getting speaker id for each wav file...
+--> Getting list of unique characters in the transcription...
+Length: 28
+{'j', 'e', 'o', ' ', 'p', 'd', 'l', 'n', 'k', 'i', 't', 's', 'b', 'x', 'u', 'a', 'v', 'q', 'f', 'z', "'", 'w', 'm', 'g', 'r', 'h', 'c', 'y'}
+
+------> Describing dataset... ----------------------------------------
+
+Duration (in seconds):
+count    59207.000000
+mean         4.549777
+std         11.739115
+min          1.206625
+25%          2.088437
+50%          2.739750
+75%          4.092062
+max        252.006438
+Name: duration, dtype: float64
+Total hours: 74.82740151041668
+
+------> Saving dataframe to csv file... ------------------------------
+
+SUCCESS: Saved OGI dataframe to csv file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_dataframe.csv
+Dataframe length: 59207
