@@ -2,7 +2,9 @@
 # run_finetune_kids.py
 # Purpose: Uses wav2vec2 to fine tune for kids speech
 #          with children's speech corpus.
-# Source:
+#          Originally used for MyST dataset and so the
+#          variables are named as myST.
+# Based on source:
 # https://colab.research.google.com/github/patrickvonplaten/notebooks/blob/master/Fine_tuning_Wav2Vec2_for_English_ASR.ipynb
 # Author: Renee Lu, 2021
 #----------------------------------------------------------
@@ -34,9 +36,9 @@ now = datetime.now()
 dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
 print("Started:", dt_string)
 # ------------------------------------------ 
-# Import datasets and evaluation metric
 print("\n------> IMPORTING PACKAGES.... ---------------------------------------\n")
 print("-->Importing datasets...")
+# Import datasets and evaluation metric
 from datasets import load_dataset, load_metric, ClassLabel
 # Convert pandas dataframe to DatasetDict
 from datasets import Dataset
@@ -80,19 +82,27 @@ print("-->SUCCESS! All packages imported.")
 # ------------------------------------------
 print("\n------> EXPERIMENT ARGUMENTS ----------------------------------------- \n")
 
-# Perform Training (True/False) 
+# Perform Training (True/False)
+# If false, this will go straight to model evaluation 
 training = False
 print("training:", training)
 
 # Experiment ID
+# For 1) naming vocab.json file and
+#     2) naming model output directory
 experiment_id = "20210718-1"
 print("experiment_id:", experiment_id)
 
 # DatasetDict Id
+# For 1) naming cache directory and 
+#     2) saving the DatasetDict object
 datasetdict_id = "OGI-subset_myST-subset.csv"
 print("datasetdict_id:", datasetdict_id)
 
 # Resume training from/ use checkpoint (True/False)
+# For 1) resuming from a saved checkpoint if training stopped midway through
+#  or 2) for using an existing model for evaluation 
+# If 2), then must also set eval_pretrained = True
 use_checkpoint = True
 print("use_checkpoint:", use_checkpoint)
 # Set checkpoint if resuming from/using checkpoint
@@ -101,6 +111,8 @@ if use_checkpoint:
     print("checkpoint:", checkpoint)
 
 # Use a pretrained tokenizer (True/False)
+#     True: Use existing tokenizer (if custom dataset has same vocab)
+#     False: Use custom tokenizer (if custom dataset has different vocab)
 use_pretrained_tokenizer = True
 print("use_pretrained_tokenizer:", use_pretrained_tokenizer)
 # Set tokenizer
@@ -108,7 +120,9 @@ pretrained_tokenizer = "facebook/wav2vec2-base-960h"
 if use_pretrained_tokenizer:
     print("pretrained_tokenizer:", pretrained_tokenizer)
 
-# Evaluate existing model instead of new model created from training
+# Evaluate existing model instead of newly trained mode (True/False)
+#     True: use the model in the filepath set by 'eval_model' for eval
+#     False: use the model trained from this script for eval
 eval_pretrained = True
 print("eval_pretrained:", eval_pretrained)
 # Set existing model to evaluate, if evaluating on existing model
@@ -117,11 +131,14 @@ if eval_pretrained:
     print("eval_model:", eval_model)
 
 # Baseline model for evaluating baseline metric
+# This model will be evaluated at the end for the baseline WER
 baseline_model = "facebook/wav2vec2-base-960h"
 print("baseline_model:", baseline_model)
 
 print("\n------> TRAINING ARGUMENTS... ----------------------------------------")
+# For setting TrainingArguments
 # Default values in comments
+
 #output_dir=model_fp
 #group_by_length=True
 #per_device_train_batch_size=32
@@ -154,17 +171,24 @@ print("warmup_steps:", set_warmup_steps)
 #          Setting file paths
 # ------------------------------------------
 print("\n------> SETTING FILEPATHS... ----------------------------------------- \n")
-# Path to dataframe csv for MyST train
+# Path to dataframe csv for train dataset
 myST_train_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_local/OGI-subset_myST-subset.csv"
 print("--> myST_train_fp:", myST_train_fp)
-# Path to dataframe csv for MyST test
+# Path to dataframe csv for test dataset
 myST_test_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted_test_15_subset_10.csv"
 print("--> myST_test_fp:", myST_test_fp)
+
+# Dataframe file 
 # |-----------|---------------|----------|---------|
 # | file path | transcription | duration | spkr_id |
 # |-----------|---------------|----------|---------|
 # |   ...     |      ...      |  ..secs  | ......  |
 # |-----------|---------------|----------|---------|
+# NOTE: The spkr_id column may need to be removed beforehand if
+#       there appears to be a mixture between numerical and string ID's
+#       due to this issue: https://github.com/apache/arrow/issues/4168
+#       when calling load_dataset()
+
 # Path to datasets cache
 #data_cache_fp = "/srv/scratch/z5160268/.cache/huggingface/datasets"
 data_cache_fp = "/srv/scratch/chacmod/.cache/huggingface/datasets/" + datasetdict_id
@@ -176,7 +200,11 @@ print("--> vocab_fp:", vocab_fp)
 model_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/wav2vec2-base-OGI-" + experiment_id
 print("--> model_fp:", model_fp)
 # Pre-trained checkpoint model
-# Default is facebook's model
+# For 1) Fine-tuning or
+#     2) resuming training from pre-trained model
+# If 1) must set use_checkpoint = False
+# If 2)must set use_checkpoint = True
+# Default model to fine-tune is facebook's model
 pretrained_mod = "facebook/wav2vec2-base-960h"
 if use_checkpoint:
     pretrained_mod = checkpoint
@@ -184,12 +212,13 @@ print("--> pretrained_mod:", pretrained_mod)
 # Path to save prepared DatasetDict object
 myST_datasetdict_fp = "/srv/scratch/chacmod/renee_thesis/datasetdict-" + datasetdict_id
 print("--> myST_datasetdict_fp:", myST_datasetdict_fp)
-# Path to tokenizer
+# Path to pre-trained tokenizer
+# If use_pretrained_tokenizer = True
 if use_pretrained_tokenizer:
     print("--> pretrained_tokenizer:", pretrained_tokenizer)
 
 # ------------------------------------------
-#         Preparing MyST dataset
+#         Preparing dataset
 # ------------------------------------------
 # Run the following scripts to prepare data
 # 1) Prepare data from kaldi file: 
@@ -199,7 +228,7 @@ if use_pretrained_tokenizer:
 # 2) Split data into train and test:
 # /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/myST_split.py
 
-print("\n------> PREPARING MYST DATASET... ------------------------------------\n")
+print("\n------> PREPARING DATASET... ------------------------------------\n")
 # Read the existing csv saved dataframes and
 # load as a DatasetDict 
 myST = load_dataset('csv', 
@@ -303,7 +332,7 @@ print("SUCCESS: Created feature extractor.")
 #             Pre-process Data
 # ------------------------------------------
 print("\n------> PRE-PROCESSING DATA... ----------------------------------------- \n")
-# MyST audio files are stored as .wav format
+# Audio files are stored as .wav format
 # We want to store both audio values and sampling rate
 # in the dataset. 
 # We write a map(...) function accordingly.
@@ -519,8 +548,8 @@ trainer = Trainer(
 #               Training
 # ------------------------------------------
 # While the trained model yields a satisfying result on Timit's
-# test data, it is by no means an optimally fine-tuned model, 
-# especially for MyST.
+# test data, it is by no means an optimally fine-tuned model
+# for children's data.
 
 if training:
     print("\n------> STARTING TRAINING... ----------------------------------------- \n")
