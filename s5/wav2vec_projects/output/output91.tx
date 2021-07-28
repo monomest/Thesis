@@ -1,0 +1,115 @@
+python: can't open file 'remove_spkr_col.py': [Errno 2] No such file or directory
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/data_remove_spkr_col.py
+
+------> Setting data paths -------------------------------------------
+
+--> Dataset name: myST
+--> Dataset filename: myST_dev_15
+--> Dataset filepath: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_dev_15.csv
+
+------> Reading in dataset... ----------------------------------------
+
+SUCCESS: Dropped spkr_id column and saved in: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_dev_15_noSpkrCol.csv
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/data_remove_spkr_col.py
+
+------> Setting data paths -------------------------------------------
+
+--> Dataset name: myST
+--> Dataset filename: myST_test_15
+--> Dataset filepath: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_test_15.csv
+
+------> Reading in dataset... ----------------------------------------
+
+SUCCESS: Dropped spkr_id column and saved in: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_test_15_noSpkrCol.csv
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/data_remove_spkr_col.py
+
+------> Setting data paths -------------------------------------------
+
+--> Dataset name: OGI
+--> Dataset filename: OGI_scripted_test_15
+--> Dataset filepath: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted_test_15.csv
+
+------> Reading in dataset... ----------------------------------------
+
+SUCCESS: Dropped spkr_id column and saved in: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted_test_15_noSpkrCol.csv
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/data_remove_spkr_col.py
+
+------> Setting data paths -------------------------------------------
+
+--> Dataset name: OGI
+--> Dataset filename: OGI_scripted_dev_15
+--> Dataset filepath: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted_dev_15.csv
+
+------> Reading in dataset... ----------------------------------------
+
+SUCCESS: Dropped spkr_id column and saved in: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted_dev_15_noSpkrCol.csv
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/data_remove_spkr_col.py
+
+------> Setting data paths -------------------------------------------
+
+--> Dataset name: OGI
+--> Dataset filename: OGI_scripted_train_15
+--> Dataset filepath: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted_train_15.csv
+
+------> Reading in dataset... ----------------------------------------
+
+SUCCESS: Dropped spkr_id column and saved in: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted_train_15_noSpkrCol.csv
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/data_remove_spkr_col.py
+
+------> Setting data paths -------------------------------------------
+
+--> Dataset name: OGI
+--> Dataset filename: OGI_scripted_train_15_10min
+--> Dataset filepath: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted_train_15_10min.csv
+
+------> Reading in dataset... ----------------------------------------
+
+SUCCESS: Dropped spkr_id column and saved in: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted_train_15_10min_noSpkrCol.csv
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/data_remove_spkr_col.py
+
+------> Setting data paths -------------------------------------------
+
+--> Dataset name: OGI
+--> Dataset filename: OGI_scripted_train_15_1h
+--> Dataset filepath: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted_train_15_1h.csv
+
+------> Reading in dataset... ----------------------------------------
+
+SUCCESS: Dropped spkr_id column and saved in: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted_train_15_1h_noSpkrCol.csv
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/data_remove_spkr_col.py
+
+------> Setting data paths -------------------------------------------
+
+--> Dataset name: OGI
+--> Dataset filename: OGI_scripted_train_15_10h
+--> Dataset filepath: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted_train_15_10h.csv
+
+------> Reading in dataset... ----------------------------------------
+
+Traceback (most recent call last):
+  File "data_remove_spkr_col.py", line 50, in <module>
+    dataset_df = pd.read_csv(dataset_fp, dtype=str)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/pandas/io/parsers.py", line 688, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/pandas/io/parsers.py", line 454, in _read
+    parser = TextFileReader(fp_or_buf, **kwds)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/pandas/io/parsers.py", line 948, in __init__
+    self._make_engine(self.engine)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/pandas/io/parsers.py", line 1180, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib/python3.6/site-packages/pandas/io/parsers.py", line 2010, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 382, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 674, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: [Errno 2] No such file or directory: '/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted_train_15_10h.csv'
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/data_remove_spkr_col.py
+
+------> Setting data paths -------------------------------------------
+
+--> Dataset name: OGI
+--> Dataset filename: OGI_scripted_train_10h
+--> Dataset filepath: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted_train_10h.csv
+
+------> Reading in dataset... ----------------------------------------
+
+SUCCESS: Dropped spkr_id column and saved in: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted_train_10h_noSpkrCol.csv

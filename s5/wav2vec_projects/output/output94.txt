@@ -1,0 +1,219 @@
+Wed Jul 28 19:12:54 AEST 2021
+Using custom data configuration default-c3d385a7cacb0a95
+Reusing dataset csv (/srv/scratch/chacmod/.cache/huggingface/datasets/OGI-myST-10min/csv/default-c3d385a7cacb0a95/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0)
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/OGI-myST-10min/csv/default-c3d385a7cacb0a95/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-c323f6e94eab1837.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/OGI-myST-10min/csv/default-c3d385a7cacb0a95/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-9ee18bac2ab352df.arrow
+  0%|          | 0/1 [00:00<?, ?ba/s]100%|██████████| 1/1 [00:00<00:00, 121.32ba/s]
+  0%|          | 0/1 [00:00<?, ?ba/s]100%|██████████| 1/1 [00:00<00:00, 26.68ba/s]------------------------------------------------------------------------
+                 run_finetune_kids.py                                   
+------------------------------------------------------------------------
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/run_finetune_kids_new.py
+Started: 28/07/2021 19:13:15
+
+------> IMPORTING PACKAGES.... ---------------------------------------
+
+-->Importing datasets...
+-->Importing random...
+-->Importing pandas & numpy...
+-->Importing re...
+-->Importing json...
+-->Importing Wav2VecCTC...
+-->Importing soundfile...
+-->Importing torch, dataclasses & typing...
+-->Importing from transformers for training...
+-->Importing pyarrow for loading dataset...
+-->SUCCESS! All packages imported.
+
+------> EXPERIMENT ARGUMENTS ----------------------------------------- 
+
+training: True
+experiment_id: 20210728-OGI-myST-10min
+datasetdict_id: OGI-myST-10min
+base_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/
+train_name: myST-OGI
+train_filename: myST_OGI_train_15_10min_noSpkrCol
+evaluation_name: OGI
+evaluation_filename: OGI_scripted_dev_15_noSpkrCol
+use_checkpoint: False
+use_pretrained_tokenizer: True
+pretrained_tokenizer: facebook/wav2vec2-base-960h
+eval_pretrained: False
+baseline_model: facebook/wav2vec2-base-960h
+
+------> MODEL ARGUMENTS... -------------------------------------------
+
+hidden_dropout: 0.1
+activation_dropout: 0.1
+attention_dropoutput: 0.1
+feat_proj_dropout: 0.0
+layerdrop: 0.1
+mask_time_prob: 0.075
+mask_time_length: 10
+ctc_loss_reduction: mean
+ctc_zero_infinity: False
+gradient_checkpointing: True
+
+------> TRAINING ARGUMENTS... ----------------------------------------
+
+evaluation strategy: steps
+per_device_train_batch_size: 8
+gradient_accumulation_steps: 1
+learning_rate: 5e-05
+weight_decay: 0.01
+adam_beta1: 0.9
+adam_beta2: 0.98
+adam_epsilon: 1e-08
+num_train_epochs: 2000
+max_steps: 12000
+lr_scheduler_type: linear
+warmup_ratio: 0.1
+logging_steps: 500
+save_strategy: steps
+save_steps: 500
+save_total_limit: 2
+fp16: True
+eval_steps: 500
+group_by_length: True
+
+------> GENERATING FILEPATHS... --------------------------------------
+
+--> data_train_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/myST_OGI_train_15_10min_noSpkrCol.csv
+--> data_test_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted_dev_15_noSpkrCol.csv
+--> data_cache_fp: /srv/scratch/chacmod/.cache/huggingface/datasets/OGI-myST-10min
+--> vocab_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/vocab_20210728-OGI-myST-10min.json
+--> model_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/20210728-OGI-myST-10min
+--> pretrained_mod: facebook/wav2vec2-base-960h
+--> pretrained_tokenizer: facebook/wav2vec2-base-960h
+
+------> PREPARING DATASET... ------------------------------------
+
+--> dataset...
+DatasetDict({
+    train: Dataset({
+        features: ['filepath', 'transcription'],
+        num_rows: 136
+    })
+    test: Dataset({
+        features: ['filepath', 'transcription'],
+        num_rows: 8849
+    })
+})
+--> Printing some random samples...
+                                            filepath                                      transcription
+0  /srv/scratch/chacmod/OGI/speech/scripted/06/2/...                                      organizations
+1  /srv/scratch/chacmod/OGI/speech/scripted/08/3/...                                               join
+2  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...                                         the leaves
+3  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...  the propellers were um are um the things that ...
+4  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...                                           i'm good
+SUCCESS: Prepared dataset.
+
+------> CREATING VOCABULARY... ---------------------------------------
+
+--> Creating map(...) function for vocab...
+--> Vocab len: 28 
+ {'C': 0, 'I': 1, 'X': 2, 'B': 3, 'U': 4, 'S': 5, 'O': 6, 'Y': 7, 'V': 8, 'H': 9, 'N': 10, 'P': 11, 'D': 12, 'L': 13, 'R': 14, 'M': 15, 'Q': 16, 'A': 17, ' ': 18, 'T': 19, 'W': 20, 'K': 21, 'G': 22, 'Z': 23, 'F': 24, "'": 25, 'E': 26, 'J': 27}
+--> Vocab len: 30 
+ {'C': 0, 'I': 1, 'X': 2, 'B': 3, 'U': 4, 'S': 5, 'O': 6, 'Y': 7, 'V': 8, 'H': 9, 'N': 10, 'P': 11, 'D': 12, 'L': 13, 'R': 14, 'M': 15, 'Q': 16, 'A': 17, 'T': 19, 'W': 20, 'K': 21, 'G': 22, 'Z': 23, 'F': 24, "'": 25, 'E': 26, 'J': 27, '|': 18, '[UNK]': 28, '[PAD]': 29}
+SUCCESS: Created vocabulary file at /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/vocab_20210728-OGI-myST-10min.json
+
+------> CREATING WAV2VEC2 FEATURE EXTRACTOR... -----------------------
+
+SUCCESS: Created feature extractor.
+
+------> PRE-PROCESSING DATA... ----------------------------------------- 
+
+
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/OGI-myST-10min/csv/default-c3d385a7cacb0a95/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-3f51d01c11b4ecbf.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/OGI-myST-10min/csv/default-c3d385a7cacb0a95/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-568ab8ef786a83de.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/OGI-myST-10min/csv/default-c3d385a7cacb0a95/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-4bc5b3aaebb41b79.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/OGI-myST-10min/csv/default-c3d385a7cacb0a95/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-b6dfd7192420085e.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/OGI-myST-10min/csv/default-c3d385a7cacb0a95/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-0c06068f82f4c6b7.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/OGI-myST-10min/csv/default-c3d385a7cacb0a95/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-1023070c65ff8b13.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/OGI-myST-10min/csv/default-c3d385a7cacb0a95/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-47d4b2ed82938208.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/OGI-myST-10min/csv/default-c3d385a7cacb0a95/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-11ebbdd3e07586d8.arrow
+--> Verifying data with a random sample...
+Target text: IS MASS WEIGHT
+Input array shape: (20304,)
+Sampling rate: 16000
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/OGI-myST-10min/csv/default-c3d385a7cacb0a95/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-d87bf052e52d34bb.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/OGI-myST-10min/csv/default-c3d385a7cacb0a95/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-02e10de72922dc26.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/OGI-myST-10min/csv/default-c3d385a7cacb0a95/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-473b8a7251db2663.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/OGI-myST-10min/csv/default-c3d385a7cacb0a95/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-08c309cca6818b8e.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/OGI-myST-10min/csv/default-c3d385a7cacb0a95/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-0aaa70171bf76963.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/OGI-myST-10min/csv/default-c3d385a7cacb0a95/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-cf40e2095b52de08.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/OGI-myST-10min/csv/default-c3d385a7cacb0a95/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-eeb1cf3dca43a1e4.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/OGI-myST-10min/csv/default-c3d385a7cacb0a95/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-023b12b5c9b631f5.arrow
+Some weights of Wav2Vec2ForCTC were not initialized from the model checkpoint at facebook/wav2vec2-base-960h and are newly initialized: ['wav2vec2.masked_spec_embed']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+max_steps is given, it will override any value given in num_train_epochs
+Using amp fp16 backend
+***** Running training *****
+  Num examples = 136
+  Num Epochs = 2400
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 32
+  Gradient Accumulation steps = 1
+  Total optimization steps = 12000
+  0%|          | 0/12000 [00:00<?, ?it/s]/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/torch/nn/parallel/_functions.py:65: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+  0%|          | 1/12000 [00:13<46:26:47, 13.94s/it]  0%|          | 2/12000 [00:16<35:15:00, 10.58s/it]  0%|          | 3/12000 [00:19<27:14:12,  8.17s/it]SUCCESS: Data ready for training and evaluation.
+
+------> PREPARING FOR TRAINING & EVALUATION... ----------------------- 
+
+--> Defining data collator...
+SUCCESS: Data collator defined.
+--> Defining evaluation metric...
+SUCCESS: Defined WER evaluation metric.
+--> Loading pre-trained checkpoint...
+SUCCESS: Pre-trained checkpoint loaded.
+
+------> STARTING TRAINING... ----------------------------------------- 
+
+Traceback (most recent call last):
+  File "run_finetune_kids_new.py", line 626, in <module>
+    trainer.train()
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/transformers/trainer.py", line 1269, in train
+    tr_loss += self.training_step(model, inputs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/transformers/trainer.py", line 1760, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/transformers/trainer.py", line 1794, in compute_loss
+    outputs = model(**inputs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/torch/nn/parallel/data_parallel.py", line 167, in forward
+    outputs = self.parallel_apply(replicas, inputs, kwargs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/torch/nn/parallel/data_parallel.py", line 177, in parallel_apply
+    return parallel_apply(replicas, inputs, kwargs, self.device_ids[:len(replicas)])
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/torch/nn/parallel/parallel_apply.py", line 86, in parallel_apply
+    output.reraise()
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/torch/_utils.py", line 429, in reraise
+    raise self.exc_type(msg)
+RuntimeError: Caught RuntimeError in replica 0 on device 0.
+Original Traceback (most recent call last):
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/torch/nn/parallel/parallel_apply.py", line 61, in _worker
+    output = module(*input, **kwargs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/transformers/models/wav2vec2/modeling_wav2vec2.py", line 1472, in forward
+    return_dict=return_dict,
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/transformers/models/wav2vec2/modeling_wav2vec2.py", line 1074, in forward
+    return_dict=return_dict,
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/transformers/models/wav2vec2/modeling_wav2vec2.py", line 609, in forward
+    position_embeddings = self.pos_conv_embed(hidden_states)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/transformers/models/wav2vec2/modeling_wav2vec2.py", line 285, in forward
+    hidden_states = self.conv(hidden_states)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/torch/nn/modules/conv.py", line 263, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/torch/nn/modules/conv.py", line 260, in _conv_forward
+    self.padding, self.dilation, self.groups)
+RuntimeError: CUDA error: an illegal memory access was encountered
+
+  0%|          | 3/12000 [00:20<22:29:24,  6.75s/it]
