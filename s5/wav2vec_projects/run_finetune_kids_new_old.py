@@ -158,11 +158,6 @@ if eval_pretrained:
 baseline_model = "facebook/wav2vec2-base-960h"
 print("baseline_model:", baseline_model)
 
-# Evalulate the baseline model or not (True/False)
-#   True: evaluate baseline model on test set
-#   False: do not evaluate baseline model on test set
-eval_baseline = False
-
 print("\n------> MODEL ARGUMENTS... -------------------------------------------\n")
 # For setting model = Wav2Vec2ForCTC.from_pretrained()
 
@@ -214,26 +209,18 @@ set_lr_scheduler_type = "linear"            # Default = "linear"
 print("lr_scheduler_type:", set_lr_scheduler_type )
 set_warmup_ratio = 0.1                      # Default = 0.0
 print("warmup_ratio:", set_warmup_ratio)
-set_logging_strategy = "steps"              # Default = "steps"
-print("logging_strategy:", set_logging_strategy)
 set_logging_steps = 25                      # Default = 500
 print("logging_steps:", set_logging_steps)
 set_save_strategy = "steps"                 # Default = "steps"
 print("save_strategy:", set_save_strategy)
 set_save_steps = 25                         # Default = 500
 print("save_steps:", set_save_steps)
-set_save_total_limit = 50                   # Optional                 
+set_save_total_limit = 2                    
 print("save_total_limit:", set_save_total_limit)
 set_fp16 = True                             # Default = False
 print("fp16:", set_fp16)
-set_eval_steps = 25                         # Optional
+set_eval_steps = 25
 print("eval_steps:", set_eval_steps)
-set_load_best_model_at_end = True           # Default = False
-print("load_best_model_at_end:", set_load_best_model_at_end)
-set_metric_for_best_model = "wer"           # Optional
-print("metric_for_best_model:", set_metric_for_best_model)
-set_greater_is_better = False               # Optional
-print("greater_is_better:", set_greater_is_better)
 set_group_by_length = True                  # Default = False
 print("group_by_length:", set_group_by_length)
 
@@ -602,16 +589,12 @@ training_args = TrainingArguments(
   max_steps=set_max_steps,
   lr_scheduler_type=set_lr_scheduler_type,
   warmup_ratio=set_warmup_ratio,
-  logging_strategy=set_logging_strategy,
   logging_steps=set_logging_steps,
   save_strategy=set_save_strategy,
   save_steps=set_save_steps,
   save_total_limit=set_save_total_limit,
   fp16=set_fp16,
   eval_steps=set_eval_steps,
-  load_best_model_at_end=set_load_best_model_at_end,
-  metric_for_best_model=set_metric_for_best_model,
-  greater_is_better=set_greater_is_better,
   group_by_length=set_group_by_length
 )
 # All instances can be passed to Trainer and 
@@ -684,8 +667,7 @@ def map_to_result(batch):
 results = data["test"].map(map_to_result)
 # Getting the WER
 print("--> Getting fine-tuned test results...")
-print("Fine-tuned Test WER: {:.3f}".format(wer_metric.compute(predictions=results["pred_str"], 
-      references=results["target_text"])))
+print("Fine-tuned Test WER: {:.3f}".format(wer_metric.compute(predictions=results["pred_str"], references=results["target_text"])))
 # Showing prediction errors
 print("--> Showing some fine-tuned prediction errors...")
 show_random_elements(results.remove_columns(["speech", "sampling_rate"]))
@@ -703,43 +685,41 @@ pred_ids = torch.argmax(logits, dim=-1)
 # convert ids to tokens
 print(" ".join(processor.tokenizer.convert_ids_to_tokens(pred_ids[0].tolist())))
 
-# Evaluate baseline model on test set if eval_baseline = True
-if eval_baseline:
-    print("\n------> EVALUATING BASELINE MODEL... ------------------------------------------ \n")
-    torch.cuda.empty_cache()
-    processor = Wav2Vec2Processor.from_pretrained(baseline_model)
-    model = Wav2Vec2ForCTC.from_pretrained(baseline_model)
-    tokenizer = Wav2Vec2CTCTokenizer.from_pretrained(baseline_model)
+# Evaluate baseline model on test set.
+print("\n------> EVALUATING BASELINE MODEL... ------------------------------------------ \n")
+torch.cuda.empty_cache()
+processor = Wav2Vec2Processor.from_pretrained(baseline_model)
+model = Wav2Vec2ForCTC.from_pretrained(baseline_model)
+tokenizer = Wav2Vec2CTCTokenizer.from_pretrained(baseline_model)
 
-    # Now, we will make use of the map(...) function to predict 
-    # the transcription of every test sample and to save the prediction 
-    # in the dataset itself. We will call the resulting dictionary "results".
-    # Note: we evaluate the test data set with batch_size=1 on purpose due 
-    # to this issue (https://github.com/pytorch/fairseq/issues/3227). Since 
-    # padded inputs don't yield the exact same output as non-padded inputs, 
-    # a better WER can be achieved by not padding the input at all.
+# Now, we will make use of the map(...) function to predict 
+# the transcription of every test sample and to save the prediction 
+# in the dataset itself. We will call the resulting dictionary "results".
+# Note: we evaluate the test data set with batch_size=1 on purpose due 
+# to this issue (https://github.com/pytorch/fairseq/issues/3227). Since 
+# padded inputs don't yield the exact same output as non-padded inputs, 
+# a better WER can be achieved by not padding the input at all.
 
-    results = data["test"].map(map_to_result)
-    # Getting the WER
-    print("--> Getting baseline test results...")
-    print("Baseline Test WER: {:.3f}".format(wer_metric.compute(predictions=results["pred_str"], 
-          references=results["target_text"])))
-    # Showing prediction errors
-    print("--> Showing some baseline prediction errors...")
-    show_random_elements(results.remove_columns(["speech", "sampling_rate"]))
-    # Deeper look into model: running the first test sample through the model, 
-    # take the predicted ids and convert them to their corresponding tokens.
-    print("--> Taking a deeper look...")
-    model.to("cuda")
-    input_values = processor(data["test"][0]["speech"], sampling_rate=data["test"][0]["sampling_rate"], return_tensors="pt").input_values.to("cuda")
+results = data["test"].map(map_to_result)
+# Getting the WER
+print("--> Getting baseline test results...")
+print("Baseline Test WER: {:.3f}".format(wer_metric.compute(predictions=results["pred_str"], references=results["target_text"])))
+# Showing prediction errors
+print("--> Showing some baseline prediction errors...")
+show_random_elements(results.remove_columns(["speech", "sampling_rate"]))
+# Deeper look into model: running the first test sample through the model, 
+# take the predicted ids and convert them to their corresponding tokens.
+print("--> Taking a deeper look...")
+model.to("cuda")
+input_values = processor(data["test"][0]["speech"], sampling_rate=data["test"][0]["sampling_rate"], return_tensors="pt").input_values.to("cuda")
 
-    with torch.no_grad():
-        logits = model(input_values).logits
+with torch.no_grad():
+  logits = model(input_values).logits
 
-    pred_ids = torch.argmax(logits, dim=-1)
+pred_ids = torch.argmax(logits, dim=-1)
 
-    # convert ids to tokens
-    print(" ".join(processor.tokenizer.convert_ids_to_tokens(pred_ids[0].tolist())))
+# convert ids to tokens
+print(" ".join(processor.tokenizer.convert_ids_to_tokens(pred_ids[0].tolist())))
 
 print("\n------> SUCCESSFULLY FINISHED ---------------------------------------- \n")
 now = datetime.now()

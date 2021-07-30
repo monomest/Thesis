@@ -88,13 +88,13 @@ print("training:", training)
 # Experiment ID
 # For 1) naming vocab.json file and
 #     2) naming model output directory
-experiment_id = "20210729-OGI-myST-10min"
+experiment_id = "20210729-OGI-myST-1h"
 print("experiment_id:", experiment_id)
 
 # DatasetDict Id
 # For 1) naming cache directory and 
 #     2) saving the DatasetDict object
-datasetdict_id = "OGI-myST-10min"
+datasetdict_id = "OGI-myST-1h"
 print("datasetdict_id:", datasetdict_id)
 
 # Base filepath
@@ -110,7 +110,7 @@ base_cache_fp = "/srv/scratch/chacmod/.cache/huggingface/datasets/"
 # Dataset name and filename of the csv file containing the training data
 # For generating filepath to file location
 train_name = "myST-OGI"
-train_filename = "myST_OGI_train_15_10min_noSpkrCol"
+train_filename = "myST_OGI_train_15_1h_noSpkrCol"
 print("train_name:", train_name)
 print("train_filename:", train_filename)
 
@@ -206,9 +206,9 @@ set_adam_beta2 = 0.98                       # Default = 0.999
 print("adam_beta2:", set_adam_beta2)
 set_adam_epsilon = 0.00000001               # Default = 0.00000001
 print("adam_epsilon:", set_adam_epsilon)
-set_num_train_epochs = 100                  # Default = 3.0
+set_num_train_epochs = 500                  # Default = 3.0
 print("num_train_epochs:", set_num_train_epochs)
-set_max_steps = -1                          # Default = -1, overrides epochs
+set_max_steps = 13000                       # Default = -1, overrides epochs
 print("max_steps:", set_max_steps)
 set_lr_scheduler_type = "linear"            # Default = "linear"
 print("lr_scheduler_type:", set_lr_scheduler_type )
@@ -216,17 +216,17 @@ set_warmup_ratio = 0.1                      # Default = 0.0
 print("warmup_ratio:", set_warmup_ratio)
 set_logging_strategy = "steps"              # Default = "steps"
 print("logging_strategy:", set_logging_strategy)
-set_logging_steps = 25                      # Default = 500
+set_logging_steps = 100                     # Default = 500
 print("logging_steps:", set_logging_steps)
 set_save_strategy = "steps"                 # Default = "steps"
 print("save_strategy:", set_save_strategy)
-set_save_steps = 25                         # Default = 500
+set_save_steps = 100                        # Default = 500
 print("save_steps:", set_save_steps)
-set_save_total_limit = 50                   # Optional                 
+set_save_total_limit = 20                   # Optional                 
 print("save_total_limit:", set_save_total_limit)
 set_fp16 = True                             # Default = False
 print("fp16:", set_fp16)
-set_eval_steps = 25                         # Optional
+set_eval_steps = 100                        # Optional
 print("eval_steps:", set_eval_steps)
 set_load_best_model_at_end = True           # Default = False
 print("load_best_model_at_end:", set_load_best_model_at_end)
