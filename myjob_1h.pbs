@@ -14,10 +14,10 @@ cd /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis
 # Activate virtual environment
 source thesis_env/bin/activate
 
-echo ""$(date)"" 2>&1 | tee -a /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/output/output96.txt
+echo ""$(date)"" 2>&1 | tee -a /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/output/output97.txt
 
 cd /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/
 
 # This runs the test script
-python run_finetune_kids_new_1h.py 2>&1 | tee -a /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/output/output96.txt
+python run_finetune_kids_1h.py 2>&1 | tee -a /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/output/output97.txt
 

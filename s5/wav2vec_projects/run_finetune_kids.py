@@ -2,8 +2,6 @@
 # run_finetune_kids.py
 # Purpose: Uses wav2vec2 to fine tune for kids speech
 #          with children's speech corpus.
-#          Originally used for MyST dataset and so the
-#          variables are named as myST.
 # Based on source:
 # https://colab.research.google.com/github/patrickvonplaten/notebooks/blob/master/Fine_tuning_Wav2Vec2_for_English_ASR.ipynb
 # Author: Renee Lu, 2021
@@ -84,29 +82,54 @@ print("\n------> EXPERIMENT ARGUMENTS ----------------------------------------- 
 
 # Perform Training (True/False)
 # If false, this will go straight to model evaluation 
-training = False
+training = True
 print("training:", training)
 
 # Experiment ID
 # For 1) naming vocab.json file and
 #     2) naming model output directory
-experiment_id = "20210718-1"
+experiment_id = "20210729-OGI-myST-10min"
 print("experiment_id:", experiment_id)
 
 # DatasetDict Id
 # For 1) naming cache directory and 
 #     2) saving the DatasetDict object
-datasetdict_id = "OGI-subset_myST-subset.csv"
+datasetdict_id = "OGI-myST-10min"
 print("datasetdict_id:", datasetdict_id)
+
+# Base filepath
+# For setting the base filepath to direct output to
+base_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/"
+print("base_fp:", base_fp)
+
+# Base cache directory filepath
+# For setting directory for cache files
+base_cache_fp = "/srv/scratch/chacmod/.cache/huggingface/datasets/"
+
+# Training dataset name and filename
+# Dataset name and filename of the csv file containing the training data
+# For generating filepath to file location
+train_name = "myST-OGI"
+train_filename = "myST_OGI_train_15_10min_noSpkrCol"
+print("train_name:", train_name)
+print("train_filename:", train_filename)
+
+# Evaluation dataset name and filename
+# Dataset name and filename of the csv file containing the evaluation data
+# For generating filepath to file location
+evaluation_name = "OGI"
+evaluation_filename = "OGI_scripted_dev_15_noSpkrCol"
+print("evaluation_name:", evaluation_name)
+print("evaluation_filename:", evaluation_filename)
 
 # Resume training from/ use checkpoint (True/False)
 # For 1) resuming from a saved checkpoint if training stopped midway through
 #  or 2) for using an existing model for evaluation 
 # If 2), then must also set eval_pretrained = True
-use_checkpoint = True
+use_checkpoint = False
 print("use_checkpoint:", use_checkpoint)
 # Set checkpoint if resuming from/using checkpoint
-checkpoint = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/wav2vec2-base-OGI-20210718-1/"
+checkpoint = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/20210727-OGI-myST-10min/checkpoint-4500"
 if use_checkpoint:
     print("checkpoint:", checkpoint)
 
@@ -123,7 +146,7 @@ if use_pretrained_tokenizer:
 # Evaluate existing model instead of newly trained mode (True/False)
 #     True: use the model in the filepath set by 'eval_model' for eval
 #     False: use the model trained from this script for eval
-eval_pretrained = True
+eval_pretrained = False
 print("eval_pretrained:", eval_pretrained)
 # Set existing model to evaluate, if evaluating on existing model
 eval_model = checkpoint
@@ -135,48 +158,95 @@ if eval_pretrained:
 baseline_model = "facebook/wav2vec2-base-960h"
 print("baseline_model:", baseline_model)
 
-print("\n------> TRAINING ARGUMENTS... ----------------------------------------")
-# For setting TrainingArguments
-# Default values in comments
+# Evalulate the baseline model or not (True/False)
+#   True: evaluate baseline model on test set
+#   False: do not evaluate baseline model on test set
+eval_baseline = False
 
-#output_dir=model_fp
-#group_by_length=True
-#per_device_train_batch_size=32
-set_batch_size=20
-print("per_device_train_batch_size:", set_batch_size)
-#evaluation_strategy="steps"
-#num_train_epochs=30
-set_epochs=10
-print("num_train_epochs:", set_epochs)
-#fp16=True
-#save_steps=500
-set_save_steps=50
-print("save_steps:", set_save_steps)
-#eval_steps=500
-set_eval_steps=50
-print("eval_steps:", set_eval_steps)
-#logging_steps=500
-set_logging_steps=50
-print("logging_steps:", set_logging_steps)
-#learning_rate=1e-4
-#weight_decay=0.005
-set_weight_decay=0.01
+print("\n------> MODEL ARGUMENTS... -------------------------------------------\n")
+# For setting model = Wav2Vec2ForCTC.from_pretrained()
+
+set_hidden_dropout = 0.1                    # Default = 0.1
+print("hidden_dropout:", set_hidden_dropout)
+set_activation_dropout = 0.1                # Default = 0.1
+print("activation_dropout:", set_activation_dropout)
+set_attention_dropout = 0.1                 # Default = 0.1
+print("attention_dropoutput:", set_attention_dropout)
+set_feat_proj_dropout = 0.0                 # Default = 0.1
+print("feat_proj_dropout:", set_feat_proj_dropout)
+set_layerdrop = 0.1                         # Default = 0.1
+print("layerdrop:", set_layerdrop)
+set_mask_time_prob = 0.075                  # Default = 0.05
+print("mask_time_prob:", set_mask_time_prob)
+set_mask_time_length = 10                   # Default = 10
+print("mask_time_length:", set_mask_time_length)
+set_ctc_loss_reduction = "mean"             # Default = "sum"
+print("ctc_loss_reduction:", set_ctc_loss_reduction)
+set_ctc_zero_infinity = False               # Default = False
+print("ctc_zero_infinity:", set_ctc_zero_infinity)
+set_gradient_checkpointing = True           # Default = False
+print("gradient_checkpointing:", set_gradient_checkpointing)
+
+print("\n------> TRAINING ARGUMENTS... ----------------------------------------\n")
+# For setting training_args = TrainingArguments()
+
+set_evaluation_strategy = "steps"           # Default = "no"
+print("evaluation strategy:", set_evaluation_strategy)
+set_per_device_train_batch_size = 8         # Default = 8
+print("per_device_train_batch_size:", set_per_device_train_batch_size)
+set_gradient_accumulation_steps = 1         # Default = 1
+print("gradient_accumulation_steps:", set_gradient_accumulation_steps)
+set_learning_rate = 0.00005                 # Default = 0.00005
+print("learning_rate:", set_learning_rate)
+set_weight_decay = 0.01                     # Default = 0
 print("weight_decay:", set_weight_decay)
-#warmup_steps=1000
-set_warmup_steps=50
-print("warmup_steps:", set_warmup_steps)
-#save_total_limit=2
+set_adam_beta1 = 0.9                        # Default = 0.9
+print("adam_beta1:", set_adam_beta1)
+set_adam_beta2 = 0.98                       # Default = 0.999
+print("adam_beta2:", set_adam_beta2)
+set_adam_epsilon = 0.00000001               # Default = 0.00000001
+print("adam_epsilon:", set_adam_epsilon)
+set_num_train_epochs = 100                  # Default = 3.0
+print("num_train_epochs:", set_num_train_epochs)
+set_max_steps = -1                          # Default = -1, overrides epochs
+print("max_steps:", set_max_steps)
+set_lr_scheduler_type = "linear"            # Default = "linear"
+print("lr_scheduler_type:", set_lr_scheduler_type )
+set_warmup_ratio = 0.1                      # Default = 0.0
+print("warmup_ratio:", set_warmup_ratio)
+set_logging_strategy = "steps"              # Default = "steps"
+print("logging_strategy:", set_logging_strategy)
+set_logging_steps = 25                      # Default = 500
+print("logging_steps:", set_logging_steps)
+set_save_strategy = "steps"                 # Default = "steps"
+print("save_strategy:", set_save_strategy)
+set_save_steps = 25                         # Default = 500
+print("save_steps:", set_save_steps)
+set_save_total_limit = 50                   # Optional                 
+print("save_total_limit:", set_save_total_limit)
+set_fp16 = True                             # Default = False
+print("fp16:", set_fp16)
+set_eval_steps = 25                         # Optional
+print("eval_steps:", set_eval_steps)
+set_load_best_model_at_end = True           # Default = False
+print("load_best_model_at_end:", set_load_best_model_at_end)
+set_metric_for_best_model = "wer"           # Optional
+print("metric_for_best_model:", set_metric_for_best_model)
+set_greater_is_better = False               # Optional
+print("greater_is_better:", set_greater_is_better)
+set_group_by_length = True                  # Default = False
+print("group_by_length:", set_group_by_length)
 
 # ------------------------------------------
-#          Setting file paths
+#        Generating file paths
 # ------------------------------------------
-print("\n------> SETTING FILEPATHS... ----------------------------------------- \n")
+print("\n------> GENERATING FILEPATHS... --------------------------------------\n")
 # Path to dataframe csv for train dataset
-myST_train_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_local/OGI-subset_myST-subset.csv"
-print("--> myST_train_fp:", myST_train_fp)
+data_train_fp = base_fp + train_name + "_local/" + train_filename + ".csv"
+print("--> data_train_fp:", data_train_fp)
 # Path to dataframe csv for test dataset
-myST_test_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted_test_15_subset_10.csv"
-print("--> myST_test_fp:", myST_test_fp)
+data_test_fp = base_fp + evaluation_name + "_local/" + evaluation_filename + ".csv"
+print("--> data_test_fp:", data_test_fp)
 
 # Dataframe file 
 # |-----------|---------------|----------|---------|
@@ -190,14 +260,13 @@ print("--> myST_test_fp:", myST_test_fp)
 #       when calling load_dataset()
 
 # Path to datasets cache
-#data_cache_fp = "/srv/scratch/z5160268/.cache/huggingface/datasets"
-data_cache_fp = "/srv/scratch/chacmod/.cache/huggingface/datasets/" + datasetdict_id
+data_cache_fp = base_cache_fp + datasetdict_id
 print("--> data_cache_fp:", data_cache_fp)
 # Path to save vocab.json
-vocab_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/vocab_" + experiment_id + ".json"
+vocab_fp = base_fp + train_name + "_local/vocab_" + experiment_id + ".json"
 print("--> vocab_fp:", vocab_fp)
 # Path to save model output
-model_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/wav2vec2-base-OGI-" + experiment_id
+model_fp = base_fp + train_name + "_local/" + experiment_id
 print("--> model_fp:", model_fp)
 # Pre-trained checkpoint model
 # For 1) Fine-tuning or
@@ -209,9 +278,6 @@ pretrained_mod = "facebook/wav2vec2-base-960h"
 if use_checkpoint:
     pretrained_mod = checkpoint
 print("--> pretrained_mod:", pretrained_mod)
-# Path to save prepared DatasetDict object
-myST_datasetdict_fp = "/srv/scratch/chacmod/renee_thesis/datasetdict-" + datasetdict_id
-print("--> myST_datasetdict_fp:", myST_datasetdict_fp)
 # Path to pre-trained tokenizer
 # If use_pretrained_tokenizer = True
 if use_pretrained_tokenizer:
@@ -222,24 +288,24 @@ if use_pretrained_tokenizer:
 # ------------------------------------------
 # Run the following scripts to prepare data
 # 1) Prepare data from kaldi file: 
-# /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_exp/myST_prep.py
+# /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_exp/data_prep.py
 # 3) [Optional] Limit the files to certain duration:
-# /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/myST_getShortWavs.py
+# /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/data_getShortWavs.py
 # 2) Split data into train and test:
-# /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/myST_split.py
+# /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/data_split.py
 
 print("\n------> PREPARING DATASET... ------------------------------------\n")
 # Read the existing csv saved dataframes and
 # load as a DatasetDict 
-myST = load_dataset('csv', 
-                    data_files={'train': myST_train_fp,
-                                'test': myST_test_fp},
+data = load_dataset('csv', 
+                    data_files={'train': data_train_fp,
+                                'test': data_test_fp},
                     cache_dir=data_cache_fp)
 # Remove the "duration" and "spkr_id" column
-#myST = myST.remove_columns(["duration", "spkr_id"])
-myST = myST.remove_columns(["duration"])
-print("--> MyST dataset...")
-print(myST)
+#data = data.remove_columns(["duration", "spkr_id"])
+data = data.remove_columns(["duration"])
+print("--> dataset...")
+print(data)
 # Display some random samples of the dataset
 print("--> Printing some random samples...")
 def show_random_elements(dataset, num_examples=10):
@@ -252,7 +318,7 @@ def show_random_elements(dataset, num_examples=10):
         picks.append(pick)
     df = pd.DataFrame(dataset[picks])
     print(df)
-show_random_elements(myST["train"], num_examples=5)
+show_random_elements(data["train"], num_examples=5)
 print("SUCCESS: Prepared dataset.")
 # ------------------------------------------
 #       Creating letter vocabulary
@@ -273,14 +339,14 @@ def remove_special_characters(batch):
     batch["transcription"] = re.sub(chars_to_ignore_regex, '', batch["transcription"]).upper()
     return batch
 
-myST = myST.map(remove_special_characters)
+data = data.map(remove_special_characters)
 
 def extract_all_chars(batch):
     all_text = " ".join(batch["transcription"])
     vocab = list(set(all_text))
     return {"vocab": [vocab], "all_text": [all_text]}
 print("--> Creating map(...) function for vocab...")
-vocabs = myST.map(extract_all_chars, batched=True, batch_size=-1, keep_in_memory=True, remove_columns=myST.column_names["train"])
+vocabs = data.map(extract_all_chars, batched=True, batch_size=-1, keep_in_memory=True, remove_columns=data.column_names["train"])
 # Create union of all distinct letters in train and test set
 # and convert resulting list into enumerated dictionary
 # Vocab includes a-z, ' , space, UNK, PAD
@@ -342,13 +408,13 @@ def speech_file_to_array_fn(batch):
     batch["sampling_rate"] = sampling_rate
     batch["target_text"] = batch["transcription"]
     return batch
-myST = myST.map(speech_file_to_array_fn, remove_columns=myST.column_names["train"], num_proc=4)
+data = data.map(speech_file_to_array_fn, remove_columns=data.column_names["train"], num_proc=4)
 # Check a few rows of data to verify data properly loaded
 print("--> Verifying data with a random sample...")
-rand_int = random.randint(0, len(myST["train"])-1)
-print("Target text:", myST["train"][rand_int]["target_text"])
-print("Input array shape:", np.asarray(myST["train"][rand_int]["speech"]).shape)
-print("Sampling rate:", myST["train"][rand_int]["sampling_rate"])
+rand_int = random.randint(0, len(data["train"])-1)
+print("Target text:", data["train"][rand_int]["target_text"])
+print("Input array shape:", np.asarray(data["train"][rand_int]["speech"]).shape)
+print("Sampling rate:", data["train"][rand_int]["sampling_rate"])
 # Process dataset to the format expected by model for training
 # Using map(...)
 # 1) Check all data samples have same sampling rate (16kHz)
@@ -368,12 +434,8 @@ def prepare_dataset(batch):
     with processor.as_target_processor():
         batch["labels"] = processor(batch["target_text"]).input_ids
     return batch
-myST_prepared = myST.map(prepare_dataset, remove_columns=myST.column_names["train"], batch_size=8, num_proc=4, batched=True)
+data_prepared = data.map(prepare_dataset, remove_columns=data.column_names["train"], batch_size=8, num_proc=4, batched=True)
 
-# Save dataset
-myST_prepared.save_to_disk(myST_datasetdict_fp)
-print("--> Prepared dataset saved at:", myST_datasetdict_fp)
-print("To reload this set, run datasetdictName.load_from_dict(myST_datasetdict_fp)")
 print("SUCCESS: Data ready for training and evaluation.")
 
 # ------------------------------------------
@@ -492,9 +554,18 @@ print("SUCCESS: Defined WER evaluation metric.")
 print("--> Loading pre-trained checkpoint...")
 model = Wav2Vec2ForCTC.from_pretrained(
     pretrained_mod,
-    gradient_checkpointing=True,
-    ctc_loss_reduction="mean",
-    pad_token_id=processor.tokenizer.pad_token_id,
+    vocab_size=len(processor.tokenizer),
+    hidden_dropout=set_hidden_dropout,
+    activation_dropout=set_activation_dropout,
+    attention_dropout=set_attention_dropout,
+    feat_proj_dropout=set_feat_proj_dropout,
+    layerdrop=set_layerdrop,
+    mask_time_prob=set_mask_time_prob,
+    mask_time_length=set_mask_time_length,
+    ctc_loss_reduction=set_ctc_loss_reduction,
+    ctc_zero_infinity=set_ctc_zero_infinity,
+    gradient_checkpointing=set_gradient_checkpointing,
+    pad_token_id=processor.tokenizer.pad_token_id
 )
 
 # The first component of Wav2Vec2 consists of a stack of CNN layers
@@ -519,18 +590,29 @@ print("SUCCESS: Pre-trained checkpoint loaded.")
 
 training_args = TrainingArguments(
   output_dir=model_fp,
-  group_by_length=True,
-  per_device_train_batch_size=set_batch_size,
-  evaluation_strategy="steps",
-  num_train_epochs=set_epochs,
-  fp16=True,
-  save_steps=set_save_steps,
-  eval_steps=set_eval_steps,
-  logging_steps=set_logging_steps,
-  learning_rate=1e-4,
+  evaluation_strategy=set_evaluation_strategy,
+  per_device_train_batch_size=set_per_device_train_batch_size,
+  gradient_accumulation_steps=set_gradient_accumulation_steps,
+  learning_rate=set_learning_rate,
   weight_decay=set_weight_decay,
-  warmup_steps=set_warmup_steps,
-  save_total_limit=2,
+  adam_beta1=set_adam_beta1,
+  adam_beta2=set_adam_beta2,
+  adam_epsilon=set_adam_epsilon,
+  num_train_epochs=set_num_train_epochs,
+  max_steps=set_max_steps,
+  lr_scheduler_type=set_lr_scheduler_type,
+  warmup_ratio=set_warmup_ratio,
+  logging_strategy=set_logging_strategy,
+  logging_steps=set_logging_steps,
+  save_strategy=set_save_strategy,
+  save_steps=set_save_steps,
+  save_total_limit=set_save_total_limit,
+  fp16=set_fp16,
+  eval_steps=set_eval_steps,
+  load_best_model_at_end=set_load_best_model_at_end,
+  metric_for_best_model=set_metric_for_best_model,
+  greater_is_better=set_greater_is_better,
+  group_by_length=set_group_by_length
 )
 # All instances can be passed to Trainer and 
 # we are ready to start training!
@@ -539,8 +621,8 @@ trainer = Trainer(
     data_collator=data_collator,
     args=training_args,
     compute_metrics=compute_metrics,
-    train_dataset=myST_prepared["train"],
-    eval_dataset=myST_prepared["test"],
+    train_dataset=data_prepared["train"],
+    eval_dataset=data_prepared["test"],
     tokenizer=processor.feature_extractor,
 )
 
@@ -599,10 +681,11 @@ def map_to_result(batch):
   
   return batch
 
-results = myST["test"].map(map_to_result)
+results = data["test"].map(map_to_result)
 # Getting the WER
 print("--> Getting fine-tuned test results...")
-print("Fine-tuned Test WER: {:.3f}".format(wer_metric.compute(predictions=results["pred_str"], references=results["target_text"])))
+print("Fine-tuned Test WER: {:.3f}".format(wer_metric.compute(predictions=results["pred_str"], 
+      references=results["target_text"])))
 # Showing prediction errors
 print("--> Showing some fine-tuned prediction errors...")
 show_random_elements(results.remove_columns(["speech", "sampling_rate"]))
@@ -610,7 +693,7 @@ show_random_elements(results.remove_columns(["speech", "sampling_rate"]))
 # take the predicted ids and convert them to their corresponding tokens.
 print("--> Taking a deeper look...")
 model.to("cuda")
-input_values = processor(myST["test"][0]["speech"], sampling_rate=myST["test"][0]["sampling_rate"], return_tensors="pt").input_values.to("cuda")
+input_values = processor(data["test"][0]["speech"], sampling_rate=data["test"][0]["sampling_rate"], return_tensors="pt").input_values.to("cuda")
 
 with torch.no_grad():
   logits = model(input_values).logits
@@ -620,41 +703,43 @@ pred_ids = torch.argmax(logits, dim=-1)
 # convert ids to tokens
 print(" ".join(processor.tokenizer.convert_ids_to_tokens(pred_ids[0].tolist())))
 
-# Evaluate baseline model on test set.
-print("\n------> EVALUATING BASELINE MODEL... ------------------------------------------ \n")
-torch.cuda.empty_cache()
-processor = Wav2Vec2Processor.from_pretrained(baseline_model)
-model = Wav2Vec2ForCTC.from_pretrained(baseline_model)
-tokenizer = Wav2Vec2CTCTokenizer.from_pretrained(baseline_model)
+# Evaluate baseline model on test set if eval_baseline = True
+if eval_baseline:
+    print("\n------> EVALUATING BASELINE MODEL... ------------------------------------------ \n")
+    torch.cuda.empty_cache()
+    processor = Wav2Vec2Processor.from_pretrained(baseline_model)
+    model = Wav2Vec2ForCTC.from_pretrained(baseline_model)
+    tokenizer = Wav2Vec2CTCTokenizer.from_pretrained(baseline_model)
 
-# Now, we will make use of the map(...) function to predict 
-# the transcription of every test sample and to save the prediction 
-# in the dataset itself. We will call the resulting dictionary "results".
-# Note: we evaluate the test data set with batch_size=1 on purpose due 
-# to this issue (https://github.com/pytorch/fairseq/issues/3227). Since 
-# padded inputs don't yield the exact same output as non-padded inputs, 
-# a better WER can be achieved by not padding the input at all.
+    # Now, we will make use of the map(...) function to predict 
+    # the transcription of every test sample and to save the prediction 
+    # in the dataset itself. We will call the resulting dictionary "results".
+    # Note: we evaluate the test data set with batch_size=1 on purpose due 
+    # to this issue (https://github.com/pytorch/fairseq/issues/3227). Since 
+    # padded inputs don't yield the exact same output as non-padded inputs, 
+    # a better WER can be achieved by not padding the input at all.
 
-results = myST["test"].map(map_to_result)
-# Getting the WER
-print("--> Getting baseline test results...")
-print("Baseline Test WER: {:.3f}".format(wer_metric.compute(predictions=results["pred_str"], references=results["target_text"])))
-# Showing prediction errors
-print("--> Showing some baseline prediction errors...")
-show_random_elements(results.remove_columns(["speech", "sampling_rate"]))
-# Deeper look into model: running the first test sample through the model, 
-# take the predicted ids and convert them to their corresponding tokens.
-print("--> Taking a deeper look...")
-model.to("cuda")
-input_values = processor(myST["test"][0]["speech"], sampling_rate=myST["test"][0]["sampling_rate"], return_tensors="pt").input_values.to("cuda")
+    results = data["test"].map(map_to_result)
+    # Getting the WER
+    print("--> Getting baseline test results...")
+    print("Baseline Test WER: {:.3f}".format(wer_metric.compute(predictions=results["pred_str"], 
+          references=results["target_text"])))
+    # Showing prediction errors
+    print("--> Showing some baseline prediction errors...")
+    show_random_elements(results.remove_columns(["speech", "sampling_rate"]))
+    # Deeper look into model: running the first test sample through the model, 
+    # take the predicted ids and convert them to their corresponding tokens.
+    print("--> Taking a deeper look...")
+    model.to("cuda")
+    input_values = processor(data["test"][0]["speech"], sampling_rate=data["test"][0]["sampling_rate"], return_tensors="pt").input_values.to("cuda")
 
-with torch.no_grad():
-  logits = model(input_values).logits
+    with torch.no_grad():
+        logits = model(input_values).logits
 
-pred_ids = torch.argmax(logits, dim=-1)
+    pred_ids = torch.argmax(logits, dim=-1)
 
-# convert ids to tokens
-print(" ".join(processor.tokenizer.convert_ids_to_tokens(pred_ids[0].tolist())))
+    # convert ids to tokens
+    print(" ".join(processor.tokenizer.convert_ids_to_tokens(pred_ids[0].tolist())))
 
 print("\n------> SUCCESSFULLY FINISHED ---------------------------------------- \n")
 now = datetime.now()
