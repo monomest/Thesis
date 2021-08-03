@@ -82,19 +82,19 @@ print("\n------> EXPERIMENT ARGUMENTS ----------------------------------------- 
 
 # Perform Training (True/False)
 # If false, this will go straight to model evaluation 
-training = True
+training = False
 print("training:", training)
 
 # Experiment ID
 # For 1) naming vocab.json file and
 #     2) naming model output directory
-experiment_id = "20210729-OGI-myST-10min"
+experiment_id = "20210731-OGI-myST-1h-eval"
 print("experiment_id:", experiment_id)
 
 # DatasetDict Id
 # For 1) naming cache directory and 
 #     2) saving the DatasetDict object
-datasetdict_id = "OGI-myST-10min"
+datasetdict_id = "OGI-myST-10min-eval"
 print("datasetdict_id:", datasetdict_id)
 
 # Base filepath
@@ -117,8 +117,8 @@ print("train_filename:", train_filename)
 # Evaluation dataset name and filename
 # Dataset name and filename of the csv file containing the evaluation data
 # For generating filepath to file location
-evaluation_name = "OGI"
-evaluation_filename = "OGI_scripted_dev_15_noSpkrCol"
+evaluation_name = "myST"
+evaluation_filename = "myST_dev_15_noSpkrCol"
 print("evaluation_name:", evaluation_name)
 print("evaluation_filename:", evaluation_filename)
 
@@ -126,10 +126,10 @@ print("evaluation_filename:", evaluation_filename)
 # For 1) resuming from a saved checkpoint if training stopped midway through
 #  or 2) for using an existing model for evaluation 
 # If 2), then must also set eval_pretrained = True
-use_checkpoint = False
+use_checkpoint = True
 print("use_checkpoint:", use_checkpoint)
 # Set checkpoint if resuming from/using checkpoint
-checkpoint = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/20210727-OGI-myST-10min/checkpoint-4500"
+checkpoint = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/20210730-OGI-myST-1h"
 if use_checkpoint:
     print("checkpoint:", checkpoint)
 
@@ -146,7 +146,7 @@ if use_pretrained_tokenizer:
 # Evaluate existing model instead of newly trained mode (True/False)
 #     True: use the model in the filepath set by 'eval_model' for eval
 #     False: use the model trained from this script for eval
-eval_pretrained = False
+eval_pretrained = True
 print("eval_pretrained:", eval_pretrained)
 # Set existing model to evaluate, if evaluating on existing model
 eval_model = checkpoint
@@ -161,7 +161,7 @@ print("baseline_model:", baseline_model)
 # Evalulate the baseline model or not (True/False)
 #   True: evaluate baseline model on test set
 #   False: do not evaluate baseline model on test set
-eval_baseline = False
+eval_baseline = True
 
 print("\n------> MODEL ARGUMENTS... -------------------------------------------\n")
 # For setting model = Wav2Vec2ForCTC.from_pretrained()

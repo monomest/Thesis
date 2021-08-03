@@ -88,13 +88,13 @@ print("training:", training)
 # Experiment ID
 # For 1) naming vocab.json file and
 #     2) naming model output directory
-experiment_id = "20210803-OGI-myST-10h-cont"
+experiment_id = "20210803-OGI-myST-120h-cont"
 print("experiment_id:", experiment_id)
 
 # DatasetDict Id
 # For 1) naming cache directory and 
 #     2) saving the DatasetDict object
-datasetdict_id = "OGI-myST-10h"
+datasetdict_id = "OGI-myST-120h"
 print("datasetdict_id:", datasetdict_id)
 
 # Base filepath
@@ -110,7 +110,7 @@ base_cache_fp = "/srv/scratch/chacmod/.cache/huggingface/datasets/"
 # Dataset name and filename of the csv file containing the training data
 # For generating filepath to file location
 train_name = "myST-OGI"
-train_filename = "myST_OGI_train_15_10h_noSpkrCol"
+train_filename = "myST_OGI_train_15_noSpkrCol"
 print("train_name:", train_name)
 print("train_filename:", train_filename)
 
@@ -129,7 +129,7 @@ print("evaluation_filename:", evaluation_filename)
 use_checkpoint = True
 print("use_checkpoint:", use_checkpoint)
 # Set checkpoint if resuming from/using checkpoint
-checkpoint = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/20210802-OGI-myST-10h/checkpoint-16000"
+checkpoint = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/20210802-OGI-myST-120h/checkpoint-15000"
 if use_checkpoint:
     print("checkpoint:", checkpoint)
 
@@ -174,9 +174,9 @@ set_attention_dropout = 0.1                 # Default = 0.1
 print("attention_dropoutput:", set_attention_dropout)
 set_feat_proj_dropout = 0.0                 # Default = 0.1
 print("feat_proj_dropout:", set_feat_proj_dropout)
-set_layerdrop = 0.05                        # Default = 0.1
+set_layerdrop = 0.1                         # Default = 0.1
 print("layerdrop:", set_layerdrop)
-set_mask_time_prob = 0.065                  # Default = 0.05
+set_mask_time_prob = 0.05                   # Default = 0.05
 print("mask_time_prob:", set_mask_time_prob)
 set_mask_time_length = 10                   # Default = 10
 print("mask_time_length:", set_mask_time_length)
@@ -196,7 +196,7 @@ set_per_device_train_batch_size = 8         # Default = 8
 print("per_device_train_batch_size:", set_per_device_train_batch_size)
 set_gradient_accumulation_steps = 1         # Default = 1
 print("gradient_accumulation_steps:", set_gradient_accumulation_steps)
-set_learning_rate = 0.00005                 # Default = 0.00005
+set_learning_rate = 0.00003                 # Default = 0.00005
 print("learning_rate:", set_learning_rate)
 set_weight_decay = 0.01                     # Default = 0
 print("weight_decay:", set_weight_decay)
@@ -208,7 +208,7 @@ set_adam_epsilon = 0.00000001               # Default = 0.00000001
 print("adam_epsilon:", set_adam_epsilon)
 set_num_train_epochs = 79                   # Default = 3.0
 print("num_train_epochs:", set_num_train_epochs)
-set_max_steps = 20000                       # Default = -1, overrides epochs
+set_max_steps = 50000                       # Default = -1, overrides epochs
 print("max_steps:", set_max_steps)
 set_lr_scheduler_type = "linear"            # Default = "linear"
 print("lr_scheduler_type:", set_lr_scheduler_type )
@@ -222,7 +222,7 @@ set_save_strategy = "steps"                 # Default = "steps"
 print("save_strategy:", set_save_strategy)
 set_save_steps = 1000                       # Default = 500
 print("save_steps:", set_save_steps)
-set_save_total_limit = 30                   # Optional                 
+set_save_total_limit = 50                   # Optional                 
 print("save_total_limit:", set_save_total_limit)
 set_fp16 = True                             # Default = False
 print("fp16:", set_fp16)
