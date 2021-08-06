@@ -88,7 +88,7 @@ print("training:", training)
 # Experiment ID
 # For 1) naming vocab.json file and
 #     2) naming model output directory
-experiment_id = "20210803-OGI-myST-10h-cont"
+experiment_id = "20210806-OGI-myST-10h"
 print("experiment_id:", experiment_id)
 
 # DatasetDict Id
@@ -126,7 +126,7 @@ print("evaluation_filename:", evaluation_filename)
 # For 1) resuming from a saved checkpoint if training stopped midway through
 #  or 2) for using an existing model for evaluation 
 # If 2), then must also set eval_pretrained = True
-use_checkpoint = True
+use_checkpoint = False
 print("use_checkpoint:", use_checkpoint)
 # Set checkpoint if resuming from/using checkpoint
 checkpoint = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/20210802-OGI-myST-10h/checkpoint-16000"
@@ -206,9 +206,9 @@ set_adam_beta2 = 0.98                       # Default = 0.999
 print("adam_beta2:", set_adam_beta2)
 set_adam_epsilon = 0.00000001               # Default = 0.00000001
 print("adam_epsilon:", set_adam_epsilon)
-set_num_train_epochs = 79                   # Default = 3.0
+set_num_train_epochs = 59                   # Default = 3.0
 print("num_train_epochs:", set_num_train_epochs)
-set_max_steps = 20000                       # Default = -1, overrides epochs
+set_max_steps = 15000                       # Default = -1, overrides epochs
 print("max_steps:", set_max_steps)
 set_lr_scheduler_type = "linear"            # Default = "linear"
 print("lr_scheduler_type:", set_lr_scheduler_type )
@@ -228,12 +228,12 @@ set_fp16 = True                             # Default = False
 print("fp16:", set_fp16)
 set_eval_steps = 1000                       # Optional
 print("eval_steps:", set_eval_steps)
-set_load_best_model_at_end = False          # Default = False
+set_load_best_model_at_end = True           # Default = False
 print("load_best_model_at_end:", set_load_best_model_at_end)
-#set_metric_for_best_model = "wer"           # Optional
-#print("metric_for_best_model:", set_metric_for_best_model)
-#set_greater_is_better = False               # Optional
-#print("greater_is_better:", set_greater_is_better)
+set_metric_for_best_model = "wer"           # Optional
+print("metric_for_best_model:", set_metric_for_best_model)
+set_greater_is_better = False               # Optional
+print("greater_is_better:", set_greater_is_better)
 set_group_by_length = True                  # Default = False
 print("group_by_length:", set_group_by_length)
 
