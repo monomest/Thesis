@@ -88,7 +88,7 @@ print("training:", training)
 # Experiment ID
 # For 1) naming vocab.json file and
 #     2) naming model output directory
-experiment_id = "20210804-OGI-myST-120h-cont"
+experiment_id = "20210806-OGI-myST-120h-cont"
 print("experiment_id:", experiment_id)
 
 # DatasetDict Id
@@ -129,7 +129,7 @@ print("evaluation_filename:", evaluation_filename)
 use_checkpoint = True
 print("use_checkpoint:", use_checkpoint)
 # Set checkpoint if resuming from/using checkpoint
-checkpoint = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/20210803-OGI-myST-120h-cont/checkpoint-29000"
+checkpoint = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/20210804-OGI-myST-120h-cont/checkpoint-45000"
 if use_checkpoint:
     print("checkpoint:", checkpoint)
 
