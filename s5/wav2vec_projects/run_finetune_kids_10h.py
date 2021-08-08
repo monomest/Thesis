@@ -88,7 +88,7 @@ print("training:", training)
 # Experiment ID
 # For 1) naming vocab.json file and
 #     2) naming model output directory
-experiment_id = "20210806-OGI-myST-10h"
+experiment_id = "20210807-OGI-myST-10h"
 print("experiment_id:", experiment_id)
 
 # DatasetDict Id
@@ -172,7 +172,7 @@ set_activation_dropout = 0.1                # Default = 0.1
 print("activation_dropout:", set_activation_dropout)
 set_attention_dropout = 0.1                 # Default = 0.1
 print("attention_dropoutput:", set_attention_dropout)
-set_feat_proj_dropout = 0.0                 # Default = 0.1
+set_feat_proj_dropout = 0.1                 # Default = 0.1
 print("feat_proj_dropout:", set_feat_proj_dropout)
 set_layerdrop = 0.05                        # Default = 0.1
 print("layerdrop:", set_layerdrop)
@@ -196,7 +196,7 @@ set_per_device_train_batch_size = 8         # Default = 8
 print("per_device_train_batch_size:", set_per_device_train_batch_size)
 set_gradient_accumulation_steps = 1         # Default = 1
 print("gradient_accumulation_steps:", set_gradient_accumulation_steps)
-set_learning_rate = 0.00005                 # Default = 0.00005
+set_learning_rate = 0.00001                 # Default = 0.00005
 print("learning_rate:", set_learning_rate)
 set_weight_decay = 0.01                     # Default = 0
 print("weight_decay:", set_weight_decay)

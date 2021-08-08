@@ -73,6 +73,8 @@ from transformers import Trainer
 print("-->Importing pyarrow for loading dataset...")
 import pyarrow as pa
 import pyarrow.csv as csv
+print("-->Importing Transformers callbacks...")
+from transformers import EarlyStoppingCallback
 print("-->SUCCESS! All packages imported.")
 
 # ------------------------------------------
@@ -88,7 +90,7 @@ print("training:", training)
 # Experiment ID
 # For 1) naming vocab.json file and
 #     2) naming model output directory
-experiment_id = "20210806-OGI-myST-120h-cont"
+experiment_id = "20210807-OGI-myST-120h"
 print("experiment_id:", experiment_id)
 
 # DatasetDict Id
@@ -126,7 +128,7 @@ print("evaluation_filename:", evaluation_filename)
 # For 1) resuming from a saved checkpoint if training stopped midway through
 #  or 2) for using an existing model for evaluation 
 # If 2), then must also set eval_pretrained = True
-use_checkpoint = True
+use_checkpoint = False
 print("use_checkpoint:", use_checkpoint)
 # Set checkpoint if resuming from/using checkpoint
 checkpoint = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/20210804-OGI-myST-120h-cont/checkpoint-45000"
@@ -172,7 +174,7 @@ set_activation_dropout = 0.1                # Default = 0.1
 print("activation_dropout:", set_activation_dropout)
 set_attention_dropout = 0.1                 # Default = 0.1
 print("attention_dropoutput:", set_attention_dropout)
-set_feat_proj_dropout = 0.0                 # Default = 0.1
+set_feat_proj_dropout = 0.1                 # Default = 0.1
 print("feat_proj_dropout:", set_feat_proj_dropout)
 set_layerdrop = 0.1                         # Default = 0.1
 print("layerdrop:", set_layerdrop)
@@ -196,7 +198,7 @@ set_per_device_train_batch_size = 8         # Default = 8
 print("per_device_train_batch_size:", set_per_device_train_batch_size)
 set_gradient_accumulation_steps = 1         # Default = 1
 print("gradient_accumulation_steps:", set_gradient_accumulation_steps)
-set_learning_rate = 0.00003                 # Default = 0.00005
+set_learning_rate = 0.00001                 # Default = 0.00005
 print("learning_rate:", set_learning_rate)
 set_weight_decay = 0.01                     # Default = 0
 print("weight_decay:", set_weight_decay)
@@ -206,11 +208,11 @@ set_adam_beta2 = 0.98                       # Default = 0.999
 print("adam_beta2:", set_adam_beta2)
 set_adam_epsilon = 0.00000001               # Default = 0.00000001
 print("adam_epsilon:", set_adam_epsilon)
-set_num_train_epochs = 79                   # Default = 3.0
+set_num_train_epochs = 5                    # Default = 3.0
 print("num_train_epochs:", set_num_train_epochs)
-set_max_steps = 50000                       # Default = -1, overrides epochs
+set_max_steps = 15000                       # Default = -1, overrides epochs
 print("max_steps:", set_max_steps)
-set_lr_scheduler_type = "linear"            # Default = "linear"
+set_lr_scheduler_type = "cosine"            # Default = "linear"
 print("lr_scheduler_type:", set_lr_scheduler_type )
 set_warmup_ratio = 0.1                      # Default = 0.0
 print("warmup_ratio:", set_warmup_ratio)
@@ -228,12 +230,12 @@ set_fp16 = True                             # Default = False
 print("fp16:", set_fp16)
 set_eval_steps = 1000                       # Optional
 print("eval_steps:", set_eval_steps)
-set_load_best_model_at_end = False          # Default = False
+set_load_best_model_at_end = True           # Default = False
 print("load_best_model_at_end:", set_load_best_model_at_end)
-#set_metric_for_best_model = "wer"           # Optional
-#print("metric_for_best_model:", set_metric_for_best_model)
-#set_greater_is_better = False               # Optional
-#print("greater_is_better:", set_greater_is_better)
+set_metric_for_best_model = "wer"           # Optional
+print("metric_for_best_model:", set_metric_for_best_model)
+set_greater_is_better = False               # Optional
+print("greater_is_better:", set_greater_is_better)
 set_group_by_length = True                  # Default = False
 print("group_by_length:", set_group_by_length)
 
@@ -616,6 +618,20 @@ training_args = TrainingArguments(
 )
 # All instances can be passed to Trainer and 
 # we are ready to start training!
+# Define custom callbacks
+class MyCallback(TrainerCallback):
+    "A callback that prints a message at the beginning of training"
+
+    def on_train_begin(self, args, state, control, **kwargs):
+        print("------ Starting training ------")
+
+class EvaluationLoggingCallback(TrainerCallback):
+    "A callback that prints the logs after every evaluation event"
+
+    def on_evaluate(self, args, state, control, metrics, **kwargs):
+        print("Evaluation done.")
+        print(metrics)
+    
 trainer = Trainer(
     model=model,
     data_collator=data_collator,
@@ -624,6 +640,7 @@ trainer = Trainer(
     train_dataset=data_prepared["train"],
     eval_dataset=data_prepared["test"],
     tokenizer=processor.feature_extractor,
+    callbacks=[MyCallback, EarlyStoppingCallback(early_stopping_patience=3), EvaluationLoggingCallback]
 )
 
 # ------------------------------------------
