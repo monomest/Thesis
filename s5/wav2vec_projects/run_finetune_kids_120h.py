@@ -618,20 +618,6 @@ training_args = TrainingArguments(
 )
 # All instances can be passed to Trainer and 
 # we are ready to start training!
-# Define custom callbacks
-class MyCallback(TrainerCallback):
-    "A callback that prints a message at the beginning of training"
-
-    def on_train_begin(self, args, state, control, **kwargs):
-        print("------ Starting training ------")
-
-class EvaluationLoggingCallback(TrainerCallback):
-    "A callback that prints the logs after every evaluation event"
-
-    def on_evaluate(self, args, state, control, metrics, **kwargs):
-        print("Evaluation done.")
-        print(metrics)
-    
 trainer = Trainer(
     model=model,
     data_collator=data_collator,
@@ -640,7 +626,7 @@ trainer = Trainer(
     train_dataset=data_prepared["train"],
     eval_dataset=data_prepared["test"],
     tokenizer=processor.feature_extractor,
-    callbacks=[MyCallback, EarlyStoppingCallback(early_stopping_patience=3), EvaluationLoggingCallback]
+    callbacks=[EarlyStoppingCallback(early_stopping_patience=3)]
 )
 
 # ------------------------------------------
