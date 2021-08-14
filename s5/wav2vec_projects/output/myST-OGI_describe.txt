@@ -1,0 +1,62 @@
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/data_combinedDescribe.py
+------> /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/myST_OGI_train_15_10min.csv
+------> OGI portion...
+# Hours: 0.04452989583333333
+Proportion of hours: 0.28525985794628006
+# Samples: 51
+Proportion of samples: 0.375
+# Speakers: 50
+Proportion of speakers: 0.3968253968253968
+------> myST portion...
+# Hours: 0.11157302083333333
+Proportion of hours: 0.7147401420537198
+# Samples: 85
+Proportion of samples: 0.625
+# Speakers: 76
+Proportion of speakers: 0.6031746031746031
+------> /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/myST_OGI_train_15_1h.csv
+------> OGI portion...
+# Hours: 0.3165470138888889
+Proportion of hours: 0.321834719213712
+# Samples: 341
+Proportion of samples: 0.41840490797546015
+# Speakers: 278
+Proportion of speakers: 0.5148148148148148
+------> myST portion...
+# Hours: 0.667023107638889
+Proportion of hours: 0.6781652807862882
+# Samples: 474
+Proportion of samples: 0.5815950920245399
+# Speakers: 262
+Proportion of speakers: 0.48518518518518516
+------> /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/myST_OGI_train_15_10h.csv
+------> OGI portion...
+# Hours: 3.0343256076388885
+Proportion of hours: 0.3065279851952184
+# Samples: 3348
+Proportion of samples: 0.41115068156699003
+# Speakers: 759
+Proportion of speakers: 0.6111111111111112
+------> myST portion...
+# Hours: 6.864690972222222
+Proportion of hours: 0.6934720148047815
+# Samples: 4795
+Proportion of samples: 0.5888493184330099
+# Speakers: 483
+Proportion of speakers: 0.3888888888888889
+------> /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/myST_OGI_train_15.csv
+------> OGI portion...
+# Hours: 37.037540104166666
+Proportion of hours: 0.30329342037082874
+# Samples: 40857
+Proportion of samples: 0.41088327282601045
+# Speakers: 782
+Proportion of speakers: 0.6029298380878951
+------> myST portion...
+# Hours: 85.08030887152776
+Proportion of hours: 0.6967065796291713
+# Samples: 58580
+Proportion of samples: 0.5891167271739896
+# Speakers: 515
+Proportion of speakers: 0.39707016191210487
+SUCCESS: Data set described.
