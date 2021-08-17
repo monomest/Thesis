@@ -25,31 +25,39 @@ print('Running: ', os.path.abspath(__file__))
 #            Setting file paths
 # ------------------------------------------
 print("\n------> Setting file paths... ----------------------------------------\n")
-# dataset_name = "myST"
-#dataset_name = "OGI"
-dataset_name = "myST-OGI"
+#dataset_name = "myST"
+dataset_name = "OGI"
+#dataset_name = "myST-OGI"
 print("Dataset name:", dataset_name)
 
 # Filename of training dataframe csv file
 #dataset_filename = "myST_train_15"
-#dataset_filename = "OGI_scripted_train_15"
-dataset_filename = "myST_OGI_train_15"
+dataset_filename = "OGI_scripted_train_15"
+#dataset_filename = "myST_OGI_train_15"
 print("dataset_filename:", dataset_filename)
 
 # Where to save 10 minute subset dataframe
 #train_10min_filename = "myST_train_15_10min"
-#train_10min_filename = "OGI_scripted_train_15_10min"
-train_10min_filename = "myST_OGI_train_15_10min"
+train_10min_filename = "OGI_scripted_train_15_10min-extra"
+#train_10min_filename = "myST_OGI_train_15_10min"
 print("train_10min_filename:", train_10min_filename)
+
 # Where to save 1 hour subset dataframe
 #train_1h_filename = "myST_train_15_1h"
-#train_1h_filename = "OGI_scripted_train_15_1h"
-train_1h_filename = "myST_OGI_train_15_1h"
+train_1h_filename = "OGI_scripted_train_15_1h-extra"
+#train_1h_filename = "myST_OGI_train_15_1h-extra"
 print("train_1h_filename:", train_1h_filename)
+
+# Where to save 5 hour subset dataframe
+#train_5h_filename = "myST_train_15_5h"
+train_5h_filename = "OGI_scripted_train_15_5h"
+#train_5h_filename = "myST_OGI_train_15_5h"
+print("train_5h_filename:", train_5h_filename)
+
 # Where to save 10 hour subset dataframe
 #train_10h_filename = "myST_train_15_10h"
-#train_10h_filename = "OGI_scripted_train_15_10h"
-train_10h_filename = "myST_OGI_train_15_10h"
+train_10h_filename = "OGI_scripted_train_15_10h-extra"
+#train_10h_filename = "myST_OGI_train_15_10h"
 print("train_10h_filename:", train_10h_filename)
 
 # Base filepath
@@ -63,7 +71,7 @@ print("\n------> Setting total hours in train set... ---------------------------
 # myST total hours = 85.08
 # OGI total hours = 37.04
 # myST-OGI total hours = 122.117
-tot_hours = 122.117
+tot_hours = 37.04
 print("total hours:", tot_hours)
 
 # ------------------------------------------
@@ -87,6 +95,8 @@ data_train_fp = base_fp + dataset_filename + ".csv"
 data_train_10min_fp = base_fp + train_10min_filename + ".csv"
 # Where to save 1 hour subset
 data_train_1h_fp = base_fp + train_1h_filename + ".csv"
+# Where to save 5 hour subset
+data_train_5h_fp = base_fp + train_5h_filename + ".csv"
 # Where to save 10 hour subset
 data_train_10h_fp = base_fp + train_10h_filename + ".csv"
 
@@ -104,7 +114,7 @@ data_train_df["duration"] = data_train_df["duration"].apply(pd.to_numeric)
 # ------------------------------------------
 #       Getting subsets
 # ------------------------------------------
-print("\n------> Getting 10min, 1hr and 10hr training subsets...---------------\n")
+print("\n------> Getting 10min, 1hr, 5hr and 10hr training subsets...---------------\n")
 # Convert all durations to minutes to get subset proportion
 def getSubset(subset_name, subset_mins, tot_hours, data_train_df, seed):
     prop_subset = subset_mins/(tot_hours*60) # Proportion of subset compared to total
@@ -121,6 +131,9 @@ train_10min = getSubset("10 minute", subset_mins, tot_hours, data_train_df, seed
 # Get 1 hour subset
 subset_mins = 1*60
 train_1h = getSubset("1 hour", subset_mins, tot_hours, data_train_df, seed)
+# Get 5 hours subset
+subset_mins = 5*60
+train_5h = getSubset("5 hours", subset_mins, tot_hours, data_train_df, seed)
 # Get 10 hour subset
 subset_mins = 10*60
 train_10h = getSubset("10 hour", subset_mins, tot_hours, data_train_df, seed)
@@ -137,4 +150,5 @@ def saveCSV(subset_name, df, fp):
 # Save to CSV file
 saveCSV("10 minute", train_10min, data_train_10min_fp)
 saveCSV("1 hour", train_1h, data_train_1h_fp)
+saveCSV("5 hour", train_5h, data_train_5h_fp)
 saveCSV("10 hour", train_10h, data_train_10h_fp)

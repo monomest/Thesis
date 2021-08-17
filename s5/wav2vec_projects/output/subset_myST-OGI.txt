@@ -1,0 +1,44 @@
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/data_getSubset.py
+
+------> Setting file paths... ----------------------------------------
+
+Dataset name: myST-OGI
+dataset_filename: myST_OGI_train_15
+train_10min_filename: myST_OGI_train_15_10min-extra
+train_1h_filename: myST_OGI_train_15_1h-extra
+train_10h_filename: myST_OGI_train_15_10h-extra
+base_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/
+
+------> Setting total hours in train set... ---------------------------
+
+total hours: 122.117
+
+------> Setting seed... ----------------------------------------------
+
+--> Setting seed as: 6
+
+------> Reading in train dataframe... --------------------------------
+
+
+------> Getting 10min, 1hr, 5hr and 10hr training subsets...---------------
+
+--> Speakers in 10 minute training subset: 126
+--> Minutes in subset: 9.366175
+--> Hours in subset: 0.15610291666666667
+--> Speakers in 1 hour training subset: 540
+--> Minutes in subset: 59.014207291666665
+--> Hours in subset: 0.9835701215277777
+--> Speakers in 5 hours training subset: 1133
+--> Minutes in subset: 296.40593333333334
+--> Hours in subset: 4.940098888888889
+--> Speakers in 10 hour training subset: 1242
+--> Minutes in subset: 593.9409947916666
+--> Hours in subset: 9.899016579861112
+SUCCESS: Created 10 minute subset in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/myST_OGI_train_15_10min-extra.csv
+Samples:  136
+SUCCESS: Created 1 hour subset in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/myST_OGI_train_15_1h-extra.csv
+Samples:  815
+SUCCESS: Created 5 hour subset in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/myST_OGI_train_15_5h.csv
+Samples:  4072
+SUCCESS: Created 10 hour subset in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/myST_OGI_train_15_10h-extra.csv
+Samples:  8143

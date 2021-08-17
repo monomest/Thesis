@@ -21,10 +21,11 @@ print('Running: ', os.path.abspath(__file__))
 # For 10mins, 1h, 10h and all 120hrs
 fp_10m = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/myST_OGI_train_15_10min.csv"
 fp_1h = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/myST_OGI_train_15_1h.csv"
+fp_5h = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/myST_OGI_train_15_5h.csv"
 fp_10h = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/myST_OGI_train_15_10h.csv"
 fp_all = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/myST_OGI_train_15.csv"
 
-fp_list = [fp_10m, fp_1h, fp_10h, fp_all]
+fp_list = [fp_10m, fp_1h, fp_5h, fp_10h, fp_all]
 
 # ------------------------------------------
 #         Reading csv files
@@ -59,15 +60,15 @@ def describeData(df, total_hours, total_samples, total_spkrs):
     print("Proportion of speakers:", spkrs/total_spkrs)
 
 for fp in fp_list:
-    print("------>", fp)
+    print("------>", fp, "------")
     df = readCSV(fp)
     total_hours = df.duration.sum()/(60*60)
     total_samples = len(df)
     total_spkrs = len(df.groupby(["spkr_id"]).duration.sum().reset_index())
     df_OGI, df_myST = filterData(df)
-    print("------> OGI portion...")
+    print("--> OGI portion...")
     describeData(df_OGI, total_hours, total_samples, total_spkrs)
-    print("------> myST portion...")
+    print("--> myST portion...")
     describeData(df_myST, total_hours, total_samples, total_spkrs)
 
 print("SUCCESS: Data set described.")

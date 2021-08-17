@@ -1,0 +1,45 @@
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/data_getSubset.py
+
+------> Setting file paths... ----------------------------------------
+
+Dataset name: OGI
+dataset_filename: OGI_scripted_train_15
+train_10min_filename: OGI_scripted_train_15_10min-extra
+train_1h_filename: OGI_scripted_train_15_1h-extra
+train_5h_filename: OGI_scripted_train_15_5h
+train_10h_filename: OGI_scripted_train_15_10h-extra
+base_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/
+
+------> Setting total hours in train set... ---------------------------
+
+total hours: 37.04
+
+------> Setting seed... ----------------------------------------------
+
+--> Setting seed as: 6
+
+------> Reading in train dataframe... --------------------------------
+
+
+------> Getting 10min, 1hr, 5hr and 10hr training subsets...---------------
+
+--> Speakers in 10 minute training subset: 167
+--> Minutes in subset: 10.351314583333332
+--> Hours in subset: 0.1725219097222222
+--> Speakers in 1 hour training subset: 574
+--> Minutes in subset: 62.73378958333333
+--> Hours in subset: 1.0455631597222224
+--> Speakers in 5 hours training subset: 778
+--> Minutes in subset: 303.63349062500004
+--> Hours in subset: 5.060558177083333
+--> Speakers in 10 hour training subset: 780
+--> Minutes in subset: 605.6937843750001
+--> Hours in subset: 10.094896406250001
+SUCCESS: Created 10 minute subset in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted_train_15_10min-extra.csv
+Samples:  184
+SUCCESS: Created 1 hour subset in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted_train_15_1h-extra.csv
+Samples:  1104
+SUCCESS: Created 5 hour subset in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted_train_15_5h.csv
+Samples:  5516
+SUCCESS: Created 10 hour subset in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted_train_15_10h-extra.csv
+Samples:  11031
