@@ -88,13 +88,13 @@ print("training:", training)
 # Experiment ID
 # For 1) naming vocab.json file and
 #     2) naming model output directory
-experiment_id = "20210806-OGI-myST-10h-eval"
+experiment_id = "20210818-OGI-myST-5h-eval"
 print("experiment_id:", experiment_id)
 
 # DatasetDict Id
 # For 1) naming cache directory and 
 #     2) saving the DatasetDict object
-datasetdict_id = "OGI-myST-10h"
+datasetdict_id = "myST-10min-eval"
 print("datasetdict_id:", datasetdict_id)
 
 # Base filepath
@@ -109,16 +109,16 @@ base_cache_fp = "/srv/scratch/chacmod/.cache/huggingface/datasets/"
 # Training dataset name and filename
 # Dataset name and filename of the csv file containing the training data
 # For generating filepath to file location
-train_name = "myST-OGI"
-train_filename = "myST_OGI_train_15_10h_noSpkrCol"
+train_name = "myST"
+train_filename = "myST_train_15_10min_noSpkrCol"
 print("train_name:", train_name)
 print("train_filename:", train_filename)
 
 # Evaluation dataset name and filename
 # Dataset name and filename of the csv file containing the evaluation data
 # For generating filepath to file location
-evaluation_name = "OGI"
-evaluation_filename = "OGI_scripted_dev_15_noSpkrCol"
+evaluation_name = "myST"
+evaluation_filename = "myST_test_15_noSpkrCol"
 print("evaluation_name:", evaluation_name)
 print("evaluation_filename:", evaluation_filename)
 
@@ -129,7 +129,7 @@ print("evaluation_filename:", evaluation_filename)
 use_checkpoint = True
 print("use_checkpoint:", use_checkpoint)
 # Set checkpoint if resuming from/using checkpoint
-checkpoint = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/20210803-OGI-myST-10h/checkpoint-1000"
+checkpoint = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/20210816-OGI-myST-5h"
 if use_checkpoint:
     print("checkpoint:", checkpoint)
 

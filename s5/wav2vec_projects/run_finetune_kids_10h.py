@@ -88,7 +88,7 @@ print("training:", training)
 # Experiment ID
 # For 1) naming vocab.json file and
 #     2) naming model output directory
-experiment_id = "20210817-OGI-myST-10h"
+experiment_id = "20210818-OGI-myST-10h"
 print("experiment_id:", experiment_id)
 
 # DatasetDict Id
@@ -129,7 +129,7 @@ print("evaluation_filename:", evaluation_filename)
 use_checkpoint = False
 print("use_checkpoint:", use_checkpoint)
 # Set checkpoint if resuming from/using checkpoint
-checkpoint = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/20210802-OGI-myST-10h/checkpoint-16000"
+checkpoint = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/20210727-OGI-myST-10min/checkpoint-4500"
 if use_checkpoint:
     print("checkpoint:", checkpoint)
 
@@ -172,7 +172,7 @@ set_activation_dropout = 0.1                # Default = 0.1
 print("activation_dropout:", set_activation_dropout)
 set_attention_dropout = 0.1                 # Default = 0.1
 print("attention_dropoutput:", set_attention_dropout)
-set_feat_proj_dropout = 0.1                 # Default = 0.1
+set_feat_proj_dropout = 0.0                 # Default = 0.1
 print("feat_proj_dropout:", set_feat_proj_dropout)
 set_layerdrop = 0.05                        # Default = 0.1
 print("layerdrop:", set_layerdrop)
@@ -206,9 +206,9 @@ set_adam_beta2 = 0.98                       # Default = 0.999
 print("adam_beta2:", set_adam_beta2)
 set_adam_epsilon = 0.00000001               # Default = 0.00000001
 print("adam_epsilon:", set_adam_epsilon)
-set_num_train_epochs = 59                   # Default = 3.0
+set_num_train_epochs = 79                   # Default = 3.0
 print("num_train_epochs:", set_num_train_epochs)
-set_max_steps = 15000                       # Default = -1, overrides epochs
+set_max_steps = 20000                       # Default = -1, overrides epochs
 print("max_steps:", set_max_steps)
 set_lr_scheduler_type = "linear"            # Default = "linear"
 print("lr_scheduler_type:", set_lr_scheduler_type )
@@ -610,8 +610,8 @@ training_args = TrainingArguments(
   fp16=set_fp16,
   eval_steps=set_eval_steps,
   load_best_model_at_end=set_load_best_model_at_end,
-#  metric_for_best_model=set_metric_for_best_model,
-#  greater_is_better=set_greater_is_better,
+  metric_for_best_model=set_metric_for_best_model,
+  greater_is_better=set_greater_is_better,
   group_by_length=set_group_by_length
 )
 # All instances can be passed to Trainer and 

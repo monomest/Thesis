@@ -73,8 +73,6 @@ from transformers import Trainer
 print("-->Importing pyarrow for loading dataset...")
 import pyarrow as pa
 import pyarrow.csv as csv
-print("-->Importing Transformers callbacks...")
-from transformers import EarlyStoppingCallback
 print("-->SUCCESS! All packages imported.")
 
 # ------------------------------------------
@@ -90,7 +88,7 @@ print("training:", training)
 # Experiment ID
 # For 1) naming vocab.json file and
 #     2) naming model output directory
-experiment_id = "20210807-OGI-myST-120h"
+experiment_id = "20210819-OGI-myST-120h"
 print("experiment_id:", experiment_id)
 
 # DatasetDict Id
@@ -131,7 +129,7 @@ print("evaluation_filename:", evaluation_filename)
 use_checkpoint = False
 print("use_checkpoint:", use_checkpoint)
 # Set checkpoint if resuming from/using checkpoint
-checkpoint = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/20210804-OGI-myST-120h-cont/checkpoint-45000"
+checkpoint = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/20210727-OGI-myST-10min/checkpoint-4500"
 if use_checkpoint:
     print("checkpoint:", checkpoint)
 
@@ -174,7 +172,7 @@ set_activation_dropout = 0.1                # Default = 0.1
 print("activation_dropout:", set_activation_dropout)
 set_attention_dropout = 0.1                 # Default = 0.1
 print("attention_dropoutput:", set_attention_dropout)
-set_feat_proj_dropout = 0.1                 # Default = 0.1
+set_feat_proj_dropout = 0.0                 # Default = 0.1
 print("feat_proj_dropout:", set_feat_proj_dropout)
 set_layerdrop = 0.1                         # Default = 0.1
 print("layerdrop:", set_layerdrop)
@@ -184,7 +182,7 @@ set_mask_time_length = 10                   # Default = 10
 print("mask_time_length:", set_mask_time_length)
 set_ctc_loss_reduction = "mean"             # Default = "sum"
 print("ctc_loss_reduction:", set_ctc_loss_reduction)
-set_ctc_zero_infinity = False               # Default = False
+set_ctc_zero_infinity = True                # Default = False
 print("ctc_zero_infinity:", set_ctc_zero_infinity)
 set_gradient_checkpointing = True           # Default = False
 print("gradient_checkpointing:", set_gradient_checkpointing)
@@ -198,7 +196,7 @@ set_per_device_train_batch_size = 8         # Default = 8
 print("per_device_train_batch_size:", set_per_device_train_batch_size)
 set_gradient_accumulation_steps = 1         # Default = 1
 print("gradient_accumulation_steps:", set_gradient_accumulation_steps)
-set_learning_rate = 0.00001                 # Default = 0.00005
+set_learning_rate = 0.00003                 # Default = 0.00005
 print("learning_rate:", set_learning_rate)
 set_weight_decay = 0.01                     # Default = 0
 print("weight_decay:", set_weight_decay)
@@ -208,11 +206,11 @@ set_adam_beta2 = 0.98                       # Default = 0.999
 print("adam_beta2:", set_adam_beta2)
 set_adam_epsilon = 0.00000001               # Default = 0.00000001
 print("adam_epsilon:", set_adam_epsilon)
-set_num_train_epochs = 5                    # Default = 3.0
+set_num_train_epochs = 500                  # Default = 3.0
 print("num_train_epochs:", set_num_train_epochs)
-set_max_steps = 15000                       # Default = -1, overrides epochs
+set_max_steps = 50000                       # Default = -1, overrides epochs
 print("max_steps:", set_max_steps)
-set_lr_scheduler_type = "cosine"            # Default = "linear"
+set_lr_scheduler_type = "linear"            # Default = "linear"
 print("lr_scheduler_type:", set_lr_scheduler_type )
 set_warmup_ratio = 0.1                      # Default = 0.0
 print("warmup_ratio:", set_warmup_ratio)
@@ -224,7 +222,7 @@ set_save_strategy = "steps"                 # Default = "steps"
 print("save_strategy:", set_save_strategy)
 set_save_steps = 1000                       # Default = 500
 print("save_steps:", set_save_steps)
-set_save_total_limit = 50                   # Optional                 
+set_save_total_limit = 60                   # Optional                 
 print("save_total_limit:", set_save_total_limit)
 set_fp16 = True                             # Default = False
 print("fp16:", set_fp16)
@@ -612,8 +610,8 @@ training_args = TrainingArguments(
   fp16=set_fp16,
   eval_steps=set_eval_steps,
   load_best_model_at_end=set_load_best_model_at_end,
-#  metric_for_best_model=set_metric_for_best_model,
-#  greater_is_better=set_greater_is_better,
+  metric_for_best_model=set_metric_for_best_model,
+  greater_is_better=set_greater_is_better,
   group_by_length=set_group_by_length
 )
 # All instances can be passed to Trainer and 
@@ -626,7 +624,6 @@ trainer = Trainer(
     train_dataset=data_prepared["train"],
     eval_dataset=data_prepared["test"],
     tokenizer=processor.feature_extractor,
-    callbacks=[EarlyStoppingCallback(early_stopping_patience=3)]
 )
 
 # ------------------------------------------
