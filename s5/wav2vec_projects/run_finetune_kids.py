@@ -118,7 +118,7 @@ print("train_filename:", train_filename)
 # Dataset name and filename of the csv file containing the evaluation data
 # For generating filepath to file location
 evaluation_name = "myST"
-evaluation_filename = "myST_test_15_noSpkrCol"
+evaluation_filename = "myST_dev_15_noSpkrCol"
 print("evaluation_name:", evaluation_name)
 print("evaluation_filename:", evaluation_filename)
 
@@ -129,7 +129,7 @@ print("evaluation_filename:", evaluation_filename)
 use_checkpoint = True
 print("use_checkpoint:", use_checkpoint)
 # Set checkpoint if resuming from/using checkpoint
-checkpoint = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/20210816-OGI-myST-5h"
+checkpoint = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/20210818-OGI-myST-10h"
 if use_checkpoint:
     print("checkpoint:", checkpoint)
 

@@ -9275,3 +9275,407 @@ Fine-tuned Test WER: 0.200
 ------> SUCCESSFULLY FINISHED ---------------------------------------- 
 
 Finished: 18/08/2021 23:48:03
+------------------------------------------------------------------------
+                 run_finetune_kids.py                                   
+------------------------------------------------------------------------
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/run_finetune_kids.py
+Started: 19/08/2021 21:53:51
+
+------> IMPORTING PACKAGES.... ---------------------------------------
+
+-->Importing datasets...
+-->Importing random...
+-->Importing pandas & numpy...
+-->Importing re...
+-->Importing json...
+-->Importing Wav2VecCTC...
+-->Importing soundfile...
+-->Importing torch, dataclasses & typing...
+-->Importing from transformers for training...
+-->Importing pyarrow for loading dataset...
+-->SUCCESS! All packages imported.
+
+------> EXPERIMENT ARGUMENTS ----------------------------------------- 
+
+training: False
+experiment_id: 20210818-OGI-myST-5h-eval
+datasetdict_id: myST-10min-eval
+base_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/
+train_name: myST
+train_filename: myST_train_15_10min_noSpkrCol
+evaluation_name: myST
+evaluation_filename: myST_dev_15_noSpkrCol.csv
+use_checkpoint: True
+checkpoint: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/20210818-OGI-myST-10h
+use_pretrained_tokenizer: True
+pretrained_tokenizer: facebook/wav2vec2-base-960h
+eval_pretrained: True
+eval_model: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/20210818-OGI-myST-10h
+baseline_model: facebook/wav2vec2-base-960h
+
+------> MODEL ARGUMENTS... -------------------------------------------
+
+hidden_dropout: 0.1
+activation_dropout: 0.1
+attention_dropoutput: 0.1
+feat_proj_dropout: 0.0
+layerdrop: 0.1
+mask_time_prob: 0.075
+mask_time_length: 10
+ctc_loss_reduction: mean
+ctc_zero_infinity: False
+gradient_checkpointing: True
+
+------> TRAINING ARGUMENTS... ----------------------------------------
+
+evaluation strategy: steps
+per_device_train_batch_size: 8
+gradient_accumulation_steps: 1
+learning_rate: 5e-05
+weight_decay: 0.01
+adam_beta1: 0.9
+adam_beta2: 0.98
+adam_epsilon: 1e-08
+num_train_epochs: 100
+max_steps: -1
+lr_scheduler_type: linear
+warmup_ratio: 0.1
+logging_strategy: steps
+logging_steps: 25
+save_strategy: steps
+save_steps: 25
+save_total_limit: 50
+fp16: True
+eval_steps: 25
+load_best_model_at_end: True
+metric_for_best_model: wer
+greater_is_better: False
+group_by_length: True
+
+------> GENERATING FILEPATHS... --------------------------------------
+
+--> data_train_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_train_15_10min_noSpkrCol.csv
+--> data_test_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_dev_15_noSpkrCol.csv.csv
+--> data_cache_fp: /srv/scratch/chacmod/.cache/huggingface/datasets/myST-10min-eval
+--> vocab_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/vocab_20210818-OGI-myST-5h-eval.json
+--> model_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/20210818-OGI-myST-5h-eval
+--> pretrained_mod: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/20210818-OGI-myST-10h
+--> pretrained_tokenizer: facebook/wav2vec2-base-960h
+
+------> PREPARING DATASET... ------------------------------------
+
+Traceback (most recent call last):
+  File "run_finetune_kids.py", line 303, in <module>
+    cache_dir=data_cache_fp)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/datasets/load.py", line 756, in load_dataset
+    **config_kwargs,
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/datasets/builder.py", line 238, in __init__
+    **config_kwargs,
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/datasets/builder.py", line 352, in _create_builder_config
+    config_id = builder_config.create_config_id(config_kwargs, custom_features=custom_features)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/datasets/builder.py", line 154, in create_config_id
+    m.update(str(os.path.getmtime(data_file)))
+  File "/usr/lib64/python3.6/genericpath.py", line 55, in getmtime
+    return os.stat(filename).st_mtime
+FileNotFoundError: [Errno 2] No such file or directory: '/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_dev_15_noSpkrCol.csv.csv'
+Using custom data configuration default-e03b0e9105bfd536
+Reusing dataset csv (/srv/scratch/chacmod/.cache/huggingface/datasets/myST-10min-eval/csv/default-e03b0e9105bfd536/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0)
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/myST-10min-eval/csv/default-e03b0e9105bfd536/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-ec09add5248f7c76.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/myST-10min-eval/csv/default-e03b0e9105bfd536/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-4f7187b2ea234101.arrow
+  0%|          | 0/1 [00:00<?, ?ba/s]100%|██████████| 1/1 [00:00<00:00, 75.36ba/s]
+  0%|          | 0/1 [00:00<?, ?ba/s]100%|██████████| 1/1 [00:00<00:00, 21.04ba/s]------------------------------------------------------------------------
+                 run_finetune_kids.py                                   
+------------------------------------------------------------------------
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/run_finetune_kids.py
+Started: 19/08/2021 21:54:57
+
+------> IMPORTING PACKAGES.... ---------------------------------------
+
+-->Importing datasets...
+-->Importing random...
+-->Importing pandas & numpy...
+-->Importing re...
+-->Importing json...
+-->Importing Wav2VecCTC...
+-->Importing soundfile...
+-->Importing torch, dataclasses & typing...
+-->Importing from transformers for training...
+-->Importing pyarrow for loading dataset...
+-->SUCCESS! All packages imported.
+
+------> EXPERIMENT ARGUMENTS ----------------------------------------- 
+
+training: False
+experiment_id: 20210818-OGI-myST-5h-eval
+datasetdict_id: myST-10min-eval
+base_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/
+train_name: myST
+train_filename: myST_train_15_10min_noSpkrCol
+evaluation_name: myST
+evaluation_filename: myST_dev_15_noSpkrCol
+use_checkpoint: True
+checkpoint: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/20210818-OGI-myST-10h
+use_pretrained_tokenizer: True
+pretrained_tokenizer: facebook/wav2vec2-base-960h
+eval_pretrained: True
+eval_model: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/20210818-OGI-myST-10h
+baseline_model: facebook/wav2vec2-base-960h
+
+------> MODEL ARGUMENTS... -------------------------------------------
+
+hidden_dropout: 0.1
+activation_dropout: 0.1
+attention_dropoutput: 0.1
+feat_proj_dropout: 0.0
+layerdrop: 0.1
+mask_time_prob: 0.075
+mask_time_length: 10
+ctc_loss_reduction: mean
+ctc_zero_infinity: False
+gradient_checkpointing: True
+
+------> TRAINING ARGUMENTS... ----------------------------------------
+
+evaluation strategy: steps
+per_device_train_batch_size: 8
+gradient_accumulation_steps: 1
+learning_rate: 5e-05
+weight_decay: 0.01
+adam_beta1: 0.9
+adam_beta2: 0.98
+adam_epsilon: 1e-08
+num_train_epochs: 100
+max_steps: -1
+lr_scheduler_type: linear
+warmup_ratio: 0.1
+logging_strategy: steps
+logging_steps: 25
+save_strategy: steps
+save_steps: 25
+save_total_limit: 50
+fp16: True
+eval_steps: 25
+load_best_model_at_end: True
+metric_for_best_model: wer
+greater_is_better: False
+group_by_length: True
+
+------> GENERATING FILEPATHS... --------------------------------------
+
+--> data_train_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_train_15_10min_noSpkrCol.csv
+--> data_test_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_dev_15_noSpkrCol.csv
+--> data_cache_fp: /srv/scratch/chacmod/.cache/huggingface/datasets/myST-10min-eval
+--> vocab_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/vocab_20210818-OGI-myST-5h-eval.json
+--> model_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/20210818-OGI-myST-5h-eval
+--> pretrained_mod: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/20210818-OGI-myST-10h
+--> pretrained_tokenizer: facebook/wav2vec2-base-960h
+
+------> PREPARING DATASET... ------------------------------------
+
+--> dataset...
+DatasetDict({
+    train: Dataset({
+        features: ['filepath', 'transcription'],
+        num_rows: 115
+    })
+    test: Dataset({
+        features: ['filepath', 'transcription'],
+        num_rows: 11786
+    })
+})
+--> Printing some random samples...
+                                            filepath                                      transcription
+0  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...  i notice that there is always um the right sid...
+1  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...  maganets attract that means they stick togethe...
+2  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...  it might be colors to reproduce and mate and s...
+3  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...  i think we should because yeah it makes it a l...
+4  /srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/...       light bulbs um can light up rooms they um um
+SUCCESS: Prepared dataset.
+
+------> CREATING VOCABULARY... ---------------------------------------
+
+--> Creating map(...) function for vocab...
+--> Vocab len: 28 
+ {'L': 0, 'T': 1, 'A': 2, 'W': 3, 'C': 4, 'Z': 5, 'R': 6, 'Q': 7, 'B': 8, 'P': 9, 'X': 10, "'": 11, 'I': 12, 'M': 13, 'N': 14, 'Y': 15, 'F': 16, 'U': 17, 'K': 18, ' ': 19, 'O': 20, 'S': 21, 'J': 22, 'D': 23, 'V': 24, 'G': 25, 'H': 26, 'E': 27}
+--> Vocab len: 30 
+ {'L': 0, 'T': 1, 'A': 2, 'W': 3, 'C': 4, 'Z': 5, 'R': 6, 'Q': 7, 'B': 8, 'P': 9, 'X': 10, "'": 11, 'I': 12, 'M': 13, 'N': 14, 'Y': 15, 'F': 16, 'U': 17, 'K': 18, 'O': 20, 'S': 21, 'J': 22, 'D': 23, 'V': 24, 'G': 25, 'H': 26, 'E': 27, '|': 19, '[UNK]': 28, '[PAD]': 29}
+SUCCESS: Created vocabulary file at /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/vocab_20210818-OGI-myST-5h-eval.json
+
+------> CREATING WAV2VEC2 FEATURE EXTRACTOR... -----------------------
+
+SUCCESS: Created feature extractor.
+
+------> PRE-PROCESSING DATA... ----------------------------------------- 
+
+
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/myST-10min-eval/csv/default-e03b0e9105bfd536/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-c6b9e12a677bb03f.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/myST-10min-eval/csv/default-e03b0e9105bfd536/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-251071aaea1135ed.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/myST-10min-eval/csv/default-e03b0e9105bfd536/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-3c2a783be11d2cc2.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/myST-10min-eval/csv/default-e03b0e9105bfd536/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-c191c066436a0272.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/myST-10min-eval/csv/default-e03b0e9105bfd536/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-eff51c43d79b4879.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/myST-10min-eval/csv/default-e03b0e9105bfd536/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-0a17784db7e1467f.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/myST-10min-eval/csv/default-e03b0e9105bfd536/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-7941d2e03271c908.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/myST-10min-eval/csv/default-e03b0e9105bfd536/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-b65b6184171efa29.arrow
+--> Verifying data with a random sample...
+Target text: NO
+Input array shape: (13000,)
+Sampling rate: 16000
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/myST-10min-eval/csv/default-e03b0e9105bfd536/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-fb14cfcbe0df2a81.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/myST-10min-eval/csv/default-e03b0e9105bfd536/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-55021d8aa5ca3381.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/myST-10min-eval/csv/default-e03b0e9105bfd536/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-ddeb4d9c31db70ce.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/myST-10min-eval/csv/default-e03b0e9105bfd536/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-16aae49496621910.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/myST-10min-eval/csv/default-e03b0e9105bfd536/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-8c75e526ab404b51.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/myST-10min-eval/csv/default-e03b0e9105bfd536/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-978e96a75eedab5b.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/myST-10min-eval/csv/default-e03b0e9105bfd536/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-776e20d6d9a986be.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/myST-10min-eval/csv/default-e03b0e9105bfd536/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-632abf22d29a598c.arrow
+Using amp fp16 backend
+loading feature extractor configuration file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/20210818-OGI-myST-10h/preprocessor_config.json
+Feature extractor Wav2Vec2FeatureExtractor {
+  "do_normalize": true,
+  "feature_extractor_type": "Wav2Vec2FeatureExtractor",
+  "feature_size": 1,
+  "padding_side": "right",
+  "padding_value": 0.0,
+  "return_attention_mask": false,
+  "sampling_rate": 16000
+}
+
+Didn't find file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/20210818-OGI-myST-10h/added_tokens.json. We won't load it.
+Didn't find file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/20210818-OGI-myST-10h/tokenizer.json. We won't load it.
+loading file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/20210818-OGI-myST-10h/vocab.json
+loading file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/20210818-OGI-myST-10h/tokenizer_config.json
+loading file None
+loading file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/20210818-OGI-myST-10h/special_tokens_map.json
+loading file None
+loading configuration file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/20210818-OGI-myST-10h/config.json
+Model config Wav2Vec2Config {
+  "_name_or_path": "facebook/wav2vec2-base-960h",
+  "activation_dropout": 0.1,
+  "apply_spec_augment": true,
+  "architectures": [
+    "Wav2Vec2ForCTC"
+  ],
+  "attention_dropout": 0.1,
+  "bos_token_id": 1,
+  "codevector_dim": 256,
+  "contrastive_logits_temperature": 0.1,
+  "conv_bias": false,
+  "conv_dim": [
+    512,
+    512,
+    512,
+    512,
+    512,
+    512,
+    512
+  ],
+  "conv_kernel": [
+    10,
+    3,
+    3,
+    3,
+    3,
+    2,
+    2
+  ],
+  "conv_stride": [
+    5,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "ctc_loss_reduction": "mean",
+  "ctc_zero_infinity": true,
+  "diversity_loss_weight": 0.1,
+  "do_stable_layer_norm": false,
+  "eos_token_id": 2,
+  "feat_extract_activation": "gelu",
+  "feat_extract_dropout": 0.0,
+  "feat_extract_norm": "group",
+  "feat_proj_dropout": 0.0,
+  "feat_quantizer_dropout": 0.0,
+  "final_dropout": 0.1,
+  "gradient_checkpointing": true,
+  "hidden_act": "gelu",
+  "hidden_dropout": 0.1,
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "layerdrop": 0.05,
+  "mask_feature_length": 10,
+  "mask_feature_prob": 0.0,
+  "mask_time_length": 10,
+  "mask_time_prob": 0.065,
+  "model_type": "wav2vec2",
+  "num_attention_heads": 12,
+  "num_codevector_groups": 2,
+  "num_codevectors_per_group": 320,
+  "num_conv_pos_embedding_groups": 16,
+  "num_conv_pos_embeddings": 128,
+  "num_feat_extract_layers": 7,
+  "num_hidden_layers": 12,
+  "num_negatives": 100,
+  "pad_token_id": 0,
+  "proj_codevector_dim": 256,
+  "transformers_version": "4.8.2",
+  "vocab_size": 32
+}
+
+loading weights file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/20210818-OGI-myST-10h/pytorch_model.bin
+All model checkpoint weights were used when initializing Wav2Vec2ForCTC.
+
+All the weights of Wav2Vec2ForCTC were initialized from the model checkpoint at /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/20210818-OGI-myST-10h.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use Wav2Vec2ForCTC for predictions without further training.
+  0%|          | 0/11786 [00:00<?, ?ex/s]  0%|          | 1/11786 [00:00<3:13:17,  1.02ex/s]  0%|          | 4/11786 [00:01<2:17:57,  1.42ex/s]  0%|          | 8/11786 [00:01<1:38:12,  2.00ex/s]  0%|          | 10/11786 [00:01<1:11:41,  2.74ex/s]  0%|          | 14/11786 [00:01<52:20,  3.75ex/s]    0%|          | 17/11786 [00:01<39:09,  5.01ex/s]  0%|          | 21/11786 [00:01<29:05,  6.74ex/s]  0%|          | 26/11786 [00:01<21:46,  9.00ex/s]  0%|          | 29/11786 [00:02<20:41,  9.47ex/s]  0%|          | 34/11786 [00:02<16:20, 11.99ex/s]  0%|          | 37/11786 [00:02<14:21, 13.64ex/s]  0%|          | 40/11786 [00:02<13:34, 14.42ex/s]  0%|          | 44/11786 [00:02<11:36, 16.86ex/s]  0%|          | 48/11786 [00:02<10:33, 18.52ex/s]  0%|          | 51/11786 [00:03<10:07, 19.31ex/s]  0%|          | 57/11786 [00:03<08:18, 23.53ex/s]  1%|          | 61/11786 [00:03<08:21, 23.36ex/s]  1%|          | 66/11786 [00:03<07:05, 27.57ex/s]  1%|          | 70/11786 [00:03<08:24, 23.20ex/s]  1%|          | 73/11786 [00:03<09:25, 20.70ex/s]  1%|          | 76/11786 [00:03<08:37, 22.64ex/s]  1%|          | 79/11786 [00:04<08:17, 23.52ex/s]  1%|          | 83/11786 [00:04<07:34, 25.75ex/s]  1%|          | 87/11786 [00:04<07:06, 27.41ex/s]  1%|          | 90/11786 [00:04<07:42, 25.29ex/s]  1%|          | 95/11786 [00:04<07:49, 24.91ex/s]  1%|          | 98/11786 [00:04<07:59, 24.39ex/s]  1%|          | 101/11786 [00:04<07:49, 24.90ex/s]  1%|          | 104/11786 [00:05<08:13, 23.68ex/s]  1%|          | 107/11786 [00:05<08:44, 22.25ex/s]  1%|          | 110/11786 [00:05<08:14, 23.63ex/s]  1%|          | 113/11786 [00:05<10:59, 17.70ex/s]  1%|          | 116/11786 [00:05<10:10, 19.13ex/s]  1%|          | 119/11786 [00:05<10:14, 18.98ex/s]  1%|          | 122/11786 [00:06<10:47, 18.01ex/s]  1%|          | 125/11786 [00:06<09:35, 20.25ex/s]  1%|          | 128/11786 [00:06<10:04, 19.28ex/s]  1%|          | 133/11786 [00:06<08:27, 22.98ex/s]  1%|          | 136/11786 [00:06<09:12, 21.10ex/s]  1%|          | 139/11786 [00:06<08:53, 21.85ex/s]  1%|          | 142/11786 [00:07<11:13, 17.28ex/s]  1%|          | 145/11786 [00:07<09:52, 19.66ex/s]  1%|▏         | 148/11786 [00:07<09:38, 20.13ex/s]  1%|▏         | 152/11786 [00:07<08:15, 23.47ex/s]  1%|▏         | 156/11786 [00:07<07:39, 25.31ex/s]  1%|▏         | 161/11786 [00:07<06:54, 28.02ex/s]  1%|▏         | 165/11786 [00:07<08:07, 23.84ex/s]  1%|▏         | 168/11786 [00:07<07:54, 24.46ex/s]  1%|▏         | 172/11786 [00:08<07:04, 27.35ex/s]  1%|▏         | 176/11786 [00:08<07:32, 25.66ex/s]  2%|▏         | 179/11786 [00:08<08:07, 23.81ex/s]  2%|▏         | 182/11786 [00:08<10:05, 19.16ex/s]  2%|▏         | 186/11786 [00:08<08:32, 22.63ex/s]  2%|▏         | 189/11786 [00:08<09:00, 21.47ex/s]  2%|▏         | 192/11786 [00:09<09:29, 20.37ex/s]  2%|▏         | 195/11786 [00:09<10:10, 18.99ex/s]  2%|▏         | 198/11786 [00:09<11:06, 17.38ex/s]  2%|▏         | 201/11786 [00:09<10:04, 19.15ex/s]  2%|▏         | 204/11786 [00:09<11:20, 17.03ex/s]  2%|▏         | 208/11786 [00:09<09:48, 19.66ex/s]  2%|▏         | 211/11786 [00:10<09:45, 19.77ex/s]  2%|▏         | 214/11786 [00:10<09:45, 19.75ex/s]  2%|▏         | 217/11786 [00:10<10:32, 18.29ex/s]  2%|▏         | 221/11786 [00:10<09:41, 19.88ex/s]  2%|▏         | 224/11786 [00:10<08:54, 21.63ex/s]  2%|▏         | 227/11786 [00:10<08:10, 23.55ex/s]  2%|▏         | 232/11786 [00:10<07:53, 24.42ex/s]  2%|▏         | 235/11786 [00:11<10:06, 19.05ex/s]  2%|▏         | 238/11786 [00:11<10:49, 17.77ex/s]  2%|▏         | 242/11786 [00:11<09:23, 20.50ex/s]  2%|▏         | 245/11786 [00:11<09:42, 19.83ex/s]  2%|▏         | 248/11786 [00:11<10:34, 18.18ex/s]  2%|▏         | 250/11786 [00:12<11:03, 17.39ex/s]  2%|▏         | 253/11786 [00:12<10:28, 18.34ex/s]  2%|▏         | 256/11786 [00:12<09:32, 20.13ex/s]  2%|▏         | 259/11786 [00:12<09:43, 19.75ex/s]  2%|▏         | 262/11786 [00:12<10:58, 17.49ex/s]  2%|▏         | 264/11786 [00:12<10:40, 17.98ex/s]  2%|▏         | 267/11786 [00:12<09:34, 20.06ex/s]  2%|▏         | 270/11786 [00:12<08:44, 21.97ex/s]  2%|▏         | 273/11786 [00:13<08:11, 23.43ex/s]  2%|▏         | 276/11786 [00:13<07:43, 24.85ex/s]  2%|▏         | 279/11786 [00:13<10:27, 18.35ex/s]  2%|▏         | 282/11786 [00:13<10:58, 17.48ex/s]  2%|▏         | 284/11786 [00:13<11:19, 16.92ex/s]  2%|▏         | 288/11786 [00:13<10:17, 18.62ex/s]  2%|▏         | 291/11786 [00:14<09:14, 20.72ex/s]  2%|▏         | 294/11786 [00:14<10:12, 18.77ex/s]  3%|▎         | 298/11786 [00:14<09:44, 19.67ex/s]  3%|▎         | 302/11786 [00:14<08:15, 23.17ex/s]  3%|▎         | 305/11786 [00:14<08:07, 23.56ex/s]  3%|▎         | 308/11786 [00:14<08:56, 21.38ex/s]  3%|▎         | 311/11786 [00:14<09:22, 20.41ex/s]  3%|▎         | 314/11786 [00:15<11:08, 17.16ex/s]  3%|▎         | 316/11786 [00:15<11:04, 17.26ex/s]  3%|▎         | 318/11786 [00:15<12:01, 15.89ex/s]  3%|▎         | 321/11786 [00:15<10:51, 17.60ex/s]  3%|▎         | 323/11786 [00:15<11:13, 17.01ex/s]  3%|▎         | 325/11786 [00:15<13:26, 14.21ex/s]  3%|▎         | 327/11786 [00:16<14:41, 13.00ex/s]  3%|▎         | 329/11786 [00:16<16:41, 11.45ex/s]  3%|▎         | 331/11786 [00:16<14:53, 12.81ex/s]  3%|▎         | 332/11786 [00:16<09:35, 19.90ex/s]
+SUCCESS: Data ready for training and evaluation.
+
+------> PREPARING FOR TRAINING & EVALUATION... ----------------------- 
+
+--> Defining data collator...
+SUCCESS: Data collator defined.
+--> Defining evaluation metric...
+SUCCESS: Defined WER evaluation metric.
+--> Loading pre-trained checkpoint...
+SUCCESS: Pre-trained checkpoint loaded.
+
+------> EVALUATING MODEL... ------------------------------------------ 
+
+Traceback (most recent call last):
+  File "run_finetune_kids.py", line 684, in <module>
+    results = data["test"].map(map_to_result)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/datasets/arrow_dataset.py", line 1673, in map
+    desc=desc,
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/datasets/arrow_dataset.py", line 185, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/datasets/fingerprint.py", line 397, in wrapper
+    out = func(self, *args, **kwargs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/datasets/arrow_dataset.py", line 1987, in _map_single
+    example = apply_function_on_filtered_inputs(example, i, offset=offset)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/datasets/arrow_dataset.py", line 1896, in apply_function_on_filtered_inputs
+    function(*fn_args, effective_indices, **fn_kwargs) if with_indices else function(*fn_args, **fn_kwargs)
+  File "run_finetune_kids.py", line 677, in map_to_result
+    logits = model(input_values).logits
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/transformers/models/wav2vec2/modeling_wav2vec2.py", line 1472, in forward
+    return_dict=return_dict,
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/transformers/models/wav2vec2/modeling_wav2vec2.py", line 1062, in forward
+    hidden_states, extract_features = self.feature_projection(extract_features)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/transformers/models/wav2vec2/modeling_wav2vec2.py", line 346, in forward
+    hidden_states = self.projection(norm_hidden_states)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/torch/nn/modules/linear.py", line 94, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/torch/nn/functional.py", line 1753, in linear
+    return torch._C._nn.linear(input, weight, bias)
+RuntimeError: CUDA error: CUBLAS_STATUS_EXECUTION_FAILED when calling `cublasSgemm( handle, opa, opb, m, n, k, &alpha, a, lda, b, ldb, &beta, c, ldc)`
