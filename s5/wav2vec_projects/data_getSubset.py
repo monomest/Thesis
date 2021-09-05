@@ -1,6 +1,6 @@
 # ---------------------------------------------------------
 # data_getSubset.py
-# Purpose: Split training dataset into 10min, 1hr and 
+# Purpose: Split training dataset into 10min, 1hr, 5hr and 
 #          10hr subsets. 
 # Requirements: Ran data_split.py
 # Author: Renee Lu, 2021
@@ -25,38 +25,38 @@ print('Running: ', os.path.abspath(__file__))
 #            Setting file paths
 # ------------------------------------------
 print("\n------> Setting file paths... ----------------------------------------\n")
-#dataset_name = "myST"
-dataset_name = "OGI"
+dataset_name = "myST"
+#dataset_name = "OGI"
 #dataset_name = "myST-OGI"
 print("Dataset name:", dataset_name)
 
 # Filename of training dataframe csv file
-#dataset_filename = "myST_train_15"
-dataset_filename = "OGI_scripted_train_15"
+dataset_filename = "myST_train_15"
+#dataset_filename = "OGI_scripted_train_15"
 #dataset_filename = "myST_OGI_train_15"
 print("dataset_filename:", dataset_filename)
 
 # Where to save 10 minute subset dataframe
-#train_10min_filename = "myST_train_15_10min"
-train_10min_filename = "OGI_scripted_train_15_10min-extra"
+train_10min_filename = "myST_train_15_10min-extra"
+#train_10min_filename = "OGI_scripted_train_15_10min-extra"
 #train_10min_filename = "myST_OGI_train_15_10min"
 print("train_10min_filename:", train_10min_filename)
 
 # Where to save 1 hour subset dataframe
-#train_1h_filename = "myST_train_15_1h"
-train_1h_filename = "OGI_scripted_train_15_1h-extra"
+train_1h_filename = "myST_train_15_1h-extra"
+#train_1h_filename = "OGI_scripted_train_15_1h-extra"
 #train_1h_filename = "myST_OGI_train_15_1h-extra"
 print("train_1h_filename:", train_1h_filename)
 
 # Where to save 5 hour subset dataframe
-#train_5h_filename = "myST_train_15_5h"
-train_5h_filename = "OGI_scripted_train_15_5h"
+train_5h_filename = "myST_train_15_5h"
+#train_5h_filename = "OGI_scripted_train_15_5h"
 #train_5h_filename = "myST_OGI_train_15_5h"
 print("train_5h_filename:", train_5h_filename)
 
 # Where to save 10 hour subset dataframe
-#train_10h_filename = "myST_train_15_10h"
-train_10h_filename = "OGI_scripted_train_15_10h-extra"
+train_10h_filename = "myST_train_15_10h-extra"
+#train_10h_filename = "OGI_scripted_train_15_10h-extra"
 #train_10h_filename = "myST_OGI_train_15_10h"
 print("train_10h_filename:", train_10h_filename)
 
@@ -71,7 +71,7 @@ print("\n------> Setting total hours in train set... ---------------------------
 # myST total hours = 85.08
 # OGI total hours = 37.04
 # myST-OGI total hours = 122.117
-tot_hours = 37.04
+tot_hours = 85.08
 print("total hours:", tot_hours)
 
 # ------------------------------------------

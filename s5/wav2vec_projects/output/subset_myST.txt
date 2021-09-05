@@ -1,0 +1,51 @@
+data_getSubset.py:146: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df['spkr_id'] = df['spkr_id'].astype('str')
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/data_getSubset.py
+
+------> Setting file paths... ----------------------------------------
+
+Dataset name: myST
+dataset_filename: myST_train_15
+train_10min_filename: myST_train_15_10min-extra
+train_1h_filename: myST_train_15_1h-extra
+train_5h_filename: myST_train_15_5h
+train_10h_filename: myST_train_15_10h-extra
+base_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/
+
+------> Setting total hours in train set... ---------------------------
+
+total hours: 85.08
+
+------> Setting seed... ----------------------------------------------
+
+--> Setting seed as: 6
+
+------> Reading in train dataframe... --------------------------------
+
+
+------> Getting 10min, 1hr, 5hr and 10hr training subsets...---------------
+
+--> Speakers in 10 minute training subset: 103
+--> Minutes in subset: 11.294813541666665
+--> Hours in subset: 0.18824689236111108
+--> Speakers in 1 hour training subset: 316
+--> Minutes in subset: 61.34572395833334
+--> Hours in subset: 1.022428732638889
+--> Speakers in 5 hours training subset: 461
+--> Minutes in subset: 301.91418541666667
+--> Hours in subset: 5.031903090277778
+--> Speakers in 10 hour training subset: 501
+--> Minutes in subset: 602.3033
+--> Hours in subset: 10.038388333333334
+SUCCESS: Created 10 minute subset in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_train_15_10min-extra.csv
+Samples:  115
+SUCCESS: Created 1 hour subset in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_train_15_1h-extra.csv
+Samples:  689
+SUCCESS: Created 5 hour subset in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_train_15_5h.csv
+Samples:  3443
+SUCCESS: Created 10 hour subset in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_train_15_10h-extra.csv
+Samples:  6886
