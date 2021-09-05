@@ -1,0 +1,44 @@
+#!/bin/bash
+#!/bin/bash
+
+#PBS -l select=1:ncpus=32:ngpus=4:mem=184gb
+#PBS -l walltime=60:00:00
+#PBS -M renee.lu@unsw.edu.au
+#PBS -m ae
+#PBS -j oe
+#PBS -o /home/z5160268/Output116_wav2vec_Report
+
+# Go into thesis folder
+cd /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis
+
+# Activate virtual environment
+source thesis_env/bin/activate
+
+# 10mins
+
+echo ""$(date)"" 2>&1 | tee -a /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/output/output116.txt
+
+cd /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/
+
+python run_finetune_kids_10min_OGI.py 2>&1 | tee -a /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/output/output116.txt
+
+# 1hr
+
+echo ""$(date)"" 2>&1 | tee -a /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/output/output117.txt
+
+python run_finetune_kids_1h_OGI.py 2>&1 | tee -a /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/output/output117.txt
+
+# 5hr
+
+echo ""$(date)"" 2>&1 | tee -a /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/output/output118.txt
+
+python run_finetune_kids_5h_OGI.py 2>&1 | tee -a /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/output/output118.txt
+
+# 10hr
+
+echo ""$(date)"" 2>&1 | tee -a /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/output/output119.txt
+
+python run_finetune_kids_10h_OGI.py 2>&1 | tee -a /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/output/output119.txt
+
+
+
