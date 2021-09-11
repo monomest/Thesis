@@ -88,7 +88,7 @@ print("training:", training)
 # Experiment ID
 # For 1) naming vocab.json file and
 #     2) naming model output directory
-experiment_id = "20210828-myST-85h"
+experiment_id = "20210908-myST-85h"
 print("experiment_id:", experiment_id)
 
 # DatasetDict Id
@@ -117,8 +117,8 @@ print("train_filename:", train_filename)
 # Evaluation dataset name and filename
 # Dataset name and filename of the csv file containing the evaluation data
 # For generating filepath to file location
-evaluation_name = "OGI"
-evaluation_filename = "OGI_scripted_dev_15_noSpkrCol"
+evaluation_name = "myST"
+evaluation_filename = "myST_dev_15_noSpkrCol"
 print("evaluation_name:", evaluation_name)
 print("evaluation_filename:", evaluation_filename)
 
