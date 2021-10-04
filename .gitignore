@@ -13,9 +13,9 @@ lib64
 pip-selfcheck.json
 pyvenv.cfg
 s5/wav2vec_projects/example-audio
-s5/myST_local/2021*
+s5/myST_local/2021*/
 s5/myST_local/vocab_*
-s5/OGI_local/2021*
+s5/OGI_local/2021*/
 s5/OGI_local/vocab_*
-s5/myST-OGI_local/2021*
+s5/myST-OGI_local/2021*/
 s5/myST-OGI_local/vocab*
