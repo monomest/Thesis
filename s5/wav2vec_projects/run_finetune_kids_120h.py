@@ -88,7 +88,7 @@ print("training:", training)
 # Experiment ID
 # For 1) naming vocab.json file and
 #     2) naming model output directory
-experiment_id = "20210819-OGI-myST-120h"
+experiment_id = "20211004-OGI-myST-120h"
 print("experiment_id:", experiment_id)
 
 # DatasetDict Id
@@ -162,6 +162,10 @@ print("baseline_model:", baseline_model)
 #   True: evaluate baseline model on test set
 #   False: do not evaluate baseline model on test set
 eval_baseline = False
+
+print("\n------> FREEZE FEATURE EXTRACTOR... ----------------------------------\n")
+freeze_feature_extractor = False
+print(freeze_feature_extractor)
 
 print("\n------> MODEL ARGUMENTS... -------------------------------------------\n")
 # For setting model = Wav2Vec2ForCTC.from_pretrained()
@@ -575,7 +579,8 @@ model = Wav2Vec2ForCTC.from_pretrained(
 # as stated in the paper does not need to be fine-tuned anymore. 
 # Thus, we can set the requires_grad to False for all parameters of 
 # the feature extraction part.
-model.freeze_feature_extractor()
+if freeze_feature_extractor:
+    model.freeze_feature_extractor()
 print("SUCCESS: Pre-trained checkpoint loaded.")
 
 # 4) Configure training parameters

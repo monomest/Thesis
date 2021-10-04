@@ -1,0 +1,153 @@
+
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/OGI_splitC.py
+
+------> Setting filepaths... -----------------------------------------
+
+Input files...
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted.csv
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/scripted_all_files.txt
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_spontaneous.csv
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/spontaneous_all_files.txt
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_dev_wav.csv
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_test_wav.csv
+
+------> Reading in input files... ------------------------------------
+
+dev: 8585
+test: 8622
+scripted all: 71999
+spontaneous all: 1101
+
+------> Splitting into ignore, test, dev, finetune, pretrain... ------
+
+Checking if there's any null values in 'set' column:
+0
+0
+Unique values in 'set' column:
+Scripted: ['finetune' 'test' 'dev']
+Spontaneous: ['pretrain' 'test' 'dev']
+Unique values in 'set' column: ['finetune' 'test' 'dev' 'pretrain' 'ignore']
+
+------> Saving to CSV... ----------------------------------------------
+
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_split.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_pretrain.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_finetune.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_dev.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_test.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_ignore.csv
+Done!
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/data_describeC.py
+
+------> Setting filepaths... -----------------------------------------
+
+Input file: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_split.csv
+
+------> Reading in input files... ------------------------------------
+
+
+------> Describing datasets... ---------------------------------------
+
+All data
+# Hours: 74.82740151041666
+Proportion of hours: 1.0
+# Samples: 73100
+Proportion of samples: 1.0
+# Speakers: 1118
+Proportion of speakers: 1.0
+Distribution of audio durations:
+count    59207.000000
+mean         4.549777
+std         11.739115
+min          1.206625
+25%          2.088437
+50%          2.739750
+75%          4.092062
+max        252.006438
+Name: duration, dtype: float64
+Pretrain data
+# Hours: 15.669250642361112
+Proportion of hours: 0.20940524896056703
+# Samples: 562
+Proportion of samples: 0.007688098495212038
+# Speakers: 562
+Proportion of speakers: 0.5026833631484794
+Distribution of audio durations:
+count    562.000000
+mean     100.372424
+std       31.827716
+min       15.000000
+25%       77.927094
+50%       97.075437
+75%      117.594656
+max      225.466813
+Name: duration, dtype: float64
+Finetune data
+# Hours: 37.68668637152778
+Proportion of hours: 0.5036482038773115
+# Samples: 41533
+Proportion of samples: 0.5681668946648427
+# Speakers: 794
+Proportion of speakers: 0.7101967799642218
+Distribution of audio durations:
+count    41533.000000
+mean         3.266609
+std          1.575316
+min          1.206625
+25%          2.088250
+50%          2.739625
+75%          4.091375
+max          9.667375
+Name: duration, dtype: float64
+Development data
+# Hours: 10.916688315972221
+Proportion of hours: 0.14589158644580913
+# Samples: 8544
+Proportion of samples: 0.11688098495212039
+# Speakers: 162
+Proportion of speakers: 0.1449016100178891
+Distribution of audio durations:
+count    8544.000000
+mean        4.599728
+std        12.135375
+min         1.207062
+25%         2.088812
+50%         2.739688
+75%         4.091938
+max       252.006438
+Name: duration, dtype: float64
+Test data
+# Hours: 10.554776180555555
+Proportion of hours: 0.14105496071631235
+# Samples: 8568
+Proportion of samples: 0.1172093023255814
+# Speakers: 162
+Proportion of speakers: 0.1449016100178891
+Distribution of audio durations:
+count    8568.000000
+mean        4.434780
+std        10.807982
+min         1.207188
+25%         2.088547
+50%         2.739688
+75%         4.092187
+max       167.729437
+Name: duration, dtype: float64
+Ignored data
+# Hours: 0.0
+Proportion of hours: 0.0
+# Samples: 13893
+Proportion of samples: 0.1900547195622435
+# Speakers: 0
+Proportion of speakers: 0.0
+Distribution of audio durations:
+count    0.0
+mean     NaN
+std      NaN
+min      NaN
+25%      NaN
+50%      NaN
+75%      NaN
+max      NaN
+Name: duration, dtype: float64
+Done!

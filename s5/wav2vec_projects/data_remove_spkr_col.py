@@ -28,10 +28,10 @@ print("\n------> Setting data paths -------------------------------------------\
 #dataset_name = "myST-OGI"
 dataset_name = "myST"
 #dataset_name = "OGI"
-dataset_filename = "myST_train_15_5h"
+dataset_filename = "myST_data_test"
 
 # Crafting filepath
-dataset_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/"+dataset_name+"_local/"+dataset_filename+".csv"
+dataset_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/"+dataset_name+"_local/THESIS_C/"+dataset_filename+".csv"
 print("--> Dataset name:", dataset_name)
 print("--> Dataset filename:", dataset_filename)
 print("--> Dataset filepath:", dataset_fp)
@@ -41,7 +41,7 @@ print("--> Dataset filepath:", dataset_fp)
 # ------------------------------------------
 
 # Filepath to output csv file
-output_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/"+dataset_name+"_local/"+dataset_filename+"_noSpkrCol.csv"
+output_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/"+dataset_name+"_local/THESIS_C/"+dataset_filename+"_noSpkrCol.csv"
 
 # ------------------------------------------
 #           Reading in dataset

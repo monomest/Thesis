@@ -1,0 +1,220 @@
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/myST_prepC.py
+
+------> Extracting information from files... ------------------------
+
+------> List of unique characters in transcription...
+['\n', ' ', '&', "'", '(', ')', '*', '+', '-', '.', '/', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ':', ';', '<', '>', '?', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '[', ']', '_', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '\xa0', '–', '‘', '’', '…']
+SUCCESS: extracted all data information.
+SUCCESS: Cleaned transcript.
+------> List of unique characters in cleaned transcription...
+[' ', "'", 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+------> Verifying data... --------------------------------------------
+
+Number of transcriptions without corresponding wav files: 46
+Transcriptions without corresponding wav files: ['myst_013021_2013-11-20_14-22-50_EE_1.2_010', 'myst_013021_2013-11-20_14-22-50_EE_1.2_009', 'myst_013021_2013-11-20_14-22-50_EE_1.2_011', 'myst_013021_2013-11-20_14-22-50_EE_1.2_006', 'myst_013021_2013-11-20_14-22-50_EE_1.2_007', 'myst_013021_2013-11-20_14-22-50_EE_1.2_008', 'myst_013056_2013-11-20_12-10-42_EE_1.2_034', 'myst_013056_2013-11-20_12-10-42_EE_1.2_035', 'myst_013056_2013-11-20_12-10-42_EE_1.2_036', 'myst_013056_2013-11-20_12-10-42_EE_1.2_031', 'myst_013056_2013-11-20_12-10-42_EE_1.2_037', 'myst_013056_2013-11-20_12-10-42_EE_1.2_033', 'myst_013056_2013-11-20_12-10-42_EE_1.2_032', 'myst_013027_2013-11-15_08-56-49_EE_1.2_035', 'myst_013026_2013-11-15_08-55-49_EE_1.2_032', 'myst_013026_2013-11-15_08-55-49_EE_1.2_007', 'myst_013026_2013-11-15_08-55-49_EE_1.2_016', 'myst_013026_2013-11-15_08-55-49_EE_1.2_018', 'myst_013026_2013-11-15_08-55-49_EE_1.2_013', 'myst_013026_2013-11-15_08-55-49_EE_1.2_025', 'myst_013026_2013-11-15_08-55-49_EE_1.2_027', 'myst_013026_2013-11-15_08-55-49_EE_1.2_021', 'myst_013026_2013-11-15_08-55-49_EE_1.2_024', 'myst_013026_2013-11-15_08-55-49_EE_1.2_014', 'myst_013026_2013-11-15_08-55-49_EE_1.2_031', 'myst_013026_2013-11-15_08-55-49_EE_1.2_026', 'myst_013026_2013-11-15_08-55-49_EE_1.2_011', 'myst_013026_2013-11-15_08-55-49_EE_1.2_012', 'myst_013026_2013-11-15_08-55-49_EE_1.2_015', 'myst_013026_2013-11-15_08-55-49_EE_1.2_030', 'myst_013026_2013-11-15_08-55-49_EE_1.2_023', 'myst_013026_2013-11-15_08-55-49_EE_1.2_020', 'myst_013026_2013-11-15_08-55-49_EE_1.2_010', 'myst_013026_2013-11-15_08-55-49_EE_1.2_028', 'myst_013026_2013-11-15_08-55-49_EE_1.2_017', 'myst_013026_2013-11-15_08-55-49_EE_1.2_029', 'myst_013026_2013-11-15_08-55-49_EE_1.2_009', 'myst_013026_2013-11-15_08-55-49_EE_1.2_008', 'myst_013026_2013-11-15_08-55-49_EE_1.2_022', 'myst_013026_2013-11-15_08-55-49_EE_1.2_006', 'myst_013026_2013-11-15_08-55-49_EE_1.2_019', 'myst_012015_2013-12-18_09-45-30_MX_3.2_024', 'myst_012015_2013-12-18_09-45-30_MX_3.2_025', 'myst_012015_2013-12-18_09-45-30_MX_3.2_022', 'myst_012015_2013-12-18_09-45-30_MX_3.2_026', 'myst_012015_2013-12-18_09-45-30_MX_3.2_023']
+Total Samples (filepath): 244069
+Total Samples (record_id_wav): 244069
+Transcribed utterances (record_id_trans) 103429
+Transcribed utterances (trans_og) 103429
+VERIFICATION SUCCESS: recording ID's are unique.
+VERIFICATION SUCCESS: recording ID's are unique.
+
+------> Putting data into dataframe... -------------------------------
+
+
+------> Flagging rows where wav file does not exist
+
+has_audio_file = False
+
+------> Flagging rows where file is transcribed but has no speech
+
+has_speech_in_audio = False
+
+------> Getting duration in seconds of each wav file
+
+duration
+
+------> Getting speaker id of each file
+
+spkr_id
+
+------> Checking if recording is usable or not
+
+usable
+
+------> Saving dataframe to csv file... ------------------------------
+
+SUCCESS: Saved MyST dataframe to csv file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/THESIS_C/myST_data.csv
+Dataframe length: 244115
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/myST_splitC.py
+
+------> Setting duration limit... ------------------------------------ 
+
+--> Fine-tuning files limited to less than or equal to 15 seconds.
+
+------> Setting filepaths... -----------------------------------------
+
+Input files...
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/THESIS_C/myST_data.csv
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/THESIS_C/myST_dev_wav.csv
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/THESIS_C/myST_test_wav.csv
+
+------> Reading in input files... ------------------------------------
+
+
+------> Splitting into ignore, test, dev, finetune, pretrain... ------
+
+Checking if there's any null values in 'set' column:
+False
+
+------> Saving to CSV... ----------------------------------------------
+
+Done!
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/myST_splitC.py
+
+------> Setting duration limit... ------------------------------------ 
+
+--> Fine-tuning files limited to less than or equal to 15 seconds.
+
+------> Setting filepaths... -----------------------------------------
+
+Input files...
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/THESIS_C/myST_data.csv
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/THESIS_C/myST_dev_wav.csv
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/THESIS_C/myST_test_wav.csv
+
+------> Reading in input files... ------------------------------------
+
+
+------> Splitting into ignore, test, dev, finetune, pretrain... ------
+
+Checking if there's any null values in 'set' column:
+False
+Unique values in 'set' column:
+['finetune' 'pretrain' 'ignore' 'dev' 'test']
+
+------> Saving to CSV... ----------------------------------------------
+
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/THESIS_C/myST_data_split.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/THESIS_C/myST_data_pretrain.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/THESIS_C/myST_data_finetune.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/THESIS_C/myST_data_dev.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/THESIS_C/myST_data_test.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/THESIS_C/myST_data_ignore.csv
+Done!
+
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/myST_describeC.py
+
+------> Setting filepaths... -----------------------------------------
+
+Input file: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/THESIS_C/myST_data_split.csv
+
+------> Reading in input files... ------------------------------------
+
+
+------> Describing datasets... ---------------------------------------
+
+All data
+# Hours: 499.2768569097223
+Proportion of hours: 1.0
+# Samples: 244115
+Proportion of samples: 1.0
+# Speakers: 1372
+Proportion of speakers: 1.0
+Distribution of audio durations:
+count    244069.000000
+mean          7.364297
+std           8.708068
+min           0.000000
+25%           2.031250
+50%           4.637562
+75%           9.858187
+max        1348.690000
+Name: duration, dtype: float64
+Pretrain data
+# Hours: 369.50946916666663
+Proportion of hours: 0.7400893192881964
+# Samples: 154439
+Proportion of samples: 0.6326485467914712
+# Speakers: 1293
+Proportion of speakers: 0.9424198250728864
+Distribution of audio durations:
+count    154439.000000
+mean          8.613330
+std          10.202782
+min           0.000000
+25%           2.199531
+50%           5.146625
+75%          11.981125
+max        1348.690000
+Name: duration, dtype: float64
+Finetune data
+# Hours: 111.71613784722223
+Proportion of hours: 0.22375589074704977
+# Samples: 76280
+Proportion of samples: 0.31247567744710486
+# Speakers: 676
+Proportion of speakers: 0.49271137026239065
+Distribution of audio durations:
+count    76280.000000
+mean         5.272392
+std          3.878097
+min          0.031250
+25%          2.003000
+50%          4.229188
+75%          7.931672
+max         15.000000
+Name: duration, dtype: float64
+Development data
+# Hours: 7.281055607638889
+Proportion of hours: 0.014583202699810751
+# Samples: 3452
+Proportion of samples: 0.014140876226368719
+# Speakers: 30
+Proportion of speakers: 0.021865889212827987
+Distribution of audio durations:
+count    3452.000000
+mean        7.593221
+std         7.683472
+min         0.090000
+25%         2.081344
+50%         4.822500
+75%        10.782000
+max        58.533000
+Name: duration, dtype: float64
+Test data
+# Hours: 7.715254791666667
+Proportion of hours: 0.01545285883952301
+# Samples: 4022
+Proportion of samples: 0.0164758413043033
+# Speakers: 30
+Proportion of speakers: 0.021865889212827987
+Distribution of audio durations:
+count    4022.000000
+mean        6.905748
+std         7.881625
+min         0.156250
+25%         1.992266
+50%         4.326844
+75%         9.308797
+max       204.831687
+Name: duration, dtype: float64
+Ignored data
+# Hours: 3.0549394965277776
+Proportion of hours: 0.006118728425419812
+# Samples: 5922
+Proportion of samples: 0.0242590582307519
+# Speakers: 344
+Proportion of speakers: 0.25072886297376096
+Distribution of audio durations:
+count    5876.000000
+mean        1.871644
+std         3.632466
+min         0.000000
+25%         0.062500
+50%         0.562500
+75%         1.969797
+max        48.641000
+Name: duration, dtype: float64
+Done!

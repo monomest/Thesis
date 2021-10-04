@@ -1,0 +1,110 @@
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/myST_getDevTest.py
+
+------> Extracting information from files... ------------------------
+
+SUCCESS: extracted information from wav.scp.
+
+------> Verifying data... --------------------------------------------
+
+VERIFICATION SUCCESS: recording ID's are unique.
+
+------> Putting data into dataframe... -------------------------------
+
+--> Getting duration in seconds for each audio file...
+--> Getting speaker id for each wav file...
+
+------> Saving dataframe to csv file... ------------------------------
+
+SUCCESS: Saved MyST dataframe to csv file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/THESIS_C/myST_dev_wav.csv
+Dataframe length: 3454
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/myST_getDevTest.py
+
+------> Extracting information from files... ------------------------
+
+SUCCESS: extracted information from wav.scp.
+
+------> Verifying data... --------------------------------------------
+
+VERIFICATION SUCCESS: recording ID's are unique.
+
+------> Putting data into dataframe... -------------------------------
+
+--> Getting duration in seconds for each audio file...
+--> Getting speaker id for each wav file...
+
+------> Saving dataframe to csv file... ------------------------------
+
+SUCCESS: Saved MyST dataframe to csv file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/THESIS_C/myST_test_wav.csv
+Dataframe length: 4040
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/data_checkDevTest.py
+
+------> Reading in csv files... --------------------------------------
+
+Traceback (most recent call last):
+  File "data_checkDevTest.py", line 55, in <module>
+    m_dev = readCSV(m_dev_fp)
+  File "data_checkDevTest.py", line 51, in readCSV
+    df = pd.read_csv(fp, dtype=str)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/pandas/io/parsers.py", line 688, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/pandas/io/parsers.py", line 454, in _read
+    parser = TextFileReader(fp_or_buf, **kwds)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/pandas/io/parsers.py", line 948, in __init__
+    self._make_engine(self.engine)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/pandas/io/parsers.py", line 1180, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/pandas/io/parsers.py", line 2010, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 382, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 674, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: [Errno 2] No such file or directory: '/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/output/myST_dev_wav.csv'
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/data_checkDevTest.py
+
+------> Reading in csv files... --------------------------------------
+
+
+------> Getting list of unique speakers... ---------------------------
+
+
+------> Getting list of dev and test speakers that appear in training ...
+
+
+------> Saving dataframe to csv file... ------------------------------
+
+Traceback (most recent call last):
+  File "data_checkDevTest.py", line 89, in <module>
+    print("SUCCESS: Saved dataframe to csv file", data_fp)
+NameError: name 'data_fp' is not defined
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/data_checkDevTest.py
+
+------> Reading in csv files... --------------------------------------
+
+
+------> Getting list of unique speakers... ---------------------------
+
+
+------> Getting list of dev and test speakers that appear in training ...
+
+
+------> Saving dataframe to csv file... ------------------------------
+
+SUCCESS: Saved dataframe to csv file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/THESIS_C/myST_devtest_in_train.csv
+Traceback (most recent call last):
+  File "data_checkDevTest.py", line 90, in <module>
+    print("Dataframe length:", len(data))
+NameError: name 'data' is not defined
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/data_checkDevTest.py
+
+------> Reading in csv files... --------------------------------------
+
+
+------> Getting list of unique speakers... ---------------------------
+
+
+------> Getting list of dev and test speakers that appear in training ...
+
+
+------> Saving dataframe to csv file... ------------------------------
+
+SUCCESS: Saved dataframe to csv file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/THESIS_C/myST_devtest_in_train.csv
+Dataframe length: 6053

@@ -60,7 +60,7 @@ data_shorten_fp = base_fp + shorten_filename + ".csv"
 #      Keeping x seconds or less
 # ------------------------------------------
 print("\n------> Keeping only short audio files... ---------------------------- \n")
-# Remove all rows with duration > 8 seconds
+# Remove all rows with duration > limit seconds
 data_shorten_df = data_df[data_df.duration < limit]
 print("data_shorten:\n")
 print(data_shorten_df.head(5))

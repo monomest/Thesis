@@ -1,0 +1,8 @@
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/data_describe.py
+Describing all valid, transcribed myST data.
+File: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_dataframe.csv
+------> /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/myST_dataframe.csv ------
+# Hours: 223.06726954861108
+# Samples: 98094
+# Speakers: 737
+SUCCESS: Data set described.

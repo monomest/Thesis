@@ -1,0 +1,53 @@
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/data_getDevTest.py
+
+------> Extracting information from files... ------------------------
+
+SUCCESS: extracted information from wav.scp.
+
+------> Verifying data... --------------------------------------------
+
+VERIFICATION SUCCESS: recording ID's are unique.
+
+------> Putting data into dataframe... -------------------------------
+
+--> Getting duration in seconds for each audio file...
+--> Getting speaker id for each wav file...
+
+------> Saving dataframe to csv file... ------------------------------
+
+SUCCESS: Saved dataframe to csv file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_dev_wav.csv
+Dataframe length: 8585
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/data_getDevTest.py
+
+------> Extracting information from files... ------------------------
+
+SUCCESS: extracted information from wav.scp.
+
+------> Verifying data... --------------------------------------------
+
+VERIFICATION SUCCESS: recording ID's are unique.
+
+------> Putting data into dataframe... -------------------------------
+
+--> Getting duration in seconds for each audio file...
+--> Getting speaker id for each wav file...
+
+------> Saving dataframe to csv file... ------------------------------
+
+SUCCESS: Saved dataframe to csv file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_test_wav.csv
+Dataframe length: 8622
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/data_checkDevTest.py
+
+------> Reading in csv files... --------------------------------------
+
+
+------> Getting list of unique speakers... ---------------------------
+
+
+------> Getting list of dev and test speakers that appear in training ...
+
+
+------> Saving dataframe to csv file... ------------------------------
+
+SUCCESS: Saved dataframe to csv file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_devtest_in_train.csv
+Dataframe length: 12226
