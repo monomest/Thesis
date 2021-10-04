@@ -88,7 +88,8 @@ print("training:", training)
 # Experiment ID
 # For 1) naming vocab.json file and
 #     2) naming model output directory
-experiment_id = "20211004-eval-baseline"
+#     3) naming results csv file
+experiment_id = "20211004-eval-baseline-test"
 print("experiment_id:", experiment_id)
 
 # DatasetDict Id
@@ -118,7 +119,7 @@ print("train_filename:", train_filename)
 # Dataset name and filename of the csv file containing the evaluation data
 # For generating filepath to file location
 evaluation_name = "myST"
-evaluation_filename = "THESIS_C/myST_data_dev_noSpkrCol"
+evaluation_filename = "THESIS_C/myST_data_test_noSpkrCol"
 print("evaluation_name:", evaluation_name)
 print("evaluation_filename:", evaluation_filename)
 
@@ -688,10 +689,10 @@ def map_to_result(batch):
 
 results = data["test"].map(map_to_result)
 # Save results to csv
-#datasets.Dataset.to_csv()
-#results_df = pd.DataFrame.from_dict(results, orient="index")
-#results_df.to_csv(finetuned_results_fp)
-#print("Saved results to:", finetuned_results_fp)
+results_df = results.to_pandas()
+results_df = results_df.drop(columns=['speech', 'sampling_rate'])
+results_df.to_csv(finetuned_results_fp)
+print("Saved results to:", finetuned_results_fp)
 
 # Getting the WER
 print("--> Getting fine-tuned test results...")
@@ -732,10 +733,10 @@ if eval_baseline:
 
     results = data["test"].map(map_to_result)
     # Saving results to csv
-    #datasets.Dataset.to_csv()
-    #results_df = pd.DataFrame.from_dict(results, orient="index")
-    #results_df.to_csv(baseline_results_fp)
-    #print("Saved results to:", baseline_results_fp)
+    results_df = results.to_pandas()
+    results_df = results_df.drop(columns=['speech', 'sampling_rate'])
+    results_df.to_csv(baseline_results_fp)
+    print("Saved results to:", baseline_results_fp)
     # Getting the WER
     print("--> Getting baseline test results...")
     print("Baseline Test WER: {:.3f}".format(wer_metric.compute(predictions=results["pred_str"], 

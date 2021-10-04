@@ -88,6 +88,7 @@ print("training:", training)
 # Experiment ID
 # For 1) naming vocab.json file and
 #     2) naming model output directory
+#     3) naming results file
 experiment_id = "20211004-base-myST"
 print("experiment_id:", experiment_id)
 
@@ -177,13 +178,13 @@ set_feat_proj_dropout = 0.0                 # Default = 0.1
 print("feat_proj_dropout:", set_feat_proj_dropout)
 set_layerdrop = 0.1                         # Default = 0.1
 print("layerdrop:", set_layerdrop)
-set_mask_time_prob = 0.075                  # Default = 0.05
+set_mask_time_prob = 0.05                   # Default = 0.05
 print("mask_time_prob:", set_mask_time_prob)
 set_mask_time_length = 10                   # Default = 10
 print("mask_time_length:", set_mask_time_length)
 set_ctc_loss_reduction = "mean"             # Default = "sum"
 print("ctc_loss_reduction:", set_ctc_loss_reduction)
-set_ctc_zero_infinity = False               # Default = False
+set_ctc_zero_infinity = True               # Default = False
 print("ctc_zero_infinity:", set_ctc_zero_infinity)
 set_gradient_checkpointing = True           # Default = False
 print("gradient_checkpointing:", set_gradient_checkpointing)
@@ -197,7 +198,7 @@ set_per_device_train_batch_size = 8         # Default = 8
 print("per_device_train_batch_size:", set_per_device_train_batch_size)
 set_gradient_accumulation_steps = 1         # Default = 1
 print("gradient_accumulation_steps:", set_gradient_accumulation_steps)
-set_learning_rate = 0.00005                 # Default = 0.00005
+set_learning_rate = 0.00003                 # Default = 0.00005
 print("learning_rate:", set_learning_rate)
 set_weight_decay = 0.01                     # Default = 0
 print("weight_decay:", set_weight_decay)
@@ -207,9 +208,9 @@ set_adam_beta2 = 0.98                       # Default = 0.999
 print("adam_beta2:", set_adam_beta2)
 set_adam_epsilon = 0.00000001               # Default = 0.00000001
 print("adam_epsilon:", set_adam_epsilon)
-set_num_train_epochs = 100                  # Default = 3.0
+set_num_train_epochs = 21                  # Default = 3.0
 print("num_train_epochs:", set_num_train_epochs)
-set_max_steps = -1                          # Default = -1, overrides epochs
+set_max_steps = 50000                          # Default = -1, overrides epochs
 print("max_steps:", set_max_steps)
 set_lr_scheduler_type = "linear"            # Default = "linear"
 print("lr_scheduler_type:", set_lr_scheduler_type )
@@ -217,17 +218,17 @@ set_warmup_ratio = 0.1                      # Default = 0.0
 print("warmup_ratio:", set_warmup_ratio)
 set_logging_strategy = "steps"              # Default = "steps"
 print("logging_strategy:", set_logging_strategy)
-set_logging_steps = 25                      # Default = 500
+set_logging_steps = 1000                      # Default = 500
 print("logging_steps:", set_logging_steps)
 set_save_strategy = "steps"                 # Default = "steps"
 print("save_strategy:", set_save_strategy)
-set_save_steps = 25                         # Default = 500
+set_save_steps = 1000                         # Default = 500
 print("save_steps:", set_save_steps)
-set_save_total_limit = 50                   # Optional                 
+set_save_total_limit = 55                   # Optional                 
 print("save_total_limit:", set_save_total_limit)
 set_fp16 = True                             # Default = False
 print("fp16:", set_fp16)
-set_eval_steps = 25                         # Optional
+set_eval_steps = 1000                         # Optional
 print("eval_steps:", set_eval_steps)
 set_load_best_model_at_end = True           # Default = False
 print("load_best_model_at_end:", set_load_best_model_at_end)
@@ -689,10 +690,10 @@ def map_to_result(batch):
 
 results = data["test"].map(map_to_result)
 # Save results to csv
-#datasets.Dataset.to_csv()
-#results_df = pd.DataFrame.from_dict(results, orient="index")
-#results_df.to_csv(finetuned_results_fp)
-#print("Saved results to:", finetuned_results_fp)
+results_df = results.to_pandas()
+results_df = results_df.drop(columns=['speech', 'sampling_rate'])
+results_df.to_csv(baseline_results_fp)
+print("Saved results to:", finetuned_results_fp)
 
 # Getting the WER
 print("--> Getting fine-tuned test results...")
@@ -733,10 +734,10 @@ if eval_baseline:
 
     results = data["test"].map(map_to_result)
     # Saving results to csv
-    #datasets.Dataset.to_csv()
-    #results_df = pd.DataFrame.from_dict(results, orient="index")
-    #results_df.to_csv(baseline_results_fp)
-    #print("Saved results to:", baseline_results_fp)
+    results_df = results.to_pandas()
+    results_df = results_df.drop(columns=['speech', 'sampling_rate'])
+    results_df.to_csv(baseline_results_fp)
+    print("Saved results to:", baseline_results_fp)
     # Getting the WER
     print("--> Getting baseline test results...")
     print("Baseline Test WER: {:.3f}".format(wer_metric.compute(predictions=results["pred_str"], 
