@@ -28,7 +28,7 @@ print("\n------> Setting data paths -------------------------------------------\
 #dataset_name = "myST-OGI"
 dataset_name = "myST"
 #dataset_name = "OGI"
-dataset_filename = "myST_data_test"
+dataset_filename = "myST_data_test_unk"
 
 # Crafting filepath
 dataset_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/"+dataset_name+"_local/THESIS_C/"+dataset_filename+".csv"
