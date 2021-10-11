@@ -1,0 +1,234 @@
+recordingID,filepath,transcription_original,transcription_clean,has_audio_file,has_speech_in_audio,usable,duration,set
+2070112_en_6_8_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_101/2070112_en_6_8_101.wav,@sil ,,True,False,False,4.968,ignore
+2070116_en_6_8_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_101/2070116_en_6_8_101.wav,@sil ,,True,False,False,10.008,ignore
+2030105_en_6_8_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_101/2030105_en_6_8_101.wav,@ns ,,True,False,False,10.0571875,ignore
+2070113_en_6_8_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_101/2070113_en_6_8_101.wav,@sil ,,True,False,False,10.008,ignore
+2060101_en_6_8_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_101/2060101_en_6_8_101.wav, <unk-de> ,<unk>,True,False,False,10.008,ignore
+2080107_en_6_8_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_101/2080107_en_6_8_101.wav, @voice ,<unk>,True,False,False,9.9526875,ignore
+2080317_en_5_7_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_103/2080317_en_5_7_103.wav,@sil ,,True,False,False,6.97475,ignore
+2070103_en_5_7_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_103/2070103_en_5_7_103.wav,@ns ,,True,False,False,7.008,ignore
+2020401_en_5_7_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_103/2020401_en_5_7_103.wav,@voice ,<unk>,True,False,False,7.008,ignore
+2010312_en_5_7_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_103/2010312_en_5_7_103.wav,@sil ,,True,False,False,7.008,ignore
+2050109_en_5_7_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_103/2050109_en_5_7_103.wav,@voice ,<unk>,True,False,False,7.104,ignore
+2070116_en_5_7_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_103/2070116_en_5_7_103.wav,@sil ,,True,False,False,7.008,ignore
+2020120_en_5_7_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_103/2020120_en_5_7_103.wav,@bkg ,,True,False,False,6.97475,ignore
+2010211_en_5_7_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_103/2010211_en_5_7_103.wav, <unk-it> ,<unk>,True,False,False,7.008,ignore
+2010309_en_5_7_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_103/2010309_en_5_7_103.wav,@voice ,<unk>,True,False,False,7.008,ignore
+2020421_en_5_7_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_103/2020421_en_5_7_103.wav,@voice ,<unk>,True,False,False,6.97475,ignore
+2070109_en_5_7_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_103/2070109_en_5_7_103.wav,@sil ,,True,False,False,7.008,ignore
+2070113_en_5_7_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_103/2070113_en_5_7_103.wav,@sil ,,True,False,False,7.008,ignore
+2030108_en_5_7_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_103/2030108_en_5_7_103.wav,@bkg ,,True,False,False,6.97475,ignore
+2070122_en_5_7_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_103/2070122_en_5_7_103.wav,@sil ,,True,False,False,7.008,ignore
+2030113_en_5_7_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_103/2030113_en_5_7_103.wav,@bkg ,,True,False,False,7.008,ignore
+2010313_en_5_7_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_103/2010313_en_5_7_103.wav,@sil ,,True,False,False,7.008,ignore
+2030104_en_5_7_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_103/2030104_en_5_7_103.wav,@bkg ,,True,False,False,7.008,ignore
+2080215_en_5_7_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_103/2080215_en_5_7_103.wav,@sil ,,True,False,False,6.97475,ignore
+2050119_en_5_7_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_103/2050119_en_5_7_103.wav,@sil ,,True,False,False,7.008,ignore
+2020103_en_5_7_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_103/2020103_en_5_7_103.wav,@voice ,<unk>,True,False,False,7.008,ignore
+2020116_en_5_7_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_103/2020116_en_5_7_103.wav, <unk-it> ,<unk>,True,False,False,6.97475,ignore
+2020413_en_5_7_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_103/2020413_en_5_7_103.wav,@voice ,<unk>,True,False,False,7.008,ignore
+2060103_en_5_7_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_103/2060103_en_5_7_103.wav,@ns ,,True,False,False,7.008,ignore
+1040116_en_22_20_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_22_20_101/1040116_en_22_20_101.wav,@bkg <unk-it> @laugh ,<unk>,True,False,False,15.0726875,ignore
+1030102_en_22_20_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_22_20_101/1030102_en_22_20_101.wav,@ns ,,True,False,False,15.0726875,ignore
+1010108_en_22_20_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_22_20_101/1010108_en_22_20_101.wav,@bkg <unk-it> @ns ,<unk>,True,False,False,14.9681875,ignore
+1050118_en_22_20_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_22_20_101/1050118_en_22_20_101.wav,@sil ,,True,False,False,14.9681875,ignore
+1010110_en_22_20_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_22_20_101/1010110_en_22_20_101.wav,@sil ,,True,False,False,14.9681875,ignore
+3020112_en_35_28_105,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_35_28_105/3020112_en_35_28_105.wav,@sil ,,True,False,False,19.992,ignore
+3010110_en_35_28_105,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_35_28_105/3010110_en_35_28_105.wav,@sil ,,True,False,False,19.9836875,ignore
+3020112_en_35_28_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_35_28_101/3020112_en_35_28_101.wav,@sil ,,True,False,False,20.064,ignore
+3030109_en_35_28_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_35_28_101/3030109_en_35_28_101.wav,@voice ,<unk>,True,False,False,19.992,ignore
+2070116_en_6_8_105,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_105/2070116_en_6_8_105.wav,@sil ,,True,False,False,10.008,ignore
+2060104_en_6_8_105,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_105/2060104_en_6_8_105.wav,@sil ,,True,False,False,10.008,ignore
+2070113_en_6_8_105,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_105/2070113_en_6_8_105.wav,@sil ,,True,False,False,10.08,ignore
+2040125_en_6_8_105,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_105/2040125_en_6_8_105.wav,@voice ,<unk>,True,False,False,10.08,ignore
+2020116_en_6_8_105,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_105/2020116_en_6_8_105.wav,@voice ,<unk>,True,False,False,9.9526875,ignore
+2080320_en_6_8_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_103/2080320_en_6_8_103.wav, @bkg ,,True,False,False,10.0571875,ignore
+2080317_en_6_8_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_103/2080317_en_6_8_103.wav,@bkg ,,True,False,False,10.0571875,ignore
+2070112_en_6_8_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_103/2070112_en_6_8_103.wav,@sil ,,True,False,False,5.04,ignore
+2070116_en_6_8_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_103/2070116_en_6_8_103.wav,@sil ,,True,False,False,10.008,ignore
+2070113_en_6_8_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_103/2070113_en_6_8_103.wav,@sil ,,True,False,False,10.008,ignore
+2040103_en_6_8_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_103/2040103_en_6_8_103.wav,@sil ,,True,False,False,10.008,ignore
+1040119_en_22_20_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_22_20_103/1040119_en_22_20_103.wav,@sil ,,True,False,False,14.9681875,ignore
+1030110_en_22_20_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_22_20_103/1030110_en_22_20_103.wav, <unk-it> ,<unk>,True,False,False,15.0726875,ignore
+3010124_en_35_28_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_35_28_103/3010124_en_35_28_103.wav,@ns @voice ,<unk>,True,False,False,19.9836875,ignore
+3020112_en_35_28_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_35_28_103/3020112_en_35_28_103.wav,@sil ,,True,False,False,19.992,ignore
+3050107_en_35_28_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_35_28_103/3050107_en_35_28_103.wav,@sil @ns ,,True,False,False,20.0881875,ignore
+3030109_en_35_28_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_35_28_103/3030109_en_35_28_103.wav,@bkg ,,True,False,False,20.064,ignore
+1040121_en_21_19_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_21_19_100/1040121_en_21_19_100.wav, <unk-it> ,<unk>,True,False,False,6.5045,ignore
+1010110_en_21_19_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_21_19_100/1010110_en_21_19_100.wav,@sil ,,True,False,False,33.724125,ignore
+1030105_en_21_19_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_21_19_100/1030105_en_21_19_100.wav,@ns ,,True,False,False,0.209,ignore
+1030110_en_21_19_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_21_19_100/1030110_en_21_19_100.wav,@voice ,<unk>,True,False,False,3.4481875,ignore
+2020120_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_101/2020120_en_5_7_101.wav,@voice @cough ,<unk>,True,False,False,6.97475,ignore
+2020111_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_101/2020111_en_5_7_101.wav,@bkg @voice ,<unk>,True,False,False,7.008,ignore
+2080104_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_101/2080104_en_5_7_101.wav,@ns ,,True,False,False,6.97475,ignore
+2080302_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_101/2080302_en_5_7_101.wav,@voice ,<unk>,True,False,False,6.97475,ignore
+2080122_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_101/2080122_en_5_7_101.wav,@sil ,,True,False,False,6.97475,ignore
+2040113_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_101/2040113_en_5_7_101.wav,@bkg ,,True,False,False,7.008,ignore
+2070109_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_101/2070109_en_5_7_101.wav,@sil ,,True,False,False,7.008,ignore
+2070118_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_101/2070118_en_5_7_101.wav,@ns ,,True,False,False,7.008,ignore
+2040120_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_101/2040120_en_5_7_101.wav,@bkg ,,True,False,False,7.008,ignore
+2010123_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_101/2010123_en_5_7_101.wav,@sil ,,True,False,False,7.008,ignore
+2020320_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_101/2020320_en_5_7_101.wav,@voice ,<unk>,True,False,False,7.008,ignore
+2010222_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_101/2010222_en_5_7_101.wav,@ns ,,True,False,False,7.008,ignore
+2010303_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_101/2010303_en_5_7_101.wav,@ns ,,True,False,False,7.008,ignore
+2010312_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_101/2010312_en_5_7_101.wav,@sil ,,True,False,False,7.008,ignore
+2020113_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_101/2020113_en_5_7_101.wav,@sil ,,True,False,False,7.008,ignore
+2050109_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_101/2050109_en_5_7_101.wav,@voice ,<unk>,True,False,False,7.008,ignore
+2080223_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_101/2080223_en_5_7_101.wav,@ns ,,True,False,False,6.97475,ignore
+2070116_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_101/2070116_en_5_7_101.wav,@sil ,,True,False,False,7.008,ignore
+2060104_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_101/2060104_en_5_7_101.wav,@sil ,,True,False,False,6.936,ignore
+2040101_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_101/2040101_en_5_7_101.wav,@bkg ,,True,False,False,7.008,ignore
+2050117_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_101/2050117_en_5_7_101.wav,@sil ,,True,False,False,7.0791875,ignore
+2080213_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_101/2080213_en_5_7_101.wav,@sil @voice ,<unk>,True,False,False,6.97475,ignore
+2060112_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_101/2060112_en_5_7_101.wav,@sil ,,True,False,False,7.008,ignore
+2060103_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_101/2060103_en_5_7_101.wav,@sil ,,True,False,False,7.008,ignore
+2080307_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_101/2080307_en_5_7_101.wav,@sil ,,True,False,False,7.0791875,ignore
+2010313_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_101/2010313_en_5_7_101.wav,@sil ,,True,False,False,7.008,ignore
+2030104_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_101/2030104_en_5_7_101.wav,@voice @bkg ,<unk>,True,False,False,7.008,ignore
+2060101_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_101/2060101_en_5_7_101.wav,@sil ,,True,False,False,7.008,ignore
+2010322_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_101/2010322_en_5_7_101.wav,@sil ,,True,False,False,7.008,ignore
+2080215_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_101/2080215_en_5_7_101.wav,@sil ,,True,False,False,7.0791875,ignore
+2050119_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_101/2050119_en_5_7_101.wav,@sil ,,True,False,False,7.104,ignore
+2080107_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_101/2080107_en_5_7_101.wav, <unk-it> @laugh ,<unk>,True,False,False,6.97475,ignore
+2060109_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_101/2060109_en_5_7_101.wav,@ns ,,True,False,False,7.008,ignore
+2070113_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_101/2070113_en_5_7_101.wav,@sil ,,True,False,False,7.008,ignore
+2080310_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_101/2080310_en_5_7_101.wav,@sil ,,True,False,False,6.97475,ignore
+2030108_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_101/2030108_en_5_7_101.wav,@bkg ,,True,False,False,6.97475,ignore
+2040125_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_101/2040125_en_5_7_101.wav,@bkg ,,True,False,False,7.008,ignore
+2010120_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_101/2010120_en_5_7_101.wav, <unk-it> @ns ,<unk>,True,False,False,7.008,ignore
+2040125_en_6_8_102,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_102/2040125_en_6_8_102.wav,@voice ,<unk>,True,False,False,10.008,ignore
+2070122_en_6_8_102,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_102/2070122_en_6_8_102.wav,@sil ,,True,False,False,10.008,ignore
+2080107_en_6_8_102,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_102/2080107_en_6_8_102.wav,@bkg <unk-it> ,<unk>,True,False,False,9.9526875,ignore
+2080317_en_6_8_102,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_102/2080317_en_6_8_102.wav,@sil ,,True,False,False,9.9526875,ignore
+2040120_en_6_8_102,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_102/2040120_en_6_8_102.wav,@sil ,,True,False,False,10.008,ignore
+2020122_en_6_8_102,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_102/2020122_en_6_8_102.wav,@ns ,,True,False,False,10.08,ignore
+2070118_en_6_8_102,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_102/2070118_en_6_8_102.wav,@bkg ,,True,False,False,10.008,ignore
+2020116_en_5_7_104,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_104/2020116_en_5_7_104.wav,@sil ,,True,False,False,7.0791875,ignore
+2010117_en_5_7_104,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_104/2010117_en_5_7_104.wav,@bkg @sil ,,True,False,False,7.008,ignore
+2020206_en_5_7_104,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_104/2020206_en_5_7_104.wav,@sil ,,True,False,False,7.008,ignore
+2020305_en_5_7_104,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_104/2020305_en_5_7_104.wav,@voice ,<unk>,True,False,False,7.008,ignore
+2020103_en_5_7_104,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_104/2020103_en_5_7_104.wav,@ns ,,True,False,False,7.008,ignore
+2020316_en_5_7_104,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_104/2020316_en_5_7_104.wav,@ns <unk-it> ,<unk>,True,False,False,6.97475,ignore
+2010313_en_5_7_104,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_104/2010313_en_5_7_104.wav,@sil ,,True,False,False,7.008,ignore
+2010304_en_5_7_104,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_104/2010304_en_5_7_104.wav,@ns <unk-it> ,<unk>,True,False,False,7.008,ignore
+2020222_en_5_7_104,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_104/2020222_en_5_7_104.wav,@voice ,<unk>,True,False,False,7.008,ignore
+2010322_en_5_7_104,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_104/2010322_en_5_7_104.wav,@bkg <unk-it> ,<unk>,True,False,False,7.008,ignore
+2020122_en_5_7_104,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_104/2020122_en_5_7_104.wav,@sil ,,True,False,False,3.504,ignore
+2020410_en_5_7_104,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_104/2020410_en_5_7_104.wav,@sil ,,True,False,False,7.008,ignore
+2010312_en_5_7_104,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_104/2010312_en_5_7_104.wav,@sil ,,True,False,False,7.008,ignore
+2020311_en_5_7_104,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_104/2020311_en_5_7_104.wav,@sil ,,True,False,False,6.97475,ignore
+2020120_en_5_7_104,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_104/2020120_en_5_7_104.wav, <unk-it> ,<unk>,True,False,False,7.0791875,ignore
+3020112_en_35_28_102,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_35_28_102/3020112_en_35_28_102.wav,@sil ,,True,False,False,19.992,ignore
+2030111_en_5_7_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_100/2030111_en_5_7_100.wav, <unk-it> ,<unk>,True,False,False,7.0791875,ignore
+2050117_en_5_7_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_100/2050117_en_5_7_100.wav,@sil ,,True,False,False,7.0791875,ignore
+2060112_en_5_7_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_100/2060112_en_5_7_100.wav,@sil ,,True,False,False,7.008,ignore
+2060103_en_5_7_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_100/2060103_en_5_7_100.wav,@ns ,,True,False,False,7.008,ignore
+2010313_en_5_7_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_100/2010313_en_5_7_100.wav,@sil ,,True,False,False,7.008,ignore
+2030104_en_5_7_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_100/2030104_en_5_7_100.wav,@bkg ,,True,False,False,7.008,ignore
+2010322_en_5_7_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_100/2010322_en_5_7_100.wav,@sil ,,True,False,False,7.008,ignore
+2080215_en_5_7_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_100/2080215_en_5_7_100.wav,@sil ,,True,False,False,6.97475,ignore
+2050119_en_5_7_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_100/2050119_en_5_7_100.wav,@voice ,<unk>,True,False,False,7.008,ignore
+2020217_en_5_7_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_100/2020217_en_5_7_100.wav,@bkg @voice ,<unk>,True,False,False,7.008,ignore
+2070113_en_5_7_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_100/2070113_en_5_7_100.wav,@sil ,,True,False,False,7.008,ignore
+2070122_en_5_7_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_100/2070122_en_5_7_100.wav,@ns ,,True,False,False,7.008,ignore
+2020410_en_5_7_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_100/2020410_en_5_7_100.wav,@voice @noise ,<unk>,True,False,False,7.008,ignore
+2010312_en_5_7_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_100/2010312_en_5_7_100.wav,@sil ,,True,False,False,7.008,ignore
+2080223_en_5_7_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_100/2080223_en_5_7_100.wav,@sil ,,True,False,False,6.97475,ignore
+2070116_en_5_7_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_100/2070116_en_5_7_100.wav,@sil ,,True,False,False,7.008,ignore
+2030107_en_5_7_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_100/2030107_en_5_7_100.wav,@voice @ns ,<unk>,True,False,False,7.008,ignore
+2080317_en_5_7_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_100/2080317_en_5_7_100.wav,@sil ,,True,False,False,7.0791875,ignore
+2080119_en_5_7_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_100/2080119_en_5_7_100.wav,@ns <unk-it> ,<unk>,True,False,False,7.0791875,ignore
+2030105_en_5_7_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_100/2030105_en_5_7_100.wav,@ns @cough ,,True,False,False,6.97475,ignore
+2040113_en_5_7_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_100/2040113_en_5_7_100.wav,@sil ,,True,False,False,7.008,ignore
+2070110_en_5_7_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_100/2070110_en_5_7_100.wav,@bkg @voice ,<unk>,True,False,False,7.008,ignore
+2070109_en_5_7_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_100/2070109_en_5_7_100.wav,@ns ,,True,False,False,7.008,ignore
+2080117_en_5_7_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_100/2080117_en_5_7_100.wav,@sil ,,True,False,False,7.0791875,ignore
+2070118_en_5_7_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_100/2070118_en_5_7_100.wav,@ns ,,True,False,False,7.008,ignore
+2080302_en_5_7_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_100/2080302_en_5_7_100.wav,@voice ,<unk>,True,False,False,6.97475,ignore
+2060106_en_5_7_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_100/2060106_en_5_7_100.wav, <unk-it> ,<unk>,True,False,False,7.008,ignore
+2030110_en_5_7_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_100/2030110_en_5_7_100.wav,@voice ,<unk>,True,False,False,6.97475,ignore
+3010112_en_35_28_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_35_28_100/3010112_en_35_28_100.wav, <unk-it> ,<unk>,True,False,False,20.0881875,ignore
+3070120_en_35_28_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_35_28_100/3070120_en_35_28_100.wav,@ns ,,True,False,False,20.064,ignore
+3020112_en_35_28_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_35_28_100/3020112_en_35_28_100.wav,@sil ,,True,False,False,19.992,ignore
+2060101_en_6_8_104,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_104/2060101_en_6_8_104.wav,@sil ,,True,False,False,10.008,ignore
+2020222_en_6_8_104,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_104/2020222_en_6_8_104.wav,@voice @laugh ,<unk>,True,False,False,10.08,ignore
+2020116_en_6_8_104,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_104/2020116_en_6_8_104.wav,@ns ,,True,False,False,9.9526875,ignore
+2080213_en_6_8_104,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_104/2080213_en_6_8_104.wav,@sil ,,True,False,False,10.0571875,ignore
+2080117_en_6_8_104,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_104/2080117_en_6_8_104.wav,@sil ,,True,False,False,10.0571875,ignore
+2010215_en_6_8_104,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_104/2010215_en_6_8_104.wav,@bkg ,,True,False,False,10.08,ignore
+2020214_en_6_8_104,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_104/2020214_en_6_8_104.wav,@sil ,,True,False,False,10.0571875,ignore
+2020120_en_6_8_104,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_104/2020120_en_6_8_104.wav, <unk-de> @ns ,<unk>,True,False,False,9.9526875,ignore
+2080212_en_6_8_104,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_104/2080212_en_6_8_104.wav,@sil ,,True,False,False,10.0571875,ignore
+2080317_en_6_8_104,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_104/2080317_en_6_8_104.wav,@bkg ,,True,False,False,10.0571875,ignore
+2050109_en_6_8_104,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_104/2050109_en_6_8_104.wav,@bkg @ns ,,True,False,False,10.008,ignore
+1040119_en_22_20_104,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_22_20_104/1040119_en_22_20_104.wav,@voice ,<unk>,True,False,False,14.9681875,ignore
+1010105_en_22_20_104,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_22_20_104/1010105_en_22_20_104.wav, <unk-it> @laugh ,<unk>,True,False,False,14.9681875,ignore
+1020116_en_22_20_104,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_22_20_104/1020116_en_22_20_104.wav,@bkg @ns <unk-it> ,<unk>,True,False,False,15.024,ignore
+1010111_en_22_20_104,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_22_20_104/1010111_en_22_20_104.wav,@bkg ,,True,False,False,14.9681875,ignore
+1010110_en_22_20_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_22_20_100/1010110_en_22_20_100.wav,@sil ,,True,False,False,14.9681875,ignore
+1010111_en_22_20_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_22_20_100/1010111_en_22_20_100.wav,@sil ,,True,False,False,15.0726875,ignore
+3010102_en_35_28_104,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_35_28_104/3010102_en_35_28_104.wav,@bkg @sil ,,True,False,False,19.9836875,ignore
+3020112_en_35_28_104,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_35_28_104/3020112_en_35_28_104.wav,@sil ,,True,False,False,19.992,ignore
+2070122_en_6_8_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_100/2070122_en_6_8_100.wav,@sil ,,True,False,False,10.008,ignore
+2020222_en_6_8_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_100/2020222_en_6_8_100.wav,@voice ,<unk>,True,False,False,10.008,ignore
+2080107_en_6_8_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_100/2080107_en_6_8_100.wav, <unk-it> ,<unk>,True,False,False,10.0571875,ignore
+2040110_en_6_8_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_100/2040110_en_6_8_100.wav,@voice ,<unk>,True,False,False,10.008,ignore
+2070115_en_6_8_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_100/2070115_en_6_8_100.wav, <unk-de> ,<unk>,True,False,False,9.9526875,ignore
+2070124_en_6_8_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_100/2070124_en_6_8_100.wav,@laugh @bkg ,,True,False,False,10.008,ignore
+2080110_en_6_8_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_100/2080110_en_6_8_100.wav, <unk-de> ,<unk>,True,False,False,9.9526875,ignore
+2070118_en_6_8_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_100/2070118_en_6_8_100.wav,@voice @bkg ,<unk>,True,False,False,10.008,ignore
+2070116_en_6_8_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_100/2070116_en_6_8_100.wav,@sil ,,True,False,False,10.008,ignore
+2080317_en_6_8_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_6_8_100/2080317_en_6_8_100.wav,@sil ,,True,False,False,10.0571875,ignore
+2070113_en_5_7_102,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_102/2070113_en_5_7_102.wav,@voice ,<unk>,True,False,False,7.008,ignore
+2070122_en_5_7_102,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_102/2070122_en_5_7_102.wav,@bkg ,,True,False,False,7.008,ignore
+2010313_en_5_7_102,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_102/2010313_en_5_7_102.wav,@sil ,,True,False,False,7.104,ignore
+2060101_en_5_7_102,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_102/2060101_en_5_7_102.wav,@sil ,,True,False,False,7.008,ignore
+2020310_en_5_7_102,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_102/2020310_en_5_7_102.wav, <unk-it> ,<unk>,True,False,False,6.97475,ignore
+2060103_en_5_7_102,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_102/2060103_en_5_7_102.wav,@sil ,,True,False,False,7.008,ignore
+2060106_en_5_7_102,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_102/2060106_en_5_7_102.wav,@sil ,,True,False,False,7.008,ignore
+2030105_en_5_7_102,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_102/2030105_en_5_7_102.wav, @voice @cough ,<unk>,True,False,False,7.0791875,ignore
+2070109_en_5_7_102,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_102/2070109_en_5_7_102.wav,@ns ,,True,False,False,7.104,ignore
+2010312_en_5_7_102,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_102/2010312_en_5_7_102.wav,@sil ,,True,False,False,7.008,ignore
+2070116_en_5_7_102,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017train/en_5_7_102/2070116_en_5_7_102.wav,@sil ,,True,False,False,7.008,ignore
+2060114_en_6_8_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_6_8_101/2060114_en_6_8_101.wav,@sil ,,True,False,False,10.008,ignore
+2080303_en_6_8_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_6_8_101/2080303_en_6_8_101.wav,@voice ,<unk>,True,False,False,9.9526875,ignore
+2060114_en_5_7_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_5_7_103/2060114_en_5_7_103.wav,@voice ,<unk>,True,False,False,7.008,ignore
+2020208_en_5_7_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_5_7_103/2020208_en_5_7_103.wav, <unk-it> @bkg ,<unk>,True,False,False,7.008,ignore
+2070108_en_5_7_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_5_7_103/2070108_en_5_7_103.wav,@sil ,,True,False,False,7.008,ignore
+2040118_en_5_7_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_5_7_103/2040118_en_5_7_103.wav,@voice ,<unk>,True,False,False,7.008,ignore
+2080204_en_5_7_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_5_7_103/2080204_en_5_7_103.wav,@sil ,,True,False,False,6.97475,ignore
+2030115_en_5_7_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_5_7_103/2030115_en_5_7_103.wav,@voice @bkg ,<unk>,True,False,False,7.008,ignore
+2060114_en_6_8_103,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_6_8_103/2060114_en_6_8_103.wav,@sil ,,True,False,False,10.008,ignore
+1030104_en_21_19_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_21_19_100/1030104_en_21_19_100.wav,@sil ,,True,False,False,5.9559375,ignore
+2010318_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_5_7_101/2010318_en_5_7_101.wav,@sil ,,True,False,False,7.104,ignore
+2070114_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_5_7_101/2070114_en_5_7_101.wav,@ns ,,True,False,False,7.008,ignore
+2060102_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_5_7_101/2060102_en_5_7_101.wav,@bkg ,,True,False,False,7.008,ignore
+2020115_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_5_7_101/2020115_en_5_7_101.wav,@voice ,<unk>,True,False,False,7.008,ignore
+2040124_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_5_7_101/2040124_en_5_7_101.wav, <unk-it> ,<unk>,True,False,False,7.008,ignore
+2020121_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_5_7_101/2020121_en_5_7_101.wav,@bkg <unk-it> ,<unk>,True,False,False,7.008,ignore
+2040118_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_5_7_101/2040118_en_5_7_101.wav,@voice @bkg ,<unk>,True,False,False,7.008,ignore
+2010324_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_5_7_101/2010324_en_5_7_101.wav,@voice ,<unk>,True,False,False,7.008,ignore
+2080217_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_5_7_101/2080217_en_5_7_101.wav,@sil ,,True,False,False,7.0791875,ignore
+2010223_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_5_7_101/2010223_en_5_7_101.wav,@laugh @ns ,,True,False,False,7.008,ignore
+2060114_en_5_7_101,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_5_7_101/2060114_en_5_7_101.wav,@voice ,<unk>,True,False,False,7.008,ignore
+2070120_en_6_8_102,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_6_8_102/2070120_en_6_8_102.wav,@sil ,,True,False,False,10.008,ignore
+2040118_en_6_8_102,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_6_8_102/2040118_en_6_8_102.wav,@voice ,<unk>,True,False,False,10.008,ignore
+2080309_en_6_8_102,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_6_8_102/2080309_en_6_8_102.wav,@voice ,<unk>,True,False,False,10.0571875,ignore
+2010223_en_6_8_102,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_6_8_102/2010223_en_6_8_102.wav,@sil ,,True,False,False,10.008,ignore
+2020115_en_6_8_102,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_6_8_102/2020115_en_6_8_102.wav,@voice ,<unk>,True,False,False,10.008,ignore
+2040118_en_5_7_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_5_7_100/2040118_en_5_7_100.wav,@voice ,<unk>,True,False,False,7.008,ignore
+2010324_en_5_7_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_5_7_100/2010324_en_5_7_100.wav,@sil ,,True,False,False,7.008,ignore
+2070102_en_5_7_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_5_7_100/2070102_en_5_7_100.wav,@sil ,,True,False,False,7.008,ignore
+2020419_en_5_7_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_5_7_100/2020419_en_5_7_100.wav,@bkg @voice ,<unk>,True,False,False,7.0791875,ignore
+2060114_en_5_7_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_5_7_100/2060114_en_5_7_100.wav,@voice ,<unk>,True,False,False,7.008,ignore
+2080318_en_5_7_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_5_7_100/2080318_en_5_7_100.wav,@sil ,,True,False,False,6.97475,ignore
+2020306_en_5_7_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_5_7_100/2020306_en_5_7_100.wav,@voice ,<unk>,True,False,False,7.008,ignore
+2070114_en_5_7_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_5_7_100/2070114_en_5_7_100.wav, <unk-it> ,<unk>,True,False,False,7.008,ignore
+2040118_en_6_8_104,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_6_8_104/2040118_en_6_8_104.wav, @voice ,<unk>,True,False,False,10.008,ignore
+2080303_en_6_8_104,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_6_8_104/2080303_en_6_8_104.wav,@sil ,,True,False,False,9.9526875,ignore
+2080121_en_6_8_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_6_8_100/2080121_en_6_8_100.wav, @voice ,<unk>,True,False,False,10.0571875,ignore
+2010223_en_6_8_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_6_8_100/2010223_en_6_8_100.wav,@cough ,,True,False,False,10.008,ignore
+2040118_en_6_8_100,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_6_8_100/2040118_en_6_8_100.wav,@voice @ns ,<unk>,True,False,False,10.008,ignore
+2060114_en_5_7_102,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_5_7_102/2060114_en_5_7_102.wav,@voice ,<unk>,True,False,False,7.008,ignore
+2040118_en_5_7_102,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_5_7_102/2040118_en_5_7_102.wav,@bkg @cough @voice ,<unk>,True,False,False,7.008,ignore
+2010324_en_5_7_102,/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017dev/en_5_7_102/2010324_en_5_7_102.wav,@bkg @voice ,<unk>,True,False,False,7.008,ignore

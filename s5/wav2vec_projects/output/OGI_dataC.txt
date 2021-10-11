@@ -151,3 +151,105 @@ min      NaN
 max      NaN
 Name: duration, dtype: float64
 Done!
+
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/OGI_splitC.py
+
+------> Setting filepaths... -----------------------------------------
+
+Input files...
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted.csv
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/scripted_all_files.txt
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_spontaneous.csv
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/spontaneous_all_files.txt
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_dev_wav.csv
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_test_wav.csv
+/srv/scratch/chacmod/OGI/docs/00-verified.txt
+/srv/scratch/chacmod/OGI/docs/01-verified.txt
+/srv/scratch/chacmod/OGI/docs/02-verified.txt
+/srv/scratch/chacmod/OGI/docs/03-verified.txt
+/srv/scratch/chacmod/OGI/docs/04-verified.txt
+/srv/scratch/chacmod/OGI/docs/05-verified.txt
+/srv/scratch/chacmod/OGI/docs/06-verified.txt
+/srv/scratch/chacmod/OGI/docs/07-verified.txt
+/srv/scratch/chacmod/OGI/docs/08-verified.txt
+/srv/scratch/chacmod/OGI/docs/09-verified.txt
+/srv/scratch/chacmod/OGI/docs/10-verified.txt
+
+------> Reading in input files... ------------------------------------
+
+dev: 8585
+test: 8622
+scripted all: 71999
+spontaneous all: 1101
+
+------> Splitting into ignore, test, dev, finetune, pretrain... ------
+
+Checking if there's any null values in 'set' column:
+0
+0
+Unique values in 'set' column:
+Scripted: ['finetune' 'test' 'dev']
+Spontaneous: ['pretrain' 'test' 'dev']
+Getting quality code for scripted files...
+Unique values in 'set' column: ['finetune' 'test' 'dev' 'pretrain' 'ignore' nan]
+
+------> Saving to CSV... ----------------------------------------------
+
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_split.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_pretrain.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_finetune.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_dev.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_test.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_ignore.csv
+Done!
+
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/OGI_splitC.py
+
+------> Setting filepaths... -----------------------------------------
+
+Input files...
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_scripted.csv
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/scripted_all_files.txt
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/OGI_spontaneous.csv
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/spontaneous_all_files.txt
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_dev_wav.csv
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_test_wav.csv
+/srv/scratch/chacmod/OGI/docs/00-verified.txt
+/srv/scratch/chacmod/OGI/docs/01-verified.txt
+/srv/scratch/chacmod/OGI/docs/02-verified.txt
+/srv/scratch/chacmod/OGI/docs/03-verified.txt
+/srv/scratch/chacmod/OGI/docs/04-verified.txt
+/srv/scratch/chacmod/OGI/docs/05-verified.txt
+/srv/scratch/chacmod/OGI/docs/06-verified.txt
+/srv/scratch/chacmod/OGI/docs/07-verified.txt
+/srv/scratch/chacmod/OGI/docs/08-verified.txt
+/srv/scratch/chacmod/OGI/docs/09-verified.txt
+/srv/scratch/chacmod/OGI/docs/10-verified.txt
+
+------> Reading in input files... ------------------------------------
+
+dev: 8585
+test: 8622
+scripted all: 71999
+spontaneous all: 1101
+
+------> Splitting into ignore, test, dev, finetune, pretrain... ------
+
+Checking if there's any null values in 'set' column:
+0
+0
+Unique values in 'set' column:
+Scripted: ['finetune' 'test' 'dev']
+Spontaneous: ['pretrain' 'test' 'dev']
+Getting quality code for scripted files...
+Unique values in 'set' column: ['finetune' 'test' 'dev' 'pretrain' 'ignore']
+
+------> Saving to CSV... ----------------------------------------------
+
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_split.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_pretrain.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_finetune.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_dev.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_test.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_ignore.csv
+Done!
