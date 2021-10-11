@@ -692,7 +692,7 @@ results = data["test"].map(map_to_result)
 # Save results to csv
 results_df = results.to_pandas()
 results_df = results_df.drop(columns=['speech', 'sampling_rate'])
-results_df.to_csv(baseline_results_fp)
+results_df.to_csv(finetuned_results_fp)
 print("Saved results to:", finetuned_results_fp)
 
 # Getting the WER

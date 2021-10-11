@@ -76,7 +76,7 @@ trans_df = pd.concat(trans_df_list, ignore_index=True)
 
 # Get all the unique words in transcription
 unique_words = set()
-trans_df['transcription_original'].str.lower().str.split().apply(unique_words.update)
+trans_df['transcription_original'].str.split().apply(unique_words.update)
 print("Unique words in original transcription:")
 print("\n".join(sorted(unique_words)))
 
@@ -127,7 +127,8 @@ trans_df['transcription_clean'] = trans_df.apply(lambda row:
                                     cleanTranscription(row), axis=1)
 print("Unique characters in cleaned transcription:")
 print(sorted(set(trans_df.transcription_clean.sum())))
-
+print("Unique characters in original transcription")
+print(sorted(set(trans_df.transcription_original.sum())))
 # ------------------------------------------
 #          Get recording ID
 # ------------------------------------------

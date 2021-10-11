@@ -38,6 +38,12 @@ import numpy as np
 import os
 # For reading files
 from pathlib import Path
+# For regex
+import re
+# For dealing with audio files
+import soundfile as sf
+# For dealing with NaN
+import math
 
 # ------------------------------------------
 print('\nRunning: ', os.path.abspath(__file__))
@@ -145,17 +151,17 @@ dNoiseTag2Symb = {
         " <blip> " : " ", #temp signal blip signal goes completely silent for a period
         " <bn> "   : " ", #Background noise
         " <br> "   : " ", #breathing noise
-        " <bs> "   : "<unk>", #background speech
+        " <bs> "   : "<UNK>", #background speech
         " <cough> ": " ", # cough sound
         " <ct> "   : " ", # a clear throat
-        " <fp> "   : "<unk>", #generic filled pause/false start
+        " <fp> "   : "<UNK>", #generic filled pause/false start
         " <lau> "  : " ", # ??
-        " <laugh> ": "<unk>", #laughter
+        " <laugh> ": "<UNK>", #laughter
         " <ln> "   : " ", # line noise
         " <long> " : " ", #elongated word
         " <ls> "   : " ", #lip smack
         " <n> "    : " ", # ??
-        " <nitl> " : "<unk>"), # used for foreign language
+        " <nitl> " : "<UNK>", # used for foreign language
         " <ns> "   : " ", # non-speech sound
         " <pau> "  : " ", # Silence/pause
         " <pf> "   : " ", # ??
@@ -165,7 +171,7 @@ dNoiseTag2Symb = {
         " <sniff> ": " ", #sniffing
         " <sp> "   : " ", #Unkown spelling
         " <tc> "   : " ", #tongue click
-        " <uu> "   : "<unk>", #unintelligible speech
+        " <uu> "   : "<UNK>", #unintelligible speech
         " <whisper> ": " ", #whispered speech
         " <yawn> " : " ", #yawn
         }
@@ -193,133 +199,204 @@ for fp in spontaneous_all_trans_fp:
     else:
         txt = np.nan
     spontaneous_all_trans_original.append(txt)
-# Get the cleaned transcription
-spontaneous_all_trans_spaced = [(" " + trans + " ").replace(" ", "  ") 
-                               for trans in spontaneous_all_trans_original]
 
-for idx, txt in enumerate(spontaneous_all_trans_spaced):
-    if txt == txt:
-        clean_txt = txt
-        for noiseTag, replacement in dNoiseTag2Symb.items():
-            clean_txt = clean_txt.replace(noiseTag, replacement)
-            # Remove or replace all special characters
-            text_tmp = text_tmp.replace("‘", "'")
-            text_tmp = text_tmp.replace("’", "'")
-            chars_to_ignore_regex = '[\<\[\]\–\…\)\?\/\-\*\:\&\>\.\;\(\+\_\,]'
-            text_tmp = re.sub(chars_to_ignore_regex, " ", text_tmp)
-            # Remove extra whitespace between words
-            text_tmp = re.sub(' +', ' ', text_tmp)
-            # Remove leading and trailing whitespaces
-            text_tmp = text_tmp.strip()
-            # Lowercase
-            text_tmp = text_tmp.lower()
-    else:
-        clean_txt = np.nan
-    spontaneous_all_trans_spaced[idx] = clean_txt
-
+# ------------------------------------------
+#     Get speaker ID
+# ------------------------------------------
 # Get speaker ID -----------------------------------v
 # /srv/scratch/chacmod/OGI/trans/spontaneous/00/0/ks001/ks001xx0.wav
 spontaneous_spkr_id = [fp.split("/")[9] for fp in spontaneous_all]
 scripted_spkr_id = [fp.split("/")[9] for fp in scripted_all]
 
+# ------------------------------------------
+#      Construct dataframe
+# ------------------------------------------
+scripted_df = pd.DataFrame(
+            {'filepath': scripted_all,
+             'scripted': True,
+             'transcription_original': scripted_all_trans,
+             'transcription_clean': scripted_all_trans, 
+             'spkr_id': scripted_spkr_id
+             })
+spontaneous_df = pd.DataFrame(
+            {'filepath': spontaneous_all,
+             'scripted': False,
+             'transcription_original': spontaneous_all_trans_original,
+             'transcription_clean': spontaneous_all_trans_original,
+             'spkr_id': spontaneous_spkr_id
+            })
+frames = [scripted_df, spontaneous_df]
+OGI_df = pd.concat(frames)
+OGI_df = pd.merge(OGI_df, verif_df, on='filepath', how="outer")
+
+# ------------------------------------------
+#      Clean the transcription
+# ------------------------------------------
+def cleanTranscription(row):
+    trans = row['transcription_original']
+    if trans == trans:
+        trans = (" " + trans + " ").replace(" ", "  ") 
+        # Replace noise tags
+        for noiseTag, replacement in dNoiseTag2Symb.items():
+            trans = trans.replace(noiseTag, replacement)
+        # Remove or replace all special characters
+        trans = trans.replace("-", " ")
+        trans = trans.replace("‘", "'")
+        trans = trans.replace("’", "'")
+        chars_to_ignore_regex = '[\<\[\]\–\…\)\?\/\-\*\:\&\>\.\;\(\+\_\,\@]'
+        trans = re.sub(chars_to_ignore_regex, " ", trans)
+        # Replace UNK with <unk>
+        trans = trans.replace("UNK", "<unk>")
+        # Remove extra whitespace between words
+        trans = re.sub(' +', ' ', trans)
+        # Remove leading and trailing whitespaces
+        trans = trans.strip()
+    else:
+        trans = np.nan
+    return trans
+
+OGI_df['transcription_clean'] = OGI_df.apply(lambda row:
+                                    cleanTranscription(row), axis=1)
+
+print("NaNs in each column:")
+print("filepath: ", OGI_df['filepath'].isnull().sum())
+print("scripted: ", OGI_df['scripted'].isnull().sum())
+print("transcription_clean: ", OGI_df['transcription_clean'].isnull().sum())
+print("transcription_original: ", OGI_df['transcription_original'].isnull().sum())
+print("spkr_id: ", OGI_df['spkr_id'].isnull().sum())
+
+print("Unique characters in cleaned transcription")
+print(sorted(set(OGI_df.transcription_clean.sum())))
+print(sorted(set(OGI_df.transcription_original.sum())))
+
+# Get all the unique words in transcription
+unique_words = set()
+OGI_df['transcription_original'].str.split().apply(unique_words.update)
+print("Unique words in original transcription:")
+print("\n".join(sorted(unique_words)))
+
+# ------------------------------------------
+#          Data checks
+# ------------------------------------------
+# Check if has audio file
+# Flag rows where the wav file does not exist
+# i.e. set has_audio_file = False
+print("\n------> Flagging rows where wav file does not exist\n")
+print("has_audio_file = False")
+filepaths_list = OGI_df['filepath'].tolist()
+fileExists = [os.path.isfile(fp) if fp == fp else False for fp in filepaths_list]
+OGI_df['has_audio_file'] = fileExists
+
+# Check if speech is present in audio file
+# Flag rows where file is transcribed but
+# the audio contains no speech e.g. only silence, noise...
+# i.e. no spoken words, only silence or speech tags
+print("\n------> Flagging rows where file is transcribed but has no speech\n")
+print("has_speech_in_audio = False")
+OGI_df['has_speech_in_audio'] = np.nan
+OGI_df.loc[(OGI_df.has_audio_file == True) &
+           ((OGI_df.transcription_clean == None) |
+            (OGI_df.transcription_clean == "") |
+            (OGI_df.transcription_clean == "<unk>")),
+            'has_speech_in_audio'] = False
+OGI_df.loc[(OGI_df.has_audio_file == True) &
+            ((OGI_df.transcription_clean != None) &
+            (OGI_df.transcription_clean != "<unk>") &
+            (OGI_df.transcription_clean != "")),
+            'has_speech_in_audio'] = True
+
+# Flag if recording is usable or not
+# Usable = False if:
+#   has_audio_file != True OR
+#   has_speech_in_audio != True OR
+#   scripted == True AND quality_code == 3
+print("\n------> Checking if recording is usable or not\n")
+print("usable")
+OGI_df['usable'] = True
+def checkUsable(fp, has_audio_file, has_speech_in_audio, quality_code):
+    bad_quality = "3"
+    if has_audio_file != True:
+        usable = False
+    elif has_speech_in_audio != True:
+        usable = False
+    elif math.isnan(quality_code) == False:
+        if str(int(quality_code)) == bad_quality:
+            usable = False
+        else:
+            usable = True
+    else:
+        usable = True
+    return usable
+
+OGI_df['usable'] = OGI_df.apply(lambda x: checkUsable(x['filepath'],
+                                  x['has_audio_file'],
+                                  x['has_speech_in_audio'],
+                                  x['quality_code']), 
+                                  axis=1)
+
+# ------------------------------------------
+#      Getting duration of audio
+# ------------------------------------------
+# Get duration of each wav file
+print("\n------> Getting duration in seconds of each wav file\n")
+print("duration")
+def getDuration(fp, fileExists):
+    if fileExists == True:
+        duration = len(sf.SoundFile(fp))/sf.SoundFile(fp).samplerate
+    else:
+        duration = np.nan
+    return duration
+OGI_df['duration'] = OGI_df.apply(lambda x: getDuration(x['filepath'],
+                                    x['has_audio_file']), axis=1)
 
 # ------------------------------------------
 #       Split into portions
 # ------------------------------------------
 print("\n------> Splitting into ignore, test, dev, finetune, pretrain... ------\n")
-# Formatting dataframes
-scripted_df = pd.DataFrame(
-                {'filepath': scripted_all,
-                 'scripted': True,
-                 'transcription_original': scripted_all_trans,
-                 'transcription_clean': scripted_all_trans,
+OGI_df['set'] = np.nan
+OGI_df['mostafa_set'] = np.nan
 
+# ignore: if usable != True
+OGI_df['set'] = np.where((OGI_df['usable'] != True), "ignore", np.nan)
 
-                            })
-
-
-
-scripted_df = scripted_df.rename(columns={"transcription":"transcription_clean"})
-scripted_df['usable'] = True
-scripted_df['set'] = np.nan
-
-spontaneous_df = spontaneous_df.rename(columns={"transcription":"transcription_clean"})
-spontaneous_df['usable'] = True
-spontaneous_df['set'] = np.nan
-
-# ignore: if a file is in all_list not in the usable list
-used_scripted = scripted_df['filepath'].tolist()
-used_spontaneous = spontaneous_df['filepath'].tolist()
-usable_list = used_scripted + used_spontaneous
-all_list = scripted_all + spontaneous_all
-unused_list = list(set(all_list) - set(usable_list))
-              # In all_list but not in usable_list
+print("Unique values in 'set' column:", OGI_df['set'].unique())
 # test: 
-# if filepath in filepath_test AND usable == True AND set == NaN
-scripted_df['set'] = np.where((scripted_df['filepath'].isin(filepath_test)) & 
-                              (scripted_df['usable'] == True) &
-                              (scripted_df['set'] != scripted_df['set']),
-                              "test", np.nan)
-spontaneous_df['set'] = np.where((spontaneous_df['filepath'].isin(filepath_test)) &
-                              (spontaneous_df['usable'] == True) &
-                              (spontaneous_df['set'] != spontaneous_df['set']),
-                              "test", spontaneous_df['set'])
-# dev: if filepath in filepath_dev AND usable == True AND set == NaN
-scripted_df['set'] = np.where((scripted_df['filepath'].isin(filepath_dev)) &
-                          (scripted_df['usable'] == True) &
-                          (scripted_df['set'] == "nan"),
-                           "dev", scripted_df['set'])
-spontaneous_df['set'] = np.where((spontaneous_df['filepath'].isin(filepath_dev)) &
-                          (spontaneous_df['usable'] == True) &
-                          (spontaneous_df['set'] == "nan"),
-                           "dev", spontaneous_df['set'])
+# if filepath in filepath_test AND usable == True AND set != ignore
+OGI_df['set'] = np.where((OGI_df['filepath'].isin(filepath_test)) & 
+                         (OGI_df['usable'] == True) &
+                         (OGI_df['set'] != "ignore"),
+                          "test", OGI_df['set'])
+OGI_df['mostafa_set'] = np.where((OGI_df['filepath'].isin(filepath_test)),
+                                 "test", OGI_df['mostafa_set'])
+
+print("Unique values in 'set' column:", OGI_df['set'].unique())
+# dev: if filepath in filepath_dev AND usable == True AND set != ignore and set != test
+OGI_df['set'] = np.where((OGI_df['filepath'].isin(filepath_dev)) &
+                         (OGI_df['usable'] == True) &
+                         ((OGI_df['set'] != "ignore") & (OGI_df['set'] != "test")),
+                          "dev", OGI_df['set'])
+OGI_df['mostafa_set'] = np.where((OGI_df['filepath'].isin(filepath_dev)),
+                                  "dev", OGI_df['mostafa_set'])
+print("Unique values in 'set' column:", OGI_df['set'].unique())
 # finetune: 
-# if scripted AND usable == True AND set == NaN
-scripted_df['set'] = np.where((scripted_df['usable'] == True) &
-                              (scripted_df['set'] == "nan"),
-                              "finetune", scripted_df['set'])
+# if scripted = True AND usable == True AND set == NaN
+OGI_df['set'] = np.where((OGI_df['usable'] == True) &
+                         (OGI_df['scripted'] == True) &
+                         ((OGI_df['set'] != "ignore") & (OGI_df['set'] != "test") &
+                          (OGI_df['set'] != "dev")),
+                          "finetune", OGI_df['set'])
+print("Unique values in 'set' column:", OGI_df['set'].unique())
 # pretrain:
-# if spontaneous AND usable == True AND set == NaN
-spontaneous_df['set'] = np.where((spontaneous_df['usable'] == True) &
-                                 (spontaneous_df['set'] == "nan"),
-                                 "pretrain", spontaneous_df['set'])
+# if scripted != True AND usable == True AND set == NaN
+OGI_df['set'] = np.where((OGI_df['usable'] == True) &
+                         (OGI_df['scripted'] == False) &
+                         ((OGI_df['set'] != "ignore") & (OGI_df['set'] != "dev") &
+                          (OGI_df['set'] != "test")),
+                          "pretrain", OGI_df['set'])
 
 print("Checking if there's any null values in 'set' column:")
-print((scripted_df.set == "nan").sum())
-print((spontaneous_df.set == "nan").sum())
-
-print("Unique values in 'set' column:")
-print("Scripted:", scripted_df['set'].unique())
-print("Spontaneous:", spontaneous_df['set'].unique())
-
-# Creating set dataframes
-unused_df = pd.DataFrame(
-          {'filepath': unused_list,
-           'transcription_clean': np.nan,
-           'duration': np.nan,
-           'spkr_id': np.nan,
-           'usable': False,
-           'set': "ignore"
-           })
-frames = [scripted_df, spontaneous_df, unused_df]
-OGI_df = pd.concat(frames)
-
-# Getting quality code for each scripted file
-#def getCode(fp):
-#    fp = fp.replace(".wav", ".txt")
-#    fp = fp.replace("speech", "verify")
-#    substring = "scripted"
-#    if substring in fp and os.path.isfile(fp):
-#        with open(fp, "r") as f:
-#            code = f.readline().rstrip()
-#        f.close()
-#    else:
-#        code = np.nan    
-#    return code
-
-print("Getting quality code for scripted files...")
-OGI_df = pd.merge(OGI_df, verif_df, on="filepath", how="outer")
-#OGI_df['quality_code'] = OGI_df.apply(lambda x: getCode(x['filepath']), axis=1)
+print("nan: ", (OGI_df['set'] == "nan").sum())
+print("np.nan:", (OGI_df['set'] == np.nan).sum())
 
 # Making separate dataframes 
 OGI_pretrain = OGI_df[(OGI_df['set'] == "pretrain")]
@@ -345,4 +422,6 @@ for fp in output_fp:
     print("Saved:", fp)
 
 print("Done!")
+
+
 
