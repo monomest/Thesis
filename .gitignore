@@ -1,4 +1,5 @@
 # Ignore all files created by experiments
+*.nfs
 s5/data/
 s5/exp
 s5/logios.log
