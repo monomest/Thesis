@@ -11301,14 +11301,15 @@ duration
 
 ------> Splitting into ignore, test, dev, finetune, pretrain... ------
 
-Unique values in 'set' column: ['nan' 'ignore']
-Unique values in 'set' column: ['nan' 'ignore' 'test']
-Unique values in 'set' column: ['nan' 'ignore' 'dev' 'test']
-Unique values in 'set' column: ['finetune' 'ignore' 'dev' 'test' 'nan']
+Unique values in 'set' column: [nan 'pretrain']
+Unique values in 'set' column: [nan 'pretrain']
+Unique values in 'set' column: [nan 'pretrain' 'test']
+Unique values in 'set' column: [nan 'pretrain' 'dev' 'test']
+Unique values in 'set' column: ['finetune' 'pretrain' 'dev' 'test' nan]
 Checking if there's any null values in 'set' column:
 nan:  0
 np.nan: 0
-Unique values in 'set' column: ['finetune' 'ignore' 'dev' 'test' 'pretrain']
+Unique values in 'set' column: ['finetune' 'pretrain' 'dev' 'test']
 
 ------> Saving to CSV... ----------------------------------------------
 
@@ -11318,118 +11319,4 @@ Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_
 Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_dev.csv
 Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_test.csv
 Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_ignore.csv
-Done!
-Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/data_describeC.py
-
-------> Setting filepaths... -----------------------------------------
-
-Input file: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_split.csv
-
-------> Reading in input files... ------------------------------------
-
-
-------> Describing datasets... ---------------------------------------
-
-All data
-# Hours: 100.38244868055556
-Proportion of hours: 1.0
-# Samples: 73100
-Proportion of samples: 1.0
-# Speakers: 1118
-Proportion of speakers: 1.0
-Distribution of audio durations:
-count    73100.000000
-mean         4.943595
-std         12.595756
-min          1.206625
-25%          2.338500
-50%          3.115875
-75%          4.609563
-max        479.295500
-Name: duration, dtype: float64
-Pretrain data
-# Hours: 21.804149652777777
-Proportion of hours: 0.21721077677796596
-# Samples: 783
-Proportion of samples: 0.010711354309165526
-# Speakers: 783
-Proportion of speakers: 0.7003577817531306
-Distribution of audio durations:
-count    783.000000
-mean     100.248964
-std       35.198589
-min       15.000000
-25%       77.176000
-50%       96.464687
-75%      117.649781
-max      479.295500
-Name: duration, dtype: float64
-Finetune data
-# Hours: 51.461578090277776
-Proportion of hours: 0.5126551380913471
-# Samples: 52204
-Proportion of samples: 0.7141450068399453
-# Speakers: 965
-Proportion of speakers: 0.8631484794275492
-Distribution of audio durations:
-count    52204.000000
-mean         3.548802
-std          1.522690
-min          1.206625
-25%          2.338875
-50%          3.156000
-75%          4.611250
-max          9.667375
-Name: duration, dtype: float64
-Development data
-# Hours: 11.388685937500002
-Proportion of hours: 0.1134529600263281
-# Samples: 7908
-Proportion of samples: 0.10818057455540356
-# Speakers: 161
-Proportion of speakers: 0.1440071556350626
-Distribution of audio durations:
-count    7908.000000
-mean        5.184531
-std        14.610461
-min         1.207062
-25%         2.088500
-50%         2.739625
-75%         4.091812
-max       252.006438
-Name: duration, dtype: float64
-Test data
-# Hours: 11.505142013888888
-Proportion of hours: 0.11461308391172445
-# Samples: 8048
-Proportion of samples: 0.11009575923392613
-# Speakers: 162
-Proportion of speakers: 0.1449016100178891
-Distribution of audio durations:
-count    8048.000000
-mean        5.146435
-std        14.034959
-min         1.216250
-25%         2.088500
-50%         2.739562
-75%         4.092125
-max       215.883312
-Name: duration, dtype: float64
-Ignored data
-# Hours: 4.222892986111111
-Proportion of hours: 0.04206804119263431
-# Samples: 4157
-Proportion of samples: 0.05686730506155951
-# Speakers: 872
-Proportion of speakers: 0.7799642218246869
-Distribution of audio durations:
-count    4157.000000
-mean        3.657064
-std         1.783083
-min         1.206937
-25%         2.338375
-50%         3.115250
-75%         4.970313
-max         9.610875
-Name: duration, dtype: float64
 Done!

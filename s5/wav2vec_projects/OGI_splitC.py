@@ -308,30 +308,23 @@ OGI_df.loc[(OGI_df.has_audio_file == True) &
 # Flag if recording is usable or not
 # Usable = False if:
 #   has_audio_file != True OR
-#   has_speech_in_audio != True OR
-#   scripted == True AND quality_code == 3
+#   has_speech_in_audio != True
 print("\n------> Checking if recording is usable or not\n")
 print("usable")
 OGI_df['usable'] = True
-def checkUsable(fp, has_audio_file, has_speech_in_audio, quality_code):
+def checkUsable(fp, has_audio_file, has_speech_in_audio):
     bad_quality = "3"
     if has_audio_file != True:
         usable = False
     elif has_speech_in_audio != True:
         usable = False
-    elif math.isnan(quality_code) == False:
-        if str(int(quality_code)) == bad_quality:
-            usable = False
-        else:
-            usable = True
     else:
         usable = True
     return usable
 
 OGI_df['usable'] = OGI_df.apply(lambda x: checkUsable(x['filepath'],
                                   x['has_audio_file'],
-                                  x['has_speech_in_audio'],
-                                  x['quality_code']), 
+                                  x['has_speech_in_audio']), 
                                   axis=1)
 
 # ------------------------------------------
@@ -356,38 +349,60 @@ print("\n------> Splitting into ignore, test, dev, finetune, pretrain... ------\
 OGI_df['set'] = np.nan
 OGI_df['mostafa_set'] = np.nan
 
-# ignore: if usable != True
-OGI_df['set'] = np.where((OGI_df['usable'] != True), "ignore", np.nan)
+# pretrain: if usable == True AND quality_code == "3"
+def setPretrain(usable, quality_code):
+    pretrain_code = "3"
+    if usable == True and math.isnan(quality_code) == False:
+        if str(int(quality_code)) == pretrain_code:
+            data_set = "pretrain"
+        else:
+            data_set = np.nan
+    else:
+        data_set = np.nan
+    return data_set
+OGI_df['set'] = OGI_df.apply(lambda x: setPretrain(x['usable'],
+                                    x['quality_code']),
+                                    axis=1)
 
 print("Unique values in 'set' column:", OGI_df['set'].unique())
+
+# ignore: if usable != True
+OGI_df['set'] = np.where((OGI_df['usable'] != True), "ignore", OGI_df['set'])
+
+print("Unique values in 'set' column:", OGI_df['set'].unique())
+
 # test: 
 # if filepath in filepath_test AND usable == True AND set != ignore
 OGI_df['set'] = np.where((OGI_df['filepath'].isin(filepath_test)) & 
                          (OGI_df['usable'] == True) &
-                         (OGI_df['set'] != "ignore"),
+                         ((OGI_df['set'] != "ignore") & (OGI_df['set'] != "pretrain")),
                           "test", OGI_df['set'])
 OGI_df['mostafa_set'] = np.where((OGI_df['filepath'].isin(filepath_test)),
                                  "test", OGI_df['mostafa_set'])
 
 print("Unique values in 'set' column:", OGI_df['set'].unique())
+
 # dev: if filepath in filepath_dev AND usable == True AND set != ignore and set != test
 OGI_df['set'] = np.where((OGI_df['filepath'].isin(filepath_dev)) &
                          (OGI_df['usable'] == True) &
-                         ((OGI_df['set'] != "ignore") & (OGI_df['set'] != "test")),
+                         ((OGI_df['set'] != "ignore") & (OGI_df['set'] != "test")
+                           & (OGI_df['set'] != "pretrain")),
                           "dev", OGI_df['set'])
 OGI_df['mostafa_set'] = np.where((OGI_df['filepath'].isin(filepath_dev)),
                                   "dev", OGI_df['mostafa_set'])
 print("Unique values in 'set' column:", OGI_df['set'].unique())
+
 # finetune: 
 # if scripted = True AND usable == True AND set == NaN
 OGI_df['set'] = np.where((OGI_df['usable'] == True) &
                          (OGI_df['scripted'] == True) &
                          ((OGI_df['set'] != "ignore") & (OGI_df['set'] != "test") &
-                          (OGI_df['set'] != "dev")),
+                          (OGI_df['set'] != "dev") & (OGI_df['set'] != "pretrain")),
                           "finetune", OGI_df['set'])
 print("Unique values in 'set' column:", OGI_df['set'].unique())
+
 # pretrain:
-# if scripted != True AND usable == True AND set == NaN
+# if scripted != True AND usable == True AND set == NaN OR
 OGI_df['set'] = np.where((OGI_df['usable'] == True) &
                          (OGI_df['scripted'] == False) &
                          ((OGI_df['set'] != "ignore") & (OGI_df['set'] != "dev") &
