@@ -11320,3 +11320,117 @@ Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_
 Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_test.csv
 Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_ignore.csv
 Done!
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/data_describeC.py
+
+------> Setting filepaths... -----------------------------------------
+
+Input file: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_split.csv
+
+------> Reading in input files... ------------------------------------
+
+
+------> Describing datasets... ---------------------------------------
+
+All data
+# Hours: 100.38244868055556
+Proportion of hours: 1.0
+# Samples: 73100
+Proportion of samples: 1.0
+# Speakers: 1118
+Proportion of speakers: 1.0
+Distribution of audio durations:
+count    73100.000000
+mean         4.943595
+std         12.595756
+min          1.206625
+25%          2.338500
+50%          3.115875
+75%          4.609563
+max        479.295500
+Name: duration, dtype: float64
+Pretrain data
+# Hours: 26.027042638888886
+Proportion of hours: 0.25927881797060026
+# Samples: 4940
+Proportion of samples: 0.06757865937072503
+# Speakers: 1045
+Proportion of speakers: 0.9347048300536672
+Distribution of audio durations:
+count    4940.000000
+mean       18.967076
+std        37.993650
+min         1.206937
+25%         2.359062
+50%         3.590688
+75%         6.594938
+max       479.295500
+Name: duration, dtype: float64
+Finetune data
+# Hours: 51.461578090277776
+Proportion of hours: 0.5126551380913471
+# Samples: 52204
+Proportion of samples: 0.7141450068399453
+# Speakers: 965
+Proportion of speakers: 0.8631484794275492
+Distribution of audio durations:
+count    52204.000000
+mean         3.548802
+std          1.522690
+min          1.206625
+25%          2.338875
+50%          3.156000
+75%          4.611250
+max          9.667375
+Name: duration, dtype: float64
+Development data
+# Hours: 11.388685937500002
+Proportion of hours: 0.1134529600263281
+# Samples: 7908
+Proportion of samples: 0.10818057455540356
+# Speakers: 161
+Proportion of speakers: 0.1440071556350626
+Distribution of audio durations:
+count    7908.000000
+mean        5.184531
+std        14.610461
+min         1.207062
+25%         2.088500
+50%         2.739625
+75%         4.091812
+max       252.006438
+Name: duration, dtype: float64
+Test data
+# Hours: 11.505142013888888
+Proportion of hours: 0.11461308391172445
+# Samples: 8048
+Proportion of samples: 0.11009575923392613
+# Speakers: 162
+Proportion of speakers: 0.1449016100178891
+Distribution of audio durations:
+count    8048.000000
+mean        5.146435
+std        14.034959
+min         1.216250
+25%         2.088500
+50%         2.739562
+75%         4.092125
+max       215.883312
+Name: duration, dtype: float64
+Ignored data
+# Hours: 0.0
+Proportion of hours: 0.0
+# Samples: 0
+Proportion of samples: 0.0
+# Speakers: 0
+Proportion of speakers: 0.0
+Distribution of audio durations:
+count    0.0
+mean     NaN
+std      NaN
+min      NaN
+25%      NaN
+50%      NaN
+75%      NaN
+max      NaN
+Name: duration, dtype: float64
+Done!
