@@ -1,0 +1,30 @@
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/myST-OGI_describeC.py
+
+------> Setting filepaths... -----------------------------------------
+
+Input file: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/THESIS_C/myST-OGI_data_split.csv
+
+------> Reading in input files... ------------------------------------
+
+
+------> Describing datasets... ---------------------------------------
+
+All data
+# Samples: 317215
+Proportion of samples: 1.0
+Pretrain data
+# Samples: 159379
+Proportion of samples: 0.5024321044086818
+Finetune data
+# Samples: 128484
+Proportion of samples: 0.4050375927998361
+Development data
+# Samples: 11360
+Proportion of samples: 0.03581167347067447
+Test data
+# Samples: 12070
+Proportion of samples: 0.038049903062591615
+Ignored data
+# Samples: 5922
+Proportion of samples: 0.018668726258216035
+Done!

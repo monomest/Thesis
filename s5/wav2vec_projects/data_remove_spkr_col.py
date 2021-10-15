@@ -26,9 +26,9 @@ print('Running: ', os.path.abspath(__file__))
 print("\n------> Setting data paths -------------------------------------------\n")
 # Datatset filepath and name
 #dataset_name = "myST-OGI"
-dataset_name = "myST"
-#dataset_name = "OGI"
-dataset_filename = "myST_data_test_unk"
+#dataset_name = "myST"
+dataset_name = "OGI"
+dataset_filename = "OGI_data_test"
 
 # Crafting filepath
 dataset_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/"+dataset_name+"_local/THESIS_C/"+dataset_filename+".csv"
