@@ -310,7 +310,7 @@ data = load_dataset('csv',
                     cache_dir=data_cache_fp)
 # Remove the "duration" and "spkr_id" column
 #data = data.remove_columns(["duration", "spkr_id"])
-data = data.remove_columns(["duration"])
+#data = data.remove_columns(["duration"])
 print("--> dataset...")
 print(data)
 # Display some random samples of the dataset
@@ -328,51 +328,55 @@ def show_random_elements(dataset, num_examples=10):
 show_random_elements(data["train"], num_examples=5)
 print("SUCCESS: Prepared dataset.")
 # ------------------------------------------
-#       Creating letter vocabulary
+#       Processing transcription
 # ------------------------------------------
 # Create vocab.json
 # Extracting all distinct letters of train and test set
 # and building vocab from this set of letters
-print("\n------> CREATING VOCABULARY... ---------------------------------------\n")
+print("\n------> PROCESSING TRANSCRIPTION... ---------------------------------------\n")
 # Mapping function that concatenates all transcriptions
 # into one long transcription and then transforms the
 # string into a set of chars. Set batched=True to the 
 # map(...) function so that the mapping function has access
 # to all transcriptions at once.
 
-chars_to_ignore_regex = '[\,\?\.\!\-\;\:\"]'
+#chars_to_ignore_regex = '[\,\?\.\!\-\;\:\"]'
 
-def remove_special_characters(batch):
-    batch["transcription_clean"] = re.sub(chars_to_ignore_regex, '', batch["transcription_clean"]).upper()
+def process_transcription(batch):
+    #batch["transcription_clean"] = re.sub(chars_to_ignore_regex, '', batch["transcription_clean"]).upper()
+    batch["transcription_clean"] = batch["transcription_clean"].upper()
+    batch["transcription_clean"] = batch["transcription_clean"].replace("<UNK>", "<unk>")
     return batch
 
-data = data.map(remove_special_characters)
+data = data.map(process_transcription)
 
 def extract_all_chars(batch):
     all_text = " ".join(batch["transcription_clean"])
     vocab = list(set(all_text))
     return {"vocab": [vocab], "all_text": [all_text]}
-print("--> Creating map(...) function for vocab...")
-vocabs = data.map(extract_all_chars, batched=True, batch_size=-1, keep_in_memory=True, remove_columns=data.column_names["train"])
-# Create union of all distinct letters in train and test set
-# and convert resulting list into enumerated dictionary
-# Vocab includes a-z, ' , space, UNK, PAD
-vocab_list = list(set(vocabs["train"]["vocab"][0]) | set(vocabs["test"]["vocab"][0]))
-vocab_dict = {v: k for k, v in enumerate(vocab_list)}
-print("--> Vocab len:", len(vocab_dict), "\n", vocab_dict)
-# Give space " " a visible character " | "
-# Include "unknown" [UNK] token for dealing with characters
-# not encountered in training.
-# Add padding token to corresponds to CTC's "blank token".
-vocab_dict["|"] = vocab_dict[" "]
-del vocab_dict[" "]
-vocab_dict["[UNK]"] = len(vocab_dict)
-vocab_dict["[PAD]"] = len(vocab_dict)
-print("--> Vocab len:", len(vocab_dict), "\n", vocab_dict)
-# Save vocab as a json file
-with open(vocab_fp, 'w') as vocab_file:
-    json.dump(vocab_dict, vocab_file)
-print("SUCCESS: Created vocabulary file at", vocab_fp)
+    
+if not use_pretrained_tokenizer:
+    print("--> Creating map(...) function for vocab...")
+    vocabs = data.map(extract_all_chars, batched=True, batch_size=-1, keep_in_memory=True, remove_columns=data.column_names["train"])
+    # Create union of all distinct letters in train and test set
+    # and convert resulting list into enumerated dictionary
+    # Vocab includes a-z, ' , space, UNK, PAD
+    vocab_list = list(set(vocabs["train"]["vocab"][0]) | set(vocabs["test"]["vocab"][0]))
+    vocab_dict = {v: k for k, v in enumerate(vocab_list)}
+    print("--> Vocab len:", len(vocab_dict), "\n", vocab_dict)
+    # Give space " " a visible character " | "
+    # Include "unknown" [UNK] token for dealing with characters
+    # not encountered in training.
+    # Add padding token to corresponds to CTC's "blank token".
+    vocab_dict["|"] = vocab_dict[" "]
+    del vocab_dict[" "]
+    vocab_dict["[UNK]"] = len(vocab_dict)
+    vocab_dict["[PAD]"] = len(vocab_dict)
+    print("--> Vocab len:", len(vocab_dict), "\n", vocab_dict)
+    # Save vocab as a json file
+    with open(vocab_fp, 'w') as vocab_file:
+        json.dump(vocab_dict, vocab_file)
+    print("SUCCESS: Created vocabulary file at", vocab_fp)
 # Use json file to instantiate an object of the 
 # Wav2VecCTCTokenziser class if not using pretrained tokenizer
 if use_pretrained_tokenizer:
@@ -380,7 +384,6 @@ if use_pretrained_tokenizer:
 else:
     tokenizer = Wav2Vec2CTCTokenizer(vocab_fp, unk_token="[UNK]", pad_token="[PAD]", word_delimiter_token="|")
 #tokenizer = save_pretrained(model_fp)
-
 # ------------------------------------------
 #    Create Wav2Vec2 Feature Extractor
 # ------------------------------------------

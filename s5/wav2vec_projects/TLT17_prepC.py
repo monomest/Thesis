@@ -97,9 +97,9 @@ dNoiseTag2Symb = {
                     "@sil": " ",
                     "@voice": "<UNK>",
                     "@voices": "<UNK>",
-                    "à": "<UNK>",
-                    "è": "<UNK>", 
-                    "ò": "<UNK>"
+                    "susà": "sus<UNK>",
+                    "mosè": "mos<UNK>", 
+                    "revò": "rev<UNK>"
                     }
 def cleanTranscription(row):
     trans = row['transcription_original']
