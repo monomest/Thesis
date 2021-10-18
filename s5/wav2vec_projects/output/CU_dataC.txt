@@ -1,0 +1,64 @@
+
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/CU_prepC.py
+
+------> Setting filepaths... -----------------------------------------
+
+Input files: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/CU_local/THESIS_C/cu_all_files.txt
+
+------> Reading in input files... ------------------------------------
+
+                                                filepath
+0      /srv/scratch/chacmod/CU_2/corpus/data/train-pa...
+1      /srv/scratch/chacmod/CU_2/corpus/data/train-pa...
+2      /srv/scratch/chacmod/CU_2/corpus/data/train-pa...
+3      /srv/scratch/chacmod/CU_2/corpus/data/train-pa...
+4      /srv/scratch/chacmod/CU_2/corpus/data/train-pa...
+...                                                  ...
+89808  /srv/scratch/chacmod/CU_2/corpus/data/train-pa...
+89809  /srv/scratch/chacmod/CU_2/corpus/data/train-pa...
+89810  /srv/scratch/chacmod/CU_2/corpus/data/train-pa...
+89811  /srv/scratch/chacmod/CU_2/corpus/data/train-pa...
+89812  /srv/scratch/chacmod/CU_2/corpus/data/train-pa...
+
+[89813 rows x 1 columns]
+
+------> Getting duration in seconds of each wav file
+
+duration
+count    89754.000000
+mean         3.396324
+std          4.664847
+min          0.100125
+25%          1.180000
+50%          1.760125
+75%          4.047047
+max        202.500063
+Name: duration, dtype: float64
+
+------> Saving to CSV... ----------------------------------------------
+
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/CU_local/THESIS_C/CU_data.csv
+
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/CU_splitC.py
+
+------> Setting duration limit... ------------------------------------ 
+
+--> Long files flagged as those greater than 15 seconds.
+
+------> Setting filepaths... -----------------------------------------
+
+Input files: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/CU_local/THESIS_C/CU_data.csv
+
+------> Reading in input files... ------------------------------------
+
+
+------> Splitting files... ------------------------------------
+
+
+------> Saving to CSV... ----------------------------------------------
+
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/CU_local/THESIS_C/CU_data_split.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/CU_local/THESIS_C/CU_data_pretrain.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/CU_local/THESIS_C/CU_data_pretrain_short.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/CU_local/THESIS_C/CU_data_pretrain_long.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/CU_local/THESIS_C/CU_data_ignore.csv

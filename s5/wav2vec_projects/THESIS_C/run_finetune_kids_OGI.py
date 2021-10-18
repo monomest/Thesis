@@ -111,7 +111,7 @@ base_cache_fp = "/srv/scratch/chacmod/.cache/huggingface/datasets/"
 # Dataset name and filename of the csv file containing the training data
 # For generating filepath to file location
 train_name = "OGI"
-train_filename = "THESIS_C/OGI_data_finetune_noSpkrCol"
+train_filename = "THESIS_C/OGI_data_finetune_light"
 print("train_name:", train_name)
 print("train_filename:", train_filename)
 
@@ -119,7 +119,7 @@ print("train_filename:", train_filename)
 # Dataset name and filename of the csv file containing the evaluation data
 # For generating filepath to file location
 evaluation_name = "OGI"
-evaluation_filename = "THESIS_C/OGI_data_dev_noSpkrCol"
+evaluation_filename = "THESIS_C/OGI_data_dev_light"
 print("evaluation_name:", evaluation_name)
 print("evaluation_filename:", evaluation_filename)
 
@@ -310,7 +310,7 @@ data = load_dataset('csv',
                     cache_dir=data_cache_fp)
 # Remove the "duration" and "spkr_id" column
 #data = data.remove_columns(["duration", "spkr_id"])
-data = data.remove_columns(["duration"])
+#data = data.remove_columns(["duration"])
 print("--> dataset...")
 print(data)
 # Display some random samples of the dataset

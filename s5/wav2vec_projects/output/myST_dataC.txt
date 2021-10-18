@@ -258,3 +258,61 @@ Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST
 Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/THESIS_C/myST_data_test_unk.csv
 Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/THESIS_C/myST_data_ignore_unk.csv
 Done!
+
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/data_getSubset.py
+
+------> Setting file paths... ----------------------------------------
+
+Dataset name: myST
+dataset_filename: THESIS_C/myST_data_finetune_unk
+base_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/
+
+------> Setting total hours in train set... ---------------------------
+
+total hours: 111.72
+
+------> Setting seed... ----------------------------------------------
+
+--> Setting seed as: 6
+
+------> Reading in train dataframe... --------------------------------
+
+
+------> Getting 10min, 1hr, 5hr and 10hr training subsets...---------------
+
+--> Minutes in subset: 326.45889479166664
+--> Hours in subset: 5.440981579861111
+SUCCESS: Created 5 hour subset in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/THESIS_C/myST_data_finetune_unk_5h.csv
+Samples:  3858
+data_getSubset.py:146: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df['spkr_id'] = df['spkr_id'].astype('str')
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/data_getSubset.py
+
+------> Setting file paths... ----------------------------------------
+
+Dataset name: myST
+dataset_filename: THESIS_C/myST_data_finetune_unk
+base_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/
+
+------> Setting total hours in train set... ---------------------------
+
+total hours: 111.72
+
+------> Setting seed... ----------------------------------------------
+
+--> Setting seed as: 6
+
+------> Reading in train dataframe... --------------------------------
+
+
+------> Getting 10min, 1hr, 5hr and 10hr training subsets...---------------
+
+--> Speakers in 5.65 hours training subset: 600
+--> Minutes in subset: 326.45889479166664
+--> Hours in subset: 5.440981579861111
+SUCCESS: Created 5 hour subset in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/THESIS_C/myST_data_finetune_unk_5h.csv
+Samples:  3858

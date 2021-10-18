@@ -1,0 +1,58 @@
+
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/myST-OGI-TLT17_combineC.py
+
+------> Setting filepaths... -----------------------------------------
+
+Input files...
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/THESIS_C/myST_data_split.csv
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_split.csv
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/TLT_local/THESIS_C/TLT17_data_split.csv
+
+------> Reading in input files... ------------------------------------
+
+
+------> Combining datasets... ----------------------------------------
+
+
+------> Splitting into ignore, test, dev, finetune, pretrain... ------
+
+
+------> Saving to CSV... ----------------------------------------------
+
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT17_local/THESIS_C/myST-OGI-TLT17_data_split.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT17_local/THESIS_C/myST-OGI-TLT17_data_pretrain.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT17_local/THESIS_C/myST-OGI-TLT17_data_finetune.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT17_local/THESIS_C/myST-OGI-TLT17_data_dev.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT17_local/THESIS_C/myST-OGI-TLT17_data_test.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT17_local/THESIS_C/myST-OGI-TLT17_data_ignore.csv
+Done!
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/myST-OGI-TLT17_describeC.py
+
+------> Setting filepaths... -----------------------------------------
+
+Input file: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT17_local/THESIS_C/myST-OGI-TLT17_data_split.csv
+
+------> Reading in input files... ------------------------------------
+
+
+------> Describing datasets... ---------------------------------------
+
+All data
+# Samples: 320076
+Proportion of samples: 1.0
+Pretrain data
+# Samples: 159871
+Proportion of samples: 0.4994782489158825
+Finetune data
+# Samples: 130620
+Proportion of samples: 0.4080905784876092
+Development data
+# Samples: 11360
+Proportion of samples: 0.035491570751946415
+Test data
+# Samples: 12070
+Proportion of samples: 0.037709793923943066
+Ignored data
+# Samples: 6155
+Proportion of samples: 0.019229807920618854
+Done!

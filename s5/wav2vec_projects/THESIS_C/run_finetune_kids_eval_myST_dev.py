@@ -111,7 +111,7 @@ base_cache_fp = "/srv/scratch/chacmod/.cache/huggingface/datasets/"
 # Dataset name and filename of the csv file containing the training data
 # For generating filepath to file location
 train_name = "myST"
-train_filename = "THESIS_C/myST_data_dev_unk_noSpkrCol"
+train_filename = "THESIS_C/myST_data_dev_unk_light"
 print("train_name:", train_name)
 print("train_filename:", train_filename)
 
@@ -119,7 +119,7 @@ print("train_filename:", train_filename)
 # Dataset name and filename of the csv file containing the evaluation data
 # For generating filepath to file location
 evaluation_name = "myST"
-evaluation_filename = "THESIS_C/myST_data_dev_unk_noSpkrCol"
+evaluation_filename = "THESIS_C/myST_data_dev_unk_light"
 print("evaluation_name:", evaluation_name)
 print("evaluation_filename:", evaluation_filename)
 
@@ -270,9 +270,9 @@ print("--> vocab_fp:", vocab_fp)
 model_fp = base_fp + train_name + "_local/" + experiment_id
 print("--> model_fp:", model_fp)
 # Path to save results output
-baseline_results_fp = base_fp + train_name + "_local/" + experiment_id + "_baseline_results.csv" 
+baseline_results_fp = base_fp + train_name + "_local/" + experiment_id + "_myST_dev_baseline_results.csv" 
 print("--> baseline_results_fp:", baseline_results_fp)
-finetuned_results_fp = base_fp + train_name + "_local/" + experiment_id + "_dev_results.csv"
+finetuned_results_fp = base_fp + train_name + "_local/" + experiment_id + "_myST_dev_results.csv"
 print("--> finetuned_results_fp:", finetuned_results_fp)
 # Pre-trained checkpoint model
 # For 1) Fine-tuning or
@@ -309,7 +309,7 @@ data = load_dataset('csv',
                     cache_dir=data_cache_fp)
 # Remove the "duration" and "spkr_id" column
 #data = data.remove_columns(["duration", "spkr_id"])
-data = data.remove_columns(["duration"])
+#data = data.remove_columns(["duration"])
 print("--> dataset...")
 print(data)
 # Display some random samples of the dataset

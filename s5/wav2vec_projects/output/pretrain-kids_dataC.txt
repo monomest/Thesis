@@ -1,0 +1,51 @@
+
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/pretrain-kids_combineC.py
+
+------> Setting duration limit... ------------------------------------ 
+
+--> Long files flagged as those greater than 15 seconds.
+
+------> Setting filepaths... -----------------------------------------
+
+Input files...
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/THESIS_C/myST_data_pretrain_unk.csv
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/TLT_local/THESIS_C/TLT17_data_pretrain.csv
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/TLT_local/THESIS_C/TLT1618_data_pretrain.csv
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_pretrain.csv
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/CU_local/THESIS_C/CU_data_pretrain.csv
+
+------> Reading in input files... ------------------------------------
+
+
+------> Combining datasets... ----------------------------------------
+
+
+------> Splitting into long and short files... ------
+
+
+------> Saving to CSV... ----------------------------------------------
+
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT-CU_local/THESIS_C/myST-OGI-TLT-CU_pretrain.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT-CU_local/THESIS_C/myST-OGI-TLT-CU_pretrain_long.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT-CU_local/THESIS_C/myST-OGI-TLT-CU_pretrain_short.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT-CU_local/THESIS_C/myST-OGI-TLT-CU_pretrain_ignore.csv
+Done!
+
+
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/pretrain-kids_split_audio.py
+
+------> Setting filepaths... -----------------------------------------
+
+Input file: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT-CU_local/THESIS_C/myST-OGI-TLT-CU_pretrain_long.csv
+Output file: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT-CU_local/THESIS_C/myST-OGI-TLT-CU_pretrain_split_list.csv
+
+------> Reading in input files... ------------------------------------
+
+
+------> Splitting files... -------------------------------------------
+
+
+------> Saving to CSV... ----------------------------------------------
+
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT-CU_local/THESIS_C/myST-OGI-TLT-CU_pretrain_split_list.csv
+Done!

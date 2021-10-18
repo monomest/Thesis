@@ -2,7 +2,7 @@
 #!/bin/bash
 
 #PBS -l select=1:ncpus=32:ngpus=4:mem=184gb
-#PBS -l walltime=20:00:00
+#PBS -l walltime=25:00:00
 #PBS -M renee.lu@unsw.edu.au
 #PBS -m ae
 #PBS -j oe
@@ -14,9 +14,9 @@ cd /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis
 # Activate virtual environment
 source thesis_env/bin/activate
 
-echo ""$(date)"" 2>&1 | tee -a /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/output/output136.txt
+echo ""$(date)"" 2>&1 | tee -a /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/output/output142.txt
 
 cd /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/
 
-python THESIS_C/run_finetune_kids_TLT17.py 2>&1 | tee -a /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/output/output136.txt
+python THESIS_C/run_finetune_kids_TLT17.py 2>&1 | tee -a /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/output/output142.txt
 

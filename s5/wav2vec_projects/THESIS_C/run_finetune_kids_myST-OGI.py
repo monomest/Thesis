@@ -111,7 +111,7 @@ base_cache_fp = "/srv/scratch/chacmod/.cache/huggingface/datasets/"
 # Dataset name and filename of the csv file containing the training data
 # For generating filepath to file location
 train_name = "myST-OGI"
-train_filename = "THESIS_C/myST-OGI_data_finetune"
+train_filename = "THESIS_C/myST-OGI_data_finetune_light"
 print("train_name:", train_name)
 print("train_filename:", train_filename)
 
@@ -119,7 +119,7 @@ print("train_filename:", train_filename)
 # Dataset name and filename of the csv file containing the evaluation data
 # For generating filepath to file location
 evaluation_name = "myST-OGI"
-evaluation_filename = "THESIS_C/myST-OGI_data_dev"
+evaluation_filename = "THESIS_C/myST-OGI_data_dev_light"
 print("evaluation_name:", evaluation_name)
 print("evaluation_filename:", evaluation_filename)
 

@@ -89,13 +89,13 @@ print("training:", training)
 # For 1) naming vocab.json file and
 #     2) naming model output directory
 #     3) naming results csv file
-experiment_id = "20211004-eval-baseline-test"
+experiment_id = "20211016-eval-baseline-myST-test"
 print("experiment_id:", experiment_id)
 
 # DatasetDict Id
 # For 1) naming cache directory and 
 #     2) saving the DatasetDict object
-datasetdict_id = "myST-10min-eval"
+datasetdict_id = "OGI-eval"
 print("datasetdict_id:", datasetdict_id)
 
 # Base filepath
@@ -110,16 +110,16 @@ base_cache_fp = "/srv/scratch/chacmod/.cache/huggingface/datasets/"
 # Training dataset name and filename
 # Dataset name and filename of the csv file containing the training data
 # For generating filepath to file location
-train_name = "myST"
-train_filename = "THESIS_C/myST_data_dev_noSpkrCol"
+train_name = "OGI"
+train_filename = "THESIS_C/OGI_data_dev_noSpkrCol"
 print("train_name:", train_name)
 print("train_filename:", train_filename)
 
 # Evaluation dataset name and filename
 # Dataset name and filename of the csv file containing the evaluation data
 # For generating filepath to file location
-evaluation_name = "myST"
-evaluation_filename = "THESIS_C/myST_data_test_noSpkrCol"
+evaluation_name = "OGI"
+evaluation_filename = "THESIS_C/OGI_data_test_noSpkrCol"
 print("evaluation_name:", evaluation_name)
 print("evaluation_filename:", evaluation_filename)
 
@@ -660,13 +660,6 @@ if training:
 print("\n------> EVALUATING MODEL... ------------------------------------------ \n")
 torch.cuda.empty_cache()
 
-if eval_pretrained:
-    processor = Wav2Vec2Processor.from_pretrained(eval_model)
-    model = Wav2Vec2ForCTC.from_pretrained(eval_model)
-else:
-    processor = Wav2Vec2Processor.from_pretrained(model_fp)
-    model = Wav2Vec2ForCTC.from_pretrained(model_fp)
-
 # Now, we will make use of the map(...) function to predict 
 # the transcription of every test sample and to save the prediction 
 # in the dataset itself. We will call the resulting dictionary "results".
@@ -689,34 +682,6 @@ def map_to_result(batch):
   batch["pred_str"] = processor.batch_decode(pred_ids)[0]
   
   return batch
-
-results = data["test"].map(map_to_result)
-# Save results to csv
-results_df = results.to_pandas()
-results_df = results_df.drop(columns=['speech', 'sampling_rate'])
-results_df.to_csv(finetuned_results_fp)
-print("Saved results to:", finetuned_results_fp)
-
-# Getting the WER
-print("--> Getting fine-tuned test results...")
-print("Fine-tuned Test WER: {:.3f}".format(wer_metric.compute(predictions=results["pred_str"], 
-      references=results["target_text"])))
-# Showing prediction errors
-print("--> Showing some fine-tuned prediction errors...")
-show_random_elements(results.remove_columns(["speech", "sampling_rate"]))
-# Deeper look into model: running the first test sample through the model, 
-# take the predicted ids and convert them to their corresponding tokens.
-print("--> Taking a deeper look...")
-model.to("cuda")
-input_values = processor(data["test"][0]["speech"], sampling_rate=data["test"][0]["sampling_rate"], return_tensors="pt").input_values.to("cuda")
-
-with torch.no_grad():
-  logits = model(input_values).logits
-
-pred_ids = torch.argmax(logits, dim=-1)
-
-# convert ids to tokens
-print(" ".join(processor.tokenizer.convert_ids_to_tokens(pred_ids[0].tolist())))
 
 # Evaluate baseline model on test set if eval_baseline = True
 if eval_baseline:
