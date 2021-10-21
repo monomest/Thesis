@@ -1,5 +1,5 @@
-# TLT17_splitC.py
-# Purpose: Split the transcribed TLT data 
+# TLT17_prepC.py
+# Purpose: Prepare the transcribed TLT data 
 #          for Thesis C
 # Author: Renee Lu, 2021
 

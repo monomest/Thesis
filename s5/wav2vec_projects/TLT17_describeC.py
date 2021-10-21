@@ -23,7 +23,7 @@ print("\n------> Setting filepaths... -----------------------------------------\
 dataset = "TLT"
 
 base = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/"
-fp_all = base + dataset + "_local/THESIS_C/" + "TLT17_data_split.csv"
+fp_all = base + dataset + "_local/THESIS_C/" + "TLT17eval_data_split.csv"
 
 print("Input file:", fp_all)
 
@@ -44,6 +44,8 @@ data_df = readCSV(fp_all)
 # Portioned data
 data_pretrain = data_df[(data_df['set'] == "pretrain")]
 data_finetune = data_df[(data_df['set'] == "finetune")]
+data_dev = data_df[(data_df['set'] == "dev")]
+data_test = data_df[(data_df['set'] == "test")]
 data_ignore = data_df[(data_df['set'] == "ignore")]
 
 # ------------------------------------------
@@ -71,6 +73,8 @@ def describeData(df, df_all, message):
 describeData(data_df, data_df, "All data")
 describeData(data_pretrain, data_df, "Pretrain data")
 describeData(data_finetune, data_df, "Finetune data")
+describeData(data_dev, data_df, "Development data")
+describeData(data_test, data_df, "Test data")
 describeData(data_ignore, data_df, "Ignored data")
 
 print("Done!")
