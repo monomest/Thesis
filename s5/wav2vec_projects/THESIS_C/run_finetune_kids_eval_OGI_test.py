@@ -89,7 +89,7 @@ print("training:", training)
 # For 1) naming vocab.json file and
 #     2) naming model output directory
 #     3) naming results csv file
-experiment_id = "20211016-base-myST-unk-eval"
+experiment_id = "20211016-base-TLT17-eval"
 print("experiment_id:", experiment_id)
 
 # DatasetDict Id
@@ -130,7 +130,7 @@ print("evaluation_filename:", evaluation_filename)
 use_checkpoint = True
 print("use_checkpoint:", use_checkpoint)
 # Set checkpoint if resuming from/using checkpoint
-checkpoint = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/20211016-base-myST-unk"
+checkpoint = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/TLT_local/20211016-base-TLT17"
 if use_checkpoint:
     print("checkpoint:", checkpoint)
 
