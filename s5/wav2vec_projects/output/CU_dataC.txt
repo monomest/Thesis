@@ -62,3 +62,61 @@ Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/CU_l
 Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/CU_local/THESIS_C/CU_data_pretrain_short.csv
 Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/CU_local/THESIS_C/CU_data_pretrain_long.csv
 Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/CU_local/THESIS_C/CU_data_ignore.csv
+
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/CU_describeC.py
+
+------> Setting filepaths... -----------------------------------------
+
+Input file: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/CU_local/THESIS_C/CU_data_split.csv
+
+------> Reading in input files... ------------------------------------
+
+
+------> Describing datasets... ---------------------------------------
+
+All data
+# Hours: 84.67602378472223
+Proportion of hours: 1.0
+# Samples: 89813
+Proportion of samples: 1.0
+Distribution of audio durations:
+count    89754.000000
+mean         3.396324
+std          4.664847
+min          0.100125
+25%          1.180000
+50%          1.760125
+75%          4.047047
+max        202.500063
+Name: duration, dtype: float64
+Pretrain data
+# Hours: 84.67602378472223
+Proportion of hours: 1.0
+# Samples: 89754
+Proportion of samples: 0.9993430795096478
+Distribution of audio durations:
+count    89754.000000
+mean         3.396324
+std          4.664847
+min          0.100125
+25%          1.180000
+50%          1.760125
+75%          4.047047
+max        202.500063
+Name: duration, dtype: float64
+Ignored data
+# Hours: 0.0
+Proportion of hours: 0.0
+# Samples: 59
+Proportion of samples: 0.0006569204903521761
+Distribution of audio durations:
+count    0.0
+mean     NaN
+std      NaN
+min      NaN
+25%      NaN
+50%      NaN
+75%      NaN
+max      NaN
+Name: duration, dtype: float64
+Done!
