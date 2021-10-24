@@ -49,3 +49,157 @@ Output file: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s
 
 Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT-CU_local/THESIS_C/myST-OGI-TLT-CU_pretrain_split_list.csv
 Done!
+
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/pretrain-kids_all.py
+
+------> Setting filepaths... -----------------------------------------
+
+Input files...
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT-CU_local/THESIS_C/myST-OGI-TLT-CU_pretrain_split_list.csv
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT-CU_local/THESIS_C/myST-OGI-TLT-CU_pretrain_short.csv
+
+------> Reading in input files... ------------------------------------
+
+
+------> Combining datasets... ----------------------------------------
+
+
+------> Getting duration in seconds of each split wav file
+
+duration
+
+------> Saving to CSV... ----------------------------------------------
+
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT-CU_local/THESIS_C/myST-OGI-TLT-CU_pretrain_all.csv
+Done!
+
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/pretrain-kids_all_split.py
+
+ ------> Setting duration limits -------------------------------------
+
+Remove files shorter than 0.5  and higher than 15.5
+
+------> Setting filepaths... -----------------------------------------
+
+Input files: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT-CU_local/THESIS_C/myST-OGI-TLT-CU_pretrain_all.csv
+
+------> Reading in input files... ------------------------------------
+
+
+------> Removing rows outside duration limit... ----------------------
+
+
+------> Splitting... -------------------------------------------------
+
+
+------> Saving to CSV... ----------------------------------------------
+
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT-CU_local/THESIS_C/myST-OGI-TLT-CU_pretrain_manifest.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT-CU_local/THESIS_C/myST-OGI-TLT-CU_pretrain_myST.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT-CU_local/THESIS_C/myST-OGI-TLT-CU_pretrain_CU.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT-CU_local/THESIS_C/myST-OGI-TLT-CU_pretrain_OGI.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT-CU_local/THESIS_C/myST-OGI-TLT-CU_pretrain_TLT.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT-CU_local/THESIS_C/myST-OGI-TLT-CU_pretrain_native.csv
+Done!
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/pretrain-kids_describeC.py
+
+------> Setting filepaths... -----------------------------------------
+
+Input file: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT-CU_local/THESIS_C/myST-OGI-TLT-CU_pretrain_manifest.csv
+
+------> Reading in input files... ------------------------------------
+
+
+------> Describing datasets... ---------------------------------------
+
+All data
+# Hours: 447.7373126215277
+Proportion of hours: 1.0
+# Samples: 542867
+Proportion of samples: 1.0
+Distribution of audio durations:
+count    542867.000000
+mean          2.969151
+std           2.814844
+min           0.510000
+25%           1.110000
+50%           1.890000
+75%           3.690000
+max          15.480000
+Name: duration, dtype: float64
+myST data
+# Hours: 316.68518774305545
+Proportion of hours: 0.7073013099775971
+# Samples: 369903
+Proportion of samples: 0.6813878905883025
+Distribution of audio durations:
+count    369903.000000
+mean          3.082069
+std           2.884093
+min           0.510000
+25%           1.140000
+50%           2.021500
+75%           3.840000
+max          15.480000
+Name: duration, dtype: float64
+OGI data
+# Hours: 16.919467986111112
+Proportion of hours: 0.037788827308241645
+# Samples: 36747
+Proportion of samples: 0.06769061298623788
+Distribution of audio durations:
+count    36747.000000
+mean         1.657553
+std          1.341345
+min          0.510000
+25%          0.750000
+50%          1.200000
+75%          2.070000
+max         15.000000
+Name: duration, dtype: float64
+CU data
+# Hours: 76.55522208333332
+Proportion of hours: 0.1709824486931815
+# Samples: 97725
+Proportion of samples: 0.1800164681220262
+Distribution of audio durations:
+count    97725.000000
+mean         2.820146
+std          2.558363
+min          0.510000
+25%          1.180000
+50%          1.690000
+75%          3.600000
+max         15.420000
+Name: duration, dtype: float64
+TLT data
+# Hours: 37.57743480902778
+Proportion of hours: 0.08392741402097971
+# Samples: 38492
+Proportion of samples: 0.07090502830343344
+Distribution of audio durations:
+count    38492.000000
+mean         3.514464
+std          3.370184
+min          0.510000
+25%          1.020000
+50%          1.860000
+75%          6.000000
+max         15.060000
+Name: duration, dtype: float64
+Native data
+# Hours: 410.15987781249993
+Proportion of hours: 0.9160725859790203
+# Samples: 504375
+Proportion of samples: 0.9290949716965665
+Distribution of audio durations:
+count    504375.000000
+mean          2.927535
+std           2.763478
+min           0.510000
+25%           1.110000
+50%           1.890000
+75%           3.630000
+max          15.480000
+Name: duration, dtype: float64
+Done!

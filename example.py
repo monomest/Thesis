@@ -114,7 +114,7 @@ def vad_collector(sample_rate, frame_duration_ms,
             # If more than 90% of the frames in the ring buffer are
             # unvoiced, then enter NOTTRIGGERED and yield whatever
             # audio we've collected.
-            if num_unvoiced > 0.4 * ring_buffer.maxlen:#0.9 * ring_buffer.maxlen:
+            if num_unvoiced > 0.1 * ring_buffer.maxlen:#0.9 * ring_buffer.maxlen:
                 sys.stdout.write('-(%s)' % (frame.timestamp + frame.duration))
                 triggered = False
                 yield b''.join([f.bytes for f in voiced_frames])
@@ -144,7 +144,9 @@ def main(args):
 
     path_list = []
     for i, segment in enumerate(segments):
-        path = "/srv/scratch/chacmod/Pretrain-SplitData/" +                                                       filepath.split("/")[-1].split(".")[0] + "-chunk-" + str(i) + ".wav"
+
+        path = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/" + filepath.split("/")[-1].split(".")[0] + "-chunk-" + str(i) + ".wav"
+        # path = "/srv/scratch/chacmod/Pretrain-SplitData/" +                                                       filepath.split("/")[-1].split(".")[0] + "-chunk-" + str(i) + ".wav"
         print(' Writing %s' % (path,))
         write_wave(path, segment, sample_rate)
         path_list.append(path)
