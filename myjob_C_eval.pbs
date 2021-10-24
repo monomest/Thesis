@@ -2,7 +2,7 @@
 #!/bin/bash
 
 #PBS -l select=1:ncpus=16:ngpus=2:mem=92gb
-#PBS -l walltime=1:30:00
+#PBS -l walltime=0:45:00
 #PBS -M renee.lu@unsw.edu.au
 #PBS -m ae
 #PBS -j oe
@@ -14,18 +14,18 @@ cd /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis
 # Activate virtual environment
 source thesis_env/bin/activate
 
-echo ""$(date)"" 2>&1 | tee -a /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/output/output147.txt
+echo ""$(date)"" 2>&1 | tee -a /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/output/output148.txt
 
 cd /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/
 
 # Evaluate on myST-test
-python THESIS_C/run_finetune_kids_eval_myST_test.py 2>&1 | tee -a /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/output/output147.txt
+python THESIS_C/run_finetune_kids_eval_myST_test.py 2>&1 | tee -a /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/output/output148.txt
 
 # Evaluate on OGI-dev
-python THESIS_C/run_finetune_kids_eval_OGI_dev.py 2>&1 | tee -a /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/output/output147.txt
+python THESIS_C/run_finetune_kids_eval_OGI_dev.py 2>&1 | tee -a /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/output/output148.txt
 
 # Evaluate on OGI-test
-python THESIS_C/run_finetune_kids_eval_OGI_test.py 2>&1 | tee -a /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/output/output147.txt
+python THESIS_C/run_finetune_kids_eval_OGI_test.py 2>&1 | tee -a /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/output/output148.txt
 
 # Evaluate on TLT17 test
-python THESIS_C/run_finetune_kids_eval_TLT17_test.py 2>&1 | tee -a /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/output/output147.txt
+python THESIS_C/run_finetune_kids_eval_TLT17_test.py 2>&1 | tee -a /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/output/output148.txt
