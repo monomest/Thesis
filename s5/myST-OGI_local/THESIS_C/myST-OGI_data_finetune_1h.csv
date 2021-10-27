@@ -1,0 +1,789 @@
+filepath,transcription_clean,duration,set
+/srv/scratch/chacmod/OGI/speech/scripted/08/4/ksj09/ksj091d0.wav,female,1.587,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/988451/myst_988451_2009-04-12_00-00-00_VB_2.2/myst_988451_2009-04-12_00-00-00_VB_2.2_022.wav,no they don't carry the all the same people,2.491,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007310/myst_007310_2015-03-13_11-53-52_SRL_1.2/myst_007310_2015-03-13_11-53-52_SRL_1.2_008.wav,down the mountain and it and it got like and it broke up into pieces because how much it hit and how hard it hit,10.4204375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008049/myst_008049_2014-04-03_11-06-53_EE_1.1/myst_008049_2014-04-03_11-06-53_EE_1.1_027.wav,the energy goes through the positive side comes out that on the negative side and its heating the filament making it brighter,9.2745625,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/00/4/ks02v/ks02v5a0.wav,i hope the airplane will get higher,6.11875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002016/myst_002016_2014-03-10_13-49-17_LS_2.1/myst_002016_2014-03-10_13-49-17_LS_2.1_044.wav,maybe it's from the chloride from the sun,7.2846875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995741/myst_995741_2011-04-02_00-00-00_ME_1.2/myst_995741_2011-04-02_00-00-00_ME_1.2_016.wav,the magnet is sticking the um the screw is sticking to the magnet w and the screw is and the paper clip is sticking to the screw,10.326,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002304/myst_002304_2015-05-18_13-45-18_LS_4.2/myst_002304_2015-05-18_13-45-18_LS_4.2_014.wav,his skunk know much he spray that he sprays on on stuff so that's i think this one,9.7243125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012028/myst_012028_2014-02-10_10-00-44_SRL_1.1/myst_012028_2014-02-10_10-00-44_SRL_1.1_001.wav,i'm okay hello hello,6.53125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007082/myst_007082_2014-04-24_09-54-01_EE_3.4/myst_007082_2014-04-24_09-54-01_EE_3.4_015.wav,the magnetic force,4.21875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012021/myst_012021_2013-12-20_08-54-44_MX_4.1/myst_012021_2013-12-20_08-54-44_MX_4.1_020.wav,what the heck do you mean,5.2029999999999985,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/01/2/ks131/ks1313p0.wav,safeway,2.112875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990045/myst_990045_2008-02-05_00-00-00_MS_2.2/myst_990045_2008-02-05_00-00-00_MS_2.2_144.wav,no,0.434,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/04/3/ksf3b/ksf3b0i0.wav,cashflow,4.1165625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007088/myst_007088_2014-02-12_11-08-30_EE_1.2/myst_007088_2014-02-12_11-08-30_EE_1.2_029.wav,when it's a cloudy day the motor stops running and then when it quick again on the cloudy day if the motor stops running,11.3780625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/005012/myst_005012_2014-01-30_10-52-52_MX_1.2/myst_005012_2014-01-30_10-52-52_MX_1.2_002.wav,ah,3.076625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990032/myst_990032_2008-12-05_00-00-00_MS_3.3/myst_990032_2008-12-05_00-00-00_MS_3.3_090.wav,yes for the capacity,3.974,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/3/ks62y/ks62y890.wav,unroll,1.71275,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/04/1/ksf07/ksf078h0.wav,warmth,2.796625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/004022/myst_004022_2014-01-24_09-38-37_EE_3.2/myst_004022_2014-01-24_09-38-37_EE_3.2_005.wav,the magnet is repelling,4.3841875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990020/myst_990020_2008-01-05_00-00-00_MS_2.3/myst_990020_2008-01-05_00-00-00_MS_2.3_050.wav,yeah,0.408,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013016/myst_013016_2013-12-04_13-56-29_EE_1.3/myst_013016_2013-12-04_13-56-29_EE_1.3_004.wav,you when the switch is open like it is in the picture um those conduct the ones that conduct electricity you insert where the switch is,13.34075,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/005016/myst_005016_2014-01-27_10-40-23_MX_1.1/myst_005016_2014-01-27_10-40-23_MX_1.1_027.wav,more rules that they have in creating the solution is when you put the salt into the water it creates a mixture dissolved,8.0369375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990015/myst_990015_2008-24-04_00-00-00_MS_1.3/myst_990015_2008-24-04_00-00-00_MS_1.3_144.wav,maybe you're body or something,2.248,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002304/myst_002304_2015-05-04_13-47-10_LS_3.3/myst_002304_2015-05-04_13-47-10_LS_3.3_018.wav,what did you see,1.8349375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/03/0/ks31b/ks31b500.wav,the flood took a car down the street,6.592125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/04/3/ks43l/ks43l1h0.wav,fragment,2.328875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007240/myst_007240_2014-11-19_11-10-20_MX_4.1/myst_007240_2014-11-19_11-10-20_MX_4.1_020.wav,no,1.430125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/03/3/kse47/kse470s0.wav,cooperate,3.1121875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995005/myst_995005_2008-05-03_00-00-00_ME_3.2/myst_995005_2008-05-03_00-00-00_ME_3.2_156.wav,um yeah this one,1.6869999999999998,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008055/myst_008055_2014-05-12_10-35-25_EE_5.2/myst_008055_2014-05-12_10-35-25_EE_5.2_035.wav,the blue light,0.976875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/08/1/ks814/ks8141p0.wav,hoof,1.5876875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993755/myst_993755_2011-28-02_00-00-00_VB_3.1/myst_993755_2011-28-02_00-00-00_VB_3.1_005.wav,popsicle sticks,1.897,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/05/3/ksg14/ksg142v0.wav,two six nine zero two two zero,6.465625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990051/myst_990051_2008-02-05_00-00-00_MS_2.2/myst_990051_2008-02-05_00-00-00_MS_2.2_036.wav,a hundred,0.735,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/022219/myst_022219_2014-12-01_11-39-49_LS_1.3/myst_022219_2014-12-01_11-39-49_LS_1.3_008.wav,you eat other living organism,2.5405,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/09/3/ksk0s/ksk0s7z0.wav,tourists,2.338875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/03/1/kse4c/kse4c2y0.wav,oasis,3.1131875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/07/1/ks70k/ks70k4s0.wav,who will the soldier vote for,4.5984375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013023/myst_013023_2014-05-22_12-39-20_LS_3.1/myst_013023_2014-05-22_12-39-20_LS_3.1_011.wav,leaves,2.9660625,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/04/1/ksf38/ksf381p0.wav,hoof,1.6075625,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/09/1/ks90t/ks90t4s0.wav,who will the soldier vote for,4.5984375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/3/ksh03/ksh035y0.wav,he breathed a sigh of relief,4.2380625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990352/myst_990352_2009-02-04_00-00-00_MS_1.2/myst_990352_2009-02-04_00-00-00_MS_1.2_040.wav,yes i measured my friend and i thought she was going to be about four meters and she was only one and a half,6.5429999999999975,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012210/myst_012210_2015-01-26_09-42-11_EE_5.1/myst_012210_2015-01-26_09-42-11_EE_5.1_012.wav,they all are reflecting off different ways like if the light goes down it reflects,10.415,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013060/myst_013060_2013-12-04_09-32-59_EE_1.3/myst_013060_2013-12-04_09-32-59_EE_1.3_010.wav,the sponge is an insulator and not a conductor,5.72925,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/10/2/ksl17/ksl175t0.wav,please offer them a dinner mint,4.5985,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993203/myst_993203_2008-15-10_00-00-00_VB_3.2/myst_993203_2008-15-10_00-00-00_VB_3.2_049.wav,well if it had wings or not if you um the if you shook the string,6.397,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002026/myst_002026_2014-02-27_14-09-25_LS_1.1/myst_002026_2014-02-27_14-09-25_LS_1.1_003.wav,they all have system,1.2980625,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/05/0/ksg34/ksg344j0.wav,fred didn't try the carrot juice,4.613,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007253/myst_007253_2014-10-07_08-27-50_MX_2.2/myst_007253_2014-10-07_08-27-50_MX_2.2_003.wav,is a mixtures and there solution,2.5108125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002309/myst_002309_2015-04-21_09-26-45_LS_3.1/myst_002309_2015-04-21_09-26-45_LS_3.1_007.wav,it's palmate because it spreads out like a hand,4.8673125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012023/myst_012023_2014-02-18_10-14-08_SRL_1.2/myst_012023_2014-02-18_10-14-08_SRL_1.2_011.wav,abrasion is a type of physical weathering,2.8923125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013016/myst_013016_2014-04-22_13-57-20_LS_1.3/myst_013016_2014-04-22_13-57-20_LS_1.3_030.wav,that makes them a detrivores because they eat decaying matter,9.510875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/3/ks61e/ks61e5h0.wav,she'll be ready very soon,3.8769375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/07/0/ksi11/ksi11320.wav,offshore,1.9684375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013013/myst_013013_2014-05-05_09-12-56_LS_2.1/myst_013013_2014-05-05_09-12-56_LS_2.1_052.wav,is,1.125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/09/4/ks948/ks9480o0.wav,circumstance,2.729375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007256/myst_007256_2015-02-18_11-51-36_LS_2.3/myst_007256_2015-02-18_11-51-36_LS_2.3_013.wav,they keep everything inside your body uhm safe just like a bug with its skeleton over its body and it's kind of like the skin to the bug,13.366,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/2/ksh49/ksh492a0.wav,microwaves,2.33875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996271/myst_996271_2008-18-12_00-00-00_MS_3.1/myst_996271_2008-18-12_00-00-00_MS_3.1_040.wav,um i don't really know we did a talk about that,4.414,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/02/2/ksd39/ksd39070.wav,awesome,2.359125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/05/3/ksg14/ksg14840.wav,truck,2.3385,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/988451/myst_988451_2009-08-12_00-00-00_VB_2.3/myst_988451_2009-08-12_00-00-00_VB_2.3_069.wav,bye bye,0.332,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/09/4/ks948/ks9480j0.wav,cautiously,1.9885,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995001/myst_995001_2008-27-02_00-00-00_ME_1.2/myst_995001_2008-27-02_00-00-00_ME_1.2_031.wav,yeah,1.189,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/08/0/ksj0z/ksj0z810.wav,toyota,1.58775,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990016/myst_990016_2008-08-05_00-00-00_MS_3.3/myst_990016_2008-08-05_00-00-00_MS_3.3_074.wav,um yeah we've explored water bottles we've explored spoons,5.505,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/10/4/ksa3j/ksa3j6l0.wav,my sleeve caught the thorny bush,5.3640625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990557/myst_990557_2010-06-04_00-00-00_MS_1.2/myst_990557_2010-06-04_00-00-00_MS_1.2_013.wav,no it does not because snakes can be all different sizes,3.25,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/004034/myst_004034_2014-02-03_09-33-29_EE_3.4/myst_004034_2014-02-03_09-33-29_EE_3.4_012.wav,magnetic force,1.8553125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/005012/myst_005012_2014-02-13_10-21-48_MX_3.1/myst_005012_2014-02-13_10-21-48_MX_3.1_004.wav,hello,1.221375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/1/ks62u/ks62u570.wav,don't make the same mistakes twice,4.982875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990038/myst_990038_2008-08-05_00-00-00_MS_3.1/myst_990038_2008-08-05_00-00-00_MS_3.1_033.wav,yeah and then we're gonna go to so when we're d and then we get it we go to his house and then we watch a violent movie,6.148,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996437/myst_996437_2009-23-09_00-00-00_VB_2.3/myst_996437_2009-23-09_00-00-00_VB_2.3_034.wav,how variables change things,2.698,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/09/3/ksk0h/ksk0h0n0.wav,childhood,1.9684375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013021/myst_013021_2014-05-23_13-34-16_LS_4.1/myst_013021_2014-05-23_13-34-16_LS_4.1_016.wav,a rattlesnake is warning the mouse thing the prairie dog that it's there so it should run,9.2025625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990385/myst_990385_2009-14-04_00-00-00_ME_2.1/myst_990385_2009-14-04_00-00-00_ME_2.1_020.wav,so right now the negative side is on the left side and on the negative side of the on the no negative side th the electricity will go on the negative side and that's where it would go,13.943,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002119/myst_002119_2014-04-18_13-14-00_LS_3.3/myst_002119_2014-04-18_13-14-00_LS_3.3_007.wav,they all help you like digest your food,4.71775,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/07/0/ksi3m/ksi3m5d0.wav,mabel grows tomatoes in the courtyard,4.328125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/07/0/ks733/ks733770.wav,springhill,1.9879375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013064/myst_013064_2014-04-16_08-32-47_LS_1.1/myst_013064_2014-04-16_08-32-47_LS_1.1_014.wav,one of the parts is the biosphere it helps plants and animals live on the earth which is a system,6.4243125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997679/myst_997679_2011-07-02_00-00-00_ME_3.1/myst_997679_2011-07-02_00-00-00_ME_3.1_003.wav,through a pathway to a receiver and back again,7.252000000000002,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/01/3/ks110/ks1102l0.wav,nothing,2.6158125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995731/myst_995731_2011-23-02_00-00-00_ME_3.1/myst_995731_2011-23-02_00-00-00_ME_3.1_015.wav,well if there's wires between the two uh,8.248,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990050/myst_990050_2008-16-05_00-00-00_MS_4.2/myst_990050_2008-16-05_00-00-00_MS_4.2_250.wav,uh yeah you'd use that for like when like you're filling up soda cans and you just need a little bit more you would pour it in the water into there and then pour it back in,12.579,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993201/myst_993201_2008-23-10_00-00-00_VB_4.3/myst_993201_2008-23-10_00-00-00_VB_4.3_034.wav,i i think it's just to get more answers cause yeah,5.206,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/004023/myst_004023_2014-01-28_08-22-39_EE_3.3/myst_004023_2014-01-28_08-22-39_EE_3.3_018.wav,the magnet is a magnet and when it touches the steel nail the steel nail becomes a temporary magnet,8.3220625,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/0/ks63c/ks63c4j0.wav,fred didn't try the carrot juice,4.612125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/1/ksh3q/ksh3q560.wav,even your ears sweat in a sauna,4.6124375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007077/myst_007077_2014-03-06_14-03-29_EE_1.4/myst_007077_2014-03-06_14-03-29_EE_1.4_022.wav,i see wood fuel like gasoline i see a candle and three apples,8.142000000000001,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990009/myst_990009_2008-09-05_00-00-00_ME_2.1/myst_990009_2008-09-05_00-00-00_ME_2.1_008.wav,one side's on the um negative side and one side's on the positive side,5.05,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990069/myst_990069_2008-19-05_00-00-00_MS_4.2/myst_990069_2008-19-05_00-00-00_MS_4.2_066.wav,um no not really,3.075,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997273/myst_997273_2008-08-12_00-00-00_ME_2.1/myst_997273_2008-08-12_00-00-00_ME_2.1_027.wav,yes it is,1.226,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/03/2/ks340/ks3402k0.wav,normal,3.113625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995731/myst_995731_2011-16-02_00-00-00_ME_2.2/myst_995731_2011-16-02_00-00-00_ME_2.2_018.wav,because well the motor is spinning because all that energy he has,8.524,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/004031/myst_004031_2013-12-03_10-12-27_EE_1.4/myst_004031_2013-12-03_10-12-27_EE_1.4_019.wav,it will be environmentally from,3.194875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996215/myst_996215_2009-15-01_00-00-00_MS_4.1/myst_996215_2009-15-01_00-00-00_MS_4.1_098.wav,well it would be accurate sort of if you wanna be more accurate you should use your um a thermometer yeah,13.183,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/3/ksh0b/ksh0b6b0.wav,search in between the couch cushions,4.968875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997478/myst_997478_2010-21-01_00-00-00_ME_2.3/myst_997478_2010-21-01_00-00-00_ME_2.3_008.wav,um all metal is c a conductor is what i learned today so it powers the generators like the on switch would because it's metal,12.253,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/08/1/ksj06/ksj063t0.wav,screwdriver,3.8773125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/004025/myst_004025_2013-12-03_10-12-09_EE_1.4/myst_004025_2013-12-03_10-12-09_EE_1.4_007.wav,a fuel is anything that creates energy,6.2483125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/02/0/ksd17/ksd170u0.wav,crenshaw,3.156375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/02/0/ksd36/ksd362n0.wav,nuclear,2.70875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/07/0/ks730/ks7304d0.wav,chasing sally can be dangerous,4.612375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990501/myst_990501_2010-02-02_00-00-00_WA_2.1/myst_990501_2010-02-02_00-00-00_WA_2.1_043.wav,well the um water level will go back down pretty far,8.392999999999999,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990048/myst_990048_2008-16-05_00-00-00_MS_4.3/myst_990048_2008-16-05_00-00-00_MS_4.3_044.wav,it's if you don't wait longer than it's g then you're gonna get one ten temperature that one minute and then you're gonna get another temperature the other minute,8.951,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007238/myst_007238_2014-09-24_08-41-16_MX_1.1/myst_007238_2014-09-24_08-41-16_MX_1.1_019.wav,the screen is creating separation,3.6953125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013050/myst_013050_2013-11-20_10-20-34_EE_1.2/myst_013050_2013-11-20_10-20-34_EE_1.2_023.wav,turn so you could here,5.5930625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013027/myst_013027_2014-05-22_12-59-17_LS_3.3/myst_013027_2014-05-22_12-59-17_LS_3.3_005.wav,it zooms in and it shows three little circles,4.4576875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/988440/myst_988440_2009-10-11_00-00-00_VB_2.2/myst_988440_2009-10-11_00-00-00_VB_2.2_022.wav,m you can figure out how many pennies can go in to it and how much water it can hold,7.018,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993210/myst_993210_2008-15-10_00-00-00_VB_3.1/myst_993210_2008-15-10_00-00-00_VB_3.1_127.wav,yeah i mean he discovered there's over a million stars in the milky way,5.704,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/10/0/ksa40/ksa404i0.wav,bill has purple glasses,3.9175625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996718/myst_996718_2011-11-01_00-00-00_MS_1.1/myst_996718_2011-11-01_00-00-00_MS_1.1_004.wav,um yes i it is on,3.746,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995002/myst_995002_2008-02-04_00-00-00_ME_4.2/myst_995002_2008-02-04_00-00-00_ME_4.2_048.wav,um what surprised me was that ten wraps would pick up only two,5.495,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996416/myst_996416_2009-11-09_00-00-00_VB_1.3/myst_996416_2009-11-09_00-00-00_VB_1.3_006.wav,the y axis is at the bottom and the x axis is at the side the left side,5.227,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/004026/myst_004026_2013-11-19_09-42-57_EE_1.2/myst_004026_2013-11-19_09-42-57_EE_1.2_005.wav,the d cell and um the the d cell must be um connected to the motor and so as well as the positive,7.942375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013023/myst_013023_2014-05-22_12-22-05_LS_2.3/myst_013023_2014-05-22_12-22-05_LS_2.3_011.wav,that they are brain cells,1.658875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/09/2/ksk12/ksk125o0.wav,are zebras just striped horses,5.7146875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/01/2/ksc0j/ksc0j760.wav,spoons,3.154875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013023/myst_013023_2014-05-22_12-22-05_LS_2.3/myst_013023_2014-05-22_12-22-05_LS_2.3_005.wav,that cells are in our our body,2.412375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012018/myst_012018_2014-04-17_13-56-59_SRL_3.4/myst_012018_2014-04-17_13-56-59_SRL_3.4_035.wav,it breaks apart as it's fractured,1.78125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013251/myst_013251_2015-01-23_12-40-22_EE_2.3/myst_013251_2015-01-23_12-40-22_EE_2.3_024.wav,uh we learned about strings of lights and series circuits and how if one light burns out in a series circuit all the other ones do as for in a parallel circuit the other lights do not burn out,11.7410625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002121/myst_002121_2014-03-11_13-21-42_LS_2.1/myst_002121_2014-03-11_13-21-42_LS_2.1_019.wav,yes because it's a living organism,2.5659375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/05/2/ks50w/ks50w6e0.wav,the rain chased the dirt down the drain,4.23825,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013030/myst_013030_2014-05-08_14-08-20_LS_2.3/myst_013030_2014-05-08_14-08-20_LS_2.3_007.wav,the things in the lake,2.5329375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/05/4/ks50u/ks50u2x0.wav,one eight one seven six four three,6.09525,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/004013/myst_004013_2013-11-19_09-27-55_EE_1.2/myst_004013_2013-11-19_09-27-55_EE_1.2_015.wav,the switch has to be touching both wires or both metal parts that the wires are connected to to make the motor spin,10.3783125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996411/myst_996411_2009-09-09_00-00-00_VB_1.3/myst_996411_2009-09-09_00-00-00_VB_1.3_006.wav,they're positioned for the length one ten to two hundred and the number of swings one to twenty,8.507,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007255/myst_007255_2015-04-23_08-17-35_LS_4.2/myst_007255_2015-04-23_08-17-35_LS_4.2_002.wav,it has do it how how a most humans react,4.559375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002127/myst_002127_2014-02-27_13-42-40_LS_1.1/myst_002127_2014-02-27_13-42-40_LS_1.1_012.wav,it a part,1.537875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007206/myst_007206_2014-09-29_14-05-09_MX_1.2/myst_007206_2014-09-29_14-05-09_MX_1.2_031.wav,a solution,0.645125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/017092/myst_017092_2014-05-21_07-55-25_EE_4.2/myst_017092_2014-05-21_07-55-25_EE_4.2_031.wav,i don't know,2.3131875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/09/3/ks93i/ks93i840.wav,truck,2.3586875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/01/2/ksc2x/ksc2x110.wav,direct,2.702875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007251/myst_007251_2014-10-06_07-57-51_MX_1.3/myst_007251_2014-10-06_07-57-51_MX_1.3_029.wav,no,0.8998125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002119/myst_002119_2014-03-21_08-40-35_LS_2.3/myst_002119_2014-03-21_08-40-35_LS_2.3_041.wav,it brings your food down,2.257375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/986612/myst_986612_2010-15-04_00-00-00_WA_3.3/myst_986612_2010-15-04_00-00-00_WA_3.3_008.wav,yes,0.916,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990076/myst_990076_2008-12-05_00-00-00_MS_3.3/myst_990076_2008-12-05_00-00-00_MS_3.3_038.wav,yeah and she paid the same amount,1.719,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/09/0/ksk15/ksk158v0.wav,abnormal,2.7184375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990382/myst_990382_2009-14-04_00-00-00_ME_2.1/myst_990382_2009-14-04_00-00-00_ME_2.1_008.wav,um there's wires um attached to both sides of the dcl and they're gonna touch the light bulb,10.113,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013013/myst_013013_2014-05-05_09-12-56_LS_2.1/myst_013013_2014-05-05_09-12-56_LS_2.1_026.wav,no plants do not need food they need water as their food,7.1223125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996271/myst_996271_2008-18-12_00-00-00_MS_3.1/myst_996271_2008-18-12_00-00-00_MS_3.1_014.wav,yeah capacity the capacity is when um i know what capacity means it is when it's not filled all the way up but,9.692,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/02/1/ks245/ks2454t0.wav,turn the volume on the radio down,6.6055625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007083/myst_007083_2014-03-12_09-34-12_EE_2.1/myst_007083_2014-03-12_09-34-12_EE_2.1_019.wav,the light bulbs are gained,3.2324375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/01/3/ks13i/ks13i5h0.wav,she'll be ready very soon,5.11725,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007093/myst_007093_2014-02-04_12-22-54_EE_1.1/myst_007093_2014-02-04_12-22-54_EE_1.1_025.wav,i noticed that when i pushed the d cell it turned around so that the minus sign is now giving energy to the light bulb and the plus sign is getting the energy from the other wire,13.137,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018213/myst_018213_2014-09-18_15-08-46_LS_1.1/myst_018213_2014-09-18_15-08-46_LS_1.1_010.wav,they they help the car move,5.0615,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002103/myst_002103_2014-04-04_12-54-10_LS_3.1/myst_002103_2014-04-04_12-54-10_LS_3.1_017.wav,can you please repeat that,1.67925,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013016/myst_013016_2014-04-23_14-04-40_LS_2.1/myst_013016_2014-04-23_14-04-40_LS_2.1_029.wav,i see a ham a cheeseburger which symbolizes nutrients which plants need because they are living organism,9.4005,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/988440/myst_988440_2009-03-11_00-00-00_VB_1.2/myst_988440_2009-03-11_00-00-00_VB_1.2_013.wav,um so that things don't get out of control and you don't have too many um things that are not alike,7.798999999999999,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/004012/myst_004012_2013-11-19_09-29-08_EE_1.2/myst_004012_2013-11-19_09-29-08_EE_1.2_009.wav,makes a full circuit,1.2035,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/05/4/ksg3l/ksg3l6m0.wav,the stove melted the butter,4.3195,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990043/myst_990043_2008-07-05_00-00-00_MS_3.1/myst_990043_2008-07-05_00-00-00_MS_3.1_106.wav,it felt like it was like a kilogram and it was mo and it was more than a kilogram,6.164,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014020/myst_014020_2013-12-17_12-44-59_MX_1.2/myst_014020_2013-12-17_12-44-59_MX_1.2_033.wav,it's a mixture,1.6561875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007241/myst_007241_2015-02-05_11-21-26_LS_1.1/myst_007241_2015-02-05_11-21-26_LS_1.1_016.wav,a food web,1.28125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/02/0/ksd0h/ksd0h370.wav,page,3.0691875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/10/1/ksa0b/ksa0b520.wav,honey can get sticky,2.338875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012011/myst_012011_2014-02-19_10-23-35_SRL_1.3/myst_012011_2014-02-19_10-23-35_SRL_1.3_015.wav,we did the same experiment where the rocks dissolved and it's reacting to the rain just like rock was reacting to the vinegar,7.427375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012023/myst_012023_2013-12-20_09-11-09_MX_4.1/myst_012023_2013-12-20_09-11-09_MX_4.1_017.wav,baking soda and calcium chloride,4.6526875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002126/myst_002126_2014-05-01_08-01-11_LS_4.2/myst_002126_2014-05-01_08-01-11_LS_4.2_010.wav,it uses its shell to protect itself,4.368,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993204/myst_993204_2008-09-10_00-00-00_VB_2.3/myst_993204_2008-09-10_00-00-00_VB_2.3_052.wav,i'm not really sure but i i think it's just um,5.5870000000000015,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990378/myst_990378_2009-13-04_00-00-00_ME_1.3/myst_990378_2009-13-04_00-00-00_ME_1.3_023.wav,yes,1.74,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990337/myst_990337_2009-22-04_00-00-00_MS_4.2/myst_990337_2009-22-04_00-00-00_MS_4.2_026.wav,the alcohol got cold got um well got down because well it was too cold so it had to go down to five degree celsius,10.984000000000002,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/988439/myst_988439_2009-13-11_00-00-00_VB_2.3/myst_988439_2009-13-11_00-00-00_VB_2.3_013.wav,where they're put is the y axis,2.432,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002122/myst_002122_2014-04-18_11-23-29_LS_3.3/myst_002122_2014-04-18_11-23-29_LS_3.3_002.wav,like the human body and stuff like that,6.1383125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995001/myst_995001_2008-27-02_00-00-00_ME_1.2/myst_995001_2008-27-02_00-00-00_ME_1.2_045.wav,probably,1.244,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990378/myst_990378_2009-04-05_00-00-00_ME_3.3/myst_990378_2009-04-05_00-00-00_ME_3.3_026.wav,yes,3.4360000000000004,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/1/ksh41/ksh41570.wav,don't make the same mistakes twice,4.9533125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013018/myst_013018_2013-12-06_07-49-35_EE_1.4/myst_013018_2013-12-06_07-49-35_EE_1.4_026.wav,the solar panel and the wind fossil will not pollute the air but the gasoline and the gasoline and the coal will,8.1074375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/004019/myst_004019_2014-01-24_09-38-22_EE_3.1/myst_004019_2014-01-24_09-38-22_EE_3.1_015.wav,the steel because it has iron in it and iron which is carbon makes an object of we commonly known as steel and if there is any iron in this metal then it will stick,13.2343125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/10/3/ksl0f/ksl0f6d0.wav,the flea chased the dog,2.79625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012201/myst_012201_2015-01-23_12-41-34_EE_5.1/myst_012201_2015-01-23_12-41-34_EE_5.1_010.wav,there's glass,2.181625,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/09/4/ks911/ks911460.wav,help me unroll the new rug,4.236875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013021/myst_013021_2013-12-11_13-28-30_EE_2.1/myst_013021_2013-12-11_13-28-30_EE_2.1_015.wav,um i do not quite understand that question could you please maybe try repeating it in a different way,7.8169375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/01/1/ks119/ks1193o0.wav,rugby,4.0914375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/07/4/ksi3r/ksi3r6o0.wav,someone bought a beautiful ring for you,5.734375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995523/myst_995523_2010-11-03_00-00-00_ME_4.2/myst_995523_2010-11-03_00-00-00_ME_4.2_027.wav,okay,0.794,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/07/0/ksi40/ksi40230.wav,logic,1.6076875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/09/4/ksk2v/ksk2v0y0.wav,depths,2.7394375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/08/3/ksj33/ksj336c0.wav,i'm ready to go home,3.9149375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997279/myst_997279_2008-20-11_00-00-00_ME_1.3/myst_997279_2008-20-11_00-00-00_ME_1.3_030.wav,in them,0.45,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018210/myst_018210_2015-03-27_08-48-16_MX_1.2/myst_018210_2015-03-27_08-48-16_MX_1.2_017.wav,another type of mixture,1.533375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013030/myst_013030_2014-05-08_14-08-20_LS_2.3/myst_013030_2014-05-08_14-08-20_LS_2.3_023.wav,i see leaf cells,2.667,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/0/ksh12/ksh128g0.wav,wagging,1.967625,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/01/0/ks10a/ks10a1e0.wav,five,2.088125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/08/2/ksj3h/ksj3h5g0.wav,take off your hat please,3.916,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002126/myst_002126_2014-03-04_09-24-59_LS_1.3/myst_002126_2014-03-04_09-24-59_LS_1.3_002.wav,stuff,1.0805,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995001/myst_995001_2008-13-02_00-00-00_ME_2.3/myst_995001_2008-13-02_00-00-00_ME_2.3_060.wav,yes it work,1.7819999999999998,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990030/myst_990030_2008-05-05_00-00-00_MS_2.3/myst_990030_2008-05-05_00-00-00_MS_2.3_116.wav,no,0.484,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013018/myst_013018_2013-11-21_12-30-24_EE_1.2/myst_013018_2013-11-21_12-30-24_EE_1.2_025.wav,then it means the solar panel is doing it's job,2.378,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990047/myst_990047_2008-30-04_00-00-00_MS_1.3/myst_990047_2008-30-04_00-00-00_MS_1.3_080.wav,n mmm most of it i already knew,2.397,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012225/myst_012225_2015-01-26_09-21-15_SMP_2.3/myst_012225_2015-01-26_09-21-15_SMP_2.3_013.wav,waning crescent,2.308375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/02/4/ksd3e/ksd3e1x0.wav,jurors,2.6094375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/03/0/kse2s/kse2s7m0.wav,swoop,2.1229375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007084/myst_007084_2014-02-04_13-04-00_EE_1.1/myst_007084_2014-02-04_13-04-00_EE_1.1_005.wav,a battery,0.84375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/2/ks616/ks6165f0.wav,put the key in the key hole,3.8773125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990029/myst_990029_2008-19-05_00-00-00_MS_4.2/myst_990029_2008-19-05_00-00-00_MS_4.2_054.wav,colder,1.768,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013018/myst_013018_2013-12-06_07-49-35_EE_1.4/myst_013018_2013-12-06_07-49-35_EE_1.4_027.wav,wasteful energy,1.5374375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/08/2/ks80f/ks80f5g0.wav,take off your hat please,3.877625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013048/myst_013048_2013-12-05_12-32-28_EE_1.4/myst_013048_2013-12-05_12-32-28_EE_1.4_010.wav,felt it feels like heat feels like heat like you're touching it kind of you feel like your almost about to touching it because you're so close to it,10.7768125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/005015/myst_005015_2014-01-30_10-56-57_MX_1.2/myst_005015_2014-01-30_10-56-57_MX_1.2_039.wav,solute is left and that is important because then you have your solute back but your water evaporates,13.74075,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/03/1/ks33m/ks33m4o0.wav,san diego is very green this year,8.1411875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996700/myst_996700_2011-26-01_00-00-00_MS_3.3/myst_996700_2011-26-01_00-00-00_MS_3.3_035.wav,it will mo it most likely will show you on that thing like the syringe has forty a hundred,6.96675,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997486/myst_997486_2010-01-02_00-00-00_ME_3.3/myst_997486_2010-01-02_00-00-00_ME_3.3_003.wav,the one on the right side is sort of separate from the other one,4.609,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/004028/myst_004028_2014-02-10_14-09-52_EE_4.1/myst_004028_2014-02-10_14-09-52_EE_4.1_027.wav,it has to be wrapped around the rivet,2.0868125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014013/myst_014013_2014-02-10_13-38-04_MX_4.1/myst_014013_2014-02-10_13-38-04_MX_4.1_034.wav,on second thought no there is no reaction because it's not reacting,4.2795625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997249/myst_997249_2008-04-12_00-00-00_ME_2.1/myst_997249_2008-04-12_00-00-00_ME_2.1_001.wav,good,0.735,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008045/myst_008045_2014-04-10_08-31-30_EE_2.1/myst_008045_2014-04-10_08-31-30_EE_2.1_004.wav,electricity circuit electricity flows,3.4231875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/01/2/ksc0j/ksc0j5p0.wav,pass their notes along,5.14825,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013026/myst_013026_2013-12-11_13-30-29_EE_2.1/myst_013026_2013-12-11_13-30-29_EE_2.1_010.wav,what's your name,1.75,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007081/myst_007081_2014-02-04_13-15-58_EE_1.1/myst_007081_2014-02-04_13-15-58_EE_1.1_001.wav,i'm good i am good how are you,7.90625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997690/myst_997690_2011-06-01_00-00-00_ME_1.2/myst_997690_2011-06-01_00-00-00_ME_1.2_001.wav,hello,2.17,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013062/myst_013062_2014-04-30_12-53-50_LS_2.1/myst_013062_2014-04-30_12-53-50_LS_2.1_012.wav,um it is probably wheat grass with water and roots and grass,8.8484375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/998663/myst_998663_2010-21-09_00-00-00_MS_1.3/myst_998663_2010-21-09_00-00-00_MS_1.3_016.wav,gotta use um well your pinkie is one centimeter and your pinkie and your thumb is about ten centimeters,11.589,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/04/1/ks40s/ks40s7n0.wav,tab,5.5936875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/07/1/ks70e/ks70e530.wav,the bird sang a sweet melody,4.609125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/00/9/ksb17/ksb17420.wav,the cows' hay was not dry yet,6.0965625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997282/myst_997282_2008-15-12_00-00-00_ME_3.1/myst_997282_2008-15-12_00-00-00_ME_3.1_063.wav,the other direction like the electricity goes to the right and to the other side,9.273,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012031/myst_012031_2014-01-10_13-22-12_MX_4.2/myst_012031_2014-01-10_13-22-12_MX_4.2_001.wav,good,1.25,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996424/myst_996424_2009-05-10_00-00-00_VB_4.1/myst_996424_2009-05-10_00-00-00_VB_4.1_027.wav,i think it's,0.986,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/03/0/ks30k/ks30k3w0.wav,the illusion looked like a giraffe,6.095375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/005028/myst_005028_2014-01-30_09-56-43_MX_1.2/myst_005028_2014-01-30_09-56-43_MX_1.2_023.wav,the salt and water you put it you let it evaporate and then you can separate it,6.485875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997670/myst_997670_2011-10-02_00-00-00_ME_3.2/myst_997670_2011-10-02_00-00-00_ME_3.2_028.wav,it means it has two pathways,3.847,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995009/myst_995009_2008-12-03_00-00-00_ME_3.3/myst_995009_2008-12-03_00-00-00_ME_3.3_122.wav,because i don't have a wire going through the negative end,2.765,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997225/myst_997225_2008-11-12_00-00-00_ME_2.3/myst_997225_2008-11-12_00-00-00_ME_2.3_038.wav,you're right,0.897,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990043/myst_990043_2008-07-05_00-00-00_MS_3.1/myst_990043_2008-07-05_00-00-00_MS_3.1_092.wav,how much it um holds yeah,4.4689999999999985,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/05/2/ksg2x/ksg2x390.wav,pathfinder,1.6078125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990082/myst_990082_2008-01-05_00-00-00_MS_2.3/myst_990082_2008-01-05_00-00-00_MS_2.3_062.wav,uh you would count the grams,3.344,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/05/2/ksg0p/ksg0p5e0.wav,will you please bathe,4.2375625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007090/myst_007090_2014-02-12_10-59-06_EE_1.2/myst_007090_2014-02-12_10-59-06_EE_1.2_035.wav,when there is walking the flag stops,2.1944375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995741/myst_995741_2011-16-02_00-00-00_ME_2.2/myst_995741_2011-16-02_00-00-00_ME_2.2_012.wav,like the swi the switch is like instead of going out it's back in,5.017,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/05/1/ks50b/ks50b510.wav,it can only be a good circus with elephants,5.343875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007241/myst_007241_2014-11-20_10-49-41_MX_4.2/myst_007241_2014-11-20_10-49-41_MX_4.2_012.wav,so water reacting to the baking soda and calcium chloride is making the bag expand,8.1308125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007206/myst_007206_2014-09-29_14-05-09_MX_1.2/myst_007206_2014-09-29_14-05-09_MX_1.2_016.wav,i don't know what mass means could you explain it to me,3.8704375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/03/2/ks340/ks340880.wav,unfortunate,3.6109375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013046/myst_013046_2014-04-30_12-43-26_LS_2.1/myst_013046_2014-04-30_12-43-26_LS_2.1_055.wav,because it has water and sun but no air,3.8398125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/07/4/ks71a/ks71a1s0.wav,humor,1.587875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990048/myst_990048_2008-02-05_00-00-00_MS_2.2/myst_990048_2008-02-05_00-00-00_MS_2.2_132.wav,one kilogram no,3.609,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014033/myst_014033_2013-12-12_13-04-20_MX_1.2/myst_014033_2013-12-12_13-04-20_MX_1.2_021.wav,that it is a correct addition problem,3.05825,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996271/myst_996271_2009-08-01_00-00-00_MS_3.3/myst_996271_2009-08-01_00-00-00_MS_3.3_016.wav,uh different because your hand's smaller than a ruler or something like that,9.46,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007256/myst_007256_2014-10-28_11-15-02_MX_4.1/myst_007256_2014-10-28_11-15-02_MX_4.1_029.wav,i'm i see that the they like reacted to each other but they didn't like react they just changed the dollars of their money,13.1769375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012023/myst_012023_2013-11-13_08-57-22_MX_1.2/myst_012023_2013-11-13_08-57-22_MX_1.2_002.wav,we have been learning about mixtures and solutions,4.4291875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/08/3/ksj35/ksj352w0.wav,two four seven six three seven four,6.52175,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996438/myst_996438_2009-10-09_00-00-00_VB_1.2/myst_996438_2009-10-09_00-00-00_VB_1.2_001.wav,i'm good,1.807,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/022201/myst_022201_2014-11-14_11-45-34_LS_1.1/myst_022201_2014-11-14_11-45-34_LS_1.1_018.wav,they make other things happen,2.78275,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/004021/myst_004021_2014-01-22_09-05-26_EE_3.1/myst_004021_2014-01-22_09-05-26_EE_3.1_008.wav,i just told you the answer to his question because inside it has iron and steel,11.29625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997237/myst_997237_2008-08-12_00-00-00_ME_2.2/myst_997237_2008-08-12_00-00-00_ME_2.2_048.wav,thanks,0.632,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996430/myst_996430_2009-14-09_00-00-00_VB_2.1/myst_996430_2009-14-09_00-00-00_VB_2.1_021.wav,if you're off and then you test another one that's like just a teeny bit off you might get a different result so you want to be as accurate as you can,9.754,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996702/myst_996702_2011-14-01_00-00-00_MS_2.1/myst_996702_2011-14-01_00-00-00_MS_2.1_022.wav,they're different sizes,1.41,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/1/ksh42/ksh428r0.wav,yankee,1.9885,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007082/myst_007082_2014-04-24_10-05-29_EE_4.1/myst_007082_2014-04-24_10-05-29_EE_4.1_005.wav,um i don't know,4.2906875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013057/myst_013057_2014-04-16_08-50-44_LS_1.1/myst_013057_2014-04-16_08-50-44_LS_1.1_005.wav,your immune system the solar system the galaxy lots of things,8.30475,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997690/myst_997690_2011-24-01_00-00-00_ME_2.2/myst_997690_2011-24-01_00-00-00_ME_2.2_024.wav,um what's happening is it's by so that's making the flag go through,8.219,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/02/0/ksd0l/ksd0l1j0.wav,gumshoe,4.0911875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/08/2/ks832/ks832070.wav,awesome,2.3581875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/07/3/ksi0r/ksi0r1m0.wav,hawthorne,2.7965,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995527/myst_995527_2010-23-02_00-00-00_ME_1.2/myst_995527_2010-23-02_00-00-00_ME_1.2_014.wav,it will not stick because it's it's just alone,4.759,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995731/myst_995731_2011-03-03_00-00-00_ME_4.1/myst_995731_2011-03-03_00-00-00_ME_4.1_022.wav,i'm really not sure,3.286,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/04/4/ksf0n/ksf0n470.wav,the dog is a big gentle puppy,6.095125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/004034/myst_004034_2014-01-28_08-21-31_EE_3.3/myst_004034_2014-01-28_08-21-31_EE_3.3_025.wav,it shows what is transferring in to the nail,5.608625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014015/myst_014015_2013-12-17_12-31-54_MX_2.2/myst_014015_2013-12-17_12-31-54_MX_2.2_004.wav,by the shade of the glass,2.035375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013026/myst_013026_2014-05-28_13-45-51_LS_4.1/myst_013026_2014-05-28_13-45-51_LS_4.1_005.wav,they are all doing extra like doing something like they're all organisms,8.45375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/10/4/ksa41/ksa417l0.wav,surround,1.9883125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/02/2/ksd09/ksd090m0.wav,chewy,3.591875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008049/myst_008049_2014-04-07_10-41-38_EE_1.2/myst_008049_2014-04-07_10-41-38_EE_1.2_006.wav,for the motor to run the d cell must give energy to the motor so it get some with that the d cell the energy,8.8845625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002026/myst_002026_2014-04-29_13-25-44_LS_4.2/myst_002026_2014-04-29_13-25-44_LS_4.2_025.wav,its like the odor it squirt,2.7836875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/09/3/ksk0l/ksk0l6d0.wav,the flea chased the dog,2.795625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018207/myst_018207_2014-09-16_09-05-06_LS_1.1/myst_018207_2014-09-16_09-05-06_LS_1.1_002.wav,we've been making for our red,2.997625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012015/myst_012015_2013-12-03_10-09-48_MX_1.3/myst_012015_2013-12-03_10-09-48_MX_1.3_018.wav,paper clips are magnetic,2.5020625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996724/myst_996724_2011-21-01_00-00-00_MS_3.1/myst_996724_2011-21-01_00-00-00_MS_3.1_017.wav,ere are one thousand one thousand milliliters in a liter,9.182,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/02/4/ks23j/ks23j8f0.wav,vowel,2.609,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008056/myst_008056_2014-05-01_10-07-25_EE_4.2/myst_008056_2014-05-01_10-07-25_EE_4.2_038.wav,a hundred,0.8395,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997037/myst_997037_2008-31-01_00-00-00_ME_5.1/myst_997037_2008-31-01_00-00-00_ME_5.1_102.wav,and it was too by,1.496,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/01/0/ks130/ks1301t0.wav,iceberg,1.962625,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/07/2/ksi3k/ksi3k8s0.wav,yellow,1.3023125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/07/3/ksi3g/ksi3g6p0.wav,seven,1.206625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/022202/myst_022202_2014-12-16_11-49-50_LS_1.3/myst_022202_2014-12-16_11-49-50_LS_1.3_013.wav,a berry or type of plant,3.6989375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990379/myst_990379_2009-20-04_00-00-00_ME_2.3/myst_990379_2009-20-04_00-00-00_ME_2.3_018.wav,all of the conductors are metal whereas the others are not,6.235,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013020/myst_013020_2014-05-28_09-32-37_LS_2.3/myst_013020_2014-05-28_09-32-37_LS_2.3_029.wav,each of them each of them have cells and the yeast is a is a is a cell by itself,9.310625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018206/myst_018206_2014-11-21_09-18-31_LS_4.2/myst_018206_2014-11-21_09-18-31_LS_4.2_017.wav,the teeth also that lion has zero fur that seriously that lion is naked,9.3328125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993207/myst_993207_2008-29-10_00-00-00_VB_4.4/myst_993207_2008-29-10_00-00-00_VB_4.4_076.wav,yeah because like with one it's um really low and then with more it gets higher so,9.921,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013013/myst_013013_2013-12-06_07-57-02_EE_1.4/myst_013013_2013-12-06_07-57-02_EE_1.4_002.wav,we've been learning about candle and energy,4.202375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995738/myst_995738_2011-11-02_00-00-00_ME_2.1/myst_995738_2011-11-02_00-00-00_ME_2.1_001.wav,eh what's up doc,1.8,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996711/myst_996711_2011-21-01_00-00-00_MS_3.1/myst_996711_2011-21-01_00-00-00_MS_3.1_001.wav,good,0.7240000000000001,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013205/myst_013205_2015-02-26_12-33-47_LS_1.1/myst_013205_2015-02-26_12-33-47_LS_1.1_003.wav,because they're all systems,3.0391875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990337/myst_990337_2009-22-04_00-00-00_MS_4.2/myst_990337_2009-22-04_00-00-00_MS_4.2_012.wav,that the metric system everybody would be using the same system and it won't really be as fun,6.402,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/05/4/ksg0d/ksg0d6j0.wav,we gathered sticks for the fire,3.5176875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990501/myst_990501_2010-28-01_00-00-00_WA_1.2/myst_990501_2010-28-01_00-00-00_WA_1.2_012.wav,yes very interesting,3.168,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996712/myst_996712_2011-14-01_00-00-00_MS_2.1/myst_996712_2011-14-01_00-00-00_MS_2.1_004.wav,hang on,0.784,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013034/myst_013034_2014-02-24_12-52-04_EE_4.2/myst_013034_2014-02-24_12-52-04_EE_4.2_035.wav,a little,1.2628125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007088/myst_007088_2014-04-24_09-54-44_EE_4.1/myst_007088_2014-04-24_09-54-44_EE_4.1_005.wav,to make a complete circuit,3.0094375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/01/1/ksc0s/ksc0s4q0.wav,edgar does not have a job,6.5956875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995735/myst_995735_2011-16-02_00-00-00_ME_2.2/myst_995735_2011-16-02_00-00-00_ME_2.2_024.wav,it is a switch,3.438,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990043/myst_990043_2008-02-05_00-00-00_MS_2.2/myst_990043_2008-02-05_00-00-00_MS_2.2_126.wav,this one looks um really thick and that one also looks thin,7.045,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993207/myst_993207_2008-02-10_00-00-00_VB_1.3/myst_993207_2008-02-10_00-00-00_VB_1.3_074.wav,i know we put the length and how many times it swung,4.762,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/03/3/kse3y/kse3y0x0.wav,dashboard,4.1156875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/004013/myst_004013_2014-01-22_09-02-30_EE_3.1/myst_004013_2014-01-22_09-02-30_EE_3.1_026.wav,it may have iron or steel in it,3.104875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013013/myst_013013_2014-05-05_09-12-56_LS_2.1/myst_013013_2014-05-05_09-12-56_LS_2.1_044.wav,it needs sunlight,1.454875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/09/4/ks907/ks907470.wav,the dog is a big gentle puppy,4.59825,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/09/3/ks937/ks9372b0.wav,midnight,3.115875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/01/2/ksc2x/ksc2x500.wav,the flood took a car down the street,6.60575,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/03/1/kse0i/kse0i100.wav,digested,2.6141875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/004032/myst_004032_2013-11-18_09-23-37_EE_1.1/myst_004032_2013-11-18_09-23-37_EE_1.1_031.wav,electricity is flowing away from the negative side of the d cell,7.164625,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/10/0/ksa3y/ksa3y4d0.wav,chasing sally can be dangerous,4.6124375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/07/2/ks70z/ks70z7t0.wav,thousand,2.7964375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007238/myst_007238_2014-11-21_10-45-46_MX_4.1/myst_007238_2014-11-21_10-45-46_MX_4.1_009.wav,reacted reactant,2.306,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/09/2/ksk0k/ksk0k5l0.wav,why is the earth inside the milky way,5.34325,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/09/2/ks91i/ks91i8d0.wav,vase,2.3381875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996220/myst_996220_2009-15-01_00-00-00_MS_4.1/myst_996220_2009-15-01_00-00-00_MS_4.1_040.wav,um how many oh that's a thousand in that big thing in one liter,6.596,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018211/myst_018211_2014-10-15_15-02-52_LS_1.3/myst_018211_2014-10-15_15-02-52_LS_1.3_027.wav,decomposers,2.6300625,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/04/1/ksf3a/ksf3a780.wav,squeegee,1.9883125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997472/myst_997472_2010-11-01_00-00-00_ME_2.2/myst_997472_2010-11-01_00-00-00_ME_2.2_017.wav,a schematic shows you a simpler way to draw or tell someone how to sh do something or go somewhere,11.049,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/04/1/ks40a/ks40a240.wav,loyal,3.590625,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/08/0/ks80r/ks80r000.wav,advantage,3.1578125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008045/myst_008045_2014-04-25_08-27-06_EE_3.3/myst_008045_2014-04-25_08-27-06_EE_3.3_005.wav,the magnet am force is attracting each other so they follow each other round no matter where you move the magnets they still have a stronger enough force to attract through the table,14.5111875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990385/myst_990385_2009-23-04_00-00-00_ME_3.1/myst_990385_2009-23-04_00-00-00_ME_3.1_002.wav,um we've been learning of how to um use electricity to turn a motor on and a light bulb at the same time,11.719,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008043/myst_008043_2014-05-12_13-51-21_EE_5.2/myst_008043_2014-05-12_13-51-21_EE_5.2_007.wav,i am cold and weak thank you for asking marni,3.65625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/004013/myst_004013_2014-01-28_08-38-57_EE_3.3/myst_004013_2014-01-28_08-38-57_EE_3.3_024.wav,when a permanent magnet touches a steel nail steel nail becomes the temporary magnet,7.3661875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012214/myst_012214_2015-01-20_08-23-03_EE_4.1/myst_012214_2015-01-20_08-23-03_EE_4.1_007.wav,you wrap it around the you wrap it around it,4.049625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990050/myst_990050_2008-07-05_00-00-00_MS_3.1/myst_990050_2008-07-05_00-00-00_MS_3.1_024.wav,but yeah,1.086,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/08/3/ks83p/ks83p6z0.wav,smashed,1.988,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/0/ks60s/ks60s770.wav,springhill,1.96775,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993208/myst_993208_2008-29-10_00-00-00_VB_4.4/myst_993208_2008-29-10_00-00-00_VB_4.4_134.wav,the higher the stick the lower wait w the sh the longer the stick the okay the sh well it is uh short so it it went really high so the shorter the stick the higher it went,14.848,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993200/myst_993200_2008-02-10_00-00-00_VB_1.3/myst_993200_2008-02-10_00-00-00_VB_1.3_014.wav,yeah yeah,1.686,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990350/myst_990350_2009-02-04_00-00-00_MS_1.2/myst_990350_2009-02-04_00-00-00_MS_1.2_038.wav,a hundred centimeters,5.595,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990045/myst_990045_2008-07-05_00-00-00_MS_3.1/myst_990045_2008-07-05_00-00-00_MS_3.1_048.wav,well we we didn't really learn about milliliters milliliters that much but,4.841,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007241/myst_007241_2014-09-24_08-49-43_MX_1.1/myst_007241_2014-09-24_08-49-43_MX_1.1_009.wav,that all makes has a mixture,4.25625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013020/myst_013020_2013-12-11_13-30-47_EE_2.1/myst_013020_2013-12-11_13-30-47_EE_2.1_015.wav,i'm good,1.079625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990050/myst_990050_2008-02-05_00-00-00_MS_2.2/myst_990050_2008-02-05_00-00-00_MS_2.2_116.wav,thanks,0.5720000000000001,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/3/ks635/ks6356u0.wav,shoe,1.988375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018211/myst_018211_2014-10-15_15-02-52_LS_1.3/myst_018211_2014-10-15_15-02-52_LS_1.3_010.wav,animals get their energy by eating producers which do have energy for,6.786125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/08/4/ks80d/ks80d3g0.wav,punishment,2.338625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996410/myst_996410_2009-10-09_00-00-00_VB_1.2/myst_996410_2009-10-09_00-00-00_VB_1.2_002.wav,we've been um working with pendulums and um,8.609,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990051/myst_990051_2008-23-04_00-00-00_MS_1.1/myst_990051_2008-23-04_00-00-00_MS_1.1_020.wav,yeah,0.41,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013065/myst_013065_2014-02-25_12-57-39_EE_4.2/myst_013065_2014-02-25_12-57-39_EE_4.2_025.wav,it's the number of washers you picked up on the side on the bottom it's the it's the number of wire wraps you had,12.38775,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/08/4/ksj09/ksj092m0.wav,novel,2.3391875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/004017/myst_004017_2013-11-19_09-50-11_EE_1.2/myst_004017_2013-11-19_09-50-11_EE_1.2_021.wav,nothing will work here it would not be enough heat to convert any,5.94725,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997685/myst_997685_2011-07-02_00-00-00_ME_3.1/myst_997685_2011-07-02_00-00-00_ME_3.1_011.wav,well this would have to share the electricity so one of them so they both get the same amount of power so they can both get light up,9.096,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008045/myst_008045_2014-04-18_08-29-31_EE_3.1/myst_008045_2014-04-18_08-29-31_EE_3.1_025.wav,it is stick,2.744625,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/05/2/ksg0p/ksg0p1l0.wav,hardship,2.3391875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008045/myst_008045_2014-04-18_08-29-31_EE_3.1/myst_008045_2014-04-18_08-29-31_EE_3.1_007.wav,they are sticking to the refrigerator they are sticking to the fridge because hm the magnet attract to iron and the fridge is iron so it attracts to it,12.7510625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013065/myst_013065_2014-02-25_12-57-39_EE_4.2/myst_013065_2014-02-25_12-57-39_EE_4.2_020.wav,the washers will pick up more more washers will pick up,4.9584375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996712/myst_996712_2011-13-01_00-00-00_MS_1.3/myst_996712_2011-13-01_00-00-00_MS_1.3_033.wav,your thumb and your pinkie and you could like count by pinkies just pinkie just go like one two three four five six seven eight nine ten with your pinkie,14.808,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996430/myst_996430_2009-10-09_00-00-00_VB_1.2/myst_996430_2009-10-09_00-00-00_VB_1.2_002.wav,i've been studying pendulums,2.275,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013030/myst_013030_2014-05-28_09-54-24_LS_4.2/myst_013030_2014-05-28_09-54-24_LS_4.2_040.wav,instinctive so they don't hurt their selves,3.3816875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990032/myst_990032_2008-12-05_00-00-00_MS_3.3/myst_990032_2008-12-05_00-00-00_MS_3.3_100.wav,yes,0.8640000000000001,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996411/myst_996411_2009-07-10_00-00-00_VB_4.2/myst_996411_2009-07-10_00-00-00_VB_4.2_029.wav,it's a lot of more of the twenty centimeter tin foil which can make it heavier when it goes into the air,7.5,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007084/myst_007084_2014-02-04_13-04-00_EE_1.1/myst_007084_2014-02-04_13-04-00_EE_1.1_008.wav,it's the source that gives us the light bulb energy,4.7516875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/01/2/ks10c/ks10c110.wav,direct,2.6155625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007250/myst_007250_2014-10-06_08-00-34_MX_1.3/myst_007250_2014-10-06_08-00-34_MX_1.3_024.wav,to separate the rocks from,2.125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990026/myst_990026_2008-21-04_00-00-00_MS_1.1/myst_990026_2008-21-04_00-00-00_MS_1.1_068.wav,um it's like this big um uh millimeters,11.671,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990348/myst_990348_2009-16-04_00-00-00_MS_2.1/myst_990348_2009-16-04_00-00-00_MS_2.1_022.wav,the scale is going up,3.355,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/07/1/ks73c/ks73c060.wav,average,2.738875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/00/9/ks018/ks018420.wav,the cows' hay was not dry yet,6.0943125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002281/myst_002281_2015-04-30_13-18-57_LS_3.3/myst_002281_2015-04-30_13-18-57_LS_3.3_004.wav,i'm breathing breathing,2.73875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/01/3/ks13i/ks13i5y0.wav,he breathed a sigh of relief,5.6143125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990365/myst_990365_2009-10-04_00-00-00_MS_3.3/myst_990365_2009-10-04_00-00-00_MS_3.3_012.wav,yeah,1.244,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007087/myst_007087_2014-02-12_09-44-30_EE_1.2/myst_007087_2014-02-12_09-44-30_EE_1.2_004.wav,the motor turns by the d cell,3.8395625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013027/myst_013027_2013-12-04_13-55-53_EE_1.1/myst_013027_2013-12-04_13-55-53_EE_1.1_003.wav,a light bulb two wires and a d cell,4.408625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013020/myst_013020_2014-05-28_11-18-21_LS_4.2/myst_013020_2014-05-28_11-18-21_LS_4.2_002.wav,we've been learning about ecosystems and the way of communication,4.5740625,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/08/3/ksj3b/ksj3b7p0.wav,temptation,3.5159375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/08/3/ks80a/ks80a2b0.wav,midnight,3.1661875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013015/myst_013015_2013-12-06_07-52-14_EE_1.4/myst_013015_2013-12-06_07-52-14_EE_1.4_021.wav,well i think that it is a healthy environment because energy is an important thing,8.8601875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/08/3/ks80e/ks80e1r0.wav,hourly,1.9686875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990377/myst_990377_2009-04-05_00-00-00_ME_3.3/myst_990377_2009-04-05_00-00-00_ME_3.3_020.wav,is this the case in both circuits no because the series circuit is dimmer than a parallel circuit,7.313,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/09/3/ksk3e/ksk3e8j0.wav,wavelet,3.5156875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/4/ksh3m/ksh3m500.wav,the flood took a car down the street,4.9830625,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/08/1/ksj0p/ksj0p4o0.wav,san diego is very green this year,6.0955,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007257/myst_007257_2014-11-21_10-56-59_MX_4.2/myst_007257_2014-11-21_10-56-59_MX_4.2_017.wav,product i see is ah,5.1025,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/03/1/kse0s/kse0s0v0.wav,cross,4.092375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/004020/myst_004020_2014-02-11_08-41-58_EE_4.1/myst_004020_2014-02-11_08-41-58_EE_4.1_010.wav,when it's open then it can pick things up and it just drops the steel washer,5.5335,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/09/1/ksk0e/ksk0e500.wav,the flood took a car down the street,4.9695625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007094/myst_007094_2014-04-25_07-50-41_EE_2.3/myst_007094_2014-04-25_07-50-41_EE_2.3_007.wav,that everything stops working,1.8995625,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/00/3/ksb0i/ksb0i680.wav,i'll rent an apartment tomorrow,3.877375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002278/myst_002278_2015-03-13_08-46-11_LS_1.3/myst_002278_2015-03-13_08-46-11_LS_1.3_020.wav,i don't really know,8.7418125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013013/myst_013013_2013-12-06_07-57-02_EE_1.4/myst_013013_2013-12-06_07-57-02_EE_1.4_018.wav,a fuel is that she's eating the apple,5.847,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007088/myst_007088_2014-03-12_09-33-26_EE_2.1/myst_007088_2014-03-12_09-33-26_EE_2.1_011.wav,energy is flowing,2.0558125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/02/2/ksd46/ksd46880.wav,unfortunate,3.6103125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/01/2/ks131/ks1310r0.wav,concept,3.6105,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996272/myst_996272_2008-04-12_00-00-00_MS_2.1/myst_996272_2008-04-12_00-00-00_MS_2.1_096.wav,i don't know,0.857,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002296/myst_002296_2015-04-21_09-37-21_LS_3.1/myst_002296_2015-04-21_09-37-21_LS_3.1_006.wav,i'm not sure,5.8386875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/2/ksh49/ksh495j0.wav,will you sing this song,3.8395625,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/08/4/ksj02/ksj02410.wav,i don't clean windows,4.2493125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996215/myst_996215_2008-08-12_00-00-00_MS_2.1/myst_996215_2008-08-12_00-00-00_MS_2.1_064.wav,paper clips,3.982,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/07/2/ksi0q/ksi0q5v0.wav,you can see bugs light up the sky,5.3440625,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/08/2/ks818/ks8180r0.wav,concept,2.7963125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/02/4/ksd2u/ksd2u2c0.wav,misjudged,4.117,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/3/ks61f/ks61f8o0.wav,women,1.96875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/04/4/ksf0x/ksf0x1s0.wav,humor,2.091375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995002/myst_995002_2008-02-04_00-00-00_ME_4.2/myst_995002_2008-02-04_00-00-00_ME_4.2_032.wav,um we had a wire connected to the battery that was wrapped around the rivet um and then the other side went back onto the other side of the wire went back onto the wire battery,13.087,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990047/myst_990047_2008-09-05_00-00-00_MS_3.2/myst_990047_2008-09-05_00-00-00_MS_3.2_136.wav,because um i expected it would only take a little since it was so light and so small,6.307,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/09/2/ks932/ks9320m0.wav,chewy,2.7093125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/988448/myst_988448_2010-08-01_00-00-00_VB_2.1/myst_988448_2010-08-01_00-00-00_VB_2.1_013.wav,you you would set 'em in and level 'em out so it didn't have too much weight on one side,8.027000000000001,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007088/myst_007088_2014-03-07_10-50-21_EE_1.4/myst_007088_2014-03-07_10-50-21_EE_1.4_034.wav,i don't know,1.86775,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002278/myst_002278_2015-04-09_13-19-35_LS_2.3/myst_002278_2015-04-09_13-19-35_LS_2.3_003.wav,i see like molecules maybe,7.33425,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/08/4/ksj2t/ksj2t470.wav,the dog is a big gentle puppy,4.6128125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995005/myst_995005_2008-30-01_00-00-00_ME_2.1/myst_995005_2008-30-01_00-00-00_ME_2.1_048.wav,right there,2.885,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995736/myst_995736_2011-03-02_00-00-00_ME_1.1/myst_995736_2011-03-02_00-00-00_ME_1.1_011.wav,that's all,0.948,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990507/myst_990507_2010-10-02_00-00-00_WA_3.3/myst_990507_2010-10-02_00-00-00_WA_3.3_006.wav,it went mean that container d would evaporate faster than all the other containers,10.378,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990042/myst_990042_2008-16-05_00-00-00_MS_4.2/myst_990042_2008-16-05_00-00-00_MS_4.2_022.wav,yeah mmm hmm,1.836,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/02/1/ks20j/ks20j1f0.wav,flagpole,3.167375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997682/myst_997682_2011-10-02_00-00-00_ME_3.2/myst_997682_2011-10-02_00-00-00_ME_3.2_004.wav,ell all the circuits we've made so far have been um parallel circuits,6.187,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/07/3/ksi0r/ksi0r5h0.wav,she'll be ready very soon,3.8663125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997690/myst_997690_2011-24-01_00-00-00_ME_2.2/myst_997690_2011-24-01_00-00-00_ME_2.2_011.wav,um helps the light bulb light up,2.947,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/05/2/ks50w/ks50w5e0.wav,will you please bathe,4.2385625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002117/myst_002117_2014-05-01_08-04-22_LS_4.2/myst_002117_2014-05-01_08-04-22_LS_4.2_031.wav,to learn how to do it so that you hit it you hit the knee in the same exact spot in the exact spot the person's foot will go up,9.4186875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013023/myst_013023_2014-05-05_14-06-58_LS_2.1/myst_013023_2014-05-05_14-06-58_LS_2.1_031.wav,yes because the plant might die out,2.8535,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997278/myst_997278_2008-20-11_00-00-00_ME_1.3/myst_997278_2008-20-11_00-00-00_ME_1.3_022.wav,maybe six washers,1.39,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/02/1/ks20j/ks20j3j0.wav,real,2.0885,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007253/myst_007253_2014-11-21_10-52-22_MX_3.2/myst_007253_2014-11-21_10-52-22_MX_3.2_003.wav,adding water and salt,2.4075625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993766/myst_993766_2011-02-03_00-00-00_VB_3.3/myst_993766_2011-02-03_00-00-00_VB_3.3_016.wav,other variables stay the same,2.644,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013059/myst_013059_2013-12-11_12-27-35_EE_2.1/myst_013059_2013-12-11_12-27-35_EE_2.1_021.wav,the series circuit with two d cells is shining brighter because there's two sources of energy to go around not just one,13.412625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018210/myst_018210_2014-09-16_09-11-47_LS_1.1/myst_018210_2014-09-16_09-11-47_LS_1.1_008.wav,it makes the car run so it's a system,2.6031875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/09/4/ksk0i/ksk0i420.wav,the cows' hay was not dry yet,4.6100625,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/07/2/ks70c/ks70c2a0.wav,microwaves,2.3383125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/02/1/ks21a/ks21a4q0.wav,edgar does not have a job,6.59325,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/02/4/ks213/ks2138p0.wav,wonderful,2.614625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007087/myst_007087_2014-02-26_11-38-01_EE_1.3/myst_007087_2014-02-26_11-38-01_EE_1.3_003.wav,the um all the metal plates are going to work and all the plate that are not metal were not work,11.3898125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/09/1/ksk0e/ksk0e8c0.wav,upward,1.587875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002104/myst_002104_2014-03-04_09-20-04_LS_1.3/myst_002104_2014-03-04_09-20-04_LS_1.3_010.wav,a producer is something that makes it's own food through photosynthesis and it is only eaten by other animals and it does not eat anything,14.17275,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/02/0/ks212/ks2120a0.wav,behind,4.598375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990070/myst_990070_2008-19-05_00-00-00_MS_4.2/myst_990070_2008-19-05_00-00-00_MS_4.2_104.wav,well we um i forget what we measured i think we measured,4.629,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/998663/myst_998663_2010-01-10_00-00-00_MS_3.3/myst_998663_2010-01-10_00-00-00_MS_3.3_016.wav,it doesn't look there's a lot because it's got carbonation and that makes it frizzy,5.549,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/04/0/ks40m/ks40m4e0.wav,jason likes playing with garfield,6.0949375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/04/1/ks419/ks4191u0.wav,imagery,2.3386875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/08/4/ksj2x/ksj2x6n0.wav,i'm sorry the dog ate your dinner,4.3166875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995509/myst_995509_2010-09-03_00-00-00_ME_3.3/myst_995509_2010-09-03_00-00-00_ME_3.3_006.wav,i'm i'm not sure,2.207,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/1/ks60g/ks60g4n0.wav,the briefcase is open now,4.24,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013023/myst_013023_2013-12-11_13-32-38_EE_2.1/myst_013023_2013-12-11_13-32-38_EE_2.1_025.wav,either one battery has to turn to a different way because it won't work like that,9.5556875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/05/1/ks50n/ks50n380.wav,pathetic,1.96825,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018211/myst_018211_2014-11-04_10-08-20_LS_2.1/myst_018211_2014-11-04_10-08-20_LS_2.1_052.wav,it has all three factors it needs to survive now it's recess time so please stop asking me questions,7.751125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990568/myst_990568_2010-07-04_00-00-00_MS_1.3/myst_990568_2010-07-04_00-00-00_MS_1.3_002.wav,i used a meter stick,2.773,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/07/0/ks70i/ks70i7r0.wav,thanks,1.587625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007255/myst_007255_2014-10-07_08-04-43_MX_2.2/myst_007255_2014-10-07_08-04-43_MX_2.2_011.wav,because one has more salt one has less salt,3.2219375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/08/3/ksj11/ksj115h0.wav,she'll be ready very soon,3.8880625,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/05/4/ks50x/ks50x3r0.wav,school,1.587875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990030/myst_990030_2008-19-05_00-00-00_MS_4.2/myst_990030_2008-19-05_00-00-00_MS_4.2_002.wav,yeah,1.141,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/03/2/kse45/kse45880.wav,unfortunate,3.6103125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/05/3/ks53v/ks53v300.wav,obstacle,1.6081875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/02/3/ksd30/ksd301r0.wav,hourly,2.6091875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014033/myst_014033_2013-12-12_13-04-20_MX_1.2/myst_014033_2013-12-12_13-04-20_MX_1.2_002.wav,well we were learning about solutions,2.82575,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013061/myst_013061_2013-11-20_10-33-41_EE_1.2/myst_013061_2013-11-20_10-33-41_EE_1.2_030.wav,have a good day,3.41425,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/03/1/ks34d/ks34d240.wav,loyal,3.6111875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/004032/myst_004032_2014-01-24_09-39-22_EE_3.2/myst_004032_2014-01-24_09-39-22_EE_3.2_010.wav,some all the magnets are on pencils and some attract and some repel so they're floating,14.545,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018219/myst_018219_2014-10-08_11-58-16_LS_1.3/myst_018219_2014-10-08_11-58-16_LS_1.3_025.wav,yes,1.03125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007090/myst_007090_2014-04-04_11-03-32_EE_3.1/myst_007090_2014-04-04_11-03-32_EE_3.1_039.wav,we,0.617375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997487/myst_997487_2010-04-02_00-00-00_ME_3.3/myst_997487_2010-04-02_00-00-00_ME_3.3_014.wav,well when the wires touch each other it's giving electricity into both of them and um it it gives more power,12.259,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990031/myst_990031_2008-19-05_00-00-00_MS_4.2/myst_990031_2008-19-05_00-00-00_MS_4.2_028.wav,it's temperature in celsius so what it is is it will go all the way to minus so it's all it goes all the way up to twenty four and it goes all the way down to minus three,11.353,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/10/1/ksa32/ksa32510.wav,it can only be a good circus with elephants,5.3635625,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/01/3/ks10d/ks10d260.wav,lure,2.088,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007256/myst_007256_2014-10-28_11-40-22_MX_3.2/myst_007256_2014-10-28_11-40-22_MX_3.2_016.wav,packing in it,1.38,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/08/2/ks83j/ks83j0m0.wav,chewy,2.7398125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/07/0/ks70i/ks70i0k0.wav,chair,2.7955625,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/10/1/ksa0b/ksa0b510.wav,it can only be a good circus with elephants,5.3435,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990042/myst_990042_2008-16-05_00-00-00_MS_4.2/myst_990042_2008-16-05_00-00-00_MS_4.2_076.wav,then it goes basically drops down and b's the same,3.969,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996271/myst_996271_2008-20-11_00-00-00_MS_1.3/myst_996271_2008-20-11_00-00-00_MS_1.3_033.wav,no but we had a piece of paper which was a medium sized pace,5.216,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/02/1/ksd3k/ksd3k150.wav,eight,3.6103125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/998663/myst_998663_2010-01-10_00-00-00_MS_3.3/myst_998663_2010-01-10_00-00-00_MS_3.3_024.wav,we already did that sh we already did this um little video or whatever it's called,10.343,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/05/2/ksg2x/ksg2x5n0.wav,i like my meat on a cold platter,5.3643125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990540/myst_990540_2010-05-04_00-00-00_MS_1.1/myst_990540_2010-05-04_00-00-00_MS_1.1_019.wav,the measurements standard is how long stuff is,3.572,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/02/4/ksd3r/ksd3r6l0.wav,my sleeve caught the thorny bush,7.1310625,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/08/4/ksj2t/ksj2t5j0.wav,will you sing this song,3.90525,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/00/9/ksb3m/ksb3m6v0.wav,shortchange,2.6091875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/01/1/ks13m/ks13m3j0.wav,real,2.11225,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007250/myst_007250_2014-09-26_10-56-02_MX_1.2/myst_007250_2014-09-26_10-56-02_MX_1.2_024.wav,when you put the powder in its not dissolving but when you poured into the filter and the funnel its stays into the filter because the holes in the filter,10.7880625,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/04/1/ks419/ks4194x0.wav,knights don't get scared of dragons,5.3439375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/004015/myst_004015_2013-12-17_09-19-13_EE_2.2/myst_004015_2013-12-17_09-19-13_EE_2.2_028.wav,well it's a series circuit so yeah bye bye,5.918375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012017/myst_012017_2014-02-19_10-22-35_SRL_1.3/myst_012017_2014-02-19_10-22-35_SRL_1.3_023.wav,well there's both two weathering there's physical weathering and chemical weathering in this animation whatever you call it,10.404000000000002,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013228/myst_013228_2015-02-03_10-28-37_EE_2.2/myst_013228_2015-02-03_10-28-37_EE_2.2_007.wav,it's connected differently,4.9486875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/00/5/ksb2x/ksb2x7y0.wav,toothpaste,3.1141875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995001/myst_995001_2008-20-02_00-00-00_ME_2.4/myst_995001_2008-20-02_00-00-00_ME_2.4_181.wav,um that d cell electricity source that's the battery um yeah yeah yeah electric electricity source um,14.255999999999998,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/004019/myst_004019_2014-02-10_14-25-50_EE_4.1/myst_004019_2014-02-10_14-25-50_EE_4.1_018.wav,it creates an electromagnet,1.6874375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/07/4/ksi3s/ksi3s7g0.wav,subdue,2.3594375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995002/myst_995002_2008-27-02_00-00-00_ME_3.1/myst_995002_2008-27-02_00-00-00_ME_3.1_082.wav,and it goes through,3.755,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/07/2/ksi0j/ksi0j3p0.wav,safeway,1.5878125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/022216/myst_022216_2014-11-20_11-42-48_LS_2.1/myst_022216_2014-11-20_11-42-48_LS_2.1_001.wav,good,0.71875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/10/0/ksa3x/ksa3x7w0.wav,thrower,1.337,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996427/myst_996427_2009-24-09_00-00-00_VB_2.3/myst_996427_2009-24-09_00-00-00_VB_2.3_008.wav,bye,1.439,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990019/myst_990019_2008-01-05_00-00-00_MS_2.3/myst_990019_2008-01-05_00-00-00_MS_2.3_028.wav,yeah i took away to find,2.522,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/07/4/ks717/ks7170t0.wav,cowboys,3.87725,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/4/ks62x/ks62x500.wav,the flood took a car down the street,4.9824375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/04/1/ksf17/ksf174u0.wav,stewart has five friends in richmond,4.9700625,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/05/2/ksg3e/ksg3e3e0.wav,playoffs,1.9773125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012031/myst_012031_2014-03-11_12-24-08_SRL_2.1/myst_012031_2014-03-11_12-24-08_SRL_2.1_025.wav,valleys are created by erosion which is tiny particles being taken off of something and then just floating away,10.262125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/07/0/ks730/ks7308v0.wav,abnormal,2.7390625,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/07/4/ksi0u/ksi0u3z0.wav,five people can fit in the elevator,4.96825,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993208/myst_993208_2008-16-10_00-00-00_VB_3.3/myst_993208_2008-16-10_00-00-00_VB_3.3_078.wav,n mmm they put paper clips,2.122,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012001/myst_012001_2014-03-10_12-06-41_SRL_3.2/myst_012001_2014-03-10_12-06-41_SRL_3.2_034.wav,i don't know they look the same,2.85875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997679/myst_997679_2011-24-02_00-00-00_ME_4.2/myst_997679_2011-24-02_00-00-00_ME_4.2_005.wav,well you just wind the wire around it more times,3.953,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/10/4/ksl10/ksl108k0.wav,weatherproof,2.3385625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/999455/myst_999455_2009-07-12_00-00-00_MS_2.1/myst_999455_2009-07-12_00-00-00_MS_2.1_024.wav,i do,1.194,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013065/myst_013065_2013-12-05_12-55-46_EE_1.4/myst_013065_2013-12-05_12-55-46_EE_1.4_036.wav,won't be renewable because what happens is it won't renew so it won't work,12.0263125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/07/2/ksi0j/ksi0j1v0.wav,interrupt,2.3389375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013031/myst_013031_2014-04-22_14-11-01_LS_1.3/myst_013031_2014-04-22_14-11-01_LS_1.3_022.wav,a carnivore means that you only eat meat,4.137125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/07/3/ksi08/ksi08170.wav,endure,2.7979375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995736/myst_995736_2011-10-02_00-00-00_ME_1.4/myst_995736_2011-10-02_00-00-00_ME_1.4_002.wav,what we have been doing is we were finding magnets in mystery boxes,7.595,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997679/myst_997679_2011-20-01_00-00-00_ME_2.1/myst_997679_2011-20-01_00-00-00_ME_2.1_015.wav,electricity,1.779,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/07/2/ks72w/ks72w0m0.wav,chewy,2.7395625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014035/myst_014035_2014-01-09_12-35-39_MX_1.3/myst_014035_2014-01-09_12-35-39_MX_1.3_002.wav,mixtures and solutions,2.4156875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007094/myst_007094_2014-02-04_12-51-08_EE_1.1/myst_007094_2014-02-04_12-51-08_EE_1.1_014.wav,they help you see when it's dark instead of a flash light that you have to hold in your hand,5.4595625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997249/myst_997249_2008-17-11_00-00-00_ME_1.2/myst_997249_2008-17-11_00-00-00_ME_1.2_041.wav,because um the nail is dull and i think that dull nails have iron in them and the paper clip has iron in it too,10.711,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990567/myst_990567_2010-07-04_00-00-00_MS_1.3/myst_990567_2010-07-04_00-00-00_MS_1.3_002.wav,i measure the length or height of something with a um tape measurer or a um ruler,7.581,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/08/4/ksj09/ksj09360.wav,overreaction,2.3385625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007251/myst_007251_2015-02-18_07-45-09_LS_2.1/myst_007251_2015-02-18_07-45-09_LS_2.1_007.wav,animal cracker and,1.6070625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990040/myst_990040_2008-30-04_00-00-00_MS_2.1/myst_990040_2008-30-04_00-00-00_MS_2.1_062.wav,mmm it was in the middle it was like eleven grams,6.759,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/09/4/ks93y/ks93y4a0.wav,could you pass the other jam please,4.983125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/10/0/ksa3l/ksa3l050.wav,athlete,1.9883125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/05/1/ksg3o/ksg3o3o0.wav,rugby,3.1123125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990587/myst_990587_2010-08-04_00-00-00_MS_2.1/myst_990587_2010-08-04_00-00-00_MS_2.1_017.wav,you could put it on a a thing that weighs the stuff like that,10.729,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/05/4/ks50z/ks50z7l0.wav,surround,1.967625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995736/myst_995736_2011-04-03_00-00-00_ME_4.2/myst_995736_2011-04-03_00-00-00_ME_4.2_013.wav,how many washers you get on there if you get a bigger number once you wrap more winds on there then you know your electromagnet is working better,10.172,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/4/ks638/ks6383h0.wav,push,2.3590625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018211/myst_018211_2014-11-04_10-08-20_LS_2.1/myst_018211_2014-11-04_10-08-20_LS_2.1_018.wav,plants give off oxygen which humans need to survive and they need the carbon dioxide which humans give off to survive,12.3700625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997236/myst_997236_2008-08-12_00-00-00_ME_2.1/myst_997236_2008-08-12_00-00-00_ME_2.1_019.wav,could you say the question again i didn't really hear it,2.22,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/07/1/ksi3u/ksi3u010.wav,allowing,2.7389375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/09/2/ks938/ks9388v0.wav,abnormal,2.7391875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996290/myst_996290_2009-21-01_00-00-00_MS_4.2/myst_996290_2009-21-01_00-00-00_MS_4.2_084.wav,mmm yes except we didn't like do cold medium we just said it in the order,7.792000000000002,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/03/0/ks33d/ks33d8q0.wav,woolen,1.60775,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/04/4/ks406/ks4060t0.wav,cowboys,3.876375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002294/myst_002294_2015-05-07_09-15-39_LS_3.4/myst_002294_2015-05-07_09-15-39_LS_3.4_018.wav,it's responsible for i don't know i forgot,6.5176875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/05/4/ksg3h/ksg3h6m0.wav,the stove melted the butter,4.3165625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990588/myst_990588_2010-08-04_00-00-00_MS_2.1/myst_990588_2010-08-04_00-00-00_MS_2.1_004.wav,well metal is heavier than wood and wood is heavier than plastic duh,8.346,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/08/3/ksj0t/ksj0t0s0.wav,cooperate,2.338875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/1/ks62u/ks62u780.wav,squeegee,1.988375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002273/myst_002273_2015-04-21_08-03-21_LS_3.1/myst_002273_2015-04-21_08-03-21_LS_3.1_010.wav,the xylem tubes and the phloem tubes,3.345625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996419/myst_996419_2009-17-09_00-00-00_VB_2.1/myst_996419_2009-17-09_00-00-00_VB_2.1_023.wav,um maybe um the size of the coin like if you used a quarter or half dollar that would probably make it sink faster,10.184,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/10/3/ksa3v/ksa3v7z0.wav,tourists,2.3588125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013027/myst_013027_2013-11-21_12-56-52_EE_1.1/myst_013027_2013-11-21_12-56-52_EE_1.1_008.wav,can you say that again,1.6909375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/3/ks615/ks615260.wav,lure,1.5878125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990055/myst_990055_2008-21-04_00-00-00_MS_1.1/myst_990055_2008-21-04_00-00-00_MS_1.1_074.wav,mmm hmm cause you can only measure like in the decimal system you can only use like tenths and a hundredths,7.866,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990007/myst_990007_2008-09-05_00-00-00_ME_2.3/myst_990007_2008-09-05_00-00-00_ME_2.3_126.wav,repel,0.535,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007090/myst_007090_2014-03-07_10-51-11_EE_1.4/myst_007090_2014-03-07_10-51-11_EE_1.4_003.wav,i see a canal in fire on it it's like getting the state as traffic is getting lower and then it's getting enough to get,9.0669375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/07/3/ksi3w/ksi3w1h0.wav,fragment,2.358375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013062/myst_013062_2014-04-30_12-53-50_LS_2.1/myst_013062_2014-04-30_12-53-50_LS_2.1_032.wav,it is living organisms so it needs food just like us,6.5214375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014013/myst_014013_2014-02-03_13-33-35_MX_3.1/myst_014013_2014-02-03_13-33-35_MX_3.1_001.wav,good how are you marni,1.96875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012032/myst_012032_2013-12-09_09-47-04_MX_2.4/myst_012032_2013-12-09_09-47-04_MX_2.4_022.wav,that's so cool,3.0246875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996272/myst_996272_2009-08-01_00-00-00_MS_3.3/myst_996272_2009-08-01_00-00-00_MS_3.3_002.wav,hello,1.085,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/004031/myst_004031_2013-12-12_10-17-41_EE_2.1/myst_004031_2013-12-12_10-17-41_EE_2.1_014.wav,well the blue dots are the electricity flowing through the circuit,4.7969375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007072/myst_007072_2014-03-18_10-58-10_EE_2.1/myst_007072_2014-03-18_10-58-10_EE_2.1_015.wav,by connecting to them,5.845625,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/05/3/ks53v/ks53v0s0.wav,cooperate,2.358875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007252/myst_007252_2015-02-05_11-33-58_LS_1.1/myst_007252_2015-02-05_11-33-58_LS_1.1_002.wav,learning about systems and subsystems,2.6594375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/09/2/ks904/ks9045p0.wav,pass their notes along,3.8781875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008051/myst_008051_2014-05-01_09-32-30_EE_4.1/myst_008051_2014-05-01_09-32-30_EE_4.1_003.wav,they are d cell battery washers a swich a wire and a steel they which,8.9303125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990080/myst_990080_2008-30-04_00-00-00_MS_1.3/myst_990080_2008-30-04_00-00-00_MS_1.3_048.wav,what was the question uh yes we did,2.999,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995736/myst_995736_2011-11-02_00-00-00_ME_2.1/myst_995736_2011-11-02_00-00-00_ME_2.1_003.wav,what we did was we had to connect the wires in some way to the battery and connect them to the light bulb to try and make the light bulb light up,7.952000000000001,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/004014/myst_004014_2013-12-02_10-04-47_EE_1.3/myst_004014_2013-12-02_10-04-47_EE_1.3_013.wav,motor does not move because energy cannot pass through a sponge which i have already said so many times,8.3065625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996724/myst_996724_2011-20-01_00-00-00_MS_2.3/myst_996724_2011-20-01_00-00-00_MS_2.3_006.wav,a soaked sponge um i don't know,4.046,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990507/myst_990507_2010-03-02_00-00-00_WA_2.2/myst_990507_2010-03-02_00-00-00_WA_2.2_009.wav,i found out that they are less dense than the water,3.884,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/02/3/ksd2z/ksd2z0n0.wav,childhood,2.612125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/04/2/ksf04/ksf048i0.wav,wash,2.6143125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/0/ksh04/ksh044l0.wav,silver robot toys are the best,5.3435,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/004018/myst_004018_2013-11-18_09-42-45_EE_1.1/myst_004018_2013-11-18_09-42-45_EE_1.1_027.wav,if you switch one of the wires to the light bulb casing it the light shines again,9.4693125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/005016/myst_005016_2014-02-03_09-44-56_MX_1.3/myst_005016_2014-02-03_09-44-56_MX_1.3_028.wav,i think we talked about everything mixture and solutions that were on and separating them through the mixture,9.06725,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/08/2/ksj0s/ksj0s2z0.wav,objected,2.168875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/02/2/ksd07/ksd075g0.wav,take off your hat please,5.1496875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/00/6/ksb0c/ksb0c5r0.wav,her veins pop out when she is mad,6.09425,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/08/2/ks80o/ks80o2k0.wav,normal,2.3391875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997673/myst_997673_2010-13-12_00-00-00_ME_1.1/myst_997673_2010-13-12_00-00-00_ME_1.1_015.wav,because magnets only stick to um iron or steel um one of them wasn't made of iron or steel so it didn't stick,7.1610000000000005,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/03/4/kse06/kse060j0.wav,cautiously,2.6148125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990027/myst_990027_2008-19-05_00-00-00_MS_4.2/myst_990027_2008-19-05_00-00-00_MS_4.2_042.wav,yeah,0.589,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997273/myst_997273_2008-08-12_00-00-00_ME_2.1/myst_997273_2008-08-12_00-00-00_ME_2.1_051.wav,yes,0.713,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/10/1/ksl1b/ksl1b4x0.wav,knights don't get scared of dragons,5.34375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/02/4/ksd3r/ksd3r500.wav,the flood took a car down the street,6.6154375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/05/0/ksg3i/ksg3i7r0.wav,thanks,1.608125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997230/myst_997230_2009-15-01_00-00-00_ME_4.1/myst_997230_2009-15-01_00-00-00_ME_4.1_015.wav,but i will,0.429,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013026/myst_013026_2013-12-11_13-30-29_EE_2.1/myst_013026_2013-12-11_13-30-29_EE_2.1_009.wav,um the electricity,3.559,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/05/1/ks506/ks5064y0.wav,your shadow always follows you,4.2391875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013022/myst_013022_2013-11-14_13-52-37_EE_1.1/myst_013022_2013-11-14_13-52-37_EE_1.1_011.wav,as it receives the energy it it it glows and then as the power's going through it comes back out again,12.2449375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013062/myst_013062_2013-11-15_13-50-15_EE_1.1/myst_013062_2013-11-15_13-50-15_EE_1.1_010.wav,it means to receive it means to take in electricity,6.0088125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007094/myst_007094_2014-05-12_07-43-43_EE_3.3/myst_007094_2014-05-12_07-43-43_EE_3.3_005.wav,that all magnets have some sort of metal in,3.2850625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996277/myst_996277_2008-11-12_00-00-00_MS_2.2/myst_996277_2008-11-12_00-00-00_MS_2.2_076.wav,yeah,0.409,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995325/myst_995325_2009-26-02_00-00-00_ME_2.1/myst_995325_2009-26-02_00-00-00_ME_2.1_002.wav,good,1.306,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/988448/myst_988448_2009-18-12_00-00-00_VB_1.2/myst_988448_2009-18-12_00-00-00_VB_1.2_009.wav,it is showing the bob and the release point,2.529,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997235/myst_997235_2008-13-11_00-00-00_ME_1.1/myst_997235_2008-13-11_00-00-00_ME_1.1_004.wav,good,0.306,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990048/myst_990048_2008-02-05_00-00-00_MS_2.2/myst_990048_2008-02-05_00-00-00_MS_2.2_040.wav,and the gravel in,2.275,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007255/myst_007255_2015-02-18_11-16-55_LS_2.1/myst_007255_2015-02-18_11-16-55_LS_2.1_008.wav,we uhm are doing a project where in dark the we put seeds and then in dark the grass isn't doing very well but in the light the grass is doing well,12.5551875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/03/0/ks33r/ks33r280.wav,mcdonald,4.1275,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012209/myst_012209_2015-01-29_13-09-19_EE_5.1/myst_012209_2015-01-29_13-09-19_EE_5.1_012.wav,it bounces off of everything,2.0105,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/1/ksh0i/ksh0i4q0.wav,edgar does not have a job,4.9683125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/004017/myst_004017_2014-01-22_09-18-00_EE_3.1/myst_004017_2014-01-22_09-18-00_EE_3.1_026.wav,the black rock will stick the paper faster will the everything almost everything the river rock will not and then along with some,11.4281875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990076/myst_990076_2008-05-05_00-00-00_MS_2.3/myst_990076_2008-05-05_00-00-00_MS_2.3_020.wav,like eh say the water's in here and the grams are in here and the water's just flung the cup over,8.44,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/017092/myst_017092_2014-05-21_07-55-25_EE_4.2/myst_017092_2014-05-21_07-55-25_EE_4.2_029.wav,more wraps that you wrap around it and makes the core stronger,5.9375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012018/myst_012018_2013-12-06_09-13-11_MX_2.4/myst_012018_2013-12-06_09-13-11_MX_2.4_015.wav,the lighter solution is on top of the heavier solution or more dense,6.2433125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/08/4/ksj09/ksj096q0.wav,shades,1.407625,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/02/4/ksd3e/ksd3e2m0.wav,novel,3.1145,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995737/myst_995737_2011-24-02_00-00-00_ME_3.2/myst_995737_2011-24-02_00-00-00_ME_3.2_005.wav,i think what's wr what's that about is that um that the speed is going faster in one in the left one than the right one,12.935,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/2/ks62t/ks62t500.wav,the flood took a car down the street,4.9829375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990338/myst_990338_2009-31-03_00-00-00_MS_1.1/myst_990338_2009-31-03_00-00-00_MS_1.1_004.wav,um i believe it is measured by either centimeters or maybe inches,10.214,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/2/ksh3n/ksh3n730.wav,soften,2.7394375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/05/1/ks53z/ks53z4o0.wav,san diego is very green this year,6.119125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/3/ks62z/ks62z600.wav,because my leg is sore i can't play,4.9833125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/10/0/ksl1e/ksl1e2o0.wav,one zero zero three zero seven eight,4.9696875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990080/myst_990080_2008-14-05_00-00-00_MS_4.1/myst_990080_2008-14-05_00-00-00_MS_4.1_108.wav,it's five celsius,3.343,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002126/myst_002126_2014-05-01_08-01-11_LS_4.2/myst_002126_2014-05-01_08-01-11_LS_4.2_034.wav,the stove was too hot for that person so they had to move it away,5.3166875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996411/myst_996411_2009-24-09_00-00-00_VB_3.1/myst_996411_2009-24-09_00-00-00_VB_3.1_002.wav,hello,1.724,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/10/1/ksa3p/ksa3p2r0.wav,two six four zero two four six,6.1290625,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/09/3/ksk2s/ksk2s740.wav,sour,2.7396875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990083/myst_990083_2008-30-04_00-00-00_MS_1.3/myst_990083_2008-30-04_00-00-00_MS_1.3_002.wav,spongebob,2.5660000000000003,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018210/myst_018210_2014-10-15_13-19-45_LS_2.1/myst_018210_2014-10-15_13-19-45_LS_2.1_026.wav,they do because we produce carbon dioxide and that's what the plants need to,5.56775,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012017/myst_012017_2014-02-19_10-09-54_SRL_1.2/myst_012017_2014-02-19_10-09-54_SRL_1.2_014.wav,the water expands but the water can not go anywhere but out or the ice so it cracked the glass but with the warm water it did not expand so it had room,14.505999999999998,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007255/myst_007255_2015-04-23_08-17-35_LS_4.2/myst_007255_2015-04-23_08-17-35_LS_4.2_020.wav,they have learnt,2.224375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990080/myst_990080_2008-14-05_00-00-00_MS_4.1/myst_990080_2008-14-05_00-00-00_MS_4.1_090.wav,twenty degrees celsius,1.611,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/005015/myst_005015_2014-01-30_10-56-57_MX_1.2/myst_005015_2014-01-30_10-56-57_MX_1.2_012.wav,a solute,2.370875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/10/2/ksa42/ksa426y0.wav,slogan,1.547875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007241/myst_007241_2014-09-26_10-58-12_MX_1.2/myst_007241_2014-09-26_10-58-12_MX_1.2_026.wav,mixture,1.33625,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/05/2/ks536/ks5365i0.wav,we had a birds eye view,3.5151875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/08/2/ksj3r/ksj3r7j0.wav,suggest,1.52775,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990017/myst_990017_2008-15-05_00-00-00_MS_4.1/myst_990017_2008-15-05_00-00-00_MS_4.1_112.wav,yeah no i actually i didn't i thought the heat was gonna overpower,4.802,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014026/myst_014026_2013-12-20_13-17-16_MX_1.3/myst_014026_2013-12-20_13-17-16_MX_1.3_004.wav,okay let's get started,1.53125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/10/2/ksa3d/ksa3d5j0.wav,will you sing this song,3.9245625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990353/myst_990353_2009-02-04_00-00-00_MS_1.3/myst_990353_2009-02-04_00-00-00_MS_1.3_020.wav,could use measurement in meters too,3.626,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/08/4/ks80d/ks80d450.wav,i'm good with things like that,4.23875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/03/1/ks31e/ks31e1k0.wav,handshake,4.092125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/10/2/ksa3h/ksa3h110.wav,direct,1.98875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/07/1/ks71d/ks71d7n0.wav,tab,4.23875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014013/myst_014013_2013-12-19_12-28-36_MX_1.3/myst_014013_2013-12-19_12-28-36_MX_1.3_024.wav,evaporation,1.137625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990346/myst_990346_2009-22-04_00-00-00_MS_4.1/myst_990346_2009-22-04_00-00-00_MS_4.1_002.wav,we've been doing capacity and the temperature of water,6.598,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007233/myst_007233_2014-09-29_14-05-07_MX_1.2/myst_007233_2014-09-29_14-05-07_MX_1.2_009.wav,the solute is dissolves and it is the thing that dissolve,5.123625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/986609/myst_986609_2010-02-04_00-00-00_WA_1.2/myst_986609_2010-02-04_00-00-00_WA_1.2_002.wav,good,0.499,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/2/ks616/ks6161v0.wav,interrupt,2.339125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014035/myst_014035_2014-01-09_12-35-39_MX_1.3/myst_014035_2014-01-09_12-35-39_MX_1.3_026.wav,means it's a solution,1.4659375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/01/0/ksc2t/ksc2t0u0.wav,crenshaw,4.1161875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/10/4/ksa0w/ksa0w2c0.wav,misjudged,3.167,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/10/1/ksa3n/ksa3n500.wav,the flood took a car down the street,4.983125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990083/myst_990083_2008-05-05_00-00-00_MS_2.3/myst_990083_2008-05-05_00-00-00_MS_2.3_068.wav,yep,0.327,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/3/ksh3z/ksh3z0i0.wav,cashflow,3.1145625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996419/myst_996419_2009-02-10_00-00-00_VB_3.4/myst_996419_2009-02-10_00-00-00_VB_3.4_007.wav,graphs are all about giving you a good prediction about stuff like if you had never built a plane and you were just building a plane and you saw a graph you'd kind a get what it was about,12.754,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990035/myst_990035_2008-22-04_00-00-00_MS_1.2/myst_990035_2008-22-04_00-00-00_MS_1.2_014.wav,yeah,0.6729999999999999,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007088/myst_007088_2014-04-24_09-11-20_EE_2.3/myst_007088_2014-04-24_09-11-20_EE_2.3_002.wav,we've been learning on magnets,3.603875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012016/myst_012016_2014-02-19_10-09-38_SRL_2.1/myst_012016_2014-02-19_10-09-38_SRL_2.1_018.wav,a canyon formed by erosion,2.993375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993207/myst_993207_2008-08-10_00-00-00_VB_2.2/myst_993207_2008-08-10_00-00-00_VB_2.2_020.wav,so and then e yeah,5.83,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002122/myst_002122_2014-03-04_11-45-47_LS_1.3/myst_002122_2014-03-04_11-45-47_LS_1.3_018.wav,a it's about like um things that eat things that eat other things,6.82375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014025/myst_014025_2013-12-18_13-01-36_MX_1.2/myst_014025_2013-12-18_13-01-36_MX_1.2_009.wav,the solvent,3.192,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/3/ks635/ks6356g0.wav,my clothes are wet from the rain,4.326875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/09/0/ks93v/ks93v3n0.wav,royal,1.608125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/03/1/kse43/kse43330.wav,one,3.6101875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995520/myst_995520_2010-10-03_00-00-00_ME_4.1/myst_995520_2010-10-03_00-00-00_ME_4.1_001.wav,good,1.094,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/08/4/ksj0k/ksj0k6q0.wav,shades,1.407375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/004026/myst_004026_2014-01-22_09-00-54_EE_3.1/myst_004026_2014-01-22_09-00-54_EE_3.1_012.wav,steel metal iron and that's all i know,8.11425,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012021/myst_012021_2014-03-11_10-37-42_SRL_3.2/myst_012021_2014-03-11_10-37-42_SRL_3.2_028.wav,they're rocks,2.075375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/00/9/ksb35/ksb35420.wav,the cows' hay was not dry yet,6.1191875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/08/2/ks83f/ks83f5k0.wav,buying the ring took all of my money,4.953375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/4/ks63g/ks63g2m0.wav,novel,2.35925,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/00/9/ks018/ks018500.wav,the flood took a car down the street,6.585,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/07/0/ks72u/ks72u6f0.wav,we watched television during dinner,4.9828125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/08/2/ks83l/ks83l5a0.wav,i hope the airplane will get higher,4.612625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/989119/myst_989119_2008-24-07_00-00-00_ME_2.1/myst_989119_2008-24-07_00-00-00_ME_2.1_030.wav,and the circuit makes it go it's a closed circuit so the energy flows through the wires up into the light bulb makes it light up and then back into the battery so that it can happen all over again,13.42,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/08/1/ks842/ks8424q0.wav,edgar does not have a job,4.9826875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013022/myst_013022_2013-12-05_14-00-41_EE_1.4/myst_013022_2013-12-05_14-00-41_EE_1.4_003.wav,a candle burning,3.50375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997670/myst_997670_2011-10-01_00-00-00_ME_1.3/myst_997670_2011-10-01_00-00-00_ME_1.3_010.wav,that i don't really know,1.82,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/08/2/ksj44/ksj441v0.wav,interrupt,2.3590625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997247/myst_997247_2008-11-12_00-00-00_ME_2.3/myst_997247_2008-11-12_00-00-00_ME_2.3_049.wav,when i clicked on the d cell the motor went the other way,6.39,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990501/myst_990501_2010-27-01_00-00-00_WA_1.1/myst_990501_2010-27-01_00-00-00_WA_1.1_003.wav,um today we uh put like little water droplets on pennies and watched how the surface tension held together,8.677,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007252/myst_007252_2014-10-07_08-08-12_MX_2.1/myst_007252_2014-10-07_08-08-12_MX_2.1_007.wav,how about you,1.78125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997676/myst_997676_2011-24-02_00-00-00_ME_4.2/myst_997676_2011-24-02_00-00-00_ME_4.2_033.wav,well the more wire wraps you get the more washers washers you'll pick up,5.4510000000000005,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/00/0/ks037/ks0374k0.wav,a feather was in the birdcage,4.6129375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/10/3/ksl0c/ksl0c8t0.wav,yields,1.96875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/07/1/ksi3u/ksi3u1k0.wav,handshake,3.1134375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013033/myst_013033_2013-11-14_13-53-59_EE_1.1/myst_013033_2013-11-14_13-53-59_EE_1.1_009.wav,electricity,1.295875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997676/myst_997676_2010-13-12_00-00-00_ME_1.1/myst_997676_2010-13-12_00-00-00_ME_1.1_016.wav,well if you had a north um po pole then it would go then it would attract the south pole if you had a south pole it would attract the north pole,11.015999999999998,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995111/myst_995111_2009-12-02_00-00-00_ME_1.1/myst_995111_2009-12-02_00-00-00_ME_1.1_004.wav,some of the magnets are sticking and some of them are not,3.425,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/1/ksh0q/ksh0q8v0.wav,abnormal,2.7960625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013018/myst_013018_2014-05-28_11-17-35_LS_4.1/myst_013018_2014-05-28_11-17-35_LS_4.1_006.wav,no,0.875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990020/myst_990020_2008-15-05_00-00-00_MS_4.1/myst_990020_2008-15-05_00-00-00_MS_4.1_068.wav,oh they're um they're it they go by uh it just it's just like one two three four five,8.525,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/10/4/ksa3j/ksa3j3z0.wav,five people can fit in the elevator,4.9834375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002104/myst_002104_2014-03-11_14-10-04_LS_2.1/myst_002104_2014-03-11_14-10-04_LS_2.1_015.wav,yes,1.72425,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002030/myst_002030_2014-03-11_12-55-24_LS_2.1/myst_002030_2014-03-11_12-55-24_LS_2.1_043.wav,i think they get their food from the roots because that's like their that's sort of like their mouth and the leaves are like how they breathe,9.362375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/02/4/ksd2u/ksd2u490.wav,try to lick the lollipop,5.614625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/998654/myst_998654_2010-04-10_00-00-00_MS_4.1/myst_998654_2010-04-10_00-00-00_MS_4.1_006.wav,it means that b could be cold and a could be hot and c could be in between them,11.733,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012015/myst_012015_2013-12-18_09-45-30_MX_3.2/myst_012015_2013-12-18_09-45-30_MX_3.2_012.wav,i've been seeing the water's getting higher and the salt is saturating the water and then after the filter it's leaving it's leaving stuff it's leaving salt behind that,3.2640625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996410/myst_996410_2009-10-09_00-00-00_VB_1.2/myst_996410_2009-10-09_00-00-00_VB_1.2_001.wav,good,0.7440000000000001,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/10/0/ksa11/ksa114g0.wav,unplug the toaster if it gets hot,4.6289375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/02/1/ksd1g/ksd1g0q0.wav,cliffhanger,3.156,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/10/2/ksa13/ksa138d0.wav,vase,2.3391875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002297/myst_002297_2015-03-13_13-32-04_LS_1.3/myst_002297_2015-03-13_13-32-04_LS_1.3_032.wav,they eat dead animal waste or dead small animals,4.3950625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995304/myst_995304_2009-05-03_00-00-00_ME_2.3/myst_995304_2009-05-03_00-00-00_ME_2.3_011.wav,yes,1.707,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990038/myst_990038_2008-23-04_00-00-00_MS_1.2/myst_990038_2008-23-04_00-00-00_MS_1.2_092.wav,yeah uh huh uh huh,4.6560000000000015,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/02/3/ksd08/ksd08890.wav,unroll,2.2545625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/005025/myst_005025_2014-02-06_10-21-44_MX_2.2/myst_005025_2014-02-06_10-21-44_MX_2.2_020.wav,bye,2.1434375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012011/myst_012011_2014-02-19_10-23-35_SRL_1.3/myst_012011_2014-02-19_10-23-35_SRL_1.3_014.wav,the rocks in the water are reacting to the vinegar just like the statue,6.0203125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/10/2/ksa0u/ksa0u0c0.wav,bigfoot,2.795875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/022205/myst_022205_2014-12-15_11-31-47_LS_2.3/myst_022205_2014-12-15_11-31-47_LS_2.3_034.wav,those are all the brain cells in the brain organism,3.13525,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/01/3/ks12w/ks12w5j0.wav,will you sing this song,5.117375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/02/1/ks248/ks2484w0.wav,doug thinks he will win the race,6.1376875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013011/myst_013011_2013-12-05_13-55-59_EE_1.4/myst_013011_2013-12-05_13-55-59_EE_1.4_007.wav,energy and flame and wax,4.2311875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007231/myst_007231_2015-02-23_10-57-28_LS_1.3/myst_007231_2015-02-23_10-57-28_LS_1.3_025.wav,that it just eats plants no meat,4.5061875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990622/myst_990622_2010-12-04_00-00-00_MS_2.3/myst_990622_2010-12-04_00-00-00_MS_2.3_016.wav,you put grams on the other side,2.376,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990002/myst_990002_2008-18-04_00-00-00_ME_1.1/myst_990002_2008-18-04_00-00-00_ME_1.1_038.wav,yeah and they weren't even linked together i mean they just kind of stuck together,4.849,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/02/4/ks213/ks2136k0.wav,santa deemed rudolph the leader,6.5931875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/09/2/ksk0a/ksk0a5b0.wav,our tent can hold six people,3.517875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002112/myst_002112_2014-02-28_12-56-56_LS_1.1/myst_002112_2014-02-28_12-56-56_LS_1.1_025.wav,so what is this about,3.7590625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997685/myst_997685_2011-17-02_00-00-00_ME_4.1/myst_997685_2011-17-02_00-00-00_ME_4.1_020.wav,the electricity is being like open like not a full circuit not a complete circuit and then closed which is um a complete circuit,12.78,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/02/1/ksd2s/ksd2s500.wav,the flood took a car down the street,6.6156875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/00/0/ks03g/ks03g0u0.wav,crenshaw,4.115625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013011/myst_013011_2014-05-23_13-31-53_LS_4.1/myst_013011_2014-05-23_13-31-53_LS_4.1_008.wav,helps pollinate and they get their food by that and they make honey,3.1186875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/10/1/ksl2v/ksl2v780.wav,squeegee,1.9783125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/02/2/ks20w/ks20w2z0.wav,objected,2.860125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/004027/myst_004027_2014-02-11_08-41-06_EE_4.1/myst_004027_2014-02-11_08-41-06_EE_4.1_020.wav,magnet turn on off,3.1809375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/04/1/ks40a/ks40a290.wav,meaningless,3.591,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/02/1/ksd4b/ksd4b100.wav,digested,2.6089375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/004015/myst_004015_2014-01-22_09-15-30_EE_3.1/myst_004015_2014-01-22_09-15-30_EE_3.1_034.wav,if it's made of steel or iron it will stick up to magnet but other things like other things don't okay bye bye now,12.8265625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013016/myst_013016_2013-12-06_07-52-54_EE_1.4/myst_013016_2013-12-06_07-52-54_EE_1.4_025.wav,fossil fuel,1.3125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/10/2/ksl2t/ksl2t7y0.wav,toothpaste,2.3286875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/08/1/ksj3y/ksj3y4u0.wav,stewart has five friends in richmond,4.9831875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008061/myst_008061_2014-05-12_13-48-04_EE_5.2/myst_008061_2014-05-12_13-48-04_EE_5.2_014.wav,the same color as the object,2.9025625,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/09/3/ksk0h/ksk0h610.wav,he was really nice to us,3.5186875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996419/myst_996419_2009-02-10_00-00-00_VB_3.4/myst_996419_2009-02-10_00-00-00_VB_3.4_013.wav,i knew that the plane um would not really be like realistic i knew that it would be really fake and also i kn,13.06,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/989114/myst_989114_2008-22-07_00-00-00_ME_2.1/myst_989114_2008-22-07_00-00-00_ME_2.1_031.wav,um i think it would still turn on because the light bulb only needs the wires to be connected to the negative and the positive part of the battery and if you turned it the other way i think the battery will would still turn on,14.862,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013026/myst_013026_2014-05-28_13-45-51_LS_4.1/myst_013026_2014-05-28_13-45-51_LS_4.1_024.wav,the guy slapped,4.8980625,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/10/3/ksl0a/ksl0a6d0.wav,the flea chased the dog,2.795875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/07/3/ksi1c/ksi1c6d0.wav,the flea chased the dog,2.7969375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997283/myst_997283_2008-15-12_00-00-00_ME_3.1/myst_997283_2008-15-12_00-00-00_ME_3.1_080.wav,s,0.389,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990080/myst_990080_2008-07-05_00-00-00_MS_3.1/myst_990080_2008-07-05_00-00-00_MS_3.1_002.wav,yeah ah,2.428,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/09/4/ksk2v/ksk2v8v0.wav,abnormal,2.739625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013020/myst_013020_2014-05-28_09-32-37_LS_2.3/myst_013020_2014-05-28_09-32-37_LS_2.3_013.wav,that these are brain cells,2.7585,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/3/ks60v/ks60v6d0.wav,the flea chased the dog,2.7961875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996718/myst_996718_2011-12-01_00-00-00_MS_1.2/myst_996718_2011-12-01_00-00-00_MS_1.2_009.wav,what you could estimate estimate which is basically like um making a really smart guess,8.791,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/10/1/ksl2w/ksl2w4t0.wav,turn the volume on the radio down,4.95275,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990042/myst_990042_2008-09-05_00-00-00_MS_3.3/myst_990042_2008-09-05_00-00-00_MS_3.3_160.wav,oh yeah,0.81,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/09/2/ks93t/ks93t7o0.wav,technology,2.3593125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007100/myst_007100_2014-03-12_12-27-59_EE_1.2/myst_007100_2014-03-12_12-27-59_EE_1.2_024.wav,because they didn't then it what if work as well as a it's down so while we its dark anything outside will not work,13.1331875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/03/1/ks31m/ks31m820.wav,trauma,2.0885625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007239/myst_007239_2014-09-24_08-40-26_MX_1.1/myst_007239_2014-09-24_08-40-26_MX_1.1_009.wav,next yours,1.9165625,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/08/2/ksj44/ksj446e0.wav,the rain chased the dirt down the drain,4.317375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007252/myst_007252_2014-09-26_11-24-19_MX_1.2/myst_007252_2014-09-26_11-24-19_MX_1.2_048.wav,you're annoying and i don't like you bye,3.277625,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/05/0/ksg2z/ksg2z760.wav,spoons,2.3586875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013023/myst_013023_2014-05-22_12-22-05_LS_2.3/myst_013023_2014-05-22_12-22-05_LS_2.3_012.wav,that a brain cell helps you move your entire body,3.3935625,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/09/3/ks90p/ks90p8e0.wav,vaulted,1.5876875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/022212/myst_022212_2015-01-16_11-23-54_LS_3.1/myst_022212_2015-01-16_11-23-54_LS_3.1_006.wav,it's a hand leaf so stop bugging me just kidding me it's a hand palmate leaf,8.434375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996409/myst_996409_2009-16-09_00-00-00_VB_2.1/myst_996409_2009-16-09_00-00-00_VB_2.1_017.wav,what does ethic mean,1.952,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997012/myst_997012_2008-31-01_00-00-00_ME_5.1/myst_997012_2008-31-01_00-00-00_ME_5.1_008.wav,yeah,0.6,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/07/4/ksi06/ksi06130.wav,earthquake,1.9684375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997272/myst_997272_2009-12-01_00-00-00_ME_3.1/myst_997272_2009-12-01_00-00-00_ME_3.1_020.wav,okay,1.308,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/005025/myst_005025_2014-01-27_11-07-22_MX_1.1/myst_005025_2014-01-27_11-07-22_MX_1.1_025.wav,i do not think so,3.5224375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012016/myst_012016_2013-12-04_08-23-31_MX_2.2/myst_012016_2013-12-04_08-23-31_MX_2.2_003.wav,the grape juice mix makes the water change color and the salt solution just makes just dissolves,11.487125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/3/ks60v/ks60v5y0.wav,he breathed a sigh of relief,4.238,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007094/myst_007094_2014-05-12_07-43-43_EE_3.3/myst_007094_2014-05-12_07-43-43_EE_3.3_001.wav,could you repeat that,2.375,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012032/myst_012032_2013-11-13_08-59-05_MX_1.2/myst_012032_2013-11-13_08-59-05_MX_1.2_047.wav,what did you say,1.21875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/03/2/kse04/kse045u0.wav,could lizards ever talk,5.1415,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/03/0/ks33t/ks33t5d0.wav,mabel grows tomatoes in the courtyard,5.613875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996710/myst_996710_2011-19-01_00-00-00_MS_2.2/myst_996710_2011-19-01_00-00-00_MS_2.2_017.wav,the metal disk is eight grams heavy,4.482,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013023/myst_013023_2014-05-29_10-46-54_LS_4.2/myst_013023_2014-05-29_10-46-54_LS_4.2_017.wav,the feet and the beak,1.84375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/03/1/ks33o/ks33o0l0.wav,chalk,2.6091875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996724/myst_996724_2011-14-01_00-00-00_MS_2.1/myst_996724_2011-14-01_00-00-00_MS_2.1_022.wav,we used paper clips,3.332,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/03/1/kse3b/kse3b0b0.wav,beyond,3.080375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/09/4/ks947/ks9474a0.wav,could you pass the other jam please,4.9830625,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/0/ks607/ks6072q0.wav,two eight one seven three nine two,6.845875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002268/myst_002268_2015-04-09_13-18-01_LS_2.3/myst_002268_2015-04-09_13-18-01_LS_2.3_001.wav,hello,2.5846875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013033/myst_013033_2014-04-23_14-03-35_LS_1.3/myst_013033_2014-04-23_14-03-35_LS_1.3_019.wav,no i do not they are all the same,2.7838125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995741/myst_995741_2011-03-03_00-00-00_ME_4.1/myst_995741_2011-03-03_00-00-00_ME_4.1_006.wav,because the energy flows in the rivet and makes it a temporary magnet,5.4979999999999976,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013023/myst_013023_2013-12-05_13-55-22_EE_1.4/myst_013023_2013-12-05_13-55-22_EE_1.4_022.wav,i see a candle an apple a drawer wood and yeah and a water,12.8970625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007077/myst_007077_2014-03-12_09-34-16_EE_2.1/myst_007077_2014-03-12_09-34-16_EE_2.1_011.wav,the pathway or the wires or both they both mean the same thing,5.1375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/08/3/ksj3b/ksj3b690.wav,i thought i heard new voices,3.5155625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990372/myst_990372_2009-17-04_00-00-00_ME_2.2/myst_990372_2009-17-04_00-00-00_ME_2.2_016.wav,the switch um stopped the electricity from flowing from uh t transporting the battery to the motor,12.247,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/02/1/ksd2t/ksd2t6x0.wav,six,2.60925,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/09/4/ks93l/ks93l6m0.wav,the stove melted the butter,4.31725,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/005024/myst_005024_2014-02-14_10-12-39_MX_3.1/myst_005024_2014-02-14_10-12-39_MX_3.1_016.wav,okay,1.6236875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/004027/myst_004027_2013-12-03_09-50-32_EE_1.4/myst_004027_2013-12-03_09-50-32_EE_1.4_034.wav,non natural energy sources,7.4135625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002104/myst_002104_2014-03-21_08-05-00_LS_2.3/myst_002104_2014-03-21_08-05-00_LS_2.3_018.wav,yes because we are all very close relatives but some are more advanced or more evolved than others,13.1595625,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/07/0/ks733/ks7333h0.wav,push,2.3593125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007250/myst_007250_2014-10-07_07-54-46_MX_2.1/myst_007250_2014-10-07_07-54-46_MX_2.1_015.wav,the one with the darker has more powder then the one the has less powder,8.732000000000001,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/0/ks60x/ks60x770.wav,springhill,1.9675625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/989107/myst_989107_2008-15-07_00-00-00_ME_2.1/myst_989107_2008-15-07_00-00-00_ME_2.1_021.wav,an open circuit is when it doesn't go all the way through so it can't continue and light it up all the way,6.176,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/0/ks60x/ks60x1j0.wav,gumshoe,3.1553125,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995532/myst_995532_2010-19-02_00-00-00_ME_1.1/myst_995532_2010-19-02_00-00-00_ME_1.1_014.wav,the bottom magnet has a force inside inside that doesn't allow them to a to attract each other,8.815,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018214/myst_018214_2015-03-27_09-18-37_MX_1.1/myst_018214_2015-03-27_09-18-37_MX_1.1_006.wav,the marbles are separating from the water because the marbles are too big to fit through the graph,9.592,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/01/3/ks13i/ks13i3f0.wav,points,2.1125625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995734/myst_995734_2011-02-03_00-00-00_ME_3.3/myst_995734_2011-02-03_00-00-00_ME_3.3_026.wav,you already asked me that question,2.324,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/07/3/ks737/ks737610.wav,he was really nice to us,3.5155,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/0/ksh3o/ksh3o8q0.wav,woolen,1.3118125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/09/4/ks949/ks9497q0.wav,ten,1.987875,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013023/myst_013023_2014-05-05_14-06-58_LS_2.1/myst_013023_2014-05-05_14-06-58_LS_2.1_050.wav,because it has no sunlight,3.1999375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/1/ksh0i/ksh0i3d0.wav,playhouse,1.968625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990065/myst_990065_2008-22-04_00-00-00_MS_1.2/myst_990065_2008-22-04_00-00-00_MS_1.2_008.wav,yup,0.835,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990013/myst_990013_2008-05-05_00-00-00_MS_2.3/myst_990013_2008-05-05_00-00-00_MS_2.3_028.wav,yeah,0.449,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/10/1/ksa2u/ksa2u3d0.wav,playhouse,1.9879375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/09/1/ksk0u/ksk0u8h0.wav,warmth,2.7965,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/06/3/ks63d/ks63d2b0.wav,midnight,3.113875,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/00/9/ksb3m/ksb3m8a0.wav,unwilling,3.610375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/10/4/ksa3r/ksa3r470.wav,the dog is a big gentle puppy,4.6130625,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/09/4/ksk3f/ksk3f7g0.wav,subdue,2.359,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/04/3/ksf2w/ksf2w3f0.wav,points,2.113125,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/03/1/ks31m/ks31m780.wav,squeegee,2.616375,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/10/4/ksa3a/ksa3a450.wav,i'm good with things like that,4.31725,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/10/4/ksa41/ksa413x0.wav,we've had a wonderful night,3.5255625,finetune
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996289/myst_996289_2008-15-12_00-00-00_MS_2.3/myst_996289_2008-15-12_00-00-00_MS_2.3_090.wav,you could simply,3.43,finetune
+/srv/scratch/chacmod/OGI/speech/scripted/07/0/ks738/ks738860.wav,two,1.6075625,finetune

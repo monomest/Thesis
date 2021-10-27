@@ -65,3 +65,41 @@ Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST
 Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/THESIS_C/myST-OGI_data_test.csv
 Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/THESIS_C/myST-OGI_data_ignore.csv
 Done!
+
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/data_getSubset.py
+
+------> Setting file paths... ----------------------------------------
+
+Dataset name: myST-OGI
+dataset_filename: THESIS_C/myST-OGI_data_finetune
+base_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/
+
+------> Setting total hours in train set... ---------------------------
+
+total hours: 163.18
+
+------> Setting seed... ----------------------------------------------
+
+--> Setting seed as: 6
+
+------> Reading in train dataframe... --------------------------------
+
+
+------> Getting 10min, 1hr, 5hr and 10hr training subsets...---------------
+
+--> Minutes in subset: 10.547951041666666
+--> Hours in subset: 0.17579918402777778
+--> Minutes in subset: 59.283226041666666
+--> Hours in subset: 0.9880537673611111
+--> Minutes in subset: 305.2996552083333
+--> Hours in subset: 5.088327586805556
+--> Minutes in subset: 613.2695510416667
+--> Hours in subset: 10.221159184027778
+SUCCESS: Created 10 minute subset in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/THESIS_C/myST-OGI_data_finetune_10min.csv
+Samples:  132
+SUCCESS: Created 1 hour subset in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/THESIS_C/myST-OGI_data_finetune_1h.csv
+Samples:  788
+SUCCESS: Created 5 hour subset in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/THESIS_C/myST-OGI_data_finetune_5h.csv
+Samples:  3937
+SUCCESS: Created 10 hour subset in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI_local/THESIS_C/myST-OGI_data_finetune_10h.csv
+Samples:  7874

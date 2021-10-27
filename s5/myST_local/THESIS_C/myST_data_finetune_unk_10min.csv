@@ -1,0 +1,229 @@
+recordingID,filepath,transcription_original,transcription_clean,transcribed,has_audio_file,has_speech_in_audio,duration,spkr_id,usable,set
+myst_990596_2010-09-04_00-00-00_MS_2.2_024,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990596/myst_990596_2010-09-04_00-00-00_MS_2.2/myst_990596_2010-09-04_00-00-00_MS_2.2_024.wav,"WELL I FOUND OUT IT'S OVER ONE THOUSAND KILOGRAMS SO YOU'RE G GONNA HAVE
+",well i found out it's over one thousand kilograms so you're g gonna have,True,True,True,7.5429999999999975,990596,True,finetune
+myst_007082_2014-04-24_09-09-48_EE_2.3_003,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007082/myst_007082_2014-04-24_09-09-48_EE_2.3/myst_007082_2014-04-24_09-09-48_EE_2.3_003.wav,"Need to they need a parallel circuit to work
+",need to they need a parallel circuit to work,True,True,True,4.1765,007082,True,finetune
+myst_013018_2014-05-28_13-39-07_LS_3.3_017,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013018/myst_013018_2014-05-28_13-39-07_LS_3.3/myst_013018_2014-05-28_13-39-07_LS_3.3_017.wav,"i think it's so important because if we didn't switch gases with plants we wouldn't be able to breathe
+",i think it's so important because if we didn't switch gases with plants we wouldn't be able to breathe,True,True,True,9.0074375,013018,True,finetune
+myst_013020_2014-05-22_12-58-55_LS_2.3_004,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013020/myst_013020_2014-05-22_12-58-55_LS_2.3/myst_013020_2014-05-22_12-58-55_LS_2.3_004.wav,"we've been learning about this yeast before and we've been this part of sort of been like animal too
+",we've been learning about this yeast before and we've been this part of sort of been like animal too,True,True,True,7.5884375,013020,True,finetune
+myst_995736_2011-17-02_00-00-00_ME_2.3_012,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995736/myst_995736_2011-17-02_00-00-00_ME_2.3/myst_995736_2011-17-02_00-00-00_ME_2.3_012.wav,"WHEN YOU ADD AN INSULATOR TO IT IT'S THE MOTOR IS NOT GONNA TURN OR THE LIGHT BULB'S NOT GONNA LIGHT UP
+",when you add an insulator to it it's the motor is not gonna turn or the light bulb's not gonna light up,True,True,True,7.4220000000000015,995736,True,finetune
+myst_013033_2014-05-22_12-36-14_LS_2.3_044,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013033/myst_013033_2014-05-22_12-36-14_LS_2.3/myst_013033_2014-05-22_12-36-14_LS_2.3_044.wav,"stomach breaks down the food to even smaller pieces
+",stomach breaks down the food to even smaller pieces,True,True,True,3.8005,013033,True,finetune
+myst_007232_2014-11-21_10-50-01_MX_4.2_008,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007232/myst_007232_2014-11-21_10-50-01_MX_4.2/myst_007232_2014-11-21_10-50-01_MX_4.2_008.wav,"The chemicals
+",the chemicals,True,True,True,3.0361875,007232,True,finetune
+myst_990597_2010-16-04_00-00-00_MS_4.1_031,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990597/myst_990597_2010-16-04_00-00-00_MS_4.1/myst_990597_2010-16-04_00-00-00_MS_4.1_031.wav,"<BREATH> THE LITTLE CIRCLE IS ABOUT <BREATH> IT STANDS FOR DEGREES LIKE FIVE DEGREES ONE HUNDRED DEGREES FIFTY FIVE DEGREES AND TWENTY DEGREES
+",the little circle is about it stands for degrees like five degrees one hundred degrees fifty five degrees and twenty degrees,True,True,True,14.272,990597,True,finetune
+myst_013031_2013-11-14_13-53-15_EE_1.1_002,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013031/myst_013031_2013-11-14_13-53-15_EE_1.1/myst_013031_2013-11-14_13-53-15_EE_1.1_002.wav,"electricity and electromagnetism
+",electricity and electromagnetism,True,True,True,3.46,013031,True,finetune
+myst_990502_2010-10-02_00-00-00_WA_3.3_009,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990502/myst_990502_2010-10-02_00-00-00_WA_3.3/myst_990502_2010-10-02_00-00-00_WA_3.3_009.wav,"EVAPORATION IS HAPPENING
+",evaporation is happening,True,True,True,14.375,990502,True,finetune
+myst_013048_2014-04-30_12-23-14_LS_2.1_062,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013048/myst_013048_2014-04-30_12-23-14_LS_2.1/myst_013048_2014-04-30_12-23-14_LS_2.1_062.wav,"um by animals that make their own food
+",um by animals that make their own food,True,True,True,5.345625,013048,True,finetune
+myst_013011_2014-05-22_12-20-30_LS_3.3_024,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013011/myst_013011_2014-05-22_12-20-30_LS_3.3/myst_013011_2014-05-22_12-20-30_LS_3.3_024.wav,"by breathing and the lungs
+",by breathing and the lungs,True,True,True,3.4550625,013011,True,finetune
+myst_002294_2015-03-10_11-56-35_LS_1.1_002,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002294/myst_002294_2015-03-10_11-56-35_LS_1.1/myst_002294_2015-03-10_11-56-35_LS_1.1_002.wav,"what she said
+",what she said,True,True,True,2.9529375,002294,True,finetune
+myst_007240_2014-11-19_10-58-29_MX_3.1_004,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007240/myst_007240_2014-11-19_10-58-29_MX_3.1/myst_007240_2014-11-19_10-58-29_MX_3.1_004.wav,"It's clear
+",it's clear,True,True,True,1.59375,007240,True,finetune
+myst_014022_2014-01-13_14-03-06_MX_2.1_015,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014022/myst_014022_2014-01-13_14-03-06_MX_2.1/myst_014022_2014-01-13_14-03-06_MX_2.1_015.wav,"one is more dilute and one is more concentrate
+",one is more dilute and one is more concentrate,True,True,True,3.0930625,014022,True,finetune
+myst_990042_2008-30-04_00-00-00_MS_1.3_050,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990042/myst_990042_2008-30-04_00-00-00_MS_1.3/myst_990042_2008-30-04_00-00-00_MS_1.3_050.wav,"I DON'T REALLY KNOW <LAUGH> I DON'T REMEMBER
+",i don't really know i don't remember,True,True,True,2.81,990042,True,finetune
+myst_002267_2015-04-21_08-04-18_LS_3.1_005,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002267/myst_002267_2015-04-21_08-04-18_LS_3.1/myst_002267_2015-04-21_08-04-18_LS_3.1_005.wav,"This is a palmate leaf because all the veins are going out and out and out just like a hand
+",this is a palmate leaf because all the veins are going out and out and out just like a hand,True,True,True,8.682875,002267,True,finetune
+myst_013021_2014-04-22_13-58-20_LS_1.3_018,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013021/myst_013021_2014-04-22_13-58-20_LS_1.3/myst_013021_2014-04-22_13-58-20_LS_1.3_018.wav,"we've been learning about ecosystem living (())
+",we've been learning about ecosystem living,True,True,True,2.5860625,013021,True,finetune
+myst_990042_2008-14-05_00-00-00_MS_4.1_116,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990042/myst_990042_2008-14-05_00-00-00_MS_4.1/myst_990042_2008-14-05_00-00-00_MS_4.1_116.wav,"YEAH
+",yeah,True,True,True,0.469,990042,True,finetune
+myst_002122_2014-02-28_13-19-06_LS_1.1_026,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002122/myst_002122_2014-02-28_13-19-06_LS_1.1/myst_002122_2014-02-28_13-19-06_LS_1.1_026.wav,"they have to do with like the subsystems of the earth
+",they have to do with like the subsystems of the earth,True,True,True,3.972875,002122,True,finetune
+myst_995734_2011-23-02_00-00-00_ME_3.1_016,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995734/myst_995734_2011-23-02_00-00-00_ME_3.1/myst_995734_2011-23-02_00-00-00_ME_3.1_016.wav,"MARNIE YOU ASKED ME THAT QUESTION IN A DIFFERENT WAY LIKE A MINUTE AGO
+",marnie you asked me that question in a different way like a minute ago,True,True,True,7.311,995734,True,finetune
+myst_014020_2013-12-12_12-52-58_MX_1.1_028,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014020/myst_014020_2013-12-12_12-52-58_MX_1.1/myst_014020_2013-12-12_12-52-58_MX_1.1_028.wav,"not these
+",not these,True,True,True,0.65625,014020,True,finetune
+myst_013013_2014-05-28_09-28-08_LS_4.2_007,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013013/myst_013013_2014-05-28_09-28-08_LS_4.2/myst_013013_2014-05-28_09-28-08_LS_4.2_007.wav,"one is looking one is making stinky smells and one is
+",one is looking one is making stinky smells and one is,True,True,True,4.959875,013013,True,finetune
+myst_018210_2014-11-04_08-56-02_LS_2.3_008,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018210/myst_018210_2014-11-04_08-56-02_LS_2.3/myst_018210_2014-11-04_08-56-02_LS_2.3_008.wav,"they that they are very (())
+",they that they are very,True,True,True,3.2949375,018210,True,finetune
+myst_002113_2014-04-18_11-41-54_LS_3.3_018,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002113/myst_002113_2014-04-18_11-41-54_LS_3.3/myst_002113_2014-04-18_11-41-54_LS_3.3_018.wav,"that would probably be oxygen
+",that would probably be oxygen,True,True,True,3.5185625,002113,True,finetune
+myst_993766_2011-04-03_00-00-00_VB_3.4_021,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993766/myst_993766_2011-04-03_00-00-00_VB_3.4/myst_993766_2011-04-03_00-00-00_VB_3.4_021.wav,"I DON'T UNDERSTAND
+",i don't understand,True,True,True,3.228,993766,True,finetune
+myst_004027_2013-12-03_09-50-32_EE_1.4_007,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/004027/myst_004027_2013-12-03_09-50-32_EE_1.4/myst_004027_2013-12-03_09-50-32_EE_1.4_007.wav,"I think the candle is burning because the wick is burning I noticed it’s a <indiscernible>
+",i think the candle is burning because the wick is burning i noticed it's a <unk>,True,True,True,6.7681875,004027,True,finetune
+myst_013018_2014-05-28_11-17-35_LS_4.1_010,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013018/myst_013018_2014-05-28_11-17-35_LS_4.1/myst_013018_2014-05-28_11-17-35_LS_4.1_010.wav,"no
+",no,True,True,True,1.913125,013018,True,finetune
+myst_993207_2008-02-10_00-00-00_VB_1.3_076,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993207/myst_993207_2008-02-10_00-00-00_VB_1.3/myst_993207_2008-02-10_00-00-00_VB_1.3_076.wav,"YEAH BECAUSE THE ONLY THING THAT CHANGED <BREATH> HOW MANY TIMES IT SWUNG WAS THE LENGTH THAT'S THE ONLY THING
+",yeah because the only thing that changed how many times it swung was the length that's the only thing,True,True,True,6.037000000000001,993207,True,finetune
+myst_008051_2014-04-17_10-57-20_EE_2.3_016,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008051/myst_008051_2014-04-17_10-57-20_EE_2.3/myst_008051_2014-04-17_10-57-20_EE_2.3_016.wav,"The four types of work because +um+ it's a first because +um+ +ah+ there getting energy has and then the light bulb
+",the four types of work because um it's a first because um ah there getting energy has and then the light bulb,True,True,True,14.6005,008051,True,finetune
+myst_008064_2014-05-01_08-57-21_EE_4.2_028,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008064/myst_008064_2014-05-01_08-57-21_EE_4.2/myst_008064_2014-05-01_08-57-21_EE_4.2_028.wav,"i (())
+",i,True,True,True,0.71875,008064,True,finetune
+myst_996431_2009-04-09_00-00-00_VB_1.2_002,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996431/myst_996431_2009-04-09_00-00-00_VB_1.2/myst_996431_2009-04-09_00-00-00_VB_1.2_002.wav,"GOOD
+",good,True,True,True,0.757,996431,True,finetune
+myst_013064_2013-12-05_12-56-30_EE_1.4_022,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013064/myst_013064_2013-12-05_12-56-30_EE_1.4/myst_013064_2013-12-05_12-56-30_EE_1.4_022.wav,"well it's better than gasoline but it will also make energy
+",well it's better than gasoline but it will also make energy,True,True,True,4.6166875,013064,True,finetune
+myst_013021_2014-04-23_14-02-37_LS_2.1_050,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013021/myst_013021_2014-04-23_14-02-37_LS_2.1/myst_013021_2014-04-23_14-02-37_LS_2.1_050.wav,"this plant has all the resources it needs
+",this plant has all the resources it needs,True,True,True,3.448125,013021,True,finetune
+myst_007204_2014-10-13_08-18-04_MX_2.2_004,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007204/myst_007204_2014-10-13_08-18-04_MX_2.2/myst_007204_2014-10-13_08-18-04_MX_2.2_004.wav,"Yeah
+",yeah,True,True,True,1.125,007204,True,finetune
+myst_007240_2015-04-16_13-43-48_LS_3.3_016,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007240/myst_007240_2015-04-16_13-43-48_LS_3.3/myst_007240_2015-04-16_13-43-48_LS_3.3_016.wav,"letter u
+",letter u,True,True,True,3.5744375,007240,True,finetune
+myst_013011_2014-05-23_13-31-53_LS_4.1_003,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013011/myst_013011_2014-05-23_13-31-53_LS_4.1/myst_013011_2014-05-23_13-31-53_LS_4.1_003.wav,"about the nervous system
+",about the nervous system,True,True,True,1.15625,013011,True,finetune
+myst_002118_2014-02-28_12-59-04_LS_1.1_006,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002118/myst_002118_2014-02-28_12-59-04_LS_1.1/myst_002118_2014-02-28_12-59-04_LS_1.1_006.wav,"i think there are many parts of the engine that are moving causing the car to go forward or accelerate it so that it can move and won't stop unless you push the brake
+",i think there are many parts of the engine that are moving causing the car to go forward or accelerate it so that it can move and won't stop unless you push the brake,True,True,True,13.31075,002118,True,finetune
+myst_007081_2014-02-04_13-15-58_EE_1.1_030,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007081/myst_007081_2014-02-04_13-15-58_EE_1.1/myst_007081_2014-02-04_13-15-58_EE_1.1_030.wav,"If focus by the battery in the battery release it's all it's energy just light of the light bulb and a make it work but if it doesn’t work then the light bulb is out of power
+",if focus by the battery in the battery release it's all it's energy just light of the light bulb and a make it work but if it doesn't work then the light bulb is out of power,True,True,True,10.693875,007081,True,finetune
+myst_007232_2014-11-21_10-50-01_MX_4.2_018,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007232/myst_007232_2014-11-21_10-50-01_MX_4.2/myst_007232_2014-11-21_10-50-01_MX_4.2_018.wav,"It's a product
+",it's a product,True,True,True,1.524,007232,True,finetune
+myst_990080_2008-14-05_00-00-00_MS_4.1_088,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990080/myst_990080_2008-14-05_00-00-00_MS_4.1/myst_990080_2008-14-05_00-00-00_MS_4.1_088.wav,"TWENTY DEGREES CELSIUS
+",twenty degrees celsius,True,True,True,2.149,990080,True,finetune
+myst_995737_2011-10-02_00-00-00_ME_1.4_009,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995737/myst_995737_2011-10-02_00-00-00_ME_1.4/myst_995737_2011-10-02_00-00-00_ME_1.4_009.wav,"I CAN'T CLICK IT TO SEE THE UH MAGNET
+",i can't click it to see the uh magnet,True,True,True,5.334,995737,True,finetune
+myst_990050_2008-23-04_00-00-00_MS_1.2_078,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990050/myst_990050_2008-23-04_00-00-00_MS_1.2/myst_990050_2008-23-04_00-00-00_MS_1.2_078.wav,"YEAH
+",yeah,True,True,True,0.653,990050,True,finetune
+myst_995523_2010-11-03_00-00-00_ME_4.2_035,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995523/myst_995523_2010-11-03_00-00-00_ME_4.2/myst_995523_2010-11-03_00-00-00_ME_4.2_035.wav,"-ELP
+",elp,True,True,True,0.612,995523,True,finetune
+myst_013030_2014-05-22_12-36-27_LS_3.3_022,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013030/myst_013030_2014-05-22_12-36-27_LS_3.3/myst_013030_2014-05-22_12-36-27_LS_3.3_022.wav,"the lungs make us breathe
+",the lungs make us breathe,True,True,True,3.07525,013030,True,finetune
+myst_013046_2014-04-30_12-43-26_LS_2.1_053,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013046/myst_013046_2014-04-30_12-43-26_LS_2.1/myst_013046_2014-04-30_12-43-26_LS_2.1_053.wav,"like it hasn't been that it has a sunburn
+",like it hasn't been that it has a sunburn,True,True,True,4.2176875,013046,True,finetune
+myst_004023_2013-11-19_09-40-16_EE_1.2_018,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/004023/myst_004023_2013-11-19_09-40-16_EE_1.2/myst_004023_2013-11-19_09-40-16_EE_1.2_018.wav,"solar panel is collecting the solar power which powers the motor who is which is going in a spin which connects to the motor and spins it
+",solar panel is collecting the solar power which powers the motor who is which is going in a spin which connects to the motor and spins it,True,True,True,13.1938125,004023,True,finetune
+myst_990022_2008-01-05_00-00-00_MS_2.3_096,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990022/myst_990022_2008-01-05_00-00-00_MS_2.3/myst_990022_2008-01-05_00-00-00_MS_2.3_096.wav,"OKAY
+",okay,True,True,True,0.469,990022,True,finetune
+myst_997231_2008-13-11_00-00-00_ME_1.1_013,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997231/myst_997231_2008-13-11_00-00-00_ME_1.1/myst_997231_2008-13-11_00-00-00_ME_1.1_013.wav,"ATTRACTING IS WHEN THE MAGNETS COME TOGETHER
+",attracting is when the magnets come together,True,True,True,4.034,997231,True,finetune
+myst_997250_2008-15-12_00-00-00_ME_3.1_054,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997250/myst_997250_2008-15-12_00-00-00_ME_3.1/myst_997250_2008-15-12_00-00-00_ME_3.1_054.wav,"THE WIRES HAVE TO BE CONNECTING TO ALL THE OTHER THINGS
+",the wires have to be connecting to all the other things,True,True,True,4.35,997250,True,finetune
+myst_995738_2011-11-02_00-00-00_ME_2.1_004,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995738/myst_995738_2011-11-02_00-00-00_ME_2.1/myst_995738_2011-11-02_00-00-00_ME_2.1_004.wav,"UM THAT THE D CELLS ARE THE MAIN POWER SOURCE
+",um that the d cells are the main power source,True,True,True,4.688,995738,True,finetune
+myst_002303_2015-05-21_09-01-55_LS_4.2_025,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002303/myst_002303_2015-05-21_09-01-55_LS_4.2/myst_002303_2015-05-21_09-01-55_LS_4.2_025.wav,"It's a learned
+",it's a learned,True,True,True,1.1549375,002303,True,finetune
+myst_007081_2014-02-11_12-11-00_EE_1.2_018,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007081/myst_007081_2014-02-11_12-11-00_EE_1.2/myst_007081_2014-02-11_12-11-00_EE_1.2_018.wav,"If the flourish turning then it means that its collecting energy form the solar power to make it work
+",if the flourish turning then it means that its collecting energy form the solar power to make it work,True,True,True,8.291,007081,True,finetune
+myst_995510_2010-11-03_00-00-00_ME_4.2_005,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995510/myst_995510_2010-11-03_00-00-00_ME_4.2/myst_995510_2010-11-03_00-00-00_ME_4.2_005.wav,"METAL WHAT DO YOU CALL THE CIRCLE THINGS METAL RIVETS
+",metal what do you call the circle things metal rivets,True,True,True,6.8610000000000015,995510,True,finetune
+myst_995002_2008-27-02_00-00-00_ME_3.1_017,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995002/myst_995002_2008-27-02_00-00-00_ME_3.1/myst_995002_2008-27-02_00-00-00_ME_3.1_017.wav,"WELL WHEN YOU DON'T HOOK IT UP RIGHT WITH THE WIRES AND THE BATTERY AND THE LIGHT BULBS
+",well when you don't hook it up right with the wires and the battery and the light bulbs,True,True,True,7.5360000000000005,995002,True,finetune
+myst_012031_2014-02-18_10-45-04_SRL_1.2_001,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012031/myst_012031_2014-02-18_10-45-04_SRL_1.2/myst_012031_2014-02-18_10-45-04_SRL_1.2_001.wav,"good
+",good,True,True,True,1.0625,012031,True,finetune
+myst_990080_2008-14-05_00-00-00_MS_4.1_080,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990080/myst_990080_2008-14-05_00-00-00_MS_4.1/myst_990080_2008-14-05_00-00-00_MS_4.1_080.wav,"UM WE HAD A SHEET OF PAPER THAT HA SH SHOWED A THERMOMETER ON IT AND WE HAD TO ROU- WRITE DOWN LIKE LIKE THE HIGHEST ON THE THERMOMETER WE HAD TO WRITE LIKE C FOR LIKE THIRTY OR SOMETHING
+",um we had a sheet of paper that ha sh showed a thermometer on it and we had to rou write down like like the highest on the thermometer we had to write like c for like thirty or something,True,True,True,14.732000000000001,990080,True,finetune
+myst_995737_2011-04-03_00-00-00_ME_4.2_013,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995737/myst_995737_2011-04-03_00-00-00_ME_4.2/myst_995737_2011-04-03_00-00-00_ME_4.2_013.wav,"IT UM RELATES
+",it um relates,True,True,True,2.126,995737,True,finetune
+myst_995312_2009-08-04_00-00-00_ME_3.3_008,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995312/myst_995312_2009-08-04_00-00-00_ME_3.3/myst_995312_2009-08-04_00-00-00_ME_3.3_008.wav,"IT'S FLOWING THE EXACT SAME WAY IN A CIRCLE
+",it's flowing the exact same way in a circle,True,True,True,4.124,995312,True,finetune
+myst_014018_2014-02-07_12-30-07_MX_4.1_018,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014018/myst_014018_2014-02-07_12-30-07_MX_4.1/myst_014018_2014-02-07_12-30-07_MX_4.1_018.wav,"the atoms must be different
+",the atoms must be different,True,True,True,3.1205,014018,True,finetune
+myst_002103_2014-02-28_12-57-16_LS_1.1_025,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002103/myst_002103_2014-02-28_12-57-16_LS_1.1/myst_002103_2014-02-28_12-57-16_LS_1.1_025.wav,"i forgot to to ask you your name but what is your name my name is hayden
+",i forgot to to ask you your name but what is your name my name is hayden,True,True,True,6.898,002103,True,finetune
+myst_013020_2013-12-04_14-01-42_EE_1.3_024,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013020/myst_013020_2013-12-04_14-01-42_EE_1.3/myst_013020_2013-12-04_14-01-42_EE_1.3_024.wav,"that they are all metal for it to work
+",that they are all metal for it to work,True,True,True,2.4085,013020,True,finetune
+myst_013021_2014-04-22_14-12-25_LS_2.1_041,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013021/myst_013021_2014-04-22_14-12-25_LS_2.1/myst_013021_2014-04-22_14-12-25_LS_2.1_041.wav,"they get their food from the soil
+",they get their food from the soil,True,True,True,1.828625,013021,True,finetune
+myst_990026_2008-12-05_00-00-00_MS_3.3_100,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990026/myst_990026_2008-12-05_00-00-00_MS_3.3/myst_990026_2008-12-05_00-00-00_MS_3.3_100.wav,"SURE
+",sure,True,True,True,0.642,990026,True,finetune
+myst_988448_2010-08-01_00-00-00_VB_2.1_008,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/988448/myst_988448_2010-08-01_00-00-00_VB_2.1/myst_988448_2010-08-01_00-00-00_VB_2.1_008.wav,"NOT ALL THE BOATS CAN BE EXACT
+",not all the boats can be exact,True,True,True,3.075,988448,True,finetune
+myst_013052_2014-04-16_08-32-28_LS_1.1_027,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013052/myst_013052_2014-04-16_08-32-28_LS_1.1/myst_013052_2014-04-16_08-32-28_LS_1.1_027.wav,"they represent the different types of subsystems
+",they represent the different types of subsystems,True,True,True,6.0464375,013052,True,finetune
+myst_990352_2009-02-04_00-00-00_MS_1.2_039,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990352/myst_990352_2009-02-04_00-00-00_MS_1.2/myst_990352_2009-02-04_00-00-00_MS_1.2_039.wav,"THANK YOU
+",thank you,True,True,True,0.701,990352,True,finetune
+myst_004015_2013-12-03_10-16-01_EE_1.4_021,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/004015/myst_004015_2013-12-03_10-16-01_EE_1.4/myst_004015_2013-12-03_10-16-01_EE_1.4_021.wav,"The air gets dirty and it’s not good
+",the air gets dirty and it's not good,True,True,True,3.79225,004015,True,finetune
+myst_012031_2014-03-21_10-40-30_SRL_4.1_026,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012031/myst_012031_2014-03-21_10-40-30_SRL_4.1/myst_012031_2014-03-21_10-40-30_SRL_4.1_026.wav,"i think water's renewable
+",i think water's renewable,True,True,True,4.4990625,012031,True,finetune
+myst_008051_2014-04-10_10-24-39_EE_2.1_009,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008051/myst_008051_2014-04-10_10-24-39_EE_2.1/myst_008051_2014-04-10_10-24-39_EE_2.1_009.wav,"Which going end from the positive side and coming out to negative side and going in that two light bulbs
+",which going end from the positive side and coming out to negative side and going in that two light bulbs,True,True,True,8.926375,008051,True,finetune
+myst_996408_2009-21-09_00-00-00_VB_2.2_014,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996408/myst_996408_2009-21-09_00-00-00_VB_2.2/myst_996408_2009-21-09_00-00-00_VB_2.2_014.wav,"UM NO
+",um no,True,True,True,1.7930000000000001,996408,True,finetune
+myst_990037_2008-01-05_00-00-00_MS_2.3_067,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990037/myst_990037_2008-01-05_00-00-00_MS_2.3/myst_990037_2008-01-05_00-00-00_MS_2.3_067.wav,"YEAH
+",yeah,True,True,True,0.409,990037,True,finetune
+myst_013023_2013-12-05_13-55-22_EE_1.4_005,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013023/myst_013023_2013-12-05_13-55-22_EE_1.4/myst_013023_2013-12-05_13-55-22_EE_1.4_005.wav,"it's moving because the heat from the fire is making the wick move
+",it's moving because the heat from the fire is making the wick move,True,True,True,10.3120625,013023,True,finetune
+myst_990042_2008-30-04_00-00-00_MS_1.3_026,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990042/myst_990042_2008-30-04_00-00-00_MS_1.3/myst_990042_2008-30-04_00-00-00_MS_1.3_026.wav,"YEAH
+",yeah,True,True,True,0.41,990042,True,finetune
+myst_996217_2008-13-11_00-00-00_MS_1.1_096,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996217/myst_996217_2008-13-11_00-00-00_MS_1.1/myst_996217_2008-13-11_00-00-00_MS_1.1_096.wav,"HMM WELL WE COULD MEASURE HOW FAR WE ARE TOGETHER AND THEN LAY DOWN FROM THERE AND KEEP GOING FROM THERE
+",hmm well we could measure how far we are together and then lay down from there and keep going from there,True,True,True,10.677,996217,True,finetune
+myst_013021_2014-05-22_12-24-20_LS_3.3_019,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013021/myst_013021_2014-05-22_12-24-20_LS_3.3/myst_013021_2014-05-22_12-24-20_LS_3.3_019.wav,"it's about expelling the c o two carbon dioxide and taking in the oxygen
+",it's about expelling the c o two carbon dioxide and taking in the oxygen,True,True,True,5.995125,013021,True,finetune
+myst_007083_2014-02-05_12-26-52_EE_1.1_016,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007083/myst_007083_2014-02-05_12-26-52_EE_1.1/myst_007083_2014-02-05_12-26-52_EE_1.1_016.wav,"This have a filament and it does have <side _ speech> there is the light bulb
+",this have a filament and it does have <unk> there is the light bulb,True,True,True,5.311125,007083,True,finetune
+myst_990041_2008-23-04_00-00-00_MS_1.2_022,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990041/myst_990041_2008-23-04_00-00-00_MS_1.2/myst_990041_2008-23-04_00-00-00_MS_1.2_022.wav,"TEN
+",ten,True,True,True,0.612,990041,True,finetune
+myst_022220_2014-12-01_12-02-32_LS_1.1_004,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/022220/myst_022220_2014-12-01_12-02-32_LS_1.1/myst_022220_2014-12-01_12-02-32_LS_1.1_004.wav,"because they have different interacting parts
+",because they have different interacting parts,True,True,True,2.751375,022220,True,finetune
+myst_002030_2014-03-04_11-42-02_LS_1.3_037,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002030/myst_002030_2014-03-04_11-42-02_LS_1.3/myst_002030_2014-03-04_11-42-02_LS_1.3_037.wav,"they are um decomposers so they eat something that is um dying or is dead
+",they are um decomposers so they eat something that is um dying or is dead,True,True,True,8.453375,002030,True,finetune
+myst_990501_2010-02-02_00-00-00_WA_2.1_026,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990501/myst_990501_2010-02-02_00-00-00_WA_2.1/myst_990501_2010-02-02_00-00-00_WA_2.1_026.wav,"WELL IF YOU COOL DOWN WATER IT'LL CONTRACT AND GET SMALLER AND IF YOU HEAT IT UP IT'LL GET REALLY UM A LOT BIGGER <BREATH>
+",well if you cool down water it'll contract and get smaller and if you heat it up it'll get really um a lot bigger,True,True,True,12.454,990501,True,finetune
+myst_990045_2008-02-05_00-00-00_MS_2.2_156,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990045/myst_990045_2008-02-05_00-00-00_MS_2.2/myst_990045_2008-02-05_00-00-00_MS_2.2_156.wav,"N MMM NO
+",n mmm no,True,True,True,2.125,990045,True,finetune
+myst_007075_2014-03-18_08-43-48_EE_2.1_005,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007075/myst_007075_2014-03-18_08-43-48_EE_2.1/myst_007075_2014-03-18_08-43-48_EE_2.1_005.wav,"Pathway is for electricity to flow through to the light bulb
+",pathway is for electricity to flow through to the light bulb,True,True,True,4.43975,007075,True,finetune
+myst_995515_2010-10-03_00-00-00_ME_4.1_027,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995515/myst_995515_2010-10-03_00-00-00_ME_4.1/myst_995515_2010-10-03_00-00-00_ME_4.1_027.wav,"ELECTROMAGNETS CAN PICK UP IRON OBJECTS
+",electromagnets can pick up iron objects,True,True,True,4.3180000000000005,995515,True,finetune
+myst_995741_2011-11-02_00-00-00_ME_2.1_026,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995741/myst_995741_2011-11-02_00-00-00_ME_2.1/myst_995741_2011-11-02_00-00-00_ME_2.1_026.wav,"IT'S A CIRCUIT AND POWER IS FLOWING THROUGH WIRES AND IT'S GOING ONTO THE LIGHT BULB AND IT'S LIGHTING UP
+",it's a circuit and power is flowing through wires and it's going onto the light bulb and it's lighting up,True,True,True,10.285,995741,True,finetune
+myst_013018_2013-11-14_13-50-12_EE_1.1_015,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013018/myst_013018_2013-11-14_13-50-12_EE_1.1/myst_013018_2013-11-14_13-50-12_EE_1.1_015.wav,"means it means a receiver is like it receives electricity from the d cell and the wires and then it yeah it receives electricity from the wire from the d cell to the
+",means it means a receiver is like it receives electricity from the d cell and the wires and then it yeah it receives electricity from the wire from the d cell to the,True,True,True,12.421,013018,True,finetune
+myst_018214_2014-11-06_09-25-59_LS_3.1_011,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018214/myst_018214_2014-11-06_09-25-59_LS_3.1/myst_018214_2014-11-06_09-25-59_LS_3.1_011.wav,"they are called palmate
+",they are called palmate,True,True,True,6.86225,018214,True,finetune
+myst_004012_2014-02-03_09-32-26_EE_3.4_021,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/004012/myst_004012_2014-02-03_09-32-26_EE_3.4/myst_004012_2014-02-03_09-32-26_EE_3.4_021.wav,"Makes force weaker
+",makes force weaker,True,True,True,3.3003125,004012,True,finetune
+myst_990335_2009-20-04_00-00-00_MS_4.1_008,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990335/myst_990335_2009-20-04_00-00-00_MS_4.1/myst_990335_2009-20-04_00-00-00_MS_4.1_008.wav,"OF THE HEAT AND COLDNESS
+",of the heat and coldness,True,True,True,2.1319999999999997,990335,True,finetune
+myst_990040_2008-15-05_00-00-00_MS_4.2_088,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990040/myst_990040_2008-15-05_00-00-00_MS_4.2/myst_990040_2008-15-05_00-00-00_MS_4.2_088.wav,"NO
+",no,True,True,True,0.7959999999999999,990040,True,finetune
+myst_013059_2013-11-20_10-12-35_EE_1.2_015,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013059/myst_013059_2013-11-20_10-12-35_EE_1.2/myst_013059_2013-11-20_10-12-35_EE_1.2_015.wav,"the sun has to be shining on the um on the solar panel
+",the sun has to be shining on the um on the solar panel,True,True,True,6.7505,013059,True,finetune
+myst_004016_2013-11-19_09-28-58_EE_1.2_002,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/004016/myst_004016_2013-11-19_09-28-58_EE_1.2/myst_004016_2013-11-19_09-28-58_EE_1.2_002.wav,"i'm great how are you
+",i'm great how are you,True,True,True,6.125,004016,True,finetune
+myst_012001_2013-11-05_14-47-21_MX_1.1_069,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012001/myst_012001_2013-11-05_14-47-21_MX_1.1/myst_012001_2013-11-05_14-47-21_MX_1.1_069.wav,"it's used to separate the marbles from the water
+",it's used to separate the marbles from the water,True,True,True,2.6393125,012001,True,finetune
+myst_013027_2013-11-21_13-02-26_EE_1.2_010,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013027/myst_013027_2013-11-21_13-02-26_EE_1.2/myst_013027_2013-11-21_13-02-26_EE_1.2_010.wav,"um i meant electricity or something like they're connected together so it can happen
+",um i meant electricity or something like they're connected together so it can happen,True,True,True,8.63375,013027,True,finetune
+myst_990068_2008-19-05_00-00-00_MS_4.2_056,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990068/myst_990068_2008-19-05_00-00-00_MS_4.2/myst_990068_2008-19-05_00-00-00_MS_4.2_056.wav,"YEAH
+",yeah,True,True,True,0.5720000000000001,990068,True,finetune
+myst_990032_2008-21-04_00-00-00_MS_1.1_016,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990032/myst_990032_2008-21-04_00-00-00_MS_1.1/myst_990032_2008-21-04_00-00-00_MS_1.1_016.wav,"YES NO
+",yes no,True,True,True,2.498,990032,True,finetune
+myst_002260_2015-03-13_08-20-35_LS_1.3_031,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002260/myst_002260_2015-03-13_08-20-35_LS_1.3/myst_002260_2015-03-13_08-20-35_LS_1.3_031.wav,"decomposers break it down the dead organism
+",decomposers break it down the dead organism,True,True,True,4.435,002260,True,finetune
+myst_996724_2011-20-01_00-00-00_MS_2.3_006,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996724/myst_996724_2011-20-01_00-00-00_MS_2.3/myst_996724_2011-20-01_00-00-00_MS_2.3_006.wav,"A SOAKED SPONGE UM I DON'T KNOW
+",a soaked sponge um i don't know,True,True,True,4.046,996724,True,finetune
+myst_007100_2014-03-17_10-53-02_EE_1.2_001,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007100/myst_007100_2014-03-17_10-53-02_EE_1.2/myst_007100_2014-03-17_10-53-02_EE_1.2_001.wav,"Good
+",good,True,True,True,1.3125,007100,True,finetune
+myst_990029_2008-21-04_00-00-00_MS_1.1_092,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990029/myst_990029_2008-21-04_00-00-00_MS_1.1/myst_990029_2008-21-04_00-00-00_MS_1.1_092.wav,"NO NOT REALLY
+",no not really,True,True,True,1.165,990029,True,finetune
+myst_013020_2014-05-28_10-46-24_LS_3.3_026,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013020/myst_013020_2014-05-28_10-46-24_LS_3.3/myst_013020_2014-05-28_10-46-24_LS_3.3_026.wav,"what is going on in the highlighted areas is sort of like what they are and what they're
+",what is going on in the highlighted areas is sort of like what they are and what they're,True,True,True,5.6339999999999995,013020,True,finetune
+myst_997272_2008-08-12_00-00-00_ME_2.1_056,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997272/myst_997272_2008-08-12_00-00-00_ME_2.1/myst_997272_2008-08-12_00-00-00_ME_2.1_056.wav,"YES
+",yes,True,True,True,0.715,997272,True,finetune
+myst_004034_2013-11-19_09-47-45_EE_1.2_023,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/004034/myst_004034_2013-11-19_09-47-45_EE_1.2/myst_004034_2013-11-19_09-47-45_EE_1.2_023.wav,"it wouldn't really work because the full because the sun wouldn't be hitting it and it wouldn't really work just cause that's the energy and the sun is d energy and d wouldn't have the
+",it wouldn't really work because the full because the sun wouldn't be hitting it and it wouldn't really work just cause that's the energy and the sun is d energy and d wouldn't have the,True,True,True,14.2076875,004034,True,finetune
+myst_004031_2013-11-18_09-33-09_EE_1.1_006,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/004031/myst_004031_2013-11-18_09-33-09_EE_1.1/myst_004031_2013-11-18_09-33-09_EE_1.1_006.wav,"if the d cell weren't there the the bulb would not light up because there's no energy
+",if the d cell weren't there the the bulb would not light up because there's no energy,True,True,True,6.220375,004031,True,finetune
+myst_013034_2013-11-15_10-05-20_EE_1.2_026,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013034/myst_013034_2013-11-15_10-05-20_EE_1.2/myst_013034_2013-11-15_10-05-20_EE_1.2_026.wav,"i don't know
+",i don't know,True,True,True,1.837,013034,True,finetune
+myst_005022_2014-02-03_10-13-47_MX_1.3_001,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/005022/myst_005022_2014-02-03_10-13-47_MX_1.3/myst_005022_2014-02-03_10-13-47_MX_1.3_001.wav,"good how are you
+",good how are you,True,True,True,1.96875,005022,True,finetune
+myst_995510_2010-10-03_00-00-00_ME_4.1_022,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995510/myst_995510_2010-10-03_00-00-00_ME_4.1/myst_995510_2010-10-03_00-00-00_ME_4.1_022.wav,"ADD ANOTHER BATTERY ONTO IT
+",add another battery onto it,True,True,True,2.889,995510,True,finetune
+myst_004026_2013-12-03_10-19-27_EE_1.4_019,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/004026/myst_004026_2013-12-03_10-19-27_EE_1.4/myst_004026_2013-12-03_10-19-27_EE_1.4_019.wav,"A light
+",a light,True,True,True,0.96025,004026,True,finetune
+myst_007242_2014-10-30_11-00-07_MX_4.1_013,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007242/myst_007242_2014-10-30_11-00-07_MX_4.1/myst_007242_2014-10-30_11-00-07_MX_4.1_013.wav,"A product
+",a product,True,True,True,1.4130625,007242,True,finetune
+myst_990076_2008-12-05_00-00-00_MS_3.3_026,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990076/myst_990076_2008-12-05_00-00-00_MS_3.3/myst_990076_2008-12-05_00-00-00_MS_3.3_026.wav,"I FORGET THE OTHER PERSON'S NAME BUT THE UM SHE WAS THE ONE THAT HAD THE LITTLE CUP <FP> WITH THE UM WITH THE BIG SMALL ONE
+",i forget the other person's name but the um she was the one that had the little cup with the um with the big small one,True,True,True,12.745999999999999,990076,True,finetune
+myst_007231_2014-09-24_08-12-39_MX_1.1_027,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007231/myst_007231_2014-09-24_08-12-39_MX_1.1/myst_007231_2014-09-24_08-12-39_MX_1.1_027.wav,"On the coffee filters because sand cant go through it so it’s tracked
+",on the coffee filters because sand cant go through it so it's tracked,True,True,True,10.5985625,007231,True,finetune
+myst_995005_2008-06-02_00-00-00_ME_2.2_050,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995005/myst_995005_2008-06-02_00-00-00_ME_2.2/myst_995005_2008-06-02_00-00-00_ME_2.2_050.wav,"IT'LL WORK
+",it'll work,True,True,True,0.8440000000000001,995005,True,finetune
+myst_005024_2014-01-30_10-10-43_MX_1.2_031,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/005024/myst_005024_2014-01-30_10-10-43_MX_1.2/myst_005024_2014-01-30_10-10-43_MX_1.2_031.wav,"it means that the sand has not it has separated from the mixture and become a solution
+",it means that the sand has not it has separated from the mixture and become a solution,True,True,True,6.4994375,005024,True,finetune
+myst_996712_2011-21-01_00-00-00_MS_3.1_002,/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996712/myst_996712_2011-21-01_00-00-00_MS_3.1/myst_996712_2011-21-01_00-00-00_MS_3.1_002.wav,"I DON'T REALLY REMEMBER AS USUAL
+",i don't really remember as usual,True,True,True,4.913,996712,True,finetune

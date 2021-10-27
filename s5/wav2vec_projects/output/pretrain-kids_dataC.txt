@@ -203,3 +203,49 @@ min           0.510000
 max          15.480000
 Name: duration, dtype: float64
 Done!
+
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/pretrain-kids_manifest.py
+
+------> Setting filepaths... -----------------------------------------
+
+Input files: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT-CU_local/THESIS_C/myST-OGI-TLT-CU_pretrain_manifest.csv
+
+------> Reading in input files... ------------------------------------
+
+
+------> Creating manifest file... ------------------------------------
+
+Traceback (most recent call last):
+  File "pretrain-kids_manifest.py", line 68, in <module>
+    "{}\t{}".format(os.path.relpath(file_path, root_fp), frames), file=out_fp
+AttributeError: 'str' object has no attribute 'write'
+
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/pretrain-kids_manifest.py
+
+------> Setting filepaths... -----------------------------------------
+
+Input files: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT-CU_local/THESIS_C/myST-OGI-TLT-CU_pretrain_manifest.csv
+
+------> Reading in input files... ------------------------------------
+
+
+------> Creating manifest file... ------------------------------------
+
+Traceback (most recent call last):
+  File "pretrain-kids_manifest.py", line 68, in <module>
+    "{}\t{}".format(file_path, frames), file=dest_fp
+AttributeError: 'str' object has no attribute 'write'
+
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/pretrain-kids_manifest.py
+
+------> Setting filepaths... -----------------------------------------
+
+Input files: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT-CU_local/THESIS_C/myST-OGI-TLT-CU_pretrain_manifest.csv
+
+------> Reading in input files... ------------------------------------
+
+
+------> Creating manifest file... ------------------------------------
+
+Saved manifest at /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT-CU_local/THESIS_C/train.tsv
+Done!

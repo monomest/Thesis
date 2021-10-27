@@ -1,0 +1,77 @@
+
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/TLT1618_combineC.py
+
+------> Setting filepaths... -----------------------------------------
+
+Input files...
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/TLT_local/THESIS_C/TLT17_data_finetune.csv
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/TLT_local/THESIS_C/TLT1618_data_finetune.csv
+
+------> Reading in input files... ------------------------------------
+
+
+------> Combining datasets... ----------------------------------------
+
+
+------> Saving to CSV... ----------------------------------------------
+
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/TLT_local/THESIS_C/TLT_data_finetune.csv
+Done!
+
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/TLT1618_describeC.py
+
+------> Setting filepaths... -----------------------------------------
+
+Input file: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/TLT_local/THESIS_C/TLT_data_finetune.csv
+
+------> Reading in input files... ------------------------------------
+
+
+------> Describing datasets... ---------------------------------------
+
+All data
+# Hours: 29.244270295138882
+Proportion of hours: 1.0
+# Samples: 11264
+Proportion of samples: 1.0
+Distribution of audio durations:
+count    11264.000000
+mean         9.346535
+std          2.200116
+min          3.264000
+25%          7.008000
+50%         10.008000
+75%         10.057125
+max         15.384000
+Name: duration, dtype: float64
+Finetune data
+# Hours: 29.244270295138882
+Proportion of hours: 1.0
+# Samples: 11264
+Proportion of samples: 1.0
+Distribution of audio durations:
+count    11264.000000
+mean         9.346535
+std          2.200116
+min          3.264000
+25%          7.008000
+50%         10.008000
+75%         10.057125
+max         15.384000
+Name: duration, dtype: float64
+Ignored data
+# Hours: 0.0
+Proportion of hours: 0.0
+# Samples: 0
+Proportion of samples: 0.0
+Distribution of audio durations:
+count    0.0
+mean     NaN
+std      NaN
+min      NaN
+25%      NaN
+50%      NaN
+75%      NaN
+max      NaN
+Name: duration, dtype: float64
+Done!

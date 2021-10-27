@@ -119,7 +119,7 @@ print("train_filename:", train_filename)
 # Dataset name and filename of the csv file containing the evaluation data
 # For generating filepath to file location
 evaluation_name = "OGI"
-evaluation_filename = "THESIS_C/OGI_data_dev_light"
+evaluation_filename = "THESIS_C/OGI_data_dev_short_light"
 print("evaluation_name:", evaluation_name)
 print("evaluation_filename:", evaluation_filename)
 

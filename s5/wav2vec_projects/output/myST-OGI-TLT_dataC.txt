@@ -1,0 +1,109 @@
+
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/myST-OGI-TLT_combineC.py
+
+------> Setting filepaths... -----------------------------------------
+
+Input files...
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/THESIS_C/myST_data_split.csv
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_split.csv
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/TLT_local/THESIS_C/TLT1618_finetune_data_split.csv
+
+------> Reading in input files... ------------------------------------
+
+
+------> Combining datasets... ----------------------------------------
+
+
+------> Splitting into ignore, test, dev, finetune, pretrain... ------
+
+
+------> Saving to CSV... ----------------------------------------------
+
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT17_local/THESIS_C/myST-OGI-TLT_data_split.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT17_local/THESIS_C/myST-OGI-TLT_data_finetune.csv
+Done!
+
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/TLT1618_describeC.py
+
+------> Setting filepaths... -----------------------------------------
+
+Input file: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT_local/THESIS_C/myST-OGI-TLT_data_split.csv
+
+------> Reading in input files... ------------------------------------
+
+Traceback (most recent call last):
+  File "TLT1618_describeC.py", line 42, in <module>
+    data_df = readCSV(fp_all)
+  File "TLT1618_describeC.py", line 36, in readCSV
+    df = pd.read_csv(fp)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/pandas/io/parsers.py", line 688, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/pandas/io/parsers.py", line 454, in _read
+    parser = TextFileReader(fp_or_buf, **kwds)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/pandas/io/parsers.py", line 948, in __init__
+    self._make_engine(self.engine)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/pandas/io/parsers.py", line 1180, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/pandas/io/parsers.py", line 2010, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 382, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 674, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: [Errno 2] No such file or directory: '/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT_local/THESIS_C/myST-OGI-TLT_data_split.csv'
+
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/TLT1618_describeC.py
+
+------> Setting filepaths... -----------------------------------------
+
+Input file: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT17_local/THESIS_C/myST-OGI-TLT_data_split.csv
+
+------> Reading in input files... ------------------------------------
+
+
+------> Describing datasets... ---------------------------------------
+
+All data
+# Hours: 639.8372321006945
+Proportion of hours: 1.0
+# Samples: 328915
+Proportion of samples: 1.0
+Distribution of audio durations:
+count    328869.000000
+mean          7.004047
+std           9.893528
+min           0.000000
+25%           2.162937
+50%           4.201500
+75%           8.568062
+max        1348.690000
+Name: duration, dtype: float64
+Finetune data
+# Hours: 186.77186407986107
+Proportion of hours: 0.29190527638827346
+# Samples: 137612
+Proportion of samples: 0.4183816487542374
+Distribution of audio durations:
+count    137612.000000
+mean          4.886047
+std           3.399352
+min           0.031250
+25%           2.328562
+50%           3.914687
+75%           6.819031
+max          15.072688
+Name: duration, dtype: float64
+Ignored data
+# Hours: 19.638717864583334
+Proportion of hours: 0.030693302732799847
+# Samples: 8494
+Proportion of samples: 0.025824301111229346
+Distribution of audio durations:
+count    8448.000000
+mean        8.368772
+std        14.888166
+min         0.000000
+25%         0.218750
+50%         1.656250
+75%        19.983687
+max       180.072000
+Name: duration, dtype: float64
+Done!

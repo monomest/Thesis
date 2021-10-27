@@ -316,3 +316,64 @@ total hours: 111.72
 --> Hours in subset: 5.440981579861111
 SUCCESS: Created 5 hour subset in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/THESIS_C/myST_data_finetune_unk_5h.csv
 Samples:  3858
+
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/myST_manifest.py
+
+------> Setting filepaths... -----------------------------------------
+
+Input files: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/THESIS_C/myST_data_dev_unk_light.csv
+
+------> Reading in input files... ------------------------------------
+
+
+------> Creating manifest file... ------------------------------------
+
+Saved manifest at /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT-CU_local/THESIS_C/valid.tsv
+Done!
+data_getSubset.py:146: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df['spkr_id'] = df['spkr_id'].astype('str')
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/data_getSubset.py
+
+------> Setting file paths... ----------------------------------------
+
+Dataset name: myST
+dataset_filename: THESIS_C/myST_data_finetune_unk
+base_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/
+
+------> Setting total hours in train set... ---------------------------
+
+total hours: 111.72
+
+------> Setting seed... ----------------------------------------------
+
+--> Setting seed as: 6
+
+------> Reading in train dataframe... --------------------------------
+
+
+------> Getting 10min, 1hr, 5hr and 10hr training subsets...---------------
+
+--> Speakers in 10 minute training subset: 96
+--> Minutes in subset: 9.148935416666667
+--> Hours in subset: 0.15248225694444445
+--> Speakers in 1 hour training subset: 345
+--> Minutes in subset: 59.454125000000005
+--> Hours in subset: 0.9909020833333334
+--> Speakers in 5 hours training subset: 594
+--> Minutes in subset: 291.46996666666666
+--> Hours in subset: 4.8578327777777774
+--> Speakers in 10 hour training subset: 632
+--> Minutes in subset: 588.5272145833334
+--> Hours in subset: 9.808786909722222
+SUCCESS: Created 10 minute subset in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/THESIS_C/myST_data_finetune_unk_10min.csv
+Samples:  114
+SUCCESS: Created 1 hour subset in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/THESIS_C/myST_data_finetune_unk_1h.csv
+Samples:  683
+SUCCESS: Created 5 hour subset in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/THESIS_C/myST_data_finetune_unk_5h.csv
+Samples:  3414
+SUCCESS: Created 10 hour subset in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/THESIS_C/myST_data_finetune_unk_10h.csv
+Samples:  6828

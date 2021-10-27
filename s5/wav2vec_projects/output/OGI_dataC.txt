@@ -11434,3 +11434,64 @@ min      NaN
 max      NaN
 Name: duration, dtype: float64
 Done!
+data_getSubset.py:146: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df['spkr_id'] = df['spkr_id'].astype('str')
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/data_getSubset.py
+
+------> Setting file paths... ----------------------------------------
+
+Dataset name: OGI
+dataset_filename: THESIS_C/OGI_data_finetune
+base_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/
+
+------> Setting total hours in train set... ---------------------------
+
+total hours: 51.46
+
+------> Setting seed... ----------------------------------------------
+
+--> Setting seed as: 6
+
+------> Reading in train dataframe... --------------------------------
+
+
+------> Getting 10min, 1hr, 5hr and 10hr training subsets...---------------
+
+--> Speakers in 10 minute training subset: 157
+--> Minutes in subset: 10.1083625
+--> Hours in subset: 0.16847270833333333
+--> Speakers in 1 hour training subset: 618
+--> Minutes in subset: 59.7590375
+--> Hours in subset: 0.9959839583333333
+--> Speakers in 5 hours training subset: 925
+--> Minutes in subset: 302.26435312499996
+--> Hours in subset: 5.03773921875
+--> Speakers in 10 hour training subset: 944
+--> Minutes in subset: 598.49153125
+--> Hours in subset: 9.974858854166667
+SUCCESS: Created 10 minute subset in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_finetune_10min.csv
+Samples:  170
+SUCCESS: Created 1 hour subset in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_finetune_1h.csv
+Samples:  1015
+SUCCESS: Created 5 hour subset in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_finetune_5h.csv
+Samples:  5073
+SUCCESS: Created 10 hour subset in /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_finetune_10h.csv
+Samples:  10145
+
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/OGI_shortDevC.py
+
+------> Setting filepaths... -----------------------------------------
+
+Input file: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_dev.csv
+
+------> Reading in input files... ------------------------------------
+
+
+------> Saving to CSV... ----------------------------------------------
+
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_dev_short.csv
+Done!
