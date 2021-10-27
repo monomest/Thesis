@@ -13,6 +13,7 @@ lib
 lib64
 pip-selfcheck.json
 pyvenv.cfg
+thesis_env/*
 s5/wav2vec_projects/example-audio
 s5/myST_local/2021*/
 s5/myST_local/vocab_*
