@@ -11495,3 +11495,30 @@ Input file: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5
 
 Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_dev_short.csv
 Done!
+
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/OGI_ageC.py
+
+------> Setting filepaths... -----------------------------------------
+
+Input file: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_test.csv
+
+------> Reading in input files... ------------------------------------
+
+
+------> Number of samples per age group:
+0 : 346
+1 : 808
+2 : 1060
+3 : 1088
+4 : 824
+5 : 853
+6 : 627
+7 : 552
+8 : 568
+9 : 680
+10 : 642
+
+------> Saving to CSV... ----------------------------------------------
+
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_test_age.csv
+Done!
