@@ -59,6 +59,18 @@ print("Input file:", fp_test)
 
 # Output file to save to
 out_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_test_age.csv"
+out_K = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_test_ageK.csv"
+out_1 = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_test_age1.csv"
+out_2 = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_test_age2.csv"
+out_3 = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_test_age3.csv"
+out_4 = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_test_age4.csv"
+out_5 = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_test_age5.csv"
+out_6 = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_test_age6.csv"
+out_7 = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_test_age7.csv"
+out_8 = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_test_age8.csv"
+out_9 = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_test_age9.csv"
+out_10 = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_test_age10.csv"
+out_list = [out_K, out_1, out_2, out_3, out_4, out_5, out_6, out_7, out_8, out_9, out_10]
 
 # ------------------------------------------
 #         Reading csv files
@@ -91,33 +103,24 @@ df = readCSV(fp_test)
 #         8 --> 8,j 
 #         9 --> 9,k 
 #         10 --> a,l 
+id_to_age = [['0','b'], ['1','c'], ['2','d'], ['3','e'], ['4','f'], ['5','g'],
+             ['6', 'h'], ['7', 'i'], ['8', 'j'], ['9', 'k'], ['a', 'l']]
 df['age'] = [fp[2] for fp in df['spkr_id']]
-
-num_K = len(df[(df['age']=="0") | (df['age']=="b")])
-num_1 = len(df[(df['age']=="1") | (df['age']=="c")])
-num_2 = len(df[(df['age']=="2") | (df['age']=="d")])
-num_3 = len(df[(df['age']=="3") | (df['age']=="e")])
-num_4 = len(df[(df['age']=="4") | (df['age']=="f")])
-num_5 = len(df[(df['age']=="5") | (df['age']=="g")])
-num_6 = len(df[(df['age']=="6") | (df['age']=="h")])
-num_7 = len(df[(df['age']=="7") | (df['age']=="i")])
-num_8 = len(df[(df['age']=="8") | (df['age']=="j")])
-num_9 = len(df[(df['age']=="9") | (df['age']=="k")])
-num_10 = len(df[(df['age']=="a") | (df['age']=="l")])
-
-age_list = [num_K, num_1, num_2, num_3, num_4, num_5, num_6, num_7, num_8, num_9, num_10]
-index = 0
-print("\n------> Number of samples per age group:")
-for age in age_list:
-    print(index, ":", age)
-    index += 1
-
 # ------------------------------------------
 #    Save to CSV
 # ------------------------------------------
 print("\n------> Saving to CSV... ----------------------------------------------\n")
 df.to_csv(out_fp,index=False)
 print("Saved:", out_fp)
+i = 0
+for age in id_to_age:
+    new_df = df[(df['age']==age[0]) | (df['age']==age[1])]
+    new_df = new_df[["filepath", "transcription_clean"]]
+    print("Samples for grade", i, ":", len(new_df))
+    output_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_test_age" + str(i) + ".csv"
+    new_df.to_csv(output_fp, index=False)
+    print("Saved:", output_fp)
+    i += 1
 
 print("Done!")
 

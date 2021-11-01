@@ -89,13 +89,13 @@ print("training:", training)
 # For 1) naming vocab.json file and
 #     2) naming model output directory
 #     3) naming results csv file
-experiment_id = "20211018-base-myST-5h-eval"
+experiment_id = "20211016-base-myST-OGI-TLT17-eval-age"
 print("experiment_id:", experiment_id)
 
 # DatasetDict Id
 # For 1) naming cache directory and 
 #     2) saving the DatasetDict object
-datasetdict_id = "OGI-eval"
+datasetdict_id = "OGI-eval-age"
 print("datasetdict_id:", datasetdict_id)
 
 # Base filepath
@@ -119,7 +119,8 @@ print("train_filename:", train_filename)
 # Dataset name and filename of the csv file containing the evaluation data
 # For generating filepath to file location
 evaluation_name = "OGI"
-evaluation_filename = "THESIS_C/OGI_data_test_light"
+evaluation_filename = "THESIS_C/OGI_data_test_age_light"
+evaluation_age_base = "THESIS_C/OGI_data_test_age"
 print("evaluation_name:", evaluation_name)
 print("evaluation_filename:", evaluation_filename)
 
@@ -130,7 +131,7 @@ print("evaluation_filename:", evaluation_filename)
 use_checkpoint = True
 print("use_checkpoint:", use_checkpoint)
 # Set checkpoint if resuming from/using checkpoint
-checkpoint = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/20211018-base-myST-5h"
+checkpoint = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT17_local/20211016-base-myST-OGI-TLT17"
 if use_checkpoint:
     print("checkpoint:", checkpoint)
 
@@ -302,16 +303,29 @@ if use_pretrained_tokenizer:
 
 print("\n------> PREPARING DATASET... ------------------------------------\n")
 # Read the existing csv saved dataframes and
-# load as a DatasetDict 
-data = load_dataset('csv', 
+# load as a DatasetDict
+
+# Load in list
+data_list = []
+num_grades = 11
+for i in range(num_grades):
+    age_fp = base_fp + evaluation_name + "_local/" + evaluation_age_base + str(i) + ".csv"
+    data_age = load_dataset('csv', 
+                    data_files={'train': age_fp,
+                                'test': age_fp},
+                    cache_dir=data_cache_fp)
+    data_list.append(data_age)
+
+# Load in data
+data = load_dataset('csv',
                     data_files={'train': data_train_fp,
                                 'test': data_test_fp},
                     cache_dir=data_cache_fp)
-# Remove the "duration" and "spkr_id" column
-#data = data.remove_columns(["duration", "spkr_id"])
-#data = data.remove_columns(["duration"])
 print("--> dataset...")
-print(data)
+#print(data)
+for data_age in data_list:
+    print(data_age)
+
 # Display some random samples of the dataset
 print("--> Printing some random samples...")
 def show_random_elements(dataset, num_examples=10):
@@ -324,7 +338,8 @@ def show_random_elements(dataset, num_examples=10):
         picks.append(pick)
     df = pd.DataFrame(dataset[picks])
     print(df)
-show_random_elements(data["train"], num_examples=5)
+for data_age in data_list:
+    show_random_elements(data_age["train"], num_examples=5)
 print("SUCCESS: Prepared dataset.")
 # ------------------------------------------
 #       Processing transcription
@@ -342,11 +357,11 @@ print("\n------> PROCESSING TRANSCRIPTION... -----------------------------------
 #chars_to_ignore_regex = '[\,\?\.\!\-\;\:\"]'
 
 def process_transcription(batch):
-    #batch["transcription_clean"] = re.sub(chars_to_ignore_regex, '', batch["transcription_clean"]).upper()
     batch["transcription_clean"] = batch["transcription_clean"].upper()
     batch["transcription_clean"] = batch["transcription_clean"].replace("<UNK>", "<unk>")
     return batch
 
+data_list = [data_age.map(process_transcription) for data_age in data_list]
 data = data.map(process_transcription)
 
 def extract_all_chars(batch):
@@ -417,13 +432,23 @@ def speech_file_to_array_fn(batch):
     batch["sampling_rate"] = sampling_rate
     batch["target_text"] = batch["transcription_clean"]
     return batch
+
+#for data_age in data_list:
+#    print("WASSUP")
+#    data_age = data_age.map(speech_file_to_array_fn, remove_columns=data_age.column_names["train"], num_proc=4)
+
+data_list = [data_age.map(speech_file_to_array_fn, remove_columns=data_age.column_names["train"], num_proc=4) for data_age in data_list]
+
 data = data.map(speech_file_to_array_fn, remove_columns=data.column_names["train"], num_proc=4)
+
 # Check a few rows of data to verify data properly loaded
-print("--> Verifying data with a random sample...")
-rand_int = random.randint(0, len(data["train"])-1)
-print("Target text:", data["train"][rand_int]["target_text"])
-print("Input array shape:", np.asarray(data["train"][rand_int]["speech"]).shape)
-print("Sampling rate:", data["train"][rand_int]["sampling_rate"])
+for data_age in data_list:
+    print("--> Verifying data with a random sample...")
+    rand_int = random.randint(0, len(data_age["train"])-1)
+    #print(data_age["train"][rand_int])
+    print("Target text:", data_age["train"][rand_int]["target_text"])
+    print("Input array shape:", np.asarray(data_age["train"][rand_int]["speech"]).shape)
+    print("Sampling rate:", data_age["train"][rand_int]["sampling_rate"])
 # Process dataset to the format expected by model for training
 # Using map(...)
 # 1) Check all data samples have same sampling rate (16kHz)
@@ -443,6 +468,9 @@ def prepare_dataset(batch):
     with processor.as_target_processor():
         batch["labels"] = processor(batch["target_text"]).input_ids
     return batch
+
+data_list_prepared = [data_age.map(prepare_dataset, remove_columns=data_age.column_names["train"], batch_size=8, num_proc=4, batched=True) for data_age in data_list]
+
 data_prepared = data.map(prepare_dataset, remove_columns=data.column_names["train"], batch_size=8, num_proc=4, batched=True)
 
 print("SUCCESS: Data ready for training and evaluation.")
@@ -690,33 +718,52 @@ def map_to_result(batch):
   
   return batch
 
-results = data["test"].map(map_to_result)
+# Results for each age
+i = 0
+results_list = []
+#for data_age in data_list:
+for idx, data_age in enumerate(data_list):
+    print(data_age["test"])
+    results = data_age["test"].map(map_to_result)
+    results_list.append(results)
+    # Save results to csv
+    results_fp = base_fp + train_name + "_local/" + experiment_id + "_OGI_test_results" + str(i) + ".csv"
+    results_df = results.to_pandas()
+    results_df = results_df.drop(columns=['speech', 'sampling_rate'])
+    results_df.to_csv(results_fp)
+    print("Saved results to:", results_fp)
+    i += 1
+#results = data["test"].map(map_to_result)
 # Save results to csv
-results_df = results.to_pandas()
-results_df = results_df.drop(columns=['speech', 'sampling_rate'])
-results_df.to_csv(finetuned_results_fp)
-print("Saved results to:", finetuned_results_fp)
+#results_df = results.to_pandas()
+#results_df = results_df.drop(columns=['speech', 'sampling_rate'])
+#results_df.to_csv(finetuned_results_fp)
+#print("Saved results to:", finetuned_results_fp)
 
 # Getting the WER
 print("--> Getting fine-tuned test results...")
-print("Fine-tuned Test WER: {:.3f}".format(wer_metric.compute(predictions=results["pred_str"], 
-      references=results["target_text"])))
-# Showing prediction errors
-print("--> Showing some fine-tuned prediction errors...")
-show_random_elements(results.remove_columns(["speech", "sampling_rate"]))
-# Deeper look into model: running the first test sample through the model, 
-# take the predicted ids and convert them to their corresponding tokens.
-print("--> Taking a deeper look...")
-model.to("cuda")
-input_values = processor(data["test"][0]["speech"], sampling_rate=data["test"][0]["sampling_rate"], return_tensors="pt").input_values.to("cuda")
+i = 0
+for results in results_list:
+    print("------ Grade", i, "------")
+    print("Fine-tuned Test WER: {:.3f}".format(wer_metric.compute(predictions=results["pred_str"],
+            references=results["target_text"])))
+    # Showing prediction errors
+    print("--> Showing some fine-tuned prediction errors...")
+    show_random_elements(results.remove_columns(["speech", "sampling_rate"]))
+    # Deeper look into model: running the first test sample through the model, 
+    # take the predicted ids and convert them to their corresponding tokens.
+    print("--> Taking a deeper look...")
+    model.to("cuda")
+    input_values = processor(data["test"][0]["speech"], sampling_rate=data["test"][0]["sampling_rate"], return_tensors="pt").input_values.to("cuda")
 
-with torch.no_grad():
-  logits = model(input_values).logits
+    with torch.no_grad():
+        logits = model(input_values).logits
 
-pred_ids = torch.argmax(logits, dim=-1)
+    pred_ids = torch.argmax(logits, dim=-1)
 
-# convert ids to tokens
-print(" ".join(processor.tokenizer.convert_ids_to_tokens(pred_ids[0].tolist())))
+    # convert ids to tokens
+    print(" ".join(processor.tokenizer.convert_ids_to_tokens(pred_ids[0].tolist())))
+    i += 1
 
 # Evaluate baseline model on test set if eval_baseline = True
 if eval_baseline:
