@@ -59,9 +59,10 @@ from transformers import Wav2Vec2CTCTokenizer
 from transformers import Wav2Vec2ForCTC
 from transformers import Wav2Vec2FeatureExtractor
 from transformers import Wav2Vec2Processor
+# -------------- GADI CHANGES ----------------
 # Loading audio files
-print("-->Importing soundfile...")
-import soundfile as sf
+print("-->Importing wavread...")
+from scipy.io.wavfile import read as wavread
 # For training
 print("-->Importing torch, dataclasses & typing...")
 import torch
@@ -86,19 +87,18 @@ training = True
 print("training:", training)
 
 # -------------- GADI CHANGES ----------------
-# Experiment ID                            V
-# For 1) naming vocab.json file and        V
-#     2) naming model output directory     V
-#     3) naming results file               V
-experiment_id = "20211025-base-OGI-10min-gadi"
+# Experiment ID
+# For 1) naming vocab.json file and
+#     2) naming model output directory
+#     3) naming results file
+experiment_id = "20211015-base-OGI-gadi"
 print("experiment_id:", experiment_id)
 
 # DatasetDict Id
 # For 1) naming cache directory and 
 #     2) saving the DatasetDict object
-datasetdict_id = "OGI-10min-finetune"
+datasetdict_id = "OGI-finetune"
 print("datasetdict_id:", datasetdict_id)
-
 
 # -------------- GADI CHANGES ----------------
 # Base filepath
@@ -106,7 +106,7 @@ print("datasetdict_id:", datasetdict_id)
 base_fp = "/scratch/wa66/rl4201/Thesis/s5/"
 print("base_fp:", base_fp)
 
-# -------------- GADI CHANGES ---------------
+# -------------- GADI CHANGES ----------------
 # Base cache directory filepath
 # For setting directory for cache files
 base_cache_fp = "/scratch/wa66/rl4201/.cache/huggingface/datasets/"
@@ -115,7 +115,7 @@ base_cache_fp = "/scratch/wa66/rl4201/.cache/huggingface/datasets/"
 # Dataset name and filename of the csv file containing the training data
 # For generating filepath to file location
 train_name = "OGI"
-train_filename = "THESIS_C/OGI_data_finetune_10min_light"
+train_filename = "THESIS_C/OGI_data_finetune_light"
 print("train_name:", train_name)
 print("train_filename:", train_filename)
 
@@ -180,9 +180,9 @@ set_attention_dropout = 0.1                 # Default = 0.1
 print("attention_dropoutput:", set_attention_dropout)
 set_feat_proj_dropout = 0.0                 # Default = 0.1
 print("feat_proj_dropout:", set_feat_proj_dropout)
-set_layerdrop = 0.01                        # Default = 0.1
+set_layerdrop = 0.05                        # Default = 0.1
 print("layerdrop:", set_layerdrop)
-set_mask_time_prob = 0.075                  # Default = 0.05
+set_mask_time_prob = 0.065                  # Default = 0.05
 print("mask_time_prob:", set_mask_time_prob)
 set_mask_time_length = 10                   # Default = 10
 print("mask_time_length:", set_mask_time_length)
@@ -202,7 +202,7 @@ set_per_device_train_batch_size = 8         # Default = 8
 print("per_device_train_batch_size:", set_per_device_train_batch_size)
 set_gradient_accumulation_steps = 1         # Default = 1
 print("gradient_accumulation_steps:", set_gradient_accumulation_steps)
-set_learning_rate = 0.00005                 # Default = 0.00005
+set_learning_rate = 0.00004                 # Default = 0.00005
 print("learning_rate:", set_learning_rate)
 set_weight_decay = 0.01                     # Default = 0
 print("weight_decay:", set_weight_decay)
@@ -212,9 +212,9 @@ set_adam_beta2 = 0.98                       # Default = 0.999
 print("adam_beta2:", set_adam_beta2)
 set_adam_epsilon = 0.00000001               # Default = 0.00000001
 print("adam_epsilon:", set_adam_epsilon)
-set_num_train_epochs = 2000                 # Default = 3.0
+set_num_train_epochs = 22                   # Default = 3.0
 print("num_train_epochs:", set_num_train_epochs)
-set_max_steps = 12000                       # Default = -1, overrides epochs
+set_max_steps = 35000                       # Default = -1, overrides epochs
 print("max_steps:", set_max_steps)
 set_lr_scheduler_type = "linear"            # Default = "linear"
 print("lr_scheduler_type:", set_lr_scheduler_type )
@@ -228,7 +228,7 @@ set_save_strategy = "steps"                 # Default = "steps"
 print("save_strategy:", set_save_strategy)
 set_save_steps = 1000                         # Default = 500
 print("save_steps:", set_save_steps)
-set_save_total_limit = 30                   # Optional                 
+set_save_total_limit = 40                   # Optional                 
 print("save_total_limit:", set_save_total_limit)
 set_fp16 = True                             # Default = False
 print("fp16:", set_fp16)
@@ -419,7 +419,14 @@ print("\n------> PRE-PROCESSING DATA... ----------------------------------------
 # in the dataset. 
 # We write a map(...) function accordingly.
 def speech_file_to_array_fn(batch):
-    speech_array, sampling_rate = sf.read(batch["filepath"])
+    sampling_rate, x = wavread(batch["filepath"])  # numpy array of integers 
+    # scale to -1.0 to 1.0
+    if x.dtype == 'int16':
+        nb_bits = 16  # -> 16-bit wav files
+    elif x.dtype == 'int32':
+        nb_bits = 32  # -> 32-bit wav files
+    max_nb_bit = float(2 ** (nb_bits - 1))
+    speech_array = x / (max_nb_bit + 1)  # samples is a numpy array of floats
     batch["speech"] = speech_array
     batch["sampling_rate"] = sampling_rate
     batch["target_text"] = batch["transcription_clean"]
