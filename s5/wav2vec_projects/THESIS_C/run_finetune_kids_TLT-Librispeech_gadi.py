@@ -86,27 +86,26 @@ training = True
 print("training:", training)
 
 # -------------- GADI CHANGES ----------------
-# Experiment ID                            V
-# For 1) naming vocab.json file and        V
-#     2) naming model output directory     V
-#     3) naming results file               V
-experiment_id = "20211025-base-OGI-10min-gadi"
+# Experiment ID
+# For 1) naming vocab.json file and
+#     2) naming model output directory
+#     3) naming results file
+experiment_id = "20211026-base-TLT-Librispeech-gadi"
 print("experiment_id:", experiment_id)
 
 # DatasetDict Id
 # For 1) naming cache directory and 
 #     2) saving the DatasetDict object
-datasetdict_id = "OGI-10min-finetune"
+datasetdict_id = "TLT-finetune"
 print("datasetdict_id:", datasetdict_id)
-
 
 # -------------- GADI CHANGES ----------------
 # Base filepath
 # For setting the base filepath to direct output to
-base_fp = "/scratch/wa66/rl4201/Thesis/s5/"
+base_fp = "/scratch/wa66/rl4201/Thesis/s5"
 print("base_fp:", base_fp)
 
-# -------------- GADI CHANGES ---------------
+# -------------- GADI CHANGES ----------------
 # Base cache directory filepath
 # For setting directory for cache files
 base_cache_fp = "/scratch/wa66/rl4201/.cache/huggingface/datasets/"
@@ -114,16 +113,16 @@ base_cache_fp = "/scratch/wa66/rl4201/.cache/huggingface/datasets/"
 # Training dataset name and filename
 # Dataset name and filename of the csv file containing the training data
 # For generating filepath to file location
-train_name = "OGI"
-train_filename = "THESIS_C/OGI_data_finetune_10min_light"
+train_name = "TLT"
+train_filename = "THESIS_C/TLT_data_finetune_light"
 print("train_name:", train_name)
 print("train_filename:", train_filename)
 
 # Evaluation dataset name and filename
 # Dataset name and filename of the csv file containing the evaluation data
 # For generating filepath to file location
-evaluation_name = "OGI"
-evaluation_filename = "THESIS_C/OGI_data_dev_short_light"
+evaluation_name = "myST"
+evaluation_filename = "THESIS_C/myST_data_dev_light"
 print("evaluation_name:", evaluation_name)
 print("evaluation_filename:", evaluation_filename)
 
@@ -180,9 +179,9 @@ set_attention_dropout = 0.1                 # Default = 0.1
 print("attention_dropoutput:", set_attention_dropout)
 set_feat_proj_dropout = 0.0                 # Default = 0.1
 print("feat_proj_dropout:", set_feat_proj_dropout)
-set_layerdrop = 0.01                        # Default = 0.1
+set_layerdrop = 0.05                        # Default = 0.1
 print("layerdrop:", set_layerdrop)
-set_mask_time_prob = 0.075                  # Default = 0.05
+set_mask_time_prob = 0.065                  # Default = 0.05
 print("mask_time_prob:", set_mask_time_prob)
 set_mask_time_length = 10                   # Default = 10
 print("mask_time_length:", set_mask_time_length)
@@ -202,7 +201,7 @@ set_per_device_train_batch_size = 8         # Default = 8
 print("per_device_train_batch_size:", set_per_device_train_batch_size)
 set_gradient_accumulation_steps = 1         # Default = 1
 print("gradient_accumulation_steps:", set_gradient_accumulation_steps)
-set_learning_rate = 0.00005                 # Default = 0.00005
+set_learning_rate = 0.00004                 # Default = 0.00005
 print("learning_rate:", set_learning_rate)
 set_weight_decay = 0.01                     # Default = 0
 print("weight_decay:", set_weight_decay)
@@ -212,9 +211,9 @@ set_adam_beta2 = 0.98                       # Default = 0.999
 print("adam_beta2:", set_adam_beta2)
 set_adam_epsilon = 0.00000001               # Default = 0.00000001
 print("adam_epsilon:", set_adam_epsilon)
-set_num_train_epochs = 2000                 # Default = 3.0
+set_num_train_epochs = 100                  # Default = 3.0
 print("num_train_epochs:", set_num_train_epochs)
-set_max_steps = 12000                       # Default = -1, overrides epochs
+set_max_steps = 35000                          # Default = -1, overrides epochs
 print("max_steps:", set_max_steps)
 set_lr_scheduler_type = "linear"            # Default = "linear"
 print("lr_scheduler_type:", set_lr_scheduler_type )
@@ -228,7 +227,7 @@ set_save_strategy = "steps"                 # Default = "steps"
 print("save_strategy:", set_save_strategy)
 set_save_steps = 1000                         # Default = 500
 print("save_steps:", set_save_steps)
-set_save_total_limit = 30                   # Optional                 
+set_save_total_limit = 40                   # Optional                 
 print("save_total_limit:", set_save_total_limit)
 set_fp16 = True                             # Default = False
 print("fp16:", set_fp16)
@@ -285,7 +284,7 @@ print("--> finetuned_results_fp:", finetuned_results_fp)
 # If 1) must set use_checkpoint = False
 # If 2)must set use_checkpoint = True
 # Default model to fine-tune is facebook's model
-pretrained_mod = "facebook/wav2vec2-base"
+pretrained_mod = "facebook/wav2vec2-base-960"
 if use_checkpoint:
     pretrained_mod = checkpoint
 print("--> pretrained_mod:", pretrained_mod)
@@ -346,10 +345,9 @@ print("\n------> PROCESSING TRANSCRIPTION... -----------------------------------
 
 #chars_to_ignore_regex = '[\,\?\.\!\-\;\:\"]'
 
-# -------------- GADI CHANGES ----------------
 def process_transcription(batch):
     #batch["transcription_clean"] = re.sub(chars_to_ignore_regex, '', batch["transcription_clean"]).upper()
-    batch["filepath"] = batch["filepath"].replace("/srv/scratch/chacmod", "/g/data/wa66/Renee/speech_corpora")
+    batch["filepath"] = batch["filepath"].reaplce("/srv/scratch/chacmod/TLT/Dataset/", "/g/data/wa66/Mostafa/speech_corpora/TLT/")
     batch["transcription_clean"] = batch["transcription_clean"].upper()
     batch["transcription_clean"] = batch["transcription_clean"].replace("<UNK>", "<unk>")
     return batch
