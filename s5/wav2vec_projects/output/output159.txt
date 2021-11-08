@@ -1,0 +1,2 @@
+Mon Nov 8 11:13:48 AEDT 2021
+python: can't open file 'THESIS_C/run_finetune_kids_myST_10h.py': [Errno 2] No such file or directory
