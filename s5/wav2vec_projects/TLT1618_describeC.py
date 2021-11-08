@@ -23,7 +23,7 @@ print("\n------> Setting filepaths... -----------------------------------------\
 dataset = "myST-OGI-TLT17"
 
 base = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/"
-fp_all = base + dataset + "_local/THESIS_C/" + "myST-OGI-TLT_data_split.csv"
+fp_all = base + dataset + "_local/THESIS_C/" + "myST-OGI-TLT_data_finetune.csv"
 
 print("Input file:", fp_all)
 

@@ -27,11 +27,11 @@ print('\nRunning: ', os.path.abspath(__file__))
 print("\n------> Setting data paths -------------------------------------------\n")
 # Datatset filepath and name
 #dataset_name = "myST-OGI"
-#dataset_name = "myST-OGI-TLT17"
+dataset_name = "myST-OGI-TLT17"
 #dataset_name = "myST"
-dataset_name = "OGI"
+#dataset_name = "OGI"
 #dataset_name = "TLT"
-dataset_filename = "OGI_data_test_age"
+dataset_filename = "myST-OGI-TLT_data_finetune"
 
 # Crafting filepath
 dataset_fp = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/"+dataset_name+"_local/THESIS_C/"+dataset_filename+".csv"
@@ -57,8 +57,8 @@ dataset_og = pd.read_csv(dataset_fp, dtype=str)
 # ------------------------------------------
 #         Dropping spkr_id column
 # ------------------------------------------
-dataset_df = dataset_og[['filepath', 'transcription_clean', 'age']].copy()
-#dataset_df = dataset_og[['filepath', 'duration']].copy()
+#dataset_df = dataset_og[['filepath', 'transcription_clean', 'age']].copy()
+dataset_df = dataset_og[['filepath', 'duration']].copy()
 
 # ------------------------------------------
 #          Saving to csv file

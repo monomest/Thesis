@@ -107,3 +107,85 @@ min         0.000000
 max       180.072000
 Name: duration, dtype: float64
 Done!
+
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/myST-OGI-TLT_combineC.py
+
+------> Setting filepaths... -----------------------------------------
+
+Input files...
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/THESIS_C/myST_data_split.csv
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_split.csv
+/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/TLT_local/THESIS_C/TLT_data_finetune.csv
+
+------> Reading in input files... ------------------------------------
+
+
+------> Combining datasets... ----------------------------------------
+
+
+------> Splitting into ignore, test, dev, finetune, pretrain... ------
+
+
+------> Saving to CSV... ----------------------------------------------
+
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT17_local/THESIS_C/myST-OGI-TLT_data_split.csv
+Saved: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT17_local/THESIS_C/myST-OGI-TLT_data_finetune.csv
+Done!
+
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/TLT1618_describeC.py
+
+------> Setting filepaths... -----------------------------------------
+
+Input file: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT17_local/THESIS_C/myST-OGI-TLT_data_finetune.csv
+
+------> Reading in input files... ------------------------------------
+
+
+------> Describing datasets... ---------------------------------------
+
+All data
+# Hours: 192.42198623263886
+Proportion of hours: 1.0
+# Samples: 139748
+Proportion of samples: 1.0
+Distribution of audio durations:
+count    139748.000000
+mean          4.956916
+std           3.437085
+min           0.031250
+25%           2.338437
+50%           3.941813
+75%           6.974750
+max          15.384000
+Name: duration, dtype: float64
+Finetune data
+# Hours: 192.42198623263886
+Proportion of hours: 1.0
+# Samples: 139748
+Proportion of samples: 1.0
+Distribution of audio durations:
+count    139748.000000
+mean          4.956916
+std           3.437085
+min           0.031250
+25%           2.338437
+50%           3.941813
+75%           6.974750
+max          15.384000
+Name: duration, dtype: float64
+Ignored data
+# Hours: 0.0
+Proportion of hours: 0.0
+# Samples: 0
+Proportion of samples: 0.0
+Distribution of audio durations:
+count    0.0
+mean     NaN
+std      NaN
+min      NaN
+25%      NaN
+50%      NaN
+75%      NaN
+max      NaN
+Name: duration, dtype: float64
+Done!

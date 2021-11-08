@@ -23,7 +23,7 @@ print("\n------> Setting filepaths... -----------------------------------------\
 # Dataframe in csv containing all the data information
 fp_myST = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/THESIS_C/myST_data_split.csv"
 fp_OGI = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_split.csv"
-fp_TLT = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/TLT_local/THESIS_C/TLT1618_finetune_data_split.csv"
+fp_TLT = "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/TLT_local/THESIS_C/TLT_data_finetune.csv"
 
 print("Input files...")
 fp_list = [fp_myST, fp_OGI, fp_TLT]
