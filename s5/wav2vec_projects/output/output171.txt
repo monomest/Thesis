@@ -1163,3 +1163,4 @@ Fine-tuned Test WER: 0.985
 ------> SUCCESSFULLY FINISHED ---------------------------------------- 
 
 Finished: 09/11/2021 21:03:20
+Tue Nov 9 21:33:52 AEDT 2021
