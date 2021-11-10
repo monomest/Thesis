@@ -1,0 +1,1063 @@
+filepath,transcription_clean,utterance_length,utterance_group
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993206/myst_993206_2008-02-10_00-00-00_VB_1.3/myst_993206_2008-02-10_00-00-00_VB_1.3_032.wav,yeah a little,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993206/myst_993206_2008-02-10_00-00-00_VB_1.3/myst_993206_2008-02-10_00-00-00_VB_1.3_014.wav,um yes i have actually,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993206/myst_993206_2008-02-10_00-00-00_VB_1.3/myst_993206_2008-02-10_00-00-00_VB_1.3_030.wav,it didn't really change,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993206/myst_993206_2008-02-10_00-00-00_VB_1.3/myst_993206_2008-02-10_00-00-00_VB_1.3_052.wav,we haven't done that yet,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993206/myst_993206_2008-29-10_00-00-00_VB_4.4/myst_993206_2008-29-10_00-00-00_VB_4.4_036.wav,um we,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993206/myst_993206_2008-29-10_00-00-00_VB_4.4/myst_993206_2008-29-10_00-00-00_VB_4.4_056.wav,we were using,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993206/myst_993206_2008-29-10_00-00-00_VB_4.4/myst_993206_2008-29-10_00-00-00_VB_4.4_018.wav,that was further in,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993206/myst_993206_2008-16-10_00-00-00_VB_3.3/myst_993206_2008-16-10_00-00-00_VB_3.3_036.wav,we just discussed what number,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993206/myst_993206_2008-16-10_00-00-00_VB_3.3/myst_993206_2008-16-10_00-00-00_VB_3.3_068.wav,yeah yeah,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993206/myst_993206_2008-16-10_00-00-00_VB_3.3/myst_993206_2008-16-10_00-00-00_VB_3.3_004.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993206/myst_993206_2008-16-10_00-00-00_VB_3.3/myst_993206_2008-16-10_00-00-00_VB_3.3_080.wav,oh you're welcome okay,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993206/myst_993206_2008-16-10_00-00-00_VB_3.3/myst_993206_2008-16-10_00-00-00_VB_3.3_026.wav,yeah yeah,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993206/myst_993206_2008-16-10_00-00-00_VB_3.3/myst_993206_2008-16-10_00-00-00_VB_3.3_014.wav,glider the propeller thing,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993206/myst_993206_2008-16-10_00-00-00_VB_3.3/myst_993206_2008-16-10_00-00-00_VB_3.3_012.wav,mmm hmm yeah,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993206/myst_993206_2008-16-10_00-00-00_VB_3.3/myst_993206_2008-16-10_00-00-00_VB_3.3_020.wav,okay yeah,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993206/myst_993206_2008-09-10_00-00-00_VB_2.3/myst_993206_2008-09-10_00-00-00_VB_2.3_056.wav,uh maybe mmm,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993206/myst_993206_2008-09-10_00-00-00_VB_2.3/myst_993206_2008-09-10_00-00-00_VB_2.3_090.wav,i'm almost done,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993206/myst_993206_2008-09-10_00-00-00_VB_2.3/myst_993206_2008-09-10_00-00-00_VB_2.3_096.wav,and then passengers,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993206/myst_993206_2008-09-10_00-00-00_VB_2.3/myst_993206_2008-09-10_00-00-00_VB_2.3_130.wav,oh you can have it,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993206/myst_993206_2008-09-10_00-00-00_VB_2.3/myst_993206_2008-09-10_00-00-00_VB_2.3_046.wav,yeah cause like,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993206/myst_993206_2008-09-10_00-00-00_VB_2.3/myst_993206_2008-09-10_00-00-00_VB_2.3_042.wav,like probably,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993206/myst_993206_2008-09-10_00-00-00_VB_2.3/myst_993206_2008-09-10_00-00-00_VB_2.3_108.wav,and then,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993206/myst_993206_2008-09-10_00-00-00_VB_2.3/myst_993206_2008-09-10_00-00-00_VB_2.3_086.wav,but they're not the same,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993206/myst_993206_2008-09-10_00-00-00_VB_2.3/myst_993206_2008-09-10_00-00-00_VB_2.3_010.wav,um yeah,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993206/myst_993206_2008-09-10_00-00-00_VB_2.3/myst_993206_2008-09-10_00-00-00_VB_2.3_054.wav,yeah probably yeah yeah,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-17_13-10-01_MX_3.1/myst_012019_2013-12-17_13-10-01_MX_3.1_019.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-17_13-10-01_MX_3.1/myst_012019_2013-12-17_13-10-01_MX_3.1_014.wav,it saturates,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-17_13-10-01_MX_3.1/myst_012019_2013-12-17_13-10-01_MX_3.1_008.wav,it rises,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-17_13-10-01_MX_3.1/myst_012019_2013-12-17_13-10-01_MX_3.1_009.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-17_13-10-01_MX_3.1/myst_012019_2013-12-17_13-10-01_MX_3.1_006.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-17_13-10-01_MX_3.1/myst_012019_2013-12-17_13-10-01_MX_3.1_011.wav,the water is saturating,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-17_13-10-01_MX_3.1/myst_012019_2013-12-17_13-10-01_MX_3.1_024.wav,there's salt,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-17_13-10-01_MX_3.1/myst_012019_2013-12-17_13-10-01_MX_3.1_018.wav,by adding,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-01-13_08-32-37_MX_4.2/myst_012019_2014-01-13_08-32-37_MX_4.2_023.wav,i have no idea,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-01-13_08-32-37_MX_4.2/myst_012019_2014-01-13_08-32-37_MX_4.2_009.wav,i'm not sure,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-01-13_08-32-37_MX_4.2/myst_012019_2014-01-13_08-32-37_MX_4.2_017.wav,i don't know what,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-01-13_08-32-37_MX_4.2/myst_012019_2014-01-13_08-32-37_MX_4.2_013.wav,they're too much,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-01-13_08-32-37_MX_4.2/myst_012019_2014-01-13_08-32-37_MX_4.2_010.wav,not sure,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-17_13-13-42_MX_3.2/myst_012019_2013-12-17_13-13-42_MX_3.2_012.wav,i have no idea,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-17_13-13-42_MX_3.2/myst_012019_2013-12-17_13-13-42_MX_3.2_014.wav,i have no idea,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-17_13-13-42_MX_3.2/myst_012019_2013-12-17_13-13-42_MX_3.2_003.wav,no idea,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-17_13-13-42_MX_3.2/myst_012019_2013-12-17_13-13-42_MX_3.2_013.wav,the water level rise,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-17_13-13-42_MX_3.2/myst_012019_2013-12-17_13-13-42_MX_3.2_010.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-17_13-13-42_MX_3.2/myst_012019_2013-12-17_13-13-42_MX_3.2_022.wav,there's some water crystal,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-03_10-28-20_MX_2.1/myst_012019_2013-12-03_10-28-20_MX_2.1_007.wav,a solution,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-03_10-28-20_MX_2.1/myst_012019_2013-12-03_10-28-20_MX_2.1_013.wav,by the water and the,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-03_10-28-20_MX_2.1/myst_012019_2013-12-03_10-28-20_MX_2.1_004.wav,a solution,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-03_10-28-20_MX_2.1/myst_012019_2013-12-03_10-28-20_MX_2.1_002.wav,lots of thing,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-03_10-28-20_MX_2.1/myst_012019_2013-12-03_10-28-20_MX_2.1_005.wav,i forgot,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-11-21_09-08-28_MX_1.3/myst_012019_2013-11-21_09-08-28_MX_1.3_013.wav,the paper clip,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-11-21_09-08-28_MX_1.3/myst_012019_2013-11-21_09-08-28_MX_1.3_024.wav,to hold the rocks,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-11-21_09-08-28_MX_1.3/myst_012019_2013-11-21_09-08-28_MX_1.3_016.wav,i'm not sure,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-11-21_09-08-28_MX_1.3/myst_012019_2013-11-21_09-08-28_MX_1.3_029.wav,a solution,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-11-21_09-08-28_MX_1.3/myst_012019_2013-11-21_09-08-28_MX_1.3_002.wav,i forgot,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-11-21_09-08-28_MX_1.3/myst_012019_2013-11-21_09-08-28_MX_1.3_009.wav,a way to separate,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-11-21_09-08-28_MX_1.3/myst_012019_2013-11-21_09-08-28_MX_1.3_018.wav,to separate the water,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-06_09-47-48_MX_2.2/myst_012019_2013-12-06_09-47-48_MX_2.2_016.wav,the more concentrated it,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-06_09-47-48_MX_2.2/myst_012019_2013-12-06_09-47-48_MX_2.2_018.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-06_09-47-48_MX_2.2/myst_012019_2013-12-06_09-47-48_MX_2.2_011.wav,i forgot,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-06_09-47-48_MX_2.2/myst_012019_2013-12-06_09-47-48_MX_2.2_019.wav,solution b,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-06_09-47-48_MX_2.2/myst_012019_2013-12-06_09-47-48_MX_2.2_012.wav,i forgot,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-12_08-47-01_SRL_1.2/myst_012019_2014-02-12_08-47-01_SRL_1.2_016.wav,it expands,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-12_08-47-01_SRL_1.2/myst_012019_2014-02-12_08-47-01_SRL_1.2_026.wav,they each got,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-12_08-47-01_SRL_1.2/myst_012019_2014-02-12_08-47-01_SRL_1.2_004.wav,about a rock breaking apart,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-12_08-47-01_SRL_1.2/myst_012019_2014-02-12_08-47-01_SRL_1.2_009.wav,that the rock broke apart,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-12_08-47-01_SRL_1.2/myst_012019_2014-02-12_08-47-01_SRL_1.2_023.wav,the left side,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-12_08-47-01_SRL_1.2/myst_012019_2014-02-12_08-47-01_SRL_1.2_024.wav,because they got broken apart,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-12_08-47-01_SRL_1.2/myst_012019_2014-02-12_08-47-01_SRL_1.2_006.wav,i forgot,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-12_08-47-01_SRL_1.2/myst_012019_2014-02-12_08-47-01_SRL_1.2_005.wav,the weathering is breaking it,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-12_08-47-01_SRL_1.2/myst_012019_2014-02-12_08-47-01_SRL_1.2_029.wav,they make up and um,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-12_08-47-01_SRL_1.2/myst_012019_2014-02-12_08-47-01_SRL_1.2_028.wav,because the gravel was smaller,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-10_08-50-21_SRL_1.1/myst_012019_2014-02-10_08-50-21_SRL_1.1_010.wav,humus gravel clay and silt,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-10_08-50-21_SRL_1.1/myst_012019_2014-02-10_08-50-21_SRL_1.1_017.wav,i have no idea,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-10_08-50-21_SRL_1.1/myst_012019_2014-02-10_08-50-21_SRL_1.1_020.wav,good out there,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-10_08-50-21_SRL_1.1/myst_012019_2014-02-10_08-50-21_SRL_1.1_001.wav,good pizza,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-10_08-50-21_SRL_1.1/myst_012019_2014-02-10_08-50-21_SRL_1.1_024.wav,they are not the same,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-10_08-50-21_SRL_1.1/myst_012019_2014-02-10_08-50-21_SRL_1.1_009.wav,humus gravel clay and,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-10_08-50-21_SRL_1.1/myst_012019_2014-02-10_08-50-21_SRL_1.1_031.wav,the mountains,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-10_08-50-21_SRL_1.1/myst_012019_2014-02-10_08-50-21_SRL_1.1_014.wav,something settled,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-10_08-50-21_SRL_1.1/myst_012019_2014-02-10_08-50-21_SRL_1.1_002.wav,i may need pizza,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-10_08-50-21_SRL_1.1/myst_012019_2014-02-10_08-50-21_SRL_1.1_035.wav,who knows,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-10_08-50-21_SRL_1.1/myst_012019_2014-02-10_08-50-21_SRL_1.1_004.wav,soil and and and,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-10_08-50-21_SRL_1.1/myst_012019_2014-02-10_08-50-21_SRL_1.1_021.wav,they've all settled,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-18_10-30-13_SRL_1.3/myst_012019_2014-02-18_10-30-13_SRL_1.3_029.wav,that um,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-18_10-30-13_SRL_1.3/myst_012019_2014-02-18_10-30-13_SRL_1.3_026.wav,that the rock,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-18_10-30-13_SRL_1.3/myst_012019_2014-02-18_10-30-13_SRL_1.3_007.wav,it's rock,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-18_10-30-13_SRL_1.3/myst_012019_2014-02-18_10-30-13_SRL_1.3_014.wav,i have no idea,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-18_10-30-13_SRL_1.3/myst_012019_2014-02-18_10-30-13_SRL_1.3_005.wav,they're shrinking,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-18_10-30-13_SRL_1.3/myst_012019_2014-02-18_10-30-13_SRL_1.3_020.wav,you got,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-18_10-30-13_SRL_1.3/myst_012019_2014-02-18_10-30-13_SRL_1.3_006.wav,i think i,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-18_10-30-13_SRL_1.3/myst_012019_2014-02-18_10-30-13_SRL_1.3_011.wav,it's shrinking,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-18_10-30-13_SRL_1.3/myst_012019_2014-02-18_10-30-13_SRL_1.3_030.wav,i have no idea,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-18_10-30-13_SRL_1.3/myst_012019_2014-02-18_10-30-13_SRL_1.3_009.wav,the vinegar,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-18_10-30-13_SRL_1.3/myst_012019_2014-02-18_10-30-13_SRL_1.3_016.wav,the water's melting the snow,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-19_10-33-19_SRL_2.1/myst_012019_2014-02-19_10-33-19_SRL_2.1_016.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-19_10-33-19_SRL_2.1/myst_012019_2014-02-19_10-33-19_SRL_2.1_021.wav,only deposition,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-19_10-33-19_SRL_2.1/myst_012019_2014-02-19_10-33-19_SRL_2.1_009.wav,on the ground,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-19_10-33-19_SRL_2.1/myst_012019_2014-02-19_10-33-19_SRL_2.1_008.wav,deposition is like creeks,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-19_10-33-19_SRL_2.1/myst_012019_2014-02-19_10-33-19_SRL_2.1_017.wav,they your face,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-19_10-33-19_SRL_2.1/myst_012019_2014-02-19_10-33-19_SRL_2.1_015.wav,deposition coming down a hill,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2014-02-19_10-33-19_SRL_2.1/myst_012019_2014-02-19_10-33-19_SRL_2.1_007.wav,because they,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-06_10-38-03_MX_2.4/myst_012019_2013-12-06_10-38-03_MX_2.4_007.wav,it will float,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-06_10-38-03_MX_2.4/myst_012019_2013-12-06_10-38-03_MX_2.4_013.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-06_10-38-03_MX_2.4/myst_012019_2013-12-06_10-38-03_MX_2.4_017.wav,they don't mix,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-06_10-38-03_MX_2.4/myst_012019_2013-12-06_10-38-03_MX_2.4_002.wav,i'm good,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-06_10-38-03_MX_2.4/myst_012019_2013-12-06_10-38-03_MX_2.4_023.wav,cause they're not mixing,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-06_10-38-03_MX_2.4/myst_012019_2013-12-06_10-38-03_MX_2.4_009.wav,it sinks,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-06_10-38-03_MX_2.4/myst_012019_2013-12-06_10-38-03_MX_2.4_022.wav,i already told you,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-06_10-38-03_MX_2.4/myst_012019_2013-12-06_10-38-03_MX_2.4_003.wav,i forgot,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-06_10-38-03_MX_2.4/myst_012019_2013-12-06_10-38-03_MX_2.4_018.wav,they mix,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-20_09-36-41_MX_4.1/myst_012019_2013-12-20_09-36-41_MX_4.1_057.wav,chemical reaction,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-20_09-36-41_MX_4.1/myst_012019_2013-12-20_09-36-41_MX_4.1_048.wav,when was,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-20_09-36-41_MX_4.1/myst_012019_2013-12-20_09-36-41_MX_4.1_038.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-20_09-36-41_MX_4.1/myst_012019_2013-12-20_09-36-41_MX_4.1_018.wav,the water,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-20_09-36-41_MX_4.1/myst_012019_2013-12-20_09-36-41_MX_4.1_059.wav,no thank you,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-20_09-36-41_MX_4.1/myst_012019_2013-12-20_09-36-41_MX_4.1_009.wav,reactant thing,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-20_09-36-41_MX_4.1/myst_012019_2013-12-20_09-36-41_MX_4.1_004.wav,i'm not sure,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-20_09-36-41_MX_4.1/myst_012019_2013-12-20_09-36-41_MX_4.1_027.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-20_09-36-41_MX_4.1/myst_012019_2013-12-20_09-36-41_MX_4.1_006.wav,i thought,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-20_09-36-41_MX_4.1/myst_012019_2013-12-20_09-36-41_MX_4.1_020.wav,it's missing the vinegar,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-20_09-36-41_MX_4.1/myst_012019_2013-12-20_09-36-41_MX_4.1_014.wav,a mixture,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-20_09-36-41_MX_4.1/myst_012019_2013-12-20_09-36-41_MX_4.1_023.wav,they look weird,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-20_09-36-41_MX_4.1/myst_012019_2013-12-20_09-36-41_MX_4.1_015.wav,a mixture i told,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-20_09-36-41_MX_4.1/myst_012019_2013-12-20_09-36-41_MX_4.1_005.wav,they started bubbling,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-20_09-36-41_MX_4.1/myst_012019_2013-12-20_09-36-41_MX_4.1_045.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-20_09-36-41_MX_4.1/myst_012019_2013-12-20_09-36-41_MX_4.1_029.wav,baking soda and calcium chloride,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-20_09-36-41_MX_4.1/myst_012019_2013-12-20_09-36-41_MX_4.1_017.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-12-20_09-36-41_MX_4.1/myst_012019_2013-12-20_09-36-41_MX_4.1_042.wav,with water falling off,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-11-13_08-56-43_MX_1.2/myst_012019_2013-11-13_08-56-43_MX_1.2_005.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-11-13_08-56-43_MX_1.2/myst_012019_2013-11-13_08-56-43_MX_1.2_018.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-11-13_08-56-43_MX_1.2/myst_012019_2013-11-13_08-56-43_MX_1.2_039.wav,i'm not,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-11-13_08-56-43_MX_1.2/myst_012019_2013-11-13_08-56-43_MX_1.2_019.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-11-13_08-56-43_MX_1.2/myst_012019_2013-11-13_08-56-43_MX_1.2_015.wav,the solid,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-11-13_08-56-43_MX_1.2/myst_012019_2013-11-13_08-56-43_MX_1.2_034.wav,that the mixture doesn't go,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-11-13_08-56-43_MX_1.2/myst_012019_2013-11-13_08-56-43_MX_1.2_025.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-11-13_08-56-43_MX_1.2/myst_012019_2013-11-13_08-56-43_MX_1.2_046.wav,that the salt turns into,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-11-13_08-56-43_MX_1.2/myst_012019_2013-11-13_08-56-43_MX_1.2_032.wav,a solution,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-11-13_08-56-43_MX_1.2/myst_012019_2013-11-13_08-56-43_MX_1.2_037.wav,a solution,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-11-13_08-56-43_MX_1.2/myst_012019_2013-11-13_08-56-43_MX_1.2_035.wav,i'm not sure,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-11-13_08-56-43_MX_1.2/myst_012019_2013-11-13_08-56-43_MX_1.2_031.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-11-13_08-56-43_MX_1.2/myst_012019_2013-11-13_08-56-43_MX_1.2_047.wav,sun and heat,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-11-13_08-56-43_MX_1.2/myst_012019_2013-11-13_08-56-43_MX_1.2_042.wav,i'm not sure,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-11-13_08-56-43_MX_1.2/myst_012019_2013-11-13_08-56-43_MX_1.2_041.wav,the water turns into crystals,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-11-13_08-56-43_MX_1.2/myst_012019_2013-11-13_08-56-43_MX_1.2_048.wav,time passing by,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-11-13_08-56-43_MX_1.2/myst_012019_2013-11-13_08-56-43_MX_1.2_007.wav,the water is the solution,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-11-13_08-56-43_MX_1.2/myst_012019_2013-11-13_08-56-43_MX_1.2_013.wav,the salt,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-11-13_08-56-43_MX_1.2/myst_012019_2013-11-13_08-56-43_MX_1.2_044.wav,you can separate it,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-11-13_08-56-43_MX_1.2/myst_012019_2013-11-13_08-56-43_MX_1.2_026.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-11-13_08-56-43_MX_1.2/myst_012019_2013-11-13_08-56-43_MX_1.2_012.wav,i have no idea,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-11-13_08-56-43_MX_1.2/myst_012019_2013-11-13_08-56-43_MX_1.2_008.wav,the salt,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012019/myst_012019_2013-11-13_08-56-43_MX_1.2/myst_012019_2013-11-13_08-56-43_MX_1.2_023.wav,in a compartment,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/988450/myst_988450_2009-18-12_00-00-00_VB_1.2/myst_988450_2009-18-12_00-00-00_VB_1.2_010.wav,d it was,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/988450/myst_988450_2009-18-12_00-00-00_VB_1.2/myst_988450_2009-18-12_00-00-00_VB_1.2_018.wav,t graph it's a graph,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/988450/myst_988450_2009-18-12_00-00-00_VB_1.2/myst_988450_2009-18-12_00-00-00_VB_1.2_023.wav,well if you have,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/988450/myst_988450_2009-18-12_00-00-00_VB_1.2/myst_988450_2009-18-12_00-00-00_VB_1.2_013.wav,you already s,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/988450/myst_988450_2009-18-12_00-00-00_VB_1.2/myst_988450_2009-18-12_00-00-00_VB_1.2_009.wav,the second,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/988450/myst_988450_2009-18-12_00-00-00_VB_1.2/myst_988450_2009-18-12_00-00-00_VB_1.2_033.wav,r x axis,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/988450/myst_988450_2009-18-12_00-00-00_VB_1.2/myst_988450_2009-18-12_00-00-00_VB_1.2_035.wav,x axis,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/988450/myst_988450_2009-18-12_00-00-00_VB_1.2/myst_988450_2009-18-12_00-00-00_VB_1.2_017.wav,um you'll get better results,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/988450/myst_988450_2009-18-12_00-00-00_VB_1.2/myst_988450_2009-18-12_00-00-00_VB_1.2_031.wav,what are values,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2013-11-21_12-31-11_EE_1.2/myst_013025_2013-11-21_12-31-11_EE_1.2_011.wav,the flag spins,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2013-11-21_12-31-11_EE_1.2/myst_013025_2013-11-21_12-31-11_EE_1.2_016.wav,it is closed,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2013-11-21_12-31-11_EE_1.2/myst_013025_2013-11-21_12-31-11_EE_1.2_026.wav,it doesn't spin,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2013-12-04_13-55-13_EE_1.3/myst_013025_2013-12-04_13-55-13_EE_1.3_014.wav,bye see ya later alligator,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2013-12-04_13-55-13_EE_1.3/myst_013025_2013-12-04_13-55-13_EE_1.3_012.wav,they're all metal metal,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-05_09-06-16_LS_1.3/myst_013025_2014-05-05_09-06-16_LS_1.3_029.wav,he is a herbivore,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-05_09-06-16_LS_1.3/myst_013025_2014-05-05_09-06-16_LS_1.3_032.wav,a decomposer,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-05_09-06-16_LS_1.3/myst_013025_2014-05-05_09-06-16_LS_1.3_039.wav,yeah b y e,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-05_09-06-16_LS_1.3/myst_013025_2014-05-05_09-06-16_LS_1.3_028.wav,an omnivore,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-05_09-06-16_LS_1.3/myst_013025_2014-05-05_09-06-16_LS_1.3_033.wav,a decomposer,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-05_09-06-16_LS_1.3/myst_013025_2014-05-05_09-06-16_LS_1.3_019.wav,herbivores only eat plant,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-05_09-06-16_LS_1.3/myst_013025_2014-05-05_09-06-16_LS_1.3_030.wav,a herbivore,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-05_09-06-16_LS_1.3/myst_013025_2014-05-05_09-06-16_LS_1.3_001.wav,g o o d,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-05_09-06-16_LS_1.3/myst_013025_2014-05-05_09-06-16_LS_1.3_026.wav,a carnivore a,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-05_09-06-16_LS_1.3/myst_013025_2014-05-05_09-06-16_LS_1.3_027.wav,it's an omnivore,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-05_09-06-16_LS_1.3/myst_013025_2014-05-05_09-06-16_LS_1.3_025.wav,it's a carnivore,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-05_09-06-16_LS_1.3/myst_013025_2014-05-05_09-06-16_LS_1.3_034.wav,they decompose dead decaying matter,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-05_09-06-16_LS_1.3/myst_013025_2014-05-05_09-06-16_LS_1.3_036.wav,it turns into dirt,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-22_12-23-41_LS_3.3/myst_013025_2014-05-22_12-23-41_LS_3.3_003.wav,what is anatomy,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-22_12-23-41_LS_3.3/myst_013025_2014-05-22_12-23-41_LS_3.3_004.wav,the lungs the wind pipe,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-22_12-23-41_LS_3.3/myst_013025_2014-05-22_12-23-41_LS_3.3_012.wav,will you repeat that,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-22_12-23-41_LS_3.3/myst_013025_2014-05-22_12-23-41_LS_3.3_023.wav,the lungs,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-22_12-23-41_LS_3.3/myst_013025_2014-05-22_12-23-41_LS_3.3_001.wav,g o o d,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-22_12-23-41_LS_3.3/myst_013025_2014-05-22_12-23-41_LS_3.3_007.wav,it gives your body oxygen,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-22_12-23-41_LS_3.3/myst_013025_2014-05-22_12-23-41_LS_3.3_013.wav,could you repeat that again,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-22_12-23-41_LS_3.3/myst_013025_2014-05-22_12-23-41_LS_3.3_019.wav,h two o,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-22_12-23-41_LS_3.3/myst_013025_2014-05-22_12-23-41_LS_3.3_024.wav,see ya,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-22_12-23-41_LS_3.3/myst_013025_2014-05-22_12-23-41_LS_3.3_002.wav,about the digestive system,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-22_12-23-41_LS_3.3/myst_013025_2014-05-22_12-23-41_LS_3.3_006.wav,what happens when you breathe,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2013-12-05_13-58-06_EE_1.4/myst_013025_2013-12-05_13-58-06_EE_1.4_024.wav,they both use natural fuel,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2013-12-05_13-58-06_EE_1.4/myst_013025_2013-12-05_13-58-06_EE_1.4_023.wav,not usable at all,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2013-12-05_13-58-06_EE_1.4/myst_013025_2013-12-05_13-58-06_EE_1.4_033.wav,gasoline coal and,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2013-12-05_13-58-06_EE_1.4/myst_013025_2013-12-05_13-58-06_EE_1.4_010.wav,no not really at all,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2013-12-05_13-58-06_EE_1.4/myst_013025_2013-12-05_13-58-06_EE_1.4_026.wav,they're both,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2013-12-05_13-58-06_EE_1.4/myst_013025_2013-12-05_13-58-06_EE_1.4_007.wav,electric particles energy yeah energy,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-28_09-27-07_LS_2.3/myst_013025_2014-05-28_09-27-07_LS_2.3_004.wav,probably like a like,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-28_09-27-07_LS_2.3/myst_013025_2014-05-28_09-27-07_LS_2.3_002.wav,ecosystem organism and stuff,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2013-12-11_13-47-23_EE_2.1/myst_013025_2013-12-11_13-47-23_EE_2.1_031.wav,see ya,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2013-12-11_13-47-23_EE_2.1/myst_013025_2013-12-11_13-47-23_EE_2.1_018.wav,one i think,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2013-12-11_13-47-23_EE_2.1/myst_013025_2013-12-11_13-47-23_EE_2.1_023.wav,it got brighter,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2013-12-11_13-47-23_EE_2.1/myst_013025_2013-12-11_13-47-23_EE_2.1_013.wav,those are little electricity particles,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2013-12-11_13-47-23_EE_2.1/myst_013025_2013-12-11_13-47-23_EE_2.1_020.wav,they're not as bright,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2013-11-14_13-54-01_EE_1.1/myst_013025_2013-11-14_13-54-01_EE_1.1_018.wav,the the red side,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2013-11-14_13-54-01_EE_1.1/myst_013025_2013-11-14_13-54-01_EE_1.1_020.wav,the energy,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2013-11-14_13-54-01_EE_1.1/myst_013025_2013-11-14_13-54-01_EE_1.1_024.wav,it goes the other way,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2013-11-14_13-54-01_EE_1.1/myst_013025_2013-11-14_13-54-01_EE_1.1_003.wav,light bulb battery and wires,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2013-11-14_13-54-01_EE_1.1/myst_013025_2013-11-14_13-54-01_EE_1.1_002.wav,light bulb electricity wire,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2013-11-14_13-54-01_EE_1.1/myst_013025_2013-11-14_13-54-01_EE_1.1_004.wav,would touch the battery,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-28_09-30-16_LS_4.2/myst_013025_2014-05-28_09-30-16_LS_4.2_010.wav,yes yes yes yes yes,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-28_09-30-16_LS_4.2/myst_013025_2014-05-28_09-30-16_LS_4.2_035.wav,i'm not quite sure,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-28_09-30-16_LS_4.2/myst_013025_2014-05-28_09-30-16_LS_4.2_008.wav,has gills,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-28_09-30-16_LS_4.2/myst_013025_2014-05-28_09-30-16_LS_4.2_029.wav,about stimulus,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-28_09-30-16_LS_4.2/myst_013025_2014-05-28_09-30-16_LS_4.2_038.wav,learned behavior,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-28_09-30-16_LS_4.2/myst_013025_2014-05-28_09-30-16_LS_4.2_018.wav,its wings so number one,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-28_09-30-16_LS_4.2/myst_013025_2014-05-28_09-30-16_LS_4.2_026.wav,since it is smell,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-28_09-30-16_LS_4.2/myst_013025_2014-05-28_09-30-16_LS_4.2_013.wav,a pattern,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-28_09-30-16_LS_4.2/myst_013025_2014-05-28_09-30-16_LS_4.2_037.wav,that is a learned behavior,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-28_09-30-16_LS_4.2/myst_013025_2014-05-28_09-30-16_LS_4.2_002.wav,about organisms and living systems,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-28_09-30-16_LS_4.2/myst_013025_2014-05-28_09-30-16_LS_4.2_036.wav,it is a learned behavior,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-28_09-30-16_LS_4.2/myst_013025_2014-05-28_09-30-16_LS_4.2_042.wav,it is instinctive to,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-28_09-30-16_LS_4.2/myst_013025_2014-05-28_09-30-16_LS_4.2_021.wav,could you repeat that please,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-28_09-30-16_LS_4.2/myst_013025_2014-05-28_09-30-16_LS_4.2_011.wav,predators not,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-28_09-30-16_LS_4.2/myst_013025_2014-05-28_09-30-16_LS_4.2_028.wav,could you repeat that,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-05_08-48-35_LS_1.1/myst_013025_2014-05-05_08-48-35_LS_1.1_010.wav,it is a system,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-05_08-48-35_LS_1.1/myst_013025_2014-05-05_08-48-35_LS_1.1_023.wav,air earth and animal,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-05_08-48-35_LS_1.1/myst_013025_2014-05-05_08-48-35_LS_1.1_015.wav,it is a system,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-05_08-48-35_LS_1.1/myst_013025_2014-05-05_08-48-35_LS_1.1_012.wav,in the blood streams,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-05_08-48-35_LS_1.1/myst_013025_2014-05-05_08-48-35_LS_1.1_020.wav,the earth,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-05_08-48-35_LS_1.1/myst_013025_2014-05-05_08-48-35_LS_1.1_014.wav,could you please repeat that,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-05_08-48-35_LS_1.1/myst_013025_2014-05-05_08-48-35_LS_1.1_034.wav,could you repeat that,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-05_08-48-35_LS_1.1/myst_013025_2014-05-05_08-48-35_LS_1.1_026.wav,they're part of the biosphere,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-05_08-48-35_LS_1.1/myst_013025_2014-05-05_08-48-35_LS_1.1_035.wav,b y e,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-05_08-48-35_LS_1.1/myst_013025_2014-05-05_08-48-35_LS_1.1_013.wav,it is a system,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-05_08-48-35_LS_1.1/myst_013025_2014-05-05_08-48-35_LS_1.1_011.wav,it is something appears,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-05_08-48-35_LS_1.1/myst_013025_2014-05-05_08-48-35_LS_1.1_007.wav,the car is a system,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-05_09-23-45_LS_2.1/myst_013025_2014-05-05_09-23-45_LS_2.1_020.wav,it does need sunlight,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-05_09-23-45_LS_2.1/myst_013025_2014-05-05_09-23-45_LS_2.1_011.wav,organisms and they're organisms and,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-05_09-23-45_LS_2.1/myst_013025_2014-05-05_09-23-45_LS_2.1_002.wav,decomposers matter and that stuff,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-05_09-23-45_LS_2.1/myst_013025_2014-05-05_09-23-45_LS_2.1_014.wav,water sunlight and nutrients,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/013025/myst_013025_2014-05-05_09-23-45_LS_2.1/myst_013025_2014-05-05_09-23-45_LS_2.1_035.wav,plants don't really need shelter,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-02-05_00-00-00_MS_2.2/myst_990049_2008-02-05_00-00-00_MS_2.2_106.wav,sounds like kill a gram,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-02-05_00-00-00_MS_2.2/myst_990049_2008-02-05_00-00-00_MS_2.2_112.wav,with the pieces,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-02-05_00-00-00_MS_2.2/myst_990049_2008-02-05_00-00-00_MS_2.2_100.wav,or a fridge,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-02-05_00-00-00_MS_2.2/myst_990049_2008-02-05_00-00-00_MS_2.2_052.wav,what happen,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-02-05_00-00-00_MS_2.2/myst_990049_2008-02-05_00-00-00_MS_2.2_070.wav,just a sec,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-02-05_00-00-00_MS_2.2/myst_990049_2008-02-05_00-00-00_MS_2.2_084.wav,the ink,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-02-05_00-00-00_MS_2.2/myst_990049_2008-02-05_00-00-00_MS_2.2_116.wav,b l t,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-02-05_00-00-00_MS_2.2/myst_990049_2008-02-05_00-00-00_MS_2.2_098.wav,or a microwave,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-02-05_00-00-00_MS_2.2/myst_990049_2008-02-05_00-00-00_MS_2.2_058.wav,not really,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-02-05_00-00-00_MS_2.2/myst_990049_2008-02-05_00-00-00_MS_2.2_056.wav,uh huh or level,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-02-05_00-00-00_MS_2.2/myst_990049_2008-02-05_00-00-00_MS_2.2_026.wav,ha it weighed like twenty,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-02-05_00-00-00_MS_2.2/myst_990049_2008-02-05_00-00-00_MS_2.2_072.wav,seven seven inches,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-02-05_00-00-00_MS_2.2/myst_990049_2008-02-05_00-00-00_MS_2.2_068.wav,probably the mass,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-02-05_00-00-00_MS_2.2/myst_990049_2008-02-05_00-00-00_MS_2.2_044.wav,we had a scale,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-02-05_00-00-00_MS_2.2/myst_990049_2008-02-05_00-00-00_MS_2.2_094.wav,falls out,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-02-05_00-00-00_MS_2.2/myst_990049_2008-02-05_00-00-00_MS_2.2_124.wav,no ten hundred grams,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-02-05_00-00-00_MS_2.2/myst_990049_2008-02-05_00-00-00_MS_2.2_062.wav,estimating is like a guess,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-02-05_00-00-00_MS_2.2/myst_990049_2008-02-05_00-00-00_MS_2.2_042.wav,how i did it,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-16-05_00-00-00_MS_4.2/myst_990049_2008-16-05_00-00-00_MS_4.2_062.wav,that's the different measurements,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-16-05_00-00-00_MS_4.2/myst_990049_2008-16-05_00-00-00_MS_4.2_006.wav,we we measured like water,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-16-05_00-00-00_MS_4.2/myst_990049_2008-16-05_00-00-00_MS_4.2_100.wav,they're like that,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-16-05_00-00-00_MS_4.2/myst_990049_2008-16-05_00-00-00_MS_4.2_028.wav,put it in a kettle,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-16-05_00-00-00_MS_4.2/myst_990049_2008-16-05_00-00-00_MS_4.2_118.wav,meter tape,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-16-05_00-00-00_MS_4.2/myst_990049_2008-16-05_00-00-00_MS_4.2_104.wav,i'll hold it,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-16-05_00-00-00_MS_4.2/myst_990049_2008-16-05_00-00-00_MS_4.2_072.wav,celsius time,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-16-05_00-00-00_MS_4.2/myst_990049_2008-16-05_00-00-00_MS_4.2_002.wav,we did measurement yesterday,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-16-05_00-00-00_MS_4.2/myst_990049_2008-16-05_00-00-00_MS_4.2_036.wav,it boils at a hundred,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-16-05_00-00-00_MS_4.2/myst_990049_2008-16-05_00-00-00_MS_4.2_042.wav,yeah that's zero yeah yes,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-16-05_00-00-00_MS_4.2/myst_990049_2008-16-05_00-00-00_MS_4.2_034.wav,it freezes,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-16-05_00-00-00_MS_4.2/myst_990049_2008-16-05_00-00-00_MS_4.2_122.wav,water with milliliters and liters,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-16-05_00-00-00_MS_4.2/myst_990049_2008-16-05_00-00-00_MS_4.2_086.wav,because it's very straight,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-16-05_00-00-00_MS_4.2/myst_990049_2008-16-05_00-00-00_MS_4.2_092.wav,that's showing celsius,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-16-05_00-00-00_MS_4.2/myst_990049_2008-16-05_00-00-00_MS_4.2_172.wav,those look like dice,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-16-05_00-00-00_MS_4.2/myst_990049_2008-16-05_00-00-00_MS_4.2_068.wav,time in minutes,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-16-05_00-00-00_MS_4.2/myst_990049_2008-16-05_00-00-00_MS_4.2_160.wav,it will start to freeze,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-16-05_00-00-00_MS_4.2/myst_990049_2008-16-05_00-00-00_MS_4.2_106.wav,we measured weight,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-16-05_00-00-00_MS_4.2/myst_990049_2008-16-05_00-00-00_MS_4.2_192.wav,what to wear,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-16-05_00-00-00_MS_4.2/myst_990049_2008-16-05_00-00-00_MS_4.2_112.wav,we also measured,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-16-05_00-00-00_MS_4.2/myst_990049_2008-16-05_00-00-00_MS_4.2_090.wav,that's showing minutes too,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-16-05_00-00-00_MS_4.2/myst_990049_2008-16-05_00-00-00_MS_4.2_108.wav,with grams and kilograms,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-16-05_00-00-00_MS_4.2/myst_990049_2008-16-05_00-00-00_MS_4.2_080.wav,yes actually,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-16-05_00-00-00_MS_4.2/myst_990049_2008-16-05_00-00-00_MS_4.2_140.wav,hmm cool,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-16-05_00-00-00_MS_4.2/myst_990049_2008-16-05_00-00-00_MS_4.2_184.wav,not really,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-16-05_00-00-00_MS_4.2/myst_990049_2008-16-05_00-00-00_MS_4.2_128.wav,they all have a temperature,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-16-05_00-00-00_MS_4.2/myst_990049_2008-16-05_00-00-00_MS_4.2_096.wav,yes it is,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-16-05_00-00-00_MS_4.2/myst_990049_2008-16-05_00-00-00_MS_4.2_048.wav,it doesn't freeze exactly then,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-16-05_00-00-00_MS_4.2/myst_990049_2008-16-05_00-00-00_MS_4.2_126.wav,celsius and fahrenheit,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-09-05_00-00-00_MS_3.2/myst_990049_2008-09-05_00-00-00_MS_3.2_072.wav,yeah yeah like this,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-09-05_00-00-00_MS_3.2/myst_990049_2008-09-05_00-00-00_MS_3.2_100.wav,they have milliliters in them,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-09-05_00-00-00_MS_3.2/myst_990049_2008-09-05_00-00-00_MS_3.2_096.wav,yeah we used some vials,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-09-05_00-00-00_MS_3.2/myst_990049_2008-09-05_00-00-00_MS_3.2_104.wav,yes it was two hundred,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-09-05_00-00-00_MS_3.2/myst_990049_2008-09-05_00-00-00_MS_3.2_060.wav,in the metric system,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-09-05_00-00-00_MS_3.2/myst_990049_2008-09-05_00-00-00_MS_3.2_052.wav,ten of these cups,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-09-05_00-00-00_MS_3.2/myst_990049_2008-09-05_00-00-00_MS_3.2_050.wav,it would take,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-09-05_00-00-00_MS_3.2/myst_990049_2008-09-05_00-00-00_MS_3.2_084.wav,not really,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-09-05_00-00-00_MS_3.2/myst_990049_2008-09-05_00-00-00_MS_3.2_076.wav,like a surgical needle,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-09-05_00-00-00_MS_3.2/myst_990049_2008-09-05_00-00-00_MS_3.2_002.wav,hi cooper,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-09-05_00-00-00_MS_3.2/myst_990049_2008-09-05_00-00-00_MS_3.2_080.wav,um no,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-09-05_00-00-00_MS_3.2/myst_990049_2008-09-05_00-00-00_MS_3.2_070.wav,pretty good,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-23-04_00-00-00_MS_1.2/myst_990049_2008-23-04_00-00-00_MS_1.2_018.wav,so mmm hmm,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-23-04_00-00-00_MS_1.2/myst_990049_2008-23-04_00-00-00_MS_1.2_062.wav,mmm hmm n mmm,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-23-04_00-00-00_MS_1.2/myst_990049_2008-23-04_00-00-00_MS_1.2_080.wav,probably this of centimeter,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-23-04_00-00-00_MS_1.2/myst_990049_2008-23-04_00-00-00_MS_1.2_056.wav,es yes we have,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-23-04_00-00-00_MS_1.2/myst_990049_2008-23-04_00-00-00_MS_1.2_074.wav,a centimeter is ten meters,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-23-04_00-00-00_MS_1.2/myst_990049_2008-23-04_00-00-00_MS_1.2_078.wav,oh yeah,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-23-04_00-00-00_MS_1.2/myst_990049_2008-23-04_00-00-00_MS_1.2_046.wav,there were ten yeah,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-23-04_00-00-00_MS_1.2/myst_990049_2008-23-04_00-00-00_MS_1.2_040.wav,wait nine,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-07-05_00-00-00_MS_3.1/myst_990049_2008-07-05_00-00-00_MS_3.1_084.wav,just a little sleeve,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-07-05_00-00-00_MS_3.1/myst_990049_2008-07-05_00-00-00_MS_3.1_038.wav,a thousand,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-07-05_00-00-00_MS_3.1/myst_990049_2008-07-05_00-00-00_MS_3.1_098.wav,no a hundred milliliters,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-07-05_00-00-00_MS_3.1/myst_990049_2008-07-05_00-00-00_MS_3.1_090.wav,a hundred milliliters,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-07-05_00-00-00_MS_3.1/myst_990049_2008-07-05_00-00-00_MS_3.1_058.wav,maybe a hundred,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-07-05_00-00-00_MS_3.1/myst_990049_2008-07-05_00-00-00_MS_3.1_102.wav,a hundred,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-07-05_00-00-00_MS_3.1/myst_990049_2008-07-05_00-00-00_MS_3.1_096.wav,a hun ten,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-07-05_00-00-00_MS_3.1/myst_990049_2008-07-05_00-00-00_MS_3.1_106.wav,uh no not really,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-07-05_00-00-00_MS_3.1/myst_990049_2008-07-05_00-00-00_MS_3.1_042.wav,they're both equally the same,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-07-05_00-00-00_MS_3.1/myst_990049_2008-07-05_00-00-00_MS_3.1_066.wav,like money,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-07-05_00-00-00_MS_3.1/myst_990049_2008-07-05_00-00-00_MS_3.1_050.wav,what exactly is that,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-07-05_00-00-00_MS_3.1/myst_990049_2008-07-05_00-00-00_MS_3.1_008.wav,e yes,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-07-05_00-00-00_MS_3.1/myst_990049_2008-07-05_00-00-00_MS_3.1_080.wav,the size of,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-07-05_00-00-00_MS_3.1/myst_990049_2008-07-05_00-00-00_MS_3.1_088.wav,that equal a hundred,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-07-05_00-00-00_MS_3.1/myst_990049_2008-07-05_00-00-00_MS_3.1_122.wav,and by out,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-07-05_00-00-00_MS_3.1/myst_990049_2008-07-05_00-00-00_MS_3.1_032.wav,a thousand,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-07-05_00-00-00_MS_3.1/myst_990049_2008-07-05_00-00-00_MS_3.1_060.wav,some did some didn't,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-07-05_00-00-00_MS_3.1/myst_990049_2008-07-05_00-00-00_MS_3.1_072.wav,no milliliters,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-07-05_00-00-00_MS_3.1/myst_990049_2008-07-05_00-00-00_MS_3.1_094.wav,mmm hmm a hundred,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-07-05_00-00-00_MS_3.1/myst_990049_2008-07-05_00-00-00_MS_3.1_100.wav,is ten,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990049/myst_990049_2008-07-05_00-00-00_MS_3.1/myst_990049_2008-07-05_00-00-00_MS_3.1_056.wav,ten or maybe more yeah,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-05-01_09-30-23_EE_4.2/myst_008041_2014-05-01_09-30-23_EE_4.2_019.wav,um repeat that again please,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-05-01_09-30-23_EE_4.2/myst_008041_2014-05-01_09-30-23_EE_4.2_015.wav,um this attached to thirty,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-05-01_09-30-23_EE_4.2/myst_008041_2014-05-01_09-30-23_EE_4.2_003.wav,wires wrapped around a rivet,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-05-01_09-30-23_EE_4.2/myst_008041_2014-05-01_09-30-23_EE_4.2_013.wav,what it relates is,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-04-10_09-51-04_EE_2.1/myst_008041_2014-04-10_09-51-04_EE_2.1_007.wav,the both wires did you,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-04-10_09-51-04_EE_2.1/myst_008041_2014-04-10_09-51-04_EE_2.1_027.wav,can you repeat that again,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-04-10_09-51-04_EE_2.1/myst_008041_2014-04-10_09-51-04_EE_2.1_012.wav,it's not connect,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-05-12_10-16-47_EE_5.2/myst_008041_2014-05-12_10-16-47_EE_5.2_024.wav,it it turns into the,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-05-12_10-16-47_EE_5.2/myst_008041_2014-05-12_10-16-47_EE_5.2_004.wav,um changing color,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-05-12_10-16-47_EE_5.2/myst_008041_2014-05-12_10-16-47_EE_5.2_037.wav,um it will turn dark,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-05-12_10-16-47_EE_5.2/myst_008041_2014-05-12_10-16-47_EE_5.2_033.wav,change the same color as,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-05-12_10-16-47_EE_5.2/myst_008041_2014-05-12_10-16-47_EE_5.2_014.wav,seven six,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-05-12_10-16-47_EE_5.2/myst_008041_2014-05-12_10-16-47_EE_5.2_025.wav,turns into,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-05-12_10-16-47_EE_5.2/myst_008041_2014-05-12_10-16-47_EE_5.2_020.wav,um structure of a light,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-05-12_10-16-47_EE_5.2/myst_008041_2014-05-12_10-16-47_EE_5.2_041.wav,a red,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-05-12_10-16-47_EE_5.2/myst_008041_2014-05-12_10-16-47_EE_5.2_034.wav,yes the reflection the color,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-05-12_10-16-47_EE_5.2/myst_008041_2014-05-12_10-16-47_EE_5.2_012.wav,six color,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-05-12_10-16-47_EE_5.2/myst_008041_2014-05-12_10-16-47_EE_5.2_003.wav,they all have light,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-04-28_09-21-18_EE_3.4/myst_008041_2014-04-28_09-21-18_EE_3.4_020.wav,um by its force,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-04-28_09-21-18_EE_3.4/myst_008041_2014-04-28_09-21-18_EE_3.4_013.wav,that it's spreading apart,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-04-28_09-21-18_EE_3.4/myst_008041_2014-04-28_09-21-18_EE_3.4_021.wav,i needed three,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-04-25_09-43-33_EE_3.3/myst_008041_2014-04-25_09-43-33_EE_3.3_003.wav,but the different push back,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-04-25_09-43-33_EE_3.3/myst_008041_2014-04-25_09-43-33_EE_3.3_006.wav,repeat that,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-04-25_09-43-33_EE_3.3/myst_008041_2014-04-25_09-43-33_EE_3.3_001.wav,learnng about magnetism,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-04-04_09-51-29_EE_1.1/myst_008041_2014-04-04_09-51-29_EE_1.1_006.wav,a d cell batteries and,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-04-04_09-51-29_EE_1.1/myst_008041_2014-04-04_09-51-29_EE_1.1_024.wav,the electricity flow,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-04-04_09-51-29_EE_1.1/myst_008041_2014-04-04_09-51-29_EE_1.1_008.wav,wires in it circuit carry,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-04-04_09-51-29_EE_1.1/myst_008041_2014-04-04_09-51-29_EE_1.1_032.wav,okay but,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-04-30_13-36-16_EE_4.1/myst_008041_2014-04-30_13-36-16_EE_4.1_008.wav,a rivet,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-04-30_13-36-16_EE_4.1/myst_008041_2014-04-30_13-36-16_EE_4.1_029.wav,it's going through the wire,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-04-30_13-36-16_EE_4.1/myst_008041_2014-04-30_13-36-16_EE_4.1_007.wav,could you repeat that,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-04-30_13-36-16_EE_4.1/myst_008041_2014-04-30_13-36-16_EE_4.1_012.wav,repeat that again please,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-05-06_09-21-32_EE_5.1/myst_008041_2014-05-06_09-21-32_EE_5.1_027.wav,uh the,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-05-06_09-21-32_EE_5.1/myst_008041_2014-05-06_09-21-32_EE_5.1_006.wav,sometimes it hurt,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-05-06_09-21-32_EE_5.1/myst_008041_2014-05-06_09-21-32_EE_5.1_024.wav,and it is,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-05-06_09-21-32_EE_5.1/myst_008041_2014-05-06_09-21-32_EE_5.1_020.wav,repeat that again,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-05-06_09-21-32_EE_5.1/myst_008041_2014-05-06_09-21-32_EE_5.1_008.wav,whether reflective how it reacts,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-04-23_08-45-23_EE_3.2/myst_008041_2014-04-23_08-45-23_EE_3.2_003.wav,i see to mag,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-04-23_08-45-23_EE_3.2/myst_008041_2014-04-23_08-45-23_EE_3.2_002.wav,sorry above magnetisms,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-04-17_10-09-04_EE_2.3/myst_008041_2014-04-17_10-09-04_EE_2.3_014.wav,the connected series because a,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-04-17_10-09-04_EE_2.3/myst_008041_2014-04-17_10-09-04_EE_2.3_028.wav,what happened the electricity just,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-04-17_10-09-04_EE_2.3/myst_008041_2014-04-17_10-09-04_EE_2.3_022.wav,this picture are,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-04-17_10-09-04_EE_2.3/myst_008041_2014-04-17_10-09-04_EE_2.3_012.wav,is there is no light,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-04-17_10-09-04_EE_2.3/myst_008041_2014-04-17_10-09-04_EE_2.3_017.wav,think it's,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-04-17_10-09-04_EE_2.3/myst_008041_2014-04-17_10-09-04_EE_2.3_001.wav,not so great,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-04-18_09-24-26_EE_3.1/myst_008041_2014-04-18_09-24-26_EE_3.1_024.wav,it connected and its did,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-04-18_09-24-26_EE_3.1/myst_008041_2014-04-18_09-24-26_EE_3.1_012.wav,a brash bring,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-04-18_09-24-26_EE_3.1/myst_008041_2014-04-18_09-24-26_EE_3.1_006.wav,magnet only take to metal,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-04-18_09-24-26_EE_3.1/myst_008041_2014-04-18_09-24-26_EE_3.1_004.wav,magnets is magnetisms,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-04-18_09-24-26_EE_3.1/myst_008041_2014-04-18_09-24-26_EE_3.1_003.wav,is are magnetism,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-04-18_09-24-26_EE_3.1/myst_008041_2014-04-18_09-24-26_EE_3.1_017.wav,repeat that again,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-04-18_09-24-26_EE_3.1/myst_008041_2014-04-18_09-24-26_EE_3.1_018.wav,magnets check to metal,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-04-18_09-24-26_EE_3.1/myst_008041_2014-04-18_09-24-26_EE_3.1_014.wav,because they did project,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-04-18_09-24-26_EE_3.1/myst_008041_2014-04-18_09-24-26_EE_3.1_007.wav,that is called magnetism,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-04-18_09-24-26_EE_3.1/myst_008041_2014-04-18_09-24-26_EE_3.1_020.wav,i think it's aluminum,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-04-17_09-53-25_EE_2.2/myst_008041_2014-04-17_09-53-25_EE_2.2_023.wav,the the battery really electricity,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008041/myst_008041_2014-04-17_09-53-25_EE_2.2/myst_008041_2014-04-17_09-53-25_EE_2.2_016.wav,that one remember direction,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990004/myst_990004_2008-09-05_00-00-00_ME_2.3/myst_990004_2008-09-05_00-00-00_ME_2.3_052.wav,um magnetism,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990004/myst_990004_2008-09-05_00-00-00_ME_2.3/myst_990004_2008-09-05_00-00-00_ME_2.3_068.wav,yes we did,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990004/myst_990004_2008-09-05_00-00-00_ME_2.3/myst_990004_2008-09-05_00-00-00_ME_2.3_038.wav,uh attract,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990004/myst_990004_2008-09-05_00-00-00_ME_2.3/myst_990004_2008-09-05_00-00-00_ME_2.3_138.wav,oh yeah,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990004/myst_990004_2008-09-05_00-00-00_ME_2.3/myst_990004_2008-09-05_00-00-00_ME_2.3_150.wav,that can forms a circuit,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990004/myst_990004_2008-09-05_00-00-00_ME_2.3/myst_990004_2008-09-05_00-00-00_ME_2.3_030.wav,uh that would repel,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990004/myst_990004_2008-09-05_00-00-00_ME_2.3/myst_990004_2008-09-05_00-00-00_ME_2.3_118.wav,and down the mmm hmm,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990004/myst_990004_2008-09-05_00-00-00_ME_2.3/myst_990004_2008-09-05_00-00-00_ME_2.3_160.wav,uh probably the pipe,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990004/myst_990004_2008-09-05_00-00-00_ME_2.3/myst_990004_2008-09-05_00-00-00_ME_2.3_024.wav,no i don't think so,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990004/myst_990004_2008-09-05_00-00-00_ME_2.3/myst_990004_2008-09-05_00-00-00_ME_2.3_054.wav,they're positive,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990004/myst_990004_2008-09-05_00-00-00_ME_2.3/myst_990004_2008-09-05_00-00-00_ME_2.3_012.wav,uh yeah,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990004/myst_990004_2008-09-05_00-00-00_ME_2.3/myst_990004_2008-09-05_00-00-00_ME_2.3_104.wav,it no,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990004/myst_990004_2008-09-05_00-00-00_ME_2.3/myst_990004_2008-09-05_00-00-00_ME_2.3_060.wav,oh yeah,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990004/myst_990004_2008-09-05_00-00-00_ME_2.3/myst_990004_2008-09-05_00-00-00_ME_2.3_116.wav,and through the filaments,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990004/myst_990004_2008-09-05_00-00-00_ME_2.3/myst_990004_2008-09-05_00-00-00_ME_2.3_142.wav,uh i don't know,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990004/myst_990004_2008-09-05_00-00-00_ME_2.3/myst_990004_2008-09-05_00-00-00_ME_2.3_014.wav,yeah i think so,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990004/myst_990004_2008-09-05_00-00-00_ME_2.3/myst_990004_2008-09-05_00-00-00_ME_2.3_098.wav,uh yeah,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990004/myst_990004_2008-09-05_00-00-00_ME_2.3/myst_990004_2008-09-05_00-00-00_ME_2.3_094.wav,probably not,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990004/myst_990004_2008-09-05_00-00-00_ME_2.3/myst_990004_2008-09-05_00-00-00_ME_2.3_042.wav,um i'm i don't think,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990004/myst_990004_2008-09-05_00-00-00_ME_2.3/myst_990004_2008-09-05_00-00-00_ME_2.3_122.wav,out again,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990004/myst_990004_2008-09-05_00-00-00_ME_2.3/myst_990004_2008-09-05_00-00-00_ME_2.3_112.wav,the base,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990004/myst_990004_2008-09-05_00-00-00_ME_2.3/myst_990004_2008-09-05_00-00-00_ME_2.3_066.wav,n mmm,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997481/myst_997481_2009-10-12_00-00-00_ME_1.2/myst_997481_2009-10-12_00-00-00_ME_1.2_004.wav,the things,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997481/myst_997481_2009-10-12_00-00-00_ME_1.2/myst_997481_2009-10-12_00-00-00_ME_1.2_021.wav,iron iron's metal or steel,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997481/myst_997481_2009-10-12_00-00-00_ME_1.2/myst_997481_2009-10-12_00-00-00_ME_1.2_023.wav,thank you marnie,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997481/myst_997481_2009-10-12_00-00-00_ME_1.2/myst_997481_2009-10-12_00-00-00_ME_1.2_010.wav,the magnet force,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997481/myst_997481_2009-10-12_00-00-00_ME_1.2/myst_997481_2009-10-12_00-00-00_ME_1.2_012.wav,the other one,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997481/myst_997481_2010-08-02_00-00-00_ME_4.1/myst_997481_2010-08-02_00-00-00_ME_4.1_013.wav,thank you marnie,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997481/myst_997481_2010-08-02_00-00-00_ME_4.1/myst_997481_2010-08-02_00-00-00_ME_4.1_027.wav,bye marnie,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997481/myst_997481_2010-08-02_00-00-00_ME_4.1/myst_997481_2010-08-02_00-00-00_ME_4.1_001.wav,it's going good marnie,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997481/myst_997481_2010-08-02_00-00-00_ME_4.1/myst_997481_2010-08-02_00-00-00_ME_4.1_024.wav,marnie yes i did marnie,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997481/myst_997481_2010-01-02_00-00-00_ME_3.2/myst_997481_2010-01-02_00-00-00_ME_3.2_003.wav,i see a parallel circuit,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997481/myst_997481_2010-01-02_00-00-00_ME_3.2/myst_997481_2010-01-02_00-00-00_ME_3.2_013.wav,it would be two pathways,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997481/myst_997481_2010-01-02_00-00-00_ME_3.2/myst_997481_2010-01-02_00-00-00_ME_3.2_012.wav,two pathways,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990561/myst_990561_2010-13-04_00-00-00_MS_3.1/myst_990561_2010-13-04_00-00-00_MS_3.1_007.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990561/myst_990561_2010-13-04_00-00-00_MS_3.1/myst_990561_2010-13-04_00-00-00_MS_3.1_021.wav,it maybe,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990561/myst_990561_2010-13-04_00-00-00_MS_3.1/myst_990561_2010-13-04_00-00-00_MS_3.1_012.wav,don't know,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990561/myst_990561_2010-13-04_00-00-00_MS_3.1/myst_990561_2010-13-04_00-00-00_MS_3.1_026.wav,it's time to go bye,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990561/myst_990561_2010-13-04_00-00-00_MS_3.1/myst_990561_2010-13-04_00-00-00_MS_3.1_022.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990561/myst_990561_2010-13-04_00-00-00_MS_3.1/myst_990561_2010-13-04_00-00-00_MS_3.1_011.wav,one's bigger than the other,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990561/myst_990561_2010-13-04_00-00-00_MS_3.1/myst_990561_2010-13-04_00-00-00_MS_3.1_004.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990561/myst_990561_2010-13-04_00-00-00_MS_3.1/myst_990561_2010-13-04_00-00-00_MS_3.1_002.wav,um we've been,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990561/myst_990561_2010-13-04_00-00-00_MS_3.1/myst_990561_2010-13-04_00-00-00_MS_3.1_025.wav,don't know,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990561/myst_990561_2010-13-04_00-00-00_MS_3.1/myst_990561_2010-13-04_00-00-00_MS_3.1_020.wav,don't know,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990561/myst_990561_2010-13-04_00-00-00_MS_3.1/myst_990561_2010-13-04_00-00-00_MS_3.1_009.wav,don't know,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990561/myst_990561_2010-13-04_00-00-00_MS_3.1/myst_990561_2010-13-04_00-00-00_MS_3.1_006.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990561/myst_990561_2010-13-04_00-00-00_MS_3.1/myst_990561_2010-13-04_00-00-00_MS_3.1_010.wav,don't know,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-12-18_09-39-18_MX_3.1/myst_012020_2013-12-18_09-39-18_MX_3.1_004.wav,it's saturated,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-12-18_09-39-18_MX_3.1/myst_012020_2013-12-18_09-39-18_MX_3.1_009.wav,it is saturated,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-12-18_10-18-12_MX_3.2/myst_012020_2013-12-18_10-18-12_MX_3.2_018.wav,epsom salt,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-12-18_10-18-12_MX_3.2/myst_012020_2013-12-18_10-18-12_MX_3.2_012.wav,substance three,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-12-09_10-14-51_MX_2.4/myst_012020_2013-12-09_10-14-51_MX_2.4_009.wav,then it is,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-12-09_10-14-51_MX_2.4/myst_012020_2013-12-09_10-14-51_MX_2.4_006.wav,it will float,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-12-09_10-14-51_MX_2.4/myst_012020_2013-12-09_10-14-51_MX_2.4_007.wav,it will float,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-11-14_10-51-26_MX_1.2/myst_012020_2013-11-14_10-51-26_MX_1.2_054.wav,that is evaporation,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-11-14_10-51-26_MX_1.2/myst_012020_2013-11-14_10-51-26_MX_1.2_051.wav,a solution,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-11-14_10-51-26_MX_1.2/myst_012020_2013-11-14_10-51-26_MX_1.2_046.wav,a solution,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-11-14_10-51-26_MX_1.2/myst_012020_2013-11-14_10-51-26_MX_1.2_047.wav,a mixture,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-11-14_10-51-26_MX_1.2/myst_012020_2013-11-14_10-51-26_MX_1.2_008.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-11-14_10-51-26_MX_1.2/myst_012020_2013-11-14_10-51-26_MX_1.2_038.wav,it's sixty five grams,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-11-14_10-51-26_MX_1.2/myst_012020_2013-11-14_10-51-26_MX_1.2_052.wav,by evaporating the water,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-11-14_10-51-26_MX_1.2/myst_012020_2013-11-14_10-51-26_MX_1.2_035.wav,it's combining,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-11-14_10-51-26_MX_1.2/myst_012020_2013-11-14_10-51-26_MX_1.2_042.wav,a mixture,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-11-14_10-51-26_MX_1.2/myst_012020_2013-11-14_10-51-26_MX_1.2_013.wav,the solvent,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-11-14_10-51-26_MX_1.2/myst_012020_2013-11-14_10-51-26_MX_1.2_057.wav,evaporate the water,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-11-14_10-51-26_MX_1.2/myst_012020_2013-11-14_10-51-26_MX_1.2_032.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-11-14_10-51-26_MX_1.2/myst_012020_2013-11-14_10-51-26_MX_1.2_044.wav,the salt dissolves,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-11-14_10-51-26_MX_1.2/myst_012020_2013-11-14_10-51-26_MX_1.2_050.wav,a solution,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-11-14_10-51-26_MX_1.2/myst_012020_2013-11-14_10-51-26_MX_1.2_029.wav,the solvent,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-11-14_10-51-26_MX_1.2/myst_012020_2013-11-14_10-51-26_MX_1.2_060.wav,the sun,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-11-14_10-51-26_MX_1.2/myst_012020_2013-11-14_10-51-26_MX_1.2_024.wav,a solvent,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-11-14_10-51-26_MX_1.2/myst_012020_2013-11-14_10-51-26_MX_1.2_019.wav,a solution,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-11-14_10-51-26_MX_1.2/myst_012020_2013-11-14_10-51-26_MX_1.2_055.wav,the water is evaporating,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-11-14_10-51-26_MX_1.2/myst_012020_2013-11-14_10-51-26_MX_1.2_004.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-11-14_10-51-26_MX_1.2/myst_012020_2013-11-14_10-51-26_MX_1.2_011.wav,the salt,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-11-14_10-51-26_MX_1.2/myst_012020_2013-11-14_10-51-26_MX_1.2_009.wav,material is grape fantastic thing,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-11-14_10-51-26_MX_1.2/myst_012020_2013-11-14_10-51-26_MX_1.2_021.wav,the solute,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-11-14_10-51-26_MX_1.2/myst_012020_2013-11-14_10-51-26_MX_1.2_028.wav,the solvent gets dissolved,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-11-14_10-51-26_MX_1.2/myst_012020_2013-11-14_10-51-26_MX_1.2_015.wav,will you repeat that,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-11-14_10-51-26_MX_1.2/myst_012020_2013-11-14_10-51-26_MX_1.2_048.wav,it is a,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-11-14_10-51-26_MX_1.2/myst_012020_2013-11-14_10-51-26_MX_1.2_034.wav,no idea,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-11-14_10-51-26_MX_1.2/myst_012020_2013-11-14_10-51-26_MX_1.2_049.wav,it is a mixture,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-11-14_10-51-26_MX_1.2/myst_012020_2013-11-14_10-51-26_MX_1.2_053.wav,i have no idea,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-11-14_10-51-26_MX_1.2/myst_012020_2013-11-14_10-51-26_MX_1.2_040.wav,by evaporating the water,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-12-06_09-14-45_MX_2.4/myst_012020_2013-12-06_09-14-45_MX_2.4_018.wav,because they're staying separated,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-12-06_09-14-45_MX_2.4/myst_012020_2013-12-06_09-14-45_MX_2.4_004.wav,it will float,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-12-06_09-14-45_MX_2.4/myst_012020_2013-12-06_09-14-45_MX_2.4_005.wav,it will sink,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2014-01-13_08-14-38_MX_4.1/myst_012020_2014-01-13_08-14-38_MX_4.1_014.wav,a product,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2014-01-13_08-14-38_MX_4.1/myst_012020_2014-01-13_08-14-38_MX_4.1_035.wav,is going into the water,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2014-01-13_08-14-38_MX_4.1/myst_012020_2014-01-13_08-14-38_MX_4.1_026.wav,the precipitate,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2014-01-13_08-14-38_MX_4.1/myst_012020_2014-01-13_08-14-38_MX_4.1_005.wav,a product,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2014-01-13_08-14-38_MX_4.1/myst_012020_2014-01-13_08-14-38_MX_4.1_037.wav,a new product,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2014-01-13_08-14-38_MX_4.1/myst_012020_2014-01-13_08-14-38_MX_4.1_024.wav,it's making a product,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2014-01-13_08-14-38_MX_4.1/myst_012020_2014-01-13_08-14-38_MX_4.1_006.wav,a product,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2014-01-13_08-14-38_MX_4.1/myst_012020_2014-01-13_08-14-38_MX_4.1_032.wav,they yes yes they can,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2014-02-18_10-03-27_SRL_1.1/myst_012020_2014-02-18_10-03-27_SRL_1.1_001.wav,kay good,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2014-02-18_10-03-27_SRL_1.1/myst_012020_2014-02-18_10-03-27_SRL_1.1_023.wav,different places and yes and,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2014-03-10_10-53-18_SRL_3.2/myst_012020_2014-03-10_10-53-18_SRL_3.2_004.wav,rock minerals,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2014-03-10_10-53-18_SRL_3.2/myst_012020_2014-03-10_10-53-18_SRL_3.2_032.wav,they brake differently,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2014-03-10_10-53-18_SRL_3.2/myst_012020_2014-03-10_10-53-18_SRL_3.2_016.wav,does not scratch it,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2014-03-10_10-53-18_SRL_3.2/myst_012020_2014-03-10_10-53-18_SRL_3.2_006.wav,they are minerals,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2014-03-10_10-53-18_SRL_3.2/myst_012020_2014-03-10_10-53-18_SRL_3.2_027.wav,the lightness of a mineral,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-11-22_12-19-40_MX_1.3/myst_012020_2013-11-22_12-19-40_MX_1.3_002.wav,been talking about different solution,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-11-22_12-19-40_MX_1.3/myst_012020_2013-11-22_12-19-40_MX_1.3_013.wav,um magnets,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-11-22_12-19-40_MX_1.3/myst_012020_2013-11-22_12-19-40_MX_1.3_010.wav,please repeat,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-11-22_12-19-40_MX_1.3/myst_012020_2013-11-22_12-19-40_MX_1.3_028.wav,a solution,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-11-22_12-19-40_MX_1.3/myst_012020_2013-11-22_12-19-40_MX_1.3_026.wav,um evaporating,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-11-22_12-19-40_MX_1.3/myst_012020_2013-11-22_12-19-40_MX_1.3_014.wav,don't know,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-11-22_12-19-40_MX_1.3/myst_012020_2013-11-22_12-19-40_MX_1.3_005.wav,um it's being separated,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2013-11-22_12-19-40_MX_1.3/myst_012020_2013-11-22_12-19-40_MX_1.3_009.wav,to separate it,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2014-01-13_08-34-56_MX_4.2/myst_012020_2014-01-13_08-34-56_MX_4.2_010.wav,they have different particles,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2014-01-13_08-34-56_MX_4.2/myst_012020_2014-01-13_08-34-56_MX_4.2_007.wav,i'm not stupid,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2014-01-13_08-34-56_MX_4.2/myst_012020_2014-01-13_08-34-56_MX_4.2_011.wav,bye two four,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2014-01-13_08-34-56_MX_4.2/myst_012020_2014-01-13_08-34-56_MX_4.2_008.wav,i already told you doofus,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/012020/myst_012020_2014-01-13_08-34-56_MX_4.2/myst_012020_2014-01-13_08-34-56_MX_4.2_014.wav,that's weird looking,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993202/myst_993202_2008-16-10_00-00-00_VB_3.2/myst_993202_2008-16-10_00-00-00_VB_3.2_038.wav,sorry what,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993202/myst_993202_2008-09-10_00-00-00_VB_2.3/myst_993202_2008-09-10_00-00-00_VB_2.3_104.wav,a sandwich,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993202/myst_993202_2008-09-10_00-00-00_VB_2.3/myst_993202_2008-09-10_00-00-00_VB_2.3_056.wav,well this one holds more,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993202/myst_993202_2008-09-10_00-00-00_VB_2.3/myst_993202_2008-09-10_00-00-00_VB_2.3_036.wav,i can't really remember,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993202/myst_993202_2008-09-10_00-00-00_VB_2.3/myst_993202_2008-09-10_00-00-00_VB_2.3_072.wav,the height,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993202/myst_993202_2008-09-10_00-00-00_VB_2.3/myst_993202_2008-09-10_00-00-00_VB_2.3_088.wav,that like the,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993202/myst_993202_2008-09-10_00-00-00_VB_2.3/myst_993202_2008-09-10_00-00-00_VB_2.3_076.wav,one more time,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993202/myst_993202_2008-09-10_00-00-00_VB_2.3/myst_993202_2008-09-10_00-00-00_VB_2.3_004.wav,is this thing on right,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993202/myst_993202_2008-09-10_00-00-00_VB_2.3/myst_993202_2008-09-10_00-00-00_VB_2.3_042.wav,five inches,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993202/myst_993202_2008-02-10_00-00-00_VB_1.3/myst_993202_2008-02-10_00-00-00_VB_1.3_096.wav,thirty eight,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993202/myst_993202_2008-02-10_00-00-00_VB_1.3/myst_993202_2008-02-10_00-00-00_VB_1.3_110.wav,you would probably get seventeen,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993202/myst_993202_2008-02-10_00-00-00_VB_1.3/myst_993202_2008-02-10_00-00-00_VB_1.3_118.wav,can i hear mys,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993202/myst_993202_2008-02-10_00-00-00_VB_1.3/myst_993202_2008-02-10_00-00-00_VB_1.3_106.wav,and then,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993202/myst_993202_2008-02-10_00-00-00_VB_1.3/myst_993202_2008-02-10_00-00-00_VB_1.3_016.wav,right right mmm hmm,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993202/myst_993202_2008-02-10_00-00-00_VB_1.3/myst_993202_2008-02-10_00-00-00_VB_1.3_086.wav,um sorry,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993202/myst_993202_2008-23-10_00-00-00_VB_4.3/myst_993202_2008-23-10_00-00-00_VB_4.3_054.wav,can i hear my,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/993202/myst_993202_2008-23-10_00-00-00_VB_4.3/myst_993202_2008-23-10_00-00-00_VB_4.3_042.wav,by four,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995534/myst_995534_2010-08-03_00-00-00_ME_3.2/myst_995534_2010-08-03_00-00-00_ME_3.2_024.wav,it shows a parallel circuit,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995534/myst_995534_2010-08-03_00-00-00_ME_3.2/myst_995534_2010-08-03_00-00-00_ME_3.2_004.wav,a series circuit,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995534/myst_995534_2010-08-03_00-00-00_ME_3.2/myst_995534_2010-08-03_00-00-00_ME_3.2_012.wav,energy is flowing pretty fast,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995534/myst_995534_2010-08-03_00-00-00_ME_3.2/myst_995534_2010-08-03_00-00-00_ME_3.2_006.wav,open circuit closed circuit,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995534/myst_995534_2010-24-02_00-00-00_ME_1.3/myst_995534_2010-24-02_00-00-00_ME_1.3_022.wav,good bye,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995534/myst_995534_2010-24-02_00-00-00_ME_1.3/myst_995534_2010-24-02_00-00-00_ME_1.3_008.wav,the cup bro the,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995534/myst_995534_2010-05-03_00-00-00_ME_3.1/myst_995534_2010-05-03_00-00-00_ME_3.1_002.wav,magnetism and electricity,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995534/myst_995534_2010-10-03_00-00-00_ME_4.1/myst_995534_2010-10-03_00-00-00_ME_4.1_015.wav,i don't understand your question,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995534/myst_995534_2010-10-03_00-00-00_ME_4.1/myst_995534_2010-10-03_00-00-00_ME_4.1_029.wav,st iron or steel,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995534/myst_995534_2010-10-03_00-00-00_ME_4.1/myst_995534_2010-10-03_00-00-00_ME_4.1_030.wav,bye marnie,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995534/myst_995534_2010-10-03_00-00-00_ME_4.1/myst_995534_2010-10-03_00-00-00_ME_4.1_010.wav,that it is closed,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995534/myst_995534_2010-22-02_00-00-00_ME_1.1/myst_995534_2010-22-02_00-00-00_ME_1.1_015.wav,the top one will attract,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995534/myst_995534_2010-22-02_00-00-00_ME_1.1/myst_995534_2010-22-02_00-00-00_ME_1.1_014.wav,they're different colors,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995534/myst_995534_2010-22-02_00-00-00_ME_1.1/myst_995534_2010-22-02_00-00-00_ME_1.1_002.wav,magnetism and electricity,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995534/myst_995534_2010-22-02_00-00-00_ME_1.1/myst_995534_2010-22-02_00-00-00_ME_1.1_006.wav,my teacher,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995534/myst_995534_2010-22-02_00-00-00_ME_1.1/myst_995534_2010-22-02_00-00-00_ME_1.1_008.wav,nails stick to magnets,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995534/myst_995534_2010-22-02_00-00-00_ME_1.1/myst_995534_2010-22-02_00-00-00_ME_1.1_012.wav,the sides,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995534/myst_995534_2010-25-02_00-00-00_ME_1.4/myst_995534_2010-25-02_00-00-00_ME_1.4_009.wav,magnetic force,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995534/myst_995534_2010-25-02_00-00-00_ME_1.4/myst_995534_2010-25-02_00-00-00_ME_1.4_003.wav,some objects like cardboard,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995534/myst_995534_2010-25-02_00-00-00_ME_1.4/myst_995534_2010-25-02_00-00-00_ME_1.4_002.wav,magnetism and electricity,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995534/myst_995534_2010-25-02_00-00-00_ME_1.4/myst_995534_2010-25-02_00-00-00_ME_1.4_007.wav,that the,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995534/myst_995534_2010-25-02_00-00-00_ME_1.4/myst_995534_2010-25-02_00-00-00_ME_1.4_020.wav,iron or steel,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995534/myst_995534_2010-11-03_00-00-00_ME_4.2/myst_995534_2010-11-03_00-00-00_ME_4.2_017.wav,thank you,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995534/myst_995534_2010-11-03_00-00-00_ME_4.2/myst_995534_2010-11-03_00-00-00_ME_4.2_011.wav,iron or steel,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995534/myst_995534_2010-11-03_00-00-00_ME_4.2/myst_995534_2010-11-03_00-00-00_ME_4.2_005.wav,iron and steel,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995534/myst_995534_2010-11-03_00-00-00_ME_4.2/myst_995534_2010-11-03_00-00-00_ME_4.2_012.wav,a battery and a rivet,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995534/myst_995534_2010-11-03_00-00-00_ME_4.2/myst_995534_2010-11-03_00-00-00_ME_4.2_014.wav,a closed circuit,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995534/myst_995534_2010-11-03_00-00-00_ME_4.2/myst_995534_2010-11-03_00-00-00_ME_4.2_026.wav,double it by fives,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995534/myst_995534_2010-11-03_00-00-00_ME_4.2/myst_995534_2010-11-03_00-00-00_ME_4.2_030.wav,on a graph,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995534/myst_995534_2010-11-03_00-00-00_ME_4.2/myst_995534_2010-11-03_00-00-00_ME_4.2_029.wav,stronger more powerful,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995534/myst_995534_2010-11-03_00-00-00_ME_4.2/myst_995534_2010-11-03_00-00-00_ME_4.2_020.wav,it holds more washers,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995534/myst_995534_2010-11-03_00-00-00_ME_4.2/myst_995534_2010-11-03_00-00-00_ME_4.2_034.wav,i have to go bye,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995534/myst_995534_2010-11-03_00-00-00_ME_4.2/myst_995534_2010-11-03_00-00-00_ME_4.2_004.wav,the rivet,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-03-18_08-14-01_EE_1.4/myst_007097_2014-03-18_08-14-01_EE_1.4_036.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-03-18_08-14-01_EE_1.4/myst_007097_2014-03-18_08-14-01_EE_1.4_038.wav,heat energy,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-03-18_08-14-01_EE_1.4/myst_007097_2014-03-18_08-14-01_EE_1.4_008.wav,it knows,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-03-18_08-14-01_EE_1.4/myst_007097_2014-03-18_08-14-01_EE_1.4_012.wav,they went,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-03-18_08-14-01_EE_1.4/myst_007097_2014-03-18_08-14-01_EE_1.4_015.wav,the germs,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-03-18_08-14-01_EE_1.4/myst_007097_2014-03-18_08-14-01_EE_1.4_037.wav,you will not know,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-03-18_08-14-01_EE_1.4/myst_007097_2014-03-18_08-14-01_EE_1.4_006.wav,its melting,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-03-18_08-14-01_EE_1.4/myst_007097_2014-03-18_08-14-01_EE_1.4_040.wav,energy will not work,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-03-18_08-14-01_EE_1.4/myst_007097_2014-03-18_08-14-01_EE_1.4_016.wav,she is eating the food,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-03-18_08-14-01_EE_1.4/myst_007097_2014-03-18_08-14-01_EE_1.4_007.wav,because it's giving energy,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-03-18_08-14-01_EE_1.4/myst_007097_2014-03-18_08-14-01_EE_1.4_017.wav,its giving,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-03-18_08-14-01_EE_1.4/myst_007097_2014-03-18_08-14-01_EE_1.4_004.wav,because it gives you,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-03-18_08-14-01_EE_1.4/myst_007097_2014-03-18_08-14-01_EE_1.4_032.wav,do you wish to,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-03-18_08-14-01_EE_1.4/myst_007097_2014-03-18_08-14-01_EE_1.4_021.wav,her body is,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-03-18_08-14-01_EE_1.4/myst_007097_2014-03-18_08-14-01_EE_1.4_018.wav,its giving,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-03-18_08-14-01_EE_1.4/myst_007097_2014-03-18_08-14-01_EE_1.4_023.wav,you see the candle some,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-03-18_08-14-01_EE_1.4/myst_007097_2014-03-18_08-14-01_EE_1.4_026.wav,it will give energy,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-03-18_08-14-01_EE_1.4/myst_007097_2014-03-18_08-14-01_EE_1.4_031.wav,um oh,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-03-18_08-14-01_EE_1.4/myst_007097_2014-03-18_08-14-01_EE_1.4_030.wav,sun is giving the energy,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-03-18_08-14-01_EE_1.4/myst_007097_2014-03-18_08-14-01_EE_1.4_041.wav,the circuit,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-03-18_08-14-01_EE_1.4/myst_007097_2014-03-18_08-14-01_EE_1.4_029.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-03-18_08-14-01_EE_1.4/myst_007097_2014-03-18_08-14-01_EE_1.4_033.wav,its always a,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-24_12-56-05_EE_1.3/myst_007097_2014-02-24_12-56-05_EE_1.3_013.wav,when you do,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-24_12-56-05_EE_1.3/myst_007097_2014-02-24_12-56-05_EE_1.3_003.wav,it spinning,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-24_12-56-05_EE_1.3/myst_007097_2014-02-24_12-56-05_EE_1.3_002.wav,burning it was,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-24_12-56-05_EE_1.3/myst_007097_2014-02-24_12-56-05_EE_1.3_015.wav,there is not energy,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-24_12-56-05_EE_1.3/myst_007097_2014-02-24_12-56-05_EE_1.3_007.wav,it spinning,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-24_12-56-05_EE_1.3/myst_007097_2014-02-24_12-56-05_EE_1.3_020.wav,it's metal some are the,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-24_12-56-05_EE_1.3/myst_007097_2014-02-24_12-56-05_EE_1.3_022.wav,it will not spin,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-24_12-56-05_EE_1.3/myst_007097_2014-02-24_12-56-05_EE_1.3_014.wav,it not move on spin,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-24_12-56-05_EE_1.3/myst_007097_2014-02-24_12-56-05_EE_1.3_012.wav,it's made from electricity,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-24_12-56-05_EE_1.3/myst_007097_2014-02-24_12-56-05_EE_1.3_004.wav,the motors moving,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-24_12-56-05_EE_1.3/myst_007097_2014-02-24_12-56-05_EE_1.3_011.wav,these are wires motor,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-24_12-56-05_EE_1.3/myst_007097_2014-02-24_12-56-05_EE_1.3_006.wav,the wire,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-03-18_09-58-02_EE_2.1/myst_007097_2014-03-18_09-58-02_EE_2.1_015.wav,the d cell,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-03-18_09-58-02_EE_2.1/myst_007097_2014-03-18_09-58-02_EE_2.1_027.wav,the d cell stick together,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-03-18_09-58-02_EE_2.1/myst_007097_2014-03-18_09-58-02_EE_2.1_012.wav,its energy,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-03-18_09-58-02_EE_2.1/myst_007097_2014-03-18_09-58-02_EE_2.1_018.wav,might not have energy,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-03-18_09-58-02_EE_2.1/myst_007097_2014-03-18_09-58-02_EE_2.1_007.wav,its gives energy,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-03-18_09-58-02_EE_2.1/myst_007097_2014-03-18_09-58-02_EE_2.1_019.wav,stress lighting up a little,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-03-18_09-58-02_EE_2.1/myst_007097_2014-03-18_09-58-02_EE_2.1_021.wav,it will light up lighter,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-03-18_09-58-02_EE_2.1/myst_007097_2014-03-18_09-58-02_EE_2.1_014.wav,now energy,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-03-18_09-58-02_EE_2.1/myst_007097_2014-03-18_09-58-02_EE_2.1_010.wav,the docs,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-06_08-02-09_EE_1.1/myst_007097_2014-02-06_08-02-09_EE_1.1_004.wav,battery wire and light,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-06_08-02-09_EE_1.1/myst_007097_2014-02-06_08-02-09_EE_1.1_022.wav,the light,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-06_08-02-09_EE_1.1/myst_007097_2014-02-06_08-02-09_EE_1.1_035.wav,it doen't light up,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-06_08-02-09_EE_1.1/myst_007097_2014-02-06_08-02-09_EE_1.1_007.wav,because they has source,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-06_08-02-09_EE_1.1/myst_007097_2014-02-06_08-02-09_EE_1.1_016.wav,to help you see,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-06_08-02-09_EE_1.1/myst_007097_2014-02-06_08-02-09_EE_1.1_008.wav,they make the wire,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-06_08-02-09_EE_1.1/myst_007097_2014-02-06_08-02-09_EE_1.1_018.wav,that i revised like,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-06_08-02-09_EE_1.1/myst_007097_2014-02-06_08-02-09_EE_1.1_023.wav,the battery and the light,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-06_08-02-09_EE_1.1/myst_007097_2014-02-06_08-02-09_EE_1.1_027.wav,it switched around,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-06_08-02-09_EE_1.1/myst_007097_2014-02-06_08-02-09_EE_1.1_029.wav,it goes the other direction,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-06_08-02-09_EE_1.1/myst_007097_2014-02-06_08-02-09_EE_1.1_015.wav,carry the electricity,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-06_08-02-09_EE_1.1/myst_007097_2014-02-06_08-02-09_EE_1.1_030.wav,the minus,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-06_08-02-09_EE_1.1/myst_007097_2014-02-06_08-02-09_EE_1.1_033.wav,to see,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-06_08-02-09_EE_1.1/myst_007097_2014-02-06_08-02-09_EE_1.1_011.wav,it wouldn't light up,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-06_08-02-09_EE_1.1/myst_007097_2014-02-06_08-02-09_EE_1.1_006.wav,the wires,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-06_08-02-09_EE_1.1/myst_007097_2014-02-06_08-02-09_EE_1.1_019.wav,it's lighting up the light,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-02_12-56-13_EE_2.3/myst_007097_2014-04-02_12-56-13_EE_2.3_012.wav,repeat that,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-02_12-56-13_EE_2.3/myst_007097_2014-04-02_12-56-13_EE_2.3_025.wav,its energy force,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-02_12-56-13_EE_2.3/myst_007097_2014-04-02_12-56-13_EE_2.3_023.wav,will run out,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-02_12-56-13_EE_2.3/myst_007097_2014-04-02_12-56-13_EE_2.3_011.wav,dim light,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-02_12-56-13_EE_2.3/myst_007097_2014-04-02_12-56-13_EE_2.3_028.wav,the energy will start,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-02_12-56-13_EE_2.3/myst_007097_2014-04-02_12-56-13_EE_2.3_034.wav,because the energy starts,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-02_12-56-13_EE_2.3/myst_007097_2014-04-02_12-56-13_EE_2.3_022.wav,it runs out,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-02_12-56-13_EE_2.3/myst_007097_2014-04-02_12-56-13_EE_2.3_026.wav,its um when its ran,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-02_12-56-13_EE_2.3/myst_007097_2014-04-02_12-56-13_EE_2.3_035.wav,its because its,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-02_12-56-13_EE_2.3/myst_007097_2014-04-02_12-56-13_EE_2.3_008.wav,its its going,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-02_12-56-13_EE_2.3/myst_007097_2014-04-02_12-56-13_EE_2.3_029.wav,the energy will start,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-02_12-56-13_EE_2.3/myst_007097_2014-04-02_12-56-13_EE_2.3_024.wav,will start that,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-02_12-56-13_EE_2.3/myst_007097_2014-04-02_12-56-13_EE_2.3_015.wav,there it will its broken,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-02_12-56-13_EE_2.3/myst_007097_2014-04-02_12-56-13_EE_2.3_032.wav,because its energy,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-02_12-56-13_EE_2.3/myst_007097_2014-04-02_12-56-13_EE_2.3_013.wav,it will light up,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-02_12-56-13_EE_2.3/myst_007097_2014-04-02_12-56-13_EE_2.3_033.wav,nothing happening,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-02_12-56-13_EE_2.3/myst_007097_2014-04-02_12-56-13_EE_2.3_021.wav,its whenever north not attracting,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-02_12-56-13_EE_2.3/myst_007097_2014-04-02_12-56-13_EE_2.3_027.wav,this circuit hm like circuit,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-02_12-56-13_EE_2.3/myst_007097_2014-04-02_12-56-13_EE_2.3_004.wav,good how are you,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-11_13-08-13_EE_1.2/myst_007097_2014-02-11_13-08-13_EE_1.2_031.wav,starts to spin,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-11_13-08-13_EE_1.2/myst_007097_2014-02-11_13-08-13_EE_1.2_027.wav,giving energy,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-11_13-08-13_EE_1.2/myst_007097_2014-02-11_13-08-13_EE_1.2_004.wav,it give energy,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-11_13-08-13_EE_1.2/myst_007097_2014-02-11_13-08-13_EE_1.2_014.wav,it will turn on,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-11_13-08-13_EE_1.2/myst_007097_2014-02-11_13-08-13_EE_1.2_009.wav,to give power source,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-11_13-08-13_EE_1.2/myst_007097_2014-02-11_13-08-13_EE_1.2_010.wav,giving power,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-11_13-08-13_EE_1.2/myst_007097_2014-02-11_13-08-13_EE_1.2_034.wav,it gives the energy,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-11_13-08-13_EE_1.2/myst_007097_2014-02-11_13-08-13_EE_1.2_019.wav,to light the flag spin,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-11_13-08-13_EE_1.2/myst_007097_2014-02-11_13-08-13_EE_1.2_032.wav,it will stop spinning,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-11_13-08-13_EE_1.2/myst_007097_2014-02-11_13-08-13_EE_1.2_017.wav,to give power,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-11_13-08-13_EE_1.2/myst_007097_2014-02-11_13-08-13_EE_1.2_003.wav,its turning around,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-11_13-08-13_EE_1.2/myst_007097_2014-02-11_13-08-13_EE_1.2_018.wav,it stops,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-11_13-08-13_EE_1.2/myst_007097_2014-02-11_13-08-13_EE_1.2_029.wav,it will stop,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-11_13-08-13_EE_1.2/myst_007097_2014-02-11_13-08-13_EE_1.2_002.wav,burning energy,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-11_13-08-13_EE_1.2/myst_007097_2014-02-11_13-08-13_EE_1.2_011.wav,the flag is spinning,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-11_13-08-13_EE_1.2/myst_007097_2014-02-11_13-08-13_EE_1.2_033.wav,it will spin,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-11_13-08-13_EE_1.2/myst_007097_2014-02-11_13-08-13_EE_1.2_028.wav,the solar system,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-02-11_13-08-13_EE_1.2/myst_007097_2014-02-11_13-08-13_EE_1.2_007.wav,giving energy,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-02_12-52-18_EE_3.2/myst_007097_2014-04-02_12-52-18_EE_3.2_011.wav,there is,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-02_12-52-18_EE_3.2/myst_007097_2014-04-02_12-52-18_EE_3.2_005.wav,its repelling,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-02_12-52-18_EE_3.2/myst_007097_2014-04-02_12-52-18_EE_3.2_008.wav,its because they are same,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-02_12-52-18_EE_3.2/myst_007097_2014-04-02_12-52-18_EE_3.2_004.wav,it repel,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-02_12-52-18_EE_3.2/myst_007097_2014-04-02_12-52-18_EE_3.2_009.wav,because something they are different,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-04_11-04-07_EE_3.1/myst_007097_2014-04-04_11-04-07_EE_3.1_008.wav,the nail is attracting to,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-04_11-04-07_EE_3.1/myst_007097_2014-04-04_11-04-07_EE_3.1_027.wav,it will not attract,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-04_11-04-07_EE_3.1/myst_007097_2014-04-04_11-04-07_EE_3.1_014.wav,uh can you repeat that,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-04_11-04-07_EE_3.1/myst_007097_2014-04-04_11-04-07_EE_3.1_028.wav,it will not stick,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-04_11-04-07_EE_3.1/myst_007097_2014-04-04_11-04-07_EE_3.1_033.wav,it attract it attracts,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-04_11-04-07_EE_3.1/myst_007097_2014-04-04_11-04-07_EE_3.1_020.wav,magnets stick to iron,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-04_11-04-07_EE_3.1/myst_007097_2014-04-04_11-04-07_EE_3.1_031.wav,no metal,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-04_11-04-07_EE_3.1/myst_007097_2014-04-04_11-04-07_EE_3.1_030.wav,it will attract,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-04_11-04-07_EE_3.1/myst_007097_2014-04-04_11-04-07_EE_3.1_006.wav,it's attracting to the fridge,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-04_11-04-07_EE_3.1/myst_007097_2014-04-04_11-04-07_EE_3.1_035.wav,i think,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-04_11-04-07_EE_3.1/myst_007097_2014-04-04_11-04-07_EE_3.1_002.wav,about magnetism attracting and repelling,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-04_11-04-07_EE_3.1/myst_007097_2014-04-04_11-04-07_EE_3.1_032.wav,it will attract,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-04_11-04-07_EE_3.1/myst_007097_2014-04-04_11-04-07_EE_3.1_011.wav,uh may be rock,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-04_11-04-07_EE_3.1/myst_007097_2014-04-04_11-04-07_EE_3.1_001.wav,great how are you,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007097/myst_007097_2014-04-04_11-04-07_EE_3.1/myst_007097_2014-04-04_11-04-07_EE_3.1_010.wav,the iron,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997275/myst_997275_2009-12-01_00-00-00_ME_3.3/myst_997275_2009-12-01_00-00-00_ME_3.3_032.wav,um not that i remember,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997275/myst_997275_2009-12-01_00-00-00_ME_3.3/myst_997275_2009-12-01_00-00-00_ME_3.3_033.wav,ok bye,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997275/myst_997275_2009-12-01_00-00-00_ME_3.3/myst_997275_2009-12-01_00-00-00_ME_3.3_024.wav,not yet,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997275/myst_997275_2009-12-01_00-00-00_ME_3.3/myst_997275_2009-12-01_00-00-00_ME_3.3_023.wav,mabe i'm not really sure,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997275/myst_997275_2008-08-12_00-00-00_ME_2.1/myst_997275_2008-08-12_00-00-00_ME_2.1_047.wav,a circuit,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997275/myst_997275_2008-08-12_00-00-00_ME_2.1/myst_997275_2008-08-12_00-00-00_ME_2.1_031.wav,the battery,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997275/myst_997275_2008-08-12_00-00-00_ME_2.1/myst_997275_2008-08-12_00-00-00_ME_2.1_053.wav,um no,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997275/myst_997275_2008-08-12_00-00-00_ME_2.1/myst_997275_2008-08-12_00-00-00_ME_2.1_061.wav,yes it's a circuit,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997275/myst_997275_2008-08-12_00-00-00_ME_2.1/myst_997275_2008-08-12_00-00-00_ME_2.1_041.wav,it flips it around,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997275/myst_997275_2008-08-12_00-00-00_ME_2.1/myst_997275_2008-08-12_00-00-00_ME_2.1_069.wav,into the light bulb,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997275/myst_997275_2008-08-12_00-00-00_ME_2.1/myst_997275_2008-08-12_00-00-00_ME_2.1_021.wav,e place where,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014019/myst_014019_2013-12-16_13-44-19_MX_1.1/myst_014019_2013-12-16_13-44-19_MX_1.1_028.wav,it is called water,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014019/myst_014019_2013-12-16_13-44-19_MX_1.1/myst_014019_2013-12-16_13-44-19_MX_1.1_001.wav,oh okay uh good,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014019/myst_014019_2013-12-16_13-44-19_MX_1.1/myst_014019_2013-12-16_13-44-19_MX_1.1_022.wav,it's a solution,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014019/myst_014019_2013-12-16_13-44-19_MX_1.1/myst_014019_2013-12-16_13-44-19_MX_1.1_013.wav,they're separating,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014019/myst_014019_2013-12-16_13-44-19_MX_1.1/myst_014019_2013-12-16_13-44-19_MX_1.1_031.wav,good bye,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014019/myst_014019_2013-12-16_13-44-19_MX_1.1/myst_014019_2013-12-16_13-44-19_MX_1.1_006.wav,they float,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014019/myst_014019_2013-12-16_13-44-19_MX_1.1/myst_014019_2013-12-16_13-44-19_MX_1.1_004.wav,they are all mixtures,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014019/myst_014019_2013-12-16_13-44-19_MX_1.1/myst_014019_2013-12-16_13-44-19_MX_1.1_008.wav,it's called a mixture,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014019/myst_014019_2014-01-13_13-45-00_MX_2.1/myst_014019_2014-01-13_13-45-00_MX_2.1_014.wav,they're more diluted,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014019/myst_014019_2014-01-13_13-45-00_MX_2.1/myst_014019_2014-01-13_13-45-00_MX_2.1_005.wav,the solvent,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014019/myst_014019_2014-01-13_13-45-00_MX_2.1/myst_014019_2014-01-13_13-45-00_MX_2.1_009.wav,weight taste and color,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014019/myst_014019_2014-01-13_13-45-00_MX_2.1/myst_014019_2014-01-13_13-45-00_MX_2.1_021.wav,we can add more water,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014019/myst_014019_2014-01-13_13-45-00_MX_2.1/myst_014019_2014-01-13_13-45-00_MX_2.1_004.wav,a mixture,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014019/myst_014019_2014-01-13_13-45-00_MX_2.1/myst_014019_2014-01-13_13-45-00_MX_2.1_001.wav,i'm good,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014019/myst_014019_2014-01-13_13-45-00_MX_2.1/myst_014019_2014-01-13_13-45-00_MX_2.1_015.wav,it is more diluted,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014019/myst_014019_2014-01-15_12-31-39_MX_2.2/myst_014019_2014-01-15_12-31-39_MX_2.2_015.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014019/myst_014019_2014-01-15_12-31-39_MX_2.2/myst_014019_2014-01-15_12-31-39_MX_2.2_014.wav,by doing gram adding,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014019/myst_014019_2013-12-18_12-27-32_MX_1.2/myst_014019_2013-12-18_12-27-32_MX_1.2_026.wav,a mixture,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014019/myst_014019_2013-12-18_12-27-32_MX_1.2/myst_014019_2013-12-18_12-27-32_MX_1.2_005.wav,a solvent hello what,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014019/myst_014019_2013-12-18_12-27-32_MX_1.2/myst_014019_2013-12-18_12-27-32_MX_1.2_019.wav,the mass is increasing,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014019/myst_014019_2013-12-18_12-27-32_MX_1.2/myst_014019_2013-12-18_12-27-32_MX_1.2_034.wav,i think it's a solution,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014019/myst_014019_2013-12-18_12-27-32_MX_1.2/myst_014019_2013-12-18_12-27-32_MX_1.2_023.wav,a mixture,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014019/myst_014019_2013-12-18_12-27-32_MX_1.2/myst_014019_2013-12-18_12-27-32_MX_1.2_039.wav,it is evaporating,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014019/myst_014019_2013-12-18_12-27-32_MX_1.2/myst_014019_2013-12-18_12-27-32_MX_1.2_027.wav,a mixture,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014019/myst_014019_2013-12-18_12-27-32_MX_1.2/myst_014019_2013-12-18_12-27-32_MX_1.2_013.wav,the salt,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/014019/myst_014019_2013-12-18_12-27-32_MX_1.2/myst_014019_2013-12-18_12-27-32_MX_1.2_041.wav,you could let it evaporate,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990564/myst_990564_2010-07-04_00-00-00_MS_1.3/myst_990564_2010-07-04_00-00-00_MS_1.3_018.wav,waist to knee and stuff,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990564/myst_990564_2010-07-04_00-00-00_MS_1.3/myst_990564_2010-07-04_00-00-00_MS_1.3_002.wav,um inches centimeters and millimeters,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990564/myst_990564_2010-07-04_00-00-00_MS_1.3/myst_990564_2010-07-04_00-00-00_MS_1.3_004.wav,it's easier to measure,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990564/myst_990564_2010-07-04_00-00-00_MS_1.3/myst_990564_2010-07-04_00-00-00_MS_1.3_001.wav,hi hi marney,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990564/myst_990564_2010-07-04_00-00-00_MS_1.3/myst_990564_2010-07-04_00-00-00_MS_1.3_003.wav,marnie i don't understand that,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990564/myst_990564_2010-07-04_00-00-00_MS_1.3/myst_990564_2010-07-04_00-00-00_MS_1.3_026.wav,they are the same size,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990564/myst_990564_2010-07-04_00-00-00_MS_1.3/myst_990564_2010-07-04_00-00-00_MS_1.3_005.wav,i don't understand that,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990564/myst_990564_2010-07-04_00-00-00_MS_1.3/myst_990564_2010-07-04_00-00-00_MS_1.3_016.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990564/myst_990564_2010-07-04_00-00-00_MS_1.3/myst_990564_2010-07-04_00-00-00_MS_1.3_019.wav,you could like um,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997233/myst_997233_2008-20-11_00-00-00_ME_1.3/myst_997233_2008-20-11_00-00-00_ME_1.3_036.wav,you're welcome,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997233/myst_997233_2008-20-11_00-00-00_ME_1.3/myst_997233_2008-20-11_00-00-00_ME_1.3_014.wav,yes it was,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997233/myst_997233_2008-20-11_00-00-00_ME_1.3/myst_997233_2008-20-11_00-00-00_ME_1.3_026.wav,yes they did,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997233/myst_997233_2008-20-11_00-00-00_ME_1.3/myst_997233_2008-20-11_00-00-00_ME_1.3_006.wav,the magnetic force breaks,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997233/myst_997233_2008-15-12_00-00-00_ME_2.3/myst_997233_2008-15-12_00-00-00_ME_2.3_045.wav,flow through,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997233/myst_997233_2008-15-12_00-00-00_ME_2.3/myst_997233_2008-15-12_00-00-00_ME_2.3_061.wav,ttery and the switch,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-20_12-45-29_EE_2.3/myst_007078_2014-03-20_12-45-29_EE_2.3_031.wav,the filament is broken,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-20_12-45-29_EE_2.3/myst_007078_2014-03-20_12-45-29_EE_2.3_012.wav,it's not a circuit,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-20_12-45-29_EE_2.3/myst_007078_2014-03-20_12-45-29_EE_2.3_021.wav,when the bulb rays,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-20_12-45-29_EE_2.3/myst_007078_2014-03-20_12-45-29_EE_2.3_028.wav,i broke it,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-20_12-45-29_EE_2.3/myst_007078_2014-03-20_12-45-29_EE_2.3_033.wav,because the filament is broken,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-20_12-45-29_EE_2.3/myst_007078_2014-03-20_12-45-29_EE_2.3_013.wav,can you repeat that slowly,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-20_12-45-29_EE_2.3/myst_007078_2014-03-20_12-45-29_EE_2.3_022.wav,a light bulb not work,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-20_12-45-29_EE_2.3/myst_007078_2014-03-20_12-45-29_EE_2.3_030.wav,the breaking filmament,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-20_12-45-29_EE_2.3/myst_007078_2014-03-20_12-45-29_EE_2.3_008.wav,a series circuit,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-20_12-45-29_EE_2.3/myst_007078_2014-03-20_12-45-29_EE_2.3_016.wav,because it's not the cracks,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-20_12-45-29_EE_2.3/myst_007078_2014-03-20_12-45-29_EE_2.3_004.wav,that it's a circuit,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-12_09-57-41_EE_1.2/myst_007078_2014-02-12_09-57-41_EE_1.2_017.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-12_09-57-41_EE_1.2/myst_007078_2014-02-12_09-57-41_EE_1.2_029.wav,its not complete,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-12_09-57-41_EE_1.2/myst_007078_2014-02-12_09-57-41_EE_1.2_023.wav,i don't,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-12_09-57-41_EE_1.2/myst_007078_2014-02-12_09-57-41_EE_1.2_010.wav,the flag moves,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-12_09-57-41_EE_1.2/myst_007078_2014-02-12_09-57-41_EE_1.2_016.wav,in a complete circuit,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-12_09-57-41_EE_1.2/myst_007078_2014-02-12_09-57-41_EE_1.2_018.wav,the flag stops moving,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-12_09-57-41_EE_1.2/myst_007078_2014-02-12_09-57-41_EE_1.2_027.wav,the flag spin,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-12_09-57-41_EE_1.2/myst_007078_2014-02-12_09-57-41_EE_1.2_019.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-12_09-57-41_EE_1.2/myst_007078_2014-02-12_09-57-41_EE_1.2_013.wav,it stop,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-12_09-57-41_EE_1.2/myst_007078_2014-02-12_09-57-41_EE_1.2_007.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-04-04_11-04-00_EE_3.1/myst_007078_2014-04-04_11-04-00_EE_3.1_024.wav,can you repeat that please,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-04-04_11-04-00_EE_3.1/myst_007078_2014-04-04_11-04-00_EE_3.1_016.wav,the steel,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-04-04_11-04-00_EE_3.1/myst_007078_2014-04-04_11-04-00_EE_3.1_008.wav,repeat that,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-04-04_11-04-00_EE_3.1/myst_007078_2014-04-04_11-04-00_EE_3.1_018.wav,it won't stick,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-04-04_11-04-00_EE_3.1/myst_007078_2014-04-04_11-04-00_EE_3.1_002.wav,we've been learning about magnetism,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-04-04_11-04-00_EE_3.1/myst_007078_2014-04-04_11-04-00_EE_3.1_019.wav,it doesn't stick,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-04-04_11-04-00_EE_3.1/myst_007078_2014-04-04_11-04-00_EE_3.1_009.wav,repeat that please,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-28_12-55-40_EE_1.4/myst_007078_2014-02-28_12-55-40_EE_1.4_005.wav,it's melt,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-28_12-55-40_EE_1.4/myst_007078_2014-02-28_12-55-40_EE_1.4_041.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-28_12-55-40_EE_1.4/myst_007078_2014-02-28_12-55-40_EE_1.4_012.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-28_12-55-40_EE_1.4/myst_007078_2014-02-28_12-55-40_EE_1.4_040.wav,heat energy,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-28_12-55-40_EE_1.4/myst_007078_2014-02-28_12-55-40_EE_1.4_017.wav,am i don't know,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-28_12-55-40_EE_1.4/myst_007078_2014-02-28_12-55-40_EE_1.4_008.wav,heat energy,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-28_12-55-40_EE_1.4/myst_007078_2014-02-28_12-55-40_EE_1.4_032.wav,can you repeat that,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-28_12-55-40_EE_1.4/myst_007078_2014-02-28_12-55-40_EE_1.4_021.wav,out away,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-28_12-55-40_EE_1.4/myst_007078_2014-02-28_12-55-40_EE_1.4_028.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-28_12-55-40_EE_1.4/myst_007078_2014-02-28_12-55-40_EE_1.4_044.wav,it becomes during,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-28_12-55-40_EE_1.4/myst_007078_2014-02-28_12-55-40_EE_1.4_015.wav,am i doing here,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-28_12-55-40_EE_1.4/myst_007078_2014-02-28_12-55-40_EE_1.4_031.wav,heat energy,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-28_12-55-40_EE_1.4/myst_007078_2014-02-28_12-55-40_EE_1.4_018.wav,sound energy,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-28_12-55-40_EE_1.4/myst_007078_2014-02-28_12-55-40_EE_1.4_035.wav,don't know,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-28_12-55-40_EE_1.4/myst_007078_2014-02-28_12-55-40_EE_1.4_038.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-28_12-55-40_EE_1.4/myst_007078_2014-02-28_12-55-40_EE_1.4_046.wav,bye marnie,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-28_12-55-40_EE_1.4/myst_007078_2014-02-28_12-55-40_EE_1.4_013.wav,heat energy,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-28_12-55-40_EE_1.4/myst_007078_2014-02-28_12-55-40_EE_1.4_011.wav,heat heat,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-28_12-55-40_EE_1.4/myst_007078_2014-02-28_12-55-40_EE_1.4_020.wav,sound energy is coming,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-28_12-55-40_EE_1.4/myst_007078_2014-02-28_12-55-40_EE_1.4_030.wav,i will turning into fire,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-28_12-55-40_EE_1.4/myst_007078_2014-02-28_12-55-40_EE_1.4_042.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-28_12-55-40_EE_1.4/myst_007078_2014-02-28_12-55-40_EE_1.4_010.wav,heat energy,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-28_12-55-40_EE_1.4/myst_007078_2014-02-28_12-55-40_EE_1.4_039.wav,i don't,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-04_12-59-20_EE_1.1/myst_007078_2014-02-04_12-59-20_EE_1.1_029.wav,i don't really know,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-04_12-59-20_EE_1.1/myst_007078_2014-02-04_12-59-20_EE_1.1_009.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-04_12-59-20_EE_1.1/myst_007078_2014-02-04_12-59-20_EE_1.1_005.wav,a d cell battery,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-04_12-59-20_EE_1.1/myst_007078_2014-02-04_12-59-20_EE_1.1_001.wav,i'm doing good,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-04_12-59-20_EE_1.1/myst_007078_2014-02-04_12-59-20_EE_1.1_019.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-04_12-59-20_EE_1.1/myst_007078_2014-02-04_12-59-20_EE_1.1_004.wav,um i don't know,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-04_12-59-20_EE_1.1/myst_007078_2014-02-04_12-59-20_EE_1.1_010.wav,power electricity electricity source,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-02-04_12-59-20_EE_1.1/myst_007078_2014-02-04_12-59-20_EE_1.1_026.wav,the positive side,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-07_11-08-35_EE_1.4/myst_007078_2014-03-07_11-08-35_EE_1.4_015.wav,it's flaming,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-07_11-08-35_EE_1.4/myst_007078_2014-03-07_11-08-35_EE_1.4_013.wav,that's sound like this fsssssshhh,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-07_11-08-35_EE_1.4/myst_007078_2014-03-07_11-08-35_EE_1.4_007.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-07_11-08-35_EE_1.4/myst_007078_2014-03-07_11-08-35_EE_1.4_030.wav,no signal,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-07_11-08-35_EE_1.4/myst_007078_2014-03-07_11-08-35_EE_1.4_034.wav,ha umm i don't know,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-07_11-08-35_EE_1.4/myst_007078_2014-03-07_11-08-35_EE_1.4_029.wav,sound sound ha,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-07_11-08-35_EE_1.4/myst_007078_2014-03-07_11-08-35_EE_1.4_006.wav,it's melting yeah it's melting,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-07_11-08-35_EE_1.4/myst_007078_2014-03-07_11-08-35_EE_1.4_008.wav,it melts,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-07_11-08-35_EE_1.4/myst_007078_2014-03-07_11-08-35_EE_1.4_010.wav,heat energy heat energy,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-07_11-08-35_EE_1.4/myst_007078_2014-03-07_11-08-35_EE_1.4_017.wav,he's freak and walking,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-07_11-08-35_EE_1.4/myst_007078_2014-03-07_11-08-35_EE_1.4_040.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-07_11-08-35_EE_1.4/myst_007078_2014-03-07_11-08-35_EE_1.4_026.wav,fire will come fire there,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-07_11-08-35_EE_1.4/myst_007078_2014-03-07_11-08-35_EE_1.4_033.wav,i have no plan inside,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-07_11-08-35_EE_1.4/myst_007078_2014-03-07_11-08-35_EE_1.4_041.wav,un renewable sources,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-18_10-18-04_EE_2.2/myst_007078_2014-03-18_10-18-04_EE_2.2_012.wav,i believed,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-18_10-18-04_EE_2.2/myst_007078_2014-03-18_10-18-04_EE_2.2_014.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-18_10-18-04_EE_2.2/myst_007078_2014-03-18_10-18-04_EE_2.2_002.wav,no signal,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-18_10-18-04_EE_2.2/myst_007078_2014-03-18_10-18-04_EE_2.2_029.wav,number one,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-18_10-18-04_EE_2.2/myst_007078_2014-03-18_10-18-04_EE_2.2_013.wav,i said,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-18_10-18-04_EE_2.2/myst_007078_2014-03-18_10-18-04_EE_2.2_010.wav,no signal,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-18_10-18-04_EE_2.2/myst_007078_2014-03-18_10-18-04_EE_2.2_021.wav,it's some,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-18_10-18-04_EE_2.2/myst_007078_2014-03-18_10-18-04_EE_2.2_003.wav,ah an open circuit,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-18_10-18-04_EE_2.2/myst_007078_2014-03-18_10-18-04_EE_2.2_009.wav,i don't,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-18_10-18-04_EE_2.2/myst_007078_2014-03-18_10-18-04_EE_2.2_001.wav,so mornie,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-18_08-51-15_EE_2.1/myst_007078_2014-03-18_08-51-15_EE_2.1_004.wav,ah umm,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-18_08-51-15_EE_2.1/myst_007078_2014-03-18_08-51-15_EE_2.1_021.wav,it won't glow,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-18_08-51-15_EE_2.1/myst_007078_2014-03-18_08-51-15_EE_2.1_015.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-18_08-51-15_EE_2.1/myst_007078_2014-03-18_08-51-15_EE_2.1_013.wav,the blue dots is electricity,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-18_08-51-15_EE_2.1/myst_007078_2014-03-18_08-51-15_EE_2.1_009.wav,what picture,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-18_08-51-15_EE_2.1/myst_007078_2014-03-18_08-51-15_EE_2.1_008.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-18_08-51-15_EE_2.1/myst_007078_2014-03-18_08-51-15_EE_2.1_010.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-18_08-51-15_EE_2.1/myst_007078_2014-03-18_08-51-15_EE_2.1_016.wav,can you repeat that,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-18_08-51-15_EE_2.1/myst_007078_2014-03-18_08-51-15_EE_2.1_031.wav,hi mornie,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-18_08-51-15_EE_2.1/myst_007078_2014-03-18_08-51-15_EE_2.1_020.wav,they long glow possibly,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-03-18_08-51-15_EE_2.1/myst_007078_2014-03-18_08-51-15_EE_2.1_017.wav,i believe one,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-04-24_08-05-27_EE_2.3/myst_007078_2014-04-24_08-05-27_EE_2.3_005.wav,no signal,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-04-24_08-05-27_EE_2.3/myst_007078_2014-04-24_08-05-27_EE_2.3_002.wav,no signal,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-04-24_08-05-27_EE_2.3/myst_007078_2014-04-24_08-05-27_EE_2.3_003.wav,no signal,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-04-24_08-05-27_EE_2.3/myst_007078_2014-04-24_08-05-27_EE_2.3_004.wav,no signal,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/007078/myst_007078_2014-04-24_08-05-27_EE_2.3/myst_007078_2014-04-24_08-05-27_EE_2.3_001.wav,no signal,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008057/myst_008057_2014-05-06_09-09-47_EE_5.1/myst_008057_2014-05-06_09-09-47_EE_5.1_013.wav,colors you see colors,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008057/myst_008057_2014-05-06_09-09-47_EE_5.1/myst_008057_2014-05-06_09-09-47_EE_5.1_008.wav,it makes it more visible,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008057/myst_008057_2014-05-06_09-09-47_EE_5.1/myst_008057_2014-05-06_09-09-47_EE_5.1_004.wav,you see color,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008057/myst_008057_2014-04-09_09-35-13_EE_1.4/myst_008057_2014-04-09_09-35-13_EE_1.4_008.wav,energy energy,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008057/myst_008057_2014-04-09_09-35-13_EE_1.4/myst_008057_2014-04-09_09-35-13_EE_1.4_009.wav,the wick,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008057/myst_008057_2014-04-09_09-35-13_EE_1.4/myst_008057_2014-04-09_09-35-13_EE_1.4_002.wav,we have been exploring circuit,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008057/myst_008057_2014-04-09_09-35-13_EE_1.4/myst_008057_2014-04-09_09-35-13_EE_1.4_015.wav,what i didn't hear,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008057/myst_008057_2014-04-09_09-35-13_EE_1.4/myst_008057_2014-04-09_09-35-13_EE_1.4_001.wav,good i guess,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008057/myst_008057_2014-04-09_09-35-13_EE_1.4/myst_008057_2014-04-09_09-35-13_EE_1.4_022.wav,fossil fuel,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008057/myst_008057_2014-04-09_09-35-13_EE_1.4/myst_008057_2014-04-09_09-35-13_EE_1.4_010.wav,the wick and the wax,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008057/myst_008057_2014-05-01_08-36-04_EE_4.2/myst_008057_2014-05-01_08-36-04_EE_4.2_003.wav,an iron rivet,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008057/myst_008057_2014-05-01_08-36-04_EE_4.2/myst_008057_2014-05-01_08-36-04_EE_4.2_015.wav,the more washers it pick,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008057/myst_008057_2014-05-01_08-36-04_EE_4.2/myst_008057_2014-05-01_08-36-04_EE_4.2_042.wav,the it says washers,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008057/myst_008057_2014-05-01_08-36-04_EE_4.2/myst_008057_2014-05-01_08-36-04_EE_4.2_046.wav,it picks up more washer,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008057/myst_008057_2014-05-12_11-19-16_EE_5.2/myst_008057_2014-05-12_11-19-16_EE_5.2_021.wav,it's gonna stay darker,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008057/myst_008057_2014-05-12_11-19-16_EE_5.2/myst_008057_2014-05-12_11-19-16_EE_5.2_023.wav,because it it reflects green,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/008057/myst_008057_2014-05-12_11-19-16_EE_5.2/myst_008057_2014-05-12_11-19-16_EE_5.2_025.wav,um the red,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995305/myst_995305_2009-12-02_00-00-00_ME_1.1/myst_995305_2009-12-02_00-00-00_ME_1.1_011.wav,that's alright,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995305/myst_995305_2009-12-02_00-00-00_ME_1.1/myst_995305_2009-12-02_00-00-00_ME_1.1_021.wav,it's still the same picture,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995305/myst_995305_2009-12-02_00-00-00_ME_1.1/myst_995305_2009-12-02_00-00-00_ME_1.1_013.wav,the picture or in class,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995305/myst_995305_2009-12-02_00-00-00_ME_1.1/myst_995305_2009-12-02_00-00-00_ME_1.1_016.wav,because somethings aren't magnetic,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995305/myst_995305_2009-12-02_00-00-00_ME_1.1/myst_995305_2009-12-02_00-00-00_ME_1.1_004.wav,we've been studying magnets,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995305/myst_995305_2009-12-02_00-00-00_ME_1.1/myst_995305_2009-12-02_00-00-00_ME_1.1_023.wav,cause aluminum isn't magnetic,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995305/myst_995305_2009-12-02_00-00-00_ME_1.1/myst_995305_2009-12-02_00-00-00_ME_1.1_012.wav,you're welcome,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995305/myst_995305_2009-12-02_00-00-00_ME_1.1/myst_995305_2009-12-02_00-00-00_ME_1.1_033.wav,thank you,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995305/myst_995305_2009-12-03_00-00-00_ME_3.2/myst_995305_2009-12-03_00-00-00_ME_3.2_017.wav,the energy flowing through,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995305/myst_995305_2009-12-03_00-00-00_ME_3.2/myst_995305_2009-12-03_00-00-00_ME_3.2_028.wav,back to the battery,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995305/myst_995305_2009-12-03_00-00-00_ME_3.2/myst_995305_2009-12-03_00-00-00_ME_3.2_025.wav,in the bottom,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995305/myst_995305_2009-12-03_00-00-00_ME_3.2/myst_995305_2009-12-03_00-00-00_ME_3.2_024.wav,it never stops,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995305/myst_995305_2009-12-03_00-00-00_ME_3.2/myst_995305_2009-12-03_00-00-00_ME_3.2_022.wav,the electricity flowing through,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995305/myst_995305_2009-12-03_00-00-00_ME_3.2/myst_995305_2009-12-03_00-00-00_ME_3.2_033.wav,does component mean,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/995305/myst_995305_2009-12-03_00-00-00_ME_3.2/myst_995305_2009-12-03_00-00-00_ME_3.2_010.wav,i don't really know,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990555/myst_990555_2010-13-04_00-00-00_MS_3.1/myst_990555_2010-13-04_00-00-00_MS_3.1_023.wav,um what's a liter beaker,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990555/myst_990555_2010-13-04_00-00-00_MS_3.1/myst_990555_2010-13-04_00-00-00_MS_3.1_020.wav,you're welcome,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990555/myst_990555_2010-06-04_00-00-00_MS_1.2/myst_990555_2010-06-04_00-00-00_MS_1.2_025.wav,thank you,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990555/myst_990555_2010-06-04_00-00-00_MS_1.2/myst_990555_2010-06-04_00-00-00_MS_1.2_010.wav,ten inches,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990555/myst_990555_2010-06-04_00-00-00_MS_1.2/myst_990555_2010-06-04_00-00-00_MS_1.2_012.wav,about five inches,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-21_13-05-03_LS_2.3/myst_002034_2014-03-21_13-05-03_LS_2.3_014.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-21_13-05-03_LS_2.3/myst_002034_2014-03-21_13-05-03_LS_2.3_021.wav,we both have organisms,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-21_13-05-03_LS_2.3/myst_002034_2014-03-21_13-05-03_LS_2.3_015.wav,they're all different shapes,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-21_13-05-03_LS_2.3/myst_002034_2014-03-21_13-05-03_LS_2.3_037.wav,helps you digest,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-21_13-05-03_LS_2.3/myst_002034_2014-03-21_13-05-03_LS_2.3_019.wav,blood cells and,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-21_13-05-03_LS_2.3/myst_002034_2014-03-21_13-05-03_LS_2.3_009.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-21_13-05-03_LS_2.3/myst_002034_2014-03-21_13-05-03_LS_2.3_022.wav,they're cells,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-21_13-05-03_LS_2.3/myst_002034_2014-03-21_13-05-03_LS_2.3_050.wav,we we learned of,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-21_13-05-03_LS_2.3/myst_002034_2014-03-21_13-05-03_LS_2.3_020.wav,they're both organisms,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-21_13-05-03_LS_2.3/myst_002034_2014-03-21_13-05-03_LS_2.3_007.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-21_13-05-03_LS_2.3/myst_002034_2014-03-21_13-05-03_LS_2.3_011.wav,he could,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-21_13-05-03_LS_2.3/myst_002034_2014-03-21_13-05-03_LS_2.3_016.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-21_13-05-03_LS_2.3/myst_002034_2014-03-21_13-05-03_LS_2.3_034.wav,the digestive system,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-21_13-05-03_LS_2.3/myst_002034_2014-03-21_13-05-03_LS_2.3_042.wav,it's a long tube,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-21_13-05-03_LS_2.3/myst_002034_2014-03-21_13-05-03_LS_2.3_035.wav,how you digest food,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-21_13-05-03_LS_2.3/myst_002034_2014-03-21_13-05-03_LS_2.3_026.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-21_13-05-03_LS_2.3/myst_002034_2014-03-21_13-05-03_LS_2.3_031.wav,we both have an esophagus,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-21_13-05-03_LS_2.3/myst_002034_2014-03-21_13-05-03_LS_2.3_027.wav,they all have cells,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-21_13-05-03_LS_2.3/myst_002034_2014-03-21_13-05-03_LS_2.3_023.wav,they're both cells,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-04-16_08-41-22_LS_3.3/myst_002034_2014-04-16_08-41-22_LS_3.3_028.wav,the lung,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-04-16_08-41-22_LS_3.3/myst_002034_2014-04-16_08-41-22_LS_3.3_013.wav,respiratory and action,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-05_10-38-35_LS_1.3/myst_002034_2014-03-05_10-38-35_LS_1.3_050.wav,don't know i'll pass,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-05_10-38-35_LS_1.3/myst_002034_2014-03-05_10-38-35_LS_1.3_010.wav,how are you,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-05_10-38-35_LS_1.3/myst_002034_2014-03-05_10-38-35_LS_1.3_018.wav,they produce stuff into themselves,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-05_10-38-35_LS_1.3/myst_002034_2014-03-05_10-38-35_LS_1.3_042.wav,plant eater,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-05_10-38-35_LS_1.3/myst_002034_2014-03-05_10-38-35_LS_1.3_033.wav,they eat berries and meat,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-05_10-38-35_LS_1.3/myst_002034_2014-03-05_10-38-35_LS_1.3_044.wav,is a decomposer,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-05_10-38-35_LS_1.3/myst_002034_2014-03-05_10-38-35_LS_1.3_039.wav,meat eater,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-05_10-38-35_LS_1.3/myst_002034_2014-03-05_10-38-35_LS_1.3_036.wav,not be a composer,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-05_10-38-35_LS_1.3/myst_002034_2014-03-05_10-38-35_LS_1.3_040.wav,a meat eater,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-05_10-38-35_LS_1.3/myst_002034_2014-03-05_10-38-35_LS_1.3_013.wav,there's producers consumers and,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-05_10-38-35_LS_1.3/myst_002034_2014-03-05_10-38-35_LS_1.3_041.wav,he's an omnivore,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-05_10-38-35_LS_1.3/myst_002034_2014-03-05_10-38-35_LS_1.3_019.wav,they're animals that eat producers,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-05_10-38-35_LS_1.3/myst_002034_2014-03-05_10-38-35_LS_1.3_047.wav,eat all the bad stuff,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-05_10-38-35_LS_1.3/myst_002034_2014-03-05_10-38-35_LS_1.3_045.wav,a decomposer,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-04-04_08-55-27_LS_3.1/myst_002034_2014-04-04_08-55-27_LS_3.1_018.wav,the air,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-04-04_08-55-27_LS_3.1/myst_002034_2014-04-04_08-55-27_LS_3.1_011.wav,the phloem,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-04-04_08-55-27_LS_3.1/myst_002034_2014-04-04_08-55-27_LS_3.1_012.wav,there's leaves,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-04-04_08-55-27_LS_3.1/myst_002034_2014-04-04_08-55-27_LS_3.1_016.wav,it has leaves in it,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-04-04_08-55-27_LS_3.1/myst_002034_2014-04-04_08-55-27_LS_3.1_014.wav,helps the plant grow,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-04-04_08-55-27_LS_3.1/myst_002034_2014-04-04_08-55-27_LS_3.1_009.wav,keeping the leaf in shape,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-04-30_10-35-59_LS_4.2/myst_002034_2014-04-30_10-35-59_LS_4.2_014.wav,that its pattern,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-04-30_10-35-59_LS_4.2/myst_002034_2014-04-30_10-35-59_LS_4.2_030.wav,by seeing,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-04-30_10-35-59_LS_4.2/myst_002034_2014-04-30_10-35-59_LS_4.2_012.wav,adaptation is it's hard shell,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-04-30_10-35-59_LS_4.2/myst_002034_2014-04-30_10-35-59_LS_4.2_031.wav,they're all using different stimuli,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-04-30_10-35-59_LS_4.2/myst_002034_2014-04-30_10-35-59_LS_4.2_016.wav,the teeth and the tail,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-04-30_10-35-59_LS_4.2/myst_002034_2014-04-30_10-35-59_LS_4.2_013.wav,about their adaptations,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-04-30_10-35-59_LS_4.2/myst_002034_2014-04-30_10-35-59_LS_4.2_007.wav,i see sight,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-04-30_10-35-59_LS_4.2/myst_002034_2014-04-30_10-35-59_LS_4.2_009.wav,the adaptations of the skunk,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-04-30_10-35-59_LS_4.2/myst_002034_2014-04-30_10-35-59_LS_4.2_004.wav,they're all using their sight,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-10_13-46-56_LS_2.1/myst_002034_2014-03-10_13-46-56_LS_2.1_018.wav,water air soil and sunlight,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-10_13-46-56_LS_2.1/myst_002034_2014-03-10_13-46-56_LS_2.1_003.wav,we did activating yeast,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-10_13-46-56_LS_2.1/myst_002034_2014-03-10_13-46-56_LS_2.1_051.wav,it doesn't have sunlight,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-10_13-46-56_LS_2.1/myst_002034_2014-03-10_13-46-56_LS_2.1_030.wav,i see a hamburger,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-10_13-46-56_LS_2.1/myst_002034_2014-03-10_13-46-56_LS_2.1_054.wav,it's not getting any air,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-10_13-46-56_LS_2.1/myst_002034_2014-03-10_13-46-56_LS_2.1_008.wav,it absorbs the animal cracker,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-10_13-46-56_LS_2.1/myst_002034_2014-03-10_13-46-56_LS_2.1_010.wav,yeast has tons of cells,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-10_13-46-56_LS_2.1/myst_002034_2014-03-10_13-46-56_LS_2.1_016.wav,we're we're growing plants,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-10_13-46-56_LS_2.1/myst_002034_2014-03-10_13-46-56_LS_2.1_026.wav,it the plant and sunlight,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-10_13-46-56_LS_2.1/myst_002034_2014-03-10_13-46-56_LS_2.1_007.wav,yeast is important,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-10_13-46-56_LS_2.1/myst_002034_2014-03-10_13-46-56_LS_2.1_039.wav,plant does not need shelter,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-10_13-46-56_LS_2.1/myst_002034_2014-03-10_13-46-56_LS_2.1_038.wav,a house,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-10_13-46-56_LS_2.1/myst_002034_2014-03-10_13-46-56_LS_2.1_005.wav,we're doing a,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-10_13-46-56_LS_2.1/myst_002034_2014-03-10_13-46-56_LS_2.1_004.wav,activating yeast,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-10_13-46-56_LS_2.1/myst_002034_2014-03-10_13-46-56_LS_2.1_043.wav,they're seeds,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-10_13-46-56_LS_2.1/myst_002034_2014-03-10_13-46-56_LS_2.1_001.wav,good how are you,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-05_10-13-12_LS_1.1/myst_002034_2014-03-05_10-13-12_LS_1.1_009.wav,your body is a system,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-05_10-13-12_LS_1.1/myst_002034_2014-03-05_10-13-12_LS_1.1_034.wav,thank you,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-05_10-13-12_LS_1.1/myst_002034_2014-03-05_10-13-12_LS_1.1_001.wav,good how are you,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-05_10-13-12_LS_1.1/myst_002034_2014-03-05_10-13-12_LS_1.1_004.wav,a car is a system,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002034/myst_002034_2014-03-05_10-13-12_LS_1.1/myst_002034_2014-03-05_10-13-12_LS_1.1_012.wav,the brain makes you think,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018212/myst_018212_2014-11-04_09-41-03_LS_2.3/myst_018212_2014-11-04_09-41-03_LS_2.3_011.wav,about brain cells,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018212/myst_018212_2014-11-04_09-41-03_LS_2.3/myst_018212_2014-11-04_09-41-03_LS_2.3_015.wav,that they make your skin,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018212/myst_018212_2014-11-04_09-41-03_LS_2.3/myst_018212_2014-11-04_09-41-03_LS_2.3_005.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018212/myst_018212_2014-11-04_09-41-03_LS_2.3/myst_018212_2014-11-04_09-41-03_LS_2.3_013.wav,i see skin cells,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018212/myst_018212_2014-11-04_09-41-03_LS_2.3/myst_018212_2014-11-04_09-41-03_LS_2.3_010.wav,they're brain cell,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018212/myst_018212_2014-11-04_09-41-03_LS_2.3/myst_018212_2014-11-04_09-41-03_LS_2.3_007.wav,that they're muscle cells,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018212/myst_018212_2014-11-21_08-57-29_LS_3.3/myst_018212_2014-11-21_08-57-29_LS_3.3_008.wav,look at you,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018212/myst_018212_2014-11-21_08-57-29_LS_3.3/myst_018212_2014-11-21_08-57-29_LS_3.3_012.wav,it is,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018212/myst_018212_2014-10-10_08-58-48_LS_1.3/myst_018212_2014-10-10_08-58-48_LS_1.3_012.wav,a is all about decomposers,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018212/myst_018212_2014-10-10_08-58-48_LS_1.3/myst_018212_2014-10-10_08-58-48_LS_1.3_003.wav,consumers producers and decomposers,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018212/myst_018212_2014-10-10_08-58-48_LS_1.3/myst_018212_2014-10-10_08-58-48_LS_1.3_024.wav,omnivores eat meat and plants,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018212/myst_018212_2014-11-12_08-59-57_LS_3.3/myst_018212_2014-11-12_08-59-57_LS_3.3_002.wav,about the human respiratory system,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018212/myst_018212_2014-11-12_08-59-57_LS_3.3/myst_018212_2014-11-12_08-59-57_LS_3.3_018.wav,the diaphragm,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018212/myst_018212_2014-11-12_08-59-57_LS_3.3/myst_018212_2014-11-12_08-59-57_LS_3.3_016.wav,gee i choose gee,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018212/myst_018212_2014-11-12_09-31-23_LS_3.1/myst_018212_2014-11-12_09-31-23_LS_3.1_001.wav,fine how are,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018212/myst_018212_2014-11-12_09-31-23_LS_3.1/myst_018212_2014-11-12_09-31-23_LS_3.1_006.wav,they're leaves,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018212/myst_018212_2014-11-12_09-31-23_LS_3.1/myst_018212_2014-11-12_09-31-23_LS_3.1_004.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018212/myst_018212_2014-11-04_09-27-43_LS_2.1/myst_018212_2014-11-04_09-27-43_LS_2.1_029.wav,yes they do,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018212/myst_018212_2014-11-04_09-27-43_LS_2.1/myst_018212_2014-11-04_09-27-43_LS_2.1_034.wav,no it,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018212/myst_018212_2014-11-04_09-27-43_LS_2.1/myst_018212_2014-11-04_09-27-43_LS_2.1_003.wav,the yeast study thingee majigy,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018212/myst_018212_2014-11-04_09-27-43_LS_2.1/myst_018212_2014-11-04_09-27-43_LS_2.1_012.wav,wheat seeds,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018212/myst_018212_2014-11-06_08-59-36_LS_3.3/myst_018212_2014-11-06_08-59-36_LS_3.3_002.wav,how plants get nutrients,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018212/myst_018212_2014-11-06_08-59-36_LS_3.3/myst_018212_2014-11-06_08-59-36_LS_3.3_014.wav,it's keeps your body alive,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018212/myst_018212_2014-11-04_09-00-57_LS_1.1/myst_018212_2014-11-04_09-00-57_LS_1.1_003.wav,they're pretty,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018212/myst_018212_2014-11-04_09-00-57_LS_1.1/myst_018212_2014-11-04_09-00-57_LS_1.1_018.wav,earth is a system,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018212/myst_018212_2014-11-04_09-00-57_LS_1.1/myst_018212_2014-11-04_09-00-57_LS_1.1_001.wav,the space i'm doing fine,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018212/myst_018212_2014-11-04_09-00-57_LS_1.1/myst_018212_2014-11-04_09-00-57_LS_1.1_036.wav,oh look,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018212/myst_018212_2014-11-04_09-00-57_LS_1.1/myst_018212_2014-11-04_09-00-57_LS_1.1_031.wav,biosphere is,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018212/myst_018212_2014-11-04_09-00-57_LS_1.1/myst_018212_2014-11-04_09-00-57_LS_1.1_015.wav,the respiratory system,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018212/myst_018212_2014-10-30_08-58-40_LS_1.1/myst_018212_2014-10-30_08-58-40_LS_1.1_011.wav,i see a,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018212/myst_018212_2014-10-30_08-58-40_LS_1.1/myst_018212_2014-10-30_08-58-40_LS_1.1_014.wav,a human body system,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018212/myst_018212_2014-10-30_08-58-40_LS_1.1/myst_018212_2014-10-30_08-58-40_LS_1.1_006.wav,it is a system,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018212/myst_018212_2014-10-30_08-58-40_LS_1.1/myst_018212_2014-10-30_08-58-40_LS_1.1_005.wav,the earth all systems,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/018212/myst_018212_2014-10-30_08-58-40_LS_1.1/myst_018212_2014-10-30_08-58-40_LS_1.1_007.wav,it is a living system,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002259/myst_002259_2015-03-13_13-30-35_LS_1.3/myst_002259_2015-03-13_13-30-35_LS_1.3_022.wav,it can not,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002259/myst_002259_2015-03-13_13-30-35_LS_1.3/myst_002259_2015-03-13_13-30-35_LS_1.3_014.wav,i can not hear you,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002259/myst_002259_2015-03-13_13-30-35_LS_1.3/myst_002259_2015-03-13_13-30-35_LS_1.3_021.wav,only eat plants,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002259/myst_002259_2015-03-13_13-30-35_LS_1.3/myst_002259_2015-03-13_13-30-35_LS_1.3_030.wav,it connects because they eat,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002259/myst_002259_2015-03-13_13-30-35_LS_1.3/myst_002259_2015-03-13_13-30-35_LS_1.3_037.wav,you're supposed to recap,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002259/myst_002259_2015-03-13_13-30-35_LS_1.3/myst_002259_2015-03-13_13-30-35_LS_1.3_015.wav,bacteria and fungi,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002259/myst_002259_2015-03-13_13-30-35_LS_1.3/myst_002259_2015-03-13_13-30-35_LS_1.3_027.wav,the article,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002259/myst_002259_2015-03-13_13-30-35_LS_1.3/myst_002259_2015-03-13_13-30-35_LS_1.3_029.wav,the consumers like,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002259/myst_002259_2015-03-13_13-30-35_LS_1.3/myst_002259_2015-03-13_13-30-35_LS_1.3_039.wav,that makes them,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002259/myst_002259_2015-03-13_13-30-35_LS_1.3/myst_002259_2015-03-13_13-30-35_LS_1.3_002.wav,decomposers consumers and producers,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002259/myst_002259_2015-03-13_13-30-35_LS_1.3/myst_002259_2015-03-13_13-30-35_LS_1.3_036.wav,spoiled world and a brat,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002259/myst_002259_2015-03-13_13-30-35_LS_1.3/myst_002259_2015-03-13_13-30-35_LS_1.3_011.wav,grass and a pine tree,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002259/myst_002259_2015-03-13_13-30-35_LS_1.3/myst_002259_2015-03-13_13-30-35_LS_1.3_038.wav,decomposers eat dead,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002259/myst_002259_2015-03-13_13-30-35_LS_1.3/myst_002259_2015-03-13_13-30-35_LS_1.3_025.wav,only eat meat,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002259/myst_002259_2015-03-13_13-30-35_LS_1.3/myst_002259_2015-03-13_13-30-35_LS_1.3_024.wav,touch down,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002259/myst_002259_2015-03-13_13-30-35_LS_1.3/myst_002259_2015-03-13_13-30-35_LS_1.3_007.wav,the snake hawk and the,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/002259/myst_002259_2015-03-13_13-30-35_LS_1.3/myst_002259_2015-03-13_13-30-35_LS_1.3_016.wav,a producer,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/986613/myst_986613_2010-01-04_00-00-00_WA_1.1/myst_986613_2010-01-04_00-00-00_WA_1.1_018.wav,you too,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/986613/myst_986613_2010-01-04_00-00-00_WA_1.1/myst_986613_2010-01-04_00-00-00_WA_1.1_017.wav,bye have a good day,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/986613/myst_986613_2010-01-04_00-00-00_WA_1.1/myst_986613_2010-01-04_00-00-00_WA_1.1_011.wav,it is on,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/986613/myst_986613_2010-01-04_00-00-00_WA_1.1/myst_986613_2010-01-04_00-00-00_WA_1.1_002.wav,we're working with water,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/986613/myst_986613_2010-02-04_00-00-00_WA_1.2/myst_986613_2010-02-04_00-00-00_WA_1.2_012.wav,i don't know,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/986613/myst_986613_2010-02-04_00-00-00_WA_1.2/myst_986613_2010-02-04_00-00-00_WA_1.2_014.wav,it flies everywhere,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/986613/myst_986613_2010-02-04_00-00-00_WA_1.2/myst_986613_2010-02-04_00-00-00_WA_1.2_019.wav,it gets really really tall,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/986613/myst_986613_2010-02-04_00-00-00_WA_1.2/myst_986613_2010-02-04_00-00-00_WA_1.2_024.wav,see you later too bye,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/986613/myst_986613_2010-02-04_00-00-00_WA_1.2/myst_986613_2010-02-04_00-00-00_WA_1.2_004.wav,it gets bigger,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997032/myst_997032_2008-29-01_00-00-00_ME_4.3/myst_997032_2008-29-01_00-00-00_ME_4.3_010.wav,yep mmm hmm,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997032/myst_997032_2008-29-01_00-00-00_ME_4.3/myst_997032_2008-29-01_00-00-00_ME_4.3_032.wav,nope nope um,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997032/myst_997032_2008-29-01_00-00-00_ME_4.3/myst_997032_2008-29-01_00-00-00_ME_4.3_039.wav,the wire basically so yeah,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997032/myst_997032_2008-29-01_00-00-00_ME_4.3/myst_997032_2008-29-01_00-00-00_ME_4.3_097.wav,the electromagnet has electricity,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997032/myst_997032_2008-29-01_00-00-00_ME_4.3/myst_997032_2008-29-01_00-00-00_ME_4.3_122.wav,probably has iron in it,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997032/myst_997032_2008-29-01_00-00-00_ME_4.3/myst_997032_2008-29-01_00-00-00_ME_4.3_053.wav,um they said that,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997032/myst_997032_2008-29-01_00-00-00_ME_4.3/myst_997032_2008-29-01_00-00-00_ME_4.3_171.wav,you're welcome yup,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997032/myst_997032_2008-29-01_00-00-00_ME_4.3/myst_997032_2008-29-01_00-00-00_ME_4.3_137.wav,not really nope,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997032/myst_997032_2008-29-01_00-00-00_ME_4.3/myst_997032_2008-29-01_00-00-00_ME_4.3_133.wav,what um,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997032/myst_997032_2008-29-01_00-00-00_ME_4.3/myst_997032_2008-29-01_00-00-00_ME_4.3_016.wav,um well,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997032/myst_997032_2008-29-01_00-00-00_ME_4.3/myst_997032_2008-29-01_00-00-00_ME_4.3_073.wav,works better mmm hmm,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997032/myst_997032_2008-29-01_00-00-00_ME_4.3/myst_997032_2008-29-01_00-00-00_ME_4.3_151.wav,i like picking up things,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997032/myst_997032_2008-29-01_00-00-00_ME_4.3/myst_997032_2008-29-01_00-00-00_ME_4.3_045.wav,no mmm hmm,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997032/myst_997032_2008-29-01_00-00-00_ME_4.3/myst_997032_2008-29-01_00-00-00_ME_4.3_063.wav,well what happened,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997032/myst_997032_2008-29-01_00-00-00_ME_4.3/myst_997032_2008-29-01_00-00-00_ME_4.3_085.wav,yep mmm hmm,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997032/myst_997032_2008-29-01_00-00-00_ME_4.3/myst_997032_2008-29-01_00-00-00_ME_4.3_043.wav,um i have no clue,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997032/myst_997032_2008-29-01_00-00-00_ME_4.3/myst_997032_2008-29-01_00-00-00_ME_4.3_089.wav,uh huh yep,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997032/myst_997032_2008-29-01_00-00-00_ME_4.3/myst_997032_2008-29-01_00-00-00_ME_4.3_083.wav,got stronger uh huh,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997480/myst_997480_2010-08-01_00-00-00_ME_2.1/myst_997480_2010-08-01_00-00-00_ME_2.1_012.wav,positive and negative,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997480/myst_997480_2009-10-12_00-00-00_ME_1.2/myst_997480_2009-10-12_00-00-00_ME_1.2_003.wav,learning about magnetism,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997480/myst_997480_2009-10-12_00-00-00_ME_1.2/myst_997480_2009-10-12_00-00-00_ME_1.2_002.wav,learning about the water cycle,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997480/myst_997480_2010-21-01_00-00-00_ME_2.3/myst_997480_2010-21-01_00-00-00_ME_2.3_018.wav,thank you,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997480/myst_997480_2010-21-01_00-00-00_ME_2.3/myst_997480_2010-21-01_00-00-00_ME_2.3_020.wav,they're covered with plastic,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997480/myst_997480_2010-01-02_00-00-00_ME_3.2/myst_997480_2010-01-02_00-00-00_ME_3.2_021.wav,i see,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997480/myst_997480_2010-01-02_00-00-00_ME_3.2/myst_997480_2010-01-02_00-00-00_ME_3.2_005.wav,i see a parallel circuit,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/997480/myst_997480_2010-01-02_00-00-00_ME_3.2/myst_997480_2010-01-02_00-00-00_ME_3.2_028.wav,hello marnie,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996422/myst_996422_2009-17-09_00-00-00_VB_2.1/myst_996422_2009-17-09_00-00-00_VB_2.1_004.wav,um wait boats are,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996422/myst_996422_2009-17-09_00-00-00_VB_2.1/myst_996422_2009-17-09_00-00-00_VB_2.1_011.wav,yeah it doesn't look,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996422/myst_996422_2009-17-09_00-00-00_VB_2.1/myst_996422_2009-17-09_00-00-00_VB_2.1_006.wav,um well,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996422/myst_996422_2009-17-09_00-00-00_VB_2.1/myst_996422_2009-17-09_00-00-00_VB_2.1_014.wav,um how h hard,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996422/myst_996422_2009-28-09_00-00-00_VB_3.2/myst_996422_2009-28-09_00-00-00_VB_3.2_039.wav,um you,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/996422/myst_996422_2009-28-09_00-00-00_VB_3.2/myst_996422_2009-28-09_00-00-00_VB_3.2_037.wav,s so,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-21-04_00-00-00_MS_1.1/myst_990053_2008-21-04_00-00-00_MS_1.1_058.wav,a metric ruler or something,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-21-04_00-00-00_MS_1.1/myst_990053_2008-21-04_00-00-00_MS_1.1_114.wav,yeah yeah that's,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-21-04_00-00-00_MS_1.1/myst_990053_2008-21-04_00-00-00_MS_1.1_106.wav,there's one hundred,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-21-04_00-00-00_MS_1.1/myst_990053_2008-21-04_00-00-00_MS_1.1_098.wav,a ruler yeah,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-21-04_00-00-00_MS_1.1/myst_990053_2008-21-04_00-00-00_MS_1.1_064.wav,y like this,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-21-04_00-00-00_MS_1.1/myst_990053_2008-21-04_00-00-00_MS_1.1_012.wav,it's about measuring the,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-21-04_00-00-00_MS_1.1/myst_990053_2008-21-04_00-00-00_MS_1.1_092.wav,one hundred centimeters,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-21-04_00-00-00_MS_1.1/myst_990053_2008-21-04_00-00-00_MS_1.1_082.wav,oh no,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-21-04_00-00-00_MS_1.1/myst_990053_2008-21-04_00-00-00_MS_1.1_056.wav,we used a,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-21-04_00-00-00_MS_1.1/myst_990053_2008-21-04_00-00-00_MS_1.1_032.wav,then you,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-21-04_00-00-00_MS_1.1/myst_990053_2008-21-04_00-00-00_MS_1.1_074.wav,yeah yeah,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-21-04_00-00-00_MS_1.1/myst_990053_2008-21-04_00-00-00_MS_1.1_060.wav,it was all,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-21-04_00-00-00_MS_1.1/myst_990053_2008-21-04_00-00-00_MS_1.1_104.wav,they're little lines,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-21-04_00-00-00_MS_1.1/myst_990053_2008-21-04_00-00-00_MS_1.1_022.wav,they were cut unequally,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-21-04_00-00-00_MS_1.1/myst_990053_2008-21-04_00-00-00_MS_1.1_088.wav,that's that's ten centimeters,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-21-04_00-00-00_MS_1.1/myst_990053_2008-21-04_00-00-00_MS_1.1_110.wav,that means it's,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-21-04_00-00-00_MS_1.1/myst_990053_2008-21-04_00-00-00_MS_1.1_112.wav,one fifth of a,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-21-04_00-00-00_MS_1.1/myst_990053_2008-21-04_00-00-00_MS_1.1_050.wav,to measure our desks with,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-21-04_00-00-00_MS_1.1/myst_990053_2008-21-04_00-00-00_MS_1.1_076.wav,uh you can measure,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-21-04_00-00-00_MS_1.1/myst_990053_2008-21-04_00-00-00_MS_1.1_008.wav,the metric system,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-06-05_00-00-00_MS_3.1/myst_990053_2008-06-05_00-00-00_MS_3.1_074.wav,liquid from our water yes,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-06-05_00-00-00_MS_3.1/myst_990053_2008-06-05_00-00-00_MS_3.1_096.wav,a vial,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-06-05_00-00-00_MS_3.1/myst_990053_2008-06-05_00-00-00_MS_3.1_062.wav,me liter,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-06-05_00-00-00_MS_3.1/myst_990053_2008-06-05_00-00-00_MS_3.1_058.wav,one meter,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-06-05_00-00-00_MS_3.1/myst_990053_2008-06-05_00-00-00_MS_3.1_130.wav,one hundred milliliters,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-06-05_00-00-00_MS_3.1/myst_990053_2008-06-05_00-00-00_MS_3.1_022.wav,things that have one hundred,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-06-05_00-00-00_MS_3.1/myst_990053_2008-06-05_00-00-00_MS_3.1_088.wav,mmm yeah,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-06-05_00-00-00_MS_3.1/myst_990053_2008-06-05_00-00-00_MS_3.1_034.wav,one liter,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-06-05_00-00-00_MS_3.1/myst_990053_2008-06-05_00-00-00_MS_3.1_020.wav,a liter measures,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-06-05_00-00-00_MS_3.1/myst_990053_2008-06-05_00-00-00_MS_3.1_032.wav,things could fill,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-06-05_00-00-00_MS_3.1/myst_990053_2008-06-05_00-00-00_MS_3.1_084.wav,a little,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-06-05_00-00-00_MS_3.1/myst_990053_2008-06-05_00-00-00_MS_3.1_124.wav,a smaller volume,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-06-05_00-00-00_MS_3.1/myst_990053_2008-06-05_00-00-00_MS_3.1_090.wav,you could take,3,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-06-05_00-00-00_MS_3.1/myst_990053_2008-06-05_00-00-00_MS_3.1_030.wav,and we saw how many,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-06-05_00-00-00_MS_3.1/myst_990053_2008-06-05_00-00-00_MS_3.1_046.wav,well ten,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-06-05_00-00-00_MS_3.1/myst_990053_2008-06-05_00-00-00_MS_3.1_060.wav,to a one hundred m,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-06-05_00-00-00_MS_3.1/myst_990053_2008-06-05_00-00-00_MS_3.1_024.wav,kilograms i think uh,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-06-05_00-00-00_MS_3.1/myst_990053_2008-06-05_00-00-00_MS_3.1_108.wav,yeah yeah,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-06-05_00-00-00_MS_3.1/myst_990053_2008-06-05_00-00-00_MS_3.1_040.wav,it was like a,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-06-05_00-00-00_MS_3.1/myst_990053_2008-06-05_00-00-00_MS_3.1_136.wav,one i mean ten,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-06-05_00-00-00_MS_3.1/myst_990053_2008-06-05_00-00-00_MS_3.1_142.wav,one thousand,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-06-05_00-00-00_MS_3.1/myst_990053_2008-06-05_00-00-00_MS_3.1_012.wav,we used,2,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-06-05_00-00-00_MS_3.1/myst_990053_2008-06-05_00-00-00_MS_3.1_026.wav,no i h i h,5,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-06-05_00-00-00_MS_3.1/myst_990053_2008-06-05_00-00-00_MS_3.1_068.wav,how wide they were,4,2.0
+/srv/scratch/chacmod/MyST/myst-v0.3.0-171fbda/corpora/myst/data/990053/myst_990053_2008-06-05_00-00-00_MS_3.1/myst_990053_2008-06-05_00-00-00_MS_3.1_128.wav,one millimeter yeah,3,2.0
