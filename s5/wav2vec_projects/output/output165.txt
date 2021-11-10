@@ -1,0 +1,111 @@
+Wed Nov 10 13:04:45 AEDT 2021
+Using custom data configuration default-0b3611c3a5446775
+0 tables [00:00, ? tables/s]2 tables [00:00, 18.01 tables/s]6 tables [00:00, 20.78 tables/s]12 tables [00:00, 25.70 tables/s]                                 0 tables [00:00, ? tables/s]                            ------------------------------------------------------------------------
+                 run_finetune_kids.py                                   
+------------------------------------------------------------------------
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/THESIS_C/run_finetune_kids_myST-OGI-TLT-Librispeech.py
+Started: 10/11/2021 13:04:45
+
+------> IMPORTING PACKAGES.... ---------------------------------------
+
+-->Importing datasets...
+-->Importing random...
+-->Importing pandas & numpy...
+-->Importing re...
+-->Importing json...
+-->Importing Wav2VecCTC...
+-->Importing soundfile...
+-->Importing torch, dataclasses & typing...
+-->Importing from transformers for training...
+-->Importing pyarrow for loading dataset...
+-->SUCCESS! All packages imported.
+
+------> EXPERIMENT ARGUMENTS ----------------------------------------- 
+
+training: True
+experiment_id: 20211026-base-myST-OGI-TLT-Librispeech
+datasetdict_id: myST-OGI-TLT-finetune
+base_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/
+train_name: myST-OGI-TLT17
+train_filename: THESIS_C/myST-OGI-TLT_data_finetune_light
+evaluation_name: myST
+evaluation_filename: THESIS_C/myST_data_dev_light
+use_checkpoint: False
+use_pretrained_tokenizer: True
+pretrained_tokenizer: facebook/wav2vec2-base-960h
+eval_pretrained: False
+baseline_model: facebook/wav2vec2-base-960h
+
+------> MODEL ARGUMENTS... -------------------------------------------
+
+hidden_dropout: 0.1
+activation_dropout: 0.1
+attention_dropoutput: 0.1
+feat_proj_dropout: 0.0
+layerdrop: 0.1
+mask_time_prob: 0.05
+mask_time_length: 10
+ctc_loss_reduction: mean
+ctc_zero_infinity: True
+gradient_checkpointing: True
+
+------> TRAINING ARGUMENTS... ----------------------------------------
+
+evaluation strategy: steps
+per_device_train_batch_size: 8
+gradient_accumulation_steps: 1
+learning_rate: 3e-05
+weight_decay: 0.01
+adam_beta1: 0.9
+adam_beta2: 0.98
+adam_epsilon: 1e-08
+num_train_epochs: 14
+max_steps: 60000
+lr_scheduler_type: linear
+warmup_ratio: 0.1
+logging_strategy: steps
+logging_steps: 1000
+save_strategy: steps
+save_steps: 1000
+save_total_limit: 70
+fp16: True
+eval_steps: 1000
+load_best_model_at_end: True
+metric_for_best_model: wer
+greater_is_better: False
+group_by_length: True
+
+------> GENERATING FILEPATHS... --------------------------------------
+
+--> data_train_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT17_local/THESIS_C/myST-OGI-TLT_data_finetune_light.csv
+--> data_test_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST_local/THESIS_C/myST_data_dev_light.csv
+--> data_cache_fp: /srv/scratch/chacmod/.cache/huggingface/datasets/myST-OGI-TLT-finetune
+--> vocab_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT17_local/vocab_20211026-base-myST-OGI-TLT-Librispeech.json
+--> model_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT17_local/20211026-base-myST-OGI-TLT-Librispeech
+--> baseline_results_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT17_local/20211026-base-myST-OGI-TLT-Librispeech_baseline_results.csv
+--> finetuned_results_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT17_local/20211026-base-myST-OGI-TLT-Librispeech_finetuned_results.csv
+--> pretrained_mod: facebook/wav2vec2-base-960h
+--> pretrained_tokenizer: facebook/wav2vec2-base-960h
+
+------> PREPARING DATASET... ------------------------------------
+
+Downloading and preparing dataset csv/default (download: Unknown size, generated: Unknown size, post-processed: Unknown size, total: Unknown size) to /srv/scratch/chacmod/.cache/huggingface/datasets/myST-OGI-TLT-finetune/csv/default-0b3611c3a5446775/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0...
+Traceback (most recent call last):
+  File "THESIS_C/run_finetune_kids_myST-OGI-TLT-Librispeech.py", line 310, in <module>
+    cache_dir=data_cache_fp)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/datasets/load.py", line 780, in load_dataset
+    use_auth_token=use_auth_token,
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/datasets/builder.py", line 579, in download_and_prepare
+    dl_manager=dl_manager, verify_infos=verify_infos, **download_and_prepare_kwargs
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/datasets/builder.py", line 656, in _download_and_prepare
+    self._prepare_split(split_generator, **prepare_split_kwargs)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/datasets/builder.py", line 1125, in _prepare_split
+    writer.write_table(table)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/datasets/arrow_writer.py", line 403, in write_table
+    pa_table = pa.Table.from_arrays([pa_table[name] for name in self._schema.names], schema=self._schema)
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/thesis_env/lib64/python3.6/site-packages/datasets/arrow_writer.py", line 403, in <listcomp>
+    pa_table = pa.Table.from_arrays([pa_table[name] for name in self._schema.names], schema=self._schema)
+  File "pyarrow/table.pxi", line 1206, in pyarrow.lib.Table.__getitem__
+  File "pyarrow/table.pxi", line 1753, in pyarrow.lib.Table.column
+  File "pyarrow/table.pxi", line 1728, in pyarrow.lib.Table._ensure_integer_index
+KeyError: 'Field "duration" does not exist in table schema'

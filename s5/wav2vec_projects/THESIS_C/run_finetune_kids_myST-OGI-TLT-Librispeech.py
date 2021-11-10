@@ -281,7 +281,7 @@ print("--> finetuned_results_fp:", finetuned_results_fp)
 # If 1) must set use_checkpoint = False
 # If 2)must set use_checkpoint = True
 # Default model to fine-tune is facebook's model
-pretrained_mod = "facebook/wav2vec2-base-960"
+pretrained_mod = "facebook/wav2vec2-base-960h"
 if use_checkpoint:
     pretrained_mod = checkpoint
 print("--> pretrained_mod:", pretrained_mod)
