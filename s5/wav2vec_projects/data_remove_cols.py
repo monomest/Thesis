@@ -58,7 +58,7 @@ dataset_og = pd.read_csv(dataset_fp, dtype=str)
 #         Dropping spkr_id column
 # ------------------------------------------
 #dataset_df = dataset_og[['filepath', 'transcription_clean', 'age']].copy()
-dataset_df = dataset_og[['filepath', 'duration']].copy()
+dataset_df = dataset_og[['filepath', 'transcription_clean']].copy()
 
 # ------------------------------------------
 #          Saving to csv file
