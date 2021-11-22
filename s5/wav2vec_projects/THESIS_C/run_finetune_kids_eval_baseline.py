@@ -89,7 +89,7 @@ print("training:", training)
 # For 1) naming vocab.json file and
 #     2) naming model output directory
 #     3) naming results csv file
-experiment_id = "20211016-eval-baseline-myST-test"
+experiment_id = "2021122-eval-baseline-robust"
 print("experiment_id:", experiment_id)
 
 # DatasetDict Id
