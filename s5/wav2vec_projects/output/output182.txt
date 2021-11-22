@@ -17110,3 +17110,420 @@ Fine-tuned Test WER: 0.372
 ------> SUCCESSFULLY FINISHED ---------------------------------------- 
 
 Finished: 22/11/2021 15:25:41
+Using custom data configuration default-ede3fc8a2f921046
+Reusing dataset csv (/srv/scratch/chacmod/.cache/huggingface/datasets/TLT-eval/csv/default-ede3fc8a2f921046/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0)
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/TLT-eval/csv/default-ede3fc8a2f921046/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-90cae9a5206a750c.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/TLT-eval/csv/default-ede3fc8a2f921046/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-816b2d11543357f5.arrow
+------------------------------------------------------------------------
+                 run_finetune_kids.py                                   
+------------------------------------------------------------------------
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/THESIS_C/run_finetune_kids_eval_TLT17_test.py
+Started: 22/11/2021 18:56:55
+
+------> IMPORTING PACKAGES.... ---------------------------------------
+
+-->Importing datasets...
+-->Importing random...
+-->Importing pandas & numpy...
+-->Importing re...
+-->Importing json...
+-->Importing Wav2VecCTC...
+-->Importing soundfile...
+-->Importing torch, dataclasses & typing...
+-->Importing from transformers for training...
+-->Importing pyarrow for loading dataset...
+-->SUCCESS! All packages imported.
+
+------> EXPERIMENT ARGUMENTS ----------------------------------------- 
+
+training: False
+experiment_id: 20211026-base-myST-OGI-TLT-eval
+datasetdict_id: TLT-eval
+base_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/
+train_name: TLT
+train_filename: THESIS_C/TLT17eval_data_test_light
+evaluation_name: TLT
+evaluation_filename: THESIS_C/TLT17eval_data_test_light
+use_checkpoint: True
+checkpoint: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT17_local/20211026-base-myST-OGI-TLT
+use_pretrained_tokenizer: True
+pretrained_tokenizer: facebook/wav2vec2-base-960h
+eval_pretrained: True
+eval_model: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT17_local/20211026-base-myST-OGI-TLT
+baseline_model: facebook/wav2vec2-large-robust-ft-libri-960h
+
+------> MODEL ARGUMENTS... -------------------------------------------
+
+hidden_dropout: 0.1
+activation_dropout: 0.1
+attention_dropoutput: 0.1
+feat_proj_dropout: 0.0
+layerdrop: 0.1
+mask_time_prob: 0.075
+mask_time_length: 10
+ctc_loss_reduction: mean
+ctc_zero_infinity: False
+gradient_checkpointing: True
+
+------> TRAINING ARGUMENTS... ----------------------------------------
+
+evaluation strategy: steps
+per_device_train_batch_size: 8
+gradient_accumulation_steps: 1
+learning_rate: 5e-05
+weight_decay: 0.01
+adam_beta1: 0.9
+adam_beta2: 0.98
+adam_epsilon: 1e-08
+num_train_epochs: 100
+max_steps: -1
+lr_scheduler_type: linear
+warmup_ratio: 0.1
+logging_strategy: steps
+logging_steps: 25
+save_strategy: steps
+save_steps: 25
+save_total_limit: 50
+fp16: True
+eval_steps: 25
+load_best_model_at_end: True
+metric_for_best_model: wer
+greater_is_better: False
+group_by_length: True
+
+------> GENERATING FILEPATHS... --------------------------------------
+
+--> data_train_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/TLT_local/THESIS_C/TLT17eval_data_test_light.csv
+--> data_test_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/TLT_local/THESIS_C/TLT17eval_data_test_light.csv
+--> data_cache_fp: /srv/scratch/chacmod/.cache/huggingface/datasets/TLT-eval
+--> vocab_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/TLT_local/vocab_20211026-base-myST-OGI-TLT-eval.json
+--> model_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/TLT_local/20211026-base-myST-OGI-TLT-eval
+--> baseline_results_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/TLT_local/20211026-base-myST-OGI-TLT-eval_TLT17_test_baseline_results.csv
+--> finetuned_results_fp: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/TLT_local/20211026-base-myST-OGI-TLT-eval_TLT17_test_results.csv
+--> pretrained_mod: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT17_local/20211026-base-myST-OGI-TLT
+--> pretrained_tokenizer: facebook/wav2vec2-base-960h
+
+------> PREPARING DATASET... ------------------------------------
+
+--> dataset...
+DatasetDict({
+    train: Dataset({
+        features: ['filepath', 'transcription_clean'],
+        num_rows: 541
+    })
+    test: Dataset({
+        features: ['filepath', 'transcription_clean'],
+        num_rows: 541
+    })
+})
+--> Printing some random samples...
+                                            filepath                                transcription_clean
+0  /srv/scratch/chacmod/TLT/Dataset/TLT2020challe...  e no i i think fashion is not important becaus...
+1  /srv/scratch/chacmod/TLT/Dataset/TLT2020challe...  think i prefer to live in a c in a town becaus...
+2  /srv/scratch/chacmod/TLT/Dataset/TLT2020challe...                          cola cola thank you <unk>
+3  /srv/scratch/chacmod/TLT/Dataset/TLT2020challe...                                <unk> <unk> bye bye
+4  /srv/scratch/chacmod/TLT/Dataset/TLT2020challe...                                      my hobbies is
+SUCCESS: Prepared dataset.
+
+------> PROCESSING TRANSCRIPTION... ---------------------------------------
+
+
+------> CREATING WAV2VEC2 FEATURE EXTRACTOR... -----------------------
+
+SUCCESS: Created feature extractor.
+
+------> PRE-PROCESSING DATA... ----------------------------------------- 
+
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/TLT-eval/csv/default-ede3fc8a2f921046/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-4a5b72577b585004.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/TLT-eval/csv/default-ede3fc8a2f921046/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-b3688d0200a4d175.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/TLT-eval/csv/default-ede3fc8a2f921046/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-f69efee93e087de3.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/TLT-eval/csv/default-ede3fc8a2f921046/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-05144e07547c176a.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/TLT-eval/csv/default-ede3fc8a2f921046/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-599d4decbfaf1bc3.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/TLT-eval/csv/default-ede3fc8a2f921046/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-294d4bc630076cdc.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/TLT-eval/csv/default-ede3fc8a2f921046/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-b281bbdb949c3397.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/TLT-eval/csv/default-ede3fc8a2f921046/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-a20d96b28d49d4c0.arrow
+--> Verifying data with a random sample...
+Target text: I USE THE INTERNET FOR SEARCH SOMETHING THAT I INTEREST IN FOR EXAMPLE WHEN I DO MY HOMEWORK OFTEN I GO TO INTERNET TO SEARCH MORE INFORMATIONS ABOUT THE
+Input array shape: (319872,)
+Sampling rate: 16000
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/TLT-eval/csv/default-ede3fc8a2f921046/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-5a03f918ddbb88d9.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/TLT-eval/csv/default-ede3fc8a2f921046/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-667bcbab66202d97.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/TLT-eval/csv/default-ede3fc8a2f921046/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-598fc7ff2f6b5e40.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/TLT-eval/csv/default-ede3fc8a2f921046/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-c92276eedd552838.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/TLT-eval/csv/default-ede3fc8a2f921046/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-9721290790646d2c.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/TLT-eval/csv/default-ede3fc8a2f921046/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-765770b2de7755ed.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/TLT-eval/csv/default-ede3fc8a2f921046/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-8c946f57e7ca90f0.arrow
+Loading cached processed dataset at /srv/scratch/chacmod/.cache/huggingface/datasets/TLT-eval/csv/default-ede3fc8a2f921046/0.0.0/2dc6629a9ff6b5697d82c25b73731dd440507a69cbce8b425db50b751e8fcfd0/cache-be9fe793f6279e87.arrow
+Using amp fp16 backend
+loading feature extractor configuration file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT17_local/20211026-base-myST-OGI-TLT/preprocessor_config.json
+Feature extractor Wav2Vec2FeatureExtractor {
+  "do_normalize": true,
+  "feature_extractor_type": "Wav2Vec2FeatureExtractor",
+  "feature_size": 1,
+  "padding_side": "right",
+  "padding_value": 0.0,
+  "return_attention_mask": false,
+  "sampling_rate": 16000
+}
+
+Didn't find file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT17_local/20211026-base-myST-OGI-TLT/added_tokens.json. We won't load it.
+Didn't find file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT17_local/20211026-base-myST-OGI-TLT/tokenizer.json. We won't load it.
+loading file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT17_local/20211026-base-myST-OGI-TLT/vocab.json
+loading file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT17_local/20211026-base-myST-OGI-TLT/tokenizer_config.json
+loading file None
+loading file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT17_local/20211026-base-myST-OGI-TLT/special_tokens_map.json
+loading file None
+loading configuration file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT17_local/20211026-base-myST-OGI-TLT/config.json
+Model config Wav2Vec2Config {
+  "_name_or_path": "facebook/wav2vec2-base",
+  "activation_dropout": 0.1,
+  "apply_spec_augment": true,
+  "architectures": [
+    "Wav2Vec2ForCTC"
+  ],
+  "attention_dropout": 0.1,
+  "bos_token_id": 1,
+  "codevector_dim": 256,
+  "contrastive_logits_temperature": 0.1,
+  "conv_bias": false,
+  "conv_dim": [
+    512,
+    512,
+    512,
+    512,
+    512,
+    512,
+    512
+  ],
+  "conv_kernel": [
+    10,
+    3,
+    3,
+    3,
+    3,
+    2,
+    2
+  ],
+  "conv_stride": [
+    5,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "ctc_loss_reduction": "mean",
+  "ctc_zero_infinity": true,
+  "diversity_loss_weight": 0.1,
+  "do_stable_layer_norm": false,
+  "eos_token_id": 2,
+  "feat_extract_activation": "gelu",
+  "feat_extract_norm": "group",
+  "feat_proj_dropout": 0.0,
+  "feat_quantizer_dropout": 0.0,
+  "final_dropout": 0.0,
+  "freeze_feat_extract_train": true,
+  "gradient_checkpointing": true,
+  "hidden_act": "gelu",
+  "hidden_dropout": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "layerdrop": 0.1,
+  "mask_channel_length": 10,
+  "mask_channel_min_space": 1,
+  "mask_channel_other": 0.0,
+  "mask_channel_prob": 0.0,
+  "mask_channel_selection": "static",
+  "mask_feature_length": 10,
+  "mask_feature_prob": 0.0,
+  "mask_time_length": 10,
+  "mask_time_min_space": 1,
+  "mask_time_other": 0.0,
+  "mask_time_prob": 0.05,
+  "mask_time_selection": "static",
+  "model_type": "wav2vec2",
+  "no_mask_channel_overlap": false,
+  "no_mask_time_overlap": false,
+  "num_attention_heads": 12,
+  "num_codevector_groups": 2,
+  "num_codevectors_per_group": 320,
+  "num_conv_pos_embedding_groups": 16,
+  "num_conv_pos_embeddings": 128,
+  "num_feat_extract_layers": 7,
+  "num_hidden_layers": 12,
+  "num_negatives": 100,
+  "pad_token_id": 0,
+  "proj_codevector_dim": 256,
+  "transformers_version": "4.8.2",
+  "vocab_size": 32
+}
+
+loading weights file /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT17_local/20211026-base-myST-OGI-TLT/pytorch_model.bin
+All model checkpoint weights were used when initializing Wav2Vec2ForCTC.
+
+All the weights of Wav2Vec2ForCTC were initialized from the model checkpoint at /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT17_local/20211026-base-myST-OGI-TLT.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use Wav2Vec2ForCTC for predictions without further training.
+  0%|          | 0/541 [00:00<?, ?ex/s]  0%|          | 1/541 [00:00<04:10,  2.15ex/s]  0%|          | 2/541 [00:00<03:24,  2.63ex/s]  1%|          | 3/541 [00:00<02:43,  3.29ex/s]  1%|          | 4/541 [00:00<02:14,  3.99ex/s]  1%|          | 5/541 [00:01<02:39,  3.37ex/s]  1%|          | 6/541 [00:01<02:10,  4.09ex/s]  1%|▏         | 7/541 [00:01<01:50,  4.81ex/s]  1%|▏         | 8/541 [00:01<01:37,  5.48ex/s]  2%|▏         | 9/541 [00:01<01:27,  6.09ex/s]  2%|▏         | 10/541 [00:01<01:20,  6.58ex/s]  2%|▏         | 11/541 [00:02<01:15,  6.99ex/s]  2%|▏         | 12/541 [00:02<01:12,  7.32ex/s]  2%|▏         | 13/541 [00:02<01:09,  7.56ex/s]  3%|▎         | 14/541 [00:02<01:08,  7.74ex/s]  3%|▎         | 15/541 [00:02<01:06,  7.87ex/s]  3%|▎         | 16/541 [00:03<03:48,  2.30ex/s]  3%|▎         | 17/541 [00:03<02:59,  2.93ex/s]  3%|▎         | 18/541 [00:03<02:24,  3.63ex/s]  4%|▎         | 19/541 [00:04<01:59,  4.35ex/s]  4%|▎         | 20/541 [00:04<01:42,  5.08ex/s]  4%|▍         | 21/541 [00:04<01:30,  5.74ex/s]  4%|▍         | 22/541 [00:05<04:02,  2.14ex/s]  4%|▍         | 23/541 [00:05<03:08,  2.75ex/s]  4%|▍         | 24/541 [00:05<02:30,  3.43ex/s]  5%|▍         | 25/541 [00:05<02:03,  4.17ex/s]  5%|▍         | 26/541 [00:05<01:45,  4.89ex/s]  5%|▍         | 27/541 [00:06<01:32,  5.57ex/s]  5%|▌         | 28/541 [00:06<01:32,  5.54ex/s]  5%|▌         | 29/541 [00:07<03:25,  2.49ex/s]  6%|▌         | 30/541 [00:07<02:43,  3.13ex/s]  6%|▌         | 31/541 [00:07<02:13,  3.83ex/s]  6%|▌         | 32/541 [00:07<01:52,  4.54ex/s]  6%|▌         | 33/541 [00:08<04:14,  2.00ex/s]  6%|▋         | 34/541 [00:08<03:16,  2.58ex/s]  6%|▋         | 35/541 [00:08<02:35,  3.25ex/s]  7%|▋         | 36/541 [00:09<02:07,  3.97ex/s]  7%|▋         | 37/541 [00:09<01:46,  4.71ex/s]  7%|▋         | 38/541 [00:09<01:33,  5.41ex/s]  7%|▋         | 39/541 [00:09<01:23,  6.03ex/s]  7%|▋         | 40/541 [00:09<01:16,  6.56ex/s]  8%|▊         | 41/541 [00:09<01:11,  6.98ex/s]  8%|▊         | 42/541 [00:09<01:08,  7.30ex/s]  8%|▊         | 43/541 [00:10<03:39,  2.27ex/s]  8%|▊         | 44/541 [00:11<02:51,  2.90ex/s]  8%|▊         | 45/541 [00:11<02:17,  3.60ex/s]  9%|▊         | 46/541 [00:11<01:54,  4.33ex/s]  9%|▊         | 47/541 [00:11<01:37,  5.06ex/s]  9%|▉         | 48/541 [00:11<01:26,  5.72ex/s]  9%|▉         | 49/541 [00:11<01:18,  6.30ex/s]  9%|▉         | 50/541 [00:11<01:12,  6.77ex/s]  9%|▉         | 51/541 [00:11<01:08,  7.16ex/s] 10%|▉         | 52/541 [00:12<02:18,  3.52ex/s] 10%|▉         | 53/541 [00:12<01:54,  4.25ex/s] 10%|▉         | 54/541 [00:12<01:37,  4.98ex/s] 10%|█         | 55/541 [00:12<01:25,  5.66ex/s] 10%|█         | 56/541 [00:13<02:51,  2.83ex/s] 11%|█         | 57/541 [00:13<02:17,  3.51ex/s] 11%|█         | 58/541 [00:13<01:53,  4.24ex/s] 11%|█         | 59/541 [00:14<01:36,  4.97ex/s] 11%|█         | 60/541 [00:14<01:25,  5.65ex/s] 11%|█▏        | 61/541 [00:15<03:46,  2.12ex/s] 11%|█▏        | 62/541 [00:15<02:55,  2.73ex/s] 12%|█▏        | 63/541 [00:15<02:20,  3.41ex/s] 12%|█▏        | 64/541 [00:15<01:55,  4.14ex/s] 12%|█▏        | 65/541 [00:15<01:37,  4.86ex/s] 12%|█▏        | 66/541 [00:16<03:52,  2.04ex/s] 12%|█▏        | 67/541 [00:17<03:00,  2.63ex/s] 13%|█▎        | 68/541 [00:17<02:23,  3.30ex/s] 13%|█▎        | 69/541 [00:17<01:57,  4.03ex/s] 13%|█▎        | 70/541 [00:17<01:38,  4.76ex/s] 13%|█▎        | 71/541 [00:17<01:26,  5.44ex/s] 13%|█▎        | 73/541 [00:17<01:10,  6.66ex/s] 14%|█▎        | 74/541 [00:17<01:05,  7.08ex/s] 14%|█▍        | 75/541 [00:17<01:02,  7.40ex/s] 14%|█▍        | 77/541 [00:18<00:52,  8.85ex/s] 15%|█▍        | 79/541 [00:18<00:45, 10.25ex/s] 15%|█▍        | 81/541 [00:18<00:39, 11.53ex/s] 15%|█▌        | 83/541 [00:18<00:36, 12.64ex/s] 16%|█▌        | 85/541 [00:18<00:33, 13.56ex/s] 16%|█▌        | 87/541 [00:18<00:34, 13.06ex/s] 16%|█▋        | 89/541 [00:18<00:35, 12.71ex/s] 17%|█▋        | 91/541 [00:19<00:36, 12.49ex/s] 17%|█▋        | 93/541 [00:19<00:33, 13.42ex/s] 18%|█▊        | 95/541 [00:19<00:32, 13.52ex/s] 18%|█▊        | 97/541 [00:19<00:34, 13.05ex/s] 18%|█▊        | 99/541 [00:19<00:31, 13.88ex/s] 19%|█▊        | 101/541 [00:19<00:31, 13.87ex/s] 19%|█▉        | 103/541 [00:19<00:33, 13.27ex/s] 19%|█▉        | 105/541 [00:20<00:33, 12.85ex/s] 20%|█▉        | 107/541 [00:20<00:34, 12.54ex/s] 20%|██        | 109/541 [00:20<00:34, 12.36ex/s] 21%|██        | 111/541 [00:20<00:33, 12.72ex/s] 21%|██        | 113/541 [00:20<00:31, 13.59ex/s] 21%|██▏       | 115/541 [00:20<00:29, 14.21ex/s] 22%|██▏       | 117/541 [00:20<00:28, 14.66ex/s] 22%|██▏       | 119/541 [00:21<00:28, 14.98ex/s] 22%|██▏       | 121/541 [00:21<00:30, 13.76ex/s] 23%|██▎       | 123/541 [00:21<00:31, 13.07ex/s] 23%|██▎       | 125/541 [00:21<00:43,  9.47ex/s] 23%|██▎       | 127/541 [00:21<00:38, 10.76ex/s] 24%|██▍       | 129/541 [00:22<00:34, 11.89ex/s] 24%|██▍       | 131/541 [00:22<00:31, 12.84ex/s] 25%|██▍       | 133/541 [00:22<00:29, 13.62ex/s] 25%|██▍       | 135/541 [00:22<00:29, 13.58ex/s] 25%|██▌       | 137/541 [00:22<00:31, 12.96ex/s] 26%|██▌       | 139/541 [00:22<00:30, 13.09ex/s] 26%|██▌       | 141/541 [00:22<00:28, 13.81ex/s] 26%|██▋       | 143/541 [00:22<00:29, 13.72ex/s] 27%|██▋       | 145/541 [00:23<00:30, 13.06ex/s] 27%|██▋       | 147/541 [00:23<00:31, 12.63ex/s] 28%|██▊       | 149/541 [00:23<00:30, 12.89ex/s] 28%|██▊       | 151/541 [00:23<00:28, 13.66ex/s] 28%|██▊       | 153/541 [00:23<00:27, 14.27ex/s] 29%|██▊       | 155/541 [00:23<00:28, 13.35ex/s] 29%|██▉       | 157/541 [00:24<00:30, 12.78ex/s] 29%|██▉       | 159/541 [00:24<00:29, 12.95ex/s] 30%|██▉       | 161/541 [00:24<00:27, 13.69ex/s] 30%|███       | 163/541 [00:24<00:27, 13.56ex/s] 30%|███       | 165/541 [00:24<00:29, 12.92ex/s] 31%|███       | 167/541 [00:24<00:29, 12.49ex/s] 31%|███       | 169/541 [00:24<00:27, 13.32ex/s] 32%|███▏      | 171/541 [00:25<00:26, 13.96ex/s] 32%|███▏      | 173/541 [00:25<00:26, 13.79ex/s] 32%|███▏      | 175/541 [00:25<00:28, 13.06ex/s] 33%|███▎      | 177/541 [00:25<00:27, 13.16ex/s] 33%|███▎      | 179/541 [00:25<00:26, 13.88ex/s] 33%|███▎      | 181/541 [00:25<00:27, 13.12ex/s] 34%|███▍      | 183/541 [00:26<00:28, 12.62ex/s] 34%|███▍      | 185/541 [00:26<00:28, 12.30ex/s] 35%|███▍      | 187/541 [00:26<00:26, 13.16ex/s] 35%|███▍      | 189/541 [00:26<00:25, 13.84ex/s] 35%|███▌      | 191/541 [00:26<00:25, 13.70ex/s] 36%|███▌      | 193/541 [00:26<00:26, 12.99ex/s] 36%|███▌      | 195/541 [00:26<00:27, 12.53ex/s] 36%|███▋      | 197/541 [00:27<00:26, 12.78ex/s] 37%|███▋      | 199/541 [00:27<00:25, 13.53ex/s] 37%|███▋      | 201/541 [00:27<00:25, 13.46ex/s] 38%|███▊      | 203/541 [00:27<00:26, 12.88ex/s] 38%|███▊      | 205/541 [00:27<00:26, 12.46ex/s] 38%|███▊      | 207/541 [00:27<00:27, 12.18ex/s] 39%|███▊      | 209/541 [00:28<00:27, 12.01ex/s] 39%|███▉      | 211/541 [00:28<00:25, 12.94ex/s] 39%|███▉      | 213/541 [00:28<00:23, 13.67ex/s] 40%|███▉      | 215/541 [00:28<00:24, 13.58ex/s] 40%|████      | 217/541 [00:28<00:25, 12.94ex/s] 40%|████      | 219/541 [00:28<00:25, 12.52ex/s] 41%|████      | 221/541 [00:29<00:28, 11.34ex/s] 41%|████      | 223/541 [00:29<00:25, 12.37ex/s] 42%|████▏     | 225/541 [00:29<00:24, 12.66ex/s] 42%|████▏     | 227/541 [00:29<00:25, 12.35ex/s] 42%|████▏     | 229/541 [00:29<00:25, 12.12ex/s] 43%|████▎     | 231/541 [00:29<00:23, 13.02ex/s] 43%|████▎     | 233/541 [00:29<00:22, 13.74ex/s] 43%|████▎     | 235/541 [00:30<00:23, 13.00ex/s] 44%|████▍     | 237/541 [00:30<00:24, 12.55ex/s] 44%|████▍     | 239/541 [00:30<00:23, 12.78ex/s] 45%|████▍     | 241/541 [00:30<00:22, 13.54ex/s] 45%|████▍     | 243/541 [00:30<00:21, 14.12ex/s] 45%|████▌     | 245/541 [00:30<00:22, 13.24ex/s] 46%|████▌     | 247/541 [00:31<00:23, 12.71ex/s] 46%|████▌     | 249/541 [00:31<00:21, 13.48ex/s] 46%|████▋     | 251/541 [00:31<00:20, 14.05ex/s] 47%|████▋     | 253/541 [00:31<00:20, 13.85ex/s] 47%|████▋     | 255/541 [00:31<00:21, 13.10ex/s] 48%|████▊     | 257/541 [00:31<00:21, 13.15ex/s] 48%|████▊     | 259/541 [00:31<00:20, 13.84ex/s] 48%|████▊     | 261/541 [00:31<00:19, 14.35ex/s] 49%|████▊     | 263/541 [00:32<00:20, 13.40ex/s] 49%|████▉     | 265/541 [00:32<00:21, 12.82ex/s] 49%|████▉     | 267/541 [00:32<00:21, 12.99ex/s] 50%|████▉     | 269/541 [00:32<00:19, 13.72ex/s] 50%|█████     | 271/541 [00:32<00:20, 13.02ex/s] 50%|█████     | 273/541 [00:32<00:20, 13.13ex/s] 51%|█████     | 275/541 [00:33<00:19, 13.80ex/s] 51%|█████     | 277/541 [00:33<00:20, 13.07ex/s] 52%|█████▏    | 279/541 [00:33<00:20, 12.60ex/s] 52%|█████▏    | 281/541 [00:33<00:20, 12.83ex/s] 52%|█████▏    | 283/541 [00:33<00:18, 13.59ex/s] 53%|█████▎    | 285/541 [00:33<00:18, 13.54ex/s] 53%|█████▎    | 287/541 [00:34<00:19, 12.93ex/s] 53%|█████▎    | 289/541 [00:34<00:20, 12.51ex/s] 54%|█████▍    | 291/541 [00:34<00:18, 13.33ex/s] 54%|█████▍    | 293/541 [00:34<00:17, 13.97ex/s] 55%|█████▍    | 295/541 [00:34<00:18, 13.17ex/s] 55%|█████▍    | 297/541 [00:34<00:19, 12.60ex/s] 55%|█████▌    | 299/541 [00:34<00:18, 12.81ex/s] 56%|█████▌    | 301/541 [00:35<00:17, 13.55ex/s] 56%|█████▌    | 303/541 [00:35<00:17, 13.46ex/s] 56%|█████▋    | 305/541 [00:35<00:18, 12.84ex/s] 57%|█████▋    | 307/541 [00:35<00:18, 12.98ex/s] 57%|█████▋    | 309/541 [00:35<00:16, 13.70ex/s] 57%|█████▋    | 311/541 [00:35<00:16, 13.59ex/s] 58%|█████▊    | 313/541 [00:35<00:17, 12.92ex/s] 58%|█████▊    | 315/541 [00:36<00:17, 13.04ex/s] 59%|█████▊    | 317/541 [00:36<00:19, 11.56ex/s] 59%|█████▉    | 319/541 [00:36<00:18, 12.01ex/s] 59%|█████▉    | 321/541 [00:36<00:18, 11.84ex/s] 60%|█████▉    | 323/541 [00:36<00:18, 11.74ex/s] 60%|██████    | 325/541 [00:36<00:16, 12.73ex/s] 60%|██████    | 327/541 [00:37<00:15, 13.49ex/s] 61%|██████    | 329/541 [00:37<00:15, 14.05ex/s] 61%|██████    | 331/541 [00:37<00:14, 14.48ex/s] 62%|██████▏   | 333/541 [00:37<00:15, 13.44ex/s] 62%|██████▏   | 335/541 [00:37<00:15, 13.40ex/s] 62%|██████▏   | 337/541 [00:37<00:15, 13.38ex/s] 63%|██████▎   | 339/541 [00:37<00:14, 13.97ex/s] 63%|██████▎   | 341/541 [00:38<00:14, 13.70ex/s] 63%|██████▎   | 343/541 [00:38<00:15, 12.94ex/s] 64%|██████▍   | 345/541 [00:38<00:14, 13.64ex/s] 64%|██████▍   | 347/541 [00:38<00:14, 13.51ex/s] 65%|██████▍   | 349/541 [00:38<00:14, 12.84ex/s] 65%|██████▍   | 351/541 [00:38<00:13, 13.57ex/s] 65%|██████▌   | 353/541 [00:39<00:14, 12.88ex/s] 66%|██████▌   | 355/541 [00:39<00:14, 12.45ex/s] 66%|██████▌   | 357/541 [00:39<00:14, 12.70ex/s] 66%|██████▋   | 359/541 [00:39<00:13, 13.44ex/s] 67%|██████▋   | 361/541 [00:39<00:13, 13.39ex/s] 67%|██████▋   | 363/541 [00:39<00:13, 12.78ex/s] 67%|██████▋   | 365/541 [00:39<00:14, 12.37ex/s] 68%|██████▊   | 367/541 [00:40<00:13, 12.61ex/s] 68%|██████▊   | 369/541 [00:40<00:12, 13.39ex/s] 69%|██████▊   | 371/541 [00:40<00:12, 13.32ex/s] 69%|██████▉   | 373/541 [00:40<00:13, 12.73ex/s] 69%|██████▉   | 375/541 [00:40<00:13, 12.35ex/s] 70%|██████▉   | 377/541 [00:40<00:12, 12.64ex/s] 70%|███████   | 379/541 [00:41<00:12, 13.43ex/s] 70%|███████   | 381/541 [00:41<00:11, 13.40ex/s] 71%|███████   | 383/541 [00:41<00:12, 12.78ex/s] 71%|███████   | 385/541 [00:41<00:12, 12.34ex/s] 72%|███████▏  | 387/541 [00:41<00:12, 12.61ex/s] 72%|███████▏  | 389/541 [00:41<00:11, 13.40ex/s] 72%|███████▏  | 391/541 [00:41<00:11, 13.37ex/s] 73%|███████▎  | 393/541 [00:42<00:11, 12.77ex/s] 73%|███████▎  | 395/541 [00:42<00:11, 12.37ex/s] 73%|███████▎  | 397/541 [00:42<00:10, 13.23ex/s] 74%|███████▍  | 399/541 [00:42<00:10, 13.25ex/s] 74%|███████▍  | 401/541 [00:42<00:11, 12.67ex/s] 74%|███████▍  | 403/541 [00:42<00:11, 12.29ex/s] 75%|███████▍  | 405/541 [00:43<00:10, 13.16ex/s] 75%|███████▌  | 407/541 [00:43<00:09, 13.84ex/s] 76%|███████▌  | 409/541 [00:43<00:10, 13.04ex/s] 76%|███████▌  | 411/541 [00:43<00:10, 12.54ex/s] 76%|███████▋  | 413/541 [00:43<00:11, 11.34ex/s] 77%|███████▋  | 415/541 [00:43<00:10, 12.38ex/s] 77%|███████▋  | 417/541 [00:44<00:10, 12.10ex/s] 77%|███████▋  | 419/541 [00:44<00:10, 11.91ex/s] 78%|███████▊  | 421/541 [00:44<00:09, 12.86ex/s] 78%|███████▊  | 423/541 [00:44<00:08, 13.62ex/s] 79%|███████▊  | 425/541 [00:44<00:08, 12.90ex/s] 79%|███████▉  | 427/541 [00:44<00:09, 12.47ex/s] 79%|███████▉  | 429/541 [00:44<00:08, 13.31ex/s] 80%|███████▉  | 431/541 [00:45<00:07, 13.93ex/s] 80%|████████  | 433/541 [00:45<00:08, 13.08ex/s] 80%|████████  | 435/541 [00:45<00:08, 12.58ex/s] 81%|████████  | 437/541 [00:45<00:07, 13.38ex/s] 81%|████████  | 439/541 [00:45<00:07, 13.33ex/s] 82%|████████▏ | 441/541 [00:45<00:07, 12.75ex/s] 82%|████████▏ | 443/541 [00:46<00:09, 10.63ex/s] 82%|████████▏ | 445/541 [00:46<00:11,  8.52ex/s] 82%|████████▏ | 446/541 [00:46<00:12,  7.47ex/s] 83%|████████▎ | 448/541 [00:46<00:11,  8.02ex/s] 83%|████████▎ | 449/541 [00:47<00:12,  7.20ex/s] 83%|████████▎ | 450/541 [00:48<00:41,  2.21ex/s] 83%|████████▎ | 451/541 [00:48<00:37,  2.41ex/s] 84%|████████▎ | 452/541 [00:48<00:30,  2.93ex/s] 84%|████████▎ | 453/541 [00:48<00:25,  3.46ex/s] 84%|████████▍ | 454/541 [00:49<00:21,  3.96ex/s] 84%|████████▍ | 455/541 [00:49<00:19,  4.42ex/s] 84%|████████▍ | 456/541 [00:49<00:17,  4.80ex/s] 84%|████████▍ | 457/541 [00:49<00:16,  5.10ex/s] 85%|████████▍ | 458/541 [00:49<00:15,  5.33ex/s] 85%|████████▍ | 459/541 [00:49<00:14,  5.50ex/s] 85%|████████▌ | 460/541 [00:50<00:14,  5.64ex/s] 85%|████████▌ | 461/541 [00:50<00:13,  5.74ex/s] 85%|████████▌ | 462/541 [00:50<00:13,  5.81ex/s] 86%|████████▌ | 463/541 [00:50<00:13,  5.85ex/s] 86%|████████▌ | 464/541 [00:50<00:13,  5.87ex/s] 86%|████████▌ | 465/541 [00:51<00:19,  3.99ex/s] 86%|████████▌ | 466/541 [00:51<00:16,  4.43ex/s] 86%|████████▋ | 467/541 [00:51<00:15,  4.80ex/s] 87%|████████▋ | 468/541 [00:51<00:14,  5.10ex/s] 87%|████████▋ | 469/541 [00:51<00:13,  5.33ex/s] 87%|████████▋ | 470/541 [00:52<00:12,  5.50ex/s] 87%|████████▋ | 471/541 [00:52<00:12,  5.63ex/s] 87%|████████▋ | 472/541 [00:52<00:12,  5.72ex/s] 87%|████████▋ | 473/541 [00:52<00:11,  5.78ex/s] 88%|████████▊ | 474/541 [00:52<00:11,  5.83ex/s] 88%|████████▊ | 475/541 [00:52<00:11,  5.88ex/s] 88%|████████▊ | 476/541 [00:53<00:10,  5.92ex/s] 88%|████████▊ | 477/541 [00:54<00:29,  2.14ex/s] 88%|████████▊ | 478/541 [00:54<00:23,  2.64ex/s] 89%|████████▊ | 479/541 [00:54<00:19,  3.17ex/s] 89%|████████▊ | 480/541 [00:54<00:16,  3.69ex/s] 89%|████████▉ | 481/541 [00:54<00:14,  4.16ex/s] 89%|████████▉ | 482/541 [00:55<00:12,  4.57ex/s] 89%|████████▉ | 483/541 [00:55<00:11,  4.91ex/s] 89%|████████▉ | 484/541 [00:56<00:21,  2.60ex/s] 90%|████████▉ | 485/541 [00:56<00:17,  3.12ex/s] 90%|████████▉ | 486/541 [00:56<00:15,  3.65ex/s] 90%|█████████ | 487/541 [00:56<00:13,  4.13ex/s] 90%|█████████ | 488/541 [00:56<00:11,  4.56ex/s] 90%|█████████ | 489/541 [00:56<00:10,  4.91ex/s] 91%|█████████ | 490/541 [00:57<00:18,  2.72ex/s] 91%|█████████ | 491/541 [00:57<00:15,  3.25ex/s] 91%|█████████ | 492/541 [00:57<00:13,  3.76ex/s] 91%|█████████ | 493/541 [00:58<00:11,  4.23ex/s] 91%|█████████▏| 494/541 [00:58<00:10,  4.64ex/s] 91%|█████████▏| 495/541 [00:58<00:09,  4.96ex/s] 92%|█████████▏| 496/541 [00:58<00:08,  5.23ex/s] 92%|█████████▏| 497/541 [00:58<00:08,  5.43ex/s] 92%|█████████▏| 498/541 [00:58<00:07,  5.58ex/s] 92%|█████████▏| 499/541 [00:59<00:15,  2.63ex/s] 92%|█████████▏| 500/541 [00:59<00:12,  3.16ex/s] 93%|█████████▎| 501/541 [01:00<00:10,  3.69ex/s] 93%|█████████▎| 502/541 [01:00<00:09,  4.17ex/s] 93%|█████████▎| 503/541 [01:00<00:08,  4.59ex/s] 93%|█████████▎| 504/541 [01:00<00:07,  4.93ex/s] 93%|█████████▎| 505/541 [01:00<00:06,  5.20ex/s] 94%|█████████▎| 506/541 [01:01<00:08,  4.05ex/s] 94%|█████████▎| 507/541 [01:01<00:07,  4.48ex/s] 94%|█████████▍| 508/541 [01:01<00:06,  4.85ex/s] 94%|█████████▍| 509/541 [01:01<00:08,  3.85ex/s] 94%|█████████▍| 510/541 [01:02<00:07,  4.30ex/s] 94%|█████████▍| 511/541 [01:02<00:06,  4.69ex/s] 95%|█████████▍| 512/541 [01:02<00:05,  5.00ex/s] 95%|█████████▍| 513/541 [01:02<00:08,  3.49ex/s] 95%|█████████▌| 514/541 [01:03<00:06,  3.97ex/s] 95%|█████████▌| 515/541 [01:03<00:05,  4.42ex/s] 95%|█████████▌| 516/541 [01:03<00:05,  4.79ex/s] 96%|█████████▌| 517/541 [01:03<00:04,  5.08ex/s] 96%|█████████▌| 518/541 [01:03<00:04,  5.33ex/s] 96%|█████████▌| 519/541 [01:03<00:04,  5.49ex/s] 96%|█████████▌| 520/541 [01:05<00:10,  2.10ex/s] 96%|█████████▋| 521/541 [01:05<00:07,  2.60ex/s] 96%|█████████▋| 522/541 [01:05<00:06,  3.13ex/s] 97%|█████████▋| 523/541 [01:05<00:04,  3.65ex/s] 97%|█████████▋| 524/541 [01:05<00:04,  4.15ex/s] 97%|█████████▋| 525/541 [01:06<00:08,  1.93ex/s] 97%|█████████▋| 526/541 [01:07<00:06,  2.42ex/s] 97%|█████████▋| 527/541 [01:07<00:04,  2.95ex/s] 98%|█████████▊| 528/541 [01:08<00:06,  1.98ex/s] 98%|█████████▊| 529/541 [01:08<00:04,  2.47ex/s] 98%|█████████▊| 530/541 [01:08<00:03,  3.00ex/s] 98%|█████████▊| 531/541 [01:09<00:05,  1.72ex/s] 98%|█████████▊| 532/541 [01:09<00:04,  2.19ex/s] 99%|█████████▊| 533/541 [01:09<00:02,  2.70ex/s] 99%|█████████▊| 534/541 [01:10<00:02,  3.23ex/s] 99%|█████████▉| 535/541 [01:10<00:01,  3.75ex/s] 99%|█████████▉| 536/541 [01:11<00:02,  2.33ex/s] 99%|█████████▉| 537/541 [01:11<00:01,  2.84ex/s] 99%|█████████▉| 538/541 [01:11<00:00,  3.38ex/s]100%|█████████▉| 539/541 [01:11<00:00,  3.89ex/s]100%|█████████▉| 540/541 [01:11<00:00,  4.34ex/s]100%|██████████| 541/541 [01:12<00:00,  2.71ex/s]100%|██████████| 541/541 [01:12<00:00,  7.47ex/s]
+loading feature extractor configuration file https://huggingface.co/facebook/wav2vec2-large-robust-ft-libri-960h/resolve/main/preprocessor_config.json from cache at /home/z5160268/.cache/huggingface/transformers/3ef63d0f0fe520475c10e456ecc68ef0c9b74f758752e9ae8b86705b797c5d1d.d4484dc1c81456a2461485e7168b04347a7b9a4e3b1ef3aba723323b33e12326
+Feature extractor Wav2Vec2FeatureExtractor {
+  "do_normalize": true,
+  "feature_extractor_type": "Wav2Vec2FeatureExtractor",
+  "feature_size": 1,
+  "padding_side": "right",
+  "padding_value": 0,
+  "return_attention_mask": true,
+  "sampling_rate": 16000
+}
+
+loading file https://huggingface.co/facebook/wav2vec2-large-robust-ft-libri-960h/resolve/main/vocab.json from cache at /home/z5160268/.cache/huggingface/transformers/a4599c9b20520ca4546f59004d918f4d7d907372a5717c61bcf14a444f5ae472.26f343f1568b684f1d1dc24d4850fdc070d556131a8e5d95f4e0f0ac78bb1ad8
+loading file https://huggingface.co/facebook/wav2vec2-large-robust-ft-libri-960h/resolve/main/tokenizer_config.json from cache at /home/z5160268/.cache/huggingface/transformers/40e14bd2be1625e0a8e4b43195b8cacd36438797f4bf0324b118a66c2d038469.7932b61693e7b037980a76612295278da84b4eb7b8534735f541aa128e7d5144
+loading file https://huggingface.co/facebook/wav2vec2-large-robust-ft-libri-960h/resolve/main/added_tokens.json from cache at None
+loading file https://huggingface.co/facebook/wav2vec2-large-robust-ft-libri-960h/resolve/main/special_tokens_map.json from cache at /home/z5160268/.cache/huggingface/transformers/57a88d04248f5a802e62edf5b42b3632f919616d619b12bbd7ab935fefca7f78.9d6cd81ef646692fb1c169a880161ea1cb95f49694f220aced9b704b457e51dd
+loading file https://huggingface.co/facebook/wav2vec2-large-robust-ft-libri-960h/resolve/main/tokenizer.json from cache at None
+loading configuration file https://huggingface.co/facebook/wav2vec2-large-robust-ft-libri-960h/resolve/main/config.json from cache at /home/z5160268/.cache/huggingface/transformers/3164df2d98c2a09663f83e5b15f213387d0c6b500fca282186736593edfaa38a.73c147bca71fc3f87c820aa8a803c045d849003462fd045f65b41c9898a489f7
+Model config Wav2Vec2Config {
+  "activation_dropout": 0.1,
+  "apply_spec_augment": true,
+  "architectures": [
+    "Wav2Vec2ForCTC"
+  ],
+  "attention_dropout": 0.1,
+  "bos_token_id": 1,
+  "codevector_dim": 768,
+  "contrastive_logits_temperature": 0.1,
+  "conv_bias": true,
+  "conv_dim": [
+    512,
+    512,
+    512,
+    512,
+    512,
+    512,
+    512
+  ],
+  "conv_kernel": [
+    10,
+    3,
+    3,
+    3,
+    3,
+    2,
+    2
+  ],
+  "conv_stride": [
+    5,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "ctc_loss_reduction": "sum",
+  "ctc_zero_infinity": false,
+  "diversity_loss_weight": 0.1,
+  "do_stable_layer_norm": true,
+  "eos_token_id": 2,
+  "feat_extract_activation": "gelu",
+  "feat_extract_dropout": 0.0,
+  "feat_extract_norm": "layer",
+  "feat_proj_dropout": 0.1,
+  "feat_quantizer_dropout": 0.0,
+  "final_dropout": 0.1,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout": 0.1,
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 1024,
+  "initializer_range": 0.02,
+  "intermediate_size": 4096,
+  "layer_norm_eps": 1e-05,
+  "layerdrop": 0.1,
+  "mask_feature_length": 10,
+  "mask_feature_prob": 0.0,
+  "mask_time_length": 10,
+  "mask_time_prob": 0.05,
+  "model_type": "wav2vec2",
+  "num_attention_heads": 16,
+  "num_codevector_groups": 2,
+  "num_codevectors_per_group": 320,
+  "num_conv_pos_embedding_groups": 16,
+  "num_conv_pos_embeddings": 128,
+  "num_feat_extract_layers": 7,
+  "num_hidden_layers": 24,
+  "num_negatives": 100,
+  "pad_token_id": 0,
+  "proj_codevector_dim": 768,
+  "torch_dtype": "float32",
+  "transformers_version": "4.8.2",
+  "vocab_size": 32
+}
+
+loading weights file https://huggingface.co/facebook/wav2vec2-large-robust-ft-libri-960h/resolve/main/pytorch_model.bin from cache at /home/z5160268/.cache/huggingface/transformers/e0215fd920c1d084802f8003e1aa54cd6605cf36747249d65aab8fbd9953b435.b23dc1080d9d552a063e6692256fe0e780702222e70656075babbe6621dc3a38
+All model checkpoint weights were used when initializing Wav2Vec2ForCTC.
+
+All the weights of Wav2Vec2ForCTC were initialized from the model checkpoint at facebook/wav2vec2-large-robust-ft-libri-960h.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use Wav2Vec2ForCTC for predictions without further training.
+loading file https://huggingface.co/facebook/wav2vec2-large-robust-ft-libri-960h/resolve/main/vocab.json from cache at /home/z5160268/.cache/huggingface/transformers/a4599c9b20520ca4546f59004d918f4d7d907372a5717c61bcf14a444f5ae472.26f343f1568b684f1d1dc24d4850fdc070d556131a8e5d95f4e0f0ac78bb1ad8
+loading file https://huggingface.co/facebook/wav2vec2-large-robust-ft-libri-960h/resolve/main/tokenizer_config.json from cache at /home/z5160268/.cache/huggingface/transformers/40e14bd2be1625e0a8e4b43195b8cacd36438797f4bf0324b118a66c2d038469.7932b61693e7b037980a76612295278da84b4eb7b8534735f541aa128e7d5144
+loading file https://huggingface.co/facebook/wav2vec2-large-robust-ft-libri-960h/resolve/main/added_tokens.json from cache at None
+loading file https://huggingface.co/facebook/wav2vec2-large-robust-ft-libri-960h/resolve/main/special_tokens_map.json from cache at /home/z5160268/.cache/huggingface/transformers/57a88d04248f5a802e62edf5b42b3632f919616d619b12bbd7ab935fefca7f78.9d6cd81ef646692fb1c169a880161ea1cb95f49694f220aced9b704b457e51dd
+loading file https://huggingface.co/facebook/wav2vec2-large-robust-ft-libri-960h/resolve/main/tokenizer.json from cache at None
+  0%|          | 0/541 [00:00<?, ?ex/s]  0%|          | 1/541 [00:00<04:20,  2.07ex/s]  0%|          | 2/541 [00:00<03:32,  2.53ex/s]  1%|          | 3/541 [00:00<02:56,  3.05ex/s]  1%|          | 4/541 [00:01<02:31,  3.53ex/s]  1%|          | 5/541 [00:01<03:22,  2.64ex/s]  1%|          | 6/541 [00:01<02:49,  3.16ex/s]  1%|▏         | 7/541 [00:01<02:26,  3.65ex/s]  1%|▏         | 8/541 [00:02<02:10,  4.09ex/s]  2%|▏         | 9/541 [00:02<01:58,  4.47ex/s]  2%|▏         | 10/541 [00:02<01:51,  4.78ex/s]  2%|▏         | 11/541 [00:02<01:45,  5.03ex/s]  2%|▏         | 12/541 [00:02<01:41,  5.23ex/s]  2%|▏         | 13/541 [00:03<01:38,  5.38ex/s]  3%|▎         | 14/541 [00:03<01:36,  5.48ex/s]  3%|▎         | 15/541 [00:03<01:34,  5.56ex/s]  3%|▎         | 16/541 [00:05<06:14,  1.40ex/s]  3%|▎         | 17/541 [00:05<04:49,  1.81ex/s]  3%|▎         | 18/541 [00:05<03:49,  2.28ex/s]  4%|▎         | 19/541 [00:05<03:07,  2.78ex/s]  4%|▎         | 20/541 [00:06<02:38,  3.29ex/s]  4%|▍         | 21/541 [00:06<02:17,  3.78ex/s]  4%|▍         | 22/541 [00:08<06:39,  1.30ex/s]  4%|▍         | 23/541 [00:08<05:06,  1.69ex/s]  4%|▍         | 24/541 [00:08<04:00,  2.15ex/s]  5%|▍         | 25/541 [00:08<03:15,  2.64ex/s]  5%|▍         | 26/541 [00:08<02:43,  3.15ex/s]  5%|▍         | 27/541 [00:09<02:20,  3.65ex/s]  5%|▌         | 28/541 [00:09<02:19,  3.68ex/s]  5%|▌         | 29/541 [00:10<05:04,  1.68ex/s]  6%|▌         | 30/541 [00:10<03:59,  2.13ex/s]  6%|▌         | 31/541 [00:10<03:14,  2.62ex/s]  6%|▌         | 32/541 [00:11<02:42,  3.13ex/s]  6%|▌         | 33/541 [00:13<06:51,  1.23ex/s]  6%|▋         | 34/541 [00:13<05:14,  1.61ex/s]  6%|▋         | 35/541 [00:13<04:05,  2.06ex/s]  7%|▋         | 36/541 [00:13<03:18,  2.55ex/s]  7%|▋         | 37/541 [00:13<02:44,  3.06ex/s]  7%|▋         | 38/541 [00:13<02:21,  3.56ex/s]  7%|▋         | 39/541 [00:14<02:05,  4.02ex/s]  7%|▋         | 40/541 [00:14<01:53,  4.42ex/s]  8%|▊         | 41/541 [00:14<01:45,  4.75ex/s]  8%|▊         | 42/541 [00:14<01:39,  5.00ex/s]  8%|▊         | 43/541 [00:16<06:01,  1.38ex/s]  8%|▊         | 44/541 [00:16<04:38,  1.78ex/s]  8%|▊         | 45/541 [00:16<03:40,  2.25ex/s]  9%|▊         | 46/541 [00:17<02:59,  2.75ex/s]  9%|▊         | 47/541 [00:17<02:31,  3.26ex/s]  9%|▉         | 48/541 [00:17<02:11,  3.75ex/s]  9%|▉         | 49/541 [00:17<01:57,  4.18ex/s]  9%|▉         | 50/541 [00:17<01:48,  4.54ex/s]  9%|▉         | 51/541 [00:18<01:41,  4.84ex/s] 10%|▉         | 52/541 [00:18<03:31,  2.31ex/s] 10%|▉         | 53/541 [00:19<02:53,  2.82ex/s] 10%|▉         | 54/541 [00:19<02:26,  3.33ex/s] 10%|█         | 55/541 [00:19<02:07,  3.80ex/s] 10%|█         | 56/541 [00:20<04:25,  1.83ex/s] 11%|█         | 57/541 [00:20<03:30,  2.30ex/s] 11%|█         | 58/541 [00:21<02:52,  2.80ex/s] 11%|█         | 59/541 [00:21<02:26,  3.30ex/s] 11%|█         | 60/541 [00:21<02:07,  3.78ex/s] 11%|█▏        | 61/541 [00:23<06:09,  1.30ex/s] 11%|█▏        | 62/541 [00:23<04:43,  1.69ex/s] 12%|█▏        | 63/541 [00:23<03:43,  2.14ex/s] 12%|█▏        | 64/541 [00:23<03:00,  2.64ex/s] 12%|█▏        | 65/541 [00:24<02:31,  3.14ex/s] 12%|█▏        | 66/541 [00:26<06:29,  1.22ex/s] 12%|█▏        | 67/541 [00:26<04:56,  1.60ex/s] 13%|█▎        | 68/541 [00:26<03:52,  2.04ex/s] 13%|█▎        | 69/541 [00:26<03:06,  2.53ex/s] 13%|█▎        | 70/541 [00:26<02:35,  3.03ex/s] 13%|█▎        | 71/541 [00:26<02:13,  3.53ex/s] 13%|█▎        | 73/541 [00:27<01:47,  4.36ex/s] 14%|█▎        | 74/541 [00:27<01:39,  4.70ex/s] 14%|█▍        | 75/541 [00:27<01:33,  4.96ex/s] 14%|█▍        | 77/541 [00:27<01:17,  5.98ex/s] 15%|█▍        | 79/541 [00:27<01:06,  6.99ex/s] 15%|█▍        | 81/541 [00:28<00:57,  7.95ex/s] 15%|█▌        | 83/541 [00:28<00:52,  8.80ex/s] 16%|█▌        | 85/541 [00:28<00:47,  9.51ex/s] 16%|█▌        | 87/541 [00:28<01:06,  6.87ex/s] 16%|█▋        | 88/541 [00:28<01:02,  7.27ex/s] 16%|█▋        | 89/541 [00:29<00:59,  7.59ex/s] 17%|█▋        | 90/541 [00:29<00:57,  7.81ex/s] 17%|█▋        | 91/541 [00:29<00:56,  7.91ex/s] 17%|█▋        | 93/541 [00:29<00:51,  8.67ex/s] 18%|█▊        | 95/541 [00:29<00:49,  8.97ex/s] 18%|█▊        | 96/541 [00:29<00:50,  8.82ex/s] 18%|█▊        | 97/541 [00:29<00:50,  8.71ex/s] 18%|█▊        | 99/541 [00:30<00:46,  9.42ex/s] 19%|█▊        | 101/541 [00:30<00:46,  9.54ex/s] 19%|█▉        | 102/541 [00:30<00:47,  9.17ex/s] 19%|█▉        | 103/541 [00:30<00:49,  8.94ex/s] 19%|█▉        | 104/541 [00:30<00:49,  8.78ex/s] 19%|█▉        | 105/541 [00:30<00:50,  8.65ex/s] 20%|█▉        | 106/541 [00:30<00:50,  8.59ex/s] 20%|█▉        | 107/541 [00:31<00:50,  8.54ex/s] 20%|█▉        | 108/541 [00:31<00:50,  8.50ex/s] 20%|██        | 109/541 [00:31<00:50,  8.52ex/s] 20%|██        | 110/541 [00:31<00:50,  8.50ex/s] 21%|██        | 112/541 [00:31<00:46,  9.26ex/s] 21%|██        | 114/541 [00:31<00:43,  9.85ex/s] 21%|██▏       | 116/541 [00:31<00:41, 10.30ex/s] 22%|██▏       | 118/541 [00:32<00:39, 10.69ex/s] 22%|██▏       | 120/541 [00:32<00:40, 10.38ex/s] 23%|██▎       | 122/541 [00:32<00:43,  9.70ex/s] 23%|██▎       | 123/541 [00:32<00:45,  9.25ex/s] 23%|██▎       | 124/541 [00:32<00:46,  8.96ex/s] 23%|██▎       | 125/541 [00:32<00:47,  8.74ex/s] 23%|██▎       | 127/541 [00:33<00:43,  9.41ex/s] 24%|██▍       | 129/541 [00:33<00:41,  9.98ex/s] 24%|██▍       | 131/541 [00:33<00:39, 10.43ex/s] 25%|██▍       | 133/541 [00:33<00:37, 10.77ex/s] 25%|██▍       | 135/541 [00:33<00:38, 10.49ex/s] 25%|██▌       | 137/541 [00:33<00:41,  9.79ex/s] 26%|██▌       | 138/541 [00:34<00:43,  9.33ex/s] 26%|██▌       | 140/541 [00:34<00:40,  9.89ex/s] 26%|██▌       | 142/541 [00:34<00:38, 10.36ex/s] 27%|██▋       | 144/541 [00:34<00:40,  9.71ex/s] 27%|██▋       | 145/541 [00:34<00:42,  9.31ex/s] 27%|██▋       | 146/541 [00:34<00:43,  9.03ex/s] 27%|██▋       | 147/541 [00:35<00:44,  8.85ex/s] 27%|██▋       | 148/541 [00:35<00:44,  8.74ex/s] 28%|██▊       | 150/541 [00:35<00:41,  9.41ex/s] 28%|██▊       | 152/541 [00:35<00:39,  9.95ex/s] 28%|██▊       | 154/541 [00:35<00:39,  9.88ex/s] 29%|██▉       | 156/541 [00:35<00:41,  9.39ex/s] 29%|██▉       | 157/541 [00:36<00:42,  9.10ex/s] 29%|██▉       | 158/541 [00:36<00:43,  8.89ex/s] 30%|██▉       | 160/541 [00:36<00:39,  9.58ex/s] 30%|██▉       | 162/541 [00:36<00:37, 10.13ex/s] 30%|███       | 164/541 [00:36<00:39,  9.55ex/s] 30%|███       | 165/541 [00:36<00:40,  9.18ex/s] 31%|███       | 166/541 [00:37<00:41,  8.94ex/s] 31%|███       | 167/541 [00:37<00:42,  8.80ex/s] 31%|███       | 169/541 [00:37<00:39,  9.50ex/s] 32%|███▏      | 171/541 [00:37<00:36, 10.08ex/s] 32%|███▏      | 173/541 [00:37<00:36, 10.01ex/s] 32%|███▏      | 175/541 [00:37<00:38,  9.47ex/s] 33%|███▎      | 176/541 [00:38<00:40,  9.11ex/s] 33%|███▎      | 178/541 [00:38<00:37,  9.71ex/s] 33%|███▎      | 180/541 [00:38<00:37,  9.70ex/s] 33%|███▎      | 181/541 [00:38<00:38,  9.25ex/s] 34%|███▎      | 182/541 [00:38<00:49,  7.21ex/s] 34%|███▍      | 183/541 [00:38<00:47,  7.51ex/s] 34%|███▍      | 184/541 [00:38<00:46,  7.74ex/s] 34%|███▍      | 185/541 [00:39<00:44,  7.93ex/s] 35%|███▍      | 187/541 [00:39<00:40,  8.76ex/s] 35%|███▍      | 189/541 [00:39<00:37,  9.46ex/s] 35%|███▌      | 191/541 [00:39<00:36,  9.56ex/s] 35%|███▌      | 192/541 [00:39<00:37,  9.19ex/s] 36%|███▌      | 193/541 [00:39<00:38,  8.95ex/s] 36%|███▌      | 194/541 [00:40<00:39,  8.83ex/s] 36%|███▌      | 195/541 [00:40<00:39,  8.67ex/s] 36%|███▌      | 196/541 [00:40<00:40,  8.56ex/s] 37%|███▋      | 198/541 [00:40<00:37,  9.27ex/s] 37%|███▋      | 200/541 [00:40<00:34,  9.88ex/s] 37%|███▋      | 202/541 [00:40<00:36,  9.39ex/s] 38%|███▊      | 203/541 [00:40<00:37,  9.10ex/s] 38%|███▊      | 204/541 [00:41<00:37,  8.91ex/s] 38%|███▊      | 205/541 [00:41<00:38,  8.77ex/s] 38%|███▊      | 206/541 [00:41<00:38,  8.63ex/s] 38%|███▊      | 207/541 [00:41<00:38,  8.58ex/s] 38%|███▊      | 208/541 [00:41<00:38,  8.54ex/s] 39%|███▊      | 209/541 [00:41<00:39,  8.50ex/s] 39%|███▉      | 211/541 [00:41<00:35,  9.26ex/s] 39%|███▉      | 213/541 [00:41<00:33,  9.87ex/s] 40%|███▉      | 215/541 [00:42<00:33,  9.83ex/s] 40%|████      | 217/541 [00:42<00:34,  9.38ex/s] 40%|████      | 218/541 [00:42<00:35,  9.09ex/s] 40%|████      | 219/541 [00:42<00:36,  8.85ex/s] 41%|████      | 221/541 [00:42<00:33,  9.53ex/s] 41%|████      | 223/541 [00:43<00:31, 10.09ex/s] 42%|████▏     | 225/541 [00:43<00:31, 10.00ex/s] 42%|████▏     | 227/541 [00:43<00:33,  9.47ex/s] 42%|████▏     | 228/541 [00:43<00:34,  9.14ex/s] 42%|████▏     | 229/541 [00:43<00:34,  8.93ex/s] 43%|████▎     | 231/541 [00:43<00:32,  9.58ex/s] 43%|████▎     | 233/541 [00:44<00:30, 10.12ex/s] 43%|████▎     | 235/541 [00:44<00:32,  9.54ex/s] 44%|████▎     | 236/541 [00:44<00:33,  9.17ex/s] 44%|████▍     | 237/541 [00:44<00:34,  8.93ex/s] 44%|████▍     | 238/541 [00:44<00:34,  8.77ex/s] 44%|████▍     | 240/541 [00:44<00:31,  9.47ex/s] 45%|████▍     | 242/541 [00:44<00:29,  9.98ex/s] 45%|████▌     | 244/541 [00:45<00:30,  9.89ex/s] 45%|████▌     | 246/541 [00:45<00:31,  9.37ex/s] 46%|████▌     | 247/541 [00:45<00:32,  9.07ex/s] 46%|████▌     | 249/541 [00:45<00:30,  9.71ex/s] 46%|████▋     | 251/541 [00:45<00:28, 10.21ex/s] 47%|████▋     | 253/541 [00:46<00:28, 10.06ex/s] 47%|████▋     | 255/541 [00:46<00:30,  9.51ex/s] 47%|████▋     | 256/541 [00:46<00:31,  9.14ex/s] 48%|████▊     | 258/541 [00:46<00:29,  9.74ex/s] 48%|████▊     | 260/541 [00:46<00:27, 10.23ex/s] 48%|████▊     | 262/541 [00:47<00:27, 10.06ex/s] 49%|████▉     | 264/541 [00:47<00:29,  9.50ex/s] 49%|████▉     | 265/541 [00:47<00:30,  9.07ex/s] 49%|████▉     | 266/541 [00:47<00:31,  8.83ex/s] 50%|████▉     | 268/541 [00:47<00:28,  9.49ex/s] 50%|████▉     | 270/541 [00:47<00:28,  9.55ex/s] 50%|█████     | 271/541 [00:47<00:29,  9.18ex/s] 50%|█████     | 272/541 [00:48<00:30,  8.93ex/s] 51%|█████     | 274/541 [00:48<00:27,  9.60ex/s] 51%|█████     | 276/541 [00:48<00:27,  9.62ex/s] 51%|█████     | 277/541 [00:48<00:28,  9.21ex/s] 51%|█████▏    | 278/541 [00:48<00:36,  7.21ex/s] 52%|█████▏    | 279/541 [00:48<00:34,  7.53ex/s] 52%|█████▏    | 280/541 [00:49<00:33,  7.78ex/s] 52%|█████▏    | 282/541 [00:49<00:30,  8.63ex/s] 52%|█████▏    | 284/541 [00:49<00:27,  9.35ex/s] 53%|█████▎    | 285/541 [00:49<00:28,  9.03ex/s] 53%|█████▎    | 286/541 [00:49<00:28,  8.84ex/s] 53%|█████▎    | 287/541 [00:49<00:29,  8.70ex/s] 53%|█████▎    | 288/541 [00:49<00:29,  8.63ex/s] 53%|█████▎    | 289/541 [00:49<00:29,  8.55ex/s] 54%|█████▍    | 291/541 [00:50<00:26,  9.27ex/s] 54%|█████▍    | 293/541 [00:50<00:25,  9.83ex/s] 55%|█████▍    | 295/541 [00:50<00:26,  9.37ex/s] 55%|█████▍    | 296/541 [00:50<00:27,  9.06ex/s] 55%|█████▍    | 297/541 [00:50<00:27,  8.88ex/s] 55%|█████▌    | 298/541 [00:50<00:27,  8.74ex/s] 55%|█████▌    | 300/541 [00:51<00:25,  9.43ex/s] 56%|█████▌    | 302/541 [00:51<00:23,  9.99ex/s] 56%|█████▌    | 304/541 [00:51<00:24,  9.49ex/s] 56%|█████▋    | 305/541 [00:51<00:25,  9.15ex/s] 57%|█████▋    | 306/541 [00:51<00:26,  8.90ex/s] 57%|█████▋    | 308/541 [00:51<00:24,  9.55ex/s] 57%|█████▋    | 310/541 [00:52<00:22, 10.06ex/s] 58%|█████▊    | 312/541 [00:52<00:24,  9.51ex/s] 58%|█████▊    | 313/541 [00:52<00:24,  9.15ex/s] 58%|█████▊    | 314/541 [00:52<00:25,  8.90ex/s] 58%|█████▊    | 316/541 [00:52<00:23,  9.55ex/s] 59%|█████▉    | 318/541 [00:52<00:22, 10.09ex/s] 59%|█████▉    | 320/541 [00:53<00:23,  9.50ex/s] 59%|█████▉    | 321/541 [00:53<00:24,  9.14ex/s] 60%|█████▉    | 322/541 [00:53<00:24,  8.93ex/s] 60%|█████▉    | 323/541 [00:53<00:24,  8.77ex/s] 60%|██████    | 325/541 [00:53<00:22,  9.41ex/s] 60%|██████    | 327/541 [00:53<00:21,  9.94ex/s] 61%|██████    | 329/541 [00:54<00:20, 10.39ex/s] 61%|██████    | 331/541 [00:54<00:19, 10.73ex/s] 62%|██████▏   | 333/541 [00:54<00:21,  9.90ex/s] 62%|██████▏   | 335/541 [00:54<00:20,  9.87ex/s] 62%|██████▏   | 337/541 [00:54<00:20,  9.82ex/s] 63%|██████▎   | 339/541 [00:55<00:19, 10.29ex/s] 63%|██████▎   | 341/541 [00:55<00:19, 10.11ex/s] 63%|██████▎   | 343/541 [00:55<00:20,  9.52ex/s] 64%|██████▍   | 345/541 [00:55<00:19, 10.05ex/s] 64%|██████▍   | 347/541 [00:55<00:19,  9.94ex/s] 65%|██████▍   | 349/541 [00:56<00:20,  9.44ex/s] 65%|██████▍   | 351/541 [00:56<00:19,  9.99ex/s] 65%|██████▌   | 353/541 [00:56<00:19,  9.47ex/s] 65%|██████▌   | 354/541 [00:56<00:20,  9.10ex/s] 66%|██████▌   | 355/541 [00:56<00:20,  8.87ex/s] 66%|██████▌   | 356/541 [00:56<00:21,  8.71ex/s] 66%|██████▌   | 358/541 [00:57<00:19,  9.43ex/s] 67%|██████▋   | 360/541 [00:57<00:18, 10.01ex/s] 67%|██████▋   | 362/541 [00:57<00:18,  9.50ex/s] 67%|██████▋   | 363/541 [00:57<00:19,  9.19ex/s] 67%|██████▋   | 364/541 [00:57<00:19,  8.98ex/s] 67%|██████▋   | 365/541 [00:57<00:19,  8.84ex/s] 68%|██████▊   | 366/541 [00:57<00:20,  8.72ex/s] 68%|██████▊   | 368/541 [00:58<00:18,  9.43ex/s] 68%|██████▊   | 370/541 [00:58<00:17,  9.99ex/s] 69%|██████▉   | 372/541 [00:58<00:17,  9.44ex/s] 69%|██████▉   | 373/541 [00:58<00:18,  9.12ex/s] 69%|██████▉   | 374/541 [00:58<00:23,  7.20ex/s] 69%|██████▉   | 375/541 [00:58<00:22,  7.51ex/s] 70%|██████▉   | 376/541 [00:59<00:21,  7.75ex/s] 70%|██████▉   | 378/541 [00:59<00:18,  8.60ex/s] 70%|███████   | 380/541 [00:59<00:17,  9.27ex/s] 70%|███████   | 381/541 [00:59<00:17,  9.00ex/s] 71%|███████   | 382/541 [00:59<00:18,  8.81ex/s] 71%|███████   | 383/541 [00:59<00:18,  8.67ex/s] 71%|███████   | 384/541 [00:59<00:18,  8.58ex/s] 71%|███████   | 385/541 [01:00<00:18,  8.53ex/s] 71%|███████▏  | 386/541 [01:00<00:18,  8.48ex/s] 72%|███████▏  | 388/541 [01:00<00:16,  9.21ex/s] 72%|███████▏  | 390/541 [01:00<00:15,  9.80ex/s] 72%|███████▏  | 392/541 [01:00<00:15,  9.32ex/s] 73%|███████▎  | 393/541 [01:00<00:16,  9.02ex/s] 73%|███████▎  | 394/541 [01:00<00:16,  8.82ex/s] 73%|███████▎  | 395/541 [01:01<00:16,  8.69ex/s] 73%|███████▎  | 397/541 [01:01<00:15,  9.39ex/s] 74%|███████▍  | 399/541 [01:01<00:14,  9.49ex/s] 74%|███████▍  | 400/541 [01:01<00:15,  9.12ex/s] 74%|███████▍  | 401/541 [01:01<00:15,  8.90ex/s] 74%|███████▍  | 402/541 [01:01<00:15,  8.72ex/s] 74%|███████▍  | 403/541 [01:01<00:16,  8.62ex/s] 75%|███████▍  | 405/541 [01:02<00:14,  9.31ex/s] 75%|███████▌  | 407/541 [01:02<00:13,  9.87ex/s] 76%|███████▌  | 409/541 [01:02<00:14,  9.40ex/s] 76%|███████▌  | 410/541 [01:02<00:14,  9.07ex/s] 76%|███████▌  | 411/541 [01:02<00:14,  8.87ex/s] 76%|███████▋  | 413/541 [01:02<00:13,  9.52ex/s] 77%|███████▋  | 415/541 [01:03<00:12, 10.03ex/s] 77%|███████▋  | 417/541 [01:03<00:13,  9.46ex/s] 77%|███████▋  | 418/541 [01:03<00:13,  9.08ex/s] 77%|███████▋  | 419/541 [01:03<00:13,  8.80ex/s] 78%|███████▊  | 421/541 [01:03<00:12,  9.46ex/s] 78%|███████▊  | 423/541 [01:03<00:11,  9.99ex/s] 79%|███████▊  | 425/541 [01:04<00:12,  9.45ex/s] 79%|███████▊  | 426/541 [01:04<00:12,  9.12ex/s] 79%|███████▉  | 427/541 [01:04<00:12,  8.88ex/s] 79%|███████▉  | 429/541 [01:04<00:11,  9.53ex/s] 80%|███████▉  | 431/541 [01:04<00:10, 10.08ex/s] 80%|████████  | 433/541 [01:04<00:11,  9.48ex/s] 80%|████████  | 434/541 [01:05<00:11,  9.11ex/s] 80%|████████  | 435/541 [01:05<00:11,  8.85ex/s] 81%|████████  | 437/541 [01:05<00:10,  9.49ex/s] 81%|████████  | 439/541 [01:05<00:10,  9.56ex/s] 81%|████████▏ | 440/541 [01:05<00:10,  9.19ex/s] 82%|████████▏ | 441/541 [01:05<00:11,  8.91ex/s] 82%|████████▏ | 442/541 [01:05<00:11,  8.71ex/s] 82%|████████▏ | 443/541 [01:06<00:14,  6.56ex/s] 82%|████████▏ | 444/541 [01:06<00:17,  5.57ex/s] 82%|████████▏ | 445/541 [01:06<00:19,  5.03ex/s] 82%|████████▏ | 446/541 [01:06<00:20,  4.72ex/s] 83%|████████▎ | 448/541 [01:07<00:17,  5.20ex/s] 83%|████████▎ | 449/541 [01:07<00:19,  4.82ex/s] 83%|████████▎ | 450/541 [01:09<01:06,  1.36ex/s] 83%|████████▎ | 451/541 [01:09<00:59,  1.51ex/s] 84%|████████▎ | 452/541 [01:10<00:47,  1.86ex/s] 84%|████████▎ | 453/541 [01:10<00:39,  2.23ex/s] 84%|████████▍ | 454/541 [01:10<00:33,  2.58ex/s] 84%|████████▍ | 455/541 [01:10<00:29,  2.91ex/s] 84%|████████▍ | 456/541 [01:11<00:26,  3.19ex/s] 84%|████████▍ | 457/541 [01:11<00:24,  3.42ex/s] 85%|████████▍ | 458/541 [01:11<00:22,  3.61ex/s] 85%|████████▍ | 459/541 [01:11<00:21,  3.75ex/s] 85%|████████▌ | 460/541 [01:12<00:21,  3.85ex/s] 85%|████████▌ | 461/541 [01:12<00:20,  3.92ex/s] 85%|████████▌ | 462/541 [01:12<00:19,  3.98ex/s] 86%|████████▌ | 463/541 [01:12<00:19,  4.02ex/s] 86%|████████▌ | 464/541 [01:13<00:19,  4.05ex/s] 86%|████████▌ | 465/541 [01:13<00:28,  2.71ex/s] 86%|████████▌ | 466/541 [01:13<00:24,  3.02ex/s] 86%|████████▋ | 467/541 [01:14<00:22,  3.28ex/s] 87%|████████▋ | 468/541 [01:14<00:20,  3.49ex/s] 87%|████████▋ | 469/541 [01:14<00:19,  3.66ex/s] 87%|████████▋ | 470/541 [01:14<00:18,  3.79ex/s] 87%|████████▋ | 471/541 [01:15<00:18,  3.88ex/s] 87%|████████▋ | 472/541 [01:15<00:17,  3.95ex/s] 87%|████████▋ | 473/541 [01:15<00:17,  3.99ex/s] 88%|████████▊ | 474/541 [01:15<00:16,  4.02ex/s] 88%|████████▊ | 475/541 [01:16<00:16,  4.05ex/s] 88%|████████▊ | 476/541 [01:16<00:15,  4.07ex/s] 88%|████████▊ | 477/541 [01:18<00:49,  1.30ex/s] 88%|████████▊ | 478/541 [01:18<00:38,  1.63ex/s] 89%|████████▊ | 479/541 [01:20<00:51,  1.20ex/s] 89%|████████▊ | 480/541 [01:20<00:40,  1.52ex/s] 89%|████████▉ | 481/541 [01:20<00:32,  1.87ex/s] 89%|████████▉ | 482/541 [01:20<00:26,  2.24ex/s] 89%|████████▉ | 483/541 [01:20<00:22,  2.59ex/s] 89%|████████▉ | 484/541 [01:22<00:37,  1.53ex/s] 90%|████████▉ | 485/541 [01:22<00:29,  1.88ex/s] 90%|████████▉ | 486/541 [01:22<00:24,  2.25ex/s] 90%|█████████ | 487/541 [01:22<00:20,  2.60ex/s] 90%|█████████ | 488/541 [01:23<00:18,  2.92ex/s] 90%|█████████ | 489/541 [01:23<00:16,  3.20ex/s] 91%|█████████ | 490/541 [01:24<00:29,  1.73ex/s] 91%|█████████ | 491/541 [01:24<00:23,  2.09ex/s] 91%|█████████ | 492/541 [01:25<00:19,  2.45ex/s] 91%|█████████ | 493/541 [01:25<00:17,  2.80ex/s] 91%|█████████▏| 494/541 [01:25<00:15,  3.09ex/s] 91%|█████████▏| 495/541 [01:25<00:13,  3.34ex/s] 92%|█████████▏| 496/541 [01:26<00:12,  3.54ex/s] 92%|█████████▏| 497/541 [01:26<00:11,  3.69ex/s] 92%|█████████▏| 498/541 [01:26<00:11,  3.80ex/s] 92%|█████████▏| 499/541 [01:27<00:24,  1.68ex/s] 92%|█████████▏| 500/541 [01:28<00:20,  2.05ex/s] 93%|█████████▎| 501/541 [01:28<00:16,  2.40ex/s] 93%|█████████▎| 502/541 [01:28<00:14,  2.75ex/s] 93%|█████████▎| 503/541 [01:28<00:12,  3.00ex/s] 93%|█████████▎| 504/541 [01:29<00:11,  3.27ex/s] 93%|█████████▎| 505/541 [01:29<00:10,  3.48ex/s] 94%|█████████▎| 506/541 [01:30<00:12,  2.70ex/s] 94%|█████████▎| 507/541 [01:30<00:11,  3.01ex/s] 94%|█████████▍| 508/541 [01:30<00:10,  3.27ex/s] 94%|█████████▍| 509/541 [01:30<00:09,  3.48ex/s] 94%|█████████▍| 510/541 [01:31<00:08,  3.64ex/s] 94%|█████████▍| 511/541 [01:31<00:07,  3.77ex/s] 95%|█████████▍| 512/541 [01:31<00:07,  3.86ex/s] 95%|█████████▍| 513/541 [01:32<00:11,  2.42ex/s] 95%|█████████▌| 514/541 [01:32<00:09,  2.76ex/s] 95%|█████████▌| 515/541 [01:32<00:08,  3.06ex/s] 95%|█████████▌| 516/541 [01:33<00:07,  3.31ex/s] 96%|█████████▌| 517/541 [01:33<00:06,  3.51ex/s] 96%|█████████▌| 518/541 [01:33<00:06,  3.66ex/s] 96%|█████████▌| 519/541 [01:33<00:05,  3.78ex/s] 96%|█████████▌| 520/541 [01:35<00:16,  1.29ex/s] 96%|█████████▋| 521/541 [01:35<00:12,  1.62ex/s] 96%|█████████▋| 522/541 [01:36<00:09,  1.98ex/s] 97%|█████████▋| 523/541 [01:36<00:07,  2.35ex/s] 97%|█████████▋| 524/541 [01:36<00:06,  2.69ex/s] 97%|█████████▋| 525/541 [01:38<00:13,  1.18ex/s] 97%|█████████▋| 526/541 [01:38<00:09,  1.50ex/s] 97%|█████████▋| 527/541 [01:39<00:07,  1.85ex/s] 98%|█████████▊| 528/541 [01:40<00:10,  1.22ex/s] 98%|█████████▊| 529/541 [01:40<00:07,  1.55ex/s] 98%|█████████▊| 530/541 [01:41<00:05,  1.90ex/s] 98%|█████████▊| 531/541 [01:43<00:09,  1.05ex/s] 98%|█████████▊| 532/541 [01:43<00:06,  1.35ex/s] 99%|█████████▊| 533/541 [01:43<00:04,  1.69ex/s] 99%|█████████▊| 534/541 [01:43<00:03,  2.05ex/s] 99%|█████████▉| 535/541 [01:44<00:02,  2.41ex/s] 99%|█████████▉| 536/541 [01:45<00:03,  1.46ex/s] 99%|█████████▉| 537/541 [01:45<00:02,  1.81ex/s] 99%|█████████▉| 538/541 [01:45<00:01,  2.17ex/s]100%|█████████▉| 539/541 [01:46<00:00,  2.53ex/s]100%|█████████▉| 540/541 [01:46<00:00,  2.85ex/s]100%|██████████| 541/541 [01:47<00:00,  1.77ex/s]100%|██████████| 541/541 [01:47<00:00,  5.04ex/s]SUCCESS: Data ready for training and evaluation.
+
+------> PREPARING FOR TRAINING & EVALUATION... ----------------------- 
+
+--> Defining data collator...
+SUCCESS: Data collator defined.
+--> Defining evaluation metric...
+SUCCESS: Defined WER evaluation metric.
+--> Loading pre-trained checkpoint...
+SUCCESS: Pre-trained checkpoint loaded.
+
+------> EVALUATING MODEL... ------------------------------------------ 
+
+Saved results to: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/TLT_local/20211026-base-myST-OGI-TLT-eval_TLT17_test_results.csv
+--> Getting fine-tuned test results...
+Fine-tuned Test WER: 0.372
+--> Showing some fine-tuned prediction errors...
+                                         target_text                                           pred_str
+0              MY ES FAVOURITE SCHOOL SUBJECT IS GYM                   MY FAVORITE SCHOOL SUBJECT IS GM
+1  I DON'T S WATCH I DON'T WATCH E ALWAYS THE TV ...  I DON'T T WATCH I DON'T WATCH UUH ALWAYS UTHE ...
+2                   <unk> I'M LIVE IN RIVA DEL GARDA                           I LIVE IN RIVAR HEGARDON
+3                            MY FAVOURITE PET IS CAT                            MY FAVOURITE PET IS CAT
+4                                BYE BYE <unk> <unk>                                          BYE BYEHO
+5                                         <unk> I AM                                               I AM
+6                        YES YES YES YES YES YES YES                                             YESYES
+7                                   M NO <unk> <unk>                                                 NO
+8                          AMI PIZZA THANK YOU <unk>                                 MI PIZZA THANK YOU
+9  <unk> HI MY FROM ITALY EH I'M FROM ITALIAN AND...  I MY FROM ITALLY I'M FROM ITALIAN AND UM Y I L...
+--> Taking a deeper look...
+<pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> Y <pad> <pad> <pad> <pad> <pad> <pad> E E <pad> <pad> S S | | <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> I <pad> <pad> | | <pad> P <pad> <pad> L <pad> <pad> <pad> <pad> A A Y Y <pad> <pad> | <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> E <pad> <pad> <pad> <pad> | <pad> <pad> B <pad> <pad> <pad> <pad> A <pad> S S <pad> K K <pad> E E T T <pad> <pad> <pad> <pad> <pad> <pad> <pad> B <pad> <pad> A L L <pad> <pad> L <pad> | <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> B <pad> <pad> <pad> A <pad> S <pad> K K E E T T <pad> B <pad> A L <pad> <pad> L <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+
+------> EVALUATING BASELINE MODEL... ------------------------------------------ 
+
+Saved results to: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/TLT_local/20211026-base-myST-OGI-TLT-eval_TLT17_test_baseline_results.csv
+--> Getting baseline test results...
+Baseline Test WER: 0.511
+--> Showing some baseline prediction errors...
+                                         target_text                                           pred_str
+0                                        <unk> <unk>                                        CAS A SPEPE
+1                                   YES I LIKE <unk>                                         YES I LIKE
+2                        IS PENCIL CASE MY FAVOURITE                        ESOPPANSY KILLS MY FAVORITE
+3                             FINE THANK YOU AND YOU                             FINE THANK YOU AND YOU
+4  OH I WOULD LIKE TO TO GO TO AUSTRALIA CAUSE I ...  OH I WOULD LIKE TO TO GO TO AUSTRALIA CAUSE I ...
+5    HELLO <unk> <unk> I AM ISABELLA <unk> I LIVE IN          HELLO ONWIYI HER AR YEMSAWAD FAI LIVI LIK
+6       COCA COLA <unk> COCA COLA AND TEA <unk> COCA                         CAACOLA COCACOLON TE A COG
+7                                   E FOOTBALL <unk>                                         M FOOTBALL
+8                             <unk> <unk> LIVE PIZZA                             NINE NINE LIVE O BITER
+9  MY FAVOURITE TV CHANNEL IS SIX BECAUSE E THE T...  MY FAVORITE TIVICHANEL IS A SIX BECAUSE E A TH...
+--> Taking a deeper look...
+<pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> Y Y <pad> <pad> <pad> <pad> E <pad> <pad> <pad> <pad> <pad> <pad> <pad> S S <pad> <pad> <pad> | | <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> I <pad> <pad> <pad> | | <pad> <pad> P <pad> <pad> L <pad> <pad> A A Y <pad> <pad> <pad> | | | <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> I <pad> N <pad> <pad> | | | | | | <pad> B <pad> <pad> <pad> A <pad> <pad> S S <pad> K K <pad> E <pad> <pad> T <pad> <pad> <pad> <pad> <pad> B <pad> <pad> <pad> A <pad> L <pad> <pad> L L <pad> | | | <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> I <pad> <pad> | <pad> P L L A Y <pad> | | B <pad> <pad> A <pad> <pad> S <pad> <pad> K <pad> E <pad> T <pad> B <pad> A L <pad> L L <pad> | | <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+
+
+------> SUCCESSFULLY FINISHED ---------------------------------------- 
+
+Finished: 22/11/2021 19:01:27
