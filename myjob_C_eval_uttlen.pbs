@@ -14,12 +14,12 @@ cd /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis
 # Activate virtual environment
 source thesis_env/bin/activate
 
-echo ""$(date)"" 2>&1 | tee -a /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/output/output184.txt
+echo ""$(date)"" 2>&1 | tee -a /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/output/output187.txt
 
 cd /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/
 
 # Evaluate on myST-test
-python THESIS_C/run_finetune_kids_eval_myST_test_uttlen.py 2>&1 | tee -a /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/output/output184.txt
+#python THESIS_C/run_finetune_kids_eval_myST_test_uttlen.py 2>&1 | tee -a /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/output/output187.txt
 
 # Evaluate on baseline
-#python THESIS_C/run_finetune_kids_eval_baseline_uttlen.py 2>&1 | tee -a /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/output/output175.txt
+python THESIS_C/run_finetune_kids_eval_baseline_uttlen.py 2>&1 | tee -a /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/output/output187.txt

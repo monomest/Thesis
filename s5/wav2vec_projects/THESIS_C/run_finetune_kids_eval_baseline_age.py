@@ -89,7 +89,7 @@ print("training:", training)
 # For 1) naming vocab.json file and
 #     2) naming model output directory
 #     3) naming results csv file
-experiment_id = "20211102-baseline-eval-age"
+experiment_id = "20211122-baseline-robust-eval-age"
 print("experiment_id:", experiment_id)
 
 # DatasetDict Id
@@ -157,7 +157,7 @@ if eval_pretrained:
 
 # Baseline model for evaluating baseline metric
 # This model will be evaluated at the end for the baseline WER
-baseline_model = "facebook/wav2vec2-base-960h"
+baseline_model = "facebook/wav2vec2-large-robust-ft-libri-960h"
 print("baseline_model:", baseline_model)
 
 # Evalulate the baseline model or not (True/False)

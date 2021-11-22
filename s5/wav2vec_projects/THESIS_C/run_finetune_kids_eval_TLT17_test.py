@@ -156,13 +156,13 @@ if eval_pretrained:
 
 # Baseline model for evaluating baseline metric
 # This model will be evaluated at the end for the baseline WER
-baseline_model = "facebook/wav2vec2-base-960h"
+baseline_model = "facebook/wav2vec2-large-robust-ft-libri-960h"
 print("baseline_model:", baseline_model)
 
 # Evalulate the baseline model or not (True/False)
 #   True: evaluate baseline model on test set
 #   False: do not evaluate baseline model on test set
-eval_baseline = False
+eval_baseline = True
 
 print("\n------> MODEL ARGUMENTS... -------------------------------------------\n")
 # For setting model = Wav2Vec2ForCTC.from_pretrained()
