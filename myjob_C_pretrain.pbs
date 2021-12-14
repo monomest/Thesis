@@ -22,4 +22,4 @@ cd /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_
 fairseq-hydra-train \
     task.data=/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT-CU_local/THESIS_C/manifest \
     --config-dir /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT-CU_local/THESIS_C \
-    --config-name wav2vec2_base_kids 2>&1 | tee output/output149.txt
+    --config-name wav2vec2_base_kids 2>&1 | tee -a output/output149.txt

@@ -3,10 +3,10 @@
 common:
   fp16: true
   log_format: json
-  log_interval: 20000
+  log_interval: 10000
 
 checkpoint:
-  save_interval_updates: 20000
+  save_interval_updates: 10000
   keep_interval_updates: 1
   no_epoch_checkpoints: true
 
@@ -21,6 +21,7 @@ dataset:
   num_workers: 6
   max_tokens: 1400000
   skip_invalid_size_inputs_valid_test: true
+  batch_size: 32
 
 distributed_training:
   distributed_world_size: 4
@@ -33,8 +34,8 @@ criterion:
   loss_weights: [0.1, 10]
 
 optimization:
-  max_update: 200000
-  lr: [0.0003]
+  max_update: 400000
+  lr: [0.0005]
 
 optimizer:
   _name: adam
@@ -44,7 +45,7 @@ optimizer:
 
 lr_scheduler:
   _name: polynomial_decay
-  warmup_updates: 16000
+  warmup_updates: 32000
 
 model:
   _name: wav2vec2
