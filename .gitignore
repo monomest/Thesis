@@ -25,3 +25,5 @@ s5/TLT_local/2021*/
 s5/TLT_local/vocab*
 s5/myST-OGI-TLT17_local/2021*/
 s5/wav2vec_projects/outputs/
+deepspeech/deepspeech-0.9.3-models.pbmm
+deepspeech/deepspeech-0.9.3-models.scorer
