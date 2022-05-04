@@ -1,0 +1,22 @@
+#!/bin/bash
+#!/bin/bash
+
+#PBS -l select=1:ncpus=2:mem=8gb
+#PBS -l walltime=12:00:00
+#PBS -M renee.lu@unsw.edu.au
+#PBS -m ae
+#PBS -j oe
+#PBS -o /home/z5160268/Output117_wav2vec_Report
+
+# Go into thesis folder
+cd /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis
+
+# Activate virtual environment
+source thesis_env/bin/activate
+
+echo ""$(date)"" 2>&1 | tee -a /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/output/output196.txt
+
+cd /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/deepspeech
+
+./inference-TLT17.sh 2>&1 | tee -a /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/output/output196.txt
+

@@ -1,0 +1,43 @@
+Wed May 4 22:24:09 AEST 2022
+Model: deepspeech-0.9.3-models.pbmm
+OGI test set: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/THESIS_C/OGI_data_test_light.csv
+
+filepath,transcription_clean,prediction
+/srv/scratch/chacmod/OGI/speech/scripted/00/8/ksb0p/ksb0p220.wav,lifeboats,noif pos
+/srv/scratch/chacmod/OGI/speech/scripted/00/8/ksb0p/ksb0p400.wav,greet me with open arms, ne so fin oy
+/srv/scratch/chacmod/OGI/speech/scripted/00/8/ksb0p/ksb0p040.wav,aspire,ol he
+/srv/scratch/chacmod/OGI/speech/scripted/00/8/ksb0p/ksb0p310.wav,obvious,i fly
+/srv/scratch/chacmod/OGI/speech/scripted/00/8/ksb0p/ksb0p6n0.wav,i'm sorry the dog ate your dinner,tham son i dot det le demly
+/srv/scratch/chacmod/OGI/speech/scripted/00/8/ksb0p/ksb0p0t0.wav,cowboys,he hells
+/srv/scratch/chacmod/OGI/speech/scripted/00/8/ksb0p/ksb0p130.wav,earthquake,eiht grat
+/srv/scratch/chacmod/OGI/speech/scripted/00/8/ksb0p/ksb0p3y0.wav,you didn't arrive too late,indeed hin alloyv to lake
+/srv/scratch/chacmod/OGI/speech/scripted/00/8/ksb0p/ksb0p6j0.wav,we gathered sticks for the fire,le cant ee dispics fete sory
+/srv/scratch/chacmod/OGI/speech/scripted/00/8/ksb0p/ksb0p0j0.wav,cautiously,was he seed
+/srv/scratch/chacmod/OGI/speech/scripted/00/8/ksb0p/ksb0p2h0.wav,mutual,me wol
+/srv/scratch/chacmod/OGI/speech/scripted/00/8/ksb0p/ksb0p6l0.wav,my sleeve caught the thorny bush,is se cut fist noiewraps
+/srv/scratch/chacmod/OGI/speech/scripted/00/8/ksb0p/ksb0p1d0.wav,female,she mel
+/srv/scratch/chacmod/OGI/speech/scripted/00/8/ksb0p/ksb0p500.wav,the flood took a car down the street,saide slad take care coy dan this eneat
+/srv/scratch/chacmod/OGI/speech/scripted/00/8/ksb0p/ksb0p6o0.wav,someone bought a beautiful ring for you,some one had blite to paidefulln ee
+/srv/scratch/chacmod/OGI/speech/scripted/00/8/ksb0p/ksb0p760.wav,spoons,m
+/srv/scratch/chacmod/OGI/speech/scripted/00/8/ksb0p/ksb0p3z0.wav,five people can fit in the elevator,shight people can feat in the erlor fady
+/srv/scratch/chacmod/OGI/speech/scripted/00/8/ksb0p/ksb0p0y0.wav,depths,t
+/srv/scratch/chacmod/OGI/speech/scripted/00/8/ksb0p/ksb0p180.wav,engrave,in lay
+/srv/scratch/chacmod/OGI/speech/scripted/00/8/ksb0p/ksb0p090.wav,bathe,an 
+/srv/scratch/chacmod/OGI/speech/scripted/00/8/ksb0p/ksb0p6k0.wav,santa deemed rudolph the leader, sante dee hane idoft in
+/srv/scratch/chacmod/OGI/speech/scripted/00/8/ksb0p/ksb0p2m0.wav,novel,i not fol
+/srv/scratch/chacmod/OGI/speech/scripted/00/8/ksb0p/ksb0p0o0.wav,circumstance, seek coms tan
+/srv/scratch/chacmod/OGI/speech/scripted/00/8/ksb0p/ksb0p5j0.wav,will you sing this song,then seem it is son
+/srv/scratch/chacmod/OGI/speech/scripted/00/8/ksb0p/ksb0p1n0.wav,herbalist,e lon ecs
+/srv/scratch/chacmod/OGI/speech/scripted/00/8/ksb0p/ksb0p3x0.wav,we've had a wonderful night,he had delendy for tin et is
+/srv/scratch/chacmod/OGI/speech/scripted/00/8/ksb0p/ksb0p6m0.wav,the stove melted the butter,this stole nortid the butteep
+/srv/scratch/chacmod/OGI/speech/scripted/00/8/ks033/ks0336j0.wav,we gathered sticks for the fire,he canter spic or the fire
+/srv/scratch/chacmod/OGI/speech/scripted/00/8/ks033/ks033040.wav,aspire,m
+/srv/scratch/chacmod/OGI/speech/scripted/00/8/ks033/ks033400.wav,greet me with open arms,et e wet open mie
+/srv/scratch/chacmod/OGI/speech/scripted/00/8/ks033/ks0331s0.wav,humor,e won
+/srv/scratch/chacmod/OGI/speech/scripted/00/8/ks033/ks033220.wav,lifeboats,lenth
+/srv/scratch/chacmod/OGI/speech/scripted/00/8/ks033/ks0330t0.wav,cowboys,hel 
+/srv/scratch/chacmod/OGI/speech/scripted/00/8/ks033/ks033130.wav,earthquake,a qlek
+/srv/scratch/chacmod/OGI/speech/scripted/00/8/ks033/ks033310.wav,obvious,con being
+/srv/scratch/chacmod/OGI/speech/scripted/00/8/ks033/ks0336n0.wav,i'm sorry the dog ate your dinner,si an dogk aget diner
+/srv/scratch/chacmod/OGI/speech/scripted/00/8/ks033/ks0333y0.wav,you didn't arrive too late,intleed a lint to lit
+/srv/scratch/chacmod/OGI/speech/scripted/00/8/ks033/ks0336l0.wav,my sleeve caught the thorny bush,slened ponti sorny pois

@@ -1,0 +1,14 @@
+Wed May 4 22:24:09 AEST 2022
+Model: deepspeech-0.9.3-models.pbmm
+TLT17 test set: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/TLT_local/THESIS_C/TLT17eval_data_test_light.csv
+
+filepath,transcription_clean,prediction
+/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017eval/en_22_20_100/1010106_en_22_20_100.wav,yes i play e basketball i play basketball,hes i play i wusk on i e mastbol
+/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017eval/en_22_20_101/1010106_en_22_20_101.wav,or because i love the i love game e i love the fresh air,because i of it i love ganwel yeah anter the fresh aid
+/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017eval/en_22_20_102/1010106_en_22_20_102.wav,it sport is vo volley because is so competitive but e,toht his fot wolly because  it's soccombactive but
+/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017eval/en_22_20_103/1010106_en_22_20_103.wav,i don't see the sport in tv because is very boring and i love <unk> come si diceva,i dont see thisporting td because hes very borying you and th i lover  a qhisto
+/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017eval/en_21_19_100/1010112_en_21_19_100.wav,hi i from italy my hobby is play volleyball my family is <unk> no my dad is piero may mom is dora and my dog is lola my i like pizza <unk> and coca cola my friend is are silvia gianluca and kevin last weekend i was with my boyfriend um,i i found that becally my obbe isem lavolivl my famines com obs my that is here  my wom his bara nd mine loggin lala mine i like com bit hon a colo my fin tha is other seyar ear to loca ar enyst wen yas with my lifee 
+/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017eval/en_22_20_100/1010112_en_22_20_100.wav,no i don't no i don't play sport,oi dan't not i dan't place par
+/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017eval/en_22_20_101/1010112_en_22_20_101.wav,i prefer indoor sport <unk>,i profer  ethers parte
+/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017eval/en_22_20_102/1010112_en_22_20_102.wav,<unk> my favourite sport is football football is a game for boys and girl and,my famory spart is le foodbon fold beis again mar for er boys an glerla and
+/srv/scratch/chacmod/TLT/Dataset/TLT2020challenge/audio/TLT2017eval/en_22_20_103/1010112_en_22_20_103.wav,i watch i don't watch tv sport program <unk>,i watch i don't watch er fece pot promem 
