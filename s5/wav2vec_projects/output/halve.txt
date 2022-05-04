@@ -1,0 +1,18 @@
+
+Running:  /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/data_halve.py
+
+------> Setting data paths -------------------------------------------
+
+--> Dataset name: myST-OGI-TLT17
+--> Dataset filename: myST-OGI-TLT_data_finetune
+--> Dataset filepath: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT17_local/THESIS_C/myST-OGI-TLT_data_finetune.csv
+
+------> Reading in dataset... ----------------------------------------
+
+Old number of speech samples: 139748
+New number of speech samples: 69874
+New samples/old samples: 0.5
+Old total duration: 192.42198623263886
+New total duration 96.27902614583333
+New duration/Old duration = 0.5003535616217559
+SUCCESS: saved new halved dataset in: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/myST-OGI-TLT17_local/THESIS_C/myST-OGI-TLT_data_finetune_light_half.csv
