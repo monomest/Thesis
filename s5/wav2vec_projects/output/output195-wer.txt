@@ -1,0 +1,12 @@
+Started: 05/05/2022 22:48:55
+
+Running: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/deepspeech/compute_wer.py
+
+------> Setting data paths -------------------------------------------
+
+--> Dataset name: output195.csv
+--> Dataset filepath: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/wav2vec_projects/output/output195.csv
+
+------> Reading in dataset... ----------------------------------------
+
+WER: 0.7801028149557262
