@@ -1,0 +1,143 @@
+Started: 06/05/2022 14:44:06
+
+Running: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/deepspeech/compute_age_wer.py
+
+------> Setting data paths -------------------------------------------
+
+--> Age: 0
+--> Result filepath: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/20211026-base-myST-OGI-TLT-Librispeech-eval-age_OGI_test_results0.csv
+
+------> Reading in dataset... ----------------------------------------
+
+Scripted WER: 0.14564220183486237
+Spontaneous WER: 0.7675054704595186
+Started: 06/05/2022 14:46:22
+
+Running: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/deepspeech/compute_age_wer.py
+
+------> Setting data paths -------------------------------------------
+
+--> Age: 1
+--> Result filepath: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/20211026-base-myST-OGI-TLT-Librispeech-eval-age_OGI_test_results1.csv
+
+------> Reading in dataset... ----------------------------------------
+
+Scripted WER: 0.04125560538116592
+Spontaneous WER: 0.6416704086214639
+Started: 06/05/2022 14:47:37
+
+Running: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/deepspeech/compute_age_wer.py
+
+------> Setting data paths -------------------------------------------
+
+--> Age: 2
+--> Result filepath: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/20211026-base-myST-OGI-TLT-Librispeech-eval-age_OGI_test_results2.csv
+
+------> Reading in dataset... ----------------------------------------
+
+Scripted WER: 0.021114572516441676
+Spontaneous WER: 0.612141652613828
+Started: 06/05/2022 14:48:35
+
+Running: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/deepspeech/compute_age_wer.py
+
+------> Setting data paths -------------------------------------------
+
+--> Age: 3
+--> Result filepath: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/20211026-base-myST-OGI-TLT-Librispeech-eval-age_OGI_test_results3.csv
+
+------> Reading in dataset... ----------------------------------------
+
+Scripted WER: 0.0156562291805463
+Spontaneous WER: 0.5817339510258107
+Started: 06/05/2022 14:49:44
+
+Running: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/deepspeech/compute_age_wer.py
+
+------> Setting data paths -------------------------------------------
+
+--> Age: 4
+--> Result filepath: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/20211026-base-myST-OGI-TLT-Librispeech-eval-age_OGI_test_results4.csv
+
+------> Reading in dataset... ----------------------------------------
+
+Scripted WER: 0.008336989907854322
+Spontaneous WER: 0.5241581259150805
+Started: 06/05/2022 14:50:41
+
+Running: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/deepspeech/compute_age_wer.py
+
+------> Setting data paths -------------------------------------------
+
+--> Age: 5
+--> Result filepath: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/20211026-base-myST-OGI-TLT-Librispeech-eval-age_OGI_test_results5.csv
+
+------> Reading in dataset... ----------------------------------------
+
+Scripted WER: 0.004729148753224419
+Spontaneous WER: 0.5338733431516937
+Started: 06/05/2022 14:51:21
+
+Running: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/deepspeech/compute_age_wer.py
+
+------> Setting data paths -------------------------------------------
+
+--> Age: 6
+--> Result filepath: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/20211026-base-myST-OGI-TLT-Librispeech-eval-age_OGI_test_results6.csv
+
+------> Reading in dataset... ----------------------------------------
+
+Scripted WER: 0.004909983633387889
+Spontaneous WER: 0.46132971506105835
+Started: 06/05/2022 14:51:55
+
+Running: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/deepspeech/compute_age_wer.py
+
+------> Setting data paths -------------------------------------------
+
+--> Age: 7
+--> Result filepath: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/20211026-base-myST-OGI-TLT-Librispeech-eval-age_OGI_test_results7.csv
+
+------> Reading in dataset... ----------------------------------------
+
+Scripted WER: 0.0037174721189591076
+Spontaneous WER: 0.4558044806517312
+Started: 06/05/2022 14:52:24
+
+Running: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/deepspeech/compute_age_wer.py
+
+------> Setting data paths -------------------------------------------
+
+--> Age: 8
+--> Result filepath: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/20211026-base-myST-OGI-TLT-Librispeech-eval-age_OGI_test_results8.csv
+
+------> Reading in dataset... ----------------------------------------
+
+Scripted WER: 0.009025270758122744
+Spontaneous WER: 0.46207148067104303
+Started: 06/05/2022 14:53:09
+
+Running: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/deepspeech/compute_age_wer.py
+
+------> Setting data paths -------------------------------------------
+
+--> Age: 9
+--> Result filepath: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/20211026-base-myST-OGI-TLT-Librispeech-eval-age_OGI_test_results9.csv
+
+------> Reading in dataset... ----------------------------------------
+
+Scripted WER: 0.016566265060240965
+Spontaneous WER: 0.5140845070422535
+Started: 06/05/2022 14:53:41
+
+Running: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/deepspeech/compute_age_wer.py
+
+------> Setting data paths -------------------------------------------
+
+--> Age: 10
+--> Result filepath: /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/s5/OGI_local/20211026-base-myST-OGI-TLT-Librispeech-eval-age_OGI_test_results10.csv
+
+------> Reading in dataset... ----------------------------------------
+
+Scripted WER: 0.004784688995215311
+Spontaneous WER: 0.4824808699154249
