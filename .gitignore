@@ -34,4 +34,4 @@ deepspeech/deepspeech-0.9.3-models.pbmm
 deepspeech/deepspeech-0.9.3-models.scorer
 deepspeech/DeepSpeech
 deepspeech/flags.txt
-./python-version
+.python-version
