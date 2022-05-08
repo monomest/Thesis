@@ -1,0 +1,24 @@
+#!/bin/bash
+#!/bin/bash
+
+#PBS -l select=1:ncpus=8:ngpus=1:mem=46gb
+#PBS -l walltime=200:00:00
+#PBS -M renee.lu@unsw.edu.au
+#PBS -m ae
+#PBS -j oe
+#PBS -o /home/z5160268/Output107_wav2vec_Report
+
+# Go into thesis folder
+cd /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis
+
+# Activate virtual environment
+source deepspeech-python3-6/bin/activate
+
+# Go into DeepSpeech folder
+cd /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/deepspeech/DeepSpeech
+
+echo ""$(date)"" 2>&1 | tee -a /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/deepspeech/output-deepspeech-5h.txt
+
+# This runs the test script
+python DeepSpeech.py  --n_hidden 2048 --checkpoint_dir ../ --epochs 10 --train_files ../train_5h.csv --dev_files ../dev_5h.csv --test_files ../dev_5h.csv --learning_rate 0.0001 2>&1 | tee -a /srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/deepspeech/output-deepspeech-5h.txt
+

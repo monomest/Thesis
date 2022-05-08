@@ -1,0 +1,36 @@
+I Could not find best validating checkpoint.
+I Could not find most recent checkpoint.
+I Initializing all variables.
+I STARTING Optimization
+Epoch 0 |   Training | Elapsed Time: 0:00:00 | Steps: 0 | Loss: 0.000000
+Epoch 0 |   Training | Elapsed Time: 0:00:01 | Steps: 1 | Loss: 11.149328
+Epoch 0 |   Training | Elapsed Time: 0:00:02 | Steps: 2 | Loss: 9.704560
+Epoch 0 |   Training | Elapsed Time: 0:00:03 | Steps: 3 | Loss: 26.089525
+Epoch 0 |   Training | Elapsed Time: 0:00:04 | Steps: 4 | Loss: 25.089941
+Epoch 0 |   Training | Elapsed Time: 0:00:06 | Steps: 5 | Loss: 33.169357
+Epoch 0 |   Training | Elapsed Time: 0:00:08 | Steps: 6 | Loss: 32.777638
+Training package is not installed. See training documentation.
+Traceback (most recent call last):
+  File "DeepSpeech.py", line 7, in <module>
+    from deepspeech_training import train as ds_train
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/deepspeech/DeepSpeech/training/deepspeech_training/train.py", line 17, in <module>
+    import tensorflow.compat.v1 as tfv1
+ModuleNotFoundError: No module named 'tensorflow.compat'
+Training package is not installed. See training documentation.
+Traceback (most recent call last):
+  File "DeepSpeech.py", line 7, in <module>
+    from deepspeech_training import train as ds_train
+  File "/srv/scratch/z5160268/2020_TasteofResearch/kaldi/egs/renee_thesis/deepspeech/DeepSpeech/training/deepspeech_training/train.py", line 17, in <module>
+    import tensorflow.compat.v1 as tfv1
+ModuleNotFoundError: No module named 'tensorflow.compat'
+I Could not find best validating checkpoint.
+I Could not find most recent checkpoint.
+I Initializing all variables.
+I STARTING Optimization
+Epoch 0 |   Training | Elapsed Time: 0:00:00 | Steps: 0 | Loss: 0.000000
+Epoch 0 |   Training | Elapsed Time: 0:00:01 | Steps: 1 | Loss: 11.149328
+Epoch 0 |   Training | Elapsed Time: 0:00:02 | Steps: 2 | Loss: 9.704560
+Epoch 0 |   Training | Elapsed Time: 0:00:02 | Steps: 3 | Loss: 26.089525
+Epoch 0 |   Training | Elapsed Time: 0:00:04 | Steps: 4 | Loss: 25.089941
+Epoch 0 |   Training | Elapsed Time: 0:00:05 | Steps: 5 | Loss: 33.169357
+Epoch 0 |   Training | Elapsed Time: 0:00:07 | Steps: 6 | Loss: 32.777638
